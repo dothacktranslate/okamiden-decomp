@@ -1,0 +1,19 @@
+diff --git a/cli/src/cmd/lcf.rs b/cli/src/cmd/lcf.rs
+index c27c4be..219e405 100644
+--- a/cli/src/cmd/lcf.rs
++++ b/cli/src/cmd/lcf.rs
+@@ -230,7 +230,13 @@ impl Lcf {
+                 // Migrated files will have the same name as the original, that is intentional
+                 continue;
+             }
+-            let filename = file.name.rsplit_once(['/', '\\']).unwrap_or(("", &file.name)).1;
++            // Match the filename transformation used by LCF/object generation.
++            // Generated gap files share a logical name but have distinct gap IDs;
++            // split_file_ext() incorporates that ID into the actual object name.
++            let (file_name, _) = file.split_file_ext();
++            let filename = file_name
++                .rsplit_once(['/', '\\'])
++                .map_or(file_name.as_str(), |(_, filename)| filename);
+             match delink_files.entry(filename.to_string()) {
+                 hash_map::Entry::Occupied(occupied_entry) => {
+                     log::error!(
