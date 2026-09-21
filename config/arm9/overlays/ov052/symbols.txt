@@ -1,0 +1,4 @@
+func_ov052_02106c40 kind:function(thumb,size=0x24) addr:0x02106c40
+func_ov052_02106c64 kind:function(thumb,size=0x8e) addr:0x02106c64
+func_ov052_02106cf4 kind:function(thumb,size=0x2) addr:0x02106cf4
+func_ov052_02106cf8 kind:function(thumb,size=0x24) addr:0x02106cf8

@@ -1,0 +1,3 @@
+from:0x02106c54 kind:thumb_call to:0x020a7b44 module:overlay(6)
+from:0x02106ca2 kind:thumb_call to:0x0209f16c module:overlay(6)
+from:0x02106cc4 kind:thumb_call_arm to:0x0203b220 module:main

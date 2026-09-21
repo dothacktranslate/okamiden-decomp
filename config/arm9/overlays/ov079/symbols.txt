@@ -1,0 +1,40 @@
+func_ov079_0210ba20 kind:function(thumb,size=0x8) addr:0x0210ba20
+func_ov079_0210ba28 kind:function(thumb,size=0x8) addr:0x0210ba28
+func_ov079_0210ba30 kind:function(thumb,size=0x140) addr:0x0210ba30
+func_ov079_0210bb70 kind:function(thumb,size=0x20) addr:0x0210bb70
+func_ov079_0210bb90 kind:function(thumb,size=0xc8) addr:0x0210bb90
+func_ov079_0210bc58 kind:function(thumb,size=0x138) addr:0x0210bc58
+func_ov079_0210bd90 kind:function(thumb,size=0x9c) addr:0x0210bd90
+func_ov079_0210be2c kind:function(thumb,size=0x8) addr:0x0210be2c
+func_ov079_0210be34 kind:function(thumb,size=0x8) addr:0x0210be34
+func_ov079_0210be3c kind:function(thumb,size=0xa0) addr:0x0210be3c
+func_ov079_0210bedc kind:function(thumb,size=0x28) addr:0x0210bedc
+func_ov079_0210bf04 kind:function(thumb,size=0xf0) addr:0x0210bf04
+func_ov079_0210bff4 kind:function(thumb,size=0xb8) addr:0x0210bff4
+func_ov079_0210c0ac kind:function(thumb,size=0xe8) addr:0x0210c0ac
+data_ov079_0210c1a0 kind:data(any) addr:0x0210c1a0
+data_ov079_0210c1b0 kind:data(any) addr:0x0210c1b0
+data_ov079_0210c1b4 kind:data(any) addr:0x0210c1b4 ambiguous
+data_ov079_0210c1d0 kind:data(any) addr:0x0210c1d0
+data_ov079_0210c1f4 kind:data(any) addr:0x0210c1f4
+data_ov079_0210c201 kind:data(any) addr:0x0210c201 ambiguous
+data_ov079_0210c218 kind:data(any) addr:0x0210c218
+data_ov079_0210c23c kind:data(any) addr:0x0210c23c
+data_ov079_0210c260 kind:data(any) addr:0x0210c260
+data_ov079_0210c26c kind:data(any) addr:0x0210c26c
+data_ov079_0210c290 kind:data(any) addr:0x0210c290
+data_ov079_0210c2b4 kind:data(any) addr:0x0210c2b4
+data_ov079_0210c2b5 kind:data(any) addr:0x0210c2b5 ambiguous
+data_ov079_0210c2d4 kind:data(any) addr:0x0210c2d4
+data_ov079_0210c2f4 kind:data(any) addr:0x0210c2f4
+data_ov079_0210c318 kind:data(any) addr:0x0210c318
+data_ov079_0210c324 kind:data(any) addr:0x0210c324 ambiguous
+data_ov079_0210c338 kind:data(any) addr:0x0210c338
+data_ov079_0210c35c kind:data(any) addr:0x0210c35c
+data_ov079_0210c36c kind:data(any) addr:0x0210c36c
+data_ov079_0210c37c kind:data(any) addr:0x0210c37c
+data_ov079_0210c3a0 kind:data(any) addr:0x0210c3a0
+data_ov079_0210c3c0 kind:data(any) addr:0x0210c3c0
+data_ov079_0210c3e4 kind:data(any) addr:0x0210c3e4
+data_ov079_0210c404 kind:data(any) addr:0x0210c404
+data_ov079_0210c420 kind:data(any) addr:0x0210c420 ambiguous
