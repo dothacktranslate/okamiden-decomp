@@ -1,0 +1,6 @@
+# Source file<TAB>per-file MWCCARM flags
+#
+# Common flags are supplied by tools/build.sh.
+# Keep optimization/interworking choices here because individual
+# translation units may eventually require different compiler settings.
+src/main/func_0203a228.c	-O1,p -interworking
