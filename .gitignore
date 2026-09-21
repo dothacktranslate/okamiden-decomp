@@ -1,0 +1,34 @@
+# Original game data
+rom/*
+!rom/.gitkeep
+*.nds
+*.sav
+*.dsv
+
+# Local extraction / generated game binaries
+extract/
+build/
+asm/
+
+# Object / executable output
+*.o
+*.elf
+
+# Proprietary compiler / SDK material
+tools/mwccarm/
+tools/nitro-sdk/
+tools/NitroSDK/
+
+# Generated objdiff configuration/report data
+objdiff.json
+reports/
+
+# Local diagnostics
+logs/*
+!logs/.gitkeep
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+*~

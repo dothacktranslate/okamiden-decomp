@@ -1,0 +1,3 @@
+[submodule "extern/ds-decomp"]
+	path = extern/ds-decomp
+	url = git@github.com:AetiasHax/ds-decomp.git
