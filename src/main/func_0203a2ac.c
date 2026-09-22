@@ -1,17 +1,6 @@
 #pragma thumb on
 
-typedef signed int s32;
-
-typedef struct {
-    s32 unk0;
-    void *entries;
-    s32 count;
-} ObjectHead;
-
-extern s32 func_02010af0(
-    void *first,
-    void *second
-);
+#include "src/main/func_0203a.h"
 
 s32 func_0203a2ac(
     void *base,

@@ -1,20 +1,6 @@
 #pragma thumb on
 
-typedef signed short s16;
-typedef signed int s32;
-typedef unsigned int u32;
-
-typedef struct {
-    s16 a;
-    s16 b;
-} Entry;
-
-typedef struct {
-    s32 unk0;
-    Entry *entries;
-    s32 count;
-    u32 capacity;
-} List;
+#include "src/main/func_0203a.h"
 
 static inline s32 list_full(List *list)
 {
