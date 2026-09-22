@@ -30,6 +30,8 @@ typedef struct {
     u8 pad_1e64[0x10];
 
     s32 field_1e74;
+    s32 field_1e78;
+    s32 field_1e7c;
 } Object;
 
 typedef struct {
@@ -58,5 +60,7 @@ s32 func_0203a2ac(
     void *other,
     s32 index
 );
+
+void func_0203a5f0(void *base, s32 value, s32 index);
 
 #endif
