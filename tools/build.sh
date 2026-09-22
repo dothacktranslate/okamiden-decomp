@@ -198,93 +198,60 @@ echo
 echo "============================================================"
 echo "VERIFY MATCHED .TEXT SECTIONS"
 echo "============================================================"
+echo
 
-rm -rf "$VERIFY"
-mkdir -p "$VERIFY"
+EXACT_MATCH_COUNT=0
+ALL_SOURCE_UNITS_MATCH=YES
 
-MATCH_COUNT=0
+VERIFY_DIR="$ROOT/build/match-verify"
 
-while IFS=$'\t' read -r SRC PER_FILE_FLAGS || [ -n "${SRC:-}" ]; do
+rm -rf "$VERIFY_DIR"
+mkdir -p "$VERIFY_DIR"
 
-    [ -n "${SRC:-}" ] || continue
+while IFS=$'\t' read -r SOURCE FLAGS; do
 
-    case "$SRC" in
+    [ -n "$SOURCE" ] || continue
+
+    case "$SOURCE" in
         \#*)
             continue
             ;;
     esac
 
-    STEM="${SRC%.c}"
+    REL="${SOURCE%.c}"
 
-    REF="$ROOT/build/delinks/${STEM}.o"
-    OBJ="$ROOT/build/${STEM}.o"
+    REF_OBJ="$ROOT/build/delinks/${REL}.o"
+    SRC_OBJ="$ROOT/build/${REL}.o"
 
-    SAFE="${STEM//\//_}"
+    SAFE_NAME="${REL//\//_}"
 
-    REF_BIN="$VERIFY/${SAFE}.reference.bin"
-    OBJ_BIN="$VERIFY/${SAFE}.source.bin"
+    echo "$SOURCE"
 
-    if [ ! -f "$REF" ]; then
-        echo "ERROR: reference object missing:"
-        echo "$REF"
-        exit 1
+    if python3 \
+        "$ROOT/tools/verify-object-text.py" \
+        "$REF_OBJ" \
+        "$SRC_OBJ" \
+        "$VERIFY_DIR/$SAFE_NAME"
+    then
+        EXACT_MATCH_COUNT=$((EXACT_MATCH_COUNT + 1))
+    else
+        ALL_SOURCE_UNITS_MATCH=NO
     fi
-
-    if [ ! -f "$OBJ" ]; then
-        echo "ERROR: source object missing:"
-        echo "$OBJ"
-        exit 1
-    fi
-
-    arm-none-eabi-objcopy \
-        -O binary \
-        -j .text \
-        "$REF" \
-        "$REF_BIN"
-
-    arm-none-eabi-objcopy \
-        -O binary \
-        -j .text \
-        "$OBJ" \
-        "$OBJ_BIN"
 
     echo
-    echo "$SRC"
 
-    echo "reference:"
-    stat -c 'size=%s' "$REF_BIN"
-    sha256sum "$REF_BIN"
+done < "$ROOT/config/arm9/mwcc_sources.tsv"
 
-    echo "source:"
-    stat -c 'size=%s' "$OBJ_BIN"
-    sha256sum "$OBJ_BIN"
-
-    if cmp -s "$REF_BIN" "$OBJ_BIN"; then
-        echo "MATCH=EXACT"
-        MATCH_COUNT=$((MATCH_COUNT + 1))
-    else
-        echo "MATCH=DIFFERENT"
-
-        cmp -l "$REF_BIN" "$OBJ_BIN" \
-            | head -n 30 || true
-
-        exit 1
-    fi
-
-done < "$MANIFEST"
-
+echo "EXACT_MATCH_COUNT=$EXACT_MATCH_COUNT"
 echo
-echo "EXACT_MATCH_COUNT=$MATCH_COUNT"
+echo "ALL_SOURCE_UNITS_MATCH=$ALL_SOURCE_UNITS_MATCH"
+echo
 
-if [ "$MATCH_COUNT" -ne "$SOURCE_COUNT" ]; then
-    echo "ERROR: not every source unit matched."
+if [ "$ALL_SOURCE_UNITS_MATCH" != "YES" ]; then
+    echo "ERROR: one or more matched source units differ."
     exit 1
 fi
 
-echo
-echo "ALL_SOURCE_UNITS_MATCH=YES"
-
-echo
 echo "============================================================"
 echo "REGENERATE OBJDIFF"
 echo "============================================================"
