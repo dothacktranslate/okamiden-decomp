@@ -5,3 +5,4 @@
 # translation units may eventually require different compiler settings.
 src/main/func_0203a228.c	-O1,p -interworking
 src/main/func_0203a28c.c	-O2 -interworking
+src/main/func_0203a2ac.c	-O2 -interworking

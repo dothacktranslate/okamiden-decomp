@@ -13,3 +13,7 @@ src/main/func_0203a228.c:
 src/main/func_0203a28c.c:
     complete
     .text       start:0x0203a28c end:0x0203a2ac
+
+src/main/func_0203a2ac.c:
+    complete
+    .text       start:0x0203a2ac end:0x0203a2cc
