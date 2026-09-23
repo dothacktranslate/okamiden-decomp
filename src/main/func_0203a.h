@@ -63,4 +63,9 @@ s32 func_0203a2ac(
 
 void func_0203a5f0(void *base, s32 value, s32 index);
 
+void func_0203a650(void);
+void func_0203a668(void);
+void func_0203ac7c(s32 value);
+void func_0203accc(s32 value);
+
 #endif
