@@ -45,3 +45,11 @@ src/main/func_0203a7cc.c:
 src/main/func_0203a824.c:
     complete
     .text       start:0x0203a824 end:0x0203a87c
+
+src/main/func_02042e04.c:
+    complete
+    .text       start:0x02042e04 end:0x02042e24
+
+src/main/func_02042e24.c:
+    complete
+    .text       start:0x02042e24 end:0x02042e46

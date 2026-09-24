@@ -82,7 +82,7 @@ void func_0203accc(s32 value);
 
 extern void *data_02078fa8;
 
-void func_02042e04(
+s32 func_02042e04(
     void *context,
     Func0203aDescriptor *descriptor,
     s32 zero
@@ -110,6 +110,29 @@ void func_0203a824(
     s32 param_1,
     s32 param_2,
     s32 param_3
+);
+
+s32 func_02042a28(
+    void *context,
+    Func0203aDescriptor *descriptor,
+    s32 value
+);
+
+s32 func_02042e24(
+    void *context,
+    Func0203aDescriptor *descriptor
+);
+
+void func_02042fb4(
+    void *context,
+    s32 result,
+    s32 data
+);
+
+void func_02042fe8(
+    void *context,
+    s32 result,
+    s32 data
 );
 
 #endif
