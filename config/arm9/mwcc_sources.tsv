@@ -9,3 +9,7 @@ src/main/func_0203a2ac.c	-O2 -interworking
 src/main/func_0203a5f0.c	-O1 -interworking
 src/main/func_0203a650.c	-O1 -interworking
 src/main/func_0203a668.c	-O1 -interworking
+src/main/func_0203a680.c	-O2 -interworking
+src/main/func_0203a6d8.c	-O2 -interworking
+src/main/func_0203a7cc.c	-O2 -interworking
+src/main/func_0203a824.c	-O2 -interworking
