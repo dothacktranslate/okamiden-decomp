@@ -73,3 +73,7 @@ src/main/func_02042ea4.c:
 src/main/func_02042eb0.c:
     complete
     .text       start:0x02042eb0 end:0x02042ebc
+
+src/main/func_02042e60.c:
+    complete
+    .text       start:0x02042e60 end:0x02042e96
