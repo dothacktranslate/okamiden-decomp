@@ -2,27 +2,30 @@
 
 import argparse
 import json
-import re
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
 
-DELINKS = ROOT / "config/arm9/delinks.txt"
-MANIFEST = ROOT / "config/arm9/mwcc_sources.tsv"
+SNAPSHOT = (
+    ROOT
+    / "config/arm9/"
+      "decomp-dev-units.json"
+)
 
-# Established Okamiden ARM9-main progress denominator.
-TOTAL_CODE = 431_680
-TOTAL_FUNCTIONS = 3_304
 
-
-def pct(part, total):
+def percent(part, total):
     if total == 0:
         return 0.0
-    return (part * 100.0) / total
+
+    return (
+        part
+        * 100.0
+        / total
+    )
 
 
-def make_measures(
+def measures(
     total_code,
     matched_code,
     total_functions,
@@ -30,115 +33,67 @@ def make_measures(
     total_units,
     complete_units,
 ):
-    code_pct = pct(
-        matched_code,
-        total_code,
-    )
-
-    function_pct = pct(
-        matched_functions,
-        total_functions,
-    )
-
     return {
-        "fuzzy_match_percent": code_pct,
+        "fuzzy_match_percent":
+            percent(
+                matched_code,
+                total_code,
+            ),
 
-        "total_code": str(total_code),
-        "matched_code": str(matched_code),
-        "matched_code_percent": code_pct,
+        "total_code":
+            str(total_code),
 
-        "total_data": "0",
-        "matched_data": "0",
-        "matched_data_percent": 0.0,
+        "matched_code":
+            str(matched_code),
 
-        "total_functions": total_functions,
-        "matched_functions": matched_functions,
-        "matched_functions_percent": function_pct,
+        "matched_code_percent":
+            percent(
+                matched_code,
+                total_code,
+            ),
 
-        "complete_code": str(matched_code),
-        "complete_code_percent": code_pct,
+        "total_data":
+            "0",
 
-        "complete_data": "0",
-        "complete_data_percent": 0.0,
+        "matched_data":
+            "0",
 
-        "total_units": total_units,
-        "complete_units": complete_units,
+        "matched_data_percent":
+            0.0,
+
+        "total_functions":
+            total_functions,
+
+        "matched_functions":
+            matched_functions,
+
+        "matched_functions_percent":
+            percent(
+                matched_functions,
+                total_functions,
+            ),
+
+        "complete_code":
+            str(matched_code),
+
+        "complete_code_percent":
+            percent(
+                matched_code,
+                total_code,
+            ),
+
+        "complete_data":
+            "0",
+
+        "complete_data_percent":
+            0.0,
+
+        "total_units":
+            total_units,
+
+        "complete_units":
+            complete_units,
     }
-
-
-def read_manifest():
-    result = []
-
-    for raw in MANIFEST.read_text().splitlines():
-        if (
-            not raw.strip()
-            or raw.lstrip().startswith("#")
-            or "\t" not in raw
-        ):
-            continue
-
-        source = raw.split(
-            "\t",
-            1,
-        )[0].strip()
-
-        result.append(source)
-
-    return result
-
-
-def read_ranges():
-    text = DELINKS.read_text()
-
-    block_re = re.compile(
-        r"(?ms)^"
-        r"([^\s:#][^:\n]*\.c):\s*\n"
-        r"(.*?)"
-        r"(?="
-        r"^[^\s:#][^:\n]*\.c:\s*\n"
-        r"|\Z"
-        r")"
-    )
-
-    range_re = re.compile(
-        r"\.text\s+"
-        r"start:(0x[0-9A-Fa-f]+)\s+"
-        r"end:(0x[0-9A-Fa-f]+)"
-    )
-
-    result = {}
-
-    for match in block_re.finditer(text):
-        source = match.group(1).strip()
-        body = match.group(2)
-
-        range_match = range_re.search(body)
-
-        if range_match is None:
-            continue
-
-        start = int(
-            range_match.group(1),
-            16,
-        )
-
-        end = int(
-            range_match.group(2),
-            16,
-        )
-
-        if end <= start:
-            raise RuntimeError(
-                f"Invalid range for {source}: "
-                f"0x{start:X}-0x{end:X}"
-            )
-
-        result[source] = (
-            start,
-            end,
-        )
-
-    return result
 
 
 def main():
@@ -146,127 +101,229 @@ def main():
 
     parser.add_argument(
         "--out",
-        default="build/decomp-dev/report.json",
+        default=(
+            "build/decomp-dev/"
+            "report.json"
+        ),
     )
 
     args = parser.parse_args()
 
-    manifest = read_manifest()
-    ranges = read_ranges()
-
-    matched = []
-
-    for source in manifest:
-        if source not in ranges:
-            raise RuntimeError(
-                f"No delink range for {source}"
-            )
-
-        start, end = ranges[source]
-
-        matched.append(
-            {
-                "source": source,
-                "name": Path(source).stem,
-                "start": start,
-                "end": end,
-                "size": end - start,
-            }
-        )
-
-    matched.sort(
-        key=lambda row: row["start"]
+    snapshot = json.loads(
+        SNAPSHOT.read_text()
     )
 
-    matched_code = sum(
-        row["size"]
-        for row in matched
-    )
-
-    matched_functions = len(matched)
-
-    if matched_code > TOTAL_CODE:
+    if snapshot.get(
+        "version"
+    ) != 2:
         raise RuntimeError(
-            "Matched code exceeds total."
+            "Unsupported ARM9 unit "
+            "snapshot version."
         )
 
-    if matched_functions > TOTAL_FUNCTIONS:
-        raise RuntimeError(
-            "Matched functions exceed total."
-        )
-
-    remaining_code = (
-        TOTAL_CODE
-        - matched_code
+    total_code = int(
+        snapshot["total_code"]
     )
 
-    remaining_functions = (
-        TOTAL_FUNCTIONS
-        - matched_functions
+    total_functions = int(
+        snapshot[
+            "total_functions"
+        ]
+    )
+
+    expected_matched_code = int(
+        snapshot["matched_code"]
+    )
+
+    expected_matched_functions = int(
+        snapshot[
+            "matched_functions"
+        ]
     )
 
     units = []
 
-    for row in matched:
-        size = row["size"]
+    matched_code = 0
+    matched_functions = 0
+    complete_units = 0
 
-        units.append(
-            {
-                "name": row["name"],
+    real_unit_code_sum = 0
+    real_unit_function_sum = 0
 
-                "measures": make_measures(
-                    size,
-                    size,
-                    1,
-                    1,
-                    1,
-                    1,
-                ),
-
-                "functions": [
-                    {
-                        "name": row["name"],
-                        "size": str(size),
-                        "fuzzy_match_percent": 100.0,
-                        "address": "0",
-
-                        "metadata": {
-                            "virtual_address":
-                                str(row["start"]),
-                        },
-                    }
-                ],
-
-                "metadata": {
-                    "complete": True,
-                    "source_path": row["source"],
-                    "progress_categories": [
-                        "arm9"
-                    ],
-                },
-            }
+    for row in snapshot[
+        "units"
+    ]:
+        code_size = int(
+            row["code_size"]
         )
 
-    # One synthetic unit represents all code that has not yet
-    # been converted to verified matching source. This gives
-    # decomp.dev the correct whole-ARM9 denominator without
-    # requiring the ROM or proprietary compiler in CI.
+        matched = bool(
+            row["matched"]
+        )
+
+        real_unit_code_sum += (
+            code_size
+        )
+
+        #
+        # Function inventory policy:
+        #
+        # We know each integrated source unit currently
+        # represents exactly one verified function.
+        #
+        # We intentionally DO NOT use nm-derived counts for
+        # unmatched DSD gap units because those split ELF
+        # objects do not preserve the complete config-level
+        # function inventory.
+        #
+        unit_total_functions = (
+            1
+            if matched
+            else 0
+        )
+
+        unit_matched_functions = (
+            1
+            if matched
+            else 0
+        )
+
+        real_unit_function_sum += (
+            unit_total_functions
+        )
+
+        unit_matched_code = (
+            code_size
+            if matched
+            else 0
+        )
+
+        if matched:
+            matched_code += (
+                code_size
+            )
+
+            matched_functions += 1
+            complete_units += 1
+
+        metadata = {
+            "complete": matched,
+
+            "auto_generated":
+                not matched,
+
+            "progress_categories": [
+                "arm9"
+            ],
+        }
+
+        if row.get(
+            "source_path"
+        ):
+            metadata[
+                "source_path"
+            ] = row["source_path"]
+
+        unit = {
+            "name":
+                row["name"],
+
+            "measures":
+                measures(
+                    code_size,
+                    unit_matched_code,
+                    unit_total_functions,
+                    unit_matched_functions,
+                    1,
+                    1 if matched else 0,
+                ),
+
+            "metadata":
+                metadata,
+        }
+
+        if matched:
+            function_name = row.get(
+                "matched_function",
+                row["name"],
+            )
+
+            unit["functions"] = [
+                {
+                    "name":
+                        function_name,
+
+                    "size":
+                        str(code_size),
+
+                    "fuzzy_match_percent":
+                        100.0,
+
+                    "address":
+                        "0",
+                }
+            ]
+
+        units.append(unit)
+
+    if (
+        real_unit_code_sum
+        != total_code
+    ):
+        raise RuntimeError(
+            "Real-unit code sum mismatch: "
+            f"{real_unit_code_sum} "
+            f"!= {total_code}"
+        )
+
+    #
+    # The remaining project-level function inventory goes in
+    # a zero-code bookkeeping unit.
+    #
+    # decomp.dev's treemap ignores units with total_code == 0,
+    # so this keeps the global function denominator honest
+    # without creating a bogus visual rectangle.
+    #
+    unmatched_function_inventory = (
+        total_functions
+        - real_unit_function_sum
+    )
+
+    if (
+        unmatched_function_inventory
+        < 0
+    ):
+        raise RuntimeError(
+            "Function bookkeeping "
+            "underflow."
+        )
+
     units.append(
         {
-            "name": "ARM9 remaining",
+            "name":
+                "ARM9 unmatched "
+                "function inventory",
 
-            "measures": make_measures(
-                remaining_code,
-                0,
-                remaining_functions,
-                0,
-                1,
-                0,
-            ),
+            "measures":
+                measures(
+                    0,
+                    0,
+                    unmatched_function_inventory,
+                    0,
+                    1,
+                    0,
+                ),
 
             "metadata": {
-                "complete": False,
-                "auto_generated": True,
+                "complete":
+                    False,
+
+                "auto_generated":
+                    True,
+
+                "bookkeeping_only":
+                    True,
+
                 "progress_categories": [
                     "arm9"
                 ],
@@ -274,27 +331,74 @@ def main():
         }
     )
 
-    overall = make_measures(
-        TOTAL_CODE,
+    if (
+        matched_code
+        != expected_matched_code
+    ):
+        raise RuntimeError(
+            "Matched code mismatch: "
+            f"{matched_code} != "
+            f"{expected_matched_code}"
+        )
+
+    if (
+        matched_functions
+        != expected_matched_functions
+    ):
+        raise RuntimeError(
+            "Matched function mismatch: "
+            f"{matched_functions} != "
+            f"{expected_matched_functions}"
+        )
+
+    summed_total_functions = sum(
+        int(
+            unit["measures"][
+                "total_functions"
+            ]
+        )
+        for unit in units
+    )
+
+    if (
+        summed_total_functions
+        != total_functions
+    ):
+        raise RuntimeError(
+            "Unit function totals "
+            "do not sum to project "
+            "denominator."
+        )
+
+    overall = measures(
+        total_code,
         matched_code,
-        TOTAL_FUNCTIONS,
+        total_functions,
         matched_functions,
         len(units),
-        matched_functions,
+        complete_units,
     )
 
     report = {
-        "measures": overall,
+        "measures":
+            overall,
 
-        "units": units,
+        "units":
+            units,
 
-        "version": 2,
+        "version":
+            2,
 
         "categories": [
             {
-                "id": "arm9",
-                "name": "ARM9 main .text",
-                "measures": overall,
+                "id":
+                    "arm9",
+
+                "name":
+                    "ARM9 main .text",
+
+                "measures":
+                    overall,
             }
         ],
     }
@@ -314,37 +418,70 @@ def main():
         + "\n"
     )
 
+    visible_units = [
+        unit
+        for unit in units
+        if int(
+            unit["measures"][
+                "total_code"
+            ]
+        ) > 0
+    ]
+
     print(
-        f"MATCHED_CODE={matched_code}"
+        "REAL_TREEMAP_UNITS="
+        + str(
+            len(visible_units)
+        )
     )
 
     print(
-        f"TOTAL_CODE={TOTAL_CODE}"
+        "BOOKKEEPING_UNITS="
+        + str(
+            len(units)
+            - len(visible_units)
+        )
     )
 
     print(
-        "CODE_PERCENT="
-        f"{pct(matched_code, TOTAL_CODE):.6f}"
+        "COMPLETE_CODE_UNITS="
+        + str(
+            complete_units
+        )
     )
 
     print(
-        f"MATCHED_FUNCTIONS={matched_functions}"
+        "MATCHED_CODE="
+        f"{matched_code}/"
+        f"{total_code}"
     )
 
     print(
-        f"TOTAL_FUNCTIONS={TOTAL_FUNCTIONS}"
+        "MATCHED_CODE_PERCENT="
+        f"{percent(matched_code, total_code):.6f}"
     )
 
     print(
-        "FUNCTION_PERCENT="
-        f"{pct(matched_functions, TOTAL_FUNCTIONS):.6f}"
+        "MATCHED_FUNCTIONS="
+        f"{matched_functions}/"
+        f"{total_functions}"
     )
 
     print(
-        f"REPORT={output}"
+        "MATCHED_FUNCTION_PERCENT="
+        f"{percent(matched_functions, total_functions):.6f}"
     )
 
-    print("REPORT_VERSION=2")
+    print(
+        "UNMATCHED_FUNCTION_INVENTORY="
+        + str(
+            unmatched_function_inventory
+        )
+    )
+
+    print(
+        "REPORT_VERSION=2"
+    )
 
 
 if __name__ == "__main__":
