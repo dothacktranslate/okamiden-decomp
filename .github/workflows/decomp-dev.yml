@@ -1,0 +1,74 @@
+name: decomp.dev report
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Generate objdiff v2 report
+        run: |
+          python3 tools/decomp-dev-report.py \
+            --out build/decomp-dev/report.json
+
+      - name: Validate report
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path(
+              "build/decomp-dev/report.json"
+          )
+
+          report = json.loads(
+              path.read_text()
+          )
+
+          assert report["version"] == 2
+          assert "measures" in report
+          assert "units" in report
+          assert "categories" in report
+
+          m = report["measures"]
+
+          print(
+              "Code:",
+              m["matched_code"],
+              "/",
+              m["total_code"],
+              "(",
+              m["matched_code_percent"],
+              "%)",
+          )
+
+          print(
+              "Functions:",
+              m["matched_functions"],
+              "/",
+              m["total_functions"],
+              "(",
+              m["matched_functions_percent"],
+              "%)",
+          )
+          PY
+
+      - name: Upload decomp.dev report
+        uses: actions/upload-artifact@v7
+        with:
+          name: us_report
+          path: build/decomp-dev/report.json
+          if-no-files-found: error
+          retention-days: 90
