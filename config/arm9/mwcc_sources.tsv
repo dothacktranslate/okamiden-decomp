@@ -15,3 +15,8 @@ src/main/func_0203a7cc.c	-O2 -interworking
 src/main/func_0203a824.c	-O2 -interworking
 src/main/func_02042e04.c	-O2 -interworking
 src/main/func_02042e24.c	-O2 -interworking
+src/main/func_02042e48.c	-O2 -interworking
+src/main/func_02042e54.c	-O2 -interworking
+src/main/func_02042e98.c	-O2 -interworking
+src/main/func_02042ea4.c	-O2 -interworking
+src/main/func_02042eb0.c	-O2 -interworking

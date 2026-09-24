@@ -53,3 +53,23 @@ src/main/func_02042e04.c:
 src/main/func_02042e24.c:
     complete
     .text       start:0x02042e24 end:0x02042e46
+
+src/main/func_02042e48.c:
+    complete
+    .text       start:0x02042e48 end:0x02042e54
+
+src/main/func_02042e54.c:
+    complete
+    .text       start:0x02042e54 end:0x02042e60
+
+src/main/func_02042e98.c:
+    complete
+    .text       start:0x02042e98 end:0x02042ea4
+
+src/main/func_02042ea4.c:
+    complete
+    .text       start:0x02042ea4 end:0x02042eb0
+
+src/main/func_02042eb0.c:
+    complete
+    .text       start:0x02042eb0 end:0x02042ebc
