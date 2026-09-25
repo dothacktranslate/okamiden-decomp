@@ -23,3 +23,6 @@ src/main/func_02042eb0.c	-O2 -interworking
 src/main/func_02042e60.c	-O1,p -interworking
 src/main/func_02042ebc.c	-O1,p -interworking
 src/main/func_02042ee4.c	-O1,p -interworking
+src/main/func_02042f0c.c	-O2 -interworking
+src/main/func_02042f44.c	-O2 -interworking
+src/main/func_02042f7c.c	-O2 -interworking
