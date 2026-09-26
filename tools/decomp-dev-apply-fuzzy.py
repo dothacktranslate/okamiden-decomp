@@ -273,6 +273,19 @@ def main():
         "fuzzy_match_percent"
     ] = fuzzy_percent
 
+    # Keep the published report strictly within objdiff's
+    # protobuf JSON schema. Project-local fuzzy provenance lives in
+    # config/arm9/fuzzy_sources.tsv, not report metadata.
+    for unit in units:
+        metadata = unit.get("metadata")
+
+        if not isinstance(metadata, dict):
+            continue
+
+        metadata.pop("fuzzy_source_path", None)
+        metadata.pop("fuzzy_metric", None)
+        metadata.pop("fuzzy_score", None)
+
     report_path.write_text(
         json.dumps(
             report,
