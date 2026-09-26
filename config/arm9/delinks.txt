@@ -117,3 +117,19 @@ src/main/func_02043160.c:
 src/main/func_020433d4.c:
     complete
     .text       start:0x020433d4 end:0x020433dc
+
+src/main/func_02044998.c:
+    complete
+    .text       start:0x02044998 end:0x020449a4
+
+src/main/func_02044fe8.c:
+    complete
+    .text       start:0x02044fe8 end:0x02044ff8
+
+src/main/func_0204501c.c:
+    complete
+    .text       start:0x0204501c end:0x02045022
+
+src/main/func_02045024.c:
+    complete
+    .text       start:0x02045024 end:0x02045038

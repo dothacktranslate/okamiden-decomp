@@ -31,3 +31,7 @@ src/main/func_02043070.c	-O2 -interworking
 src/main/func_020430e0.c	-O2 -interworking
 src/main/func_02043160.c	-O2 -interworking
 src/main/func_020433d4.c	-O2 -interworking
+src/main/func_02044998.c	-O2 -interworking
+src/main/func_02044fe8.c	-O2 -interworking
+src/main/func_0204501c.c	-O2 -interworking
+src/main/func_02045024.c	-O2 -interworking
