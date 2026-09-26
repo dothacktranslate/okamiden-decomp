@@ -1,0 +1,16 @@
+# source	flags	score	reference_size	metric
+src/nonmatching/func_02042fe8.c	-O2 -interworking	94.5797	64	structural-v1
+src/nonmatching/func_02043028.c	-O2 -interworking	81.6134	72	structural-v1
+src/nonmatching/func_0204309c.c	-O2 -interworking	80.9994	68	structural-v1
+src/nonmatching/func_0204310c.c	-O2 -interworking	95.9524	84	structural-v1
+src/nonmatching/func_02043194.c	-O2 -interworking	59.6316	84	structural-v1
+src/nonmatching/func_020431e8.c	-O2 -interworking	59.3347	38	structural-v1
+src/nonmatching/func_02043210.c	-O2 -interworking	83.8656	44	structural-v1
+src/nonmatching/func_0204323c.c	-O2 -interworking	79.8526	38	structural-v1
+src/nonmatching/func_02043264.c	-O2 -interworking	87.6923	52	structural-v1
+src/nonmatching/func_02043298.c	-O2 -interworking	68.8182	120	structural-v1
+src/nonmatching/func_02043310.c	-O2 -interworking	93.2203	112	structural-v1
+src/nonmatching/func_02043380.c	-O2 -interworking	96.8293	84	structural-v1
+src/nonmatching/func_020433dc.c	-O2 -interworking	91.9632	352	structural-v1
+src/nonmatching/func_0204353c.c	-O2 -interworking	94.4915	240	structural-v1
+src/nonmatching/func_0204362c.c	-O2 -interworking	98.9474	116	structural-v1

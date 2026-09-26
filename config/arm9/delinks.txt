@@ -97,3 +97,23 @@ src/main/func_02042f44.c:
 src/main/func_02042f7c.c:
     complete
     .text       start:0x02042f7c end:0x02042fb4
+
+src/main/func_02042fb4.c:
+    complete
+    .text       start:0x02042fb4 end:0x02042fe6
+
+src/main/func_02043070.c:
+    complete
+    .text       start:0x02043070 end:0x0204309a
+
+src/main/func_020430e0.c:
+    complete
+    .text       start:0x020430e0 end:0x0204310a
+
+src/main/func_02043160.c:
+    complete
+    .text       start:0x02043160 end:0x02043192
+
+src/main/func_020433d4.c:
+    complete
+    .text       start:0x020433d4 end:0x020433dc
