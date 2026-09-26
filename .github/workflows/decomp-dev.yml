@@ -23,6 +23,12 @@ jobs:
           python3 tools/decomp-dev-report.py \
             --out build/decomp-dev/report.json
 
+      - name: Apply fuzzy progress
+        run: |
+          python3 tools/decomp-dev-apply-fuzzy.py \
+            --report build/decomp-dev/report.json \
+            --manifest config/arm9/fuzzy_sources.tsv
+
       - name: Validate report
         run: |
           python3 - <<'PY'
