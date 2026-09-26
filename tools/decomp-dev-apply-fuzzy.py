@@ -49,12 +49,10 @@ def parse_manifest(path):
 
         if size <= 0:
             raise RuntimeError(
-                f"Invalid fuzzy size for {name}"
+                f"Invalid size for {name}"
             )
 
-        source_path = ROOT / source
-
-        if not source_path.exists():
+        if not (ROOT / source).exists():
             raise RuntimeError(
                 f"Missing fuzzy source: {source}"
             )
@@ -76,30 +74,106 @@ def parse_manifest(path):
 
 
 def find_function_unit(units, name):
-    direct = [
-        unit
-        for unit in units
-        if unit.get("name") == name
-    ]
-
-    if len(direct) == 1:
-        return direct[0]
-
     found = []
 
     for unit in units:
-        for function in unit.get("functions", []):
+        for function in unit.get(
+            "functions",
+            [],
+        ):
             if function.get("name") == name:
                 found.append(unit)
                 break
 
     if len(found) != 1:
         raise RuntimeError(
-            f"Expected exactly one report unit "
-            f"for {name}, found {len(found)}"
+            f"Expected one report unit for "
+            f"{name}, found {len(found)}"
         )
 
     return found[0]
+
+
+def percentage(part, total):
+    if not total:
+        return 0.0
+
+    return (
+        float(part)
+        * 100.0
+        / float(total)
+    )
+
+
+def apply_weighted_measures(measures, equivalent):
+    total_code = int(
+        measures.get(
+            "total_code",
+            0,
+        )
+    )
+
+    if total_code <= 0:
+        return
+
+    percent = percentage(
+        equivalent,
+        total_code,
+    )
+
+    # objdiff/decomp.dev semantics:
+    #
+    # matched_code:
+    #     fuzzy-weighted partial progress
+    #
+    # complete_code:
+    #     byte-exact progress
+    #
+    # matched_code is uint64 in the report schema,
+    # so the weighted byte-equivalent is rounded only
+    # for that integer field. The percent retains the
+    # full floating-point value.
+    measures["matched_code"] = str(
+        int(round(equivalent))
+    )
+
+    measures[
+        "matched_code_percent"
+    ] = percent
+
+    measures[
+        "fuzzy_match_percent"
+    ] = percent
+
+
+def unit_equivalent(unit):
+    result = 0.0
+
+    for function in unit.get(
+        "functions",
+        [],
+    ):
+        size = int(
+            function.get(
+                "size",
+                0,
+            )
+        )
+
+        score = float(
+            function.get(
+                "fuzzy_match_percent",
+                0.0,
+            )
+        )
+
+        result += (
+            size
+            * score
+            / 100.0
+        )
+
+    return result
 
 
 def main():
@@ -135,6 +209,10 @@ def main():
             "Report has no units list."
         )
 
+    # ---------------------------------------------------------
+    # Apply per-function fuzzy percentages.
+    # ---------------------------------------------------------
+
     for row in rows:
         unit = find_function_unit(
             units,
@@ -147,7 +225,8 @@ def main():
                 "functions",
                 [],
             )
-            if function.get("name") == row["name"]
+            if function.get("name")
+            == row["name"]
         ]
 
         if len(functions) != 1:
@@ -159,30 +238,35 @@ def main():
         function = functions[0]
 
         actual_size = int(
-            function.get("size", 0)
-        )
-
-        if actual_size != row["size"]:
-            raise RuntimeError(
-                f"Size mismatch for {row['name']}: "
-                f"report={actual_size}, "
-                f"manifest={row['size']}"
-            )
-
-        matched_functions = int(
-            unit.get(
-                "measures",
-                {},
-            ).get(
-                "matched_functions",
+            function.get(
+                "size",
                 0,
             )
         )
 
-        if matched_functions != 0:
+        if actual_size != row["size"]:
             raise RuntimeError(
-                f"Fuzzy manifest contains exact "
-                f"function {row['name']}"
+                f"Size mismatch for "
+                f"{row['name']}: "
+                f"report={actual_size}, "
+                f"manifest={row['size']}"
+            )
+
+        complete_code = int(
+            unit.get(
+                "measures",
+                {},
+            ).get(
+                "complete_code",
+                0,
+            )
+        )
+
+        if complete_code != 0:
+            raise RuntimeError(
+                f"Fuzzy manifest contains "
+                f"complete function "
+                f"{row['name']}"
             )
 
         function[
@@ -197,15 +281,6 @@ def main():
                 section[
                     "fuzzy_match_percent"
                 ] = row["score"]
-
-        measures = unit.setdefault(
-            "measures",
-            {},
-        )
-
-        measures[
-            "fuzzy_match_percent"
-        ] = row["score"]
 
         metadata = unit.setdefault(
             "metadata",
@@ -224,35 +299,39 @@ def main():
             "fuzzy_score"
         ] = row["score"]
 
-    fuzzy_equivalent_code = 0.0
-    function_code = 0
+    # ---------------------------------------------------------
+    # Recalculate each unit's fuzzy-weighted matched_code.
+    # complete_code is deliberately untouched.
+    # ---------------------------------------------------------
 
     for unit in units:
-        for function in unit.get(
-            "functions",
-            [],
+        measures = unit.get(
+            "measures"
+        )
+
+        if not isinstance(
+            measures,
+            dict,
         ):
-            size = int(
-                function.get(
-                    "size",
-                    0,
-                )
-            )
+            continue
 
-            score = float(
-                function.get(
-                    "fuzzy_match_percent",
-                    0.0,
-                )
-            )
+        equivalent = unit_equivalent(
+            unit
+        )
 
-            function_code += size
+        apply_weighted_measures(
+            measures,
+            equivalent,
+        )
 
-            fuzzy_equivalent_code += (
-                size
-                * score
-                / 100.0
-            )
+    # ---------------------------------------------------------
+    # Whole-report fuzzy progress.
+    # ---------------------------------------------------------
+
+    fuzzy_equivalent_code = sum(
+        unit_equivalent(unit)
+        for unit in units
+    )
 
     measures = report.get(
         "measures",
@@ -263,15 +342,66 @@ def main():
         measures["total_code"]
     )
 
-    fuzzy_percent = (
-        100.0
-        * fuzzy_equivalent_code
-        / total_code
+    fuzzy_percent = percentage(
+        fuzzy_equivalent_code,
+        total_code,
     )
 
-    measures[
-        "fuzzy_match_percent"
-    ] = fuzzy_percent
+    apply_weighted_measures(
+        measures,
+        fuzzy_equivalent_code,
+    )
+
+    # ---------------------------------------------------------
+    # Categories: recompute fuzzy-weighted progress from units
+    # tagged with each progress category.
+    # ---------------------------------------------------------
+
+    for category in report.get(
+        "categories",
+        [],
+    ):
+        category_id = category.get(
+            "id"
+        )
+
+        category_measures = category.get(
+            "measures"
+        )
+
+        if (
+            not category_id
+            or not isinstance(
+                category_measures,
+                dict,
+            )
+        ):
+            continue
+
+        equivalent = 0.0
+
+        for unit in units:
+            progress_categories = (
+                unit.get(
+                    "metadata",
+                    {},
+                ).get(
+                    "progress_categories",
+                    [],
+                )
+            )
+
+            if category_id not in progress_categories:
+                continue
+
+            equivalent += unit_equivalent(
+                unit
+            )
+
+        apply_weighted_measures(
+            category_measures,
+            equivalent,
+        )
 
     report_path.write_text(
         json.dumps(
@@ -281,12 +411,27 @@ def main():
         + "\n"
     )
 
-    print(
-        f"FUZZY_FUNCTIONS={len(rows)}"
+    complete_code = int(
+        measures.get(
+            "complete_code",
+            0,
+        )
+    )
+
+    complete_percent = float(
+        measures.get(
+            "complete_code_percent",
+            0.0,
+        )
+    )
+
+    matched_code = int(
+        measures["matched_code"]
     )
 
     print(
-        f"FUNCTION_CODE={function_code}"
+        f"FUZZY_FUNCTIONS="
+        f"{len(rows)}"
     )
 
     print(
@@ -295,18 +440,27 @@ def main():
     )
 
     print(
-        "FUZZY_MATCH_PERCENT="
+        "MATCHED_CODE="
+        f"{matched_code}/{total_code}"
+    )
+
+    print(
+        "MATCHED_CODE_PERCENT="
         f"{fuzzy_percent:.6f}%"
     )
 
     print(
-        "EXACT_MATCHED_CODE="
-        f"{measures['matched_code']}/"
-        f"{measures['total_code']}"
+        "COMPLETE_CODE="
+        f"{complete_code}/{total_code}"
     )
 
     print(
-        "EXACT_MATCHED_FUNCTIONS="
+        "COMPLETE_CODE_PERCENT="
+        f"{complete_percent:.6f}%"
+    )
+
+    print(
+        "EXACT_FUNCTIONS="
         f"{measures['matched_functions']}/"
         f"{measures['total_functions']}"
     )
