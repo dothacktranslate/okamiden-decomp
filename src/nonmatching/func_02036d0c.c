@@ -1,0 +1,115 @@
+typedef unsigned char undefined;
+typedef unsigned char undefined1;
+typedef unsigned short undefined2;
+typedef unsigned int undefined4;
+typedef unsigned long long undefined8;
+
+typedef unsigned int uint;
+typedef unsigned short ushort;
+typedef unsigned char uchar;
+typedef signed char sbyte;
+typedef unsigned char byte;
+
+typedef long long longlong;
+typedef unsigned long long ulonglong;
+
+typedef int bool;
+
+#ifndef true
+#define true 1
+#endif
+
+#ifndef false
+#define false 0
+#endif
+
+typedef int code();
+
+extern int LZCOUNT();
+
+#define CONCAT11(a,b) \
+    ((((unsigned int)(a) & 0xffU) << 8) | \
+     ((unsigned int)(b) & 0xffU))
+
+#define CONCAT12(a,b) \
+    ((((unsigned int)(a) & 0xffU) << 16) | \
+     ((unsigned int)(b) & 0xffffU))
+
+#define CONCAT13(a,b) \
+    ((((unsigned int)(a) & 0xffU) << 24) | \
+     ((unsigned int)(b) & 0xffffffU))
+
+#define CONCAT14(a,b) \
+    ((((unsigned long long)(a) & 0xffULL) << 32) | \
+     ((unsigned long long)(b) & 0xffffffffULL))
+
+#define CONCAT15(a,b) \
+    ((((unsigned long long)(a) & 0xffULL) << 40) | \
+     ((unsigned long long)(b) & 0xffffffffffULL))
+
+#define CONCAT16(a,b) \
+    ((((unsigned long long)(a) & 0xffULL) << 48) | \
+     ((unsigned long long)(b) & 0xffffffffffffULL))
+
+#define CONCAT17(a,b) \
+    ((((unsigned long long)(a) & 0xffULL) << 56) | \
+     ((unsigned long long)(b) & 0xffffffffffffffULL))
+
+#define CONCAT21(a,b) \
+    ((((unsigned int)(a) & 0xffffU) << 8) | \
+     ((unsigned int)(b) & 0xffU))
+
+#define CONCAT22(a,b) \
+    ((((unsigned int)(a) & 0xffffU) << 16) | \
+     ((unsigned int)(b) & 0xffffU))
+
+#define CONCAT31(a,b) \
+    ((((unsigned int)(a) & 0xffffffU) << 8) | \
+     ((unsigned int)(b) & 0xffU))
+
+#define CONCAT44(a,b) \
+    ((((unsigned long long)(a)) << 32) | \
+     ((unsigned int)(b)))
+
+#define CARRY4(a,b) \
+    ((uint)(a) > (uint)(0xffffffffU - (uint)(b)))
+
+#define SCARRY4(a,b) \
+    ((((int)(a) < 0) == ((int)(b) < 0)) && \
+     (((int)((uint)(a) + (uint)(b)) < 0) != \
+      ((int)(a) < 0)))
+
+#define SBORROW4(a,b) \
+    ((((int)(a) < 0) != ((int)(b) < 0)) && \
+     (((int)((uint)(a) - (uint)(b)) < 0) != \
+      ((int)(a) < 0)))
+
+extern int func_02034d04();
+extern int func_02035870();
+
+undefined4 func_02036d0c(int param_1,int param_2,int param_3,undefined4 param_4)
+
+{
+  code *pcVar1;
+  undefined1 auStack_18 [4];
+  undefined4 uStack_14;
+
+  *(short *)(param_2 + 0x20) = *(short *)(param_2 + 0x20) + -1;
+  if (*(short *)(param_2 + 0x20) == 0) {
+    pcVar1 = *(code **)(*(int *)(param_2 + 0x18) + 0xc);
+    uStack_14 = param_4;
+    if (pcVar1 != (code *)0x0) {
+      (*pcVar1)(param_2);
+    }
+    if (*(int *)(param_2 + 0x1c) != 0) {
+      func_02034d04((*(unsigned int *)0x02036db4));
+      *(undefined4 *)(param_2 + 0x1c) = 0;
+    }
+    if (param_3 != 0) {
+      func_02035870(auStack_18,param_1 + 0xc,param_2 + 4);
+    }
+    (**(code **)(**(int **)(param_1 + 4) + 0xc))(*(int **)(param_1 + 4),param_2);
+    return 1;
+  }
+  return 0;
+}

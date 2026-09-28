@@ -1,0 +1,185 @@
+#pragma thumb on
+
+typedef unsigned char undefined;
+typedef unsigned char undefined1;
+typedef unsigned short undefined2;
+typedef unsigned int undefined4;
+typedef unsigned long long undefined8;
+
+typedef unsigned int uint;
+typedef unsigned short ushort;
+typedef unsigned char uchar;
+typedef signed char sbyte;
+typedef unsigned char byte;
+
+typedef long long longlong;
+typedef unsigned long long ulonglong;
+
+typedef int bool;
+
+#ifndef true
+#define true 1
+#endif
+
+#ifndef false
+#define false 0
+#endif
+
+typedef int code();
+
+extern int LZCOUNT();
+
+#define CONCAT11(a,b) \
+    ((((unsigned int)(a) & 0xffU) << 8) | \
+     ((unsigned int)(b) & 0xffU))
+
+#define CONCAT12(a,b) \
+    ((((unsigned int)(a) & 0xffU) << 16) | \
+     ((unsigned int)(b) & 0xffffU))
+
+#define CONCAT13(a,b) \
+    ((((unsigned int)(a) & 0xffU) << 24) | \
+     ((unsigned int)(b) & 0xffffffU))
+
+#define CONCAT14(a,b) \
+    ((((unsigned long long)(a) & 0xffULL) << 32) | \
+     ((unsigned long long)(b) & 0xffffffffULL))
+
+#define CONCAT15(a,b) \
+    ((((unsigned long long)(a) & 0xffULL) << 40) | \
+     ((unsigned long long)(b) & 0xffffffffffULL))
+
+#define CONCAT16(a,b) \
+    ((((unsigned long long)(a) & 0xffULL) << 48) | \
+     ((unsigned long long)(b) & 0xffffffffffffULL))
+
+#define CONCAT17(a,b) \
+    ((((unsigned long long)(a) & 0xffULL) << 56) | \
+     ((unsigned long long)(b) & 0xffffffffffffffULL))
+
+#define CONCAT21(a,b) \
+    ((((unsigned int)(a) & 0xffffU) << 8) | \
+     ((unsigned int)(b) & 0xffU))
+
+#define CONCAT22(a,b) \
+    ((((unsigned int)(a) & 0xffffU) << 16) | \
+     ((unsigned int)(b) & 0xffffU))
+
+#define CONCAT31(a,b) \
+    ((((unsigned int)(a) & 0xffffffU) << 8) | \
+     ((unsigned int)(b) & 0xffU))
+
+#define CONCAT44(a,b) \
+    ((((unsigned long long)(a)) << 32) | \
+     ((unsigned int)(b)))
+
+#define CARRY4(a,b) \
+    ((uint)(a) > (uint)(0xffffffffU - (uint)(b)))
+
+#define SCARRY4(a,b) \
+    ((((int)(a) < 0) == ((int)(b) < 0)) && \
+     (((int)((uint)(a) + (uint)(b)) < 0) != \
+      ((int)(a) < 0)))
+
+#define SBORROW4(a,b) \
+    ((((int)(a) < 0) != ((int)(b) < 0)) && \
+     (((int)((uint)(a) - (uint)(b)) < 0) != \
+      ((int)(a) < 0)))
+
+extern int func_020071d0();
+extern int func_020099f0();
+extern int func_02009b68();
+extern int func_02015440();
+extern int func_020154bc();
+extern int func_02021ed4();
+extern int func_02021f80();
+extern int func_02033028();
+
+int func_0202207c(undefined4 param_1,undefined4 param_2,int param_3,int param_4)
+
+{
+  undefined4 uVar1;
+  int iVar2;
+  undefined4 *puVar3;
+  int iVar4;
+  undefined4 local_414 [256];
+
+  puVar3 = local_414;
+  iVar4 = 0x20;
+  do {
+    *puVar3 = 0;
+    puVar3[1] = 0;
+    puVar3[2] = 0;
+    puVar3[3] = 0;
+    puVar3[4] = 0;
+    puVar3[5] = 0;
+    puVar3[6] = 0;
+    puVar3[7] = 0;
+    puVar3 = puVar3 + 8;
+    iVar4 = iVar4 + -1;
+  } while (iVar4 != 0);
+  iVar4 = func_02021f80(param_1);
+  if (iVar4 == 0) {
+    func_020071d0(1000);
+    return 9;
+  }
+  if (param_4 == 0) {
+    func_02015440(local_414,((unsigned int)0x0202222c));
+    func_02009b68(((unsigned int)0x02022230),param_3,0x10);
+    iVar4 = ((unsigned int)0x02022234);
+    *(undefined4 *)(param_3 + ((unsigned int)0x02022234)) = 0;
+    uVar1 = func_020154bc(local_414,param_3,iVar4 + 4);
+    *(undefined4 *)(param_3 + iVar4) = uVar1;
+    iVar2 = func_02021ed4(param_1,0,param_2,local_414);
+    if (iVar2 != 0) {
+      return iVar2;
+    }
+    iVar2 = func_02033028((*(unsigned int *)0x02022238),0x18,param_3,iVar4 + 4,1);
+    if (iVar2 == 0) {
+      iVar4 = func_02021f80(param_1);
+      if (iVar4 != 0) {
+        return 4;
+      }
+      return 9;
+    }
+    iVar4 = func_02033028((*(unsigned int *)0x02022238),iVar4 + 0x1c,param_3,iVar4 + 4,1);
+    if (iVar4 == 0) {
+      iVar4 = func_02021f80(param_1);
+      if (iVar4 != 0) {
+        return 4;
+      }
+      return 9;
+    }
+  }
+  else {
+    func_020099f0(((unsigned int)0x0202223c),0,0x18);
+    func_020099f0(((unsigned int)0x02022240),0,0xf20);
+    puVar3 = ((unsigned int)0x02022238);
+    iVar4 = func_02033028((*(unsigned int *)0x02022238),0,((unsigned int)0x0202223c),0x18,1);
+    if (iVar4 == 0) {
+      iVar4 = func_02021f80(param_1);
+      if (iVar4 != 0) {
+        return 4;
+      }
+      return 9;
+    }
+    iVar4 = func_02033028(*puVar3,0x18,((unsigned int)0x02022240),0xf20,1);
+    if (iVar4 == 0) {
+      iVar4 = func_02021f80(param_1);
+      if (iVar4 != 0) {
+        return 4;
+      }
+      return 9;
+    }
+    iVar4 = func_02033028(*puVar3,0xf38,((unsigned int)0x02022240),0xf20,1);
+    if (iVar4 == 0) {
+      iVar4 = func_02021f80(param_1);
+      if (iVar4 != 0) {
+        return 4;
+      }
+      return 9;
+    }
+    func_020099f0(param_2,0,0x18);
+  }
+  return 0;
+}
