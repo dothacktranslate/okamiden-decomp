@@ -1357,3 +1357,87 @@ src/main/func_0203bc3c.c:
 src/main/func_02056310.c:
     complete
     .text       start:0x02056310 end:0x02056370
+
+src/main/func_0202cc4c.c:
+    complete
+    .text       start:0x0202cc4c end:0x0202cc6c
+
+src/main/func_02032cec.c:
+    complete
+    .text       start:0x02032cec end:0x02032d04
+
+src/main/func_02037b6c.c:
+    complete
+    .text       start:0x02037b6c end:0x02037b8c
+
+src/main/func_020381cc.c:
+    complete
+    .text       start:0x020381cc end:0x02038208
+
+src/main/func_020419a8.c:
+    complete
+    .text       start:0x020419a8 end:0x020419d2
+
+src/main/func_02041a80.c:
+    complete
+    .text       start:0x02041a80 end:0x02041a98
+
+src/main/func_02041a98.c:
+    complete
+    .text       start:0x02041a98 end:0x02041ab2
+
+src/main/func_02041ab4.c:
+    complete
+    .text       start:0x02041ab4 end:0x02041acc
+
+src/main/func_02046414.c:
+    complete
+    .text       start:0x02046414 end:0x02046444
+
+src/main/func_020464e8.c:
+    complete
+    .text       start:0x020464e8 end:0x02046504
+
+src/main/func_02046868.c:
+    complete
+    .text       start:0x02046868 end:0x02046898
+
+src/main/func_02046b84.c:
+    complete
+    .text       start:0x02046b84 end:0x02046bc4
+
+src/main/func_02046d10.c:
+    complete
+    .text       start:0x02046d10 end:0x02046d44
+
+src/main/func_02057c60.c:
+    complete
+    .text       start:0x02057c60 end:0x02057c88
+
+src/main/func_02058248.c:
+    complete
+    .text       start:0x02058248 end:0x0205826c
+
+src/main/func_02064d08.c:
+    complete
+    .text       start:0x02064d08 end:0x02064d30
+
+src/main/func_02065d1c.c:
+    complete
+    .text       start:0x02065d1c end:0x02065d84
+
+src/main/func_02067640.c:
+    complete
+    .text       start:0x02067640 end:0x02067664
+
+src/main/func_02068484.c:
+    complete
+    .text       start:0x02068484 end:0x020684bc
+
+src/main/func_020684f8.c:
+    complete
+    .text       start:0x020684f8 end:0x02068514
+
+src/main/func_02068898.c:
+    complete
+    .text       start:0x02068898 end:0x020688c4
