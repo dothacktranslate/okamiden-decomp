@@ -1,3 +1,77 @@
+
+#ifndef OKAMIDEN_GHIDRA_RECOVERY_HELPERS
+#define OKAMIDEN_GHIDRA_RECOVERY_HELPERS
+
+#ifndef SUB42
+#define SUB42(x,o) \
+    ((unsigned short)( \
+        ((unsigned int)(x)) >> \
+        ((unsigned int)(o) * 8U)))
+#endif
+
+#ifndef SUB43
+#define SUB43(x,o) \
+    ((((unsigned int)(x)) >> \
+      ((unsigned int)(o) * 8U)) & \
+     0x00ffffffU)
+#endif
+
+#endif
+
+
+#ifndef OKAMIDEN_DS_REGISTER_COMPAT
+#define OKAMIDEN_DS_REGISTER_COMPAT
+
+#define _REG_A_DISPCNT \
+    (*(volatile unsigned int *)0x04000000)
+
+#define _REG_A_DISPSTAT \
+    (*(volatile unsigned short *)0x04000004)
+
+#define _REG_VCOUNT \
+    (*(volatile unsigned short *)0x04000006)
+
+#define _REG_A_MASTER_BRIGHT \
+    (*(volatile unsigned short *)0x0400006c)
+
+#define REG_B_DISPCNT \
+    (*(volatile unsigned int *)0x04001000)
+
+#define _REG_B_DISPCNT \
+    (*(volatile unsigned int *)0x04001000)
+
+#define VRAMCNT_E \
+    (*(volatile unsigned char *)0x04000244)
+
+#define _IPCFIFORECV \
+    (*(volatile unsigned int *)0x04100000)
+
+#define _D_ENGINE_A \
+    (*(volatile unsigned char *)0x04000000)
+
+/*
+ * DMA_CHANNEL_0_to_3 is deliberately byte-sized here:
+ * existing Ghidra output takes its address and adds byte
+ * offsets before casting back to uint *.
+ */
+#define DMA_CHANNEL_0_to_3 \
+    (*(volatile unsigned char *)0x040000b0)
+
+#define _DMA_CHANNEL_0_to_3 \
+    (*(volatile unsigned int *)0x040000b0)
+
+#endif
+
+
+#ifndef OKAMIDEN_GHIDRA_ODD_TYPES
+#define OKAMIDEN_GHIDRA_ODD_TYPES
+
+typedef unsigned int undefined3;
+typedef int int3;
+
+#endif
+
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;
@@ -84,35 +158,18 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_020424d0();
-
-undefined4 func_0203bc3c(int param_1)
+undefined4 func_02003ad0(uint *param_1,uint *param_2)
 
 {
-  int iVar1;
-  int iVar2;
-  uint uVar3;
+  uint *puVar1;
 
-  iVar2 = *(int *)(param_1 + 0x10);
-  uVar3 = 0;
-  if (*(int *)(param_1 + 0x20) != 0) {
-    do {
-      if (*(int *)(*(int *)(iVar2 + 0x20) + 0x54) != 0) {
-        iVar1 = *(int *)(iVar2 + 0x24);
-        if (iVar1 == 0) {
-          return 0;
-        }
-        if ((*(uint *)(iVar1 + 0xc) & 0x80000000) != 0) {
-          return 0;
-        }
-        iVar1 = func_020424d0(iVar1);
-        if ((*(ushort *)(iVar1 + 0x32) & 1) == 0) {
-          return 0;
-        }
-      }
-      uVar3 = uVar3 + 1;
-      iVar2 = iVar2 + 0x2c;
-    } while (uVar3 < *(uint *)(param_1 + 0x20));
+  puVar1 = ((unsigned int)0x04000600);
+  if (((*(unsigned int *)0x04000600) & 1) == 0) {
+    *param_1 = ((unsigned int *)0x04000600)[8];
+    param_1[1] = puVar1[9];
+    param_1[2] = puVar1[10];
+    *param_2 = puVar1[0xb];
+    return 0;
   }
-  return 1;
+  return 0xffffffff;
 }

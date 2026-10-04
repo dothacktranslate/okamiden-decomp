@@ -158,7 +158,7 @@ int func_020060b4(uint param_1)
 
   iVar1 = 0;
   if ((param_1 & 1) != 0) {
-    iVar1 = 0x20000;
+    iVar1 = iVar1 + 0x20000;
   }
   if ((param_1 & 2) != 0) {
     iVar1 = iVar1 + 0x20000;

@@ -1333,3 +1333,27 @@ src/main/func_0205e268.c:
 src/main/func_02065f48.c:
     complete
     .text       start:0x02065f48 end:0x02065f60
+
+src/main/func_02003ad0.c:
+    complete
+    .text       start:0x02003ad0 end:0x02003b10
+
+src/main/func_020060b4.c:
+    complete
+    .text       start:0x020060b4 end:0x02006108
+
+src/main/func_02021388.c:
+    complete
+    .text       start:0x02021388 end:0x020213e4
+
+src/main/func_020389a8.c:
+    complete
+    .text       start:0x020389a8 end:0x02038a08
+
+src/main/func_0203bc3c.c:
+    complete
+    .text       start:0x0203bc3c end:0x0203bcb8
+
+src/main/func_02056310.c:
+    complete
+    .text       start:0x02056310 end:0x02056370

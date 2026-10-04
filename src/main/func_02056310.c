@@ -84,21 +84,28 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-undefined4 func_020389a8(int param_1,int param_2,undefined2 *param_3,undefined2 *param_4)
+void func_02056310(undefined4 *param_1,int param_2)
 
 {
-  undefined2 uVar1;
-  undefined2 *puVar2;
+  uint uVar1;
+  undefined4 *puVar2;
 
-  uVar1 = (undefined2)((unsigned int)0x02038a04);
-  *param_3 = uVar1;
-  *param_4 = uVar1;
-  if ((((*(uint *)(param_1 + 8) & 1) == 0) &&
-      (puVar2 = (undefined2 *)(param_2 * 0x1c + *(int *)(param_1 + 0x20)), puVar2[2] != 0)) &&
-     (puVar2[3] == 0)) {
-    *param_3 = *puVar2;
-    *param_4 = puVar2[1];
-    return 1;
+  uVar1 = (uint)*(ushort *)((int)param_1 + 10);
+  puVar2 = (undefined4 *)(param_2 + uVar1);
+  if (*(int *)puVar2 == 0) {
+    *param_1 = puVar2[1];
   }
-  return 0;
+  else {
+    *(undefined4 *)(*(int *)puVar2 + uVar1 + 4) = puVar2[1];
+  }
+  if (puVar2[1] == 0) {
+    param_1[1] = *puVar2;
+  }
+  else {
+    *(undefined4 *)(puVar2[1] + (uint)*(ushort *)((int)param_1 + 10)) = *puVar2;
+  }
+  *puVar2 = 0;
+  puVar2[1] = 0;
+  *(ushort *)(param_1 + 2) = *(ushort *)(param_1 + 2) + -1;
+  return;
 }
