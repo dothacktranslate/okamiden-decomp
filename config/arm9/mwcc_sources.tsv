@@ -362,3 +362,5 @@ src/main/func_02067640.c	-O2 -interworking
 src/main/func_02068484.c	-O2 -interworking
 src/main/func_020684f8.c	-O2 -interworking
 src/main/func_02068898.c	-O2 -interworking
+src/main/func_0203c8ac.c	-O2 -interworking
+src/main/func_02042474.c	-O2 -interworking

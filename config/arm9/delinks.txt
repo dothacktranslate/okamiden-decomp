@@ -1441,3 +1441,11 @@ src/main/func_020684f8.c:
 src/main/func_02068898.c:
     complete
     .text       start:0x02068898 end:0x020688c4
+
+src/main/func_0203c8ac.c:
+    complete
+    .text       start:0x0203c8ac end:0x0203c8c4
+
+src/main/func_02042474.c:
+    complete
+    .text       start:0x02042474 end:0x020424b4
