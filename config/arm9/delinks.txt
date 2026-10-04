@@ -1217,3 +1217,119 @@ src/main/func_02069078.c:
 src/main/func_020692e8.c:
     complete
     .text       start:0x020692e8 end:0x02069300
+
+src/main/func_0200a2dc.c:
+    complete
+    .text       start:0x0200a2dc end:0x0200a2fc
+
+src/main/func_0200a2fc.c:
+    complete
+    .text       start:0x0200a2fc end:0x0200a324
+
+src/main/func_0200a324.c:
+    complete
+    .text       start:0x0200a324 end:0x0200a344
+
+src/main/func_0200a344.c:
+    complete
+    .text       start:0x0200a344 end:0x0200a364
+
+src/main/func_0200a394.c:
+    complete
+    .text       start:0x0200a394 end:0x0200a3bc
+
+src/main/func_0200a3bc.c:
+    complete
+    .text       start:0x0200a3bc end:0x0200a3d8
+
+src/main/func_0200a3d8.c:
+    complete
+    .text       start:0x0200a3d8 end:0x0200a400
+
+src/main/func_0200a400.c:
+    complete
+    .text       start:0x0200a400 end:0x0200a428
+
+src/main/func_0200a4cc.c:
+    complete
+    .text       start:0x0200a4cc end:0x0200a4ec
+
+src/main/func_0200a4ec.c:
+    complete
+    .text       start:0x0200a4ec end:0x0200a50c
+
+src/main/func_0200a50c.c:
+    complete
+    .text       start:0x0200a50c end:0x0200a534
+
+src/main/func_0200a534.c:
+    complete
+    .text       start:0x0200a534 end:0x0200a554
+
+src/main/func_0200a5a0.c:
+    complete
+    .text       start:0x0200a5a0 end:0x0200a5c0
+
+src/main/func_0200a5c0.c:
+    complete
+    .text       start:0x0200a5c0 end:0x0200a5e0
+
+src/main/func_0200a5e0.c:
+    complete
+    .text       start:0x0200a5e0 end:0x0200a600
+
+src/main/func_0200a600.c:
+    complete
+    .text       start:0x0200a600 end:0x0200a620
+
+src/main/func_0200a620.c:
+    complete
+    .text       start:0x0200a620 end:0x0200a648
+
+src/main/func_0200a648.c:
+    complete
+    .text       start:0x0200a648 end:0x0200a670
+
+src/main/func_0200a670.c:
+    complete
+    .text       start:0x0200a670 end:0x0200a698
+
+src/main/func_0200a6b8.c:
+    complete
+    .text       start:0x0200a6b8 end:0x0200a6fc
+
+src/main/func_0200e1fc.c:
+    complete
+    .text       start:0x0200e1fc end:0x0200e22c
+
+src/main/func_020448e8.c:
+    complete
+    .text       start:0x020448e8 end:0x02044910
+
+src/main/func_02044910.c:
+    complete
+    .text       start:0x02044910 end:0x02044938
+
+src/main/func_02044954.c:
+    complete
+    .text       start:0x02044954 end:0x0204497c
+
+src/main/func_020458d0.c:
+    complete
+    .text       start:0x020458d0 end:0x02045920
+
+src/main/func_0204d2f4.c:
+    complete
+    .text       start:0x0204d2f4 end:0x0204d340
+
+src/main/func_020566a0.c:
+    complete
+    .text       start:0x020566a0 end:0x020566f0
+
+src/main/func_0205e268.c:
+    complete
+    .text       start:0x0205e268 end:0x0205e2b0
+
+src/main/func_02065f48.c:
+    complete
+    .text       start:0x02065f48 end:0x02065f60
