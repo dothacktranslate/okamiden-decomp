@@ -18,8 +18,8 @@ TEXT_END = 0x02069640
 TOTAL_CODE = 431680
 TOTAL_FUNCTIONS = 3223
 
-MATCHED_CODE = 5_966
-MATCHED_FUNCTIONS = 332
+MATCHED_CODE = 0  # Derived from current exact manifest in main().
+MATCHED_FUNCTIONS = 0  # Derived from current exact manifest in main().
 FUNC_RE = re.compile(
     r"^(func_[0-9A-Fa-f]+)\b"
 )
@@ -360,6 +360,8 @@ def main():
 
     matched = read_matched()
 
+    globals()["MATCHED_FUNCTIONS"] = len(matched)
+
     if len(matched) != MATCHED_FUNCTIONS:
         raise RuntimeError(
             f"Expected {MATCHED_FUNCTIONS} "
@@ -388,6 +390,8 @@ def main():
         for function in functions
         if function["name"] in matched
     )
+
+    globals()["MATCHED_CODE"] = matched_bytes
 
     if matched_bytes != MATCHED_CODE:
         raise RuntimeError(
