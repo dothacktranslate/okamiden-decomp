@@ -368,3 +368,4 @@ src/main/func_02003974.c	-O2 -interworking
 src/main/func_02007c24.c	-O2 -interworking
 src/main/func_020423d8.c	-O2 -interworking
 src/main/func_0204310c.c	-O2 -interworking
+src/main/func_0202d5d8.c	-O2,p -interworking

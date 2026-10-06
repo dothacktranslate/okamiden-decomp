@@ -1465,3 +1465,7 @@ src/main/func_020423d8.c:
 src/main/func_0204310c.c:
     complete
     .text       start:0x0204310c end:0x02043160
+
+src/main/func_0202d5d8.c:
+    complete
+    .text       start:0x0202d5d8 end:0x0202d668

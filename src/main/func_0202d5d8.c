@@ -91,8 +91,8 @@ void func_0202d5d8(int param_1,int *param_2,int *param_3)
 {
   int iVar1;
 
-  iVar1 = ((unsigned int)0x0202d664);
-  *param_2 = *param_2 + *(int *)(param_1 + ((unsigned int)0x0202d664));
+  iVar1 = ((unsigned int)0x00000ba8);
+  *param_2 = *param_2 + *(int *)(param_1 + ((unsigned int)0x00000ba8));
   param_2[1] = param_2[1] + *(int *)(param_1 + iVar1 + 4);
   param_2[2] = param_2[2] + *(int *)(param_1 + iVar1 + 8);
   *param_3 = *param_3 + *(int *)(param_1 + iVar1);
