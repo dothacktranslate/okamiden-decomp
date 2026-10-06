@@ -1,5 +1,3 @@
-#pragma thumb on
-
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;
@@ -86,21 +84,18 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_0204195c();
-
-void func_020423d8(int param_1)
+void func_02003974(uint param_1,int param_2,undefined2 param_3,int param_4,int param_5)
 
 {
-  uint uVar1;
+  uint *puVar1;
   uint uVar2;
 
-  *(undefined1 *)(param_1 + 0x1d0) = 0;
-  *(undefined4 *)(param_1 + 0x1cc) = 1;
-  uVar1 = ((unsigned int)0x0204240c);
-  uVar2 = *(uint *)(param_1 + 0x124) & ((unsigned int)0x0204240c);
-  *(uint *)(param_1 + 0x124) = uVar2;
-  *(undefined1 *)(param_1 + 0xf0) = 0;
-  *(uint *)(param_1 + 0x124) = uVar2 & (int)uVar1 >> 1;
-  func_0204195c();
+  puVar1 = ((unsigned int)0x04000350);
+  uVar2 = param_1 | param_2 << 0x10 | param_4 << 0x18;
+  if (param_5 != 0) {
+    uVar2 = uVar2 | 0x8000;
+  }
+  (*(unsigned int *)0x04000350) = uVar2;
+  *(undefined2 *)(puVar1 + 1) = param_3;
   return;
 }

@@ -86,7 +86,6 @@ src/nonmatching/func_020038e8.c	-O2 -interworking	77.233300	48	structural-v1
 src/nonmatching/func_02003918.c	-O2 -interworking	77.233300	48	structural-v1
 src/nonmatching/func_02003948.c	-O2 -interworking	21.090900	20	structural-v1
 src/nonmatching/func_0200395c.c	-O2 -interworking	29.102600	24	structural-v1
-src/nonmatching/func_02003974.c	-O2 -interworking	94.289500	40	structural-v1
 src/nonmatching/func_0200399c.c	-O2 -interworking	36.385000	180	structural-v1
 src/nonmatching/func_02003a50.c	-O2 -interworking	68.285700	44	structural-v1
 src/nonmatching/func_02003a7c.c	-O2 -interworking	68.285700	44	structural-v1
@@ -260,7 +259,6 @@ src/nonmatching/func_020078ec.c	-O1 -interworking	37.952600	284	structural-v1
 src/nonmatching/func_02007a08.c	-O2 -interworking	58.000000	72	structural-v1
 src/nonmatching/func_02007a78.c	-O2 -interworking	37.672800	224	structural-v1
 src/nonmatching/func_02007b58.c	-O2 -interworking	39.349800	164	structural-v1
-src/nonmatching/func_02007c24.c	-O2 -interworking	90.555600	108	structural-v1
 src/nonmatching/func_02007c90.c	-O2 -interworking	76.000000	20	structural-v1
 src/nonmatching/func_02007ca4.c	-O2 -interworking	85.714300	28	structural-v1
 src/nonmatching/func_02007ce8.c	-O2 -interworking	81.219500	168	structural-v1
@@ -1703,7 +1701,6 @@ src/nonmatching/func_020420d8.c	-O1 -interworking	33.551900	300	structural-v1
 src/nonmatching/func_02042204.c	-O1 -interworking	75.142900	68	structural-v1
 src/nonmatching/func_02042324.c	-O1 -interworking	59.487200	52	structural-v1
 src/nonmatching/func_020423ac.c	-O2 -interworking	51.428600	42	structural-v1
-src/nonmatching/func_020423d8.c	-O2 -interworking	90.119000	56	structural-v1
 src/nonmatching/func_02042410.c	-O2 -interworking	50.592600	96	structural-v1
 src/nonmatching/func_020424b4.c	-O2 -interworking	34.615400	28	structural-v1
 src/nonmatching/func_020424d0.c	-O2 -interworking	42.368400	40	structural-v1
@@ -1728,7 +1725,6 @@ src/nonmatching/func_02042c8c.c	-O1 -interworking	50.951300	374	structural-v1
 src/nonmatching/func_02042fe8.c	-O2 -interworking	94.579700	64	structural-v1
 src/nonmatching/func_02043028.c	-O2 -interworking	81.613400	72	structural-v1
 src/nonmatching/func_0204309c.c	-O2 -interworking	80.999400	68	structural-v1
-src/nonmatching/func_0204310c.c	-O2 -interworking	95.952400	84	structural-v1
 src/nonmatching/func_02043194.c	-O2 -interworking	59.631600	84	structural-v1
 src/nonmatching/func_020431e8.c	-O2 -interworking	59.334700	38	structural-v1
 src/nonmatching/func_02043210.c	-O2 -interworking	83.865600	44	structural-v1

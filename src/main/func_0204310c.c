@@ -21,7 +21,7 @@ void func_0204310c(
         ) >> 32
     );
 
-    if (index != context->records[slot].id) {
+    if (index != *(s32 *)((unsigned char *)context->records + slot * 188 + 124)) {
         return;
     }
 

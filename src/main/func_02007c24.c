@@ -101,7 +101,8 @@ uint func_02007c24(undefined4 param_1,int param_2,int param_3)
     return 0;
   }
   uVar3 = ~(param_3 - 1U) & (iVar1 + param_3) - 1U;
-  uVar4 = ~(param_3 - 1U) & (uVar3 + param_2 + param_3) - 1;
+  uVar2 = uVar3 + param_2;
+  uVar4 = ~(param_3 - 1U) & (uVar2 + param_3) - 1;
   uVar2 = func_02007a50(param_1);
   if (uVar4 <= uVar2) {
     func_02007c10(param_1,uVar4);
