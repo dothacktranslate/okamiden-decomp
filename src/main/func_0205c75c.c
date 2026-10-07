@@ -84,24 +84,26 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_02018d9c();
-extern int func_0204bdc4();
-extern int func_02050028();
-
-void func_0204f64c(int param_1,undefined4 param_2)
+void func_0205c75c(int param_1,int param_2)
 
 {
-  undefined4 uVar1;
-  undefined4 *puVar2;
+  uint uVar1;
 
-  puVar2 = *(undefined4 **)(param_1 + 8);
-  uVar1 = func_02018d9c(param_2);
-  uVar1 = func_02050028(param_1,param_2,uVar1);
-  *puVar2 = uVar1;
-  puVar2[1] = 4;
-  if (*(int *)(param_1 + 0x1c) - *(int *)(param_1 + 8) < 9) {
-    func_0204bdc4(param_1,1);
+  if (param_2 == 0) {
+    return;
   }
-  *(int *)(param_1 + 8) = *(int *)(param_1 + 8) + 8;
+  do {
+    uVar1 = 0;
+    if (0 < (int)*(unsigned char *)(param_2 + 0x19)) {
+      do {
+        if ((*(ushort *)(param_2 + uVar1 * 2 + 0x1a) & 0x100) != 0) {
+          *(uint *)(param_1 + ((int)uVar1 >> 5) * 4) =
+               *(uint *)(param_1 + ((int)uVar1 >> 5) * 4) | 1 << (uVar1 & 0x1f);
+        }
+        uVar1 = uVar1 + 1;
+      } while ((int)uVar1 < (int)(uint)*(byte *)(param_2 + 0x19));
+    }
+    param_2 = *(int *)(param_2 + 0x10);
+  } while (param_2 != 0);
   return;
 }

@@ -93,7 +93,7 @@ void func_0204f008(undefined4 param_1,int param_2)
   int iVar1;
 
   iVar1 = 2;
-  if (1 < param_2) {
+  if (2 <= param_2) {
     do {
       func_02046414(param_1,iVar1);
       func_02046414(param_1,0xfffffffe);

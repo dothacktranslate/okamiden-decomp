@@ -1,5 +1,3 @@
-#pragma thumb on
-
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;
@@ -86,36 +84,13 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_020028c0();
-extern int func_02002ac4();
-extern int func_02002af4();
-extern int func_02002e50();
-extern int func_02003170();
-extern int func_02033d9c();
+extern int func_02056634();
+extern int func_02065c60();
 
-undefined4 func_02033d14(undefined4 param_1,undefined4 param_2,undefined4 *param_3,int param_4)
+void func_02065c48(undefined4 *param_1)
 
 {
-  undefined4 uVar1;
-  undefined4 uVar2;
-  int iVar3;
-  int iVar4;
-  undefined1 auStack_20 [12];
-
-  func_02002ac4(param_1,*param_3,auStack_20);
-  uVar1 = func_02002af4(param_3[1],auStack_20);
-  func_02002ac4(param_2,*param_3,auStack_20);
-  uVar2 = func_02002af4(param_3[1],auStack_20);
-  iVar3 = func_02003170(uVar1,uVar2);
-  if (iVar3 < 1) {
-    if (param_4 != 0) {
-      iVar3 = func_02033d9c(param_1,param_3,0);
-      iVar4 = func_02033d9c(param_2,param_3,0);
-      uVar1 = func_020028c0(iVar3,iVar3 + iVar4);
-      func_02002ac4(param_2,param_1,param_4);
-      func_02002e50(uVar1,param_4,param_1,param_4);
-    }
-    return 1;
-  }
-  return 0;
+  func_02065c60();
+  func_02056634(*param_1);
+  return;
 }

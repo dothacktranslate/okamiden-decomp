@@ -105,7 +105,8 @@ void func_0200bd74(int param_1)
   do {
     uVar1 = func_02008b6c();
     uVar3 = *(uint *)(param_1 + 0xc);
-    *(uint *)(param_1 + 0xc) = uVar3 | 0x40;
+    uVar3 = uVar3 | 0x40;
+    *(uint *)(param_1 + 0xc) = uVar3;
     if ((uVar3 & 4) != 0) {
       func_02007050(param_1 + 0x18);
       param_1 = 0;

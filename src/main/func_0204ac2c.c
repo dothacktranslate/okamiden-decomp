@@ -84,26 +84,49 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_020320f4();
-extern int func_020320fc();
+extern int func_02019064();
+extern int func_0204aa44();
+extern int func_0204ab08();
+extern int func_0204bdc4();
 
-void func_02032104(int param_1,int param_2,int param_3)
+undefined4 func_0204ac2c(int param_1,char *param_2,int param_3)
 
 {
-  int iVar1;
-  int iVar2;
+  undefined4 uVar1;
+  int *piVar2;
+  int iVar3;
+  int iVar4;
 
-  iVar2 = 0;
-  if (param_3 < 1) {
-    return;
+  iVar4 = 0;
+  iVar3 = 0;
+  if (*param_2 == '>') {
+    param_2 = param_2 + 1;
+    iVar4 = *(int *)(*(int *)(param_1 + 8) + -8);
+    *(int *)(param_1 + 8) = *(int *)(param_1 + 8) + -8;
   }
-  do {
-    iVar1 = func_020320f4(*(undefined4 *)(param_2 + iVar2 * 4));
-    if (*(short *)(param_1 + 6) == iVar1) {
-      func_020320fc(param_1,*(undefined4 *)(param_2 + iVar2 * 4));
-      return;
+  else if (*(int *)(param_3 + 0x60) != 0) {
+    iVar3 = *(int *)(param_3 + 0x60) * 0x18 + *(int *)(param_1 + 0x28);
+    iVar4 = **(int **)(iVar3 + 4);
+  }
+  uVar1 = func_0204ab08(param_1,param_2,param_3,iVar4,iVar3);
+  iVar3 = func_02019064(param_2,0x66);
+  if (iVar3 != 0) {
+    if (iVar4 == 0) {
+      *(undefined4 *)(*(int *)(param_1 + 8) + 4) = 0;
     }
-    iVar2 = iVar2 + 1;
-  } while (iVar2 < param_3);
-  return;
+    else {
+      piVar2 = *(int **)(param_1 + 8);
+      *piVar2 = iVar4;
+      piVar2[1] = 6;
+    }
+    if (*(int *)(param_1 + 0x1c) - *(int *)(param_1 + 8) <= 8) {
+      func_0204bdc4(param_1,1);
+    }
+    *(int *)(param_1 + 8) = *(int *)(param_1 + 8) + 8;
+  }
+  iVar3 = func_02019064(param_2,0x4c);
+  if (iVar3 != 0) {
+    func_0204aa44(param_1,iVar4);
+  }
+  return uVar1;
 }
