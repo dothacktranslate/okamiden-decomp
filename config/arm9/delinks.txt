@@ -1953,3 +1953,15 @@ src/main/func_0205c75c.c:
 src/main/func_02065c48.c:
     complete
     .text       start:0x02065c48 end:0x02065c60
+
+src/main/func_0205ee50.c:
+    complete
+    .text       start:0x0205ee50 end:0x0205ee90
+
+src/main/func_0205ee90.c:
+    complete
+    .text       start:0x0205ee90 end:0x0205eed0
+
+src/main/func_0205eed0.c:
+    complete
+    .text       start:0x0205eed0 end:0x0205ef10

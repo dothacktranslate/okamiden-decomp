@@ -2313,9 +2313,6 @@ src/nonmatching/func_0205ec68.c	-O2 -interworking	48.524600	120	structural-v1
 src/nonmatching/func_0205ece0.c	-O2 -interworking	48.524600	120	structural-v1
 src/nonmatching/func_0205ed58.c	-O2 -interworking	48.730200	124	structural-v1
 src/nonmatching/func_0205edd4.c	-O2 -interworking	48.730200	124	structural-v1
-src/nonmatching/func_0205ee50.c	-O2 -interworking	81.562500	64	structural-v1
-src/nonmatching/func_0205ee90.c	-O2 -interworking	81.562500	64	structural-v1
-src/nonmatching/func_0205eed0.c	-O2 -interworking	81.562500	64	structural-v1
 src/nonmatching/func_0205ef10.c	-O2 -interworking	31.315800	444	structural-v1
 src/nonmatching/func_0205f0cc.c	-O2 -interworking	30.540500	356	structural-v1
 src/nonmatching/func_0205f240.c	-O2 -interworking	44.838700	64	structural-v1

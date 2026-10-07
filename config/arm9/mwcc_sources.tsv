@@ -490,3 +490,6 @@ src/main/func_020523a0.c	-O2 -interworking
 src/main/func_0205aec4.c	-O2 -interworking
 src/main/func_0205c75c.c	-O2 -interworking
 src/main/func_02065c48.c	-O2 -interworking
+src/main/func_0205ee50.c	-O2 -interworking
+src/main/func_0205ee90.c	-O2 -interworking
+src/main/func_0205eed0.c	-O2 -interworking
