@@ -84,9 +84,8 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-void func_020034ac(uint param_1)
+bool func_0202404c(int param_1,int param_2)
 
 {
-  (*(unsigned int *)0x020034c4) = (*(unsigned int *)0x020034c4) & 0xfffffff8 | param_1;
-  return;
+  return *(unsigned short *)(param_1 + param_2 * 2 + 0x34) == 0;
 }
