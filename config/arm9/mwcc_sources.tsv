@@ -493,3 +493,17 @@ src/main/func_02065c48.c	-O2 -interworking
 src/main/func_0205ee50.c	-O2 -interworking
 src/main/func_0205ee90.c	-O2 -interworking
 src/main/func_0205eed0.c	-O2 -interworking
+src/main/func_020028c0.c	-O2 -interworking
+src/main/func_020028d0.c	-O2 -interworking
+src/main/func_0200663c.c	-O3 -interworking
+src/main/func_0200710c.c	-O2 -interworking
+src/main/func_02008c34.c	-O2 -interworking
+src/main/func_0200947c.c	-O2 -interworking
+src/main/func_02012f7c.c	-O2 -interworking
+src/main/func_02012f88.c	-O2 -interworking
+src/main/func_02014c6c.c	-O2 -interworking
+src/main/func_0202b4fc.c	-O2 -interworking
+src/main/func_0203090c.c	-O2 -interworking
+src/main/func_0203e7fc.c	-O2 -interworking
+src/main/func_0203f948.c	-O2 -interworking
+src/main/func_0203f954.c	-O2 -interworking

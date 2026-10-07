@@ -84,8 +84,8 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-undefined4 func_02012f88(void)
+undefined4 func_02012f7c(void)
 
 {
-  return ((unsigned int)0x02012f90);
+  return ((unsigned int)0x02fffa80);
 }
