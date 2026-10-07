@@ -86,35 +86,31 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_020348e0();
-extern int func_0203497c();
-extern int func_02034b58();
-extern int func_02034c50();
+extern int func_02008c04();
 
-undefined4 func_02034d04(int param_1,int param_2,undefined4 param_3,undefined4 param_4)
+void func_020356a0(uint *param_1)
 
 {
-  int iVar1;
-  undefined1 auStack_18 [4];
-  undefined1 auStack_14 [4];
-  undefined4 uStack_10;
+  uint *puVar1;
+  uint uVar2;
+  uint uVar3;
 
-  if (param_2 != 0) {
-    uStack_10 = param_4;
-    iVar1 = func_020348e0(param_1 + 0xc,*(undefined4 *)(param_2 + 0x20));
-    if (iVar1 != 0) {
-      func_0203497c(auStack_14,param_1,param_1 + 0xc,param_2);
-      return 1;
-    }
-    iVar1 = func_020348e0(param_1 + 0x38,*(undefined4 *)(param_2 + 0x20));
-    if (iVar1 != 0) {
-      iVar1 = func_02034c50(param_1,param_2);
-      if (iVar1 != 0) {
-        func_02034b58(param_1);
-      }
-      func_0203497c(auStack_18,param_1,param_1 + 0x38,param_2);
-      return 1;
-    }
+  puVar1 = ((unsigned int)0x02fffc3c);
+  uVar3 = 4;
+  if (((*param_1 & 4) == 0) && (uVar3 = 1, (*param_1 & 1) != 0)) {
+    uVar3 = 2;
   }
-  return 0;
+  *param_1 = *param_1 & 0xfffffffd;
+  do {
+    func_02008c04();
+    uVar2 = *puVar1;
+    if (uVar2 < param_1[1]) {
+      param_1[1] = 0;
+    }
+  } while (uVar2 - param_1[1] < uVar3);
+  if (uVar2 - param_1[1] > uVar3) {
+    *param_1 = *param_1 | 2;
+  }
+  param_1[1] = uVar2;
+  return;
 }

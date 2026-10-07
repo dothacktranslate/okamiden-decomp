@@ -2021,3 +2021,23 @@ src/main/func_0203f948.c:
 src/main/func_0203f954.c:
     complete
     .text       start:0x0203f954 end:0x0203f960
+
+src/main/func_02008be8.c:
+    complete
+    .text       start:0x02008be8 end:0x02008c04
+
+src/main/func_02014850.c:
+    complete
+    .text       start:0x02014850 end:0x02014874
+
+src/main/func_0202ca80.c:
+    complete
+    .text       start:0x0202ca80 end:0x0202ca98
+
+src/main/func_02034d04.c:
+    complete
+    .text       start:0x02034d04 end:0x02034d68
+
+src/main/func_020356a0.c:
+    complete
+    .text       start:0x020356a0 end:0x020356f0

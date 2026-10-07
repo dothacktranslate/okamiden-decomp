@@ -1,3 +1,5 @@
+#pragma thumb on
+
 typedef unsigned char undefined;
 typedef unsigned char undefined1;
 typedef unsigned short undefined2;
@@ -84,15 +86,35 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_02006894();
-extern int func_02008b80();
+extern int func_020348e0();
+extern int func_0203497c();
+extern int func_02034b58();
+extern int func_02034c50();
 
-void func_02014850(undefined4 param_1,int *param_2)
+undefined4 func_02034d04(int param_1,int param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  if (*param_2 == 0) {
-    func_02006894();
+  int iVar1;
+  undefined1 auStack_14 [4];
+  undefined1 auStack_18 [4];
+  undefined4 uStack_10;
+
+  if (param_2 != 0) {
+    uStack_10 = param_4;
+    iVar1 = func_020348e0(param_1 + 0xc,*(undefined4 *)(param_2 + 0x20));
+    if (iVar1 != 0) {
+      func_0203497c(auStack_14,param_1,param_1 + 0xc,param_2);
+      return 1;
+    }
+    iVar1 = func_020348e0(param_1 + 0x38,*(undefined4 *)(param_2 + 0x20));
+    if (iVar1 != 0) {
+      iVar1 = func_02034c50(param_1,param_2);
+      if (iVar1 != 0) {
+        func_02034b58(param_1);
+      }
+      func_0203497c(auStack_18,param_1,param_1 + 0x38,param_2);
+      return 1;
+    }
   }
-  func_02008b80(param_2[1]);
-  return;
+  return 0;
 }

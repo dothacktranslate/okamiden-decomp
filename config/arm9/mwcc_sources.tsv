@@ -507,3 +507,8 @@ src/main/func_0203090c.c	-O2 -interworking
 src/main/func_0203e7fc.c	-O2 -interworking
 src/main/func_0203f948.c	-O2 -interworking
 src/main/func_0203f954.c	-O2 -interworking
+src/main/func_02008be8.c	-O2 -interworking
+src/main/func_02014850.c	-O2 -interworking
+src/main/func_0202ca80.c	-O2 -interworking
+src/main/func_02034d04.c	-O2,p -interworking
+src/main/func_020356a0.c	-O2 -interworking
