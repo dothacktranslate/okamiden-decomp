@@ -84,7 +84,7 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_02022f84();
+extern int func_02022fc0();
 extern int func_02022fc0();
 
 void func_020232bc(undefined4 param_1,uint param_2,int param_3,int param_4)
@@ -98,7 +98,7 @@ void func_020232bc(undefined4 param_1,uint param_2,int param_3,int param_4)
       func_02022fc0(param_1,param_2 & 0xffff);
     }
     else {
-      func_02022f84();
+      func_02022fc0();
     }
     param_2 = param_2 + 1;
   } while ((int)param_2 <= param_3);

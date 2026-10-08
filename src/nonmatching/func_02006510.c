@@ -92,10 +92,10 @@ undefined4 func_02006510(undefined4 param_1)
   undefined4 uVar3;
 
   puVar2 = ((unsigned int)0x02006538);
-  uVar1 = (*(unsigned int *)0x02006538);
-  (*(unsigned int *)0x02006538) = 0;
+  uVar1 = (*(unsigned short *)0x02006538);
+  (*(unsigned short *)0x02006538) = 0;
   uVar3 = *(undefined4 *)(puVar2 + 4);
-  *(undefined4 *)(puVar2 + 4) = param_1;
+  *(undefined4 *)(4 + puVar2) = param_1;
   *puVar2 = uVar1;
   return uVar3;
 }

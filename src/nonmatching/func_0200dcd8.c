@@ -93,8 +93,8 @@ void func_0200dcd8(undefined4 param_1,int param_2,undefined4 param_3,uint *param
   uint uVar2;
 
   uVar2 = *param_4;
-  uVar1 = *(int *)(*(int *)(param_2 + 4) + 8) - *(int *)(*(int *)(param_2 + 4) + 0xc);
-  if (uVar1 < uVar2) {
+  uVar1 = *(int *)(*(int *)(4 + param_2) + 8) - *(int *)(*(int *)(param_2 + 4) + 0xc);
+  if (uVar2 > uVar1) {
     *param_4 = uVar1;
   }
   *(uint *)(param_2 + 0x34) = uVar2;

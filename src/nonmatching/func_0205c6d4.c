@@ -96,8 +96,8 @@ undefined4 func_0205c6d4(uint *param_1,int param_2,uint param_3,undefined4 param
   *param_1 = 0;
   uStack_1c = param_4;
   do {
-    if (((param_3 < *(byte *)(param_2 + 0x19)) &&
-        (uVar1 = *(ushort *)(param_2 + param_3 * 2 + 0x1a), (uVar1 & 0x300) == 0x100)) &&
+    if (((param_3 < *(byte *)(0x19 + param_2)) &&
+        (uVar1 = *(ushort *)(param_2 * 2 + (param_3 + 0x1a)), (uVar1 & 0x300) == 0x100)) &&
        (*(code **)(param_2 + 0xc) != (code *)0x0)) {
       (**(code **)(param_2 + 0xc))(&local_20,param_2,uVar1 & 0xff);
       uVar2 = 1;

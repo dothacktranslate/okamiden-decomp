@@ -91,16 +91,16 @@ extern int func_0200b588();
 void func_02008c40(void)
 
 {
-  int iVar1;
+  uint iVar1;
 
-  if ((*(unsigned int *)0x02008c8c) != 0) {
+  if ((*(unsigned short *)0x02008c8c) != 0) {
     return;
   }
-  (*(unsigned int *)0x02008c8c) = 1;
+  (*(unsigned short *)0x02008c8c) = 1;
   func_0200b434();
   do {
     iVar1 = func_0200b588(0xc,1);
-  } while (iVar1 == 0);
+  } while (iVar1 <= 0U);
   func_0200b53c(0xc,((unsigned int)0x02008c90));
   return;
 }

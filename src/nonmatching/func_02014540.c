@@ -92,7 +92,7 @@ extern int func_020145c8();
 void func_02014540(void)
 
 {
-  if ((int)((*(unsigned int *)0x02014574) & 0x8000) >> 0xf != 0) {
+  if ((int)((*(unsigned short *)0x02014574) & 0x8000) >> 0xf != 0) {
     func_0200f9c4();
   }
   func_020145c8(1,1);

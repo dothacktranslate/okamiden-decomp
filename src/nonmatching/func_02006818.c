@@ -84,8 +84,8 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_02008b6c();
-extern int func_02008b80();
+extern int func_02008b98();
+extern int func_02008bac();
 extern int func_02008b98();
 extern int func_02008bac();
 extern int func_02009f98();
@@ -110,7 +110,7 @@ int func_02006818(undefined4 param_1,int param_2,code *param_3,int param_4)
     *(short *)(param_2 + 4) = (short)param_1;
   }
   if (param_4 == 0) {
-    func_02008b80(uVar1);
+    func_02008bac(uVar1);
   }
   else {
     func_02008bac();

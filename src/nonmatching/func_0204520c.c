@@ -151,7 +151,7 @@ typedef int code();
 
 
 
-void func_0204520c(undefined4 *param_1,undefined4 *param_2,undefined4 param_3,undefined4 param_4)
+void func_0204520c(undefined4 *param_1,undefined2 *param_2,undefined4 param_3,undefined4 param_4)
 
 {
   code *pcVar1;

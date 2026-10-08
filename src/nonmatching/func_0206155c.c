@@ -151,11 +151,11 @@ typedef int code();
 
 
 
-void func_0206155c(uint *param_1,uint *param_2,undefined4 param_3,uint param_4)
+void func_0206155c(undefined1 *param_1,uint *param_2,undefined4 param_3,uint param_4)
 
 {
-  uint uVar1;
   uint uVar2;
+  uint uVar1;
 
   if ((param_4 & 4) == 0) {
     uVar2 = param_2[1];

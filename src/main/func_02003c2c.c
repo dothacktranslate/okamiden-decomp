@@ -84,19 +84,8 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_02022d84();
-extern int func_02022ed0();
-
-void func_02022f84(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
+int func_02003c2c(void)
 
 {
-  undefined2 local_14;
-  undefined2 local_12;
-  undefined4 local_10;
-  undefined4 uStack_c;
-
-  uStack_c = param_4;
-  func_02022d84(param_1,param_2,&local_12,&local_14,&local_10);
-  func_02022ed0(param_1,local_12,local_14,local_10);
-  return;
+  return ((int)((*(unsigned short *)0x0400100a) & 0x1f00) >> 8) * 0x800 + 0x6200000;
 }

@@ -89,8 +89,8 @@ void func_0205df6c(undefined4 *param_1)
 {
   int *piVar1;
 
-  piVar1 = ((unsigned int)0x0205df88);
-  if ((*(unsigned int *)0x0205df88) == 0) {
+  piVar1 = ((unsigned int)0x01fffb80);
+  if ((*(unsigned int *)0x01fffb80) == 0) {
     *param_1 = 0;
     *piVar1 = (int)param_1;
   }

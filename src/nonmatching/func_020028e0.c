@@ -91,6 +91,6 @@ undefined8 func_020028e0(void)
 {
   func_02002998();
   do {
-  } while (((*(unsigned int *)0x02002904) & 0x8000) != 0);
-  return (*(unsigned int *)0x02002908);
+  } while (((*(unsigned short *)0x04000280) & 0x8000) != 0);
+  return (*(unsigned int *)0x040002a0);
 }

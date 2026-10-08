@@ -87,10 +87,8 @@ extern int LZCOUNT();
 void func_02065b10(undefined4 *param_1)
 
 {
-  undefined4 uVar1;
-
-  uVar1 = *(undefined4 *)((*(unsigned int *)0x02065b2c) + 0x80);
-  *param_1 = *(undefined4 *)((*(unsigned int *)0x02065b2c) + 0x7c);
+  undefined4 uVar1 = *(undefined4 *)((*(unsigned char *)0x02065b2c) + 0x80);
+  *param_1 = *(unsigned char *)((*(unsigned int *)0x02065b2c) + 0x7c);
   param_1[1] = uVar1;
   return;
 }

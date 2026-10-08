@@ -92,8 +92,8 @@ void func_020694dc(int *param_1,int param_2)
   uint uVar1;
 
   uVar1 = *(int *)(*param_1 + 8) + param_2;
-  if (((unsigned int)0x020694f0) < uVar1) {
-    uVar1 = ((unsigned int)0x020694f0);
+  if (((unsigned int)0x0098967f) < uVar1) {
+    uVar1 = ((unsigned int)0x0098967f);
   }
   *(uint *)(*param_1 + 8) = uVar1;
   return;

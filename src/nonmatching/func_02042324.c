@@ -173,7 +173,7 @@ void func_02042324(undefined4 param_1)
   func_02041930(param_1,((unsigned int)0x02042350));
   func_02005ae0(8);
   func_020052c4(0x40);
-  _REG_A_DISPCNT = _REG_A_DISPCNT & ((unsigned int)0x02042354) | 0x1100;
+  _REG_A_DISPCNT = _REG_A_DISPCNT & ((unsigned int)0xffffe0ff) | 0x1100;
   func_02041680();
   return;
 }

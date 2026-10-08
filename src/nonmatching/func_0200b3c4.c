@@ -92,8 +92,8 @@ void func_0200b3c4(int param_1,int param_2,undefined4 param_3)
 
 {
   func_0200a734();
-  *(undefined4 *)(param_1 + param_2 * 4 + 0x3c) = param_3;
-  func_02007804(param_1 + 0x3c + param_2 * 4,4);
+  *(undefined4 *)((param_1 * 4 + param_2) + 0x3c) = param_3;
+  func_02007804((param_1 + 0x3c) + param_2 * 4,4);
   func_0200a748();
   return;
 }

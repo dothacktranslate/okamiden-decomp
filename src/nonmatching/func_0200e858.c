@@ -158,7 +158,7 @@ undefined4 func_0200e858(undefined4 param_1,int param_2)
 
   uVar1 = 4;
   if (param_2 != 1) {
-    uVar1 = (*(unsigned int *)0x0200e868);
+    uVar1 = (*(unsigned int *)0x00000102);
   }
   return uVar1;
 }

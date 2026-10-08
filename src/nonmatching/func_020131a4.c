@@ -90,8 +90,8 @@ void func_020131a4(void)
   int iVar1;
 
   iVar1 = ((unsigned int)0x020131c8);
-  *(undefined4 *)(((unsigned int)0x020131c8) + 0x14) = 0xfffffffd;
-  *(undefined4 *)(iVar1 + 0x18) = 0;
+  *(unsigned char *)(((unsigned int)0x020131c8) + 0x14) = 0xfffffffd;
+  *(undefined4 *)(0x18 + iVar1) = 0;
   *(undefined4 *)(iVar1 + 0x24) = 0;
   *(undefined4 *)(iVar1 + 0x20) = 0;
   *(undefined4 *)(iVar1 + 0x1c) = 0;

@@ -14,7 +14,7 @@ typedef int code();
 
 extern int LZCOUNT();
 
-extern int func_02056a28();
+extern int func_02056a74();
 extern int func_02056a74();
 
 
@@ -27,7 +27,7 @@ void func_0204484c(undefined4 param_1,int param_2,undefined4 param_3,undefined4 
 
   uStack_c = param_4;
   if ((*(uint *)(param_2 + 0xc) & 0x10000) == 0) {
-    iVar1 = func_02056a28(param_1,&local_10);
+    iVar1 = func_02056a74(param_1,&local_10);
     if (iVar1 != 0) {
       *(undefined4 *)(param_2 + 0x10) = local_10;
     }

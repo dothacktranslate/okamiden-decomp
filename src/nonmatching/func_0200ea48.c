@@ -89,6 +89,6 @@ extern int func_0200c9e0();
 void func_0200ea48(undefined4 param_1,int param_2,int param_3)
 
 {
-  func_0200c9e0(param_1,((unsigned int)0x0200ea74),param_2,param_2 + param_3,((unsigned int)0x0200ea70));
+  func_0200c9e0(param_1,((unsigned int)0x0200ea74),param_2,param_2 + param_3,((unsigned int)0x0000ffff));
   return;
 }

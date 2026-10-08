@@ -84,16 +84,8 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-void func_020029f4(undefined4 param_1,undefined4 param_2)
+int func_02003ec4(void)
 
 {
-  undefined2 *puVar1;
-
-  puVar1 = ((unsigned int)0x02002a18);
-  (*(unsigned int *)0x02002a18) = 1;
-  *(undefined4 *)(puVar1 + 8) = 0;
-  *(undefined4 *)(puVar1 + 10) = param_1;
-  *(undefined4 *)(puVar1 + 0xc) = param_2;
-  *(undefined4 *)(puVar1 + 0xe) = 0;
-  return;
+  return ((int)((*(unsigned short *)0x0400100a) & 0x3c) >> 2) * 0x4000 + 0x6200000;
 }

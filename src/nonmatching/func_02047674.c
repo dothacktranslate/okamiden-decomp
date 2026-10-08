@@ -90,9 +90,7 @@ extern int func_02047628();
 void func_02047674(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  undefined4 uVar1;
-
-  uVar1 = func_02046464(param_1,param_3,param_3,param_4,param_4);
-  func_02047628(param_1,param_2,uVar1);
+  undefined4 uVar1 = func_02046464(param_1,param_3,param_3,param_4,param_4);
+  func_02047628(uVar1,param_1,param_2,uVar1);
   return;
 }

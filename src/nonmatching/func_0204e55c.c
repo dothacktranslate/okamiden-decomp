@@ -89,8 +89,8 @@ extern int func_0204bb44();
 int func_0204e55c(int param_1,undefined4 param_2,int param_3,int param_4)
 
 {
-  int iVar1;
   int iVar2;
+  int iVar1;
 
   iVar2 = *(int *)(param_1 + 0x10);
   iVar1 = (**(code **)(iVar2 + 0xc))(*(undefined4 *)(iVar2 + 0x10));

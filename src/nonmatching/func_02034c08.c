@@ -104,7 +104,7 @@ void func_02034c08(int param_1,undefined4 param_2,undefined4 param_3)
 LAB_02034c30:
   *(undefined4 *)(param_1 + 0x24) = *(undefined4 *)(param_1 + 0x28);
   *(undefined4 *)(param_1 + 0x28) = 0;
-  *(uint *)(param_1 + 8) = ((unsigned int)0x02034c4c) & *(uint *)(param_1 + 8);
+  *(uint *)(param_1 + 8) = ((unsigned int)0xfffbffff) & *(uint *)(param_1 + 8);
   func_02034b98(param_1,param_2,param_3);
   return;
 }

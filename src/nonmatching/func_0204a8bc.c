@@ -94,9 +94,9 @@ int func_0204a8bc(int param_1,int param_2,int param_3)
   int iVar2;
   int iVar3;
 
-  iVar2 = *(int *)(param_2 + 0x60) * 0x18;
-  iVar3 = *(int *)(param_1 + 0x28);
-  iVar1 = func_0204a838(param_1,iVar3 + iVar2);
+  iVar2 = *(int *)(0x60 + param_2) * 0x18;
+  iVar3 = *(int *)(0x28 + param_1);
+  iVar1 = func_0204a838(param_1,iVar2 + iVar3);
   if (iVar1 != 0) {
     func_02046090(param_1,*(int *)(iVar3 + iVar2) + (param_3 + -1) * 8);
   }

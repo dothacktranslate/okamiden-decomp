@@ -93,15 +93,15 @@ extern int func_020677d0();
 void func_020676cc(undefined4 param_1,int param_2)
 
 {
-  int iVar1;
   undefined4 uVar2;
+  uint iVar1;
   int iVar3;
 
-  uVar2 = func_02008b6c();
+  uVar2 = func_02008b6c(param_1);
   iVar3 = func_02056370(param_1,0);
-  while (iVar1 = iVar3, iVar1 != 0) {
+  while (iVar1 = iVar3, !(iVar1 <= 0)) {
     iVar3 = func_02056370(param_1,iVar1);
-    if (*(int *)(iVar1 + 8) == param_2) {
+    if (*(int *)(8 + iVar1) == param_2) {
       func_02056310(param_1,iVar1);
       func_020677d0(iVar1);
     }

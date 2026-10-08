@@ -23,8 +23,8 @@ void func_02044898(undefined4 param_1,int param_2)
 {
   int iVar1;
   int iVar2;
-  undefined4 uStack_18;
   undefined4 uStack_14;
+  undefined4 uStack_18;
 
   iVar1 = func_02056afc(param_1,&uStack_18);
   iVar2 = func_02056ac0(param_1,&uStack_14);

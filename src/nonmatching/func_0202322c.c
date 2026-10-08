@@ -85,7 +85,7 @@ extern int LZCOUNT();
       ((int)(a) < 0)))
 
 extern int func_02022f84();
-extern int func_02022fc0();
+extern int func_02022f84();
 
 void func_0202322c(undefined4 param_1,int param_2)
 
@@ -95,10 +95,10 @@ void func_0202322c(undefined4 param_1,int param_2)
   uVar1 = 1;
   do {
     if (param_2 < (int)uVar1) {
-      func_02022fc0(param_1,uVar1 & 0xffff);
+      func_02022f84(param_1,uVar1 & 0xffff);
     }
     else {
-      func_02022f84();
+      func_02022fc0();
     }
     uVar1 = uVar1 + 1;
   } while ((int)uVar1 < 0x1f);

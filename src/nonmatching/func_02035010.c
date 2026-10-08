@@ -91,7 +91,7 @@ void func_02035010(int param_1,int param_2,int param_3)
 {
   *(int *)(param_1 + 0xa4) = param_2;
   if ((param_2 == 0) && (param_3 == 0)) {
-    *(uint *)(param_1 + 8) = ((unsigned int)0x02035034) & *(uint *)(param_1 + 8);
+    *(uint *)(param_1 + 8) = ((unsigned int)0xfeffffff) & *(uint *)(param_1 + 8);
     return;
   }
   *(uint *)(param_1 + 8) = *(uint *)(param_1 + 8) | 0x1000000;

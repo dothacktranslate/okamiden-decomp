@@ -96,7 +96,7 @@ void func_02046b4c(int param_1)
   puVar1 = (undefined4 *)func_02045fac();
   puVar1 = (undefined4 *)func_02052b58(*puVar1,*(int *)(param_1 + 8) + -8);
   iVar2 = *(int *)(param_1 + 8);
-  *(undefined4 *)(iVar2 + -8) = *puVar1;
+  *(unsigned char *)(iVar2 + -8) = *puVar1;
   *(undefined4 *)(iVar2 + -4) = puVar1[1];
   return;
 }

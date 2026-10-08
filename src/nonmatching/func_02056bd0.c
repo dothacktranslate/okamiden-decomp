@@ -157,14 +157,14 @@ void func_02056bd0(ushort *param_1)
   uint uVar1;
   uint uVar2;
 
-  *(int *)(param_1 + 2) = *(int *)(param_1 + 2) + (int)param_1;
+  *(int *)(param_1 + 2) = *(int *)(2 + param_1) + (int)param_1;
   uVar2 = 0;
   if (*param_1 == 0) {
     return;
   }
   do {
     uVar1 = uVar2 + 1;
-    *(int *)(*(int *)(param_1 + 2) + uVar2 * 4) =
+    *(unsigned char *)(*(int *)(param_1 + 2) + uVar2 * 4) =
          (int)param_1 + *(int *)(*(int *)(param_1 + 2) + uVar2 * 4);
     uVar2 = uVar1 & 0xffff;
   } while ((uVar1 & 0xffff) < (uint)*param_1);

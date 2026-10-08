@@ -92,14 +92,14 @@ undefined2 func_0202d8a0(int param_1,int param_2,int param_3)
   undefined2 *puVar1;
   int iVar2;
   int iVar3;
-  uint uVar4;
+  int uVar4;
 
-  iVar3 = *(int *)(param_1 + ((unsigned int)0x0202d8ec));
+  iVar3 = *(int *)(param_1 + ((unsigned int)0x00000e54));
   if (iVar3 == 0) {
     return 0;
   }
   iVar2 = 1;
-  uVar4 = *(uint *)(iVar3 + 0x14) & 0xffff;
+  uVar4 = *(uint *)(0x14 + iVar3) & 0xffff;
   if (1 < uVar4) {
     do {
       puVar1 = (undefined2 *)(iVar3 + iVar2 * 0x18);
@@ -109,7 +109,7 @@ undefined2 func_0202d8a0(int param_1,int param_2,int param_3)
         }
         return *puVar1;
       }
-      iVar2 = iVar2 + 1;
+      iVar2 = 1 + iVar2;
     } while (iVar2 < (int)uVar4);
   }
   return 0;

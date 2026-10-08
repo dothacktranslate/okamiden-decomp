@@ -89,8 +89,8 @@ undefined4 func_02003a7c(uint *param_1)
 {
   undefined4 uVar1;
 
-  if (((*(unsigned int *)0x02003aa4) & 0x4000) == 0) {
-    *param_1 = ((*(unsigned int *)0x02003aa4) & 0x2000) >> 0xd;
+  if (((*(unsigned int *)0x04000600) & 0x4000) == 0) {
+    *param_1 = ((*(unsigned int *)0x04000600) & 0x2000) >> 0xd;
     uVar1 = 0;
   }
   else {

@@ -89,13 +89,13 @@ undefined4 func_02002a1c(undefined4 param_1,undefined4 param_2)
 {
   ushort *puVar1;
 
-  puVar1 = ((unsigned int)0x02002a50);
-  (*(unsigned int *)0x02002a50) = 0;
+  puVar1 = ((unsigned int)0x04000280);
+  (*(unsigned short *)0x04000280) = 0;
   *(undefined4 *)(puVar1 + 8) = param_1;
-  *(undefined4 *)(puVar1 + 0xc) = param_2;
+  *(undefined4 *)(0xc + puVar1) = param_2;
   puVar1[0xe] = 0;
   puVar1[0xf] = 0;
   do {
   } while ((*puVar1 & 0x8000) != 0);
-  return (*(unsigned int *)0x02002a54);
+  return (*(unsigned int *)0x040002a0);
 }

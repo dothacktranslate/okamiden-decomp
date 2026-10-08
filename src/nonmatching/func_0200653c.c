@@ -92,10 +92,10 @@ uint func_0200653c(uint param_1)
   uint uVar3;
 
   puVar2 = ((unsigned int)0x02006568);
-  uVar1 = (*(unsigned int *)0x02006568);
-  (*(unsigned int *)0x02006568) = 0;
+  uVar1 = (*(unsigned short *)0x02006568);
+  (*(short *)0x02006568) = 0;
   uVar3 = *(uint *)(puVar2 + 4);
-  *(uint *)(puVar2 + 4) = uVar3 | param_1;
+  *(uint *)(4 + puVar2) = uVar3 | param_1;
   *puVar2 = uVar1;
   return uVar3;
 }

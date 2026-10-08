@@ -154,6 +154,6 @@ typedef int code();
 void func_020406b0(int param_1,undefined2 param_2)
 
 {
-  *(undefined2 *)(param_1 + 0xd6) = param_2;
+  *(unsigned char *)(param_1 + 0xd6) = param_2;
   return;
 }

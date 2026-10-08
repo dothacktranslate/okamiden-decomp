@@ -88,6 +88,6 @@ undefined8 func_02002940(void)
 
 {
   do {
-  } while (((*(unsigned int *)0x0200295c) & 0x8000) != 0);
-  return (*(unsigned int *)0x02002960);
+  } while (((*(unsigned short *)0x04000280) & 0x8000) != 0);
+  return (*(short *)0x040002a0);
 }

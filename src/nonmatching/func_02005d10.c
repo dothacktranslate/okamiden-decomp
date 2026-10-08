@@ -157,8 +157,8 @@ ushort func_02005d10(ushort *param_1)
   ushort uVar1;
   ushort *puVar2;
 
-  puVar2 = (*(unsigned int *)0x02005d44);
   uVar1 = *param_1;
+  puVar2 = (*(unsigned char *)0x02005d44);
   *param_1 = 0;
   *puVar2 = *puVar2 | uVar1;
   func_0200522c(uVar1);

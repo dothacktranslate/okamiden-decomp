@@ -87,12 +87,10 @@ extern int LZCOUNT();
 void func_02030194(undefined1 *param_1,undefined1 *param_2)
 
 {
-  undefined1 uVar1;
-  undefined1 uVar2;
   undefined1 uVar3;
-
+  undefined1 uVar1;
+  undefined1 uVar2 = *param_2;
   uVar1 = param_2[1];
-  uVar2 = *param_2;
   uVar3 = param_2[3];
   param_1[2] = param_2[2];
   param_1[1] = uVar1;

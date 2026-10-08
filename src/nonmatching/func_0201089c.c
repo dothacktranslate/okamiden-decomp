@@ -154,6 +154,6 @@ typedef int code();
 void func_0201089c(undefined4 param_1)
 
 {
-  *(undefined4 *)((*(unsigned int *)0x020108a8) + 0x24) = param_1;
+  *(unsigned short *)((*(unsigned int *)0x020108a8) + 0x24) = param_1;
   return;
 }

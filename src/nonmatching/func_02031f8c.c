@@ -84,12 +84,12 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_02031fac();
+extern int func_02032014();
 
 undefined4 * func_02031f8c(undefined4 *param_1)
 
 {
   *param_1 = ((unsigned int)0x02031fa8);
-  func_02031fac();
+  func_02032014();
   return param_1;
 }

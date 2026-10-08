@@ -86,7 +86,7 @@ extern int LZCOUNT();
 
 extern int func_020561dc();
 
-void func_0205625c(int *param_1,int param_2)
+void func_0205625c(undefined2 *param_1,int param_2)
 
 {
   ushort uVar1;
@@ -98,7 +98,7 @@ void func_0205625c(int *param_1,int param_2)
   uVar1 = *(ushort *)((int)param_1 + 10);
   *(undefined4 *)(param_2 + (uint)uVar1) = 0;
   *(int *)(param_2 + (uint)uVar1 + 4) = *param_1;
-  *(int *)(*param_1 + (uint)*(ushort *)((int)param_1 + 10)) = param_2;
+  *(int *)(*param_1 + (uint)*(unsigned char *)((int)param_1 + 10)) = param_2;
   *param_1 = param_2;
   *(short *)(param_1 + 2) = (short)param_1[2] + 1;
   return;

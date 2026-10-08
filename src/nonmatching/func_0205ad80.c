@@ -90,9 +90,9 @@ void func_0205ad80(int param_1,int param_2)
   if (param_2 < 0) {
     return;
   }
-  if (param_2 < (int)(uint)*(byte *)(param_1 + 0x19)) {
-    if ((*(ushort *)(param_1 + param_2 * 2 + 0x1a) & 0x100) != 0) {
-      *(ushort *)(param_1 + 0x1a + param_2 * 2) = *(ushort *)(param_1 + 0x1a + param_2 * 2) | 0x200;
+  if (param_2 < (int)(uint)*(byte *)(0x19 + param_1)) {
+    if ((*(ushort *)((param_1 * 2 + param_2) + 0x1a) & 0x100) != 0) {
+      *(ushort *)((0x1a + param_1) + param_2 * 2) = *(ushort *)(param_1 + 0x1a + param_2 * 2) | 0x200;
     }
     return;
   }

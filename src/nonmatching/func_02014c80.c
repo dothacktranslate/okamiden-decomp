@@ -154,6 +154,6 @@ typedef int code();
 void func_02014c80(void)
 
 {
-  *(undefined4 *)((*(unsigned int *)0x02014c90) + 4) = 0;
+  *(unsigned short *)((*(unsigned int *)0x02014c90) + 4) = 0;
   return;
 }

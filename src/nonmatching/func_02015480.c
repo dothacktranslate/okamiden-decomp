@@ -87,8 +87,8 @@ extern int LZCOUNT();
 void func_02015480(int param_1,uint *param_2,byte *param_3,uint param_4)
 
 {
-  uint uVar1;
   uint uVar2;
+  uint uVar1;
 
   uVar2 = *param_2;
   uVar1 = 0;
@@ -96,7 +96,7 @@ void func_02015480(int param_1,uint *param_2,byte *param_3,uint param_4)
     do {
       uVar1 = uVar1 + 1;
       uVar2 = *(uint *)(param_1 + ((uVar2 ^ *param_3) & 0xff) * 4) ^ uVar2 >> 8;
-      param_3 = param_3 + 1;
+      param_3 = 1 + param_3;
     } while (uVar1 < param_4);
   }
   *param_2 = uVar2;

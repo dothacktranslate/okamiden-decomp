@@ -93,13 +93,13 @@ int func_0203a610(int param_1)
 {
   int iVar1;
 
-  iVar1 = ((unsigned int)0x0203a634);
+  iVar1 = ((unsigned int)0x00001f04);
   *(undefined4 *)(param_1 + 4) = 0;
   *(undefined4 *)(param_1 + 8) = 0;
   *(undefined4 *)(param_1 + 0xc) = 0;
   *(undefined4 *)(param_1 + 0x10) = 0;
   *(int *)(param_1 + iVar1) = param_1 + 0x78;
-  *(undefined4 *)(param_1 + iVar1 + 4) = 0;
-  func_0203a2cc();
+  *(undefined4 *)(param_1 + (iVar1 + 4)) = 0;
+  func_0203a2cc(param_1);
   return param_1;
 }

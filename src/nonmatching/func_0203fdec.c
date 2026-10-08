@@ -94,7 +94,7 @@ void func_0203fdec(int param_1)
   *(undefined2 *)(param_1 + 0x12) = 10;
   *(undefined2 *)(param_1 + 0x70) = 0;
   *(undefined2 *)(param_1 + 0x72) = 0x1f;
-  uVar1 = ((unsigned int)0x0203fe14);
+  uVar1 = ((unsigned int)0xffffe000);
   *(undefined2 *)(param_1 + 0x10) = 0x1f;
   *(undefined4 *)(param_1 + 100) = 0;
   *(undefined4 *)(param_1 + 0x68) = 0;

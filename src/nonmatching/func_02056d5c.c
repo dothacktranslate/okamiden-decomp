@@ -92,8 +92,8 @@ void func_02056d5c(void)
   uint uVar3;
 
   puVar2 = ((unsigned int)0x02056d80);
-  uVar1 = ((unsigned int)0x02056d7c) >> 0x10;
-  (*(unsigned int *)0x02056d80) = ((unsigned int)0x02056d7c);
+  uVar1 = ((unsigned int)0x4210ffff) >> 0x10;
+  (*(unsigned int *)0x02056d80) = ((unsigned int)0x4210ffff);
   uVar3 = ((unsigned int)0x02056d84);
   puVar2[1] = uVar1;
   puVar2[-7] = uVar3;

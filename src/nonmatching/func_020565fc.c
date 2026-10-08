@@ -95,7 +95,7 @@ undefined4 func_020565fc(int param_1,int param_2)
 
   uVar3 = param_2 + param_1 & 0xfffffffc;
   uVar1 = param_1 + 3U & 0xfffffffc;
-  if ((uVar1 <= uVar3) && (0x2f < uVar3 - uVar1)) {
+  if ((uVar1 <= uVar3) && (0x30 <= uVar3 - uVar1)) {
     uVar2 = func_020564c0();
     return uVar2;
   }

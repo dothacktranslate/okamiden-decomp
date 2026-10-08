@@ -160,7 +160,7 @@ extern int func_0200875c();
 extern int func_02008c40();
 extern int func_02008da0();
 extern int func_0200a2c4();
-extern int func_0200b440();
+extern int func_0200b434();
 extern int func_0200f4a0();
 extern int func_02012e3c();
 extern int func_02014954();
@@ -169,7 +169,7 @@ extern int func_02014954();
 void func_020078a4(void)
 
 {
-  func_0200b440();
+  func_0200b434();
   func_020078ec();
   func_02006668();
   func_02007a08();

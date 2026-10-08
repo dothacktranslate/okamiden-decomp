@@ -87,10 +87,10 @@ extern int LZCOUNT();
 void func_02067218(int param_1)
 
 {
-  if (*(undefined4 **)(param_1 + 0x154) != (undefined4 *)0x0) {
+  if (*(undefined4 **)(0x154 + param_1) != (undefined4 *)0x0) {
     **(undefined4 **)(param_1 + 0x154) = 0;
     *(undefined4 *)(param_1 + 0x154) = 0;
   }
-  *(uint *)(param_1 + 0x118) = *(uint *)(param_1 + 0x118) & 0xfffffff8;
+  *(unsigned short *)(param_1 + 0x118) = *(uint *)(param_1 + 0x118) & 0xfffffff8;
   return;
 }

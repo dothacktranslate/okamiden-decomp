@@ -92,22 +92,22 @@ void func_02003804(void)
 {
   undefined4 *puVar1;
   undefined4 *puVar2;
-  int iVar3;
-  int local_10;
   undefined4 local_c;
+  int local_10;
+  int iVar3;
 
-  (*(unsigned int *)0x0200388c) = (*(unsigned int *)0x0200388c) | 0x8000;
+  (*(unsigned char *)0x04000600) = (*(unsigned short *)0x04000600) | 0x8000;
   do {
     iVar3 = func_02003a50(&local_c);
   } while (iVar3 != 0);
   do {
     iVar3 = func_02003a7c(&local_10);
-    puVar1 = ((unsigned int)0x02003890);
+    puVar1 = ((unsigned int)0x04000440);
   } while (iVar3 != 0);
-  (*(unsigned int *)0x02003890) = 3;
+  (*(unsigned int *)0x04000440) = 3;
   puVar1[5] = 0;
   *puVar1 = 0;
-  puVar2 = ((unsigned int)0x02003890);
+  puVar2 = ((unsigned int)0x04000440);
   if (local_10 != 0) {
     puVar1[2] = local_10;
   }

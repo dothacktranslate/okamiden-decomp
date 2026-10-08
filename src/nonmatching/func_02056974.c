@@ -95,8 +95,8 @@ void func_02056974(ushort *param_1)
   int iVar2;
   ushort uVar3;
 
-  *(int *)(param_1 + 2) = *(int *)(param_1 + 2) + (int)param_1;
-  iVar1 = func_020568e4();
+  *(int *)(2 + param_1) = *(int *)(param_1 + 2) + (int)param_1;
+  iVar1 = func_020568e4(param_1);
   uVar3 = 0;
   if (*param_1 != 0) {
     do {

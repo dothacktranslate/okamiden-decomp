@@ -91,7 +91,7 @@ extern int func_02037ba4();
 undefined4 func_0202b35c(int param_1)
 
 {
-  short sVar1;
+  unsigned short sVar1;
   int iVar2;
   int iVar3;
   int iVar4;
@@ -103,12 +103,12 @@ undefined4 func_0202b35c(int param_1)
   uVar5 = (*(unsigned int *)0x0202b398);
   do {
     iVar4 = param_1 + iVar3 * 2;
-    sVar1 = *(short *)(iVar4 + ((unsigned int)0x0202b39c));
+    sVar1 = *(short *)(iVar4 + ((unsigned int)0x00000e14));
     if ((sVar1 != 0) && (iVar2 = func_02037ba4(uVar5,sVar1,0,0), iVar2 == 0)) {
       local_18 = 0;
     }
     iVar3 = iVar3 + 1;
-    *(undefined2 *)(iVar4 + ((unsigned int)0x0202b39c)) = 0;
+    *(undefined2 *)(iVar4 + ((unsigned int)0x00000e14)) = 0;
   } while (iVar3 < 0x20);
   return local_18;
 }

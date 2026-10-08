@@ -88,7 +88,7 @@ int func_0204b4b0(int param_1,uint param_2)
 
 {
   if ((param_2 & 0x100) != 0) {
-    if (*(int *)(*(int *)(param_1 + 8) + (param_2 & 0xfffffeff) * 8 + 4) == 4) {
+    if (*(int *)(*(int *)(param_1 + 8) + (0xfffffeff & param_2) * 4 + 8) == 4) {
       return *(int *)(*(int *)(param_1 + 8) + (param_2 & 0xfffffeff) * 8) + 0x10;
     }
   }

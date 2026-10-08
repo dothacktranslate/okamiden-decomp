@@ -99,8 +99,8 @@ int func_0204786c(undefined4 param_1,undefined4 param_2,undefined4 param_3)
   int iVar3;
 
   iVar2 = func_02046770();
-  if ((iVar2 != 0) && (iVar3 = func_02046c1c(param_1,param_2), iVar1 = ((unsigned int)0x020478f4), iVar3 != 0)) {
-    func_02046ae8(param_1,((unsigned int)0x020478f4),param_3);
+  if ((iVar2 != 0) && (iVar3 = func_02046c1c(param_1,param_2), iVar1 = ((unsigned int)0xffffd8f0), iVar3 != 0)) {
+    func_02046ae8(param_1,((unsigned int)0xffffd8f0),param_3);
     iVar3 = func_02046504(param_1,iVar1 >> 0xe,iVar1 >> 0xd);
     if (iVar3 != 0) {
       func_02046204(param_1,iVar1 >> 0xc);

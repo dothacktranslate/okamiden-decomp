@@ -94,13 +94,13 @@ void func_02039680(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 
   *(undefined4 *)(param_1 + 0x2c) = param_2;
   *(undefined4 *)(param_1 + 0x30) = param_3;
-  *(undefined4 *)(param_1 + 0x38) = param_5;
-  iVar1 = ((unsigned int)0x020396a0);
+  *(unsigned short *)(param_1 + 0x38) = param_5;
+  iVar1 = ((unsigned int)0xfffff000);
   *(undefined4 *)(param_1 + 0x34) = param_4;
   if (param_6 != iVar1) {
     *(int *)(param_1 + 0x3c) = param_6;
   }
-  if (param_7 != ((unsigned int)0x020396a0)) {
+  if (param_7 != ((unsigned int)0xfffff000)) {
     *(int *)(param_1 + 0x40) = param_7;
   }
   return;

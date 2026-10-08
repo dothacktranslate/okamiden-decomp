@@ -84,32 +84,17 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-void func_02042650(undefined4 *param_1,int param_2,uint *param_3,ushort *param_4)
+extern int func_02038d88();
+
+void func_02038e34(undefined4 param_1,undefined4 param_2,uint param_3,uint param_4)
 
 {
-  uint uVar1;
-  uint uVar2;
-  uint uVar3;
-
-  uVar2 = ((unsigned int)0x020426c8);
-  *param_1 = ((unsigned int)0x020426c4);
-  uVar2 = *param_3 & uVar2 | 0x40000000;
-  param_1[1] = uVar2;
-  uVar3 = *param_3 & 0x1c000000;
-  if (uVar3 == 0x14000000) {
-    uVar1 = *(uint *)(param_2 + 0x18);
-  }
-  else {
-    uVar1 = *(uint *)(param_2 + 8);
-  }
-  param_1[1] = uVar2 + (uVar1 & 0xffff);
-  if ((param_4 != (ushort *)0x0 && uVar3 != 0x1c000000) && uVar3 != 0) {
-    uVar2 = (uint)*param_4 + (*(uint *)(param_2 + 0x2c) & 0xffff);
-    if (param_4[1] == 0) {
-      uVar2 = uVar2 >> 1;
-    }
-    param_1[2] = uVar2;
+  if (param_3 > param_4) {
     return;
   }
+  do {
+    func_02038d88(param_1,param_2,param_3);
+    param_3 = param_3 + 1;
+  } while (param_3 <= param_4);
   return;
 }

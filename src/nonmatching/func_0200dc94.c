@@ -94,7 +94,7 @@ void func_0200dc94(undefined4 param_1,int param_2,undefined4 param_3,uint *param
 
   uVar2 = *param_4;
   uVar1 = *(int *)(*(int *)(param_2 + 4) + 8) - *(int *)(*(int *)(param_2 + 4) + 0xc);
-  if (uVar1 < uVar2) {
+  if (uVar2 > uVar1) {
     *param_4 = uVar1;
   }
   *(uint *)(param_2 + 0x34) = uVar2;

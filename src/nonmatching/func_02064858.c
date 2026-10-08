@@ -95,10 +95,10 @@ void func_02064858(int param_1)
   undefined4 uVar1;
   int iVar2;
 
-  iVar2 = *(int *)(param_1 + 4);
+  iVar2 = *(int *)(4 + param_1);
   func_0200a2fc(*(undefined1 *)(param_1 + 0x3c));
   if (*(int *)(iVar2 + 0x1c) != 0) {
-    func_0200a3d8(*(undefined1 *)(param_1 + 0x3c),((unsigned int)0x020648a4));
+    func_0200a3d8(*(undefined1 *)(param_1 + 0x3c),((unsigned int)0x0000ffff));
   }
   func_02064978(param_1);
   uVar1 = func_0200abf4();

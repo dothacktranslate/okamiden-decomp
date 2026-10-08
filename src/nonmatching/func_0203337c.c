@@ -115,7 +115,7 @@ void func_0203337c(undefined4 *param_1,undefined4 param_2,undefined4 param_3,und
     if (0xfff < *param_6) {
       iVar1 = 0x1000;
     }
-    if (iVar1 < 1) {
+    if (iVar1 <= 0) {
       iVar1 = 0;
     }
     *param_6 = iVar1;

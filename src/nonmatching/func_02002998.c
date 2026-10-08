@@ -90,10 +90,10 @@ void func_02002998(undefined4 param_1)
   undefined2 *puVar1;
 
   puVar1 = ((unsigned int)0x020029c4);
-  (*(unsigned int *)0x020029c4) = 1;
-  *(undefined4 *)(puVar1 + 8) = 0;
-  *(undefined4 *)(puVar1 + 10) = 0x1000;
+  (*(unsigned short *)0x020029c4) = 1;
+  *(undefined4 *)(8 + puVar1) = 0;
+  *(undefined4 *)(10 + puVar1) = 0x1000;
   *(undefined4 *)(puVar1 + 0xc) = param_1;
-  *(undefined4 *)(puVar1 + 0xe) = 0;
+  *(unsigned short *)(puVar1 + 0xe) = 0;
   return;
 }
