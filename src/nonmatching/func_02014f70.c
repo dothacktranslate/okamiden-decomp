@@ -106,7 +106,7 @@ void func_02014f70(int param_1,int param_2,uint param_3)
       uVar2 = *(int *)(param_1 + 0x54) + uVar4;
       *(uint *)(param_1 + 0x54) = uVar2;
       param_3 = param_3 - uVar4;
-      if (0x3f < uVar2) {
+      if (0x40 <= uVar2) {
         (*(code *)*puVar1)(param_1);
         *(undefined4 *)(param_1 + 0x54) = 0;
         iVar3 = *(int *)(param_1 + 0x58) + 1;

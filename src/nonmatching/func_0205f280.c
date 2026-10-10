@@ -158,14 +158,13 @@ int func_0205f280(int param_1,uint param_2)
   int iVar2;
 
   if (param_1 != 0) {
-    param_1 = param_1 + *(int *)(param_1 + (uint)*(ushort *)(param_1 + 0xc));
+    param_1 = param_1 + *(int *)(param_1 + (uint)*(ushort *)(0xc + param_1));
     iVar2 = param_1 + 8;
     if ((iVar2 == 0) || (*(byte *)(param_1 + 9) <= param_2)) {
       piVar1 = (int *)0x0;
     }
     else {
-      piVar1 = (int *)(*(ushort *)(iVar2 + (uint)*(ushort *)(param_1 + 0xe)) * param_2 +
-                      iVar2 + (uint)*(ushort *)(param_1 + 0xe) + 4);
+      piVar1 = (int *)(*(ushort *)(iVar2 + (uint)*(ushort *)(param_1 + 0xe)) * iVar2 + param_2 + (uint)*(ushort *)(param_1 + 0xe) + 4);
     }
     if (piVar1 != (int *)0x0) {
       return param_1 + *piVar1;

@@ -95,7 +95,7 @@ void func_0200b1a8(int param_1)
   undefined4 *puVar2;
 
   func_0200a734();
-  puVar1 = *(undefined4 **)(param_1 + 0x18);
+  puVar1 = *(undefined4 **)(0x18 + param_1);
   while (puVar1 != (undefined4 *)0x0) {
     puVar2 = (undefined4 *)puVar1[1];
     *puVar1 = 0;
@@ -103,6 +103,6 @@ void func_0200b1a8(int param_1)
     func_02007804(puVar1,8);
     puVar1 = puVar2;
   }
-  func_0200a748();
+  func_0200a748(param_1);
   return;
 }

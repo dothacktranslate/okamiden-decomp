@@ -104,7 +104,7 @@ undefined4 func_020425c8(int param_1,int param_2,uint *param_3,undefined4 param_
     func_02009c98(param_1,auStack_20,0x10);
     uVar1 = func_02015cbc(auStack_20,((unsigned int)0x0204264c));
     if (param_2 != 0) {
-      uVar1 = (uint)*(ushort *)(param_2 + 0x34);
+      uVar1 = (uint)*(unsigned char *)(0x34 + param_2);
     }
     if (param_2 == 0 || uVar1 == 0) {
       return 0;

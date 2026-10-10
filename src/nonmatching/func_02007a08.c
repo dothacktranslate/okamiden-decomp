@@ -98,7 +98,7 @@ void func_02007a08(void)
 
   func_02007430();
   uVar1 = func_02007a78(2);
-  func_02007bfc(2,uVar1);
+  func_02007bfc(uVar1,2,uVar1,uVar1);
   uVar1 = func_02007b58(2);
   func_02007c10(2,uVar1);
   func_02008054(1,0x2000000,0x2a);

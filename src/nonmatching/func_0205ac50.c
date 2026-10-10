@@ -87,7 +87,7 @@ extern int LZCOUNT();
 uint func_0205ac50(char *param_1,int param_2)
 
 {
-  char cVar1;
+  unsigned char cVar1;
 
   if (param_1 == (char *)0x0 || param_2 == 0) {
     return 0;
@@ -95,7 +95,7 @@ uint func_0205ac50(char *param_1,int param_2)
   cVar1 = *param_1;
   if (cVar1 != 'J') {
     if (cVar1 == 'M') {
-      return (uint)*(byte *)(param_2 + 0x18) * 2 + 0x1c & 0xfffffffc;
+      return (uint)*(byte *)(0x18 + param_2) * 2 + 0x1c & 0xfffffffc;
     }
     if (cVar1 != 'V') {
       return 0;

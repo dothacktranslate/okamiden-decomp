@@ -93,7 +93,7 @@ void func_0203d818(int param_1)
 {
   int *piVar1;
 
-  *(uint *)(param_1 + 0x18) = ((unsigned int)0x0203d84c) & *(uint *)(param_1 + 0x18);
+  *(uint *)(0x18 + param_1) = ((unsigned int)0x0203d84c) & *(short *)(param_1 + 0x18);
   piVar1 = *(int **)(param_1 + 0x10);
   *(undefined4 *)(param_1 + 0x1c) = 0;
   for (; piVar1 != (int *)(param_1 + 0x10); piVar1 = (int *)*piVar1) {

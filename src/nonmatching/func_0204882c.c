@@ -96,6 +96,6 @@ undefined4 func_0204882c(undefined4 param_1)
   func_02047958(param_1,1);
   func_02047958(param_1,2);
   uVar1 = func_02046504(param_1,1,2);
-  func_02046a48(param_1,uVar1);
+  func_02046a48(param_1,uVar1,uVar1,uVar1);
   return 1;
 }

@@ -97,8 +97,8 @@ void func_02045e34(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   undefined4 *local_2c [2];
   undefined4 uStack_24;
 
-  puVar3 = *(undefined4 **)(param_1 + 0x10);
   bVar1 = false;
+  puVar3 = *(undefined4 **)(param_1 + 0x10);
   uStack_24 = param_4;
   if (puVar3 != (undefined4 *)(param_1 + 0x10)) {
     do {
@@ -108,8 +108,8 @@ void func_02045e34(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       }
       else {
         func_02045ca4(local_2c,param_1,puVar3 + -1);
-        bVar1 = true;
         puVar3 = local_2c[0];
+        bVar1 = true;
       }
     } while (puVar3 != (undefined4 *)(param_1 + 0x10));
   }

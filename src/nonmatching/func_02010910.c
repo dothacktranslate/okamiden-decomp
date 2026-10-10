@@ -93,9 +93,9 @@ int func_02010910(uint *param_1)
   uint uVar4;
 
   uVar4 = *param_1;
-  if (((((uVar4 < 100) && (uVar2 = param_1[1], uVar2 != 0)) && (uVar2 < 0xd)) &&
-      ((uVar1 = param_1[2], uVar1 != 0 && (uVar1 < 0x20)))) &&
-     (((int)param_1[3] < 7 && ((uVar2 != 0 && (uVar2 < 0xd)))))) {
+  if (((((uVar4 < 100) && (uVar2 = param_1[1], uVar2 != 0)) && (uVar2 <= 0xc)) &&
+      ((uVar1 = param_1[2], uVar1 != 0 && (uVar1 <= 0x1f)))) &&
+     (((int)param_1[3] < 7 && ((uVar2 != 0 && (uVar2 <= 0xc)))))) {
     iVar3 = (uVar1 - 1) + *(int *)(((unsigned int)0x0201099c) + uVar2 * 4);
     if ((2 < uVar2) && ((uVar4 & 3) == 0)) {
       iVar3 = iVar3 + 1;

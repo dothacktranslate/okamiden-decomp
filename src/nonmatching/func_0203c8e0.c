@@ -95,9 +95,9 @@ void func_0203c8e0(int param_1,int param_2,int param_3,int param_4,int param_5)
   int iVar1;
   int *piVar2;
 
-  iVar1 = (uint)*(ushort *)(*(int *)(param_3 + 0x1c) + 4) * 0x1000;
-  piVar2 = (int *)(*(int *)(param_1 + 0xac) + param_2 * 0xc);
-  if (iVar1 <= param_5) {
+  piVar2 = (int *)(*(int *)(0xac + param_1) + param_2 * 0xc);
+  iVar1 = (uint)*(ushort *)(*(int *)(0x1c + param_3) + 4) * 0x1000;
+  if (param_5 >= iVar1) {
     param_5 = iVar1;
   }
   if (0x1000 < param_5) {

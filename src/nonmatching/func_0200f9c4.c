@@ -86,7 +86,7 @@ extern int LZCOUNT();
 
 extern int func_02008b6c();
 extern int func_02008be8();
-extern int func_02008e98();
+extern int func_0200947c();
 extern int func_0200947c();
 extern int func_0200f978();
 
@@ -105,6 +105,6 @@ void func_0200f9c4(void)
   func_02008b6c();
   func_0200947c();
   do {
-    func_02008e98();
+    func_0200947c();
   } while( true );
 }

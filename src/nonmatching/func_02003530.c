@@ -86,7 +86,7 @@ extern int LZCOUNT();
 
 extern int func_02008b6c();
 extern int func_02008b80();
-extern int func_020093b8();
+extern int func_02008b6c();
 
 uint func_02003530(undefined4 param_1)
 
@@ -96,7 +96,7 @@ uint func_02003530(undefined4 param_1)
 
   uVar2 = *(uint *)(((unsigned int)0x02003570) + 4);
   if (uVar2 != 0xffffffff) {
-    func_020093b8(uVar2);
+    func_02008b6c(uVar2);
   }
   func_02008b6c();
   *(undefined4 *)(((unsigned int)0x02003570) + 4) = param_1;

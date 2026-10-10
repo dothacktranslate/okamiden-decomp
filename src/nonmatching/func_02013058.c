@@ -92,13 +92,13 @@ extern int func_02008e58();
 void func_02013058(int param_1,int param_2)
 
 {
-  int iVar1;
   undefined4 uVar2;
+  int iVar1;
 
   iVar1 = ((unsigned int)0x020130cc);
   uVar2 = func_02008b6c();
-  if (*(int *)(iVar1 + 0x14) == param_1) {
-    if (*(int *)(iVar1 + 0x24) != param_2) {
+  if (*(unsigned short *)(0x14 + iVar1) == param_1) {
+    if (*(int *)(0x24 + iVar1) != param_2) {
       func_02008e58();
     }
   }

@@ -92,15 +92,15 @@ int func_02002bb0(int *param_1)
   int iVar3;
   int iVar4;
 
-  puVar1 = ((unsigned int)0x02002c08);
+  puVar1 = ((unsigned int)0x040002b0);
   iVar3 = param_1[1];
   iVar4 = *param_1;
   iVar2 = param_1[2];
-  (*(unsigned int *)0x02002c08) = 1;
-  *(longlong *)(puVar1 + 4) =
+  (*(short *)0x040002b0) = 1;
+  *(longlong *)(4 + puVar1) =
        ((longlong)iVar2 * (longlong)iVar2 +
        (longlong)iVar4 * (longlong)iVar4 + (longlong)iVar3 * (longlong)iVar3) * 4;
   do {
   } while ((*puVar1 & 0x8000) != 0);
-  return (*(unsigned int *)0x02002c0c) + 1 >> 1;
+  return (*(unsigned int *)0x040002b4) + 1 >> 1;
 }

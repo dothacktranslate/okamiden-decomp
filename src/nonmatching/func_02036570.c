@@ -154,9 +154,9 @@ typedef int code();
 void func_02036570(int param_1,int param_2)
 
 {
+  int iVar3;
   int iVar1;
   int iVar2;
-  int iVar3;
 
   iVar3 = param_1 + *(int *)(param_1 + 0xc);
   *(int *)(param_1 + 0xc) = iVar3;

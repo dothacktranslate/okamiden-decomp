@@ -98,8 +98,8 @@ void func_02010120(int *param_1,int param_2)
     return;
   }
   func_02008b6c();
-  iVar3 = *param_1;
   iVar2 = *param_1;
+  iVar3 = *param_1;
   do {
     iVar1 = iVar3;
     if (iVar1 == 0) {
@@ -108,11 +108,11 @@ LAB_02010170:
       return;
     }
     if (iVar1 == param_2) {
-      if (iVar1 == iVar2) {
-        *param_1 = *(int *)(iVar1 + 0xc);
+      if (iVar2 == iVar1) {
+        *param_1 = *(int *)(0xc + iVar1);
       }
       else {
-        *(int *)(iVar2 + 0xc) = *(int *)(iVar1 + 0xc);
+        *(int *)(0xc + iVar2) = *(int *)(iVar1 + 0xc);
       }
       goto LAB_02010170;
     }

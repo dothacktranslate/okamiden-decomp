@@ -92,8 +92,8 @@ void func_02062690(int *param_1,int param_2)
   int iVar3;
   int iVar4;
 
-  iVar4 = *(int *)(param_2 + 0x1c);
   iVar3 = *(int *)(param_2 + 0x18);
+  iVar4 = *(int *)(param_2 + 0x1c);
   uVar1 = *(ushort *)(param_2 + 0x2c);
   uVar2 = *(ushort *)(param_2 + 0x2e);
   param_1[5] = iVar4;

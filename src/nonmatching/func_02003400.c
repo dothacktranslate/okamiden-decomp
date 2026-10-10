@@ -165,7 +165,7 @@ void func_02003400(void)
 {
   ushort uVar1;
 
-  uVar1 = (*(unsigned int *)0x0200343c);
+  uVar1 = (*(signed char *)0x0200343c);
   (*(unsigned int *)0x02003440) = 1;
   if (uVar1 == 0) {
     _REG_A_DISPCNT = _REG_A_DISPCNT | 0x10000;

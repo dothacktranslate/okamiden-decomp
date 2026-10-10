@@ -94,9 +94,9 @@ void func_02063898(int param_1,int param_2)
   uVar3 = 0;
   if (param_2 != 1) {
     do {
-      uVar2 = uVar3 + 1;
       iVar1 = param_1 + uVar3 * 0x10;
-      *(uint *)(iVar1 + 0xc) = param_1 + uVar2 * 0x10;
+      uVar2 = uVar3 + 1;
+      *(unsigned short *)(iVar1 + 0xc) = param_1 + uVar2 * 0x10;
       *(int *)(iVar1 + 0x18) = iVar1;
       uVar3 = uVar2;
     } while (uVar2 < param_2 - 1U);

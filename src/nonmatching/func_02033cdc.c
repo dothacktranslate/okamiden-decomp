@@ -103,8 +103,8 @@ void func_02033cdc(undefined4 param_1,int param_2,int param_3,undefined4 param_4
     iVar3 = param_2;
   }
   else {
-    iVar3 = param_2 + 0xc;
     iVar1 = param_2;
+    iVar3 = param_2 + 0xc;
   }
   func_02002ac4(iVar1,iVar3,param_1,param_4,param_4);
   iVar1 = func_02002bb0(param_1);

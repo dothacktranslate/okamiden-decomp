@@ -87,5 +87,5 @@ extern int LZCOUNT();
 bool func_02014618(void)
 
 {
-  return (*(unsigned int *)0x02014634) != ((unsigned int)0x02014638);
+  return (*(unsigned short *)0x02014634) != ((unsigned int)0x0000ffff);
 }

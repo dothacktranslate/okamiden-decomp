@@ -94,7 +94,7 @@ void func_02021a28(int param_1,undefined4 param_2,int param_3,int param_4)
     return;
   }
   if (param_4 != 0) {
-    func_0202193c(param_1,*(undefined4 *)(param_1 + -4),param_2,param_4,param_4);
+    func_0202193c(param_1,*(signed char *)(param_1 + -4),param_2,param_4,param_4);
   }
   func_02032b04(param_1 - param_3);
   return;

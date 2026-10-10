@@ -89,8 +89,8 @@ extern int LZCOUNT();
 undefined4 func_0202b294(int param_1)
 
 {
-  if ((*(int *)(param_1 + ((unsigned int)0x0202b2b0)) != 0) &&
-     (*(int *)(param_1 + ((unsigned int)0x0202b2b4) + 4) < *(int *)(param_1 + ((unsigned int)0x0202b2b4)))) {
+  if ((*(int *)(param_1 + ((unsigned int)0x00000e54)) != 0) &&
+     (*(int *)(param_1 + ((unsigned int)0x00000ac4) + 4) < *(int *)(param_1 + ((unsigned int)0x00000ac4)))) {
     return 1;
   }
   return 0;

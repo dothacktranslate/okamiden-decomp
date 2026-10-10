@@ -91,7 +91,7 @@ void func_02015e80(void)
 
 {
   func_02018c74(1);
-  *(undefined4 *)(((unsigned int)0x02015ea4) + 0xc) = 1;
+  *(unsigned short *)(((unsigned int)0x02015ea4) + 0xc) = 1;
   func_02015ea8(1);
   return;
 }

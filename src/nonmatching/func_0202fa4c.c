@@ -89,9 +89,9 @@ extern int LZCOUNT();
 void func_0202fa4c(int param_1,uint param_2)
 
 {
+  int iVar3;
   uint uVar1;
   int iVar2;
-  int iVar3;
 
   *(uint *)(param_1 + 0xfc) = *(uint *)(param_1 + 0xfc) | param_2;
   uVar1 = 0;

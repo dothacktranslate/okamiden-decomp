@@ -84,11 +84,11 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-void func_02022c84(undefined4 *param_1,undefined4 param_2,undefined4 param_3)
+void func_02022c84(undefined2 *param_1,undefined4 param_2,undefined4 param_3)
 
 {
-                    /* WARNING: Could not recover jumptable at 0x02022c98. Too many branches */
+                    /* WARNING: Could not recover jumptable at 0xe12fff1c. Too many branches */
                     /* WARNING: Treating indirect jump as call */
-  ((code *)(*(unsigned int *)0x02022c9c))(*param_1,0x800,param_2,param_3);
+  ((code *)(*(unsigned char *)0x02022c9c))(*param_1,0x800,param_2,param_3);
   return;
 }

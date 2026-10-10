@@ -84,12 +84,12 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-void func_02035834(undefined4 *param_1,int *param_2,int param_3,int *param_4)
+void func_02035834(ushort *param_1,int *param_2,int param_3,undefined1 *param_4)
 
 {
-  undefined4 *puVar1;
+  undefined2 *puVar1;
 
-  puVar1 = *(undefined4 **)(param_3 + 4);
+  puVar1 = *(undefined4 **)(4 + param_3);
   *param_4 = param_3;
   param_4[1] = (int)puVar1;
   *(int **)(param_3 + 4) = param_4;

@@ -93,15 +93,15 @@ int func_0202d440(int param_1,uint param_2,uint param_3)
   int iVar2;
 
   iVar2 = 0;
-  if (*(ushort *)(param_1 + ((unsigned int)0x0202d47c)) != 0) {
+  if (*(unsigned char *)(param_1 + ((unsigned int)0x00000bec)) != 0) {
     do {
-      iVar1 = param_1 + iVar2 * 2;
-      if ((param_2 == *(ushort *)(iVar1 + ((unsigned int)0x0202d47c) + 2)) &&
-         (param_3 == *(ushort *)(iVar1 + ((unsigned int)0x0202d47c) + 0x42))) {
+      iVar1 = iVar2 + param_1 * 2;
+      if ((param_2 == *(ushort *)(iVar1 + ((unsigned int)0x00000bec) + 2)) &&
+         (param_3 == *(ushort *)(iVar1 + ((unsigned int)0x00000bec) + 0x42))) {
         return iVar2;
       }
-      iVar2 = iVar2 + 1;
-    } while (iVar2 < (int)(uint)*(ushort *)(param_1 + ((unsigned int)0x0202d47c)));
+      iVar2 = 1 + iVar2;
+    } while (iVar2 < (int)(uint)*(ushort *)(param_1 + ((unsigned int)0x00000bec)));
   }
   return -1;
 }

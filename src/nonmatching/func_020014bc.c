@@ -93,8 +93,8 @@ void func_020014bc(int param_1,int param_2)
   undefined4 uVar2;
 
   func_02000d00();
-  uVar2 = *(undefined4 *)(param_1 + 0x28);
   uVar1 = *(undefined4 *)(param_1 + 0x2c);
+  uVar2 = *(undefined4 *)(param_1 + 0x28);
   *(undefined4 *)(param_2 + 0x24) = *(undefined4 *)(param_1 + 0x24);
   *(undefined4 *)(param_2 + 0x28) = uVar2;
   *(undefined4 *)(param_2 + 0x2c) = uVar1;

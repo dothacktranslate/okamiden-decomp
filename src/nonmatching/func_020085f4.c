@@ -85,7 +85,7 @@ extern int LZCOUNT();
       ((int)(a) < 0)))
 
 extern int func_02008384();
-extern int func_020084cc();
+extern int func_02008b80();
 extern int func_02008b6c();
 extern int func_02008b80();
 extern int func_02008e58();
@@ -104,9 +104,9 @@ void func_020085f4(int *param_1,undefined4 param_2,undefined4 param_3,int param_
   param_1[8] = 0;
   *param_1 = param_4;
   param_1[1] = param_5;
-  lVar2 = func_02008384();
+  lVar2 = func_02008384(param_1);
   lVar2 = lVar2 + CONCAT44(param_3,param_2);
-  func_020084cc(param_1,(int)lVar2,(int)((ulonglong)lVar2 >> 0x20));
+  func_02008b80(param_1,(int)lVar2,(int)((ulonglong)lVar2 >> 0x20));
   func_02008b80(uVar1);
   return;
 }

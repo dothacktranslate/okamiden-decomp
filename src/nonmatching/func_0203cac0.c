@@ -93,8 +93,8 @@ void func_0203cac0(int param_1,uint param_2,uint param_3,int param_4)
   int iVar2;
   uint uVar3;
 
-  for (; param_2 < param_3; param_2 = param_2 + 1 & 0xffff) {
-    iVar2 = *(int *)(param_1 + 0xa8);
+  for (; param_2 < param_3; param_2 = 1 + param_2 & 0xffff) {
+    iVar2 = *(short *)(param_1 + 0xa8);
     iVar1 = param_2 * 0x48;
     *(uint *)(iVar2 + iVar1) = *(uint *)(iVar2 + iVar1) | 1;
     if (param_4 == 0) {

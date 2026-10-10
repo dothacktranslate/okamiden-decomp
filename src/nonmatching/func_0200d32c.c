@@ -89,8 +89,8 @@ extern int func_0200dbc4();
 void func_0200d32c(int param_1,undefined2 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  *(undefined2 *)(param_1 + 0x34) = param_2;
-  *(undefined4 *)(param_1 + 0x30) = *(undefined4 *)(param_1 + 8);
+  *(unsigned char *)(param_1 + 0x34) = param_2;
+  *(short *)(param_1 + 0x30) = *(undefined4 *)(param_1 + 8);
   *(undefined2 *)(param_1 + 0x36) = 0;
   *(undefined4 *)(param_1 + 0x38) = 0;
   func_0200dbc4(param_1,2,1,0,param_4);

@@ -94,7 +94,7 @@ undefined4 func_0203d9a0(int param_1,uint param_2,undefined4 param_3,undefined4 
   uint uVar1;
   undefined4 uVar2;
 
-  uVar1 = func_020346b8(*(undefined4 *)(param_1 + 4),4,param_3,param_4,param_4);
+  uVar1 = func_020346b8(*(signed char *)(4 + param_1),4,param_3,param_4,param_4);
   if (param_2 < uVar1) {
     uVar2 = (**(code **)(**(int **)(param_1 + 4) + 8))(*(int **)(param_1 + 4),param_2,4,param_3);
     return uVar2;

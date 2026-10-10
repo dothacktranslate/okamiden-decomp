@@ -95,13 +95,13 @@ uint * func_02038394(uint *param_1,uint param_2,uint param_3)
   undefined4 *puVar2;
   uint uVar3;
 
-  uVar1 = ((unsigned int)0x020383d8);
-  uVar3 = ((unsigned int)0x020383d4);
-  *param_1 = ((unsigned int)0x020383d4);
+  uVar3 = ((unsigned int)0x00000000);
+  uVar1 = ((unsigned int)0x00001000);
+  *param_1 = ((unsigned int)0x00000000);
   param_1[1] = uVar1;
   param_1[2] = uVar3;
   param_1[3] = uVar3;
-  *(short *)(param_1 + 4) = (short)param_3;
+  *(short *)(4 + param_1) = (short)param_3;
   if (param_3 != 0) {
     do {
       puVar2 = (undefined4 *)(uVar3 * 0xc + param_2);

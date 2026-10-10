@@ -91,17 +91,17 @@ extern int func_02022ffc();
 uint func_02024bc0(uint param_1,uint param_2)
 
 {
-  int *piVar1;
+  sbyte *piVar1;
   int iVar2;
   uint uVar3;
 
   piVar1 = ((unsigned int)0x02024bf4);
   uVar3 = 0;
-  for (; param_1 <= param_2; param_2 = param_2 - 1 & 0xffff) {
-    uVar3 = (uVar3 & 0x7fff) << 1;
+  for (; param_2 >= param_1; param_2 = param_2 - 1 & 0xffff) {
+    uVar3 = (0x7fff & uVar3) << 1;
     iVar2 = func_02022ffc(*piVar1 + 0xf0,param_2);
     if (iVar2 != 0) {
-      uVar3 = uVar3 | 1;
+      uVar3 = 1 | uVar3;
     }
   }
   return uVar3;

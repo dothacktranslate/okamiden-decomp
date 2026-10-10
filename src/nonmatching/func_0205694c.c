@@ -96,7 +96,7 @@ int func_0205694c(ushort *param_1,uint param_2)
     else {
       iVar1 = param_2 * 0x10;
     }
-    return *(int *)(param_1 + 2) + iVar1;
+    return *(short *)(2 + param_1) + iVar1;
   }
   return 0;
 }

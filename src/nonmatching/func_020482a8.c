@@ -104,10 +104,10 @@ undefined4 func_020482a8(undefined4 param_1)
   int iVar6;
 
   iVar3 = func_020461e8();
-  iVar2 = ((unsigned int)0x02048364);
-  func_02046ae8(param_1,((unsigned int)0x02048364),((unsigned int)0x02048368));
+  iVar2 = ((unsigned int)0xffffd8ee);
+  func_02046ae8(param_1,((unsigned int)0xffffd8ee),((unsigned int)0x02048368));
   iVar6 = 1;
-  if (0 < iVar3) {
+  if (1 <= iVar3) {
     iVar1 = iVar2 >> 0xe;
     do {
       func_02046414(param_1,iVar1);

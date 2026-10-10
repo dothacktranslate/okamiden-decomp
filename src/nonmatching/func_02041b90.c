@@ -91,7 +91,7 @@ extern int func_020419d4();
 void func_02041b90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  if (((*(uint *)(param_1 + 0x1ec) & 0x3f) == 0) && ((*(uint *)(*(unsigned int *)0x02041bbc) & 1) == 0)) {
+  if (((*(uint *)(0x1ec + param_1) & 0x3f) == 0) && ((*(signed char *)(*(unsigned int *)0x02041bbc) & 1) == 0)) {
     func_020419d4(param_1,4,0,param_4,param_4);
     *(uint *)(param_1 + 0x1ec) = *(uint *)(param_1 + 0x1ec) | 0x10;
   }

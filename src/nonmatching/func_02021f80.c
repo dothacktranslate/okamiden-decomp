@@ -94,9 +94,7 @@ bool func_02021f80(void)
   int iVar1;
   undefined4 in_r3;
   undefined1 auStack_14 [4];
-  undefined4 uStack_10;
-
-  uStack_10 = in_r3;
+  undefined4 uStack_10 = in_r3;
   iVar1 = func_02032e4c((*(unsigned int *)0x02021fa4),0,auStack_14,4,1);
   return iVar1 != 0;
 }

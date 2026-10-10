@@ -101,10 +101,10 @@ void func_0200889c(int *param_1,int param_2,undefined2 param_3,int param_4,int p
   if ((param_1 == (int *)0x0) || (*param_1 != 0)) {
     func_02008e58();
   }
-  uVar1 = (*(unsigned int *)0x02008924);
+  uVar1 = (*(unsigned int *)0x04000006);
   iVar3 = func_02008b1c((uint)uVar1);
   if (param_2 <= (int)(uint)uVar1) {
-    iVar3 = iVar3 + 1;
+    iVar3 = 1 + iVar3;
   }
   param_1[7] = 0;
   param_1[3] = iVar3;

@@ -89,6 +89,6 @@ extern int func_02014260();
 undefined4 func_0200e7a0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  func_02014260((*(unsigned int *)0x0200e7e4),param_3,param_2,param_4,((unsigned int)0x0200e7e0),param_1,1);
+  func_02014260((*(unsigned char *)0x0200e7e4),param_3,param_2,param_4,((unsigned int)0x0200e7e0),param_1,1);
   return 0x100;
 }

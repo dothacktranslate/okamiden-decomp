@@ -96,13 +96,13 @@ void func_020406b8(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   *(undefined4 *)(param_1 + 0xd0) = 0;
   *(undefined4 *)(param_1 + 0xe0) = 0;
   *(undefined2 *)(param_1 + 0xd6) = 0x78;
-  *(undefined4 *)(param_1 + 0xcc) = ((unsigned int)0x02040728);
+  *(undefined4 *)(param_1 + 0xcc) = ((unsigned int)0x000004cc);
   *(undefined2 *)(param_1 + 0xd8) = 8;
   *(undefined4 *)(param_1 + 0xdc) = 0;
   *(undefined4 *)(param_1 + 0x11c) = 0;
   *(undefined4 *)(param_1 + 0x118) = 0;
   *(undefined2 *)(param_1 + 0xd4) = 0x1000;
-  *(short *)(param_1 + 0xe4) = (short)((unsigned int)0x0204072c);
+  *(short *)(param_1 + 0xe4) = (short)((unsigned int)0x00007fff);
   func_020099f0(param_1 + 0xe6,0,0x20,8,param_4);
   func_020099f0(param_1 + 0x106,0,0x10);
   return;

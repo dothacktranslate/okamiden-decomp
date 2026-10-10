@@ -99,7 +99,7 @@ uint func_0203ca80(int param_1,undefined4 param_2,int param_3,undefined4 param_4
   int local_8;
   undefined4 uStack_4;
 
-  iVar2 = *(int *)(param_1 + 0x14) + *(int *)(*(int *)(param_1 + 0x14) + 4);
+  iVar2 = *(unsigned char *)(param_1 + 0x14) + *(int *)(*(int *)(0x14 + param_1) + 4);
   *(int *)(((unsigned int)0x0203cabc) + 4) = iVar2;
   uStack_1c = param_4;
   local_8 = param_3;
@@ -108,5 +108,5 @@ uint func_0203ca80(int param_1,undefined4 param_2,int param_3,undefined4 param_4
   uVar1 = uVar1 & 0xffff;
   local_20 = local_8 + uVar1;
   iVar2 = func_0203ca18(&local_8,&local_20,uVar1);
-  return uVar1 + iVar2 & 0xffff;
+  return iVar2 + uVar1 & 0xffff;
 }

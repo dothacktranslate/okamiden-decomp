@@ -96,7 +96,7 @@ void func_02041100(undefined4 param_1,undefined4 param_2)
   int iVar1;
   undefined4 uVar2;
 
-  iVar1 = func_02036edc((*(unsigned int *)0x02041130),*(undefined4 *)(((unsigned int)0x02041134) + 0x44));
+  iVar1 = func_02036edc((*(short *)0x02041130),*(undefined4 *)(((unsigned int)0x02041134) + 0x44));
   if (iVar1 != 0) {
     uVar2 = func_0205f240(*(undefined4 *)(iVar1 + 0x10));
     func_0203a508((*(unsigned int *)0x02041138) + 0x1fc,uVar2,param_2);

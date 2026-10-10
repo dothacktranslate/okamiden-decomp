@@ -102,5 +102,5 @@ int func_0202e134(int param_1,int param_2,uint param_3)
       return 0;
     }
   }
-  return param_1 + 0x28 + iVar2 * 0x10;
+  return (param_1 + iVar2) + 0x28 * 0x10;
 }

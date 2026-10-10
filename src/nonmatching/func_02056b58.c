@@ -91,7 +91,7 @@ void func_02056b58(undefined4 param_1,int *param_2)
 {
   int iVar1;
 
-  iVar1 = func_02056b88(param_1,((unsigned int)0x02056b84));
+  iVar1 = func_02056b88(param_1,((unsigned int)0x5343524e));
   if (iVar1 == 0) {
     *param_2 = 0;
   }

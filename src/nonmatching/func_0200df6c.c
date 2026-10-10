@@ -91,8 +91,8 @@ void func_0200df6c(undefined4 param_1,int param_2,undefined4 param_3,undefined4 
 {
   int iVar1;
 
-  *(undefined4 *)(param_2 + 0x34) = param_3;
-  *(undefined4 *)(param_2 + 0x30) = param_1;
+  *(undefined4 *)(0x34 + param_2) = param_3;
+  *(unsigned short *)(param_2 + 0x30) = param_1;
   iVar1 = func_0200dbc4(param_2,6,1,param_4,param_4);
   if (iVar1 != 0) {
     return;

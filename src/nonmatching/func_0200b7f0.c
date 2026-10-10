@@ -96,7 +96,7 @@ int func_0200b7f0(int param_1,int param_2)
 
   if (param_2 == 0x100) {
     uVar1 = func_02008b6c();
-    uVar2 = *(uint *)(param_1 + 0xc);
+    uVar2 = *(unsigned short *)(param_1 + 0xc);
     while ((uVar2 & 8) == 0) {
       func_02007000(param_1 + 0x18);
       uVar2 = *(uint *)(param_1 + 0xc);

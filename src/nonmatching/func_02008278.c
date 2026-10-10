@@ -87,6 +87,6 @@ extern int LZCOUNT();
 void func_02008278(uint param_1)
 
 {
-  (*(unsigned int *)0x02008298) = (*(unsigned int *)0x02008298) | (ushort)(1 << (param_1 & 0xff));
+  (*(unsigned short *)0x02008298) = (*(unsigned int *)0x02008298) | (ushort)(1 << (0xff & param_1));
   return;
 }

@@ -85,7 +85,7 @@ extern int LZCOUNT();
       ((int)(a) < 0)))
 
 extern int func_0204b8b0();
-extern int func_0204b934();
+extern int func_0204b8b0();
 extern int func_0204f6b0();
 
 void func_0204b9e0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
@@ -98,7 +98,7 @@ void func_0204b9e0(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
   uStack_8 = param_3;
   uStack_4 = param_4;
   uVar1 = func_0204f6b0(param_1,param_2,&uStack_8);
-  func_0204b8b0(param_1,uVar1);
-  func_0204b934(param_1);
+  func_0204b8b0(uVar1,param_1,uVar1);
+  func_0204b8b0(param_1);
   return;
 }

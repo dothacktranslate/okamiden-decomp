@@ -88,13 +88,11 @@ int func_020642b4(void)
 
 {
   int iVar1;
-  uint uVar2;
-
-  uVar2 = 1;
+  uint uVar2 = 1;
   iVar1 = 0;
   do {
     if ((*(uint *)(((unsigned int)0x020642f4) + 4) & uVar2) == 0) {
-      *(uint *)(((unsigned int)0x020642f4) + 4) = *(uint *)(((unsigned int)0x020642f4) + 4) | uVar2;
+      *(uint *)(((unsigned int)0x020642f4) + 4) = *(unsigned char *)(((unsigned int)0x020642f4) + 4) | uVar2;
       return iVar1;
     }
     iVar1 = iVar1 + 1;

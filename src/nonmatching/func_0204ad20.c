@@ -90,7 +90,7 @@ undefined4 func_0204ad20(int param_1)
   byte bVar1;
   int iVar2;
 
-  if (0xfa < *(byte *)(param_1 + 0x4b)) {
+  if (0xfa < *(byte *)(0x4b + param_1)) {
     return 0;
   }
   bVar1 = *(byte *)(param_1 + 0x4a);
@@ -104,7 +104,7 @@ undefined4 func_0204ad20(int param_1)
     return 0;
   }
   iVar2 = *(int *)(param_1 + 0x2c);
-  if (*(int *)(param_1 + 0x30) == iVar2 || *(int *)(param_1 + 0x30) == 0) {
+  if (*(int *)(param_1 + 0x30) == iVar2 || *(unsigned short *)(param_1 + 0x30) == 0) {
     if ((0 < iVar2) && ((*(uint *)(*(int *)(param_1 + 0xc) + (iVar2 + -1) * 4) & 0x3f) == 0x1e)) {
       return 1;
     }

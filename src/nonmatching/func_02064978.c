@@ -91,10 +91,10 @@ void func_02064978(int param_1)
 
 {
   *(undefined1 *)(param_1 + 0x2e) = 0;
-  *(undefined1 *)(param_1 + 0x2d) = 0;
+  *(undefined1 *)(0x2d + param_1) = 0;
   *(undefined1 *)(param_1 + 0x2f) = 0;
-  *(undefined2 *)(param_1 + 0x34) = 0;
-  *(undefined2 *)(param_1 + 0x3e) = 0;
+  *(unsigned char *)(param_1 + 0x34) = 0;
+  *(unsigned char *)(param_1 + 0x3e) = 0;
   *(undefined1 *)(param_1 + 0x40) = 0x7f;
   *(undefined1 *)(param_1 + 0x41) = 0x7f;
   func_020685ac(param_1 + 0x1c);

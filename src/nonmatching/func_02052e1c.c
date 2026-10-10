@@ -89,18 +89,18 @@ extern int func_02052d44();
 void func_02052e1c(int param_1)
 
 {
-  uint uVar1;
   uint uVar2;
   uint uVar3;
+  uint uVar1;
 
   uVar3 = *(uint *)(param_1 + 0x1c);
   if ((uVar3 != 0) && (*(int *)(*(int *)(param_1 + 0xc) + (uVar3 - 1) * 8 + 4) == 0)) {
     uVar2 = 0;
-    if (uVar3 < 2) {
+    if (uVar3 <= 1) {
       return;
     }
     do {
-      uVar1 = uVar2 + uVar3 >> 1;
+      uVar1 = uVar3 + uVar2 >> 1;
       if (*(int *)(*(int *)(param_1 + 0xc) + uVar1 * 8 + -4) != 0) {
         uVar2 = uVar1;
         uVar1 = uVar3;

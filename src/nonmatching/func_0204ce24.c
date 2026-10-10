@@ -93,7 +93,7 @@ int func_0204ce24(undefined4 param_1)
   int iVar1;
 
   iVar1 = func_0204e55c(param_1,0,0,0x14);
-  func_0204e430(param_1,iVar1,10);
+  func_0204e430(iVar1,param_1,iVar1,10,iVar1);
   *(int *)(iVar1 + 8) = iVar1 + 0xc;
   *(undefined4 *)(iVar1 + 0x10) = 0;
   return iVar1;

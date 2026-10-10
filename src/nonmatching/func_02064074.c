@@ -97,12 +97,12 @@ void func_02064074(void)
   undefined4 uVar3;
 
   iVar1 = ((unsigned int)0x020640c4);
-  uVar3 = func_02063898(*(undefined4 *)(((unsigned int)0x020640c4) + 0xc),*(uint *)(((unsigned int)0x020640c4) + 0x10) >> 4);
-  uVar2 = ((unsigned int)0x020640c8);
-  *(undefined4 *)(iVar1 + 4) = uVar3;
-  func_0206388c(uVar2);
-  uVar3 = ((unsigned int)0x020640cc);
-  func_020638dc(uVar2,((unsigned int)0x020640cc),0,*(undefined4 *)(iVar1 + 8));
-  func_02063a84(uVar2,uVar3);
+  uVar2 = func_02063898(*(undefined4 *)(((unsigned int)0x020640c4) + 0xc),*(uint *)(((unsigned int)0x020640c4) + 0x10) >> 4);
+  uVar3 = ((unsigned int)0x020640c8);
+  *(undefined4 *)(iVar1 + 4) = uVar2;
+  func_0206388c(uVar3);
+  uVar2 = ((unsigned int)0x020640cc);
+  func_020638dc(uVar3,((unsigned int)0x020640cc),0,*(undefined4 *)(iVar1 + 8));
+  func_02063a84(uVar3,uVar2);
   return;
 }

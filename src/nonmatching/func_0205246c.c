@@ -94,8 +94,8 @@ int func_0205246c(int param_1,undefined4 param_2,int *param_3)
   int iVar3;
   int iVar4;
 
-  iVar2 = 0;
   iVar4 = 1 << *(sbyte *)(param_1 + 7);
+  iVar2 = 0;
   iVar3 = 0;
   while (iVar4 != 0) {
     iVar4 = iVar4 + -1;

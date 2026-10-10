@@ -92,8 +92,8 @@ void func_02062ae4(undefined4 *param_1,int param_2)
   int iVar3;
   int iVar4;
 
-  uVar1 = *(ushort *)(param_2 + 0x2e);
-  iVar4 = *(int *)(param_2 + 0x28);
+  uVar1 = *(ushort *)(0x2e + param_2);
+  iVar4 = *(unsigned char *)(param_2 + 0x28);
   iVar3 = *(int *)(param_2 + 0x24);
   uVar2 = *(ushort *)(param_2 + 0x2c);
   param_1[5] = 0x1000;

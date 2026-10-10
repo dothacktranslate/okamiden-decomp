@@ -87,8 +87,8 @@ extern int LZCOUNT();
 void func_0205bda4(int param_1,int param_2,int param_3,int param_4)
 
 {
-  *(uint *)(((unsigned int)0x0205bddc) + param_1 * 4) =
-       ((unsigned int)0x0205bdd8) & param_2 >> 3 | (param_3 >> 3 & 0x3ffU) << 10 | (param_4 >> 3 & 0x3ffU) << 0x14
+  *(unsigned short *)(((unsigned int)0x0205bddc) + param_1 * 4) =
+       ((unsigned int)0x000003ff) & param_2 >> 3 | (param_3 >> 3 & 0x3ffU) << 10 | (param_4 >> 3 & 0x3ffU) << 0x14
        | param_1 << 0x1e;
   return;
 }

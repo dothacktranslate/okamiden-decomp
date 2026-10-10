@@ -89,14 +89,14 @@ extern int func_0204bd40();
 void func_0204baa0(int param_1)
 
 {
-  int iVar1;
+  uint iVar1;
 
-  if (*(int *)(param_1 + 0x30) <= ((unsigned int)0x0204bae4)) {
+  if (*(int *)(0x30 + param_1) <= ((unsigned int)0x00004e20)) {
     return;
   }
-  iVar1 = *(int *)(param_1 + 0x14) - *(int *)(param_1 + 0x28);
-  if (((unsigned int)0x0204bae4) <=
-      ((int)((longlong)((unsigned int)0x0204bae8) * (longlong)iVar1 >> 0x22) - (iVar1 >> 0x1f)) + 1) {
+  iVar1 = *(int *)(0x14 + param_1) - *(int *)(param_1 + 0x28);
+  if (((unsigned int)0x00004e20) <=
+      ((int)((longlong)((unsigned int)0x2aaaaaab) * (longlong)iVar1 >> 0x22) - (iVar1 >> 0x1f)) + 1) {
     return;
   }
   func_0204bd40();

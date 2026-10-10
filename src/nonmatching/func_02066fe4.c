@@ -97,7 +97,7 @@ void func_02066fe4(undefined4 param_1)
   iVar3 = 0;
   do {
     iVar2 = iVar3 * 0x17c + iVar1;
-    if (*(int *)(iVar2 + 0x118) << 0x1f < 0) {
+    if (*(short *)(0x118 + iVar2) << 0x1f < 0) {
       func_020674b0(iVar2,param_1);
     }
     iVar3 = iVar3 + 1;

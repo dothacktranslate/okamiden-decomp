@@ -94,7 +94,7 @@ int func_02038054(int param_1)
 {
   int iVar1;
 
-  if (((*(unsigned int *)0x02038088) == 0) &&
+  if (((*(signed char *)0x02038088) == 0) &&
      (iVar1 = func_02032bcc(param_1 * 0xc + 0x14,4,((unsigned int)0x0203808c)), iVar1 != 0)) {
     iVar1 = func_02038394(iVar1,iVar1 + 0x14,param_1);
     (*(unsigned int *)0x02038088) = iVar1;

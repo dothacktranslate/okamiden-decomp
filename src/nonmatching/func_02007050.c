@@ -87,7 +87,7 @@ extern int LZCOUNT();
 extern int func_02006a98();
 extern int func_02006bf4();
 extern int func_02008b6c();
-extern int func_02008b80();
+extern int func_02006bf4();
 
 void func_02007050(int *param_1)
 
@@ -108,6 +108,6 @@ void func_02007050(int *param_1)
     *param_1 = 0;
     func_02006bf4();
   }
-  func_02008b80(uVar1);
+  func_02006bf4(uVar1);
   return;
 }

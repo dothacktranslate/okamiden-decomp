@@ -91,8 +91,8 @@ extern int func_020101c0();
 void func_02064ed0(int param_1)
 
 {
-  func_0200a400(*(undefined4 *)(param_1 + 0x4c),0,1 << (*(uint *)(param_1 + 0x48) & 0xff),0);
-  if (*(int *)(param_1 + 0x2c) << 0x1e < 0) {
+  func_0200a400(*(undefined4 *)(0x4c + param_1),0,1 << (*(uint *)(param_1 + 0x48) & 0xff),0);
+  if (*(unsigned short *)(param_1 + 0x2c) << 0x1e < 0) {
     return;
   }
   func_020101a0(param_1 + 8);

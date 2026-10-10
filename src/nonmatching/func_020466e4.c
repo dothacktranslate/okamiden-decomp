@@ -109,11 +109,11 @@ undefined4 func_020466e4(undefined4 param_1)
       uVar2 = 0;
     }
     else {
-      uVar2 = *(undefined4 *)(*piVar1 + 0xc);
+      uVar2 = *(unsigned char *)(*piVar1 + 0xc);
     }
     return uVar2;
   case 4:
-    return *(undefined4 *)(*piVar1 + 0xc);
+    return *(signed char *)(*piVar1 + 0xc);
   case 5:
     uVar2 = func_02052e1c(*piVar1);
     return uVar2;

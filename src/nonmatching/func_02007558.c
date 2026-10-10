@@ -85,7 +85,7 @@ extern int LZCOUNT();
       ((int)(a) < 0)))
 
 extern int func_02007000();
-extern int func_02007600();
+extern int func_02007000();
 extern int func_02008b6c();
 extern int func_02008b80();
 
@@ -94,14 +94,14 @@ void func_02007558(undefined4 param_1)
 {
   undefined4 uVar1;
   int iVar2;
-  int iVar3;
+  uint iVar3;
 
   uVar1 = func_02008b6c();
   iVar3 = *(int *)(((unsigned int)0x020075a4) + 4);
-  while (iVar2 = func_02007600(param_1), iVar2 == 0) {
+  while (iVar2 = func_02007000(param_1), iVar2 == 0) {
     *(undefined4 *)(iVar3 + 0x84) = param_1;
     func_02007000(param_1);
-    *(undefined4 *)(iVar3 + 0x84) = 0;
+    *(unsigned short *)(iVar3 + 0x84) = 0;
   }
   func_02008b80(uVar1);
   return;

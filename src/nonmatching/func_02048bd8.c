@@ -94,12 +94,10 @@ void func_02048bd8(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
 {
   undefined4 uVar1;
   undefined4 uVar2;
-  undefined4 local_10;
-
-  local_10 = param_4;
+  undefined4 local_10 = param_4;
   uVar1 = func_02047988(param_1,1,&local_10);
   uVar2 = func_020479b8(param_1,2,uVar1,0);
   uVar1 = func_0204819c(param_1,uVar1,local_10,uVar2);
-  func_02048bac(param_1,uVar1);
+  func_02048bac(uVar1,param_1,uVar1);
   return;
 }

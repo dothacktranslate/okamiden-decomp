@@ -166,6 +166,6 @@ void func_02005d94(void)
   _REG_A_DISPCNT = _REG_A_DISPCNT & 0x7fffffff;
                     /* WARNING: Could not recover jumptable at 0x02005dac. Too many branches */
                     /* WARNING: Treating indirect jump as call */
-  ((code *)(*(unsigned int *)0x02005db4))(((unsigned int)0x02005db0));
+  ((code *)(*(unsigned short *)0x02005db4))(((unsigned int)0x02005db0));
   return;
 }

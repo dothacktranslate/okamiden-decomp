@@ -88,7 +88,7 @@ extern int LZCOUNT();
 
 extern int func_0203d2c0();
 extern int func_0203d850();
-extern int func_02041038();
+extern int func_02041034();
 extern int func_0204106c();
 
 void func_0204201c(int param_1)
@@ -96,7 +96,7 @@ void func_0204201c(int param_1)
 {
   undefined4 *puVar1;
 
-  *(uint *)(param_1 + 0x124) = ((unsigned int)0x0204204c) & *(uint *)(param_1 + 0x124);
+  *(uint *)(param_1 + 0x124) = ((unsigned int)0xfffdffff) & *(uint *)(param_1 + 0x124);
   func_0203d850((*(unsigned int *)0x02042050));
   func_0203d2c0((*(unsigned int *)0x02042054));
   puVar1 = ((unsigned int)0x02042058);

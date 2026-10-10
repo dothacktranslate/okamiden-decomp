@@ -96,8 +96,8 @@ void func_0203c950(undefined4 param_1,int param_2,int param_3,uint param_4)
   uVar1 = 0;
   if (param_4 != 0) {
     do {
-      if (*(ushort *)(param_3 + uVar1 * 2) != ((unsigned int)0x0203c97c)) {
-        func_0205ad48(param_2 + 0x14);
+      if (*(ushort *)(uVar1 + param_3 * 2) != ((unsigned int)0x0000ffff)) {
+        func_0205ad48(0x14 + param_2);
       }
       uVar1 = uVar1 + 1 & 0xffff;
     } while (uVar1 < param_4);

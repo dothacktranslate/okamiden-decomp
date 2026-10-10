@@ -93,7 +93,7 @@ int func_02047bd4(int *param_1)
   iVar2 = 0;
   iVar1 = *param_1;
   while (iVar1 != 0) {
-    param_1 = param_1 + 2;
+    param_1 = 2 + param_1;
     iVar2 = iVar2 + 1;
     iVar1 = *param_1;
   }

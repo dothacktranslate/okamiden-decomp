@@ -87,5 +87,5 @@ extern int LZCOUNT();
 bool func_0200b588(uint param_1,int param_2)
 
 {
-  return (*(uint *)(((unsigned int)0x0200b5a8) + param_2 * 4 + 0x388) & 1 << (param_1 & 0xff)) != 0;
+  return (*(uint *)(((unsigned int)0x0200b5a8) + 4 * 0x388 + param_2) & 1 << (param_1 & 0xff)) != 0;
 }

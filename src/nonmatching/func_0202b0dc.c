@@ -96,7 +96,7 @@ void func_0202b0dc(int param_1,int param_2,int param_3,undefined4 param_4,undefi
   int iVar3;
 
   iVar3 = 0;
-  if ((0 < param_3) && (0 < param_3)) {
+  if ((0 < param_3) && (1 <= param_3)) {
     do {
       uVar1 = func_0202af94(param_1,param_4,param_5);
       iVar2 = iVar3 * 4;

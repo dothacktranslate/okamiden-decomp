@@ -84,15 +84,15 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-int func_0205f240(int *param_1)
+int func_0205f240(undefined2 *param_1)
 
 {
   int iVar1;
 
-  if (*(short *)((int)param_1 + 0xe) != 1) {
+  if (*(short *)((int)0xe + param_1) != 1) {
     return (int)param_1 + ((int *)((int)param_1 + (uint)*(ushort *)(param_1 + 3)))[1];
   }
-  if (*param_1 == ((unsigned int)0x0205f27c)) {
+  if (*param_1 == ((unsigned int)0x30585442)) {
     iVar1 = (int)param_1 + *(int *)((int)param_1 + (uint)*(ushort *)(param_1 + 3));
   }
   else {

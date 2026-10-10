@@ -159,7 +159,7 @@ ushort func_0205abfc(int *param_1)
 
   bVar1 = *(byte *)*param_1;
   uVar2 = (ushort)bVar1;
-  if (((uVar2 < 0x81) || (0x9f < uVar2)) && (uVar2 < 0xe0)) {
+  if (((uVar2 < 0x81) || (0xa0 <= uVar2)) && (uVar2 < 0xe0)) {
     *param_1 = *param_1 + 1;
   }
   else {

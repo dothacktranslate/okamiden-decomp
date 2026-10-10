@@ -90,9 +90,7 @@ extern int func_0200e748();
 undefined4 func_0200e44c(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  undefined4 uVar1;
-
-  uVar1 = func_0200e748(param_1,param_3,param_3,param_4,param_4);
-  func_02009b68(param_2,uVar1,param_4);
+  undefined4 uVar1 = func_0200e748(param_1,param_3,param_3,param_4,param_4);
+  func_02009b68(uVar1,param_2,uVar1,param_4);
   return 0;
 }

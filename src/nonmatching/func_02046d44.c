@@ -101,7 +101,7 @@ void func_02046d44(int param_1,undefined4 param_2,undefined4 param_3)
   uVar2 = func_02018d9c(param_3);
   local_18 = func_02050028(param_1,param_3,uVar2);
   local_14 = 4;
-  func_02054538(param_1,uVar1,&local_18,*(int *)(param_1 + 8) + -8);
+  func_02054538(param_1,uVar1,&local_18,*(unsigned short *)(param_1 + 8) + -8);
   *(int *)(param_1 + 8) = *(int *)(param_1 + 8) + -8;
   return;
 }

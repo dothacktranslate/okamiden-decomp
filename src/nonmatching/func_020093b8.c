@@ -172,8 +172,8 @@ void func_020093b8(int param_1)
   if (param_1 == 0) {
     _DMA_CHANNEL_0_to_3 = 0;
     (*(volatile unsigned int *)0x040000b4) = 0;
-    (*(volatile unsigned int *)0x040000b8) = ((unsigned int)0x02009410);
+    (*(volatile unsigned int *)0x040000b8) = ((unsigned int)0x81400001);
   }
-  func_02008b80();
+  func_02008b80(param_1);
   return;
 }

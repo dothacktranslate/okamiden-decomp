@@ -99,11 +99,11 @@ void func_02004b54(void)
     return;
   }
   if (iVar2 == 0x20) {
-    *(undefined4 *)(iVar1 + 4) = ((unsigned int)0x02004b98);
+    *(unsigned char *)(iVar1 + 4) = ((unsigned int)0x02004b98);
     return;
   }
   if (iVar2 == 0x40) {
-    *(undefined4 *)(iVar1 + 4) = ((unsigned int)0x02004b94);
+    *(unsigned short *)(iVar1 + 4) = ((unsigned int)0x02004b94);
   }
   return;
 }

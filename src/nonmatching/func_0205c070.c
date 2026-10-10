@@ -97,7 +97,7 @@ void func_0205c070(void)
   uVar1 = ((unsigned int)0x0205c0c0);
   func_02001864(((unsigned int)0x0205c0c4),((unsigned int)0x0205c0c8),((unsigned int)0x0205c0c0));
   func_020014bc(uVar1,uVar1,*(undefined4 *)(((unsigned int)0x0205c0cc) + 0xec),*(undefined4 *)(((unsigned int)0x0205c0cc) + 0xf0)
-               ,*(undefined4 *)(((unsigned int)0x0205c0cc) + 0xf4),in_r3);
+               ,*(signed char *)(((unsigned int)0x0205c0cc) + 0xf4),in_r3);
   func_020014f0(uVar1,((unsigned int)0x0205c0d0));
   return;
 }

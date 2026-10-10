@@ -93,7 +93,7 @@ int func_0206856c(int param_1,uint param_2)
     return 0;
   }
   if (param_2 < *(uint *)(param_1 + 0x1c)) {
-    iVar1 = param_1 + 0x20 + param_2 * 0xc;
+    iVar1 = param_1 + (0x20 + param_2) * 0xc;
     if (*(int *)(param_1 + 0x20 + param_2 * 0xc) == -1) {
       iVar1 = 0;
     }

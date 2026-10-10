@@ -85,15 +85,15 @@ extern int LZCOUNT();
       ((int)(a) < 0)))
 
 extern int func_020571c4();
-extern int func_02057c50();
+extern int func_020571c4();
 extern int func_02057da0();
 
 void func_02057d64(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  *(undefined4 *)(param_1 + 0x34) = param_3;
+  *(short *)(param_1 + 0x34) = param_3;
   *(undefined4 *)(param_1 + 0x38) = 0xffffffff;
-  func_02057c50(param_1 + 0x3c,1,param_3,0xffffffff,param_4);
+  func_020571c4(param_1 + 0x3c,1,param_3,0xffffffff,param_4);
   func_020571c4(param_1);
   func_02057da0(param_1,param_2);
   return;

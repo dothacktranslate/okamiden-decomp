@@ -92,8 +92,8 @@ void func_02005e44(void)
 
   UNRECOVERED_JUMPTABLE = ((unsigned int)0x02005e68);
   uVar1 = ((unsigned int)0x02005e64);
-  (*(unsigned int *)0x02005e60) = (*(unsigned int *)0x02005e60) & 0x7fffffff;
-                    /* WARNING: Could not recover jumptable at 0x02005e5c. Too many branches */
+  (*(unsigned short *)0x02005e60) = (*(unsigned int *)0x02005e60) & 0x7fffffff;
+                    /* WARNING: Could not recover jumptable at 0xe12fff1c. Too many branches */
                     /* WARNING: Treating indirect jump as call */
   (*UNRECOVERED_JUMPTABLE)(uVar1);
   return;

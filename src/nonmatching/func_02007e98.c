@@ -162,16 +162,16 @@ void func_02007e98(int param_1,int param_2,int param_3)
   undefined4 uVar3;
   int iVar4;
 
-  uVar1 = func_02008b6c();
+  uVar3 = func_02008b6c();
   piVar2 = *(int **)((*(unsigned int *)0x02007efc) + param_1 * 4);
   if (param_2 < 0) {
     param_2 = *piVar2;
   }
   iVar4 = param_2 * 0xc + piVar2[4];
-  uVar3 = func_02007cc0(*(undefined4 *)(iVar4 + 8),param_3 + -0x20);
-  *(undefined4 *)(iVar4 + 8) = uVar3;
-  uVar3 = func_02007ce8(*(undefined4 *)(iVar4 + 4),param_3 + -0x20);
-  *(undefined4 *)(iVar4 + 4) = uVar3;
-  func_02008b80(uVar1);
+  uVar1 = func_02007cc0(*(undefined4 *)(iVar4 + 8),param_3 + -0x20);
+  *(undefined4 *)(iVar4 + 8) = uVar1;
+  uVar1 = func_02007ce8(*(undefined4 *)(iVar4 + 4),param_3 + -0x20);
+  *(undefined4 *)(iVar4 + 4) = uVar1;
+  func_02008b80(uVar3);
   return;
 }

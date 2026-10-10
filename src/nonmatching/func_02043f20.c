@@ -19,7 +19,7 @@ extern int LZCOUNT();
 extern int func_02035924();
 
 
-undefined4 * func_02043f20(undefined4 *param_1,undefined4 param_2)
+undefined4 * func_02043f20(undefined1 *param_1,undefined4 param_2)
 
 {
   *param_1 = ((unsigned int)0x02043f48);

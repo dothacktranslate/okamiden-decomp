@@ -105,7 +105,7 @@ void func_02063ba0(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
   if (param_5 == 0) {
     return;
   }
-  (*(unsigned int *)0x02063bec) = ((unsigned int)0x02063be8);
+  (*(unsigned short *)0x02063bec) = ((unsigned int)0x02063be8);
   *puVar3 = uVar2;
   return;
 }

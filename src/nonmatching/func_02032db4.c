@@ -87,12 +87,10 @@ extern int LZCOUNT();
 extern int func_02012f68();
 extern int func_02013030();
 
-void func_02032db4(uint *param_1)
+void func_02032db4(byte *param_1)
 
 {
-  uint uVar1;
-
-  uVar1 = func_02012f68();
+  uint uVar1 = func_02012f68();
   param_1[2] = uVar1;
   func_02013030((short)param_1[3]);
   *param_1 = *param_1 | 2;

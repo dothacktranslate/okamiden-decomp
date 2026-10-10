@@ -89,13 +89,13 @@ extern int func_02030178();
 void func_02030250(int param_1)
 
 {
-  *(undefined2 *)(param_1 + 4) = 0;
+  *(undefined2 *)(4 + param_1) = 0;
   *(undefined2 *)(param_1 + 6) = 0;
   func_02030178(param_1 + 8);
   func_02030178(param_1 + 0xc);
   func_02030178(param_1 + 0x10);
   func_02030178(param_1 + 0x14);
-  *(undefined2 *)(param_1 + 0x18) = 0x1000;
+  *(signed char *)(param_1 + 0x18) = 0x1000;
   *(undefined4 *)(param_1 + 0x1c) = 0;
   return;
 }

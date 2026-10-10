@@ -89,7 +89,7 @@ extern int func_02022ffc();
 int func_020231e8(void)
 
 {
-  int *piVar1;
+  undefined2 *piVar1;
   int iVar2;
   int iVar3;
 

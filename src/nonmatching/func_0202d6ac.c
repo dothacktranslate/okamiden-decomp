@@ -92,11 +92,11 @@ void func_0202d6ac(int param_1)
   int iVar1;
   int iVar2;
 
-  iVar1 = ((unsigned int)0x0202d6d4);
-  if (*(char *)(param_1 + ((unsigned int)0x0202d6d4)) != '\0') {
+  iVar1 = ((unsigned int)0x00000bdc);
+  if (*(char *)(param_1 + ((unsigned int)0x00000bdc)) != '\0') {
     iVar2 = *(int *)((*(unsigned int *)0x0202d6d8) + 0xa4);
-    *(undefined1 *)(iVar2 + 0x288) = 1;
-    *(undefined1 *)(iVar2 + 0x289) = 1;
+    *(undefined1 *)(0x288 + iVar2) = 1;
+    *(undefined1 *)(0x289 + iVar2) = 1;
     *(undefined1 *)(param_1 + iVar1) = 0;
   }
   return;

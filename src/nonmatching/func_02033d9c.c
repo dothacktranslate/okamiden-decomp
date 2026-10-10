@@ -92,12 +92,12 @@ extern int func_02002bb0();
 extern int func_02002c10();
 extern int func_02035948();
 
-void func_02033d9c(undefined4 param_1,undefined4 *param_2,undefined1 *param_3)
+void func_02033d9c(undefined4 param_1,short *param_2,undefined1 *param_3)
 
 {
-  int iVar1;
-  undefined1 auStack_28 [12];
   undefined1 auStack_1c [12];
+  undefined1 auStack_28 [12];
+  int iVar1;
 
   func_02002ac4(param_1,*param_2,auStack_1c);
   func_02002c10(auStack_1c,auStack_28);

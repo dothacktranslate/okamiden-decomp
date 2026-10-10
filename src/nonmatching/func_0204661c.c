@@ -91,12 +91,12 @@ bool func_0204661c(void)
 {
   bool bVar1;
   int *piVar2;
-  int iVar3;
+  uint iVar3;
 
   piVar2 = (int *)func_02045fac();
   iVar3 = piVar2[1];
   bVar1 = true;
-  if (iVar3 != 0) {
+  if (!(iVar3 < 1)) {
     if (iVar3 == 1) {
       piVar2 = (int *)*piVar2;
     }

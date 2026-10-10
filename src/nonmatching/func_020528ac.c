@@ -89,8 +89,8 @@ extern int func_0204e55c();
 void func_020528ac(undefined4 param_1,int param_2)
 
 {
-  if (*(int *)(param_2 + 0x10) != ((unsigned int)0x02052918)) {
-    func_0204e55c(param_1,*(int *)(param_2 + 0x10),(1 << *(sbyte *)(param_2 + 7)) * 0x14,0);
+  if (*(int *)(0x10 + param_2) != ((unsigned int)0x02052918)) {
+    func_0204e55c(param_1,*(unsigned short *)(param_2 + 0x10),(1 << *(sbyte *)(param_2 + 7)) * 0x14,0);
   }
   func_0204e55c(param_1,*(undefined4 *)(param_2 + 0xc),*(int *)(param_2 + 0x1c) << 3,0);
   func_0204e55c(param_1,param_2,0x20,0);

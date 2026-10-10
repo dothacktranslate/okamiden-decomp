@@ -101,7 +101,7 @@ func_02031e1c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param
   undefined4 uVar2;
 
   uVar2 = param_4;
-  func_02031524();
+  func_02031524(param_1);
   func_020300f0(param_5);
   func_0203011c(param_5);
   iVar1 = func_02031904(param_2,param_3,param_4,param_5,param_1 + 0x124,

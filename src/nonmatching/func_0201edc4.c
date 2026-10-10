@@ -93,7 +93,7 @@ uint func_0201edc4(uint param_1)
   uVar1 = (param_1 & 0x7fffffff) >> 0x17;
   uVar2 = 0x9e - uVar1;
   if (uVar2 != 0 && uVar1 < 0x9f) {
-    uVar1 = (param_1 << 8 | 0x80000000) >> (uVar2 & 0xff);
+    uVar1 = (param_1 << 0x80000000 | 8) >> (uVar2 & 0xff);
     if ((int)param_1 < 0) {
       uVar1 = -uVar1;
     }

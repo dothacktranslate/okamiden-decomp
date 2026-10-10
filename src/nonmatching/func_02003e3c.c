@@ -164,5 +164,5 @@ int func_02003e3c(void)
 
 {
   return ((_REG_A_DISPCNT & 0x7000000) >> 0x18) * 0x10000 + 0x6000000 +
-         ((int)((*(unsigned int *)0x02003e6c) & 0x3c) >> 2) * 0x4000;
+         ((int)((*(unsigned char *)0x02003e6c) & 0x3c) >> 2) * 0x4000;
 }

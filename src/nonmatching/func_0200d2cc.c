@@ -94,9 +94,9 @@ undefined4 func_0200d2cc(int *param_1,undefined4 param_2,int param_3)
   int iVar2;
 
   iVar2 = *param_1;
-  if (*(int *)(*(int *)(iVar2 + 0x20) + 0x1c) == 0) {
+  if (*(int *)(*(int *)(0x20 + iVar2) + 0x1c) == 0) {
     uVar1 = (**(code **)(*(int *)(iVar2 + 0x20) + 0x20))(iVar2,param_2,param_1[1],param_3);
-    uVar1 = func_0200b7f0(*(undefined4 *)(iVar2 + 8),uVar1);
+    uVar1 = func_0200b7f0(*(unsigned short *)(iVar2 + 8),uVar1);
   }
   else {
     func_02009b68(param_1[1]);

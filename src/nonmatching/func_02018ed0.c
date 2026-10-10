@@ -88,11 +88,11 @@ void func_02018ed0(char *param_1,char *param_2)
 
 {
   char cVar1;
-  char *pcVar2;
+  unsigned char *pcVar2;
 
   do {
     pcVar2 = param_1;
-    param_1 = pcVar2 + 1;
+    param_1 = 1 + pcVar2;
   } while (*pcVar2 != '\0');
   do {
     *pcVar2 = *param_2;

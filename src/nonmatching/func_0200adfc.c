@@ -92,13 +92,11 @@ bool func_0200adfc(void)
 
 {
   int *piVar1;
-  int iVar2;
-
-  iVar2 = func_0200747c();
+  int iVar2 = func_0200747c();
   if (iVar2 != 0) {
     func_02008b6c(iVar2);
-    piVar1 = ((unsigned int)0x0200ae38);
-    (*(unsigned int *)0x0200ae38) = 0x10;
+    piVar1 = ((unsigned int)0x04fff200);
+    (*(unsigned int *)0x04fff200) = 0x10;
     iVar2 = *piVar1;
     func_02008b80();
     return iVar2 != 0;

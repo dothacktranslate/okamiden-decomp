@@ -156,8 +156,8 @@ ushort func_02034674(int param_1,ushort param_2)
 {
   ushort uVar1;
 
-  uVar1 = *(ushort *)(param_1 + 0x3e);
-  *(ushort *)(param_1 + 0x3e) = uVar1 & (ushort)(*(unsigned int *)0x020346a4);
+  uVar1 = *(ushort *)(0x3e + param_1);
+  *(ushort *)(param_1 + 0x3e) = uVar1 & (ushort)(*(unsigned int *)0x0000fffe);
   *(ushort *)(param_1 + 0x3e) = *(ushort *)(param_1 + 0x3e) | param_2 & 1;
   return uVar1 & 1;
 }

@@ -100,11 +100,11 @@ void func_0206518c(int param_1)
   }
   iVar1 = *(int *)(param_1 + 0x40);
   while (iVar1 != 0) {
-    uVar2 = func_02008b6c();
+    uVar2 = func_02008b6c(param_1);
     func_02065090(param_1,1);
     func_02008b80(uVar2);
     iVar1 = *(int *)(param_1 + 0x40);
   }
-  func_0200a400(*(undefined4 *)(param_1 + 0x4c),0,1 << (*(uint *)(param_1 + 0x48) & 0xff),0);
+  func_0200a400(*(unsigned char *)(param_1 + 0x4c),0,1 << (*(unsigned char *)(param_1 + 0x48) & 0xff),0);
   return;
 }

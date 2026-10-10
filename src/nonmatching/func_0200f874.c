@@ -90,12 +90,12 @@ extern int func_0200f810();
 int func_0200f874(undefined4 param_1,undefined4 param_2,undefined4 param_3,int param_4)
 
 {
-  int iVar1;
+  uint iVar1;
   int aiStack_8 [2];
 
   aiStack_8[0] = param_4;
   iVar1 = func_0200f810(param_1,((unsigned int)0x0200f898),aiStack_8);
-  if (iVar1 != 0) {
+  if (!(iVar1 < 1)) {
     return iVar1;
   }
   func_0200f3ac();

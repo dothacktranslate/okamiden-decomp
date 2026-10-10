@@ -97,7 +97,7 @@ void func_02062e94(int param_1,int param_2,int param_3,int param_4,int param_5)
   *(int *)(((unsigned int)0x02062ed8) + 8) = param_1 * 0x18 + ((unsigned int)0x02062ed4);
   *(int *)(iVar2 + 0xc) = iVar3;
   *(int *)(iVar2 + 0x10) = param_3 * 0x18 + iVar1;
-  *(int *)(iVar2 + 0x14) = param_4 * 0x18 + iVar1;
+  *(int *)(iVar2 + 0x14) = param_4 + iVar1 * 0x18;
   *(int *)(iVar2 + 0x18) = param_5 * 0x18 + iVar1;
   return;
 }

@@ -97,8 +97,8 @@ func_02038b2c(undefined4 param_1,int param_2,int param_3,int param_4,int param_5
   int iVar2;
   undefined4 uVar3;
   uint uVar4;
-  uint uVar5;
   uint uVar6;
+  uint uVar5;
 
   uVar5 = param_2 + 3U & 0xfffffffc;
   uVar1 = param_3 + param_2 & 0xfffffffc;
@@ -106,7 +106,7 @@ func_02038b2c(undefined4 param_1,int param_2,int param_3,int param_4,int param_5
     return 0;
   }
   uVar4 = param_5 - 1;
-  uVar6 = ~uVar4 & uVar5 + 0x34 + uVar4;
+  uVar6 = ~uVar4 & (0x34 + uVar5) + uVar4;
   if (0 < (int)(uVar6 - uVar1)) {
     return 0;
   }
@@ -117,7 +117,7 @@ func_02038b2c(undefined4 param_1,int param_2,int param_3,int param_4,int param_5
   }
   uVar3 = 0;
   if (uVar5 != 0) {
-    uVar3 = func_02038c2c(uVar5,param_1,uVar6,uVar4 * iVar2 + uVar6,uVar4,iVar2,param_6);
+    uVar3 = func_02038c2c(uVar5,param_1,uVar6,iVar2 * uVar6 + uVar4,uVar4,iVar2,param_6);
   }
   return uVar3;
 }

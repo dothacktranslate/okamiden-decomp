@@ -93,8 +93,8 @@ void func_0203d2c0(int param_1)
 {
   int *piVar1;
 
-  piVar1 = *(int **)(param_1 + 0x10);
-  *(uint *)(param_1 + 0x1c) = *(uint *)(param_1 + 0x1c) & 0xfffffffd;
+  piVar1 = *(int **)(0x10 + param_1);
+  *(uint *)(param_1 + 0x1c) = *(short *)(param_1 + 0x1c) & 0xfffffffd;
   for (; piVar1 != (int *)(param_1 + 0x10); piVar1 = (int *)*piVar1) {
     func_0203cd5c(piVar1 + -1);
   }

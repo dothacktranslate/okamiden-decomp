@@ -90,9 +90,9 @@ extern int func_0205e268();
 int func_0205e2b0(int param_1,undefined4 param_2,uint param_3)
 
 {
-  int iVar1;
   int iVar2;
   int iVar3;
+  int iVar1;
 
   iVar3 = 0;
   for (iVar1 = func_0205e268(param_2,6); iVar1 != 0; iVar1 = func_0205e268(iVar1 + iVar2,6)) {

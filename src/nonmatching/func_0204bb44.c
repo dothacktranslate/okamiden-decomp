@@ -90,10 +90,10 @@ extern int func_0204baec();
 void func_0204bb44(int param_1,undefined4 param_2)
 
 {
-  if (*(int *)(param_1 + 0x60) == 0) {
+  if (*(int *)(0x60 + param_1) == 0) {
     *(char *)(param_1 + 6) = (char)param_2;
     if (*(int *)(*(int *)(param_1 + 0x10) + 0x58) != 0) {
-      func_0204baec();
+      func_0204baec(param_1);
       (**(code **)(*(int *)(param_1 + 0x10) + 0x58))(param_1);
     }
     func_02015ea8(1);

@@ -92,9 +92,9 @@ void func_0200c90c(int param_1)
 {
   func_02008b6c();
   if ((*(uint *)(param_1 + 0xc) & 1) != 0) {
-    *(uint *)(param_1 + 0xc) = *(uint *)(param_1 + 0xc) | 2;
-    *(uint *)(*(int *)(param_1 + 8) + 0x14) = *(uint *)(*(int *)(param_1 + 8) + 0x14) | 0x20;
+    *(uint *)(param_1 + 0xc) = *(unsigned short *)(param_1 + 0xc) | 2;
+    *(uint *)(*(unsigned char *)(param_1 + 8) + 0x14) = *(uint *)(*(int *)(param_1 + 8) + 0x14) | 0x20;
   }
-  func_02008b80();
+  func_02008b80(param_1);
   return;
 }

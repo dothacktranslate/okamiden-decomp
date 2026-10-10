@@ -94,7 +94,7 @@ undefined4 func_0203d4bc(int param_1)
   int iVar1;
 
   if (*(int *)(param_1 + 0xc) != 0) {
-    if ((*(uint *)(param_1 + 0x30) & 1) == 0) {
+    if ((*(unsigned char *)(param_1 + 0x30) & 1) == 0) {
       return 1;
     }
     iVar1 = func_0203d410(param_1,*(undefined4 *)(param_1 + 0x18),*(int *)(param_1 + 0xc),

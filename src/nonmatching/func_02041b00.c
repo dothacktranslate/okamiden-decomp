@@ -97,7 +97,7 @@ void func_02041b00(int param_1)
 
   uVar3 = 0;
   do {
-    iVar1 = param_1 + uVar3 * 4;
+    iVar1 = uVar3 + param_1 * 4;
     uVar2 = *(uint *)(iVar1 + 0x1ec);
     if ((uVar2 & 0x20) != 0) {
       *(uint *)(iVar1 + 0x1ec) = uVar2 & 0xffffffdf;

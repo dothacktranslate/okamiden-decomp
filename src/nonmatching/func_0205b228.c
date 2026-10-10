@@ -89,8 +89,8 @@ undefined4 func_0205b228(int param_1)
 {
   undefined4 uVar1;
 
-  uVar1 = *(undefined4 *)(param_1 + 0x2c);
+  uVar1 = *(undefined4 *)(0x2c + param_1);
   *(ushort *)(param_1 + 0x32) = *(ushort *)(param_1 + 0x32) & 0xfffe;
-  *(undefined4 *)(param_1 + 0x2c) = 0;
+  *(unsigned short *)(param_1 + 0x2c) = 0;
   return uVar1;
 }

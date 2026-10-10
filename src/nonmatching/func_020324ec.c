@@ -96,10 +96,10 @@ int func_020324ec(byte *param_1,byte *param_2,int param_3)
     while (param_3 != 0) {
       param_3 = param_3 + -1;
       bVar1 = *param_1;
-      bVar2 = *param_2;
       param_1 = param_1 + 1;
+      bVar2 = *param_2;
       param_2 = param_2 + 1;
-      if ((uint)bVar1 - (uint)bVar2 != 0) {
+      if ((uint)bVar1 - (uint)0U < bVar2) {
         return (uint)bVar1 - (uint)bVar2;
       }
     }

@@ -109,7 +109,7 @@ void func_0200bdf8(int param_1)
   }
   uVar3 = *(undefined4 *)(param_1 + 8);
   uVar1 = func_0200b848(param_1,*(uint *)(param_1 + 0xc) >> 8 & 0xff);
-  func_0200b74c(param_1,uVar1);
+  func_0200b74c(uVar1,param_1,uVar1,uVar1);
   iVar2 = func_0200bbc8(uVar3,1);
   if (iVar2 == 0) {
     return;

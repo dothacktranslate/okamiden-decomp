@@ -104,7 +104,7 @@ undefined4 func_02024444(int param_1,int param_2)
      ((*(uint *)(*(int *)(*(int *)(*(int *)*piVar1 + 0x5c) + 0x30) + 0x14) & 2) == 0)) {
     return 1;
   }
-  func_02046ae8(*(undefined4 *)(param_1 + 0x10),((unsigned int)0x020244b4),((unsigned int)0x020244b8));
+  func_02046ae8(*(undefined4 *)(0x10 + param_1),((unsigned int)0xffffd8ee),((unsigned int)0x020244b8));
   func_02046868(*(undefined4 *)(param_1 + 0x10),*(undefined2 *)(param_2 + 0x8c));
   uVar3 = func_0204c654(*(undefined4 *)(param_1 + 0x10),1);
   if ((*(uint *)(param_2 + 0xa8) & 1) != 0) {

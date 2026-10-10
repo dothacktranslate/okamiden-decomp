@@ -93,8 +93,8 @@ void func_0203c288(int param_1)
   int iVar1;
   int aiStack_1c [2];
 
-  if (*(int *)(param_1 + 0x10) != param_1 + 0x10) {
-    iVar1 = *(int *)(param_1 + 0x10);
+  if (*(int *)(0x10 + param_1) != param_1 + 0x10) {
+    iVar1 = *(unsigned short *)(param_1 + 0x10);
     do {
       func_0203bbe8(iVar1 + -4);
       func_0203c0cc(aiStack_1c,param_1,iVar1 + -4);

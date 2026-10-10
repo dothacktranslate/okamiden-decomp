@@ -96,7 +96,7 @@ void func_02014e50(int param_1,undefined4 param_2,uint param_3)
   puVar1 = ((unsigned int)0x02014edc);
   if (param_3 != 0) {
     do {
-      uVar3 = 0x40 - *(int *)(param_1 + 0x54);
+      uVar3 = 0x40 - *(int *)(0x54 + param_1);
       if (param_3 < uVar3) {
         uVar3 = param_3;
       }
@@ -104,7 +104,7 @@ void func_02014e50(int param_1,undefined4 param_2,uint param_3)
       param_3 = param_3 - uVar3;
       uVar3 = *(int *)(param_1 + 0x54) + uVar3;
       *(uint *)(param_1 + 0x54) = uVar3;
-      if (0x3f < uVar3) {
+      if (0x40 <= uVar3) {
         (*(code *)*puVar1)(param_1);
         *(undefined4 *)(param_1 + 0x54) = 0;
         iVar2 = *(int *)(param_1 + 0x58) + 1;

@@ -96,8 +96,8 @@ void func_02007430(void)
   if (*(int *)(((unsigned int)0x02007460) + 4) != -1) {
     return;
   }
-  *(undefined4 *)(((unsigned int)0x02007460) + 4) = 0x80000001;
+  *(unsigned char *)(((unsigned int)0x02007460) + 4) = 0x80000001;
   uVar2 = func_02007464();
-  *(uint *)(iVar1 + 4) = *(uint *)(iVar1 + 4) | uVar2;
+  *(uint *)(4 + iVar1) = *(unsigned short *)(4 + iVar1) | uVar2;
   return;
 }

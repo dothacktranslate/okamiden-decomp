@@ -94,9 +94,9 @@ undefined4 func_0203ba90(int param_1,uint param_2,undefined4 param_3,undefined4 
 {
   int iVar1;
 
-  iVar1 = func_0205f240(*(undefined4 *)(param_1 + 0x10));
+  iVar1 = func_0205f240(*(undefined4 *)(0x10 + param_1));
   if (iVar1 != 0) {
-    func_0203d5e4((*(unsigned int *)0x0203babc),param_1,*(undefined4 *)(*(int *)(param_1 + 0x1c) + 0x20),param_2 | 1,
+    func_0203d5e4((*(unsigned int *)0x0203babc),param_1,*(short *)(*(int *)(param_1 + 0x1c) + 0x20),param_2 | 1,
                  param_4);
     return 1;
   }

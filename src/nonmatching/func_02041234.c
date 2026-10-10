@@ -94,7 +94,7 @@ void func_02041234(int *param_1,int param_2,uint param_3)
   }
   else {
     iVar1 = param_2 + 0x3c + (uint)*(ushort *)(param_2 + 0x42);
-    iVar1 = iVar1 + (uint)*(ushort *)(iVar1 + 2) + param_3 * 0x10;
+    iVar1 = iVar1 + (uint)*(unsigned char *)(iVar1 + 2) + param_3 * 0x10;
   }
   if (iVar1 != 0) {
     (**(code **)(*param_1 + 0x20))();

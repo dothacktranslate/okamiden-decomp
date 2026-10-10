@@ -109,8 +109,8 @@ void func_0205f41c(int param_1,int param_2,int param_3)
     iVar1 = uVar5 * 2;
     iVar2 = uVar5 * 2;
     uVar5 = uVar5 + 1;
-    *(ushort *)(param_1 + iVar2 + 0x1a) =
-         (byte)((uint)*(undefined4 *)(param_2 + (uint)*(ushort *)(param_2 + 0x14 + iVar1)) >> 0x18)
+    *(ushort *)((param_1 + iVar2) + 0x1a) =
+         (byte)((uint)*(undefined4 *)(param_2 + (uint)*(ushort *)((param_2 + iVar1) + 0x14)) >> 0x18)
          | 0x100;
   } while (uVar5 < *(ushort *)(param_2 + 6));
   return;

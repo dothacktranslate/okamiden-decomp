@@ -92,10 +92,10 @@ extern int func_020561c4();
 void func_02067664(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  func_02006e04(param_1,((unsigned int)0x020676c8),param_1,param_1 + 0x10c0,0x1000,param_2,param_4);
+  func_02006e04(param_1,((unsigned int)0x020676c8),param_1,0x10c0 + param_1,0x1000,param_2,param_4);
   func_020561c4(param_1 + 0x10e0,0);
   func_02007534(param_1 + 0x10c8);
-  *(undefined4 *)(param_1 + 0x10c4) = 0;
+  *(unsigned short *)(param_1 + 0x10c4) = 0;
   *(undefined4 *)(param_1 + 0x10c0) = 0;
   func_020070b8(param_1);
   return;

@@ -93,8 +93,8 @@ int func_02038bbc(int param_1)
   int iVar1;
 
   iVar1 = func_02038c14();
-  if ((iVar1 != 0) && ((*(uint *)(param_1 + 0x10) & 1) != 0)) {
-    func_020098a0(0,iVar1,*(undefined4 *)(param_1 + 0x30));
+  if ((iVar1 != 0) && ((*(uint *)(0x10 + param_1) & 1) != 0)) {
+    func_020098a0(0,iVar1,*(unsigned short *)(param_1 + 0x30));
   }
   return iVar1;
 }

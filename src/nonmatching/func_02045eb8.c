@@ -90,7 +90,7 @@ extern int func_02035924();
 extern int func_02048278();
 extern int func_0204e4dc();
 
-undefined4 * func_02045eb8(undefined4 *param_1,undefined4 param_2)
+undefined4 * func_02045eb8(byte *param_1,undefined4 param_2)
 
 {
   undefined4 uVar1;
@@ -100,7 +100,7 @@ undefined4 * func_02045eb8(undefined4 *param_1,undefined4 param_2)
   param_1[5] = 0;
   param_1[2] = 0;
   param_1[3] = 0;
-  param_1[4] = param_1 + 4;
+  param_1[4] = 4 + param_1;
   param_1[5] = param_1 + 4;
   func_02035924();
   *param_1 = ((unsigned int)0x02045ef0);

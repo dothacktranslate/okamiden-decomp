@@ -87,13 +87,13 @@ extern int LZCOUNT();
 extern int func_0200dbc4();
 
 void func_0200df28(undefined4 param_1,int param_2,undefined4 param_3,undefined4 param_4,
-                 undefined4 *param_5)
+                 ushort *param_5)
 
 {
   int iVar1;
   undefined4 uVar2;
 
-  *(undefined2 *)(param_2 + 0x38) = 0;
+  *(unsigned char *)(param_2 + 0x38) = 0;
   *(undefined2 *)(param_2 + 0x3a) = 0;
   *(undefined4 *)(param_2 + 0x30) = param_4;
   uVar2 = *param_5;

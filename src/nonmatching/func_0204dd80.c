@@ -97,14 +97,14 @@ void func_0204dd80(int param_1)
   int iVar4;
   int iVar5;
 
-  iVar5 = *(int *)(param_1 + 0x10);
+  iVar5 = *(int *)(0x10 + param_1);
   iVar4 = *(int *)(iVar5 + 8);
   if ((*(uint *)(iVar5 + 4) < (uint)((int)(iVar4 + ((uint)(iVar4 >> 1) >> 0x1e)) >> 2)) &&
      (0x40 < iVar4)) {
     func_0204fe70(param_1,iVar4 / 2);
   }
   uVar3 = *(uint *)(iVar5 + 0x3c);
-  if (uVar3 < 0x41) {
+  if (uVar3 <= 0x40) {
     return;
   }
   uVar1 = uVar3 >> 1;

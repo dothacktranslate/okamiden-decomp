@@ -89,7 +89,7 @@ extern int func_02020150();
 undefined4 func_0202015c(undefined4 param_1,int param_2,uint *param_3)
 
 {
-  char cVar1;
+  unsigned char cVar1;
   uint uVar2;
   uint uVar3;
 
@@ -100,7 +100,7 @@ undefined4 func_0202015c(undefined4 param_1,int param_2,uint *param_3)
       cVar1 = func_02020150();
       *(char *)(param_2 + uVar2) = cVar1;
       if (cVar1 == '\r' || cVar1 == '\n') {
-        *param_3 = uVar2 + 1;
+        *param_3 = 1 + uVar2;
         return 0;
       }
       uVar2 = uVar2 + 1;
