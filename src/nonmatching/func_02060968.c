@@ -121,7 +121,7 @@ uint func_02060968(int param_1,uint param_2,uint param_3)
       }
       uVar2 = (uint)*(ushort *)(param_1 + param_3 * 2);
       uVar1 = (uint)*(ushort *)(param_1 + uVar1 * 2);
-      return ((unsigned int)0x02060ac4) & (uVar2 & ((unsigned int)0x02060ac4)) * 3 + (uVar1 & ((unsigned int)0x02060ac4)) >> 2 & 0xffff |
+      return ((unsigned int)0x00007c1f) & (uVar2 & ((unsigned int)0x00007c1f)) * 3 + (uVar1 & ((unsigned int)0x00007c1f)) >> 2 & 0xffff |
              (uVar2 & 0x3e0) * 3 + (uVar1 & 0x3e0) >> 2 & 0x3e0;
     }
     param_3 = param_3 >> 2;
@@ -136,7 +136,7 @@ uint func_02060968(int param_1,uint param_2,uint param_3)
     param_3 = param_3 >> 1;
   }
   uVar1 = (uint)*(ushort *)(param_1 + param_3 * 2);
-  uVar2 = (uint)*(ushort *)(param_1 + (param_3 * 2 + 2));
-  return ((unsigned int)0x02060ac4) & (uVar1 & ((unsigned int)0x02060ac4)) + (uVar2 & ((unsigned int)0x02060ac4)) >> 1 |
+  uVar2 = (uint)*(ushort *)(param_1 + param_3 * 2 + 2);
+  return ((unsigned int)0x00007c1f) & (uVar1 & ((unsigned int)0x00007c1f)) + (uVar2 & ((unsigned int)0x00007c1f)) >> 1 |
          (uVar1 & 0x3e0) + (uVar2 & 0x3e0) >> 1 & 0x3e0;
 }

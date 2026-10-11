@@ -134,7 +134,7 @@ LAB_0205ec40:
     }
     uVar6 = uVar6 + 1;
     *(uint *)(iVar5 + 0x10) = uVar3;
-    if (bVar1 <= uVar6) {
+    if (uVar6 >= bVar1) {
       return;
     }
   } while( true );

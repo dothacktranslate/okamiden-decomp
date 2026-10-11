@@ -101,8 +101,8 @@ void func_020542c0(int param_1,int param_2,undefined4 *param_3,undefined4 *param
   uVar1 = param_3[1];
   *puVar3 = *param_3;
   puVar3[1] = uVar1;
-  iVar4 = *(int *)(param_1 + 8);
   uVar1 = param_4[1];
+  iVar4 = *(int *)(param_1 + 8);
   *(undefined4 *)(iVar4 + 8) = *param_4;
   *(undefined4 *)(iVar4 + 0xc) = uVar1;
   iVar4 = *(int *)(param_1 + 8);

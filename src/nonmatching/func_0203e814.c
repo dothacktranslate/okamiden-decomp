@@ -251,7 +251,7 @@ void func_0203e814(int param_1)
     func_02009930(param_1 + 0x58,&local_60,0xc);
     func_0205e0c0(local_60,&local_5c,2);
     piVar5 = ((unsigned int)0x0203ea40);
-    local_5c = ((unsigned int)0x0203ea34);
+    local_5c = ((unsigned int)0x0000ffff);
     iVar2 = iVar3 >> 0x1f;
     local_60 = ((unsigned int)0x0203ea38);
     local_58 = 0;

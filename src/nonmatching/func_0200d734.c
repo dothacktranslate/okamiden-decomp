@@ -174,7 +174,7 @@ undefined4 func_0200d734(int param_1,undefined4 param_2,undefined4 param_3,undef
     iVar5 = func_0200dbc4(auStack_104,3,1);
     while (iVar5 == 0) {
       if ((local_b0 != 0) && ((local_b8 & 0xffff) == uVar11)) {
-        iVar4 = iVar4 + iStack_ac + 1;
+        iVar4 = iVar4 + (iStack_ac + 1);
         break;
       }
       iVar5 = func_0200dbc4(auStack_104,3,1);

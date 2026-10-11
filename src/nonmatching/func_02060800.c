@@ -128,7 +128,7 @@ undefined4 func_02060800(int *param_1,int param_2,int param_3,uint param_4)
     iVar10 = (int)(short)puVar12[1];
     param_1[uVar8] = unaff_r6;
     iVar9 = (int)(short)puVar12[2];
-    bVar2 = *(byte *)(iVar11 + uVar8 * 4);
+    bVar2 = *(byte *)(uVar8 + iVar11 * 4);
     param_1[bVar1] = iVar10;
     uVar4 = *puVar12;
     param_1[bVar2] = iVar9;

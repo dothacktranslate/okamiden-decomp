@@ -211,10 +211,10 @@ LAB_02005594:
     puVar2 = ((unsigned int)0x020055ec);
     break;
   case 2:
-    puVar2 = ((unsigned int)0x020055e8);
+    puVar2 = ((unsigned int)0x04000241);
     break;
   case 3:
-    (*(unsigned int *)0x020055e8) = 0x8a;
+    (*(unsigned int *)0x04000241) = 0x8a;
     puVar2 = ((unsigned int)0x020055ec);
     break;
   default:

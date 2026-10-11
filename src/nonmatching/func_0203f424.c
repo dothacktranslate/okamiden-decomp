@@ -120,10 +120,10 @@ void func_0203f424(int param_1)
   undefined1 auStack_20 [8];
   uint local_18;
 
-  uVar1 = ((unsigned int)0x0203f684);
+  uVar1 = ((unsigned int)0xffffc000);
   if ((1 < *(int *)(param_1 + 0x68)) && (0 < *(short *)(param_1 + 0x10))) {
     if ((*(uint *)((*(unsigned int *)0x0203f67c) + 0x18) & 2) == 0) {
-      iVar2 = *(int *)(param_1 + 0x6c) + ((unsigned int)0x0203f680);
+      iVar2 = *(int *)(param_1 + 0x6c) + ((unsigned int)0x00007b33);
       iVar7 = iVar2 >> 0x1f;
       *(uint *)(param_1 + 0x6c) = ((uint)(iVar2 * 0x20000 + iVar7) >> 0x11 | iVar7 << 0xf) - iVar7;
       func_02001cb0(param_1 + 0x80,param_1 + 0x80,0,uVar1,0);

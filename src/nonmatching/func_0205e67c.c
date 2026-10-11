@@ -96,8 +96,8 @@ undefined4 func_0205e67c(int *param_1,int *param_2)
   uint uVar1;
   longlong lVar2;
   longlong lVar3;
-  undefined4 uVar5;
   uint iVar4;
+  undefined4 uVar5;
   ulonglong uVar6;
   undefined4 local_40;
   undefined4 local_3c;
@@ -132,7 +132,7 @@ undefined4 func_0205e67c(int *param_1,int *param_2)
     if ((int)local_24 <= 0x1000) {
       uVar1 = local_20;
     }
-    if ((int)uVar1 < 0x1001) goto LAB_0205e748;
+    if ((int)uVar1 <= 0x1000) goto LAB_0205e748;
   }
   uVar5 = 0xffffffff;
 LAB_0205e748:

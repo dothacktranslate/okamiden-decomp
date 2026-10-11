@@ -155,7 +155,7 @@ void func_0205cf78(int param_1,undefined4 param_2,int param_3)
 
 {
   uint uVar1;
-  char cVar2;
+  unsigned char cVar2;
   bool bVar3;
 
   if (*(int *)(param_1 + 0x20) == 0) {

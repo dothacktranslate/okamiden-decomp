@@ -100,8 +100,8 @@ void func_0205f5f8(uint *param_1)
   uint uVar9;
   uint uVar10;
 
-  iVar7 = ((int *)(*(unsigned int *)0x0205f764))[0x35];
   uVar6 = (uint)*(byte *)(*(int *)(*(unsigned int *)0x0205f764) + 1);
+  iVar7 = ((int *)(*(unsigned int *)0x0205f764))[0x35];
   if (iVar7 != 0) {
     if (uVar6 < *(byte *)(iVar7 + 1)) {
       piVar4 = (int *)(*(ushort *)(iVar7 + (uint)*(ushort *)(iVar7 + 6)) * uVar6 +

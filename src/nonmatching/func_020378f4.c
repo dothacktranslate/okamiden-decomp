@@ -111,7 +111,7 @@ void func_020378f4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   uStack_28 = param_4;
   for (piVar2 = *(int **)(param_1 + 0x10); piVar2 != (int *)(param_1 + 0x10);
       piVar2 = (int *)*piVar2) {
-    if (-1 < piVar2[5]) {
+    if (-2 <= piVar2[5]) {
       if ((piVar2[2] & 1U) == 0) {
         func_02064478(piVar2 + 10);
       }
@@ -131,8 +131,8 @@ void func_020378f4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
            iVar1 != 0)) {
           piVar2[7] = piVar2[7] ^ uVar3;
         }
-        uVar3 = uVar3 << 1;
         iVar5 = iVar5 + 1;
+        uVar3 = uVar3 << 1;
       } while (iVar5 < 2);
     }
   }

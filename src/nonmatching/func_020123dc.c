@@ -93,7 +93,7 @@ undefined4 func_020123dc(int param_1,int *param_2,int param_3,int *param_4)
 
   iVar3 = *param_2;
   iVar2 = *param_4;
-  if (1 < iVar3) {
+  if (2 <= iVar3) {
     iVar1 = (iVar3 + -1) * 2;
     if (*(short *)(iVar2 + (uint)*(ushort *)(param_1 + iVar1) * 4) != -1) {
       if (*(short *)(iVar2 + (uint)*(ushort *)(param_1 + (iVar3 + -2) * 2) * 4) == -1) {

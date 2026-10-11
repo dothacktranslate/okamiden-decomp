@@ -104,7 +104,7 @@ void func_02023f04(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   }
   uVar3 = ((unsigned int)0x02023fdc);
   if (param_2 != 1) {
-    uVar3 = ((unsigned int)0x02023fd8);
+    uVar3 = ((unsigned int)0x0400006c);
   }
   iVar2 = func_020034f0(uVar3);
   switch(param_3) {
@@ -123,7 +123,7 @@ LAB_02023f8c:
     unaff_r5 = iVar2 * -0x1000 + 0x10000;
   }
   *(short *)(param_1 + param_2 * 2 + 0x34) = (short)param_3;
-  *(int *)(param_1 + param_2 * 4 + 0x3c) = iVar2 * 0x1000;
+  *(int *)(param_2 + param_1 * 4 + 0x3c) = iVar2 * 0x1000;
   uVar3 = func_0201e9d4(unaff_r5,param_4);
   *(undefined4 *)(param_1 + param_2 * 4 + 0x44) = uVar3;
   return;

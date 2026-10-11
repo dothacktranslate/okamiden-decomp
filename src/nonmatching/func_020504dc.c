@@ -112,7 +112,7 @@ int func_020504dc(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
   if (iVar3 < 1) {
     iVar3 = 1;
   }
-  if (local_20 < uVar4) {
+  if (uVar4 > local_20) {
     uVar4 = local_20;
   }
   if (iVar3 <= (int)uVar4) {

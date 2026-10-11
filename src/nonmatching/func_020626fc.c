@@ -115,7 +115,7 @@ void func_020626fc(uint *param_1)
   bVar3 = (*param_1 & 8) != 0;
   uVar2 = *param_1;
   if (bVar3) {
-    uVar2 = ((unsigned int)0x02062828);
+    uVar2 = ((unsigned int)0x00101610);
   }
   uVar1 = uVar2;
   if (!bVar3) {

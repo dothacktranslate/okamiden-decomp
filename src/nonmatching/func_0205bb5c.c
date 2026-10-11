@@ -111,7 +111,7 @@ void func_0205bb5c(void)
   func_02001460(uVar3);
   func_02001c28(((unsigned int)0x0205bc78));
   iVar4 = ((unsigned int)0x0205bc80);
-  puVar1[0x20] = ((unsigned int)0x2d8b62d8);
+  puVar1[0x20] = ((unsigned int)0x0205bc7c);
   iVar5 = ((unsigned int)0x0205bc84);
   puVar1[0x21] = iVar4;
   puVar1[0x22] = iVar4 + 0x3fffffff;

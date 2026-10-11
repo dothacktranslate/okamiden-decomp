@@ -121,7 +121,7 @@ bool func_020126b4(int param_1,int *param_2,int param_3,int param_4,undefined4 *
     if (*psVar11 == -1) {
       if (!bVar12) {
         if (iVar9 - 1U != (uint)*(ushort *)(param_1 + iVar8 * 2 + -2)) {
-          *(short *)(param_1 + iVar8 * 2) = (short)(iVar9 - 1U);
+          *(short *)(iVar8 + param_1 * 2) = (short)(iVar9 - 1U);
           iVar8 = iVar8 + 1;
           if (param_3 <= iVar8) goto LAB_02012918;
         }

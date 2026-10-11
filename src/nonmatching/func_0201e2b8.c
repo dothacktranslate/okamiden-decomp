@@ -87,7 +87,7 @@ extern int LZCOUNT();
 bool func_0201e2b8(int param_1,uint param_2,int param_3,uint param_4)
 
 {
-  if (((0xffdfffff < param_2 * 2) && ((param_2 * 2 != 0xffe00000 || (param_1 != 0)))) ||
+  if (((0xffe00000 <= param_2 * 2) && ((param_2 * 2 != 0xffe00000 || (param_1 != 0)))) ||
      ((0xffdfffff < param_4 * 2 && (((param_4 & 0x7fffffff) != 0x7ff00000 || (param_3 != 0)))))) {
     return false;
   }

@@ -115,7 +115,7 @@ undefined4 * func_0203d5e4(int param_1,int param_2,undefined4 param_3,uint param
   iVar8 = 0x34;
   puVar3 = (undefined4 *)func_0203d884(param_1,param_2);
   if (puVar3 == (undefined4 *)0x0) {
-    uVar4 = (((unsigned int)0x0203d764) & *(uint *)(iVar5 + 0x2c)) >> 0x10;
+    uVar4 = (((unsigned int)0xffff0000) & *(uint *)(iVar5 + 0x2c)) >> 0x10;
     iVar2 = uVar4 * 8;
     if (uVar4 == 0) {
       return (undefined4 *)0x0;

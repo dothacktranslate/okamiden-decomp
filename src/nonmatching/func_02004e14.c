@@ -104,9 +104,9 @@ void func_02004e14(int param_1,uint param_2,int param_3,undefined4 param_4)
       iVar2 = *(int *)(((unsigned int)0x02004f58) + 4) + param_2;
     }
     else {
-      if (uVar1 > param_2) {
+      if (param_2 < uVar1) {
         uVar1 = uVar1 - param_2;
-        if (((*(unsigned int *)0x02004f5c) == -1) || (uVar1 < 0x31)) {
+        if (((*(unsigned int *)0x02004f5c) == -1) || (uVar1 <= 0x30)) {
           func_020098b4(param_1,*(int *)(((unsigned int)0x02004f58) + 4) + param_2,uVar1);
         }
         else {

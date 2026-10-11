@@ -94,7 +94,7 @@ void func_02039e80(int param_1,int param_2)
 
 {
   longlong lVar1;
-  int iVar2;
+  uint iVar2;
   longlong *plVar3;
   int *piVar4;
   uint *puVar5;
@@ -116,7 +116,7 @@ void func_02039e80(int param_1,int param_2)
   int local_18;
 
   iVar2 = ((unsigned int)0x02039fb8);
-  iVar7 = *(int *)(param_1 + param_2 * 4 + ((unsigned int)0x02039fb8));
+  iVar7 = *(int *)(param_2 + param_1 * 4 + ((unsigned int)0x02039fb8));
   piVar4 = (int *)func_02041758(0x81,0,0x1000);
   plVar3 = ((unsigned int)0x02039fbc);
   local_30 = *piVar4;

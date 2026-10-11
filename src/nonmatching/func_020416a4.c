@@ -101,7 +101,7 @@ void func_020416a4(int param_1,uint param_2,undefined2 *param_3,undefined4 param
   }
   else {
     iVar3 = param_2 * 8;
-    *(undefined2 *)(param_1 + iVar3 + 0x160) = *param_3;
+    *(undefined2 *)(param_1 + (iVar3 + 0x160)) = *param_3;
     iVar4 = param_1 + 0x162;
     psVar2 = (short *)(iVar4 + iVar3);
     *(undefined2 *)(iVar4 + iVar3) = param_3[1];

@@ -126,7 +126,7 @@ int func_02066558(undefined4 param_1,int param_2,int param_3,undefined4 param_4)
       uVar5 = func_020656c8(iVar3);
     }
     *puVar6 = param_1;
-    iVar2 = func_02065d1c(param_2,iVar3 * 8 + 0x5c,((unsigned int)0x0206667c),uVar5);
+    iVar2 = func_02065d1c(param_2,iVar3 * 0x5c + 8,((unsigned int)0x0206667c),uVar5);
     if (iVar2 == 0) {
       return 0;
     }

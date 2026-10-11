@@ -114,23 +114,23 @@ undefined4 func_020513d8(undefined4 param_1,undefined4 param_2,undefined4 param_
   local_134 = iVar1;
   local_12c = param_1;
   iVar3 = func_020465d8(param_1,iVar3 + -2);
-  uVar5 = iVar1 + iVar3;
-  if (uVar5 <= local_130) {
+  uVar4 = iVar1 + iVar3;
+  if (uVar4 <= local_130) {
     do {
       local_128 = 0;
-      uVar4 = func_02050d78(&local_134,uVar5,uVar2);
-      if (uVar4 != 0) {
-        iVar1 = uVar4 - iVar1;
-        if (uVar4 == uVar5) {
+      uVar5 = func_02050d78(&local_134,uVar4,uVar2);
+      if (uVar5 != 0) {
+        iVar1 = uVar5 - iVar1;
+        if (uVar5 == uVar4) {
           iVar1 = iVar1 + 1;
         }
         func_02046868(param_1,iVar1);
         func_0204630c(param_1,((unsigned int)0x020514b8));
-        uVar2 = func_0205117c(&local_134,uVar5,uVar4);
+        uVar2 = func_0205117c(&local_134,uVar4,uVar5);
         return uVar2;
       }
-      uVar5 = uVar5 + 1;
-    } while (uVar5 <= local_130);
+      uVar4 = uVar4 + 1;
+    } while (uVar4 <= local_130);
   }
   return 0;
 }

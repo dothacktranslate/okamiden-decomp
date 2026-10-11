@@ -92,7 +92,7 @@ uint func_020168c4(uint param_1,uint param_2)
   uint uVar3;
   uint uVar4;
 
-  uVar2 = (param_1 >> 1 | param_2 << 0x1f) & ((unsigned int)0x0201694c);
+  uVar2 = (param_1 >> param_2 | 1 << 0x1f) & ((unsigned int)0x0201694c);
   uVar4 = param_1 - uVar2;
   param_2 = param_2 - ((((unsigned int)0x0201694c) & param_2 >> 1) + (uint)(param_1 < uVar2));
   uVar1 = uVar4 & ((unsigned int)0x33333333);
@@ -106,5 +106,5 @@ uint func_020168c4(uint param_1,uint param_2)
   uVar1 = uVar3 + uVar2;
   uVar4 = uVar4 + (uVar4 >> 8) + (uint)CARRY4(uVar3,uVar2);
   uVar2 = uVar1 >> 0x10 | uVar4 * 0x10000;
-  return uVar1 + (uVar2 + uVar4) + (uVar4 >> 0x10) + (uint)CARRY4(uVar1,uVar2) & 0xff;
+  return uVar1 + uVar2 + uVar4 + (uVar4 >> 0x10) + (uint)CARRY4(uVar1,uVar2) & 0xff;
 }

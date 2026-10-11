@@ -117,9 +117,9 @@ undefined4 func_0204c150(int param_1,int *param_2,int param_3)
     iVar7 = (int)param_2 + (*(int *)(param_1 + 0x20) - iVar5);
     if (*(char *)(iVar3 + 0x4a) == '\0') {
       iVar6 = iVar7 + 8;
-      uVar2 = iVar6 + (uint)*(byte *)(iVar3 + 0x49) * 8;
-      if (uVar2 < *(uint *)(param_1 + 8)) {
-        *(uint *)(param_1 + 8) = uVar2;
+      uVar4 = iVar6 + (uint)*(byte *)(iVar3 + 0x49) * 8;
+      if (uVar4 < *(uint *)(param_1 + 8)) {
+        *(uint *)(param_1 + 8) = uVar4;
       }
     }
     else {
@@ -141,16 +141,16 @@ undefined4 func_0204c150(int param_1,int *param_2,int param_3)
     *(undefined4 *)(param_1 + 0x18) = *(undefined4 *)(iVar3 + 0xc);
     piVar1[5] = 0;
     piVar1[4] = param_3;
-    uVar2 = *(uint *)(param_1 + 8);
-    uVar4 = piVar1[2];
-    if (uVar2 < uVar4) {
+    uVar4 = *(uint *)(param_1 + 8);
+    uVar2 = piVar1[2];
+    if (uVar4 < uVar2) {
       do {
-        *(undefined4 *)(uVar2 + 4) = 0;
-        uVar4 = piVar1[2];
-        uVar2 = uVar2 + 8;
-      } while (uVar2 < uVar4);
+        *(undefined4 *)(uVar4 + 4) = 0;
+        uVar2 = piVar1[2];
+        uVar4 = uVar4 + 8;
+      } while (uVar4 < uVar2);
     }
-    *(uint *)(param_1 + 8) = uVar4;
+    *(uint *)(param_1 + 8) = uVar2;
     if ((*(byte *)(param_1 + 0x38) & 1) != 0) {
       *(int *)(param_1 + 0x18) = *(int *)(param_1 + 0x18) + 4;
       func_0204be48(param_1,0,0xffffffff);

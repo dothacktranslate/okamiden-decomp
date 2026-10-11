@@ -96,7 +96,7 @@ undefined4
 func_02011034(short *param_1,int *param_2,undefined4 param_3,undefined4 param_4,int *param_5)
 
 {
-  short sVar1;
+  unsigned short sVar1;
   short sVar2;
   short *psVar3;
   int iVar4;

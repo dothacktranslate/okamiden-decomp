@@ -100,7 +100,7 @@ undefined4 func_0205a900(int *param_1,int *param_2)
     bVar2 = false;
   }
   else {
-    if ((param_1 == (int *)0x0) || (*param_1 != ((unsigned int)0x0205aab4))) {
+    if ((param_1 == (int *)0x0) || (*param_1 != ((unsigned int)0x4e465452))) {
       bVar2 = false;
     }
     else {
@@ -122,7 +122,7 @@ undefined4 func_0205a900(int *param_1,int *param_2)
     if (param_1 == (int *)0x0) {
       bVar2 = false;
     }
-    else if (*param_1 == ((unsigned int)0x0205aab4)) {
+    else if (*param_1 == ((unsigned int)0x4e465452)) {
       if ((param_1 == (int *)0x0) || (*(ushort *)((int)param_1 + 6) < ((unsigned int)0x0205aabc))) {
         bVar2 = false;
       }
@@ -137,7 +137,7 @@ undefined4 func_0205a900(int *param_1,int *param_2)
       if (param_1 == (int *)0x0) {
         bVar1 = false;
       }
-      else if (*param_1 == ((unsigned int)0x0205aab4)) {
+      else if (*param_1 == ((unsigned int)0x4e465452)) {
         if ((param_1 == (int *)0x0) || (*(ushort *)((int)param_1 + 6) < 0x100)) {
           bVar1 = false;
         }

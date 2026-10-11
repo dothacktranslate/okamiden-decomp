@@ -103,22 +103,22 @@ bool func_0204d42c(int param_1,int param_2)
   if ((*(int *)(param_2 + 8) != 0) && ((*(byte *)(*(int *)(param_2 + 8) + 5) & 3) != 0)) {
     func_0204d1d8();
   }
-  iVar1 = *(int *)(param_2 + 8);
-  if (iVar1 == 0) {
+  iVar3 = *(int *)(param_2 + 8);
+  if (iVar3 == 0) {
     piVar2 = (int *)0x0;
   }
-  else if ((*(byte *)(iVar1 + 6) & 8) == 0) {
-    piVar2 = (int *)func_02053918(iVar1,3,*(undefined4 *)(param_1 + 0xac));
+  else if ((*(byte *)(iVar3 + 6) & 8) == 0) {
+    piVar2 = (int *)func_02053918(iVar3,3,*(undefined4 *)(param_1 + 0xac));
   }
   else {
     piVar2 = (int *)0x0;
   }
   if ((piVar2 != (int *)0x0) && (piVar2[1] == 4)) {
-    iVar3 = *piVar2;
-    iVar1 = func_02019064(iVar3 + 0x10,0x6b);
-    bVar4 = iVar1 != 0;
-    iVar1 = func_02019064(iVar3 + 0x10,0x76);
-    bVar5 = iVar1 != 0;
+    iVar1 = *piVar2;
+    iVar3 = func_02019064(iVar1 + 0x10,0x6b);
+    bVar4 = iVar3 != 0;
+    iVar3 = func_02019064(iVar1 + 0x10,0x76);
+    bVar5 = iVar3 != 0;
     if (bVar4 || bVar5) {
       *(byte *)(param_2 + 5) = *(byte *)(param_2 + 5) & 0xe7 | bVar5 << 4 | bVar4 << 3;
       *(undefined4 *)(param_2 + 0x18) = *(undefined4 *)(param_1 + 0x2c);
@@ -127,19 +127,19 @@ bool func_0204d42c(int param_1,int param_2)
   }
   if (!bVar4 || !bVar5) {
     if (!bVar5) {
-      iVar1 = *(int *)(param_2 + 0x1c);
-      while (iVar1 != 0) {
-        iVar1 = iVar1 + -1;
-        if ((3 < *(int *)(*(int *)(param_2 + 0xc) + iVar1 * 8 + 4)) &&
-           ((*(byte *)(*(int *)(*(int *)(param_2 + 0xc) + iVar1 * 8) + 5) & 3) != 0)) {
+      iVar3 = *(int *)(param_2 + 0x1c);
+      while (iVar3 != 0) {
+        iVar3 = iVar3 + -1;
+        if ((3 < *(int *)(*(int *)(param_2 + 0xc) + iVar3 * 8 + 4)) &&
+           ((*(byte *)(*(int *)(*(int *)(param_2 + 0xc) + iVar3 * 8) + 5) & 3) != 0)) {
           func_0204d1d8(param_1);
         }
       }
     }
-    iVar1 = 1 << *(sbyte *)(param_2 + 7);
-    while (iVar1 != 0) {
-      iVar1 = iVar1 + -1;
-      piVar2 = (int *)(iVar1 * 0x14 + *(int *)(param_2 + 0x10));
+    iVar3 = 1 << *(sbyte *)(param_2 + 7);
+    while (iVar3 != 0) {
+      iVar3 = iVar3 + -1;
+      piVar2 = (int *)(iVar3 * 0x14 + *(int *)(param_2 + 0x10));
       if (piVar2[1] == 0) {
         func_0204d1c4(piVar2);
       }

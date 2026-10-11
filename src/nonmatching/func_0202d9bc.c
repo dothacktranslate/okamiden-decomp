@@ -123,7 +123,7 @@ void func_0202d9bc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     if (iVar2 != 0) {
       iVar11 = iVar2;
     }
-    if (*(uint *)(iVar11 + 0x14) <= uVar10) break;
+    if (*(unsigned short *)(iVar11 + 0x14) <= uVar10) break;
     iVar11 = iVar2 + uVar10 * 0x18;
     sVar1 = *(short *)(iVar11 + 6);
     if ((((sVar1 == 8) || (sVar1 == 9)) || (sVar1 == 10)) || (sVar1 == 0x22)) {
@@ -163,7 +163,7 @@ void func_0202d9bc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       iVar8 = param_1 + iVar11 * 2;
       *(undefined2 *)(iVar8 + 0xdb0) = 0;
       *(undefined2 *)(iVar8 + iVar4) = 0;
-      puVar9 = *(undefined2 **)(param_1 + (iVar11 * 4 + 0xd30));
+      puVar9 = *(undefined2 **)(param_1 + iVar11 * 4 + 0xd30);
       if (puVar9 != (undefined2 *)0x0) {
         func_0202cd5c(param_1,*(undefined2 *)(iVar13 + iVar2),*(undefined2 *)(iVar13 + iVar3),*puVar9
                     );

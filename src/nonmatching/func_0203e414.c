@@ -92,7 +92,7 @@ void func_0203e414(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 
 {
   int iVar1;
-  int iVar2;
+  uint iVar2;
   int iVar3;
   undefined4 local_a8;
   undefined4 local_a4;

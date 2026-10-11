@@ -201,15 +201,15 @@ uint func_02063198(int param_1,int param_2,int param_3)
   }
   else {
     uVar4 = ((unsigned int *)0x020632b0)[1];
-    if (uVar4 >= uVar2) {
+    if (uVar2 <= uVar4) {
       if (param_2 == 0) {
         uVar5 = uVar4 - uVar2 & 0xf;
       }
       else {
         uVar5 = uVar4 - uVar2 & 7;
       }
-      if (uVar2 + uVar5 <= uVar4 - (*(unsigned int *)0x020632b0)) {
-        if ((param_2 == 0) || (uVar4 <= 0x10000)) {
+      if (uVar2 + uVar4 >= uVar5 - (*(unsigned int *)0x020632b0)) {
+        if ((param_2 == 0) || (uVar4 < 0x10001)) {
           bVar1 = true;
           uVar3 = ((unsigned int *)0x020632b0)[1] - (uVar2 + uVar5);
           ((unsigned int *)0x020632b0)[1] = uVar3;

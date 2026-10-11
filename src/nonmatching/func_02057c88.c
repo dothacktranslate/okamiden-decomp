@@ -96,7 +96,7 @@ void func_02057c88(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 
 {
   ushort uVar1;
-  ushort uVar2;
+  short uVar2;
   ushort *puVar3;
   undefined4 uVar4;
   undefined4 *puVar5;

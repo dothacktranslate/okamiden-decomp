@@ -126,7 +126,7 @@ void func_020390f8(int param_1)
     puVar4 = *(undefined4 **)(param_1 + 0x10);
     if (puVar4 != (undefined4 *)(param_1 + 0x10)) {
       do {
-        if ((int)puVar4[2] < 4) {
+        if ((int)puVar4[2] <= 3) {
           puVar4 = (undefined4 *)*puVar4;
         }
         else {

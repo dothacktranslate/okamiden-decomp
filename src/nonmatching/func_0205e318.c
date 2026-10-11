@@ -179,7 +179,7 @@ undefined4 func_0205e318(uint *param_1)
       uVar1 = ((unsigned int)0x30415642) - 0x200;
     }
     else {
-      if (((unsigned int)0x30415642) - 0x8ff < uVar7) {
+      if (((unsigned int)0x30415642) - 0x900 <= uVar7) {
         return 1;
       }
       uVar1 = ((unsigned int)0x30415642) - 0x1300;

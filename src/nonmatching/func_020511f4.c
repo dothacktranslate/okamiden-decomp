@@ -98,7 +98,7 @@ extern int func_0205117c();
 int func_020511f4(undefined4 param_1,int param_2)
 
 {
-  int iVar1;
+  uint iVar1;
   char *pcVar2;
   undefined4 uVar3;
   int iVar4;
@@ -152,7 +152,7 @@ int func_020511f4(undefined4 param_1,int param_2)
         iVar1 = func_0205117c(&local_134,0,0);
         return iVar1 + 2;
       }
-      bVar6 = local_130 > uVar5;
+      bVar6 = uVar5 < local_130;
       uVar5 = uVar5 + 1;
     } while ((bVar6) && (unaff_r8 == 0));
   }

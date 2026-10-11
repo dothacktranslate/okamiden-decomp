@@ -132,9 +132,9 @@ void func_0201ac10(undefined1 *param_1,int param_2,int param_3,undefined4 param_
       }
       iVar7 = iVar7 + -1;
       pbVar9 = pbVar9 + -1;
-      *pbVar9 = (char)uVar5 + (char)(uint)((ulonglong)((unsigned int)0x0201ad8c) * (ulonglong)uVar5 >> 0x23) * -10
+      *pbVar9 = (char)uVar5 + (char)(uint)((ulonglong)((unsigned int)0xcccccccd) * (ulonglong)uVar5 >> 0x23) * -10
       ;
-      uVar5 = (uint)((ulonglong)((unsigned int)0x0201ad8c) * (ulonglong)uVar5 >> 0x23);
+      uVar5 = (uint)((ulonglong)((unsigned int)0xcccccccd) * (ulonglong)uVar5 >> 0x23);
     } while (0 < iVar7);
   }
   sVar3 = *(short *)(param_2 + 2) + *(short *)(param_3 + 2);

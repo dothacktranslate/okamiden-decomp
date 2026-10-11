@@ -121,9 +121,9 @@ void func_020137dc(uint param_1,undefined4 param_2,undefined4 param_3,undefined4
       }
       goto LAB_02013ae0;
     }
-    if (uVar4 < 0x100001) {
+    if (uVar4 <= 0x100000) {
       if (uVar4 < 0x100000) {
-        if (uVar4 < 0x40001) {
+        if (uVar4 <= 0x40000) {
           if (uVar4 != 0x40000) goto LAB_02013ae0;
         }
         else if (uVar4 != 0x80000) goto LAB_02013ae0;
@@ -135,7 +135,7 @@ void func_020137dc(uint param_1,undefined4 param_2,undefined4 param_3,undefined4
       *(undefined4 *)(iVar6 + 0x40) = uVar3;
       uVar4 = *(uint *)(iVar6 + 0x58) | 0x480;
     }
-    else if (uVar4 < 0x400001) {
+    else if (uVar4 <= 0x400000) {
       if (uVar4 < 0x400000) {
         if (uVar4 != 0x200000) goto LAB_02013ae0;
         *(undefined4 *)(iVar6 + 0x30) = 0x17;

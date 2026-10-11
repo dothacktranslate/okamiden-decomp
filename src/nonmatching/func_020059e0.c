@@ -167,22 +167,22 @@ void func_020059e0(undefined4 param_1)
   ushort *puVar2;
 
   puVar2 = ((unsigned int)0x02005ac4);
-  (*(unsigned short *)0x02005ac4) = ~(ushort)param_1 & ((*(unsigned short *)0x02005ac4) | ((unsigned int *)0x02005ac4)[6]);
+  (*(unsigned short *)0x02005ac4) = ~(ushort)param_1 & ((*(unsigned int *)0x02005ac4) | ((unsigned int *)0x02005ac4)[6]);
   puVar2[6] = (ushort)param_1;
-  puVar1 = ((unsigned int)0x02005ac8);
+  puVar1 = ((unsigned int)0x04000240);
   switch(param_1) {
   case 0:
     (*(unsigned int *)0x02005ad8) = (*(unsigned int *)0x02005ad8) & (ushort)((unsigned int)0x02005adc);
     break;
   case 1:
-    (*(unsigned int *)0x02005ac8) = 0x9b;
+    (*(unsigned int *)0x04000240) = 0x9b;
     puVar2 = (ushort *)(puVar1 + -0x1e0);
     goto LAB_02005aa8;
   case 2:
     puVar1 = ((unsigned int)0x02005acc);
     goto LAB_02005a9c;
   case 3:
-    (*(unsigned int *)0x02005ac8) = 0x93;
+    (*(unsigned int *)0x04000240) = 0x93;
     puVar1 = ((unsigned int)0x02005acc);
     goto LAB_02005a9c;
   case 4:

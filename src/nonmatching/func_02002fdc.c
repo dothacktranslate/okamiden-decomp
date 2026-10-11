@@ -94,7 +94,7 @@ short func_02002fdc(int param_1,int param_2)
   short sVar3;
   int iVar4;
 
-  if (param_1 < 1) {
+  if (param_1 <= 0) {
     if (-1 < param_1) {
       sVar2 = 0;
       if (param_2 < 0) {

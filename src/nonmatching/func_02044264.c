@@ -31,17 +31,17 @@ void func_02044264(int param_1,int param_2)
                       (uint)*(ushort *)(param_2 + 6) * 4))();
   iVar3 = *(int *)(((unsigned int)0x02044364) + (uint)*(ushort *)(param_2 + 4) * 4);
   iVar2 = (**(code **)(((unsigned int)0x02044360) + (uint)*(ushort *)(param_2 + 4) * 4))();
-  if (((unsigned int)0x02044368) < iVar2) {
-    if (((unsigned int)0x02044368) + 0x100000 < iVar2) {
-      if (iVar2 == ((unsigned int)0x02044368) + 0x200000) {
+  if (((unsigned int)0x00100010) < iVar2) {
+    if (((unsigned int)0x00100010) + 0x100000 < iVar2) {
+      if (iVar2 == ((unsigned int)0x00100010) + 0x200000) {
         unaff_r6 = 3;
       }
     }
-    else if (iVar2 == ((unsigned int)0x02044368) + 0x100000) {
+    else if (iVar2 == ((unsigned int)0x00100010) + 0x100000) {
       unaff_r6 = 2;
     }
   }
-  else if (iVar2 < ((unsigned int)0x02044368)) {
+  else if (iVar2 < ((unsigned int)0x00100010)) {
     if (iVar2 == 0x10) {
       unaff_r6 = 0;
     }

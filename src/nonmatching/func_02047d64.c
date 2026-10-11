@@ -102,7 +102,7 @@ void func_02047d64(undefined4 param_1,int param_2,undefined4 param_3,undefined4 
 
   uStack_24 = param_4;
   iVar1 = func_02018d9c(param_3);
-  func_0204815c(param_1,auStack_1030);
+  func_0204815c(param_1,auStack_1030,iVar1);
   iVar2 = func_020194ec(param_2,param_3);
   while (iVar2 != 0) {
     func_02048014(auStack_1030,param_2,iVar2 - param_2);

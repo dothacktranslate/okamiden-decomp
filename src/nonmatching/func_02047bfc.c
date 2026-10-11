@@ -105,8 +105,8 @@ void func_02047bfc(undefined4 param_1,int param_2,int *param_3,int param_4)
 
   if (param_2 != 0) {
     uVar1 = func_02047bd4(param_3);
-    iVar3 = ((unsigned int)0x02047d58);
-    func_02047e18(param_1,((unsigned int)0x02047d58),((unsigned int)0x02047d5c),1);
+    iVar3 = ((unsigned int)0xffffd8f0);
+    func_02047e18(param_1,((unsigned int)0xffffd8f0),((unsigned int)0x02047d5c),1);
     func_02046ae8(param_1,0xffffffff,param_2);
     iVar2 = func_02046444(param_1,0xffffffff);
     if (iVar2 != 5) {

@@ -148,8 +148,8 @@ void func_0205dbb8(int *param_1,undefined4 param_2,undefined4 param_3,undefined4
   }
   piVar5 = ((unsigned int)0x0205df54);
   if (uVar3 == 0) {
-    iVar8 = (uint)*(ushort *)(param_1[0x2c] + 0x2c) << 0xf;
     uVar3 = (uint)*(ushort *)(param_1[0x2c] + 0x2e);
+    iVar8 = (uint)*(ushort *)(param_1[0x2c] + 0x2c) << 0xf;
     (*(unsigned int *)0x0205df54) = iVar8;
     piVar5[5] = uVar3 * -0x8000;
     piVar5[0xc] = iVar8;
@@ -230,9 +230,9 @@ LAB_0205dd80:
     puVar2[5] = 0;
     do {
       iVar8 = func_020038e8(auStack_88);
-      puVar2 = ((unsigned int)0x0205df68);
+      puVar2 = ((unsigned int)0x04000448);
     } while (iVar8 != 0);
-    (*(unsigned int *)0x0205df68) = 1;
+    (*(unsigned int *)0x04000448) = 1;
     puVar2[-2] = 3;
     func_0205e0c0(0x16,auStack_88,0x10);
     local_90[0] = (((local_54 >> 4) << 8) >> 0x10) << 0x10 |

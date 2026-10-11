@@ -94,7 +94,7 @@ void func_020679d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 
 {
   unsigned char cVar1;
-  short sVar2;
+  unsigned short sVar2;
   longlong lVar3;
   int iVar4;
   undefined4 *puVar5;

@@ -103,7 +103,7 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
 
   uVar4 = 8000;
   if (param_2 < 8000) {
-    if (param_2 < ((unsigned int)0x00001b58)) {
+    if (param_2 < ((unsigned int)0x0202d00c)) {
       if (param_2 < ((unsigned int)0x0202d034)) {
         if (param_2 < ((unsigned int)0x0202d040)) {
           if (param_2 < 4000) {
@@ -202,7 +202,7 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
     else {
       uVar2 = ((unsigned int)0x0202d014);
       uVar3 = ((unsigned int)0x0202d018);
-      uVar4 = ((unsigned int)0x00001b58);
+      uVar4 = ((unsigned int)0x0202d00c);
       if ((1999 < param_4) || (uVar2 = ((unsigned int)0x0202d020), uVar3 = ((unsigned int)0x0202d024), 999 < param_4))
       goto LAB_0202cf72;
       uVar2 = ((unsigned int)0x0202d02c);
@@ -225,7 +225,7 @@ LAB_0202cf72:
   }
   func_02018ba4(auStack_54,uVar2,uVar3,uVar4);
 LAB_0202cfce:
-  iVar1 = func_0202c774(param_1,param_3 + param_2 * 0x10000);
+  iVar1 = func_0202c774(param_1,param_2 + param_3 * 0x10000);
   if (iVar1 == 0) {
     return 0;
   }

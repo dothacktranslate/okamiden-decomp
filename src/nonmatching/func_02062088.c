@@ -107,7 +107,7 @@ void func_02062088(uint *param_1)
   undefined4 local_14;
   undefined4 local_10;
 
-  local_48 = ((unsigned int)0x02062234);
+  local_48 = ((unsigned int)0x00101910);
   if ((*param_1 & 8) != 0) {
     local_48 = ((unsigned int)0x00101710);
   }

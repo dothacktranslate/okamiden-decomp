@@ -96,7 +96,7 @@ void func_0205facc(uint *param_1,int param_2,uint *param_3,int param_4)
   uVar3 = param_2 >> 0xc;
   param_4 = param_4 + param_3[1];
   if ((uVar4 & 0xc0000000) != 0) {
-    uVar2 = uVar4 & ((unsigned int)0x0205fc18);
+    uVar2 = uVar4 & ((unsigned int)0x1fff0000);
     if ((uVar4 & 0x40000000) == 0) {
       if ((uVar3 & 3) == 0) {
         uVar3 = uVar3 >> 2;

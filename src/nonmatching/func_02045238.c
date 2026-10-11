@@ -66,7 +66,7 @@ void func_02045238(int param_1,int param_2,int *param_3)
   else {
     iVar1 = 2;
   }
-  *(int *)(*(int *)(param_1 + iVar1 * 4 + 0x458) + (uint)*(ushort *)(param_1 + iVar1 * 2 + 0x18) * 4
+  *(int *)(*(int *)(param_1 + iVar1 * 4 + 0x458) + (uint)*(ushort *)(iVar1 + param_1 * 2 + 0x18) * 4
           ) = param_2;
   *(int *)(param_2 + 0x34) = iVar2;
   *(short *)(param_1 + 0x18 + iVar1 * 2) = *(short *)(param_1 + 0x18 + iVar1 * 2) + 1;

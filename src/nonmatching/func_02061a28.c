@@ -108,8 +108,8 @@ void func_02061a28(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   uVar10 = (uint)lVar3 >> 0xc | (int)((ulonglong)lVar3 >> 0x20) << 0x14;
   lVar3 = (longlong)*(int *)(param_2 + 0x18) * (longlong)(int)*(short *)(param_2 + 0x22);
   uVar9 = (uint)lVar3 >> 0xc | (int)((ulonglong)lVar3 >> 0x20) << 0x14;
-  lVar3 = (longlong)*(int *)(param_2 + 0x1c) * (longlong)(int)*(short *)(param_2 + 0x20);
   lVar4 = (longlong)*(int *)(param_2 + 0x1c) * (longlong)(int)*(short *)(param_2 + 0x22);
+  lVar3 = (longlong)*(int *)(param_2 + 0x1c) * (longlong)(int)*(short *)(param_2 + 0x20);
   uVar8 = (uint)lVar3 >> 0xc | (int)((ulonglong)lVar3 >> 0x20) << 0x14;
   uVar7 = (uint)lVar4 >> 0xc | (int)((ulonglong)lVar4 >> 0x20) << 0x14;
   *param_1 = uVar9;

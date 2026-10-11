@@ -107,7 +107,7 @@ void func_0203251c(int param_1,int param_2,undefined4 param_3)
   int iVar5;
   int local_20;
 
-  (*(unsigned int *)0x020326ec) = 2;
+  (*(unsigned short *)0x020326ec) = 2;
   func_02032490();
   iVar2 = func_020324ec(param_2,((unsigned int)0x020326f0),4);
   if (iVar2 == 0) {

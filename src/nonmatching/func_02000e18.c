@@ -101,8 +101,8 @@ void func_02000e18(int *param_1,int *param_2,int param_3,int param_4)
   uint uVar12;
   int iVar13;
 
-  iVar10 = 0x1000 - param_4;
   iVar5 = *param_2;
+  iVar10 = 0x1000 - param_4;
   uVar8 = param_2[1];
   uVar1 = (longlong)iVar10 * (longlong)iVar5;
   iVar13 = (int)(uVar1 >> 0x20);

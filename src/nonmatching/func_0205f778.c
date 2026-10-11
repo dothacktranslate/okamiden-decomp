@@ -125,7 +125,7 @@ void func_0205f778(int param_1,int param_2,uint param_3,uint *param_4)
   puStack_28 = param_4;
   if ((uVar4 & 1) == 0) {
     puVar5 = (uint *)(iVar3 + 4);
-    if (((param_3 & ((unsigned int)0x0205fac4)) == 0) || ((*(uint *)(param_1 + 8) & 1) == 0)) {
+    if (((param_3 & ((unsigned int)0x00000fff)) == 0) || ((*(uint *)(param_1 + 8) & 1) == 0)) {
       bVar1 = false;
     }
     else {

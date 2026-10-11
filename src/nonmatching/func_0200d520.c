@@ -165,8 +165,8 @@ LAB_0200d5e0:
             uVar5 = uStack_ac;
           }
         } while (uVar13 != uStack_b0 || uVar2 != uVar5);
-        uVar5 = 0;
         iVar4 = 0;
+        uVar5 = 0;
         if (uVar2 != 0) {
           do {
             uVar8 = (int)pcVar12[uVar5] - 0x41U & 0xff;
@@ -174,7 +174,7 @@ LAB_0200d5e0:
             if (uVar8 <= 0x19) {
               uVar8 = uVar8 + 0x20;
             }
-            if (uVar7 < 0x1a) {
+            if (uVar7 <= 0x19) {
               uVar7 = uVar7 + 0x20;
             }
             iVar4 = uVar8 - uVar7;

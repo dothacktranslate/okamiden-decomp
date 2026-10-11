@@ -116,8 +116,8 @@ undefined4 func_0204287c(int param_1)
     uVar2 = ((unsigned int)0x6c078965);
     *(undefined4 *)(iVar1 + 0x2c) = 0;
     *(undefined4 *)(iVar1 + 0x30) = uVar2;
+    uVar3 = ((unsigned int)0x00269ec3);
     uVar2 = ((unsigned int)0x5d588b65);
-    uVar3 = ((unsigned int)0x02042928);
     *(undefined4 *)(iVar1 + 0x34) = ((unsigned int)0x5d588b65);
     *(undefined4 *)(iVar1 + 0x38) = uVar3;
     *(undefined4 *)(iVar1 + 0x3c) = 0;

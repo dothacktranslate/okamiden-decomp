@@ -128,8 +128,8 @@ void func_02001f6c(int *param_1,uint *param_2,uint *param_3)
   }
   iVar14 = *param_1;
   iVar8 = param_1[2];
-  iVar7 = param_1[3];
   iVar6 = param_1[5];
+  iVar7 = param_1[3];
   lVar1 = (longlong)(int)param_2[0xc] * (longlong)iVar7 +
           (longlong)(int)param_2[8] * (longlong)iVar8 +
           (longlong)(int)*param_2 * (longlong)iVar14 + (longlong)iVar10 * (longlong)(int)param_2[4];

@@ -101,7 +101,7 @@ uint func_0203dc34(uint param_1,undefined4 param_2,undefined4 param_3,int param_
   uint uVar9;
   uint uVar10;
 
-  uVar2 = ((unsigned int)0x0203de5c);
+  uVar2 = ((unsigned int)0x45800000);
   iVar7 = param_4 * 0x1000;
   uVar6 = iVar7 + (param_1 & 0x1f) * 0x1000;
   if ((int)uVar6 < 0) {
@@ -137,7 +137,7 @@ uint func_0203dc34(uint param_1,undefined4 param_2,undefined4 param_3,int param_
           (uVar10 + 0x800 >> 0xc |
           (((int)uVar8 >> 0x1f) * 0x964 + (int)((ulonglong)uVar8 * 0x964 >> 0x20) +
           (uint)(0xfffff7ff < uVar10)) * 0x100000);
-  func_0201f190(((unsigned int)0x0203de5c));
+  func_0201f190(((unsigned int)0x45800000));
   uVar6 = func_0201edc4();
   uVar3 = uVar6 * 0x20000 + 0x800;
   uVar8 = ((int)uVar6 >> 0x1f) << 0x11 | uVar6 >> 0xf;

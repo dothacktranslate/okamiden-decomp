@@ -110,8 +110,8 @@ void func_02061e74(uint *param_1,uint *param_2,int param_3,uint param_4)
   bVar2 = *(byte *)(param_3 + 2);
   uVar7 = (uint)bVar2;
   if ((param_4 & 4) == 0) {
-    uVar12 = param_2[1];
     uVar13 = *param_2;
+    uVar12 = param_2[1];
     uVar11 = param_2[2];
     param_1[1] = uVar13;
     param_1[2] = uVar12;
@@ -158,6 +158,6 @@ void func_02061e74(uint *param_1,uint *param_2,int param_3,uint param_4)
     return;
   }
   func_020098b4(((unsigned int)0x02062070) + uVar7 * 0x18,uVar10 * 0x18 + ((unsigned int)0x02062070),0x18,iVar8,param_4);
-  func_020098b4(iVar5 + uVar7 * 0x18,param_1 + 4,0x18);
+  func_020098b4(uVar7 + iVar5 * 0x18,param_1 + 4,0x18);
   return;
 }

@@ -112,7 +112,7 @@ undefined4 func_0205b788(int param_1,int param_2)
   uVar1 = (uint)*(byte *)(iVar2 + 1);
   if (uVar1 != 0) {
     do {
-      if ((iVar2 == 0) || (uVar1 = (uint)*(byte *)(iVar2 + 1), uVar1 <= uVar4)) {
+      if ((iVar2 == 0) || (uVar1 = (uint)*(byte *)(iVar2 + 1), uVar4 >= uVar1)) {
         iVar3 = 0;
       }
       else {

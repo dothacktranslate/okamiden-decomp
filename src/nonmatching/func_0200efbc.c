@@ -94,7 +94,7 @@ void func_0200efbc(void)
   int iVar1;
   undefined4 uVar2;
   undefined4 uVar3;
-  int iVar4;
+  uint iVar4;
   undefined4 in_r3;
   code *pcVar5;
 

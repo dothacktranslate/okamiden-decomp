@@ -1,8 +1,19 @@
 {
   "arm9_total_code_bytes": 431680,
   "cumulative_selected_v2_gain_over_pre_a9": {
-    "equivalent_bytes": 1889.9783637103276,
-    "percentage_points": 0.43781930219383053
+    "equivalent_bytes": 2838.0928316810277,
+    "percentage_points": 0.6574529354338927
+  },
+  "latest_high_return_pass": {
+    "candidate_errors": 0,
+    "candidate_objects_scored": 14213,
+    "equivalent_byte_gain": 948.1144679707003,
+    "exact_object_candidates": 0,
+    "functions_improved": 172,
+    "percentage_point_gain": 0.21963363324006213,
+    "profile_only_improvements": 0,
+    "source_changes": 172,
+    "targets": 300
   },
   "latest_profile_sweep": {
     "equivalent_byte_gain": 143.0666188458152,

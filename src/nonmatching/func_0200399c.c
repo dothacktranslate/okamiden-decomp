@@ -95,8 +95,8 @@ void func_0200399c(void)
   undefined4 *puVar2;
   int iVar3;
 
-  iVar3 = ((unsigned int)0x02003a48);
   piVar1 = ((unsigned int)0x02003a44);
+  iVar3 = ((unsigned int)0x02003a48);
   if ((*(unsigned int *)0x02003a44) == -1) {
     func_020098a0(0,((unsigned int)0x02003a48),0x10);
     func_020098a0(0,iVar3 + 0x30,0x60);
@@ -105,8 +105,8 @@ void func_0200399c(void)
     func_020091b4((*(unsigned int *)0x02003a44),((unsigned int)0x02003a48),0,0x10,0,0,1);
     func_02008fe4(*piVar1,iVar3 + 0x30,0,0x60,1);
   }
-  puVar2 = ((unsigned int)0x02003a4c);
   iVar3 = 0;
+  puVar2 = ((unsigned int)0x02003a4c);
   do {
     iVar3 = iVar3 + 1;
     *puVar2 = 0;

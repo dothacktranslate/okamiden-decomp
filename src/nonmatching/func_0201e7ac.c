@@ -192,8 +192,8 @@ ulonglong func_0201e7ac(uint param_1,uint param_2,uint param_3,uint param_4)
     uVar3 = 0;
   }
   else {
-    uVar7 = 0;
     iVar8 = 1;
+    uVar7 = 0;
     if (-1 < (int)param_4) {
       do {
         uVar3 = uVar7;

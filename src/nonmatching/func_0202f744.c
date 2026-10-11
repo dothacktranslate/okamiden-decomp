@@ -188,7 +188,7 @@ void func_0202f744(int param_1,undefined4 param_2)
   uVar1 = (*(unsigned int *)0x0202f814);
   uVar5 = *(uint *)(param_1 + 0x114);
   do {
-    if ((iVar6 == 3) && ((*(uint *)(param_1 + 0x108) & 0xffff) == ((unsigned int)0x0202f818))) {
+    if ((iVar6 == 3) && ((*(uint *)(param_1 + 0x108) & 0xffff) == ((unsigned int)0x000003e9))) {
       uVar2 = func_0x0209113c(*(undefined4 *)(*(int *)(*(int *)(*(unsigned int *)0x0202f81c) + 0x5c) + 0x34));
       func_02018ba4(auStack_94,((unsigned int)0x0202f820),uVar2);
     }
@@ -207,7 +207,7 @@ void func_0202f744(int param_1,undefined4 param_2)
     iVar4 = func_02035038((*(unsigned int *)0x0202f828),uVar2);
     if (iVar4 != 0) {
       uVar2 = func_02036db8(uVar1,uVar2,0);
-      *(undefined4 *)(param_1 + (uVar5 ^ 1) * 4 + iVar6 * 8 + 0x4c) = uVar2;
+      *(undefined4 *)(param_1 + (uVar5 ^ 1) * (4 + iVar6 * 8) + 0x4c) = uVar2;
     }
     iVar6 = iVar6 + 1;
   } while (iVar6 < 4);

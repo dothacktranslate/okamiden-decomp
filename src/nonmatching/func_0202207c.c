@@ -126,8 +126,8 @@ int func_0202207c(undefined4 param_1,undefined4 param_2,int param_3,int param_4)
   if (param_4 == 0) {
     func_02015440(local_414,((unsigned int)0x0202222c));
     func_02009b68(((unsigned int)0x02022230),param_3,0x10);
-    iVar4 = ((unsigned int)0x02022234);
-    *(undefined4 *)(param_3 + ((unsigned int)0x02022234)) = 0;
+    iVar4 = ((unsigned int)0x00000f1c);
+    *(undefined4 *)(param_3 + ((unsigned int)0x00000f1c)) = 0;
     uVar1 = func_020154bc(local_414,param_3,iVar4 + 4);
     *(undefined4 *)(param_3 + iVar4) = uVar1;
     iVar2 = func_02021ed4(param_1,0,param_2,local_414);

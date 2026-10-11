@@ -88,7 +88,7 @@ void func_0205ae0c(int *param_1,int param_2)
 
 {
   int iVar1;
-  int iVar2;
+  uint iVar2;
   int iVar3;
   int iVar4;
 

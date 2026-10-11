@@ -134,7 +134,7 @@ undefined4 func_0205e7b0(undefined4 param_1,int *param_2,int *param_3)
     if (iVar1 < 0x1001) {
       iVar2 = iVar5;
     }
-    if (iVar2 < 0x1001) goto LAB_0205e8d0;
+    if (iVar2 <= 0x1000) goto LAB_0205e8d0;
   }
   uVar6 = 0xffffffff;
 LAB_0205e8d0:

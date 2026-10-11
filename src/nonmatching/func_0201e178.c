@@ -96,7 +96,7 @@ uint func_0201e178(uint param_1,uint param_2,uint param_3,uint param_4)
     return 0;
   }
   if (-1 < (int)(param_4 | param_2)) {
-    bVar3 = param_4 <= param_2;
+    bVar3 = param_2 >= param_4;
     bVar1 = param_2 == param_4;
     if (bVar1) {
       bVar3 = param_3 <= param_1;

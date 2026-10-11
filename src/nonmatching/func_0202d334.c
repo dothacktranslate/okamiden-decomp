@@ -99,8 +99,8 @@ void func_0202d334(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   int iVar5;
   uint uVar6;
 
-  uVar1 = *(uint *)(*(int *)(param_1 + ((unsigned int)0x00000e54)) + 0x14);
   uVar6 = (*(int *)(param_1 + ((unsigned int)0x00000ac4)) << 4) >> 0x10;
+  uVar1 = *(uint *)(*(int *)(param_1 + ((unsigned int)0x00000e54)) + 0x14);
   uVar4 = (uint)*(ushort *)(param_1 + ((unsigned int)0x00000e54) + 4);
   if (uVar4 < uVar1) {
     do {

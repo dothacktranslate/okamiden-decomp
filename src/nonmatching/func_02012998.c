@@ -162,7 +162,7 @@ bool func_02012998(int param_1,int *param_2,int param_3,int param_4,int *param_5
                  undefined2 *param_7)
 
 {
-  int iVar1;
+  uint iVar1;
   ushort uVar2;
   ushort uVar3;
   short sVar4;

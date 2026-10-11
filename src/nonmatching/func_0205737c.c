@@ -89,7 +89,7 @@ extern int func_0200986c();
 undefined4 func_0205737c(int *param_1,uint param_2,uint param_3,int param_4)
 
 {
-  int uVar1;
+  uint uVar1;
   short sVar2;
   undefined2 uVar3;
   bool bVar4;
@@ -101,7 +101,7 @@ undefined4 func_0205737c(int *param_1,uint param_2,uint param_3,int param_4)
   iVar7 = param_4 * 0x540 + ((unsigned int)0x020574c8);
   uVar5 = param_2 + (param_3 - 1);
   uVar1 = uVar5 & 0xffff;
-  for (puVar8 = (ushort *)(iVar7 + param_2 * 2); puVar8 <= (ushort *)(iVar7 + uVar1 * 2);
+  for (puVar8 = (ushort *)(param_2 + iVar7 * 2); puVar8 <= (ushort *)(iVar7 + uVar1 * 2);
       puVar8 = puVar8 + 1) {
     if (*puVar8 != ((unsigned int)0x020574cc)) {
       bVar4 = false;

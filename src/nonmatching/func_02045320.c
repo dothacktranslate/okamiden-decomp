@@ -34,11 +34,11 @@ void func_02045320(int param_1,int param_2)
   undefined1 auStack_44 [16];
   undefined1 auStack_34 [16];
 
-  sVar1 = *(short *)((param_1 + param_2 * 2) + 0x18);
+  sVar1 = *(short *)(param_1 + param_2 * 2 + 0x18);
   if (sVar1 == 0) {
     return;
   }
-  func_020154e8(*(undefined4 *)(param_1 + param_2 * 4 + 0x458),sVar1,4,((unsigned int)0x02045424));
+  func_020154e8(*(undefined4 *)(param_2 + param_1 * 4 + 0x458),sVar1,4,((unsigned int)0x02045424));
   iVar7 = param_1 + param_2 * 2;
   iVar3 = *(int *)(param_1 + param_2 * 4 + 0x458);
   uVar4 = 0;

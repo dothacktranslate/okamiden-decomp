@@ -106,9 +106,9 @@ void func_02056d88(void)
   undefined4 local_1c;
   undefined4 uStack_18;
 
-  piVar2 = ((unsigned int)0x02056e30);
+  piVar2 = ((unsigned int)0x04000580);
   iVar1 = ((unsigned int)0x02056e2c) << 6;
-  (*(unsigned int *)0x02056e30) = ((unsigned int)0x02056e2c);
+  (*(unsigned int *)0x04000580) = ((unsigned int)0x02056e2c);
   uStack_18 = in_r3;
   func_02003654(0,0xc0000,0,0x100000,iVar1,0x400000,0x400000,1,0);
   puVar4 = ((unsigned int)0x02056e38);

@@ -97,7 +97,7 @@ void func_0205678c(ushort *param_1)
   uint uVar8;
   uint uVar9;
 
-  iVar4 = *(int *)(param_1 + 4);
+  iVar4 = *(unsigned short *)(param_1 + 4);
   iVar1 = *(int *)(param_1 + 6);
   iVar6 = *(int *)(param_1 + 2) + (int)param_1;
   *(int *)(param_1 + 2) = iVar6;

@@ -175,7 +175,7 @@ void func_02002c10(uint *param_1,int *param_2)
   lVar1 = (longlong)(int)param_1[2] * (longlong)(int)param_1[2] +
           (longlong)(int)*param_1 * (longlong)(int)*param_1 +
           (longlong)(int)param_1[1] * (longlong)(int)param_1[1];
-  (*(unsigned int *)0x02002d18) = 2;
+  (*(unsigned short *)0x02002d18) = 2;
   *(undefined4 *)(puVar3 + 8) = 0;
   *(undefined4 *)(puVar3 + 10) = 0x1000000;
   *(longlong *)(puVar3 + 0xc) = lVar1;

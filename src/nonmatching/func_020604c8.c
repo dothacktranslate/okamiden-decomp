@@ -152,7 +152,7 @@ void func_020604c8(int *param_1,uint param_2,uint *param_3,int param_4)
     iVar6 = uVar2 + 1;
   }
   else {
-    uVar1 = (uVar4 & ((unsigned int)0x020607f4)) >> 0x10;
+    uVar1 = (uVar4 & ((unsigned int)0x1fff0000)) >> 0x10;
     if ((uVar4 & 0x40000000) == 0) {
       if (uVar2 < uVar1) {
         uVar2 = uVar2 >> 2;
@@ -168,11 +168,11 @@ void func_020604c8(int *param_1,uint param_2,uint *param_3,int param_4)
       if (uVar2 < uVar1) {
         uVar2 = uVar2 >> 1;
         iVar6 = uVar2 + 1;
-        param_2 = param_2 & ((unsigned int)0x020607f4) >> 0x10;
+        param_2 = param_2 & ((unsigned int)0x1fff0000) >> 0x10;
         iVar7 = 2;
         goto LAB_02060634;
       }
-      uVar2 = (uVar4 & ((unsigned int)0x020607f4)) >> 0x11;
+      uVar2 = (uVar4 & ((unsigned int)0x1fff0000)) >> 0x11;
       iVar6 = uVar2 + 1;
     }
   }

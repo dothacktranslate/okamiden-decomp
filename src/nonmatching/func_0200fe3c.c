@@ -105,7 +105,7 @@ undefined4 func_0200fe3c(int param_1,int param_2,int param_3,int param_4)
       func_02008be8(uVar1);
       iVar3 = func_0200fa00(0);
     }
-    if ((uint)((*(unsigned int *)0x0201002c) - *(int *)(((unsigned int)0x02010030) + 8)) < 3) {
+    if ((uint)((*(unsigned short *)0x0201002c) - *(int *)(((unsigned int)0x02010030) + 8)) < 3) {
       func_0200f46c();
       func_0200f46c();
     }

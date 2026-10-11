@@ -114,7 +114,7 @@ char * func_0201705c(int param_1,int param_2,uint param_3,undefined4 param_4,int
   if ((param_1 == 0 && param_6 == 0) && ((uVar1 == 0 || (local_3 != 0x6f)))) {
     return pcVar3;
   }
-  if (local_3 < 0x6a) {
+  if (local_3 <= 0x69) {
     if (local_3 < 0x69) {
       if (local_3 < 0x59) {
         if (local_3 != 0x58) goto LAB_02017164;

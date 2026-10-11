@@ -110,7 +110,7 @@ undefined4 func_0204f2bc(undefined4 param_1)
   func_02046d44(param_1,0xfffffffe,((unsigned int)0x0204f454));
   func_02047bc4(param_1,((unsigned int)0x0204f458),((unsigned int)0x0204f45c));
   func_02046414(param_1,0xffffffff);
-  func_0204630c(param_1,((unsigned int)0x0204f460));
+  func_0204630c(param_1,((unsigned int)0xffffd8ef));
   func_02046bc4(param_1,0,4);
   iVar1 = ((unsigned int)0x0204f468);
   iVar2 = *(int *)(((unsigned int)0x0204f464) + 4);

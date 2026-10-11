@@ -94,8 +94,8 @@ void func_0206179c(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   longlong lVar2;
   longlong lVar3;
   int iVar4;
-  int iVar5;
   uint uVar6;
+  int iVar5;
   uint uVar7;
   uint uVar8;
   uint uVar9;

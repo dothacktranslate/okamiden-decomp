@@ -104,7 +104,7 @@ int func_02048e3c(undefined4 param_1)
   func_02047928(param_1,1,5);
   iVar1 = func_02047aa8(param_1,2,1);
   iVar2 = func_02046444(param_1,3);
-  if (iVar2 < 1) {
+  if (iVar2 <= 0) {
     iVar2 = func_020466e4(param_1,1);
   }
   else {

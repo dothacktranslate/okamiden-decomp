@@ -188,7 +188,7 @@ undefined4 func_02014674(void)
     func_020147f4(*(undefined2 *)(((unsigned int)0x02014770) + 6),auStack_18);
     func_02014778(auStack_20);
     if ((((((unsigned int)0x080000b2) == -0x6a) && (*psVar1 != (*(volatile unsigned short *)0x080000be))) ||
-        ((((unsigned int)0x080000b2) != -0x6a && ((*(unsigned int *)0x0201476c) != (*(unsigned int *)0x02014774))))) ||
+        ((((unsigned int)0x080000b2) != -0x6a && ((*(unsigned short *)0x0201476c) != (*(unsigned int *)0x0801fffe))))) ||
        ((*(int *)(((unsigned int)0x0201476c) + 4) != (*(volatile unsigned int *)0x080000ac) &&
         ((int)((uint)*(byte *)((int)((unsigned int)0x0201476c) + 5) << 0x1f) < 0)))) {
       uVar3 = 0;

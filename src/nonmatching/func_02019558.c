@@ -275,7 +275,7 @@ undefined8 func_02019558(int param_1,code *param_2,undefined4 param_3,int *param
 LAB_02019fec:
   iVar24 = ((unsigned int)0x0201a454);
   if (((param_1 < iVar10) || (uVar11 == 0xffffffff)) || ((uVar21 & 0x1800) != 0)) goto LAB_0201a008;
-  if (uVar21 < 0x101) {
+  if (uVar21 <= 0x100) {
     if (uVar21 < 0x100) {
       if (uVar21 < 0x21) {
         if (uVar21 < 0x20) {

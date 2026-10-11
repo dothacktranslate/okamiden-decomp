@@ -97,7 +97,7 @@ int func_0200dbc4(int param_1,uint param_2,int param_3)
   iVar3 = *(int *)(*(int *)(param_1 + 8) + 0x20);
   iVar2 = iVar1;
   if ((((*(uint *)(iVar3 + 0x30) & 1 << (param_2 & 0xff)) != 0) &&
-      (iVar2 = (**(code **)(iVar3 + 0x2c))(), 0x100 < iVar2)) && (iVar2 == iVar1 + 1)) {
+      (iVar2 = (**(code **)(iVar3 + 0x2c))(), 0x101 <= iVar2)) && (iVar2 == iVar1 + 1)) {
     *(uint *)(iVar3 + 0x30) = *(uint *)(iVar3 + 0x30) & ~(1 << (param_2 & 0xff));
     iVar2 = iVar1;
   }

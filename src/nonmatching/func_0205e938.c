@@ -116,8 +116,8 @@ undefined4 func_0205e938(int param_1,int param_2,int *param_3,int *param_4)
   int local_28;
 
   func_0205c1a4(&local_28,&local_2c,&local_30,&local_34);
-  iVar7 = local_34 - local_2c;
   iVar3 = func_020028c0((param_1 - local_28) * 0x1000,(local_30 - local_28) * 0x1000);
+  iVar7 = local_34 - local_2c;
   iVar7 = func_020028c0((param_2 + local_2c + -0xbf) * 0x1000,iVar7 * -0x1000);
   if (-1 < iVar3 && -1 < iVar7) {
     iVar5 = iVar3;
@@ -131,8 +131,8 @@ undefined4 func_0205e938(int param_1,int param_2,int *param_3,int *param_4)
   }
   uVar6 = 0xffffffff;
 LAB_0205e9d0:
-  iVar7 = (iVar7 + -0x800) * 2;
   iVar3 = (iVar3 + -0x800) * 2;
+  iVar7 = (iVar7 + -0x800) * 2;
   piVar4 = (int *)func_0205c13c();
   lVar1 = (longlong)piVar4[3] * (longlong)iVar3 + (longlong)iVar7 * (longlong)piVar4[7];
   iVar5 = piVar4[0xf] + ((uint)lVar1 >> 0xc | (int)((ulonglong)lVar1 >> 0x20) << 0x14);

@@ -241,7 +241,7 @@ LAB_02020648:
   goto LAB_020206f4;
 LAB_020204ac:
   uVar2 = func_02021a5c(param_1 + 0x18,param_1);
-  func_02020364(uVar2,param_1);
+  func_02020364(uVar2,param_1,uVar2);
   if (*(int *)(param_1 + 4) == 0) {
     return 0xff;
   }

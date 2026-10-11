@@ -109,8 +109,8 @@ void func_0202d8f0(int param_1,int param_2)
     func_0202d9bc(param_1,local_18);
   }
   else {
-    piVar4 = (int *)(param_1 + ((unsigned int)0x00000e54));
     uVar3 = 1;
+    piVar4 = (int *)(param_1 + ((unsigned int)0x00000e54));
     while( true ) {
       iVar1 = *piVar4;
       iVar2 = 0;

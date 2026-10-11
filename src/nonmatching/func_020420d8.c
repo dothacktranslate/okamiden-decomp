@@ -123,7 +123,7 @@ void func_020420d8(int param_1)
       }
       else if (*(int *)(param_1 + 0xdc) == 4) {
         func_02039de4(param_1 + 0xc0);
-        *(uint *)(param_1 + 0x124) = ((unsigned int)0x020421f8) & *(uint *)(param_1 + 0x124);
+        *(uint *)(param_1 + 0x124) = ((unsigned int)0xfffbffff) & *(uint *)(param_1 + 0x124);
         func_02041680();
       }
       else {
@@ -133,7 +133,7 @@ void func_020420d8(int param_1)
     if (*(int *)(param_1 + 0x1cc) == 6) {
       iVar2 = *(int *)(((unsigned int)0x020421fc) + 0x10);
       if (*(int *)(iVar2 + 0x1d4) != -0x80000000) {
-        func_020034c8(((unsigned int)0x02042200));
+        func_020034c8(((unsigned int)0x0400006c));
         *(undefined4 *)(iVar2 + 0x1d4) = 0x80000000;
       }
       func_02041680();

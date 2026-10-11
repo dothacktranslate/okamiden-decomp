@@ -147,7 +147,7 @@ void func_0203c468(int param_1)
     return;
   }
   do {
-    iVar3 = uVar5 * 0x2c + param_1 + iVar2;
+    iVar3 = uVar5 * 0x2c + (param_1 + iVar2);
     uVar5 = uVar5 + 1;
     *(int *)(iVar3 + 0x20) = (*(int *)(iVar3 + 0x20) + -1) * 0x5c + *(int *)(param_1 + 0x18);
   } while (uVar5 < uVar1);

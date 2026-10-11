@@ -112,8 +112,8 @@ undefined4 func_02035eec(int param_1,int param_2,int param_3,int param_4)
             iVar6 = param_1 + iVar5 * 0x20;
             iVar1 = param_1 + (iVar5 + -1) * 0x20;
             if (param_3 == 1) {
-              puVar2 = (undefined1 *)(iVar1 + 4);
               puVar4 = (undefined1 *)(iVar6 + 4);
+              puVar2 = (undefined1 *)(iVar1 + 4);
             }
             else {
               func_02002ac4(iVar1 + 4,iVar6 + 4,auStack_30);

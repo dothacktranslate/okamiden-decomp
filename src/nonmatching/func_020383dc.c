@@ -88,7 +88,7 @@ undefined4 func_020383dc(int param_1,ushort *param_2,undefined4 param_3,uint par
 
 {
   uint uVar1;
-  uint iVar2;
+  int iVar2;
   int iVar3;
   uint uVar4;
   uint uVar5;
@@ -100,8 +100,8 @@ undefined4 func_020383dc(int param_1,ushort *param_2,undefined4 param_3,uint par
     uVar4 = (uint)*param_2;
     uVar1 = 0;
     if (uVar4 >= uVar5) {
-      uVar1 = (uint)param_2[1];
       param_4 = (uint)*(ushort *)(param_1 + 0x12);
+      uVar1 = (uint)param_2[1];
     }
     if (uVar5 <= uVar4 && param_4 <= uVar1) {
       uVar5 = uVar5 + *(ushort *)(param_1 + 0x14);

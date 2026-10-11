@@ -113,24 +113,24 @@ void func_0203a3a0(byte *param_1,uint param_2,int param_3,int param_4,ushort par
     param_3 = param_3 * 0x1000;
     local_50 = param_1;
     do {
-      uVar2 = func_0201ebe0(local_28 * param_3,param_2);
-      uVar2 = (uVar2 & 0xfffffff) >> 0xc;
+      uVar4 = func_0201ebe0(local_28 * param_3,param_2);
+      uVar4 = (uVar4 & 0xfffffff) >> 0xc;
       uVar3 = func_0201ebe0((local_28 + 1) * param_3,param_2);
       uVar3 = (uVar3 & 0xfffffff) >> 0xc;
       local_2c = 0;
       if (param_2 != 0) {
         do {
-          uVar4 = func_0201ebe0(local_2c * param_3,param_2);
-          uVar4 = (uVar4 & 0xfffffff) >> 0xc;
+          uVar2 = func_0201ebe0(local_2c * param_3,param_2);
+          uVar2 = (uVar2 & 0xfffffff) >> 0xc;
           uVar5 = func_0201ebe0((local_2c + 1) * param_3,param_2);
           uVar5 = (uVar5 & 0xfffffff) >> 0xc;
           iVar9 = 0;
           uVar10 = 0;
-          if (uVar2 < uVar3) {
-            uVar8 = uVar2;
+          if (uVar4 < uVar3) {
+            uVar8 = uVar4;
             do {
-              if (uVar4 < uVar5) {
-                uVar11 = uVar4;
+              if (uVar2 < uVar5) {
+                uVar11 = uVar2;
                 do {
                   uVar1 = *(ushort *)
                            (((unsigned int)0x0203a504) + (param_4 + uVar11) * 2 + (param_5 + uVar8) * 0x200);
@@ -162,9 +162,9 @@ void func_0203a3a0(byte *param_1,uint param_2,int param_3,int param_4,ushort par
               bVar7 = *local_50 | (byte)local_24;
             }
             *local_50 = bVar7;
-            uVar4 = local_24 & 0x7f;
-            local_24 = uVar4 << 1;
-            if (uVar4 == 0) {
+            uVar2 = local_24 & 0x7f;
+            local_24 = uVar2 << 1;
+            if (uVar2 == 0) {
               local_24 = 1;
               local_50 = local_50 + 1;
             }

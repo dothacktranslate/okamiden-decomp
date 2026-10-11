@@ -128,7 +128,7 @@ void func_02059460(int *param_1,undefined4 param_2,uint param_3,uint param_4,int
       if ((int)param_3 <= (int)uVar3) {
         iVar6 = 0;
       }
-      if (8 < iVar4) {
+      if (9 <= iVar4) {
         iVar4 = 8;
       }
       func_02058c90(iVar2,iVar6,iVar9,iVar4 - iVar6);

@@ -131,8 +131,8 @@ void func_0204128c(int param_1,int param_2,undefined4 param_3,undefined4 param_4
       }
       *(undefined4 *)(param_1 + 0x3c) = uVar2;
     }
-    uVar1 = ((unsigned int)0x0204135c);
-    *(uint *)(param_1 + 0x40) = *(uint *)(*(int *)(param_1 + 0x38) + 4) & ((unsigned int)0x0204135c);
+    uVar1 = ((unsigned int)0x000007ff);
+    *(uint *)(param_1 + 0x40) = *(uint *)(*(int *)(param_1 + 0x38) + 4) & ((unsigned int)0x000007ff);
     *(uint *)(param_1 + 0x44) = uVar1 & *(uint *)(*(int *)(param_1 + 0x38) + 4) >> 0xb;
     return;
   }

@@ -238,7 +238,7 @@ LAB_0200c2b8:
               bVar9 = param_1[1] == '.';
             }
             if (bVar9) {
-              if (1 <= iVar6) {
+              if (0 < iVar6) {
                 iVar6 = iVar6 + -1;
               }
               iVar6 = func_0200c868(param_3,iVar6);

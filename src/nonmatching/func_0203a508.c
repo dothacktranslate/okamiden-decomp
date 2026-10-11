@@ -115,7 +115,7 @@ void func_0203a508(byte *param_1,int param_2,uint param_3)
     iVar2 = (*puVar3 & 0xffff) * 8;
     if ((*(uint *)(*(unsigned int *)0x0203a5e4) & 0x80000000) != 0) {
       puVar5 = (ushort *)(iVar2 + param_2 + *(int *)(param_2 + 0x14));
-      uVar4 = (puVar3[1] & ((unsigned int)0x0203a5e8)) * ((((unsigned int)0x0203a5e8) << 0xb & puVar3[1]) >> 0xb);
+      uVar4 = (puVar3[1] & ((unsigned int)0x000007ff)) * ((((unsigned int)0x000007ff) << 0xb & puVar3[1]) >> 0xb);
       uVar7 = 1;
       uVar8 = 3;
       uVar10 = 1;

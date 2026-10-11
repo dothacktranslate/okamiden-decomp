@@ -115,7 +115,7 @@ undefined4 * func_0204ff50(int param_1,undefined4 param_2,int param_3,uint param
   iVar2 = piVar4[1];
   piVar4[1] = iVar2 + 1U;
   uVar3 = piVar4[2];
-  if ((uVar3 < iVar2 + 1U) && ((int)uVar3 < 0x3fffffff)) {
+  if ((uVar3 < iVar2 + 1U) && ((int)uVar3 <= 0x3ffffffe)) {
     func_0204fe70(param_1,uVar3 << 1);
   }
   return puVar1;

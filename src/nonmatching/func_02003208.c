@@ -176,9 +176,9 @@ void func_02003208(void)
   undefined2 *puVar5;
   int iVar6;
 
-  iVar2 = ((unsigned int)0x02003338);
+  iVar2 = ((unsigned int)0xfffffdf1);
   puVar1 = ((unsigned int)0x02003334);
-  (*(unsigned int *)0x02003334) = (*(unsigned int *)0x02003334) | 0x8000;
+  (*(unsigned short *)0x02003334) = (*(unsigned int *)0x02003334) | 0x8000;
   *puVar1 = *puVar1 & (ushort)iVar2 | 0x20e;
   *puVar1 = *puVar1 | 1;
   func_02006178();

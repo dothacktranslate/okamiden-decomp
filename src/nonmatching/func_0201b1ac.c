@@ -87,8 +87,8 @@ extern int LZCOUNT();
 bool func_0201b1ac(int param_1,int param_2)
 
 {
-  uint uVar1;
   int iVar2;
+  uint uVar1;
   uint uVar3;
 
   if (*(char *)(param_1 + 5) == '\0') {
@@ -106,7 +106,7 @@ bool func_0201b1ac(int param_1,int param_2)
     }
     if (uVar1 != 0) {
       do {
-        if (*(char *)(param_1 + (iVar2 + 5)) != *(char *)(param_2 + iVar2 + 5)) {
+        if (*(char *)(param_1 + iVar2 + 5) != *(char *)(param_2 + iVar2 + 5)) {
           return false;
         }
         iVar2 = iVar2 + 1;

@@ -94,7 +94,7 @@ void func_02059cb0(int param_1,int param_2,int param_3,int param_4,int param_5,i
   int iVar2;
   int iVar3;
 
-  if (param_6 <= 0x20) {
+  if (param_6 < 0x21) {
     func_02059d60(param_1 + (param_6 * param_5 + param_4) * 2,param_2,param_3,param_6,param_7,param_8
                 );
     return;
