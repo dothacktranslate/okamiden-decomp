@@ -107,5 +107,5 @@ int func_020589bc(int *param_1,uint param_2)
     if (!bVar4 || bVar3) break;
     puVar2 = *(ushort **)(puVar2 + 2);
   }
-  return (int)puVar2 + (param_2 - uVar1) * 3 + 8;
+  return (int)puVar2 + (param_2 - uVar1) * 8 + 3;
 }

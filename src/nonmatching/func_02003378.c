@@ -89,15 +89,15 @@ ushort func_02003378(int param_1,ushort param_2)
 {
   ushort uVar1;
 
-  uVar1 = (*(unsigned int *)0x020033a8);
+  uVar1 = (*(unsigned short *)0x020033a8);
   if (param_1 != 0) {
-    param_2 = (*(unsigned int *)0x020033a8);
+    param_2 = (*(unsigned short *)0x020033a8);
   }
   if (param_1 != 0) {
     (*(unsigned int *)0x020033a8) = param_2 | 8;
   }
   else {
-    (*(unsigned int *)0x020033a8) = (*(unsigned int *)0x020033a8) & (ushort)((unsigned int)0x020033ac);
+    (*(unsigned short *)0x020033a8) = (*(unsigned int *)0x020033a8) & (ushort)((unsigned int)0x020033ac);
   }
   return uVar1 & 8;
 }

@@ -96,14 +96,14 @@ void func_02042410(int param_1)
 
   *(undefined1 *)(param_1 + 0x1d0) = 1;
   *(undefined4 *)(param_1 + 0x1cc) = 0xd;
-  uVar2 = ((unsigned int)0x02042464);
-  uVar1 = *(uint *)(param_1 + 0x124) & ((unsigned int)0x02042464);
+  uVar2 = ((unsigned int)0xfffff7ff);
+  uVar1 = *(uint *)(param_1 + 0x124) & ((unsigned int)0xfffff7ff);
   *(uint *)(param_1 + 0x124) = uVar1;
   *(undefined1 *)(param_1 + 0xf0) = 0;
   *(uint *)(param_1 + 0x124) = (int)uVar2 >> 1 & uVar1;
   func_0204195c();
   uVar2 = *(uint *)(param_1 + 0x124) & ((unsigned int)0x02042468);
   *(uint *)(param_1 + 0x124) = uVar2;
-  *(uint *)(param_1 + 0x124) = ((unsigned int)0x0204246c) & uVar2;
+  *(uint *)(param_1 + 0x124) = ((unsigned int)0xfff7ffff) & uVar2;
   return;
 }

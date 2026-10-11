@@ -89,11 +89,11 @@ extern int LZCOUNT();
 extern int func_02031f8c();
 extern int func_02032490();
 
-undefined4 * func_02032430(undefined4 *param_1)
+undefined2 * func_02032430(undefined4 *param_1)
 
 {
   *param_1 = ((unsigned int)0x02032448);
-  func_02032490();
+  func_02032490(param_1);
   func_02031f8c(param_1);
   return param_1;
 }

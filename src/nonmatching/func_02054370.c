@@ -99,8 +99,8 @@ void func_02054370(int param_1,undefined4 *param_2,undefined4 *param_3,undefined
   uVar1 = param_2[1];
   *puVar2 = *param_2;
   puVar2[1] = uVar1;
-  iVar3 = *(int *)(param_1 + 8);
   uVar1 = param_3[1];
+  iVar3 = *(int *)(param_1 + 8);
   *(undefined4 *)(iVar3 + 8) = *param_3;
   *(undefined4 *)(iVar3 + 0xc) = uVar1;
   iVar3 = *(int *)(param_1 + 8);

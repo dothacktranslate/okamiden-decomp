@@ -123,7 +123,7 @@ void func_0203e414(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   int local_1c;
   undefined4 uStack_18;
 
-  local_48[0] = *(int *)(param_1 + 0x24);
+  local_48[0] = *(short *)(param_1 + 0x24);
   local_1c = *(int *)(param_1 + 0x30);
   local_60[0] = local_48[0] + local_1c;
   local_60[1] = *(int *)(param_1 + 0x28);

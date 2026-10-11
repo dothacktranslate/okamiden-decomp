@@ -87,7 +87,7 @@ extern int LZCOUNT();
 char * func_02019328(char *param_1,char param_2)
 
 {
-  char cVar1;
+  unsigned char cVar1;
   char *pcVar2;
   bool bVar3;
 

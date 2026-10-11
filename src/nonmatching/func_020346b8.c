@@ -109,7 +109,7 @@ void func_020346b8(int param_1,int param_2)
     uVar2 = *(int *)(iVar6 + 4) + iVar4;
     if (uVar3 < uVar2) {
       uVar2 = uVar2 - uVar3;
-      if ((uVar1 < uVar2) || ((uVar1 == uVar2 && (uVar3 - iVar4 < uVar5)))) {
+      if ((uVar1 < uVar2) || ((uVar2 == uVar1 && (uVar3 - iVar4 < uVar5)))) {
         uVar1 = uVar2;
         uVar5 = uVar3 - iVar4;
       }

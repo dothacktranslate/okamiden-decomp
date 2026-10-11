@@ -92,8 +92,8 @@ void func_02047f68(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 {
   uint uVar1;
   uint uVar2;
-  undefined4 uVar3;
   int iVar4;
+  undefined4 uVar3;
 
   if (*(int *)(param_1 + 4) < 2) {
     return;

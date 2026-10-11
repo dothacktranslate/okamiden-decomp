@@ -87,6 +87,6 @@ extern int LZCOUNT();
 void func_02039a2c(int param_1)
 
 {
-  *(undefined4 *)(param_1 + 4) = (*(unsigned int *)0x02039a54);
+  *(undefined4 *)(param_1 + 4) = (*(unsigned int *)0x04001000);
   return;
 }

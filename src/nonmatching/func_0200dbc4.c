@@ -93,7 +93,7 @@ int func_0200dbc4(int param_1,uint param_2,int param_3)
   int iVar2;
   int iVar3;
 
-  iVar1 = ((unsigned int)0x0200dc8c);
+  iVar1 = ((unsigned int)0x00000101);
   iVar3 = *(int *)(*(int *)(param_1 + 8) + 0x20);
   iVar2 = iVar1;
   if ((((*(uint *)(iVar3 + 0x30) & 1 << (param_2 & 0xff)) != 0) &&
@@ -101,7 +101,7 @@ int func_0200dbc4(int param_1,uint param_2,int param_3)
     *(uint *)(iVar3 + 0x30) = *(uint *)(iVar3 + 0x30) & ~(1 << (param_2 & 0xff));
     iVar2 = iVar1;
   }
-  if (iVar2 == ((unsigned int)0x0200dc8c)) {
+  if (iVar2 == ((unsigned int)0x00000101)) {
     if (param_2 < 0xd) {
       iVar2 = (**(code **)(((unsigned int)0x0200dc90) + param_2 * 4))(param_1);
     }

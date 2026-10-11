@@ -95,8 +95,8 @@ void func_02002b30(int *param_1,int *param_2,uint *param_3)
   longlong lVar6;
   uint uVar7;
   uint uVar8;
-  uint uVar9;
   uint uVar10;
+  uint uVar9;
   uint uVar11;
   uint uVar12;
   uint uVar13;

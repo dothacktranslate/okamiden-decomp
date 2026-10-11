@@ -127,12 +127,12 @@ void func_020378f4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       iVar5 = 0;
       do {
         if (((uVar3 & piVar2[7]) != 0) &&
-           (iVar1 = func_02064570(piVar2 + 10,iVar5,(int)*(short *)((int)piVar2 + iVar5 * 2 + 0x20)),
+           (iVar1 = func_02064570(piVar2 + 10,iVar5,(int)*(short *)((int)piVar2 + (iVar5 * 2 + 0x20))),
            iVar1 != 0)) {
           piVar2[7] = piVar2[7] ^ uVar3;
         }
-        iVar5 = iVar5 + 1;
         uVar3 = uVar3 << 1;
+        iVar5 = iVar5 + 1;
       } while (iVar5 < 2);
     }
   }
@@ -143,7 +143,7 @@ void func_020378f4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       do {
         func_02037420(local_48,param_1,iVar5 + -4);
         iVar5 = local_48[0];
-      } while (local_48[0] != param_1 + 0x10);
+      } while (param_1 != local_48[0] + 0x10);
     }
     *(uint *)(param_1 + 8) = *(uint *)(param_1 + 8) & 0xfffffffd;
     return;

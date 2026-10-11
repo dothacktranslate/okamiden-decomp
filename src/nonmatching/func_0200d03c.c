@@ -123,7 +123,7 @@ void func_0200d03c(uint *param_1,undefined4 param_2,undefined4 param_3,undefined
   func_02007820(param_1[1],param_1[2]);
   puVar3 = (undefined4 *)param_1[4];
   puVar4 = (undefined4 *)param_1[5];
-  if (puVar4 <= puVar3) {
+  if (puVar3 >= puVar4) {
     return;
   }
   do {

@@ -97,8 +97,8 @@ int func_02020300(int param_1,int param_2,uint param_3)
   if (-1 < param_2) {
     do {
       iVar1 = iVar2 + param_2 >> 1;
-      uVar3 = *(uint *)(param_1 + iVar1 * 0xc);
-      iVar4 = param_1 + iVar1 * 0xc;
+      uVar3 = *(uint *)(iVar1 + param_1 * 0xc);
+      iVar4 = iVar1 + param_1 * 0xc;
       if (param_3 < uVar3) {
         param_2 = iVar1 + -1;
       }

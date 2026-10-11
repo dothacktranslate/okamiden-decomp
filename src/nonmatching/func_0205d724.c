@@ -156,7 +156,7 @@ void func_0205d724(int *param_1)
 {
   int iVar1;
   uint uVar2;
-  char cVar3;
+  unsigned char cVar3;
 
   if (param_1[0xd] == 0) {
     cVar3 = '\0';

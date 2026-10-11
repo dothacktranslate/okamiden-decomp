@@ -110,9 +110,9 @@ void func_02004a14(void)
     }
   }
   else {
-    if (iVar3 < 0x41) {
+    if (iVar3 <= 0x40) {
       if (iVar3 == 0x40) {
-        *(undefined4 *)(iVar1 + 0x10) = ((unsigned int)0x02004a98);
+        *(undefined4 *)(iVar1 + 0x10) = ((unsigned int)0x06894000);
         *(undefined4 *)(iVar1 + 0xc) = 0x4000;
       }
       return;
@@ -121,7 +121,7 @@ void func_02004a14(void)
       return;
     }
   }
-  *(undefined4 *)(((unsigned int)0x02004a90) + 0x10) = ((unsigned int)0x02004a9c);
+  *(undefined4 *)(((unsigned int)0x02004a90) + 0x10) = ((unsigned int)0x06890000);
   *(undefined4 *)(iVar2 + 0xc) = 0;
   return;
 }

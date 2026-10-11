@@ -106,7 +106,7 @@ int func_02015ce0(uint param_1,uint param_2)
       }
     }
     while ((uVar3 = *(uint *)(param_1 + iVar1), uVar3 == *(uint *)(param_2 + iVar1) &&
-           (((uVar3 & ((unsigned int)0x02015d94)) + ((unsigned int)0x02015d94) | uVar3 | ((unsigned int)0x02015d94)) == 0xffffffff))) {
+           (((uVar3 & ((unsigned int)0x7f7f7f7f)) + ((unsigned int)0x7f7f7f7f) | uVar3 | ((unsigned int)0x7f7f7f7f)) == 0xffffffff))) {
       iVar1 = iVar1 + 4;
     }
   }

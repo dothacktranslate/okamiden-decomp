@@ -92,8 +92,8 @@ uint func_0201df60(uint param_1,uint param_2)
   uint uVar3;
   int iVar4;
 
+  uVar3 = param_2 >> 0xfffff7ff & 0x14;
   uVar2 = param_2 & 0x80000000;
-  uVar3 = param_2 >> 0x14 & 0xfffff7ff;
   if (uVar3 == 0) {
     if (param_1 == 0 && (param_2 & 0xfffff) == 0) {
       return uVar2;

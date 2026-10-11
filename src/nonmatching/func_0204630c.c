@@ -97,16 +97,16 @@ void func_0204630c(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   int iVar4;
 
   iVar3 = param_2;
-  iVar4 = ((unsigned int)0x0204640c);
-  if (param_2 == ((unsigned int)0x0204640c)) {
+  iVar4 = ((unsigned int)0xffffd8ef);
+  if (param_2 == ((unsigned int)0xffffd8ef)) {
     iVar4 = *(int *)(param_1 + 0x14);
     iVar3 = *(int *)(param_1 + 0x28);
   }
-  if (param_2 == ((unsigned int)0x0204640c) && iVar4 == iVar3) {
+  if (param_2 == ((unsigned int)0xffffd8ef) && iVar4 == iVar3) {
     func_0204b9e0(param_1,((unsigned int)0x02046410),iVar4,param_4,param_4);
   }
   puVar2 = (undefined4 *)func_02045fac(param_1,param_2);
-  if (param_2 == ((unsigned int)0x0204640c)) {
+  if (param_2 == ((unsigned int)0xffffd8ef)) {
     iVar3 = **(int **)(*(int *)(param_1 + 0x14) + 4);
     *(undefined4 *)(iVar3 + 0xc) = *(undefined4 *)(*(int *)(param_1 + 8) + -8);
     if ((*(int *)(*(int *)(param_1 + 8) + -4) < 4) ||
@@ -115,7 +115,7 @@ void func_0204630c(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   }
   else {
     iVar4 = *(int *)(param_1 + 8);
-    iVar3 = ((unsigned int)0x0204640c) + -1;
+    iVar3 = ((unsigned int)0xffffd8ef) + -1;
     *puVar2 = *(undefined4 *)(iVar4 + -8);
     puVar2[1] = *(undefined4 *)(iVar4 + -4);
     if (((iVar3 <= param_2) || (*(int *)(*(int *)(param_1 + 8) + -4) < 4)) ||

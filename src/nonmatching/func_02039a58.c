@@ -99,7 +99,7 @@ void func_02039a58(int param_1)
   uVar3 = ((unsigned int)0x02039ad4);
   iVar4 = 0;
   do {
-    uVar5 = *(int *)(param_1 + 0x2c) + iVar4 * 0x40 + -0xc0;
+    uVar5 = *(unsigned short *)(param_1 + 0x2c) + iVar4 * 0x40 + -0xc0;
     if ((int)uVar5 < -0x40) {
       uVar5 = 0xffffffc0;
     }
@@ -111,7 +111,7 @@ void func_02039a58(int param_1)
       uVar2 = uVar8 & 7;
       uVar8 = uVar8 + 1;
       *(uint *)(iVar7 + iVar6 * 8) = uVar5 & 0xff | uVar3 | uVar2 << 0x16;
-      *(ushort *)(iVar7 + iVar6 * 8 + 4) = (short)iVar1 + (short)iVar4 * 0x100 | 0xf000;
+      *(ushort *)((iVar7 + iVar6 * 8) + 4) = (short)iVar1 + (short)iVar4 * 0x100 | 0xf000;
     } while ((int)uVar8 < 4);
     iVar4 = iVar4 + 1;
   } while (iVar4 < 3);

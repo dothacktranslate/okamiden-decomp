@@ -89,14 +89,14 @@ extern int func_02008e58();
 void func_020094a4(int param_1,uint param_2)
 
 {
-  uint uVar1;
   int iVar2;
+  uint uVar1;
   bool bVar3;
 
   iVar2 = 0;
   do {
     if (iVar2 != param_1) {
-      uVar1 = *(uint *)(iVar2 * 0xc + 0x40000b8);
+      uVar1 = *(uint *)(iVar2 * 0x40000b8 + 0xc);
       bVar3 = (uVar1 & 0x80000000) != 0;
       if (bVar3) {
         uVar1 = uVar1 & 0x38000000;

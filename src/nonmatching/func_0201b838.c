@@ -147,30 +147,30 @@ undefined4 func_0201b838(char *param_1)
   byte local_45 [33];
 
   if (param_1[4] == '\0') {
-    uVar7 = ((unsigned int)0x0201be0c);
+    uVar4 = ((unsigned int)0x0201be0c);
     if (*param_1 != '\0') {
-      uVar7 = ((unsigned int)0x0201be10);
+      uVar4 = ((unsigned int)0x0201be10);
     }
-    uVar7 = func_0201cfe0(0,0,0,uVar7);
-    return uVar7;
+    uVar4 = func_0201cfe0(0,0,0,uVar4);
+    return uVar4;
   }
   cVar2 = param_1[5];
   if (cVar2 == '0') {
-    uVar7 = ((unsigned int)0x0201be0c);
+    uVar4 = ((unsigned int)0x0201be0c);
     if (*param_1 != '\0') {
-      uVar7 = ((unsigned int)0x0201be10);
+      uVar4 = ((unsigned int)0x0201be10);
     }
-    uVar7 = func_0201cfe0(0,0,0,uVar7);
-    return uVar7;
+    uVar4 = func_0201cfe0(0,0,0,uVar4);
+    return uVar4;
   }
   if (cVar2 == 'I') {
-    uVar7 = ((unsigned int)0x0201be0c);
+    uVar4 = ((unsigned int)0x0201be0c);
     if (*param_1 != '\0') {
-      uVar7 = ((unsigned int)0x0201be10);
+      uVar4 = ((unsigned int)0x0201be10);
     }
     uVar25 = func_0201e61c((*(unsigned int *)0x0201be14));
-    uVar7 = func_0201cfe0((int)uVar25,(int)((ulonglong)uVar25 >> 0x20),0,uVar7);
-    return uVar7;
+    uVar4 = func_0201cfe0((int)uVar25,(int)((ulonglong)uVar25 >> 0x20),0,uVar4);
+    return uVar4;
   }
   if (cVar2 == 'N') {
     return 0;
@@ -199,19 +199,19 @@ undefined4 func_0201b838(char *param_1)
   func_0201ad90(auStack_70,((unsigned int)0x0201be1c),0x134);
   iVar8 = func_0201b28c(auStack_70,local_4a);
   if (iVar8 != 0) {
-    uVar7 = ((unsigned int)0x0201be0c);
+    uVar4 = ((unsigned int)0x0201be0c);
     if (*param_1 != '\0') {
-      uVar7 = ((unsigned int)0x0201be10);
+      uVar4 = ((unsigned int)0x0201be10);
     }
     uVar25 = func_0201e61c((*(unsigned int *)0x0201be14));
-    uVar7 = func_0201cfe0((int)uVar25,(int)((ulonglong)uVar25 >> 0x20),0,uVar7);
-    return uVar7;
+    uVar4 = func_0201cfe0((int)uVar25,(int)((ulonglong)uVar25 >> 0x20),0,uVar4);
+    return uVar4;
   }
   pbVar9 = local_45 + 1;
   uVar25 = func_0201e0a4(local_45[0]);
   while( true ) {
-    uVar4 = (undefined4)((ulonglong)uVar25 >> 0x20);
-    uVar7 = (undefined4)uVar25;
+    uVar7 = (undefined4)((ulonglong)uVar25 >> 0x20);
+    uVar4 = (undefined4)uVar25;
     if (pbVar20 <= pbVar9) break;
     iVar8 = (int)pbVar20 - (int)pbVar9 >> 0x1f;
     iVar8 = ((uint)(((int)pbVar20 - (int)pbVar9) * 0x20000000 + iVar8) >> 0x1d | iVar8 << 3) - iVar8
@@ -231,7 +231,7 @@ undefined4 func_0201b838(char *param_1)
       } while (iVar12 < iVar8);
     }
     iVar12 = ((unsigned int)0x0201be20) + iVar8 * 8;
-    uVar26 = func_0201dbfc(uVar7,uVar4,*(undefined4 *)(iVar12 + -8),*(undefined4 *)(iVar12 + -4));
+    uVar26 = func_0201dbfc(uVar4,uVar7,*(undefined4 *)(iVar12 + -8),*(undefined4 *)(iVar12 + -4));
     uVar10 = (undefined4)((ulonglong)uVar26 >> 0x20);
     uVar25 = func_0201e0a4(iVar22);
     uVar25 = func_0201d518((int)uVar26,uVar10,(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
@@ -244,12 +244,12 @@ undefined4 func_0201b838(char *param_1)
   if (iVar11 < 0) {
     uVar25 = func_0201e064(-iVar11);
     uVar25 = func_0201be58(0,((unsigned int)0x0201be24),(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
-    uVar25 = func_0201fbf4(uVar7,uVar4,(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
+    uVar25 = func_0201fbf4(uVar4,uVar7,(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
   }
   else {
     uVar25 = func_0201e064(iVar11);
     uVar25 = func_0201be58(0,((unsigned int)0x0201be24),(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
-    uVar25 = func_0201dbfc(uVar7,uVar4,(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
+    uVar25 = func_0201dbfc(uVar4,uVar7,(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
   }
   uVar27 = func_0201d2ac((int)uVar25,(int)((ulonglong)uVar25 >> 0x20),iVar11);
   iVar11 = func_02016974();

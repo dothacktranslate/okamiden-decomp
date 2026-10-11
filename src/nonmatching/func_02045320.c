@@ -24,7 +24,7 @@ extern int func_02057df8();
 void func_02045320(int param_1,int param_2)
 
 {
-  short sVar1;
+  unsigned short sVar1;
   uint uVar2;
   int iVar3;
   uint uVar4;
@@ -34,7 +34,7 @@ void func_02045320(int param_1,int param_2)
   undefined1 auStack_44 [16];
   undefined1 auStack_34 [16];
 
-  sVar1 = *(short *)(param_1 + param_2 * 2 + 0x18);
+  sVar1 = *(short *)((param_1 + param_2 * 2) + 0x18);
   if (sVar1 == 0) {
     return;
   }

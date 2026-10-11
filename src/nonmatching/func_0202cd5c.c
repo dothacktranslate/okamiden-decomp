@@ -103,7 +103,7 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
 
   uVar4 = 8000;
   if (param_2 < 8000) {
-    if (param_2 < ((unsigned int)0x0202d00c)) {
+    if (param_2 < ((unsigned int)0x00001b58)) {
       if (param_2 < ((unsigned int)0x0202d034)) {
         if (param_2 < ((unsigned int)0x0202d040)) {
           if (param_2 < 4000) {
@@ -135,7 +135,7 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
                     goto LAB_0202cf72;
                   }
                   uVar2 = ((unsigned int)0x0202d0d8);
-                  uVar3 = (uint)*(ushort *)(param_1 + ((unsigned int)0x0202d000));
+                  uVar3 = (uint)*(ushort *)(param_1 + ((unsigned int)0x00000ab4));
                   uVar4 = ((unsigned int)0x0202d0dc);
                 }
               }
@@ -153,7 +153,7 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
                 if ((1999 < param_4) || (uVar2 = ((unsigned int)0x0202d0ac), uVar3 = ((unsigned int)0x0202d0b0), 999 < param_4))
                 goto LAB_0202cf72;
                 uVar2 = ((unsigned int)0x0202d0b4);
-                uVar3 = (uint)*(ushort *)(param_1 + ((unsigned int)0x0202d000));
+                uVar3 = (uint)*(ushort *)(param_1 + ((unsigned int)0x00000ab4));
                 uVar4 = ((unsigned int)0x0202d0b8);
               }
             }
@@ -165,7 +165,7 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
                 goto LAB_0202cf72;
               }
               uVar2 = ((unsigned int)0x0202d08c);
-              uVar3 = (uint)*(ushort *)(param_1 + ((unsigned int)0x0202d000));
+              uVar3 = (uint)*(ushort *)(param_1 + ((unsigned int)0x00000ab4));
               uVar4 = ((unsigned int)0x0202d090);
             }
           }
@@ -184,7 +184,7 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
               goto LAB_0202cf72;
             }
             uVar2 = ((unsigned int)0x0202d068);
-            uVar3 = (uint)*(ushort *)(param_1 + ((unsigned int)0x0202d000));
+            uVar3 = (uint)*(ushort *)(param_1 + ((unsigned int)0x00000ab4));
             uVar4 = ((unsigned int)0x0202d06c);
           }
         }
@@ -202,11 +202,11 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
     else {
       uVar2 = ((unsigned int)0x0202d014);
       uVar3 = ((unsigned int)0x0202d018);
-      uVar4 = ((unsigned int)0x0202d00c);
+      uVar4 = ((unsigned int)0x00001b58);
       if ((1999 < param_4) || (uVar2 = ((unsigned int)0x0202d020), uVar3 = ((unsigned int)0x0202d024), 999 < param_4))
       goto LAB_0202cf72;
       uVar2 = ((unsigned int)0x0202d02c);
-      uVar3 = (uint)*(ushort *)(param_1 + ((unsigned int)0x0202d000));
+      uVar3 = (uint)*(ushort *)(param_1 + ((unsigned int)0x00000ab4));
       uVar4 = ((unsigned int)0x0202d030);
     }
   }
@@ -215,7 +215,7 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
     uVar3 = ((unsigned int)0x0202cff8);
     if (param_4 < 1000) {
       uVar2 = ((unsigned int)0x0202d004);
-      uVar3 = (uint)*(ushort *)(param_1 + ((unsigned int)0x0202d000));
+      uVar3 = (uint)*(ushort *)(param_1 + ((unsigned int)0x00000ab4));
       uVar4 = ((unsigned int)0x0202d008);
     }
     else {
@@ -225,7 +225,7 @@ LAB_0202cf72:
   }
   func_02018ba4(auStack_54,uVar2,uVar3,uVar4);
 LAB_0202cfce:
-  iVar1 = func_0202c774(param_1,param_2 + param_3 * 0x10000);
+  iVar1 = func_0202c774(param_1,param_3 + param_2 * 0x10000);
   if (iVar1 == 0) {
     return 0;
   }

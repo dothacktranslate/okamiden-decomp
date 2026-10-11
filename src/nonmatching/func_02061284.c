@@ -103,7 +103,7 @@ void func_02061284(int param_1,undefined4 param_2,int param_3,undefined4 param_4
   else {
     puVar2 = (uint *)func_0205ef10(param_1 + 0x3c);
   }
-  uVar1 = ((unsigned int)0x02061350);
+  uVar1 = ((unsigned int)0x000007ff);
   if ((*puVar2 & 0x1c000000) == 0x14000000) {
     uVar4 = *(uint *)(param_1 + 0x18);
   }

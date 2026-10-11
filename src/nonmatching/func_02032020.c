@@ -84,7 +84,7 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_020304ac();
+extern int func_020307ec();
 extern int func_02030560();
 extern int func_020306b8();
 extern int func_020306fc();
@@ -103,10 +103,10 @@ void func_02032020(int param_1)
 
   uVar1 = func_02030560(auStack_50,param_1 + 0x30);
   uVar2 = func_020306b8(auStack_90,param_1 + 0x3c);
-  func_020307f8(auStack_150,uVar1,uVar2);
+  func_020307f8(auStack_150,uVar1,uVar2,uVar2);
   uVar1 = func_020306fc(auStack_d0,param_1 + 0x48);
-  func_020307f8(auStack_110,auStack_150,uVar1);
-  func_020304ac(param_1 + 0x54,auStack_110);
+  func_020307f8(auStack_110,auStack_150,uVar1,uVar1);
+  func_020307ec(param_1 + 0x54,auStack_110);
   *(undefined1 *)(param_1 + 0xd4) = 0;
   return;
 }

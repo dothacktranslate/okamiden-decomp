@@ -141,9 +141,9 @@ void func_02068924(short *param_1,undefined4 param_2,undefined4 param_3,undefine
     goto LAB_02068b20;
   case 1:
     param_1[2] = param_1[2] + 1;
-    iVar5 = func_02068880(param_1[1]);
     iVar8 = func_02068868(param_1[1]);
-    if (iVar5 <= param_1[2]) {
+    iVar5 = func_02068880(param_1[1]);
+    if (param_1[2] >= iVar5) {
       param_1[3] = (short)iVar8;
       *param_1 = *param_1 + 1;
       goto LAB_02068b24;
@@ -174,7 +174,7 @@ void func_02068924(short *param_1,undefined4 param_2,undefined4 param_3,undefine
     break;
   default:
     iVar5 = func_02037d90(uVar10,*(undefined4 *)(param_1 + 6));
-    uVar2 = ((unsigned int)0x02068b4c);
+    uVar2 = ((unsigned int)0x0000ffff);
     if (iVar5 != 1) {
       *param_1 = 0;
       param_1[2] = 0;

@@ -123,8 +123,8 @@ void func_0203da18(int param_1)
       }
     }
     if (bVar1) {
-      uVar4 = *(uint *)(param_1 + 0x18);
       uVar2 = 0x80;
+      uVar4 = *(uint *)(param_1 + 0x18);
 LAB_0203da96:
       *(uint *)(param_1 + 0x18) = uVar2 | uVar4;
     }

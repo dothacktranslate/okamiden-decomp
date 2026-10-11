@@ -89,7 +89,7 @@ extern int func_0200986c();
 undefined4 func_0205737c(int *param_1,uint param_2,uint param_3,int param_4)
 
 {
-  uint uVar1;
+  int uVar1;
   short sVar2;
   undefined2 uVar3;
   bool bVar4;
@@ -113,8 +113,8 @@ LAB_020573e0:
   if (!bVar4) {
     return 0;
   }
-  sVar2 = (*(unsigned int *)0x020574d0);
-  (*(unsigned int *)0x020574d0) = sVar2 + 1;
+  sVar2 = (*(unsigned short *)0x020574d0);
+  (*(unsigned short *)0x020574d0) = sVar2 + 1;
   *(short *)(param_1 + 4) = sVar2;
   *(short *)(param_1 + 1) = (short)param_2;
   *(short *)((int)param_1 + 6) = (short)(uVar5 * 0x10000 >> 0x10);

@@ -91,8 +91,8 @@ void func_0200656c(uint param_1)
   undefined2 *puVar2;
 
   puVar2 = ((unsigned int)0x02006598);
-  uVar1 = (*(unsigned int *)0x02006598);
-  (*(unsigned int *)0x02006598) = 0;
+  uVar1 = (*(unsigned short *)0x02006598);
+  (*(unsigned short *)0x02006598) = 0;
   *(uint *)(puVar2 + 4) = *(uint *)(puVar2 + 4) & ~param_1;
   *puVar2 = uVar1;
   return;

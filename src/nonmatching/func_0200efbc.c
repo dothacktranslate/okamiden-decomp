@@ -98,8 +98,8 @@ void func_0200efbc(void)
   undefined4 in_r3;
   code *pcVar5;
 
-  uVar3 = func_02008b6c();
   iVar4 = func_0200b5ac(6,0x3000000,0);
+  uVar3 = func_02008b6c();
   uVar2 = ((unsigned int)0x0200f054);
   iVar1 = ((unsigned int)0x0200f050);
   if (-1 < iVar4) {

@@ -93,7 +93,7 @@ void func_02013cd8(uint param_1,uint param_2)
   puVar2 = ((unsigned int)0x02013d54);
   uVar1 = param_2 >> 8;
   do {
-  } while (((*(unsigned int *)0x02013d50) & 0x80000000) != 0);
+  } while (((*(unsigned short *)0x02013d50) & 0x80000000) != 0);
   (*(unsigned int *)0x02013d54) = (*(unsigned int *)0x02013d54) & 0xdfff | 0xc000;
   *(uint *)(puVar2 + 4) =
        (uVar1 & 0xff0000) >> 8 | param_1 & 0xff | (uVar1 & 0xff00) << 8 | uVar1 << 0x18;

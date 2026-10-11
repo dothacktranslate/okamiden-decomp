@@ -88,11 +88,11 @@ bool func_0201e2b8(int param_1,uint param_2,int param_3,uint param_4)
 
 {
   if (((0xffdfffff < param_2 * 2) && ((param_2 * 2 != 0xffe00000 || (param_1 != 0)))) ||
-     ((0xffdfffff < param_4 * 2 && (((param_4 & 0x7fffffff) != 0x7ff00000 || (param_3 != 0)))))) {
+     ((0xffe00000 <= param_4 * 2 && (((param_4 & 0x7fffffff) != 0x7ff00000 || (param_3 != 0)))))) {
     return false;
   }
   if (-1 < (int)(param_4 | param_2)) {
-    return param_2 == param_4 && param_1 == param_3;
+    return param_4 == param_2 && param_3 == param_1;
   }
   if ((param_1 == 0 && ((param_4 | param_2) & 0x7fffffff) == 0) && param_3 == 0) {
     return true;

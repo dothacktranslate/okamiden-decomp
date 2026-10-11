@@ -94,7 +94,7 @@ int func_02059aa8(int param_1,int *param_2,int param_3,int param_4,undefined4 pa
   uint uVar1;
   int iVar2;
   byte *pbVar3;
-  char *local_20;
+  unsigned char *local_20;
   int local_1c;
 
   uVar1 = func_02058974(param_2,param_6);

@@ -109,8 +109,8 @@ byte * func_020194ec(byte *param_1,byte *param_2,uint param_3)
     pbVar3 = param_2;
     if (bVar1 == param_3) {
       do {
-        bVar1 = pbVar3[1];
         bVar2 = *pbVar5;
+        bVar1 = pbVar3[1];
         if (bVar2 != bVar1) break;
         pbVar5 = pbVar5 + 1;
         pbVar3 = pbVar3 + 1;
@@ -119,7 +119,7 @@ byte * func_020194ec(byte *param_1,byte *param_2,uint param_3)
         return param_1;
       }
     }
-    bVar1 = *pbVar4;
     param_1 = pbVar4;
+    bVar1 = *pbVar4;
   } while( true );
 }

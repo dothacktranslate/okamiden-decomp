@@ -113,12 +113,12 @@ undefined4 func_0204287c(int param_1)
     *(int *)(iVar5 + 4) = iVar4 + 0x30;
     func_020098e4(0,*(undefined4 *)(*(int *)(iVar1 + 8) + 4),param_1 * 0x178);
     *(undefined4 *)(iVar1 + 0x28) = 0;
-    uVar2 = ((unsigned int)0x02042920);
+    uVar2 = ((unsigned int)0x6c078965);
     *(undefined4 *)(iVar1 + 0x2c) = 0;
     *(undefined4 *)(iVar1 + 0x30) = uVar2;
+    uVar2 = ((unsigned int)0x5d588b65);
     uVar3 = ((unsigned int)0x02042928);
-    uVar2 = ((unsigned int)0x02042924);
-    *(undefined4 *)(iVar1 + 0x34) = ((unsigned int)0x02042924);
+    *(undefined4 *)(iVar1 + 0x34) = ((unsigned int)0x5d588b65);
     *(undefined4 *)(iVar1 + 0x38) = uVar3;
     *(undefined4 *)(iVar1 + 0x3c) = 0;
     *(undefined4 *)(iVar1 + 0x1c) = 0;

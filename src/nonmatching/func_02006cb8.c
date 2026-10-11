@@ -96,8 +96,8 @@ void func_02006cb8(void)
   int iVar4;
   int iVar5;
 
-  uVar2 = ((unsigned int)0x02006dd0);
   iVar1 = ((unsigned int)0x02006dcc);
+  uVar2 = ((unsigned int)0x02006dd0);
   if (*(int *)(((unsigned int)0x02006dcc) + 0xc) != 0) {
     return;
   }

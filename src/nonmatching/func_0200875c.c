@@ -92,10 +92,10 @@ void func_0200875c(void)
   short *psVar1;
 
   psVar1 = ((unsigned int)0x02008798);
-  if ((*(unsigned int *)0x02008798) != 0) {
+  if ((*(unsigned short *)0x02008798) != 0) {
     return;
   }
-  (*(unsigned int *)0x02008798) = 1;
+  (*(unsigned short *)0x02008798) = 1;
   psVar1[6] = 0;
   psVar1[7] = 0;
   psVar1[8] = 0;

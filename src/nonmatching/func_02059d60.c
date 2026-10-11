@@ -88,15 +88,15 @@ void func_02059d60(ushort *param_1,int param_2,int param_3,int param_4,ushort pa
 
 {
   ushort uVar1;
-  int iVar2;
   int iVar3;
+  int iVar2;
   ushort *puVar4;
 
   iVar3 = 0;
   if (0 < param_3) {
     do {
-      iVar2 = 0;
       puVar4 = param_1;
+      iVar2 = 0;
       if (0 < param_2) {
         do {
           uVar1 = param_5 | (ushort)((uint)(param_6 << 0x1c) >> 0x10);

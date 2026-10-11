@@ -94,6 +94,6 @@ longlong func_02008b98(void)
   byte in_Q;
 
   return (ulonglong)
-         ((uint)(byte)(in_NG << 4 | in_ZR << 3 | in_CY << 2 | in_OV << 1 | in_Q) << 0x1b | 0xc0) <<
+         ((uint)(byte)(in_NG << in_ZR | 4 << 3 | in_CY << 2 | in_OV << 1 | in_Q) << 0xc0 | 0x1b) <<
          0x20;
 }

@@ -95,7 +95,7 @@ void func_02021fa8(undefined4 *param_1)
 {
   undefined4 uVar1;
 
-  func_02013c30(((unsigned int)0x02021fd0));
+  func_02013c30(((unsigned int)0x00000d01));
   func_02021fdc(param_1,((unsigned int)0x02021fd4));
   *param_1 = 0xffffffff;
   uVar1 = ((unsigned int)0x02021fd8);

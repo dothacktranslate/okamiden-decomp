@@ -99,7 +99,7 @@ undefined4 func_0205380c(undefined4 param_1)
 
   func_02047928(param_1,1,5);
   uVar1 = func_020466e4(param_1,1);
-  func_020478f8(param_1,0x28,((unsigned int)0x02053890));
+  func_020478f8(param_1,0x28,((unsigned int)0x02053890),uVar1,uVar1);
   iVar2 = func_02046444(param_1,2);
   if (0 < iVar2) {
     func_02047928(param_1,2,6);

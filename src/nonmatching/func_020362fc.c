@@ -165,12 +165,12 @@ void func_020362fc(int param_1)
   undefined4 uVar2;
   undefined4 uVar3;
 
-  uVar2 = ((unsigned int)0x02036330);
+  uVar2 = ((unsigned int)0x159a55e5);
   puVar1 = ((unsigned int)0x0203632c);
-  ((unsigned int *)0x0203632c)[2] = param_1 + ((unsigned int)0x02036328);
-  uVar3 = ((unsigned int)0x02036334);
+  ((unsigned int *)0x0203632c)[2] = param_1 + ((unsigned int)0x075bcd15);
+  uVar3 = ((unsigned int)0x1f123bb5);
   puVar1[1] = uVar2;
-  uVar2 = ((unsigned int)0x02036338);
+  uVar2 = ((unsigned int)0x05491333);
   puVar1[3] = uVar3;
   *puVar1 = uVar2;
   return;

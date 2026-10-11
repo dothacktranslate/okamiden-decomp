@@ -87,8 +87,8 @@ extern int LZCOUNT();
 void func_02047bc4(void)
 
 {
-                    /* WARNING: Could not recover jumptable at 0x02047bcc. Too many branches */
+                    /* WARNING: Could not recover jumptable at 0xe12fff1c. Too many branches */
                     /* WARNING: Treating indirect jump as call */
-  ((code *)(*(unsigned int *)0x02047bd0))();
+  ((code *)(*(short *)0x02047bd0))();
   return;
 }

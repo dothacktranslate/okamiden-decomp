@@ -91,9 +91,9 @@ undefined4 func_02016974(uint param_1,uint param_2)
   undefined4 uVar2;
   bool bVar3;
 
-  if ((param_2 & ((unsigned int)0x020169dc)) == 0) {
-    bVar3 = (param_2 & ((unsigned int)0x020169e0)) == 0;
+  if ((param_2 & ((unsigned int)0x7ff00000)) == 0) {
     uVar1 = ((unsigned int)0x020169e0);
+    bVar3 = (param_2 & ((unsigned int)0x020169e0)) == 0;
     if (bVar3) {
       uVar1 = param_1;
     }
@@ -105,11 +105,11 @@ undefined4 func_02016974(uint param_1,uint param_2)
     }
     return uVar2;
   }
-  if ((param_2 & ((unsigned int)0x020169dc)) != ((unsigned int)0x020169dc)) {
+  if ((param_2 & ((unsigned int)0x7ff00000)) != ((unsigned int)0x7ff00000)) {
     return 4;
   }
-  bVar3 = (param_2 & ((unsigned int)0x020169e0)) == 0;
   uVar1 = ((unsigned int)0x020169e0);
+  bVar3 = (param_2 & ((unsigned int)0x020169e0)) == 0;
   if (bVar3) {
     uVar1 = param_1;
   }

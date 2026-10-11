@@ -105,10 +105,10 @@ int func_02037280(int param_1,undefined4 param_2)
   if ((*(unsigned int *)0x020372fc) == 0) {
     func_020640d0();
     iVar1 = func_02038ba0(0x30,0x10,4);
-    iVar5 = iVar1 + ((unsigned int)0x02037300);
+    iVar5 = iVar1 + ((unsigned int)0x0000061c);
     iVar2 = func_02032bcc(iVar5 + param_1,4,((unsigned int)0x02037304));
     if (iVar2 != 0) {
-      uVar3 = func_02038b2c((*(unsigned int *)0x02037308),iVar2 + ((unsigned int)0x02037300),iVar1,0x30,4,0);
+      uVar3 = func_02038b2c((*(unsigned int *)0x02037308),iVar2 + ((unsigned int)0x0000061c),iVar1,0x30,4,0);
       iVar5 = iVar5 + iVar2;
       uVar4 = func_02065bd4(iVar5,param_1);
       iVar1 = 0;

@@ -110,7 +110,7 @@ undefined4 func_0205e318(uint *param_1)
   bool bVar10;
 
   uVar7 = *param_1;
-  if (((unsigned int)0x0205e53c) < uVar7) {
+  if (((unsigned int)0x30415642) < uVar7) {
     if (((unsigned int)0x0205e540) < uVar7) {
       uVar1 = ((unsigned int)0x0205e540) + 0x80000;
     }
@@ -174,15 +174,15 @@ undefined4 func_0205e318(uint *param_1)
     }
     return 1;
   }
-  if (uVar7 < ((unsigned int)0x0205e53c)) {
-    if (((unsigned int)0x0205e53c) - 0x900 < uVar7) {
-      uVar1 = ((unsigned int)0x0205e53c) - 0x200;
+  if (uVar7 < ((unsigned int)0x30415642)) {
+    if (((unsigned int)0x30415642) - 0x900 < uVar7) {
+      uVar1 = ((unsigned int)0x30415642) - 0x200;
     }
     else {
-      if (((unsigned int)0x0205e53c) - 0x900 <= uVar7) {
+      if (((unsigned int)0x30415642) - 0x8ff < uVar7) {
         return 1;
       }
-      uVar1 = ((unsigned int)0x0205e53c) - 0x1300;
+      uVar1 = ((unsigned int)0x30415642) - 0x1300;
     }
     if (uVar7 != uVar1) {
       return 0;

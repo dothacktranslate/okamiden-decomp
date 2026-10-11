@@ -125,17 +125,17 @@ LAB_02034a1c:
     piVar3 = *(int **)(param_1 + 0xa4);
     if ((piVar3 == (int *)0x0) || ((uVar5 & 4) != 0)) {
       uVar2 = (**(code **)(**(int **)(param_1 + 4) + 8))
-                        (*(int **)(param_1 + 4),((unsigned int)0x02034ae8) & iVar1 + ((unsigned int)0x02034ae4),iVar7,
+                        (*(int **)(param_1 + 4),((unsigned int)0x02034ae8) & iVar1 + ((unsigned int)0x000001ff),iVar7,
                          *(undefined4 *)(iVar4 + 0x1c));
       *(undefined4 *)(param_1 + 0x24) = uVar2;
-      uVar5 = ((unsigned int)0x02034aec) & *(uint *)(param_1 + 8);
+      uVar5 = ((unsigned int)0xfffdffff) & *(uint *)(param_1 + 8);
       goto LAB_02034a6e;
     }
     if ((*(uint *)(param_1 + 8) & 0x1000000) != 0) {
       iVar7 = -iVar7;
     }
     uVar2 = (**(code **)(*piVar3 + 8))
-                      (piVar3,((unsigned int)0x02034ae8) & iVar1 + ((unsigned int)0x02034ae4),iVar7,
+                      (piVar3,((unsigned int)0x02034ae8) & iVar1 + ((unsigned int)0x000001ff),iVar7,
                        *(undefined4 *)(iVar4 + 0x1c));
     *(undefined4 *)(param_1 + 0x24) = uVar2;
     uVar6 = *(uint *)(param_1 + 8);
@@ -147,7 +147,7 @@ LAB_02034a6e:
   if (*(int *)(param_1 + 0x24) != 0) {
     *(undefined4 *)(param_1 + 0x1c) = 0;
     if ((*(uint *)(param_1 + 8) & 6) == 0) {
-      uVar5 = iVar1 + ((unsigned int)0x02034ae4) & ((unsigned int)0x02034ae8);
+      uVar5 = iVar1 + ((unsigned int)0x000001ff) & ((unsigned int)0x02034ae8);
     }
     else {
       uVar5 = *(uint *)(param_1 + 0x20);

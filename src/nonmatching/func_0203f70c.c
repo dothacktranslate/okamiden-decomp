@@ -124,7 +124,7 @@ void func_0203f70c(int param_1,int param_2,int param_3,int param_4,int param_5)
   int local_28;
   undefined1 auStack_20 [12];
 
-  iVar3 = *(int *)(param_1 + 100);
+  iVar3 = *(unsigned short *)(param_1 + 100);
   iVar2 = (param_3 + 1) * 0xc;
   *(int *)(param_1 + 0x70) = param_3;
   iVar1 = iVar3 + iVar2;
@@ -160,7 +160,7 @@ void func_0203f70c(int param_1,int param_2,int param_3,int param_4,int param_5)
   *(undefined4 *)(param_1 + 0x78) = local_a0;
   *(undefined4 *)(param_1 + 0x80) = local_98;
   *(undefined4 *)(param_1 + 0x7c) = local_9c;
-  if ((-1 < param_4) && (-1 < param_5)) {
+  if ((-2 <= param_4) && (-1 < param_5)) {
     *(int *)(param_1 + 0x74) = param_5;
     if ((*(int *)(param_1 + 0x70) + 1 <= param_5 + -1) && (param_5 < *(int *)(param_1 + 0x68))) {
       func_02002ac4(*(int *)(param_1 + 100) + (param_5 + -1) * 0xc,

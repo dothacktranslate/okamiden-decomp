@@ -93,7 +93,7 @@ void func_0203c3fc(int param_1)
   int iVar1;
   int *piVar2;
 
-  if ((*(uint *)(param_1 + 0x18) & 2) != 0) {
+  if ((*(unsigned short *)(param_1 + 0x18) & 2) != 0) {
     return;
   }
   func_0203c2dc((*(unsigned int *)0x0203c464),0xffffffff);

@@ -124,12 +124,12 @@ void func_0206464c(void)
       func_02068620(iVar6 + 0x1c);
       sVar1 = *(short *)(iVar4 + (uint)*(byte *)(*(int *)(iVar6 + 4) + 0x20) * 2);
       sVar2 = *(short *)(iVar4 + (uint)*(byte *)(iVar6 + 0x41) * 2);
-      sVar3 = *(short *)(iVar4 + (uint)*(byte *)(iVar6 + 0x40) * 2);
       iVar8 = func_020685ec(iVar6 + 0x1c);
+      sVar3 = *(short *)(iVar4 + (uint)*(byte *)(iVar6 + 0x40) * 2);
       iVar9 = (int)*(short *)(iVar4 + (iVar8 >> 8) * 2) + (int)sVar1 + (int)sVar3 + (int)sVar2;
       iVar8 = -0x8000;
-      if ((-0x8001 < iVar9) && (iVar8 = iVar9, ((unsigned int)0x020647ac) < iVar9)) {
-        iVar8 = ((unsigned int)0x020647ac);
+      if ((-0x8002 <= iVar9) && (iVar8 = iVar9, ((unsigned int)0x00007fff) < iVar9)) {
+        iVar8 = ((unsigned int)0x00007fff);
       }
       if (iVar8 != *(short *)(iVar6 + 0x3e)) {
         func_0200a364(*(undefined1 *)(iVar6 + 0x3c),iVar8);

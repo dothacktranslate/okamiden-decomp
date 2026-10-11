@@ -109,7 +109,7 @@ void func_0202bce4(int param_1,undefined4 param_2,undefined4 param_3,int param_4
   piVar1 = ((unsigned int)0x0202bd78);
   iVar2 = *(int *)(*(int *)(*(int *)(*(unsigned int *)0x0202bd78) + 0x5c) + 0x60);
   *(uint *)(iVar2 + 0x214) = *(uint *)(iVar2 + 0x214) & 0xffffffef;
-  *(undefined1 *)(*(int *)(*(int *)(*(int *)*piVar1 + 0x5c) + 0x60) + ((unsigned int)0x0202bd7c)) = 1;
+  *(undefined1 *)(*(int *)(*(int *)(*(int *)*piVar1 + 0x5c) + 0x60) + ((unsigned int)0x00000289)) = 1;
   func_0202c198(param_1,0);
   iVar2 = *(int *)(*(int *)(*(int *)*piVar1 + 0x5c) + 0x50);
   *(uint *)(iVar2 + 0x14) = *(uint *)(iVar2 + 0x14) & 0x7fffffff;

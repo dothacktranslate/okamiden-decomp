@@ -93,8 +93,8 @@ void func_0204e9f0(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
   undefined4 uVar1;
   undefined4 uVar2;
 
-  uVar1 = func_02046654(param_1,1,0,param_4,param_4);
   uVar2 = func_02046654(param_1,0xffffffff,0);
+  uVar1 = func_02046654(param_1,1,0,param_4,param_4);
   func_02047714(param_1,((unsigned int)0x0204ea3c),uVar1,param_2,uVar2);
   return;
 }

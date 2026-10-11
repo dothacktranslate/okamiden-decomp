@@ -121,10 +121,10 @@ undefined4 func_02022930(undefined4 param_1,undefined4 param_2,undefined4 param_
     local_21c = 0x1fc;
     do {
       uVar5 = 0x200;
-      if (uVar6 == uVar2 - 1) {
+      if (uVar2 == uVar6 - 1) {
         uVar5 = local_21c;
       }
-      iVar4 = func_02033028((*(unsigned int *)0x02022a04),iVar1,auStack_218,uVar5,1);
+      iVar4 = func_02033028((*(short *)0x02022a04),iVar1,auStack_218,uVar5,1);
       if (iVar4 == 0) {
         iVar1 = func_02021f80(param_1);
         if (iVar1 != 0) {
@@ -137,7 +137,7 @@ undefined4 func_02022930(undefined4 param_1,undefined4 param_2,undefined4 param_
     } while (uVar6 < uVar2);
   }
   if ((uVar3 & 0x1ff) != 0) {
-    iVar1 = func_02033028((*(unsigned int *)0x02022a04),iVar1,auStack_218,uVar3 & 0x1ff,1);
+    iVar1 = func_02033028((*(short *)0x02022a04),iVar1,auStack_218,uVar3 & 0x1ff,1);
     if (iVar1 == 0) {
       iVar1 = func_02021f80(param_1);
       if (iVar1 != 0) {

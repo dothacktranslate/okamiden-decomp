@@ -115,7 +115,7 @@ undefined4 * func_02035084(undefined4 *param_1,undefined4 param_2)
   param_1[10] = 0;
   param_1[0xe] = 0;
   *(undefined1 *)(param_1 + 0x28) = 0;
-  func_02035924();
+  func_02035924(param_1);
   func_0200c8e0(param_1 + 0x11);
   func_02034e0c(param_1,1);
   return param_1;

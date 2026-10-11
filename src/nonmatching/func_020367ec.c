@@ -99,12 +99,12 @@ void func_020367ec(int param_1,undefined4 param_2,int param_3,int param_4)
   int aiStack_40 [6];
   int iStack_28;
 
-  iVar1 = ((unsigned int)0x020368d8);
-  iVar3 = *(int *)(param_1 + 0x10);
+  iStack_28 = ((unsigned int)0x020368d8);
+  iVar3 = *(unsigned short *)(param_1 + 0x10);
   if (iVar3 == 0) {
     return;
   }
-  iStack_28 = param_4;
+  iVar1 = param_4;
   func_0203660c(aiStack_40,((unsigned int)0x020368d8),6);
   uVar2 = ((unsigned int)0x020368dc);
   func_020098a0(0,((unsigned int)0x020368dc),0x24);
@@ -114,7 +114,7 @@ void func_020367ec(int param_1,undefined4 param_2,int param_3,int param_4)
       uVar4 = 0;
       do {
         if (*(int *)(iVar3 + 4) == aiStack_40[uVar4]) {
-          (**(code **)(iVar1 + uVar4 * 0x20 + 8))(iVar3 + 0x10,uVar2);
+          (**(code **)(iStack_28 + (uVar4 * 0x20 + 8)))(iVar3 + 0x10,uVar2);
           if (uVar4 == 0) {
             func_02044b6c(uVar2,param_3,param_2);
             param_3 = param_3 + *(int *)(iVar3 + 8);

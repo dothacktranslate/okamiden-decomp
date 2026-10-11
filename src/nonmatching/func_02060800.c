@@ -89,7 +89,7 @@ undefined4 func_02060800(int *param_1,int param_2,int param_3,uint param_4)
 {
   byte bVar1;
   byte bVar2;
-  ushort uVar3;
+  short uVar3;
   ushort uVar4;
   short sVar5;
   short sVar6;
@@ -123,8 +123,8 @@ undefined4 func_02060800(int *param_1,int param_2,int param_3,uint param_4)
     if (!bVar13) {
       unaff_r6 = 0x1000;
     }
-    bVar1 = *(byte *)(((unsigned int)0x0206095c) + uVar8 * 4);
     uVar3 = *puVar12;
+    bVar1 = *(byte *)(((unsigned int)0x0206095c) + uVar8 * 4);
     iVar10 = (int)(short)puVar12[1];
     param_1[uVar8] = unaff_r6;
     iVar9 = (int)(short)puVar12[2];

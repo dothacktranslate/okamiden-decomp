@@ -96,8 +96,8 @@ void func_02000d00(int *param_1,uint *param_2,int param_3,int param_4,int param_
 
   iVar2 = param_1[1];
   iVar1 = param_1[2];
-  iVar6 = param_1[3];
   iVar5 = param_1[4];
+  iVar6 = param_1[3];
   iVar4 = param_1[5];
   *param_2 = (uint)((longlong)param_3 * (longlong)*param_1) >> 0xc |
              (int)((ulonglong)((longlong)param_3 * (longlong)*param_1) >> 0x20) << 0x14;

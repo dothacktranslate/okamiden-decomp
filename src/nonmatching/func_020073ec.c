@@ -90,8 +90,8 @@ void func_020073ec(int param_1)
   ((code *)(*(unsigned int *)0x0200742c))(param_1 + 0x48);
                     /* WARNING: Could not recover jumptable at 0x02007428. Too many branches */
                     /* WARNING: Treating indirect jump as call */
-  (*(code *)(*(int *)(param_1 + 0x3c) + -4))
-            (*(undefined4 *)(param_1 + 4),*(undefined4 *)(param_1 + 8),
-             *(undefined4 *)(param_1 + 0xc),*(undefined4 *)(param_1 + 0x10));
+  (*(code *)(*(unsigned short *)(param_1 + 0x3c) + -4))
+            (*(unsigned short *)(param_1 + 4),*(undefined4 *)(param_1 + 8),
+             *(unsigned short *)(param_1 + 0xc),*(undefined4 *)(param_1 + 0x10));
   return;
 }

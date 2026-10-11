@@ -99,8 +99,8 @@ int func_02010834(uint param_1)
     }
     uVar1 = uVar1 + 1;
   } while ((int)uVar1 < 8);
-  uVar1 = 0;
   iVar3 = 1;
+  uVar1 = 0;
   do {
     iVar2 = iVar3 * (param_1 >> ((uVar1 & 0x3f) << 2) & 0xf) + iVar2;
     uVar1 = uVar1 + 1;

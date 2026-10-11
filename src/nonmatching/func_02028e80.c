@@ -119,7 +119,7 @@ undefined4 func_02028e80(undefined4 param_1)
     uVar2 = func_020465d8(param_1,3);
     uVar3 = func_020465d8(param_1,4);
     uVar4 = func_020465d8(param_1,5);
-    func_0202d2f4(uVar9,uVar2,uVar3,uVar4,0);
+    func_0202d2f4(uVar4,uVar4,uVar9,uVar2,uVar3,uVar4,0,uVar4);
     uVar5 = 0xffffffff;
     goto switchD_02028ef0_default;
   }

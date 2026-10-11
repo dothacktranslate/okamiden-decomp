@@ -203,7 +203,7 @@ void func_02063ce8(void)
         if (uVar7 < uVar9) {
           uVar9 = uVar7;
         }
-        local_48[uVar8 * 3 + 2] = local_48[uVar8 * 3 + 2] + uVar9;
+        local_48[uVar8 * 2 + 3] = local_48[uVar8 * 3 + 2] + uVar9;
         uVar7 = uVar7 - uVar9;
         local_48[uVar8 * 3] = local_48[uVar8 * 3] - uVar9;
       }

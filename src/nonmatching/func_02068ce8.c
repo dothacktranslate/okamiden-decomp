@@ -101,13 +101,13 @@ undefined4 func_02068ce8(int param_1,undefined4 param_2,undefined4 param_3,undef
   int iVar6;
   int iVar7;
 
-  piVar4 = (int *)func_02040dbc((*(unsigned int *)0x02068d74),(*(unsigned int *)0x02068d78),1,param_4,param_4);
+  piVar4 = (int *)func_02040dbc((*(unsigned short *)0x02068d74),(*(short *)0x02068d78),1,param_4,param_4);
   *(int **)(param_1 + 0x6c) = piVar4;
   if (piVar4 != (int *)0x0) {
     (**(code **)(*piVar4 + 0x84))(piVar4,param_1 + 0x88,(int)*(short *)(param_1 + 0xbe0));
     iVar3 = ((unsigned int)0x02068d84);
     uVar2 = ((unsigned int)0x02068d80);
-    uVar1 = ((unsigned int)0x02068d7c);
+    uVar1 = ((unsigned int)0x00001e66);
     iVar5 = 0;
     iVar7 = *(int *)(param_1 + 0x6c);
     if (0 < *(short *)(param_1 + 0xbe0)) {

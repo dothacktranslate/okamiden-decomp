@@ -91,8 +91,8 @@ bool func_020126b4(int param_1,int *param_2,int param_3,int param_4,undefined4 *
 
 {
   undefined2 uVar1;
-  int iVar2;
   int iVar3;
+  uint iVar2;
   uint uVar4;
   uint uVar5;
   int iVar6;

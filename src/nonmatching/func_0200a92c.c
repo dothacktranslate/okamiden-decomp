@@ -115,7 +115,7 @@ void func_0200a92c(uint param_1)
     do {
       iVar1 = func_0200a82c(0);
     } while (iVar1 != 0);
-    iVar1 = func_0200adb4();
+    iVar1 = func_0200adb4(param_1);
     if (iVar1 != 0) {
       return;
     }

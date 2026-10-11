@@ -105,13 +105,13 @@ void func_0204c54c(int param_1,int param_2)
       *(undefined4 *)(param_1 + 0xc) = **(undefined4 **)(param_1 + 0x14);
     }
     else {
-      iVar1 = func_0204c408();
+      iVar1 = func_0204c408(param_1);
       if (iVar1 != 0) {
         *(undefined4 *)(param_1 + 8) = *(undefined4 *)(*(int *)(param_1 + 0x14) + 8);
       }
     }
   }
   iVar1 = *(int *)(param_1 + 0x14) - *(int *)(param_1 + 0x28);
-  func_02054f40(param_1,(int)((longlong)((unsigned int)0x0204c5e0) * (longlong)iVar1 >> 0x22) - (iVar1 >> 0x1f));
+  func_02054f40(param_1,(int)((longlong)((unsigned int)0x2aaaaaab) * (longlong)iVar1 >> 0x22) - (iVar1 >> 0x1f));
   return;
 }

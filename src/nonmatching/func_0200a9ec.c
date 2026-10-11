@@ -99,8 +99,8 @@ undefined4 func_0200a9ec(uint param_1)
   undefined4 uVar3;
   int iVar4;
 
+  iVar4 = ((unsigned int)0x0200ab7c);
   uVar3 = func_02008b6c();
-  iVar1 = ((unsigned int)0x0200ab7c);
   if (*(int *)(((unsigned int)0x0200ab7c) + 8) == 0) {
     func_02008b80();
     return 1;
@@ -112,42 +112,42 @@ undefined4 func_0200a9ec(uint param_1)
     }
     do {
       func_0200a82c(1);
-    } while (7 < *(int *)(iVar1 + 0x1c));
-    if (*(int *)(iVar1 + 8) == 0) {
+    } while (7 < *(int *)(iVar4 + 0x1c));
+    if (*(int *)(iVar4 + 8) == 0) {
       func_02008b80(uVar3);
       return 1;
     }
   }
   uVar2 = ((unsigned int)0x0200ab80);
   func_02007820(((unsigned int)0x0200ab80),0x1800);
-  iVar4 = func_0200b5ac(7,*(undefined4 *)(iVar1 + 8),0);
-  if (iVar4 < 0) {
+  iVar1 = func_0200b5ac(7,*(undefined4 *)(iVar4 + 8),0);
+  if (iVar1 < 0) {
     if ((param_1 & 1) == 0) {
       func_02008b80(uVar3);
       return 0;
     }
-    while ((7 < *(int *)(iVar1 + 0x1c) ||
-           (iVar4 = func_0200b5ac(7,*(undefined4 *)(iVar1 + 8),0), iVar4 < 0))) {
+    while ((7 < *(int *)(iVar4 + 0x1c) ||
+           (iVar1 = func_0200b5ac(7,*(undefined4 *)(iVar4 + 8),0), iVar1 < 0))) {
       func_02008b80(uVar3);
       func_0200a82c(0);
       uVar3 = func_02008b6c();
       func_02007820(uVar2,0x1800);
-      if (*(int *)(iVar1 + 8) == 0) {
+      if (*(int *)(iVar4 + 8) == 0) {
         func_02008b80(uVar3);
         return 1;
       }
     }
   }
-  iVar4 = *(int *)(iVar1 + 0x18) + 1;
-  *(undefined4 *)(((unsigned int)0x0200ab84) + *(int *)(iVar1 + 0x18) * 4) = *(undefined4 *)(iVar1 + 8);
-  *(int *)(iVar1 + 0x18) = iVar4;
-  if (8 < iVar4) {
-    *(undefined4 *)(iVar1 + 0x18) = 0;
+  iVar1 = *(int *)(iVar4 + 0x18) + 1;
+  *(undefined4 *)(((unsigned int)0x0200ab84) + *(int *)(iVar4 + 0x18) * 4) = *(undefined4 *)(iVar4 + 8);
+  *(int *)(iVar4 + 0x18) = iVar1;
+  if (8 < iVar1) {
+    *(undefined4 *)(iVar4 + 0x18) = 0;
   }
-  *(undefined4 *)(iVar1 + 8) = 0;
-  *(undefined4 *)(iVar1 + 0xc) = 0;
-  *(int *)(iVar1 + 0x1c) = *(int *)(iVar1 + 0x1c) + 1;
-  *(int *)(iVar1 + 0x20) = *(int *)(iVar1 + 0x20) + 1;
+  *(undefined4 *)(iVar4 + 8) = 0;
+  *(undefined4 *)(iVar4 + 0xc) = 0;
+  *(int *)(iVar4 + 0x1c) = *(int *)(iVar4 + 0x1c) + 1;
+  *(int *)(iVar4 + 0x20) = *(int *)(iVar4 + 0x20) + 1;
   func_02008b80(uVar3);
   if ((param_1 & 2) != 0) {
     func_0200ad8c();

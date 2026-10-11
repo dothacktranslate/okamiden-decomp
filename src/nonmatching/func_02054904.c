@@ -92,7 +92,7 @@ extern int func_02054894();
 uint func_02054904(undefined4 param_1,undefined4 *param_2,undefined4 *param_3,undefined4 param_4)
 
 {
-  int iVar1;
+  uint iVar1;
   uint uVar2;
   bool bVar3;
 
@@ -101,7 +101,7 @@ uint func_02054904(undefined4 param_1,undefined4 *param_2,undefined4 *param_3,un
     uVar2 = func_0204b864();
     return uVar2;
   }
-  bVar3 = 2 < uVar2;
+  bVar3 = 3 <= uVar2;
   if (uVar2 == 3) {
     func_0201e4f0(*param_2,*param_3);
     return (uint)!bVar3;

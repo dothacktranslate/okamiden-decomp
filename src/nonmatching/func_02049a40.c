@@ -125,8 +125,8 @@ undefined4 func_02049a40(undefined4 param_1,undefined4 param_2,undefined4 param_
 
   uStack_18 = param_4;
   uVar1 = func_020499ac(param_1,&local_80);
-  uVar2 = func_020479b8(param_1,local_80 + 2,((unsigned int)0x02049cc0),0);
   iVar3 = func_020464b0(param_1,local_80 + 1);
+  uVar2 = func_020479b8(param_1,local_80 + 2,((unsigned int)0x02049cc0),0);
   if (iVar3 == 0) {
     iVar3 = func_02046444(param_1,local_80 + 1);
     if (iVar3 != 6) {

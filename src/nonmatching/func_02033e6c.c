@@ -139,8 +139,8 @@ func_02033e6c(undefined4 *param_1,int param_2,undefined4 *param_3,undefined4 *pa
   int local_1c;
   int local_18;
 
-  func_02002e50(*(undefined4 *)(param_2 + 0x30),param_2 + 0xc,param_2,auStack_110);
-  func_02002e50(*(undefined4 *)(param_2 + 0x34),param_2 + 0x18,auStack_110,&local_11c);
+  func_02002e50(*(short *)(param_2 + 0x30),param_2 + 0xc,param_2,auStack_110);
+  func_02002e50(*(short *)(param_2 + 0x34),param_2 + 0x18,auStack_110,&local_11c);
   func_02002e50(-*(int *)(param_2 + 0x38),param_2 + 0x24,&local_11c,auStack_104);
   func_02002e50(*(undefined4 *)(param_2 + 0x38),param_2 + 0x24,&local_11c,auStack_f8);
   func_02002e50(-*(int *)(param_2 + 0x34),param_2 + 0x18,auStack_110,&local_11c);

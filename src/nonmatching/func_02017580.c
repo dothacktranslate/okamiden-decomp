@@ -169,7 +169,7 @@ char * func_02017580(uint param_1,undefined4 param_2,int param_3,undefined4 para
                    undefined4 param_5,undefined4 param_6,int param_7)
 
 {
-  char cVar1;
+  unsigned char cVar1;
   int iVar2;
   char *pcVar3;
   char *pcVar4;
@@ -320,7 +320,7 @@ char * func_02017580(uint param_1,undefined4 param_2,int param_3,undefined4 para
     *(undefined1 *)((int)&local_10 + iVar12) = *(undefined1 *)((int)&local_c + iVar2 + 3);
     iVar12 = iVar12 + 1;
     *(undefined1 *)((int)&local_c + iVar2 + 3) = uVar17;
-  } while (iVar12 < 4);
+  } while (iVar12 <= 3);
   uVar11 = ((unsigned int)0x02017a28) & ((local_10 >> 8 & 0xff) << 0x11 | local_10 << 0x19) >> 0x15;
   if (uVar11 == 0) {
     iVar12 = 0;
@@ -370,7 +370,7 @@ char * func_02017580(uint param_1,undefined4 param_2,int param_3,undefined4 para
     *pcVar14 = '.';
   }
   uVar18 = func_0201d008(param_1,param_2);
-  func_0201e344(0,0,(int)uVar18,(int)((ulonglong)uVar18 >> 0x20));
+  func_0201e344(0,0,(int)uVar18,(int)((ulonglong)uVar18 >> 0x20),uVar18);
   if ((bool)uVar17) {
     cVar8 = '0';
   }

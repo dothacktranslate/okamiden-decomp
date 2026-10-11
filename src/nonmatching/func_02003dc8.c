@@ -90,7 +90,7 @@ int func_02003dc8(void)
   uint uVar1;
   int iVar2;
 
-  uVar1 = (*(ushort *)((int)((unsigned int)0x02003e38) + 0xe) & 0x1f00) >> 8;
+  uVar1 = (*(unsigned char *)((int)((unsigned int)0x02003e38) + 0xe) & 0x1f00) >> 8;
   switch((*(unsigned int *)0x02003e38) & 7) {
   case 0:
     break;

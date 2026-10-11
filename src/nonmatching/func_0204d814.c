@@ -91,7 +91,7 @@ void func_0204d814(int param_1,int param_2,undefined4 param_3,undefined4 param_4
 
 {
   int iVar1;
-  int iVar2;
+  uint iVar2;
   int iVar3;
   int iVar4;
   bool bVar5;

@@ -164,8 +164,8 @@ LAB_02020494:
     puVar3 = auStack_24;
     goto LAB_02020598;
   case 6:
-    pbVar5 = (byte *)func_020201f8(pbVar5 + 1,auStack_34);
     puVar3 = auStack_30;
+    pbVar5 = (byte *)func_020201f8(pbVar5 + 1,auStack_34);
     break;
   case 7:
     pbVar5 = (byte *)func_020201f8(pbVar5 + 1,auStack_3c);
@@ -204,7 +204,7 @@ LAB_02020554:
     uVar2 = func_0202027c(pbVar5 + 1,&iStack_7c);
     uVar2 = func_0202027c(uVar2,auStack_78);
     iVar4 = func_020201f8(uVar2,auStack_74);
-    iVar4 = iVar4 + iStack_7c * 4;
+    iVar4 = iStack_7c + iVar4 * 4;
     goto LAB_02020648;
   case 0x10:
     uVar2 = func_020201f8(pbVar5 + 1,auStack_8c);

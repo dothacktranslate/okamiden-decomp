@@ -162,8 +162,8 @@ undefined4 * func_0200615c(undefined4 *param_1,undefined4 *param_2)
   undefined4 uVar6;
   undefined4 uVar7;
 
-  uVar1 = param_1[1];
   uVar2 = param_1[2];
+  uVar1 = param_1[1];
   uVar3 = param_1[3];
   uVar4 = param_1[4];
   uVar5 = param_1[5];
@@ -177,8 +177,8 @@ undefined4 * func_0200615c(undefined4 *param_1,undefined4 *param_2)
   param_2[5] = uVar5;
   param_2[6] = uVar6;
   param_2[7] = uVar7;
-  uVar1 = param_1[9];
   uVar2 = param_1[10];
+  uVar1 = param_1[9];
   uVar3 = param_1[0xb];
   uVar4 = param_1[0xc];
   uVar5 = param_1[0xd];

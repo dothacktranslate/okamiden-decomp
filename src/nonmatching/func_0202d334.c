@@ -99,16 +99,16 @@ void func_0202d334(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   int iVar5;
   uint uVar6;
 
-  uVar6 = (*(int *)(param_1 + ((unsigned int)0x0202d428)) << 4) >> 0x10;
-  uVar1 = *(uint *)(*(int *)(param_1 + ((unsigned int)0x0202d42c)) + 0x14);
-  uVar4 = (uint)*(ushort *)(param_1 + ((unsigned int)0x0202d42c) + 4);
+  uVar1 = *(uint *)(*(int *)(param_1 + ((unsigned int)0x00000e54)) + 0x14);
+  uVar6 = (*(int *)(param_1 + ((unsigned int)0x00000ac4)) << 4) >> 0x10;
+  uVar4 = (uint)*(ushort *)(param_1 + ((unsigned int)0x00000e54) + 4);
   if (uVar4 < uVar1) {
     do {
-      if (*(int *)(param_1 + ((unsigned int)0x0202d42c)) == 0) {
+      if (*(int *)(param_1 + ((unsigned int)0x00000e54)) == 0) {
         puVar3 = (ushort *)0x0;
       }
       else {
-        puVar3 = (ushort *)(*(int *)(param_1 + ((unsigned int)0x0202d42c)) + uVar4 * 0x18);
+        puVar3 = (ushort *)(*(int *)(param_1 + ((unsigned int)0x00000e54)) + uVar4 * 0x18);
       }
       if ((uVar6 == *puVar3) &&
          (iVar2 = func_0202e220(param_1,puVar3,uVar4,param_2,param_2,uVar1,param_4), iVar2 != 0)) {
@@ -120,8 +120,8 @@ void func_0202d334(int param_1,int param_2,undefined4 param_3,undefined4 param_4
       uVar4 = uVar4 + 1;
     } while (uVar4 < uVar1);
   }
-  if (*(int *)(param_1 + ((unsigned int)0x0202d428)) == *(int *)(param_1 + ((unsigned int)0x0202d428) + 0xc)) {
-    *(int *)(param_1 + ((unsigned int)0x0202d428) + 0xc) = *(int *)(param_1 + ((unsigned int)0x0202d428) + 4) + 0x1000;
+  if (*(int *)(param_1 + ((unsigned int)0x00000ac4)) == *(int *)(param_1 + ((unsigned int)0x00000ac4) + 0xc)) {
+    *(int *)(param_1 + ((unsigned int)0x00000ac4) + 0xc) = *(int *)(param_1 + ((unsigned int)0x00000ac4) + 4) + 0x1000;
     *(undefined1 *)(param_1 + ((unsigned int)0x0202d430)) = 0;
   }
   iVar2 = ((unsigned int)0x0202d434);
@@ -130,7 +130,7 @@ void func_0202d334(int param_1,int param_2,undefined4 param_3,undefined4 param_4
     if ((((*(char **)(iVar5 + 0x224) != (char *)0x0) && (**(char **)(iVar5 + 0x224) == '\0')) &&
         (*(short *)(param_1 + 0xe00) = *(short *)(param_1 + 0xe00) + 1,
         *(uint *)(param_1 + 0xe08) < (uint)*(ushort *)(param_1 + 0xe00))) &&
-       (*(uint *)(param_1 + 0xe04) <= (uint)(*(int *)(param_1 + ((unsigned int)0x0202d428)) >> 0xc))) {
+       (*(uint *)(param_1 + 0xe04) <= (uint)(*(int *)(param_1 + ((unsigned int)0x00000ac4)) >> 0xc))) {
       *(undefined1 *)(iVar5 + 0x288) = 1;
       *(undefined1 *)(iVar5 + 0x289) = 1;
       *(undefined1 *)(param_1 + iVar2) = 0;

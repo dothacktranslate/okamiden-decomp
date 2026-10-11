@@ -93,9 +93,9 @@ void func_0204769c(undefined4 param_1,undefined4 param_2)
 
 {
   int iVar1;
-  undefined1 auStack_70 [20];
   int local_5c;
   undefined1 auStack_4c [64];
+  undefined1 auStack_70 [20];
 
   iVar1 = func_0204a77c(param_1,param_2,auStack_70);
   if (iVar1 != 0) {

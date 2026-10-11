@@ -110,8 +110,8 @@ void func_02061e74(uint *param_1,uint *param_2,int param_3,uint param_4)
   bVar2 = *(byte *)(param_3 + 2);
   uVar7 = (uint)bVar2;
   if ((param_4 & 4) == 0) {
-    uVar13 = *param_2;
     uVar12 = param_2[1];
+    uVar13 = *param_2;
     uVar11 = param_2[2];
     param_1[1] = uVar13;
     param_1[2] = uVar12;

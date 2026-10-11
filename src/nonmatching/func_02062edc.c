@@ -94,7 +94,7 @@ void func_02062edc(uint param_1,int param_2)
   undefined4 uVar2;
   undefined4 uVar3;
 
-  if (param_1 < 3) {
+  if (param_1 <= 2) {
     uVar2 = 2;
     uVar3 = 0;
   }
@@ -105,12 +105,12 @@ void func_02062edc(uint param_1,int param_2)
   func_02062e94(4,3,uVar2,uVar3,1);
   (*(unsigned int *)0x02062f48) = (short)param_1;
   func_02062f5c();
-  puVar1 = ((unsigned int)0x02062f58);
   uVar2 = ((unsigned int)0x02062f54);
+  puVar1 = ((unsigned int)0x02062f58);
   if (param_2 == 0) {
     return;
   }
-  (*(unsigned int *)0x02062f50) = ((unsigned int)0x02062f4c);
+  (*(unsigned short *)0x02062f50) = ((unsigned int)0x02062f4c);
   *puVar1 = uVar2;
   return;
 }

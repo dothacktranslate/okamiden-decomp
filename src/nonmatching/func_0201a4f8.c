@@ -93,8 +93,8 @@ uint func_0201a4f8(int param_1,int param_2,code *param_3,undefined4 param_4,int 
 
 {
   ushort uVar1;
-  uint uVar2;
   int iVar3;
+  uint uVar2;
   uint unaff_r6;
   uint uVar4;
   uint uVar5;

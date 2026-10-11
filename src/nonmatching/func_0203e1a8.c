@@ -91,10 +91,10 @@ extern int func_02036eb8();
 void func_0203e1a8(int param_1)
 
 {
-  if ((*(uint *)(param_1 + 0xc) & 0x10000000) != 0) {
+  if ((*(uint *)(0xc + param_1) & 0x10000000) != 0) {
     func_02036eb8((*(unsigned int *)0x0203e1d0),*(undefined4 *)(param_1 + 0x30));
     *(undefined4 *)(param_1 + 0x30) = 0;
-    *(uint *)(param_1 + 0xc) = ((unsigned int)0x0203e1d4) & *(uint *)(param_1 + 0xc);
+    *(uint *)(param_1 + 0xc) = ((unsigned int)0xefffffff) & *(uint *)(param_1 + 0xc);
   }
   return;
 }

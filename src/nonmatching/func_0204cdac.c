@@ -92,14 +92,14 @@ int func_0204cdac(undefined4 param_1,int param_2,undefined4 param_3)
 {
   int iVar1;
 
-  iVar1 = func_0204e55c(param_1,0,0,(param_2 + -1) * 4 + 0x18);
+  iVar1 = func_0204e55c(param_1,0,0,(param_2 + -1) * 0x18 + 4);
   func_0204e430(param_1,iVar1,6);
   *(undefined1 *)(iVar1 + 6) = 0;
   *(undefined4 *)(iVar1 + 0xc) = param_3;
   *(char *)(iVar1 + 7) = (char)param_2;
   while (param_2 != 0) {
     param_2 = param_2 + -1;
-    *(undefined4 *)(iVar1 + param_2 * 4 + 0x14) = 0;
+    *(undefined4 *)(iVar1 + (param_2 * 4 + 0x14)) = 0;
   }
   return iVar1;
 }

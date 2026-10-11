@@ -104,7 +104,7 @@ void func_02052788(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
   do {
     local_8c[iVar3] = 0;
     iVar3 = iVar3 + 1;
-  } while (iVar3 < 0x1b);
+  } while (iVar3 <= 0x1a);
   uStack_20 = param_4;
   iVar3 = func_020523e4(param_2,local_8c);
   local_90 = iVar3;
@@ -112,6 +112,6 @@ void func_02052788(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
   iVar2 = func_020523a0(param_3,local_8c);
   local_90 = local_90 + iVar2;
   iVar2 = func_02052338(local_8c,&local_90);
-  func_02052624(param_1,param_2,local_90,(iVar3 + iVar1 + 1) - iVar2);
+  func_02052624(param_1,param_2,local_90,(iVar3 + (iVar1 + 1)) - iVar2);
   return;
 }

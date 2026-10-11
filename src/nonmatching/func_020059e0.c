@@ -167,7 +167,7 @@ void func_020059e0(undefined4 param_1)
   ushort *puVar2;
 
   puVar2 = ((unsigned int)0x02005ac4);
-  (*(unsigned int *)0x02005ac4) = ~(ushort)param_1 & ((*(unsigned int *)0x02005ac4) | ((unsigned int *)0x02005ac4)[6]);
+  (*(unsigned short *)0x02005ac4) = ~(ushort)param_1 & ((*(unsigned short *)0x02005ac4) | ((unsigned int *)0x02005ac4)[6]);
   puVar2[6] = (ushort)param_1;
   puVar1 = ((unsigned int)0x02005ac8);
   switch(param_1) {
@@ -195,7 +195,7 @@ void func_020059e0(undefined4 param_1)
   case 7:
     break;
   case 8:
-    puVar1 = ((unsigned int)0x02005ad4);
+    puVar1 = ((unsigned int)0x04000243);
     goto LAB_02005a9c;
   case 9:
     break;
@@ -205,7 +205,7 @@ void func_020059e0(undefined4 param_1)
     break;
   case 0xc:
     (*(unsigned int *)0x02005ad0) = 0x93;
-    puVar1 = ((unsigned int)0x02005ad4);
+    puVar1 = ((unsigned int)0x04000243);
 LAB_02005a9c:
     puVar2 = ((unsigned int)0x02005ad8);
     *puVar1 = 0x9b;

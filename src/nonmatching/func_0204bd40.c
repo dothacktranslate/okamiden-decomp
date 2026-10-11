@@ -91,11 +91,11 @@ void func_0204bd40(int param_1,int param_2)
 
 {
   longlong lVar1;
-  int iVar2;
-  int iVar3;
+  uint iVar2;
+  uint iVar3;
 
   iVar3 = *(int *)(param_1 + 0x28);
-  if (((unsigned int)0x0204bdbc) < param_2 + 1U) {
+  if (((unsigned int)0x0aaaaaaa) < param_2 + 1U) {
     iVar2 = func_0204e544();
   }
   else {

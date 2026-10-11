@@ -132,7 +132,7 @@ void func_0203f970(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   uint local_1c;
   undefined4 uStack_18;
 
-  if (1 < *(int *)(param_1 + 0x68)) {
+  if (1 < *(unsigned short *)(param_1 + 0x68)) {
     uVar10 = (*(unsigned int *)0x0203fcb0);
     uStack_18 = param_4;
     iVar4 = func_02036edc(uVar10,param_1 + 0xe2);
@@ -306,7 +306,7 @@ void func_0203f970(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
               iVar13 = (int)*(short *)(param_1 + 0xd6);
               if (iVar13 == 0) {
                 iVar13 = *(int *)(((unsigned int)0x0203fdbc) +
-                                 ((int)((((uint)(iVar6 * 0x20000000 + iVar3) >> 0x1d | iVar3 << 3) -
+                                 ((int)((((uint)(iVar6 + iVar3 * 0x20000000) >> 0x1d | iVar3 << 3) -
                                         iVar3) * 0x10000) >> 0x10) * 4);
               }
               if (*(int *)(param_1 + 0xd0) == 0) {

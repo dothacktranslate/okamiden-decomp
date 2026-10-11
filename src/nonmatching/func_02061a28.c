@@ -104,7 +104,7 @@ void func_02061a28(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   iVar6 = (uint)*(ushort *)(param_2 + 0x2c) << 0xc;
   iVar1 = (uint)*(ushort *)(param_2 + 0x2e) << 0xc;
   func_020029f4(iVar1,iVar6,(uint)*(ushort *)(param_2 + 0x2c),param_4,param_4);
-  lVar3 = (longlong)*(int *)(param_2 + 0x18) * (longlong)(int)*(short *)(param_2 + 0x20);
+  lVar3 = (longlong)*(short *)(param_2 + 0x18) * (longlong)(int)*(short *)(param_2 + 0x20);
   uVar10 = (uint)lVar3 >> 0xc | (int)((ulonglong)lVar3 >> 0x20) << 0x14;
   lVar3 = (longlong)*(int *)(param_2 + 0x18) * (longlong)(int)*(short *)(param_2 + 0x22);
   uVar9 = (uint)lVar3 >> 0xc | (int)((ulonglong)lVar3 >> 0x20) << 0x14;

@@ -165,13 +165,13 @@ LAB_0200d5e0:
             uVar5 = uStack_ac;
           }
         } while (uVar13 != uStack_b0 || uVar2 != uVar5);
-        iVar4 = 0;
         uVar5 = 0;
+        iVar4 = 0;
         if (uVar2 != 0) {
           do {
             uVar8 = (int)pcVar12[uVar5] - 0x41U & 0xff;
             uVar7 = (int)acStack_a8[uVar5] - 0x41U & 0xff;
-            if (uVar8 < 0x1a) {
+            if (uVar8 <= 0x19) {
               uVar8 = uVar8 + 0x20;
             }
             if (uVar7 < 0x1a) {

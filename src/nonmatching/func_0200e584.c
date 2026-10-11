@@ -97,8 +97,8 @@ uint func_0200e584(int param_1,int param_2,uint param_3)
 {
   int iVar1;
   int iVar2;
-  uint uVar3;
   uint uVar4;
+  uint uVar3;
   int iVar5;
   undefined1 auStack_64 [72];
 

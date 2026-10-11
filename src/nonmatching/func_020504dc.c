@@ -104,27 +104,27 @@ int func_020504dc(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
   undefined4 uStack_1c;
 
   uStack_1c = param_4;
-  iVar1 = func_02047988(param_1,1,&local_20);
+  iVar3 = func_02047988(param_1,1,&local_20);
   uVar2 = func_02047aa8(param_1,2,1);
-  iVar3 = func_020501a4(uVar2,local_20);
-  uVar2 = func_02047aa8(param_1,3,iVar3);
+  iVar1 = func_020501a4(uVar2,local_20);
+  uVar2 = func_02047aa8(param_1,3,iVar1);
   uVar4 = func_020501a4(uVar2,local_20);
-  if (iVar3 < 1) {
-    iVar3 = 1;
+  if (iVar1 < 1) {
+    iVar1 = 1;
   }
   if (local_20 < uVar4) {
     uVar4 = local_20;
   }
-  if (iVar3 <= (int)uVar4) {
-    iVar5 = (uVar4 - iVar3) + 1;
-    if (iVar3 + iVar5 <= (int)uVar4) {
+  if (iVar1 <= (int)uVar4) {
+    iVar5 = (uVar4 - iVar1) + 1;
+    if (iVar1 + iVar5 <= (int)uVar4) {
       func_02047714(param_1,((unsigned int)0x020505bc));
     }
     func_020478f8(param_1,iVar5,((unsigned int)0x020505c0));
     iVar6 = 0;
     if (0 < iVar5) {
       do {
-        func_02046868(param_1,*(undefined1 *)(iVar1 + iVar3 + iVar6 + -1));
+        func_02046868(param_1,*(undefined1 *)(iVar3 + (iVar1 + iVar6) + -1));
         iVar6 = iVar6 + 1;
       } while (iVar6 < iVar5);
     }

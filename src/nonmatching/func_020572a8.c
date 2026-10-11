@@ -95,8 +95,8 @@ void func_020572a8(void)
   func_0200986c(0xc0,((unsigned int)0x02057354),0x400,in_r3,in_r3);
   func_0200986c(0xc0,((unsigned int)0x02057358),0x400);
   func_0200986c(0xc0,((unsigned int)0x0205735c),0x400);
-  uVar1 = ((unsigned int)0x02057360);
-  func_0200986c(((unsigned int)0x02057360),((unsigned int)0x02057364),0x100);
+  uVar1 = ((unsigned int)0x0000ffff);
+  func_0200986c(((unsigned int)0x0000ffff),((unsigned int)0x02057364),0x100);
   func_0200986c(uVar1,((unsigned int)0x02057368),0x100);
   func_0200986c(uVar1,((unsigned int)0x0205736c),0x100);
   func_0200986c(uVar1,((unsigned int)0x02057370),0x40);

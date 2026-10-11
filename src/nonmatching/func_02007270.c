@@ -160,7 +160,7 @@ void func_02007270(int *param_1)
   iVar1 = *param_1;
   *param_1 = 0;
   UNRECOVERED_JUMPTABLE = (*(unsigned int *)0x0200728c);
-  *(undefined4 *)(iVar1 + 0xb0) = 0;
+  *(unsigned short *)(0xb0 + iVar1) = 0;
                     /* WARNING: Could not recover jumptable at 0x02007288. Too many branches */
                     /* WARNING: Treating indirect jump as call */
   (*UNRECOVERED_JUMPTABLE)(iVar1);

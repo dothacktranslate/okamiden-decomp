@@ -151,7 +151,7 @@ undefined4 func_020014f0(uint *param_1,uint *param_2,undefined4 param_3,undefine
   uVar10 = uVar10 + 0x800 >> 0xc |
            (((int)((ulonglong)lVar2 >> 0x20) -
             ((int)((ulonglong)lVar3 >> 0x20) + (uint)(uVar9 < uVar15))) +
-           (uint)(0xfffff7ff < uVar10)) * 0x100000;
+           (uint)(0xfffff800 <= uVar10)) * 0x100000;
   lVar2 = (longlong)(int)uVar10 * (longlong)(int)param_1[2] +
           CONCAT44((int)((ulonglong)((longlong)(int)*param_1 * (longlong)(int)uVar16) >> 0x20) -
                    ((int)((ulonglong)((longlong)(int)param_1[1] * (longlong)(int)uVar13) >> 0x20) +

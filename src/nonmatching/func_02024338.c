@@ -91,7 +91,7 @@ extern int func_020243e8();
 int func_02024338(int param_1)
 
 {
-  *(undefined4 *)(param_1 + 0x80) = (*(unsigned int *)0x02024350);
-  func_020243e8();
+  *(undefined4 *)(0x80 + param_1) = (*(unsigned int *)0x02024350);
+  func_020243e8(param_1);
   return param_1;
 }

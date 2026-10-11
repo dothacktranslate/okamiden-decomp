@@ -87,8 +87,8 @@ extern int LZCOUNT();
 int func_02015d98(uint param_1,uint param_2,int param_3)
 
 {
-  int iVar1;
   uint uVar2;
+  int iVar1;
   uint uVar3;
 
   if (param_3 != 0) {
@@ -103,7 +103,7 @@ int func_02015d98(uint param_1,uint param_2,int param_3)
           }
         }
       }
-      while (((iVar1 <= param_3 + -4 &&
+      while (((param_3 >= iVar1 + -4 &&
               (uVar3 = *(uint *)(param_1 + iVar1), uVar3 == *(uint *)(param_2 + iVar1))) &&
              (((uVar3 & ((unsigned int)0x02015e7c)) + ((unsigned int)0x02015e7c) | uVar3 | ((unsigned int)0x02015e7c)) == 0xffffffff))) {
         iVar1 = iVar1 + 4;

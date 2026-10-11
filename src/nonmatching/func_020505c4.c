@@ -103,24 +103,24 @@ undefined4 func_020505c4(undefined4 param_1,undefined4 param_2,undefined4 param_
   undefined4 uStack_24;
 
   uStack_24 = param_4;
-  iVar2 = func_020461e8();
+  iVar5 = func_020461e8();
   func_0204815c(param_1,local_1030);
   uVar1 = ((unsigned int)0x02050678);
-  iVar5 = 1;
-  if (0 < iVar2) {
+  iVar2 = 1;
+  if (0 < iVar5) {
     do {
-      uVar3 = func_02047a64(param_1,iVar5);
+      uVar3 = func_02047a64(param_1,iVar2);
       if ((uVar3 & 0xff) != uVar3) {
-        func_02047550(param_1,iVar5,uVar1);
+        func_02047550(param_1,iVar2,uVar1);
       }
       if (&uStack_24 <= local_1030[0]) {
         func_02047ff0(local_1030);
       }
-      iVar5 = iVar5 + 1;
+      iVar2 = iVar2 + 1;
       puVar4 = (undefined4 *)((int)local_1030[0] + 1);
       *(char *)local_1030[0] = (char)uVar3;
       local_1030[0] = puVar4;
-    } while (iVar5 <= iVar2);
+    } while (iVar2 <= iVar5);
   }
   func_02048094(local_1030);
   return 1;

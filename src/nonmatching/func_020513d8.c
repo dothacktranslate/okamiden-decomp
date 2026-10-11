@@ -106,9 +106,9 @@ undefined4 func_020513d8(undefined4 param_1,undefined4 param_2,undefined4 param_
   undefined4 local_128;
   undefined4 uStack_24;
 
-  iVar3 = ((unsigned int)0x020514b4);
+  iVar3 = ((unsigned int)0xffffd8ed);
   uStack_24 = param_4;
-  iVar1 = func_02046654(param_1,((unsigned int)0x020514b4),&local_138);
+  iVar1 = func_02046654(param_1,((unsigned int)0xffffd8ed),&local_138);
   uVar2 = func_02046654(param_1,iVar3 + -1,0);
   local_130 = iVar1 + local_138;
   local_134 = iVar1;

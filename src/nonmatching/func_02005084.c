@@ -99,14 +99,14 @@ void func_02005084(void)
   case 0:
     return;
   case 1:
-    puVar1[4] = ((unsigned int)0x0200510c);
+    puVar1[4] = ((unsigned int)0x067e0000);
     return;
   case 2:
     break;
   case 3:
     break;
   case 4:
-    puVar1[4] = ((unsigned int)0x02005110);
+    puVar1[4] = ((unsigned int)0x06820000);
     return;
   case 5:
     return;

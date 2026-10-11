@@ -91,9 +91,9 @@ extern int func_0201e9b4();
 uint func_02033328(int *param_1,int *param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  uint uVar1;
   undefined8 uVar2;
   undefined8 uVar3;
+  uint uVar1;
   longlong lVar4;
   uint uVar5;
 

@@ -105,11 +105,11 @@ void func_0202d480(int param_1,int param_2,int param_3,undefined4 param_4,ushort
   undefined1 auStack_54 [64];
 
   iVar1 = func_0202c774(param_1,param_3 + (uint)param_5 * 0x10000);
-  if (*(int *)(param_1 + ((unsigned int)0x0202d578)) == 0) {
+  if (*(int *)(param_1 + ((unsigned int)0x00000e54)) == 0) {
     iVar3 = 0;
   }
   else {
-    iVar3 = *(int *)(param_1 + ((unsigned int)0x0202d578)) + param_2 * 0x18;
+    iVar3 = *(int *)(param_1 + ((unsigned int)0x00000e54)) + param_2 * 0x18;
   }
   if (param_3 == 0) {
     *(uint *)((*(unsigned int *)0x0202d57c) + 0x124) = *(uint *)((*(unsigned int *)0x0202d57c) + 0x124) | 0x80000000;
@@ -121,18 +121,18 @@ void func_0202d480(int param_1,int param_2,int param_3,undefined4 param_4,ushort
       iVar3 = *(int *)(iVar1 + *(int *)(iVar1 + 0x114) * 4 + 0x4c);
       if ((iVar3 != 0) && (*(int *)(iVar3 + 0x10) != 0)) {
         uVar2 = func_02036bd4(iVar3,auStack_54);
-        *(undefined4 *)(param_1 + ((unsigned int)0x0202d584)) = uVar2;
+        *(undefined4 *)(param_1 + ((unsigned int)0x00000ab8)) = uVar2;
       }
       *(undefined4 *)(param_1 + 0xac0) = 0;
       func_0202c5d4(param_1);
     }
   }
-  if ((*(uint *)(iVar1 + 0x108) & 0xffff) == ((unsigned int)0x0202d588)) {
+  if ((*(uint *)(iVar1 + 0x108) & 0xffff) == ((unsigned int)0x000003e9)) {
     iVar3 = *(int *)(*(int *)(iVar1 + 0x48) + 0xa8);
     *(uint *)(iVar3 + 0x6c0) = *(uint *)(iVar3 + 0x6c0) & 0xfffffffd;
   }
   func_0202d58c(param_1,param_4);
-  if (((*(uint *)(iVar1 + 0x108) & 0xffff) != ((unsigned int)0x0202d588)) && (*(int *)(iVar1 + 0x78) != 0)) {
+  if (((*(uint *)(iVar1 + 0x108) & 0xffff) != ((unsigned int)0x000003e9)) && (*(int *)(iVar1 + 0x78) != 0)) {
     func_0203b220(*(int *)(iVar1 + 0x78),param_6 << 0xc);
     *(uint *)(*(int *)(iVar1 + 0x78) + 0xc) = *(uint *)(*(int *)(iVar1 + 0x78) + 0xc) & 0xfffffffd;
     *(uint *)(*(int *)(iVar1 + 0x78) + 0xc) = *(uint *)(*(int *)(iVar1 + 0x78) + 0xc) | 1;

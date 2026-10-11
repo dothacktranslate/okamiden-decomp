@@ -95,12 +95,12 @@ void func_02003774(void)
   puVar1 = ((unsigned int)0x020037d4);
   do {
   } while (((*(unsigned int *)0x020037d0) & 0x8000000) != 0);
-  (*(unsigned int *)0x020037d0) = (*(unsigned int *)0x020037d0) | 0x8000;
+  (*(unsigned char *)0x020037d0) = (*(unsigned int *)0x020037d0) | 0x8000;
   *puVar1 = *puVar1 | 0x2000;
   *puVar1 = *puVar1 | 0x1000;
   func_02003804();
   puVar2 = ((unsigned int)0x020037dc);
-  (*(unsigned int *)0x020037dc) = ((unsigned int)0x020037d8);
+  (*(unsigned int *)0x020037dc) = ((unsigned int)0x001f0080);
   puVar2[1] = 0;
   puVar2[2] = 0;
   return;

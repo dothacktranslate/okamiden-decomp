@@ -143,13 +143,13 @@ void func_020333ec(undefined4 *param_1,undefined4 param_2,undefined4 *param_3,un
   if (0xfff < local_28) {
     local_28 = 0x1000;
   }
-  if (local_28 < 1) {
+  if (local_28 <= 0) {
     local_28 = 0;
   }
   if (0xfff < local_2c) {
     local_2c = 0x1000;
   }
-  if (local_2c < 1) {
+  if (local_2c <= 0) {
     local_2c = 0;
   }
   local_30 = func_02003170(0x800,local_2c + local_28);

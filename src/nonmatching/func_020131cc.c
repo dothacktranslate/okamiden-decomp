@@ -95,8 +95,8 @@ void func_020131cc(void)
   undefined4 *puVar2;
   undefined4 in_r3;
 
-  puVar2 = ((unsigned int)0x02013210);
   uVar1 = ((unsigned int)0x0201320c);
+  puVar2 = ((unsigned int)0x02013210);
   (*(unsigned int *)0x02013210) = ((unsigned int)0x0201320c);
   func_020098e4(0,uVar1,0x60,puVar2,in_r3);
   func_02007820(uVar1,0x60);

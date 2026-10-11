@@ -84,7 +84,7 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-void func_0200a0fc(undefined4 *param_1,undefined4 param_2,uint *param_3)
+void func_0200a0fc(undefined1 *param_1,undefined4 param_2,uint *param_3)
 
 {
   uint uVar1;

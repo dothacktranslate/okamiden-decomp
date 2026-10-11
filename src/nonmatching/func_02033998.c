@@ -102,7 +102,7 @@ undefined4 func_02033998(int param_1,int param_2,int param_3)
   int iVar4;
 
   iVar1 = func_02033ab4();
-  iVar4 = *(int *)(param_1 + 8) + *(int *)(param_2 + 8);
+  iVar4 = *(short *)(param_1 + 8) + *(int *)(param_2 + 8);
   if (iVar1 <= iVar4) {
     iVar1 = *(int *)(param_3 + 0x28);
     if (iVar1 == 1) {
@@ -111,8 +111,8 @@ undefined4 func_02033998(int param_1,int param_2,int param_3)
     }
     else if (iVar1 != 0) {
       if (iVar1 == 2) {
-        iVar3 = param_3 + 0xc;
         iVar1 = param_3;
+        iVar3 = param_3 + 0xc;
       }
       else {
         iVar1 = param_3 + 0xc;

@@ -93,14 +93,14 @@ bool func_0200ac20(uint param_1)
   uint uVar1;
   bool bVar2;
 
-  func_02008b6c();
-  uVar1 = *(uint *)(((unsigned int)0x0200ac6c) + 4);
-  if (uVar1 < param_1) {
-    bVar2 = 0x7fffffff < param_1 - uVar1;
+  func_02008b6c(param_1);
+  uVar1 = *(unsigned char *)(((unsigned int)0x0200ac6c) + 4);
+  if (param_1 > uVar1) {
+    bVar2 = 0x80000000 <= param_1 - uVar1;
   }
   else {
     bVar2 = true;
-    if (0x7fffffff < uVar1 - param_1) {
+    if (0x80000000 <= uVar1 - param_1) {
       bVar2 = false;
     }
   }

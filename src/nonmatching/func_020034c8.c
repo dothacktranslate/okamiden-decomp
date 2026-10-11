@@ -88,11 +88,11 @@ void func_020034c8(ushort *param_1,int param_2)
 
 {
   if (param_2 != 0) {
-    if (param_2 < 1) {
-      *param_1 = -(ushort)param_2 | 0x8000;
+    if (param_2 <= 0) {
+      *param_1 = -(ushort)0x8000 | param_2;
     }
     else {
-      *param_1 = (ushort)param_2 | 0x4000;
+      *param_1 = (ushort)0x4000 | param_2;
     }
     return;
   }

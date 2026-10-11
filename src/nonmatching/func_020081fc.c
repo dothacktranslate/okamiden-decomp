@@ -94,7 +94,7 @@ void func_020081fc(void)
     return;
   }
   func_02007f24();
-  (*(code *)(*(unsigned int *)0x02008270))(((unsigned int)0x02008268),(*(unsigned int *)0x0200826c));
+  (*(code *)(*(unsigned short *)0x02008270))(((unsigned int)0x02008268),(*(unsigned int *)0x0200826c));
   func_02007f34();
   return;
 }

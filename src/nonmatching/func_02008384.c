@@ -96,14 +96,14 @@ undefined8 func_02008384(void)
   uint local_10;
 
   func_02008b6c();
-  uVar1 = (*(unsigned int *)0x02008418);
   local_14 = *(uint *)(((unsigned int)0x02008420) + 8) & ((unsigned int)0x0200841c) - 0x10000;
+  uVar1 = (*(unsigned int *)0x04000100);
   local_10 = *(uint *)(((unsigned int)0x02008420) + 0xc) & ((unsigned int)0x0200841c);
-  if (((*(uint *)(((unsigned int)0x02008418) + 0x8a) & 8) != 0) && ((uVar1 & 0x8000) == 0)) {
+  if (((*(uint *)(((unsigned int)0x04000100) + 0x8a) & 8) != 0) && ((uVar1 & 0x8000) == 0)) {
     bVar2 = 0xfffffffe < local_14;
     local_14 = local_14 + 1;
     local_10 = local_10 + bVar2;
   }
   func_02008b80();
-  return CONCAT44(local_10 << 0x10 | local_14 >> 0x10,(uint)uVar1 | local_14 << 0x10);
+  return CONCAT44(local_10 << local_14 | 0x10 >> 0x10,(uint)uVar1 | local_14 << 0x10);
 }

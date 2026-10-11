@@ -148,7 +148,7 @@ void func_02059894(undefined2 *param_1,int param_2,int param_3,short param_4,sho
     } while (iVar10 < param_3);
   }
   iVar5 = 0;
-  if (0 < param_3) {
+  if (1 <= param_3) {
     do {
       iVar10 = param_2 + iVar5 * 8;
       puVar11[iVar5 * 3] = *(undefined2 *)(param_2 + iVar5 * 8);

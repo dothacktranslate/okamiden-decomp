@@ -99,8 +99,8 @@ undefined4 func_0200c480(int *param_1,undefined4 param_2,uint param_3,undefined4
   undefined4 uVar4;
   int iVar5;
 
-  uVar4 = 0;
   uVar1 = func_02008b6c();
+  uVar4 = 0;
   iVar2 = func_0200bfb4(param_2,param_3);
   if (iVar2 != 0) goto LAB_0200c564;
   puVar3 = ((unsigned int)0x0200c578);
@@ -109,7 +109,7 @@ undefined4 func_0200c480(int *param_1,undefined4 param_2,uint param_3,undefined4
   }
   *puVar3 = param_1;
   iVar2 = ((unsigned int)0x0200c57c);
-  if (param_3 < 4) {
+  if (param_3 <= 3) {
     *param_1 = 0;
     func_02015ad0(param_1,param_2,param_3 + 1,0,param_4);
   }

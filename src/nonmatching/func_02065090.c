@@ -96,8 +96,8 @@ void func_02065090(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   int iVar5;
   int iVar6;
 
-  iVar2 = func_0201ebe0(*(undefined4 *)(param_1 + 0x30),*(undefined4 *)(param_1 + 0x34));
   iVar1 = ((unsigned int)0x0206513c);
+  iVar2 = func_0201ebe0(*(undefined4 *)(param_1 + 0x30),*(undefined4 *)(param_1 + 0x34));
   iVar4 = ((unsigned int)0x02065138);
   iVar3 = *(int *)(param_1 + 0x50);
   iVar5 = *(int *)(param_1 + 0x40);
@@ -105,7 +105,7 @@ void func_02065090(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   if (0 < iVar3) {
     do {
       *(int *)(iVar1 + iVar6 * 4) =
-           *(int *)(iVar4 + (uint)*(byte *)(param_1 + iVar6 + 0x54) * 8) + iVar2 * iVar5;
+           *(int *)(iVar4 + (uint)*(byte *)(param_1 + (iVar6 + 0x54)) * 8) + iVar5 * iVar2;
       iVar3 = *(int *)(param_1 + 0x50);
       iVar6 = iVar6 + 1;
     } while (iVar6 < iVar3);

@@ -113,7 +113,7 @@ void func_02053b10(undefined4 *param_1,int param_2,undefined4 param_3,undefined4
   *(undefined4 *)(param_2 + 8) = uVar2;
   *(int *)(param_2 + 0x28) = iVar1;
   iVar5 = 0;
-  if (0 < iVar1) {
+  if (1 <= iVar1) {
     do {
       iVar3 = iVar5 * 8;
       iVar5 = iVar5 + 1;

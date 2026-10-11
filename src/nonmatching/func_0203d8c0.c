@@ -93,8 +93,8 @@ extern int func_0205f240();
 bool func_0203d8c0(undefined4 param_1,int param_2,int param_3)
 
 {
-  int iVar1;
   int iVar2;
+  int iVar1;
   uint uVar3;
   uint uVar4;
 

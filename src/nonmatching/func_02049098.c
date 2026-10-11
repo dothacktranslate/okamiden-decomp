@@ -125,7 +125,7 @@ undefined4 func_02049098(undefined4 param_1)
     uVar2 = func_02046444(param_1,1);
     uVar2 = func_02046464(param_1,uVar2);
     uVar3 = func_020467bc(param_1,1);
-    func_02046960(param_1,((unsigned int)0x020491ac),uVar2,uVar3);
+    func_02046960(uVar3,param_1,((unsigned int)0x020491ac),uVar2,uVar3);
     break;
   case 3:
     uVar2 = func_02046654(param_1,1,0);

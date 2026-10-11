@@ -93,8 +93,8 @@ void func_02046898(int param_1,undefined4 param_2,undefined4 param_3)
   undefined4 uVar1;
   undefined4 *puVar2;
 
-  if (*(uint *)(*(int *)(param_1 + 0x10) + 0x40) <= *(uint *)(*(int *)(param_1 + 0x10) + 0x44)) {
-    func_0204e284();
+  if (*(uint *)(*(int *)(0x10 + param_1) + 0x40) <= *(uint *)(*(int *)(0x10 + param_1) + 0x44)) {
+    func_0204e284(param_1);
   }
   puVar2 = *(undefined4 **)(param_1 + 8);
   uVar1 = func_02050028(param_1,param_2,param_3);

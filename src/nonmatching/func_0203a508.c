@@ -115,24 +115,24 @@ void func_0203a508(byte *param_1,int param_2,uint param_3)
     iVar2 = (*puVar3 & 0xffff) * 8;
     if ((*(uint *)(*(unsigned int *)0x0203a5e4) & 0x80000000) != 0) {
       puVar5 = (ushort *)(iVar2 + param_2 + *(int *)(param_2 + 0x14));
-      uVar4 = (puVar3[1] & ((unsigned int)0x0203a5e8)) * ((((unsigned int)0x0203a5e8) << 0xb & puVar3[1]) >> 0xb);
+      uVar10 = (puVar3[1] & ((unsigned int)0x000007ff)) * ((((unsigned int)0x000007ff) << 0xb & puVar3[1]) >> 0xb);
       uVar7 = 1;
       uVar8 = 3;
-      uVar10 = 1;
+      uVar4 = 1;
       local_20 = 0;
       puVar6 = puVar5;
-      if (uVar4 != 0) {
+      if (uVar10 != 0) {
         do {
-          uVar9 = (ushort)uVar10;
+          uVar9 = (ushort)uVar4;
           if ((*param_1 & uVar7) == 0) {
             uVar9 = 0;
           }
           *puVar6 = ~uVar8 & *puVar6 | uVar9;
           uVar8 = uVar8 * 4;
-          uVar10 = (uVar10 & 0x3fff) << 2;
+          uVar4 = (uVar4 & 0x3fff) << 2;
           if (uVar8 == 0) {
             uVar8 = 3;
-            uVar10 = 1;
+            uVar4 = 1;
             puVar6 = puVar6 + 1;
           }
           uVar1 = uVar7 & 0x7f;
@@ -142,9 +142,9 @@ void func_0203a508(byte *param_1,int param_2,uint param_3)
             uVar7 = 1;
           }
           local_20 = local_20 + 1 & 0xffff;
-        } while (local_20 < uVar4);
+        } while (local_20 < uVar10);
       }
-      func_02039090((*(unsigned int *)0x0203a5ec),0,iVar2 + (*(uint *)(param_2 + 8) & 0xffff) * 8,puVar5,uVar4 >> 2);
+      func_02039090((*(unsigned int *)0x0203a5ec),0,iVar2 + (*(uint *)(param_2 + 8) & 0xffff) * 8,puVar5,uVar10 >> 2);
     }
   }
   return;

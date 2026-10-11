@@ -97,7 +97,7 @@ void func_02039cf0(int param_1)
 
   if (*(int *)(param_1 + 0x28) == 0) {
     if (*(char *)(param_1 + 0x30) != '\0') {
-      (*(unsigned int *)0x02039de0) = (*(unsigned int *)0x02039de0) & 0xffffe0ff | 0x1000;
+      (*(unsigned int *)0x04001000) = (*(unsigned int *)0x04001000) & 0xffffe0ff | 0x1000;
     }
     func_02039a58(param_1);
     iVar2 = *(int *)(param_1 + 0x2c) + 0x14;

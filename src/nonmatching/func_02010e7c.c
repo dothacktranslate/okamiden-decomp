@@ -89,9 +89,9 @@ extern int func_02011548();
 undefined4 func_02010e7c(undefined4 *param_1,uint param_2,int param_3)
 
 {
-  int iVar1;
   int iVar2;
   int iVar3;
+  int iVar1;
   int iVar4;
   int *piVar5;
   undefined2 *puVar6;

@@ -101,12 +101,12 @@ int func_02039fe0(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
 
   iVar3 = func_02010f94(0x180,0x60,param_3,param_4,param_4);
   if (((*(unsigned int *)0x0203a040) == 0) &&
-     (iVar3 = func_02032bcc(iVar3 + ((unsigned int)0x0203a044),4,((unsigned int)0x0203a048)), iVar3 != 0)) {
+     (iVar3 = func_02032bcc(iVar3 + ((unsigned int)0x00001f0c),4,((unsigned int)0x0203a048)), iVar3 != 0)) {
     iVar4 = 0;
     if (iVar3 != 0) {
       iVar4 = func_0203a610();
     }
-    iVar2 = ((unsigned int)0x0203a044);
+    iVar2 = ((unsigned int)0x00001f0c);
     piVar1 = ((unsigned int)0x0203a040);
     (*(unsigned int *)0x0203a040) = iVar4;
     *(int *)(iVar4 + iVar2 + -0x84) = iVar3 + iVar2;

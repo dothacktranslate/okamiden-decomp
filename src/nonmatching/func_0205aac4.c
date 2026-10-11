@@ -96,7 +96,7 @@ void func_0205aac4(int param_1)
 
   uVar3 = ((unsigned int)0x0205ab94);
   uVar2 = ((unsigned int)0x0205ab90);
-  uVar1 = ((unsigned int)0x0205ab8c);
+  uVar1 = ((unsigned int)0x46494e46);
   iVar5 = 0;
   puVar4 = (uint *)(param_1 + (uint)*(ushort *)(param_1 + 0xc));
   if (*(short *)(param_1 + 0xe) == 0) {

@@ -97,7 +97,7 @@ void func_0205721c(int *param_1)
     iVar1 = *(int *)(puVar2 + 6) + (uint)*puVar2 * 8 + -8;
   }
   else {
-    iVar1 = *(int *)(puVar2 + 6) + (uint)puVar2[1] * 8;
+    iVar1 = *(unsigned char *)(puVar2 + 6) + (uint)puVar2[1] * 8;
   }
   *param_1 = iVar1;
   param_1[1] = iVar1;

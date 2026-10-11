@@ -92,7 +92,7 @@ undefined4 func_02056174(undefined4 param_1,undefined4 *param_2,uint param_3,und
 {
   undefined4 uVar1;
 
-  if ((uint)param_2[2] < param_3) {
+  if ((uint)param_3 > param_2[2]) {
     if (param_3 < 0x20) {
       param_3 = 0x20;
     }

@@ -90,7 +90,7 @@ int func_0204f4c0(uint param_1)
   int iVar1;
 
   iVar1 = -1;
-  for (; 0xff < param_1; param_1 = param_1 >> 8) {
+  for (; 0x100 <= param_1; param_1 = param_1 >> 8) {
     iVar1 = iVar1 + 8;
   }
   return iVar1 + (uint)*(byte *)(((unsigned int)0x0204f4ec) + param_1);

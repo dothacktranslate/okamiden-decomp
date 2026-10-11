@@ -124,7 +124,7 @@ void func_02040518(int param_1,int param_2,int param_3,int param_4,int param_5)
   int local_28;
   undefined1 auStack_20 [12];
 
-  iVar3 = *(int *)(param_1 + 100);
+  iVar3 = *(unsigned short *)(param_1 + 100);
   iVar2 = (param_3 + 1) * 0xc;
   *(int *)(param_1 + 0x6c) = param_3;
   iVar1 = iVar3 + iVar2;

@@ -168,8 +168,8 @@ void func_0203a104(int param_1,short param_2,short param_3,int param_4)
   int iVar1;
   undefined4 *puVar2;
   int iVar3;
-  int iVar4;
   int iVar5;
+  int iVar4;
 
   iVar5 = *(int *)(param_1 + param_4 * 4 + ((unsigned int)0x0203a21c));
   iVar4 = *(int *)(iVar5 + 8);
@@ -187,11 +187,11 @@ LAB_0203a12a:
     if (iVar3 == -1) goto LAB_0203a12a;
     iVar3 = iVar3 - param_2;
     iVar1 = (int)*(short *)(*(int *)(iVar5 + 4) + iVar1 + 2) - (int)param_3;
-    if ((iVar3 * iVar3 + iVar1 * iVar1 < *(int *)(iVar5 + ((unsigned int)0x0203a21c) + -0x9c)) || (0x17f < iVar4))
+    if ((iVar3 * iVar3 + iVar1 * iVar1 < *(int *)(iVar5 + ((unsigned int)0x0203a21c) + -0x9c)) || (0x180 <= iVar4))
     goto LAB_0203a1d4;
     puVar2 = (undefined4 *)func_02041758((int)param_2,(int)param_3,0x1000);
     iVar4 = *(int *)(iVar5 + 8) * 0xc;
-    iVar1 = iVar5 + 0x610 + iVar4;
+    iVar1 = iVar5 + (0x610 + iVar4);
     *(undefined4 *)(iVar5 + 0x610 + iVar4) = *puVar2;
     *(undefined4 *)(iVar1 + 4) = puVar2[1];
     *(undefined4 *)(iVar1 + 8) = puVar2[2];

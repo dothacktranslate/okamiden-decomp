@@ -95,10 +95,10 @@ void func_0200eda4(void)
   int iVar2;
 
   psVar1 = ((unsigned int)0x0200ee10);
-  if ((*(unsigned int *)0x0200ee10) != 0) {
+  if ((*(unsigned short *)0x0200ee10) != 0) {
     return;
   }
-  (*(unsigned int *)0x0200ee10) = 1;
+  (*(unsigned short *)0x0200ee10) = 1;
   func_0200b434();
   psVar1[8] = 0;
   psVar1[2] = 0;

@@ -188,7 +188,7 @@ uint func_02063198(int param_1,int param_2,int param_3)
     }
     uVar6 = uVar2 + uVar5;
     if (uVar6 <= ((unsigned int *)0x020632b0)[1] - uVar4) {
-      if ((param_2 == 0) || (uVar4 + uVar6 < 0x10001)) {
+      if ((param_2 == 0) || (uVar4 + uVar6 <= 0x10000)) {
         uVar3 = uVar4 + uVar5;
         (*(unsigned int *)0x020632b0) = (*(unsigned int *)0x020632b0) + uVar6;
         bVar1 = true;
@@ -201,7 +201,7 @@ uint func_02063198(int param_1,int param_2,int param_3)
   }
   else {
     uVar4 = ((unsigned int *)0x020632b0)[1];
-    if (uVar2 <= uVar4) {
+    if (uVar4 >= uVar2) {
       if (param_2 == 0) {
         uVar5 = uVar4 - uVar2 & 0xf;
       }
@@ -209,7 +209,7 @@ uint func_02063198(int param_1,int param_2,int param_3)
         uVar5 = uVar4 - uVar2 & 7;
       }
       if (uVar2 + uVar5 <= uVar4 - (*(unsigned int *)0x020632b0)) {
-        if ((param_2 == 0) || (uVar4 < 0x10001)) {
+        if ((param_2 == 0) || (uVar4 <= 0x10000)) {
           bVar1 = true;
           uVar3 = ((unsigned int *)0x020632b0)[1] - (uVar2 + uVar5);
           ((unsigned int *)0x020632b0)[1] = uVar3;

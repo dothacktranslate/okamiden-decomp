@@ -92,7 +92,7 @@ extern int func_02046a74();
 extern int func_02046b4c();
 extern int func_02047028();
 
-void func_02049f64(undefined4 param_1,int *param_2)
+void func_02049f64(undefined4 param_1,undefined1 *param_2)
 
 {
   int iVar1;

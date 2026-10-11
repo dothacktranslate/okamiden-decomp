@@ -97,21 +97,21 @@ void func_02052624(undefined4 param_1,int param_2,int param_3,undefined4 param_4
   sbyte sVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
-  int iVar4;
+  uint iVar4;
   int iVar5;
   int iVar6;
   undefined4 *puVar7;
   undefined4 uVar8;
 
-  iVar5 = *(int *)(param_2 + 0x1c);
   sVar1 = *(sbyte *)(param_2 + 7);
+  iVar5 = *(int *)(param_2 + 0x1c);
   iVar6 = *(int *)(param_2 + 0x10);
   uVar8 = param_4;
   if (iVar5 < param_3) {
     func_020524e4();
   }
   func_0205254c(param_1,param_2,param_4);
-  if (param_3 < iVar5) {
+  if (iVar5 > param_3) {
     *(int *)(param_2 + 0x1c) = param_3;
     for (iVar4 = param_3; iVar4 < iVar5; iVar4 = iVar4 + 1) {
       puVar7 = (undefined4 *)(*(int *)(param_2 + 0xc) + iVar4 * 8);

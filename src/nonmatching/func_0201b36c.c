@@ -90,7 +90,7 @@ void func_0201b36c(undefined2 *param_1,undefined2 *param_2,int param_3)
   byte bVar1;
   undefined2 uVar2;
   undefined2 *puVar3;
-  uint uVar4;
+  int uVar4;
   byte *pbVar5;
   char *pcVar6;
   byte *pbVar7;
@@ -136,7 +136,7 @@ void func_0201b36c(undefined2 *param_1,undefined2 *param_2,int param_3)
   }
   while ((int)uVar15 < iVar10) {
     *(char *)(param_1 + 2) = *(char *)(param_1 + 2) + '\x01';
-    *(undefined1 *)((int)param_1 + uVar15 + 5) = 0;
+    *(undefined1 *)((int)param_1 + (uVar15 + 5)) = 0;
     uVar15 = (uint)*(byte *)(param_1 + 2);
   }
   pbVar7 = (byte *)((int)param_1 + 5);

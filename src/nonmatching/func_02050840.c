@@ -95,7 +95,7 @@ ushort func_02050840(uint param_1,uint param_2)
   if (param_2 < 0x80) {
     uVar3 = (uint)*(byte *)(((unsigned int)0x020509ec) + param_2);
   }
-  if ((int)uVar3 < 0x6d) {
+  if ((int)uVar3 <= 0x6c) {
     if ((int)uVar3 < 0x6c) {
       if ((100 < (int)uVar3) || ((int)uVar3 < 0x61)) goto switchD_020508a0_default;
       if (uVar3 == 0x61) {

@@ -87,7 +87,7 @@ extern int LZCOUNT();
 int func_0204a6a8(int param_1,int param_2)
 
 {
-  int iVar1;
+  uint iVar1;
   uint uVar2;
   bool bVar3;
 

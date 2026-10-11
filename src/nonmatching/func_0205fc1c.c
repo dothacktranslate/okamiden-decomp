@@ -126,7 +126,7 @@ void func_0205fc1c(int *param_1,uint param_2,uint *param_3,int param_4)
       iVar5 = (int)*(short *)((int)piVar6 + uVar8 * 2);
       iVar2 = (int)(short)*piVar6;
     }
-    *param_1 = iVar5 + ((int)((param_2 & ((unsigned int)0x0205fd64)) * (iVar2 - iVar5)) >> 0xc);
+    *param_1 = iVar5 + ((int)((param_2 & ((unsigned int)0x00000fff)) * (iVar2 - iVar5)) >> 0xc);
     return;
   }
   if ((uVar3 & 0xc0000000) != 0) {
@@ -153,7 +153,7 @@ void func_0205fc1c(int *param_1,uint param_2,uint *param_3,int param_4)
     }
   }
   iVar5 = 1;
-  param_2 = param_2 & ((unsigned int)0x0205fd64);
+  param_2 = param_2 & ((unsigned int)0x00000fff);
   iVar2 = 0;
 LAB_0205fd28:
   if ((uVar3 & 0x20000000) == 0) {
@@ -162,7 +162,7 @@ LAB_0205fd28:
   }
   else {
     iVar7 = (int)*(short *)((int)piVar6 + uVar8 * 2);
-    iVar4 = (int)*(short *)((int)piVar6 + uVar8 * 2 + 2);
+    iVar4 = (int)*(short *)((int)piVar6 + (uVar8 * 2 + 2));
   }
   *param_1 = iVar7 * iVar5 + ((int)(param_2 * (iVar4 - iVar7)) >> 0xc) >> iVar2;
   return;

@@ -101,8 +101,8 @@ undefined4 func_0204a230(undefined4 param_1)
 
 {
   int iVar1;
-  undefined4 uVar2;
   undefined4 uVar3;
+  undefined4 uVar2;
   int iVar4;
   undefined8 uVar5;
   undefined1 auStack_20 [8];

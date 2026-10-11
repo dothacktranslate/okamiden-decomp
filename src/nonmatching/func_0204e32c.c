@@ -90,7 +90,7 @@ extern int func_0204e148();
 void func_0204e32c(int param_1)
 
 {
-  char cVar1;
+  unsigned char cVar1;
   int iVar2;
 
   iVar2 = *(int *)(param_1 + 0x10);

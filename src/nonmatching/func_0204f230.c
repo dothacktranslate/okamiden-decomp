@@ -103,8 +103,8 @@ undefined4 func_0204f230(undefined4 param_1)
     func_02046414(param_1,0xffffffff);
     func_02046eb0(param_1,1);
   }
-  iVar1 = ((unsigned int)0x0204f2b0);
-  func_02046414(param_1,((unsigned int)0x0204f2b0));
+  iVar1 = ((unsigned int)0xffffd8ee);
+  func_02046414(param_1,((unsigned int)0xffffd8ee));
   func_02046d44(param_1,iVar1 >> 0xd,((unsigned int)0x0204f2b4));
   return 0;
 }

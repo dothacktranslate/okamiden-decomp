@@ -96,7 +96,7 @@ extern int func_0204b820();
 extern int func_0205411c();
 extern int func_020546b0();
 
-void func_02054d84(undefined4 param_1,undefined4 *param_2,undefined4 param_3,undefined4 param_4,
+void func_02054d84(undefined4 param_1,undefined2 *param_2,undefined4 param_3,undefined4 param_4,
                  undefined4 param_5)
 
 {
@@ -165,8 +165,8 @@ void func_02054d84(undefined4 param_1,undefined4 *param_2,undefined4 param_3,und
       param_2[1] = 3;
       return;
     case 10:
-      uVar7 = func_0201e61c(uVar5);
       uVar8 = func_0201e61c(uVar6);
+      uVar7 = func_0201e61c(uVar5);
       func_0201be58((int)uVar7,(int)((ulonglong)uVar7 >> 0x20),(int)uVar8,
                          (int)((ulonglong)uVar8 >> 0x20));
       uVar5 = func_0201df60();

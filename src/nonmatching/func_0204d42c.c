@@ -100,7 +100,7 @@ bool func_0204d42c(int param_1,int param_2)
 
   bVar4 = false;
   bVar5 = false;
-  if ((*(int *)(param_2 + 8) != 0) && ((*(byte *)(*(int *)(param_2 + 8) + 5) & 3) != 0)) {
+  if ((*(unsigned char *)(param_2 + 8) != 0) && ((*(byte *)(*(int *)(param_2 + 8) + 5) & 3) != 0)) {
     func_0204d1d8();
   }
   iVar1 = *(int *)(param_2 + 8);

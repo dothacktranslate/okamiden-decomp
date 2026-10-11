@@ -114,7 +114,7 @@ int func_02048e3c(undefined4 param_1)
     iVar4 = (iVar2 - iVar1) + 1;
     if ((0 < iVar4) && (iVar3 = func_020460b4(param_1,iVar4), iVar3 != 0)) {
       func_02046b84(param_1,1,iVar1);
-      while (iVar1 < iVar2) {
+      while (iVar2 > iVar1) {
         iVar1 = iVar1 + 1;
         func_02046b84(param_1,1,iVar1);
       }

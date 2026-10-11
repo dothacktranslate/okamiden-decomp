@@ -116,7 +116,7 @@ void func_02010d04(int *param_1,int *param_2,int *param_3,uint *param_4,uint *pa
         }
         iVar9 = iVar9 + uVar6;
         iVar1 = iVar1 + uVar7;
-        if (uVar4 < uVar7) {
+        if (uVar7 > uVar4) {
           uVar4 = uVar7;
         }
       }

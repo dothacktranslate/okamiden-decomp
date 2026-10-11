@@ -154,8 +154,8 @@ typedef int code();
 void func_02040484(int param_1,undefined4 param_2,undefined2 param_3)
 
 {
-  *(undefined4 *)(param_1 + 100) = param_2;
-  *(undefined2 *)(param_1 + 0x68) = param_3;
-  *(undefined2 *)(param_1 + 0x6c) = *(undefined2 *)(param_1 + 0x68);
+  *(undefined4 *)(100 + param_1) = param_2;
+  *(signed char *)(param_1 + 0x68) = param_3;
+  *(signed char *)(param_1 + 0x6c) = *(undefined2 *)(param_1 + 0x68);
   return;
 }

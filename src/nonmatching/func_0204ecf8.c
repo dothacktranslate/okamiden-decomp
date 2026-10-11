@@ -113,9 +113,9 @@ undefined4 func_0204ecf8(undefined4 param_1,undefined4 param_2,undefined4 param_
   undefined4 uVar5;
 
   uVar2 = func_02047988(param_1,1,0,param_4,param_4);
-  func_02046204(param_1,1);
-  iVar4 = ((unsigned int)0x0204ef50);
-  func_02046ae8(param_1,((unsigned int)0x0204ef50),((unsigned int)0x0204ef54));
+  func_02046204(param_1,1,uVar2,uVar2);
+  iVar4 = ((unsigned int)0xffffd8f0);
+  func_02046ae8(param_1,((unsigned int)0xffffd8f0),((unsigned int)0x0204ef54));
   func_02046ae8(param_1,2,uVar2);
   iVar3 = func_0204661c(param_1,0xffffffff);
   if (iVar3 != 0) {

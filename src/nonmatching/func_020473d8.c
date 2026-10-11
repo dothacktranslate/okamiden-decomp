@@ -95,14 +95,14 @@ int func_020473d8(int *param_1,int param_2,int *param_3)
   }
   iVar2 = *param_1;
   if (*(char *)(iVar2 + 6) != '\0') {
-    if ((0 < param_2) && (param_2 <= (int)(uint)*(byte *)(iVar2 + 7))) {
+    if ((1 <= param_2) && (param_2 <= (int)(uint)*(byte *)(iVar2 + 7))) {
       *param_3 = iVar2 + 0x14 + (param_2 + -1) * 8;
       return ((unsigned int)0x02047470);
     }
     return 0;
   }
   iVar1 = *(int *)(iVar2 + 0x10);
-  if ((0 < param_2) && (param_2 <= *(int *)(iVar1 + 0x24))) {
+  if ((1 <= param_2) && (param_2 <= *(int *)(iVar1 + 0x24))) {
     *param_3 = *(int *)(*(int *)(iVar2 + (param_2 + -1) * 4 + 0x14) + 8);
     return *(int *)(*(int *)(iVar1 + 0x1c) + (param_2 + -1) * 4) + 0x10;
   }

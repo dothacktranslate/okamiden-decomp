@@ -90,11 +90,11 @@ extern int func_020314f0();
 extern int func_02031f8c();
 extern int func_02032af0();
 
-undefined4 * func_0203147c(undefined4 *param_1)
+undefined2 * func_0203147c(undefined4 *param_1)
 
 {
   *param_1 = ((unsigned int)0x02031498);
-  func_020314f0();
+  func_020314f0(param_1);
   func_02031f8c(param_1);
   func_02032af0(param_1);
   return param_1;

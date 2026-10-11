@@ -159,11 +159,11 @@ void func_02033ab4(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,u
         lVar13 = (lVar13 >> 0xc) - (lVar14 >> 0xc);
         uVar11 = (uint)lVar13;
         do {
-        } while (((uint)(*(unsigned int *)0x02033cd0) & (uint)((unsigned int)0x02033cd0) >> 0xb) != 0);
-        (*(unsigned int *)0x02033cd0) = 2;
-        piVar1 = ((unsigned int)0x02033cd4);
-        (*(unsigned int *)0x02033cd4) = uVar11 * 0x1000;
-        piVar1[1] = (int)((ulonglong)lVar13 >> 0x20) * 0x1000 | uVar11 >> 0x14;
+        } while (((uint)(*(unsigned int *)0x04000280) & (uint)((unsigned int)0x04000280) >> 0xb) != 0);
+        (*(unsigned int *)0x04000280) = 2;
+        piVar1 = ((unsigned int)0x04000290);
+        (*(unsigned int *)0x04000290) = uVar11 * 0x1000;
+        piVar1[1] = (int)((ulonglong)lVar13 >> 0x20) * uVar11 | 0x1000 >> 0x14;
         *(longlong *)(piVar1 + 2) = lVar12;
         do {
         } while (((uint)*(ushort *)(piVar1 + -4) & (uint)piVar1 >> 0xb) != 0);

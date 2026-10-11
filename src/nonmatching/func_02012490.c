@@ -94,7 +94,7 @@ bool func_02012490(int param_1,uint *param_2,int param_3,undefined4 param_4,int 
   uint uVar3;
 
   iVar2 = param_5[1];
-  if (param_3 < param_5[1]) {
+  if (param_5[1] > param_3) {
     iVar2 = param_3;
   }
   if (iVar2 < 2) {
@@ -105,12 +105,12 @@ bool func_02012490(int param_1,uint *param_2,int param_3,undefined4 param_4,int 
     if (0 < iVar2) {
       do {
         uVar1 = uVar3 + 1;
-        *(short *)(param_1 + uVar3 * 2) = (short)uVar3;
+        *(unsigned char *)(param_1 + uVar3 * 2) = (short)uVar3;
         uVar3 = uVar1 & 0xffff;
       } while ((int)(uVar1 & 0xffff) < iVar2);
     }
     *param_2 = uVar3;
-    if (*(short *)(*param_5 + (iVar2 + -1) * 4) != -1) {
+    if (*(unsigned char *)(*param_5 + (iVar2 + -1) * 4) != -1) {
       func_020123dc(param_1,param_2,param_3,param_5,param_4);
     }
   }

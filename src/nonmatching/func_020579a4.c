@@ -98,7 +98,7 @@ extern int func_02005048();
 extern int func_02007820();
 extern int func_02057998();
 
-void func_020579a4(undefined4 *param_1,undefined4 param_2,int param_3,undefined4 *param_4)
+void func_020579a4(undefined1 *param_1,undefined4 param_2,int param_3,undefined4 *param_4)
 
 {
   undefined4 uVar1;

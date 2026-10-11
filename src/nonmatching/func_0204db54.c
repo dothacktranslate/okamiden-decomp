@@ -90,9 +90,9 @@ extern int func_0204dafc();
 void func_0204db54(int param_1)
 
 {
-  int iVar1;
   int iVar2;
   int iVar3;
+  int iVar1;
 
   if (param_1 != 0) {
     do {

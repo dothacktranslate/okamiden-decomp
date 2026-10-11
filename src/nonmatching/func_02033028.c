@@ -96,7 +96,7 @@ extern int func_02013cac();
 undefined4 func_02033028(uint *param_1,int param_2,undefined4 param_3,int param_4,char param_5)
 
 {
-  char cVar1;
+  unsigned char cVar1;
   int iVar2;
   uint uVar3;
   undefined4 uVar4;

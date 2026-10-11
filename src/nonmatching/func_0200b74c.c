@@ -97,7 +97,7 @@ void func_0200b74c(undefined4 *param_1,undefined4 param_2)
   undefined4 *puVar3;
   undefined4 uVar4;
   int iVar5;
-  int iVar6;
+  uint iVar6;
   uint uVar7;
 
   uVar4 = func_02008b6c();

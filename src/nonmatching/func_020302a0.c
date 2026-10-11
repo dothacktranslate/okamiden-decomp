@@ -99,8 +99,8 @@ void func_020302a0(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   sVar2 = *(short *)(param_2 + 10);
   *(short *)(param_1 + 4) = sVar1;
   *(short *)(param_1 + 6) = sVar2;
-  func_02030194(param_1 + 8,param_2 + 0xc,(int)sVar2,(int)sVar1,param_4);
-  func_02030194(param_1 + 0xc,param_2 + 0x10);
+  func_020301b8(param_1 + 8,param_2 + 0xc,(int)sVar2,(int)sVar1,param_4);
+  func_020301b8(param_1 + 0xc,param_2 + 0x10);
   func_02030194(param_1 + 0x10,param_2 + 0x14);
   func_02030194(param_1 + 0x14,param_2 + 0x18);
   uVar3 = *(ushort *)(param_2 + 0x1e);

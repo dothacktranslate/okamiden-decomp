@@ -104,14 +104,14 @@ undefined4 func_02042bc4(int param_1,int param_2,undefined4 param_3,undefined4 p
   uint uVar6;
   undefined4 local_18;
 
-  param_2 = param_2 * 0xbc;
   local_18 = param_4;
+  param_2 = param_2 * 0xbc;
   iVar1 = func_0203c3bc((*(unsigned int *)0x02042c80),*(undefined4 *)(*(int *)(param_1 + 4) + param_2 + 0x78));
   if ((iVar1 != 0) && (*(int *)(iVar1 + 0x1c) != 6)) {
     func_0203c024();
     local_18 = *(undefined4 *)(iVar1 + 0x10);
     iVar1 = *(int *)(param_1 + 4) + 0x84;
-    *(uint *)(iVar1 + param_2) = ((unsigned int)0x02042c84) & *(uint *)(iVar1 + param_2);
+    *(uint *)(iVar1 + param_2) = ((unsigned int)0xfffffeff) & *(uint *)(iVar1 + param_2);
     *(undefined4 *)(((unsigned int)0x02042c88) + 4) = 0;
     uVar2 = func_020433dc(&local_18,*(undefined4 *)(*(int *)(param_1 + 4) + param_2 + 0x7c));
     *(undefined4 *)(*(int *)(param_1 + 4) + param_2 + 0x74) = uVar2;

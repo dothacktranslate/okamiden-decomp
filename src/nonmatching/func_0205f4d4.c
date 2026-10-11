@@ -92,8 +92,8 @@ void func_0205f4d4(uint *param_1)
   uint uVar3;
   int iVar4;
 
-  iVar4 = ((int *)(*(unsigned int *)0x0205f564))[0x35];
   uVar3 = (uint)*(byte *)(*(int *)(*(unsigned int *)0x0205f564) + 1);
+  iVar4 = ((int *)(*(unsigned int *)0x0205f564))[0x35];
   if (iVar4 != 0) {
     if (uVar3 < *(byte *)(iVar4 + 1)) {
       piVar1 = (int *)(*(ushort *)(iVar4 + (uint)*(ushort *)(iVar4 + 6)) * uVar3 +

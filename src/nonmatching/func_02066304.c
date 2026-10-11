@@ -109,7 +109,7 @@ int func_02066304(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
     return 0;
   }
   iVar3 = func_02065a48(param_1,iVar2,iVar1,0);
-  if (iVar1 == iVar3) {
+  if (iVar3 == iVar1) {
     func_02007804(iVar2,iVar1);
     return iVar2;
   }

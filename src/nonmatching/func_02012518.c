@@ -90,7 +90,7 @@ bool func_02012518(int param_1,int *param_2,int param_3,int param_4,undefined4 *
 
 {
   undefined2 uVar1;
-  int iVar2;
+  uint iVar2;
   uint uVar3;
   uint uVar4;
   int iVar5;
@@ -104,8 +104,8 @@ bool func_02012518(int param_1,int *param_2,int param_3,int param_4,undefined4 *
   short local_28;
   short local_26;
 
-  iVar10 = 0;
   iVar5 = 0;
+  iVar10 = 0;
   psVar7 = (short *)*param_5;
   iVar8 = param_5[1];
   iVar6 = 0;
@@ -129,7 +129,7 @@ bool func_02012518(int param_1,int *param_2,int param_3,int param_4,undefined4 *
 LAB_0201263c:
           *param_2 = iVar10;
           if (!bVar11) {
-            if (0 < iVar10) {
+            if (1 <= iVar10) {
               uVar3 = (uint)*(ushort *)(param_1 + (iVar10 + -1) * 2);
               uVar4 = iVar6 - 1;
               bVar11 = SBORROW4(uVar4,uVar3);

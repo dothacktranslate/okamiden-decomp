@@ -87,7 +87,7 @@ extern int LZCOUNT();
 void func_02018db8(uint *param_1,uint *param_2)
 
 {
-  char cVar1;
+  unsigned char cVar1;
   uint *puVar2;
   uint uVar3;
   int iVar4;
@@ -110,8 +110,8 @@ void func_02018db8(uint *param_1,uint *param_2)
           return;
         }
       }
-      param_1 = (uint *)((int)param_1 + 1);
       param_2 = (uint *)((int)param_2 + 1);
+      param_1 = (uint *)((int)param_1 + 1);
     }
     uVar3 = ((unsigned int)0x02018e7c);
     iVar4 = ((unsigned int)0x02018e78);

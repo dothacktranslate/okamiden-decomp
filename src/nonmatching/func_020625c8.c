@@ -107,7 +107,7 @@ void func_020625c8(int *param_1,int param_2,undefined4 param_3,undefined4 param_
   sVar3 = *(short *)(param_2 + 0x22);
   *param_1 = (int)sVar3;
   param_1[5] = (int)sVar3;
-  iVar7 = func_02002964();
+  iVar7 = func_02002964(param_1);
   param_1[1] = *(short *)(param_2 + 0x20) * iVar7 >> 0xc;
   func_020029f4(iVar8,iVar1);
   uVar2 = *(ushort *)(param_2 + 0x2e);
@@ -123,7 +123,7 @@ void func_020625c8(int *param_1,int param_2,undefined4 param_3,undefined4 param_
                  ((int)((ulonglong)lVar5 >> 0x20) -
                  ((int)((ulonglong)lVar6 >> 0x20) + (uint)(uVar9 < uVar10))) * 0x1000000) +
                  (uint)*(ushort *)(param_2 + 0x2c) * 0x8000;
-  param_1[0xd] = ((uint)lVar4 >> 8 | (int)((ulonglong)lVar4 >> 0x20) << 0x18) + (uint)uVar2 * 0x8000
+  param_1[0xd] = ((uint)lVar4 >> 8 | (int)((ulonglong)lVar4 >> 0x20) << 0x18) + (uint)0x8000 * uVar2
   ;
   iVar8 = func_02002964();
   param_1[4] = -(int)*(short *)(param_2 + 0x20) * iVar8 >> 0xc;

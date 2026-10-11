@@ -87,7 +87,7 @@ extern int LZCOUNT();
 void func_0205678c(ushort *param_1)
 
 {
-  int iVar1;
+  uint iVar1;
   int iVar2;
   ushort *puVar3;
   int iVar4;
@@ -109,7 +109,7 @@ void func_0205678c(ushort *param_1)
       iVar2 = iVar6 + uVar8 * 0x10;
       *(int *)(iVar2 + 0xc) = iVar4 + (int)param_1 + *(int *)(iVar2 + 0xc);
       uVar9 = 0;
-      if (*(short *)(iVar6 + uVar8 * 0x10) != 0) {
+      if (*(short *)(uVar8 + iVar6 * 0x10) != 0) {
         do {
           uVar7 = uVar9 + 1;
           *(int *)(*(int *)(iVar2 + 0xc) + uVar9 * 8) =

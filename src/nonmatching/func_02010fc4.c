@@ -96,10 +96,10 @@ int func_02010fc4(int *param_1,int param_2,int param_3,int param_4)
   int iVar7;
 
   iVar7 = param_3 * 4 + param_4 * 4;
-  iVar6 = iVar7 + param_4 * 4;
+  iVar6 = param_4 + iVar7 * 4;
   iVar2 = param_3 + 1;
-  iVar1 = iVar6 + iVar2 * 4;
-  iVar5 = iVar1 + param_4 * 4;
+  iVar1 = iVar2 + iVar6 * 4;
+  iVar5 = param_4 + iVar1 * 4;
   iVar4 = iVar5 + param_4 * 8;
   iVar3 = iVar4 + iVar2 * 2;
   iVar2 = iVar3 + iVar2 * 2;

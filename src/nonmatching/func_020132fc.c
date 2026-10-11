@@ -92,13 +92,13 @@ extern int func_02013288();
 void func_020132fc(void)
 
 {
-  int iVar1;
+  uint iVar1;
   undefined4 uVar2;
 
   iVar1 = ((unsigned int)0x02013344);
   do {
     uVar2 = func_02008b6c();
-    while ((*(uint *)(iVar1 + 4) & 8) == 0) {
+    while ((*(unsigned short *)(4 + iVar1) & 8) == 0) {
       func_02007000(0);
     }
     func_02008b80(uVar2);

@@ -100,23 +100,23 @@ int func_0204c760(int param_1,undefined4 param_2,undefined4 param_3,int param_4,
   undefined4 uVar6;
 
   uVar6 = *(undefined4 *)(param_1 + 100);
-  iVar5 = *(int *)(param_1 + 0x14) - *(int *)(param_1 + 0x28);
+  iVar3 = *(int *)(param_1 + 0x14) - *(int *)(param_1 + 0x28);
   *(undefined4 *)(param_1 + 100) = param_5;
   uVar2 = *(undefined2 *)(param_1 + 0x34);
   uVar1 = *(undefined1 *)(param_1 + 0x39);
-  iVar3 = func_0204bb90();
-  if (iVar3 != 0) {
+  iVar5 = func_0204bb90();
+  if (iVar5 != 0) {
     iVar4 = *(int *)(param_1 + 0x20);
     func_0204cf68(param_1,iVar4 + param_4);
-    func_0204ba20(param_1,iVar3,iVar4 + param_4);
+    func_0204ba20(param_1,iVar5,iVar4 + param_4);
     *(undefined2 *)(param_1 + 0x34) = uVar2;
-    iVar4 = *(int *)(param_1 + 0x28) + iVar5;
+    iVar4 = *(int *)(param_1 + 0x28) + iVar3;
     *(int *)(param_1 + 0x14) = iVar4;
-    *(undefined4 *)(param_1 + 0xc) = *(undefined4 *)(*(int *)(param_1 + 0x28) + iVar5);
+    *(undefined4 *)(param_1 + 0xc) = *(undefined4 *)(*(int *)(param_1 + 0x28) + iVar3);
     *(undefined4 *)(param_1 + 0x18) = *(undefined4 *)(iVar4 + 0xc);
     *(undefined1 *)(param_1 + 0x39) = uVar1;
     func_0204baa0(param_1);
   }
   *(undefined4 *)(param_1 + 100) = uVar6;
-  return iVar3;
+  return iVar5;
 }

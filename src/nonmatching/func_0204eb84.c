@@ -97,9 +97,9 @@ extern int func_0204eaa0();
 undefined4 func_0204eb84(undefined4 param_1)
 
 {
-  int iVar1;
   int iVar2;
   undefined4 uVar3;
+  int iVar1;
   int iVar4;
 
   iVar1 = func_02047988(param_1,1,0);

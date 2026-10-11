@@ -94,8 +94,8 @@ void func_02001a7c(int *param_1,int *param_2,int *param_3)
   int iVar5;
   int iVar6;
 
-  iVar4 = param_1[1];
   iVar6 = *param_1;
+  iVar4 = param_1[1];
   iVar5 = param_1[2];
   lVar1 = (longlong)param_2[6] * (longlong)iVar5 +
           (longlong)*param_2 * (longlong)iVar6 + (longlong)iVar4 * (longlong)param_2[3];
@@ -103,8 +103,8 @@ void func_02001a7c(int *param_1,int *param_2,int *param_3)
           (longlong)param_2[1] * (longlong)iVar6 + (longlong)iVar4 * (longlong)param_2[4];
   lVar3 = (longlong)param_2[8] * (longlong)iVar5 +
           (longlong)param_2[2] * (longlong)iVar6 + (longlong)iVar4 * (longlong)param_2[5];
-  iVar4 = param_2[10];
   iVar5 = param_2[0xb];
+  iVar4 = param_2[10];
   *param_3 = ((uint)lVar1 >> 0xc | (int)((ulonglong)lVar1 >> 0x20) << 0x14) + param_2[9];
   param_3[1] = ((uint)lVar2 >> 0xc | (int)((ulonglong)lVar2 >> 0x20) << 0x14) + iVar4;
   param_3[2] = ((uint)lVar3 >> 0xc | (int)((ulonglong)lVar3 >> 0x20) << 0x14) + iVar5;

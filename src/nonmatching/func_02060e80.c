@@ -115,8 +115,8 @@ uint func_02060e80(int param_1,uint param_2,uint param_3,uint param_4)
             if (!bVar3) {
               param_4 = uVar1 + 1;
             }
-            return (*(short *)(param_1 + uVar1 * 4 + 2) * 3 +
-                    (int)*(short *)(param_1 + param_4 * 4 + 2) >> 2) << 0x10 |
+            return (*(short *)(param_1 + (uVar1 * 4 + 2)) * 3 +
+                    (int)*(short *)(param_1 + (param_4 * 4 + 2)) >> 2) << 0x10 |
                    (*(short *)(param_1 + uVar1 * 4) * 3 + (int)*(short *)(param_1 + param_4 * 4) &
                    0x3ffffU) >> 2;
           }
@@ -130,7 +130,7 @@ uint func_02060e80(int param_1,uint param_2,uint param_3,uint param_4)
       param_4 = param_4 >> 1;
     }
     else {
-      if (param_4 <= uVar1) {
+      if (uVar1 >= param_4) {
         param_4 = param_4 >> 1;
 LAB_02060f58:
         iVar2 = param_1 + param_4 * 4;

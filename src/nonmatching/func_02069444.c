@@ -89,9 +89,9 @@ extern int LZCOUNT();
 void func_02069444(undefined4 *param_1)
 
 {
-  uint *puVar1;
-  uint uVar2;
+  short *puVar1;
   uint uVar3;
+  uint uVar2;
 
   puVar1 = (uint *)*param_1;
   uVar2 = *puVar1 + 1;

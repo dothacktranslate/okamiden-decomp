@@ -102,23 +102,23 @@ void func_02021fdc(undefined4 param_1,int param_2)
   local_1c = 0;
   func_020099f0(param_2,0,0xf20);
   func_02009b68(((unsigned int)0x02022058),param_2,0x10);
-  iVar1 = ((unsigned int)0x0202205c) + 4;
-  iVar2 = ((unsigned int)0x0202205c) + 8;
-  iVar3 = ((unsigned int)0x0202205c) + 0xc;
+  iVar1 = ((unsigned int)0x00000c34) + 4;
+  iVar2 = ((unsigned int)0x00000c34) + 8;
+  iVar3 = ((unsigned int)0x00000c34) + 0xc;
   do {
     iVar5 = 0;
     do {
-      iVar4 = param_2 + local_1c * 0x78 + iVar5 * 0x3c;
+      iVar4 = (param_2 + local_1c * 0x78) + iVar5 * 0x3c;
       iVar5 = iVar5 + 1;
-      *(undefined4 *)(iVar4 + ((unsigned int)0x0202205c)) = 600;
+      *(undefined4 *)(iVar4 + ((unsigned int)0x00000c34)) = 600;
       *(undefined4 *)(iVar4 + iVar1) = 600;
       *(undefined4 *)(iVar4 + iVar2) = 600;
       *(undefined4 *)(iVar4 + iVar3) = 600;
-      iVar4 = ((unsigned int)0x02022060);
+      iVar4 = ((unsigned int)0x00000dd2);
     } while (iVar5 < 2);
     local_1c = local_1c + 1;
   } while (local_1c < 3);
-  *(undefined2 *)(param_2 + ((unsigned int)0x02022060)) = 3;
+  *(undefined2 *)(param_2 + ((unsigned int)0x00000dd2)) = 3;
   iVar1 = 0;
   do {
     iVar2 = param_2 + iVar1;

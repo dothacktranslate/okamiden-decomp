@@ -90,7 +90,7 @@ void func_02036a70(int param_1)
   ushort uVar1;
   uint uVar2;
 
-  uVar2 = ((uint)((*(unsigned int *)0x02036b34) | (*(unsigned int *)0x02036b38)) ^ (uint)((unsigned int)0x02036b38) >> 0xc) &
+  uVar2 = ((uint)((*(unsigned short *)0x04000130) | (*(unsigned short *)0x02036b38)) ^ (uint)((unsigned int)0x02036b38) >> 0xc) &
           (uint)((unsigned int)0x02036b38) >> 0xc;
   uVar2 = ~((int)(uVar2 & 0x20) >> 1) & ~((uVar2 & 0x40) << 1) & uVar2 & 0xffff;
   uVar1 = (ushort)uVar2;

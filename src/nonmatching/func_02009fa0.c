@@ -84,7 +84,7 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-void func_02009fa0(uint *param_1,byte *param_2)
+void func_02009fa0(undefined2 *param_1,byte *param_2)
 
 {
   bool bVar1;
@@ -113,13 +113,13 @@ void func_02009fa0(uint *param_1,byte *param_2)
     }
     bVar13 = (byte)*puVar6;
     puVar5 = (uint *)((int)puVar6 + 1);
-    iVar10 = 8;
-    while (puVar6 = puVar5, 0 < iVar10) {
+    iVar3 = 8;
+    while (puVar6 = puVar5, 0 < iVar3) {
       if ((bVar13 & 0x80) == 0) {
         puVar6 = (uint *)((int)puVar5 + 1);
         *param_2 = (byte)*puVar5;
         param_2 = param_2 + 1;
-        iVar3 = -1;
+        iVar10 = -1;
       }
       else {
         bVar2 = (byte)*puVar5;
@@ -146,7 +146,7 @@ void func_02009fa0(uint *param_1,byte *param_2)
         iVar12 = iVar12 + ((int)uVar11 >> 4);
         puVar6 = (uint *)((int)puVar7 + 2);
         bVar2 = *(byte *)((int)puVar7 + 1);
-        iVar3 = -iVar12;
+        iVar10 = -iVar12;
         do {
           *param_2 = param_2[-(((uint)bVar2 | (uVar11 & 0xf) << 8) + 1)];
           param_2 = param_2 + 1;
@@ -155,11 +155,11 @@ void func_02009fa0(uint *param_1,byte *param_2)
           iVar12 = iVar9;
         } while (iVar9 != 0 && bVar1);
       }
-      uVar8 = uVar8 + iVar3;
+      uVar8 = uVar8 + iVar10;
       if ((int)uVar8 < 1) break;
       bVar13 = bVar13 << 1;
       puVar5 = puVar6;
-      iVar10 = iVar10 + -1;
+      iVar3 = iVar3 + -1;
     }
   } while( true );
 }

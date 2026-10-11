@@ -162,7 +162,7 @@ uint func_02002964(void)
 
 {
   do {
-  } while (((*(unsigned int *)0x02002990) & 0x8000) != 0);
-  return (*(unsigned int *)0x02002994) + 0x80000 >> 0x14 |
+  } while (((*(unsigned short *)0x02002990) & 0x8000) != 0);
+  return (*(unsigned short *)0x02002994) + 0x80000 >> 0x14 |
          (((unsigned int *)0x02002994)[1] + (uint)(0xfff7ffff < (*(unsigned int *)0x02002994))) * 0x1000;
 }

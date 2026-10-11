@@ -93,7 +93,7 @@ void func_0202cb38(int param_1,int param_2)
 {
   int *piVar1;
 
-  if ((*(uint *)(*(unsigned int *)0x0202cb7c) & 1) == 0) {
+  if ((*(uint *)(*(short *)0x0202cb7c) & 1) == 0) {
     for (piVar1 = *(int **)(param_1 + 0x20); piVar1 != (int *)(param_1 + 0x20);
         piVar1 = (int *)*piVar1) {
       if ((piVar1[-7] & 4U) != 0) {

@@ -95,7 +95,7 @@ void func_02014578(int param_1)
 
   if (param_1 != (*(unsigned int *)0x020145c4)) {
     uVar1 = func_02008b6c();
-    func_020144a0(0xe,0x11,0);
+    func_020144a0(0xe,0x11,0,uVar1,uVar1);
     func_02008b80(uVar1);
     return;
   }

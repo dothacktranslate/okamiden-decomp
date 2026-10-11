@@ -95,8 +95,8 @@ void func_02054408(int param_1,int *param_2,undefined4 param_3,undefined4 *param
 
 {
   undefined4 *puVar1;
-  int iVar2;
   int iVar3;
+  int iVar2;
   int *piVar4;
   undefined4 *puVar5;
 
@@ -134,8 +134,8 @@ LAB_02054494:
       func_020542c0(param_1,param_4,piVar4,param_2,param_3,param_4,puVar5);
       return;
     }
-    iVar2 = iVar2 + 1;
     param_2 = piVar4;
+    iVar2 = iVar2 + 1;
     if (99 < iVar2) {
       func_0204b9e0(param_1,((unsigned int)0x02054534));
       return;

@@ -89,7 +89,7 @@ extern int func_02015c38();
 int func_02015ad0(uint param_1,char *param_2,int param_3)
 
 {
-  int iVar1;
+  uint iVar1;
   int iVar2;
   char *pcVar3;
   int iVar4;
@@ -110,7 +110,7 @@ int func_02015ad0(uint param_1,char *param_2,int param_3)
     }
     uVar5 = ((unsigned int)0x02015bd0);
     while ((iVar4 < param_3 + -4 &&
-           (uVar6 = *(uint *)(param_2 + iVar4),
+           (uVar6 = *(unsigned short *)(param_2 + iVar4),
            ((uVar6 & uVar5) + uVar5 | uVar6 | uVar5) == 0xffffffff))) {
       *(uint *)(param_1 + iVar4) = uVar6;
       iVar4 = iVar4 + 4;

@@ -90,8 +90,8 @@ undefined4 func_020063f8(uint param_1)
   int iVar1;
   undefined4 *puVar2;
 
-  iVar1 = 0;
   puVar2 = ((unsigned int)0x0200647c);
+  iVar1 = 0;
   while ((param_1 & 1) == 0) {
     iVar1 = iVar1 + 1;
     param_1 = param_1 >> 1;

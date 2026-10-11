@@ -93,7 +93,7 @@ void func_02047154(int param_1,undefined4 param_2,int param_3)
   int iVar2;
   bool bVar3;
 
-  uVar1 = *(uint *)(*(int *)(param_1 + 8) + -4);
+  uVar1 = *(uint *)(*(unsigned char *)(param_1 + 8) + -4);
   bVar3 = uVar1 == 6;
   iVar2 = param_3;
   if (bVar3) {

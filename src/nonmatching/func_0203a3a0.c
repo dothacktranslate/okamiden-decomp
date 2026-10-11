@@ -107,8 +107,8 @@ void func_0203a3a0(byte *param_1,uint param_2,int param_3,int param_4,ushort par
   uint local_28;
   uint local_24;
 
-  local_24 = 1;
   local_28 = 0;
+  local_24 = 1;
   if (param_2 != 0) {
     param_3 = param_3 * 0x1000;
     local_50 = param_1;
@@ -126,7 +126,7 @@ void func_0203a3a0(byte *param_1,uint param_2,int param_3,int param_4,ushort par
           uVar5 = (uVar5 & 0xfffffff) >> 0xc;
           iVar9 = 0;
           uVar10 = 0;
-          if (uVar2 < uVar3) {
+          if (uVar3 > uVar2) {
             uVar8 = uVar2;
             do {
               if (uVar4 < uVar5) {

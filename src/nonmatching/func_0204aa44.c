@@ -100,8 +100,8 @@ void func_0204aa44(int param_1,int param_2,undefined4 param_3,undefined4 param_4
     *(undefined4 *)(*(int *)(param_1 + 8) + 4) = 0;
   }
   else {
-    iVar4 = 0;
     uVar1 = func_02052828(param_1,0,0,param_4,param_4);
+    iVar4 = 0;
     iVar3 = *(int *)(*(int *)(param_2 + 0x10) + 0x14);
     if (0 < *(int *)(*(int *)(param_2 + 0x10) + 0x30)) {
       do {

@@ -93,7 +93,7 @@ undefined8 func_0201d028(uint param_1,uint param_2)
 
 {
   bool bVar1;
-  int iVar2;
+  uint iVar2;
   uint uVar3;
   uint uVar4;
   uint uVar5;
@@ -102,7 +102,7 @@ undefined8 func_0201d028(uint param_1,uint param_2)
   undefined8 uVar8;
 
   iVar2 = ((unsigned int)0x0201d1e8);
-  uVar4 = (((unsigned int)0x0201d1d8) & (int)param_2 >> 0x14) + (0x400 - ((unsigned int)0x0201d1d8));
+  uVar4 = (((unsigned int)0x000007ff) & (int)param_2 >> 0x14) + (0x400 - ((unsigned int)0x000007ff));
   if ((int)uVar4 < 0x14) {
     uVar7 = uVar4 == 0;
     uVar6 = 1;
@@ -148,7 +148,7 @@ undefined8 func_0201d028(uint param_1,uint param_2)
       uVar8 = func_0201d518(param_1,param_2,param_1,param_2);
       return uVar8;
     }
-    uVar3 = ((unsigned int)0x0201d1d8) - 0x800;
+    uVar3 = ((unsigned int)0x000007ff) - 0x800;
     uVar5 = uVar4 - 0x14 & 0xff;
     uVar6 = uVar5 == 0 && 0x32 < uVar4 || uVar5 != 0 && (bool)((byte)(uVar3 >> uVar5 - 1) & 1);
     uVar7 = (param_1 & uVar3 >> uVar5) == 0;

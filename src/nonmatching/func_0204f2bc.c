@@ -115,7 +115,7 @@ undefined4 func_0204f2bc(undefined4 param_1)
   iVar1 = ((unsigned int)0x0204f468);
   iVar2 = *(int *)(((unsigned int)0x0204f464) + 4);
   while (iVar2 != 0) {
-    func_020469a8(param_1,*(undefined4 *)(iVar1 + iVar3 * 4),0);
+    func_020469a8(param_1,*(undefined4 *)(iVar3 + iVar1 * 4),0);
     func_02046e2c(param_1,0xfffffffe,iVar3 + 1);
     iVar3 = iVar3 + 1;
     iVar2 = *(int *)(iVar1 + iVar3 * 4);

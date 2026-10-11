@@ -117,7 +117,7 @@ undefined4 * func_02038a08(undefined4 *param_1,undefined4 param_2,uint param_3,i
       iVar2 = uVar3 * 0x1c + param_4;
       if (iVar2 != 0) {
         *(undefined2 *)(iVar2 + 10) = 0;
-        *(undefined4 *)(iVar2 + 0xc) = 0;
+        *(unsigned short *)(iVar2 + 0xc) = 0;
         *(undefined4 *)(iVar2 + 0x10) = 0;
         *(undefined4 *)(iVar2 + 0x14) = 0;
         *(undefined4 *)(iVar2 + 0x18) = 0;

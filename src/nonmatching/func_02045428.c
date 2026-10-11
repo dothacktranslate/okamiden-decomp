@@ -40,7 +40,7 @@ void func_02045428(int param_1)
   undefined1 auStack_34 [16];
 
   local_4c = 0;
-  (*(unsigned int *)0x020455f4) = 0;
+  (*(unsigned short *)0x020455f4) = 0;
   iVar7 = param_1 + 0x20;
   iVar1 = *(int *)(param_1 + 0x460);
   if (*(short *)(param_1 + 0x1c) != 0) {

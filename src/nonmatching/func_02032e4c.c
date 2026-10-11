@@ -96,7 +96,7 @@ extern int func_02013cac();
 undefined4 func_02032e4c(uint *param_1,int param_2,undefined4 param_3,int param_4,char param_5)
 
 {
-  char cVar1;
+  unsigned char cVar1;
   int iVar2;
   uint uVar3;
   uint uVar4;
@@ -106,7 +106,7 @@ undefined4 func_02032e4c(uint *param_1,int param_2,undefined4 param_3,int param_
     iVar2 = func_02013cac();
     uVar4 = ~(iVar2 - 1U) & param_2 + (iVar2 - 1U);
     uVar3 = func_02013c84();
-    if (uVar4 + param_4 < uVar3) {
+    if (uVar4 + uVar3 > param_4) {
       *param_1 = *param_1 & 0xfffffffd;
       func_02013020((short)param_1[3]);
       if (param_5 != '\x01') {

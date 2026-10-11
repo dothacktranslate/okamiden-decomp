@@ -106,7 +106,7 @@ uint func_02054894(int param_1,int param_2)
     }
     iVar2 = func_02018d9c(param_1);
     if (iVar2 == iVar4) break;
-    if (iVar2 == iVar3) {
+    if (iVar3 == iVar2) {
       return 0xffffffff;
     }
     iVar2 = iVar2 + 1;

@@ -105,9 +105,9 @@ void func_02062b34(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   iVar1 = (uint)*(ushort *)(param_2 + 0x2e) << 0xc;
   func_020029f4(iVar1,iVar7,(uint)*(ushort *)(param_2 + 0x2c),param_4,param_4);
   sVar3 = *(short *)(param_2 + 0x22);
-  iVar6 = *(int *)(param_2 + 0x18);
-  sVar4 = *(short *)(param_2 + 0x20);
+  iVar6 = *(unsigned short *)(param_2 + 0x18);
   iVar9 = *(int *)(param_2 + 0x1c);
+  sVar4 = *(short *)(param_2 + 0x20);
   lVar5 = (longlong)iVar6 * (longlong)(int)sVar3;
   *param_1 = (uint)lVar5 >> 0xc | (int)((ulonglong)lVar5 >> 0x20) << 0x14;
   lVar5 = (longlong)iVar9 * (longlong)(int)sVar3;
@@ -120,7 +120,7 @@ void func_02062b34(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   param_1[1] = (int)(((uint)lVar5 >> 0xc | (int)((ulonglong)lVar5 >> 0x20) << 0x14) * iVar6) >> 0xc;
   func_020029f4(iVar7,iVar1);
   uVar2 = *(ushort *)(param_2 + 0x2e);
-  param_1[0xc] = *(ushort *)(param_2 + 0x2c) * uVar10 * 0x10;
+  param_1[0xc] = *(ushort *)(param_2 + 0x2c) * 0x10 * uVar10;
   param_1[0xd] = -(uint)uVar2 * (uVar8 - 0x1000) * 0x10;
   iVar7 = func_02002964();
   param_1[4] = (int)(-uVar10 * iVar7) >> 0xc;

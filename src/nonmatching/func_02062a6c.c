@@ -93,10 +93,10 @@ void func_02062a6c(int *param_1,int param_2)
   longlong lVar4;
   int iVar5;
 
-  iVar5 = *(int *)(param_2 + 0x1c);
+  iVar5 = *(unsigned char *)(param_2 + 0x1c);
   lVar3 = (longlong)-*(int *)(param_2 + 0x28) * (longlong)iVar5;
-  lVar4 = (longlong)*(int *)(param_2 + 0x24) * (longlong)*(int *)(param_2 + 0x18);
   uVar1 = *(ushort *)(param_2 + 0x2e);
+  lVar4 = (longlong)*(int *)(param_2 + 0x24) * (longlong)*(int *)(param_2 + 0x18);
   uVar2 = *(ushort *)(param_2 + 0x2c);
   *param_1 = *(int *)(param_2 + 0x18);
   param_1[5] = iVar5;

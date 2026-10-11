@@ -117,8 +117,8 @@ undefined4 func_0206837c(int param_1,undefined4 param_2,undefined4 param_3,undef
     if (iVar1 == 0) {
       return 0;
     }
-    iVar2 = func_02065b88(iVar1);
     iVar3 = func_02065b9c();
+    iVar2 = func_02065b88(iVar1);
     if (iVar2 == 0) {
       return 0;
     }

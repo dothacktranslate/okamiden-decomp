@@ -95,7 +95,7 @@ uint func_02058b44(uint param_1)
 
   uVar2 = param_1;
   uVar3 = 1;
-  if ((int)param_1 < 1) {
+  if ((int)param_1 <= 0) {
     return 0;
   }
   do {
@@ -106,8 +106,8 @@ uint func_02058b44(uint param_1)
       uVar2 = uVar1;
       uVar3 = uVar5;
     } while (param_1 <= uVar1 * uVar1);
-    uVar2 = uVar4;
     uVar3 = uVar1;
+    uVar2 = uVar4;
   } while (uVar1 != uVar5);
   return uVar5;
 }

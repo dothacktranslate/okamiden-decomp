@@ -107,12 +107,12 @@ void func_02061598(uint *param_1,undefined4 param_2,undefined4 param_3,undefined
   if ((*param_1 & 2) == 0) {
     puVar3 = param_1 + 10;
     if (bVar5) {
-      uVar2 = 0x19;
       uVar4 = 0xc;
+      uVar2 = 0x19;
     }
     else {
-      uVar2 = 0x1a;
       uVar4 = 9;
+      uVar2 = 0x1a;
     }
   }
   else {

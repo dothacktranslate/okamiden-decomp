@@ -94,7 +94,7 @@ void func_02062f5c(void)
 
   iVar1 = ((unsigned int)0x02062fd8);
   iVar2 = 0;
-  uVar4 = (uint)(*(unsigned int *)0x02062fd4);
+  uVar4 = (uint)(*(unsigned short *)0x02062fd4);
   if (1 < uVar4) {
     uVar4 = uVar4 + 1;
   }
@@ -116,6 +116,6 @@ void func_02062f5c(void)
       *puVar3 = 0;
       puVar3[1] = 0x10000;
     }
-  } while (iVar2 < 5);
+  } while (iVar2 <= 4);
   return;
 }

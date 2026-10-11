@@ -90,7 +90,7 @@ bool func_020509f4(uint param_1,byte *param_2,byte *param_3)
 
 {
   byte *pbVar1;
-  int iVar2;
+  uint iVar2;
   uint uVar3;
   bool bVar4;
   bool bVar5;

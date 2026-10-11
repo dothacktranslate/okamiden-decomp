@@ -91,12 +91,12 @@ void func_02046204(int param_1,int param_2)
   int iVar2;
 
   if (param_2 < 0) {
-    *(int *)(param_1 + 8) = *(int *)(param_1 + 8) + (param_2 + 1) * 8;
+    *(unsigned short *)(param_1 + 8) = *(int *)(param_1 + 8) + (param_2 + 1) * 8;
     return;
   }
   iVar2 = *(int *)(param_1 + 0xc);
   uVar1 = *(uint *)(param_1 + 8);
-  if (uVar1 < (uint)(iVar2 + param_2 * 8)) {
+  if (uVar1 < (uint)(param_2 + iVar2 * 8)) {
     do {
       *(int *)(param_1 + 8) = *(int *)(param_1 + 8) + 8;
       *(undefined4 *)(uVar1 + 4) = 0;

@@ -94,8 +94,8 @@ int func_0205117c(int param_1,int param_2,undefined4 param_3)
   int iVar2;
   int iVar3;
 
-  iVar3 = *(int *)(param_1 + 0xc);
   bVar1 = false;
+  iVar3 = *(int *)(param_1 + 0xc);
   if ((iVar3 == 0) && (param_2 != 0)) {
     bVar1 = true;
   }

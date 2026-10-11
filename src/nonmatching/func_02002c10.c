@@ -175,7 +175,7 @@ void func_02002c10(uint *param_1,int *param_2)
   lVar1 = (longlong)(int)param_1[2] * (longlong)(int)param_1[2] +
           (longlong)(int)*param_1 * (longlong)(int)*param_1 +
           (longlong)(int)param_1[1] * (longlong)(int)param_1[1];
-  (*(unsigned int *)0x02002d18) = 2;
+  (*(unsigned short *)0x02002d18) = 2;
   *(undefined4 *)(puVar3 + 8) = 0;
   *(undefined4 *)(puVar3 + 10) = 0x1000000;
   *(longlong *)(puVar3 + 0xc) = lVar1;
@@ -186,8 +186,8 @@ void func_02002c10(uint *param_1,int *param_2)
   uVar8 = (*(unsigned int *)0x02002d1c);
   do {
   } while ((((unsigned int *)0x02002d1c)[-0xd] & 0x8000) != 0);
-  uVar7 = *param_1;
   uVar6 = param_1[1];
+  uVar7 = *param_1;
   uVar9 = param_1[2];
   uVar2 = (ulonglong)uVar8 * (ulonglong)(*(unsigned int *)0x02002d20);
   iVar5 = (int)uVar2;

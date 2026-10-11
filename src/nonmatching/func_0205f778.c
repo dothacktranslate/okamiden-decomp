@@ -100,7 +100,7 @@ void func_0205f778(int param_1,int param_2,uint param_3,uint *param_4)
 {
   bool bVar1;
   uint uVar2;
-  int iVar3;
+  uint iVar3;
   uint uVar4;
   uint *puVar5;
   uint *puVar6;

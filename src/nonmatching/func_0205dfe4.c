@@ -88,6 +88,6 @@ void func_0205dfe4(void)
 
 {
   do {
-  } while (*(int *)(((unsigned int)0x0205dff8) + 4) != 0);
+  } while (*(int *)(((unsigned int)0x01fffb80) + 4) != 0);
   return;
 }

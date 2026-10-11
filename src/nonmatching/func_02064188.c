@@ -102,9 +102,9 @@ void func_02064188(void)
   func_02066fe4(0);
   func_0206529c();
   func_0200a698(0);
-  func_0200a428(((unsigned int)0x020641dc),((unsigned int)0x020641dc),((unsigned int)0x020641dc),0);
+  func_0200a428(((unsigned int)0x0000ffff),((unsigned int)0x0000ffff),((unsigned int)0x0000ffff),0);
   uVar1 = func_0200abf4();
-  func_0200a9ec(1);
+  func_0200a9ec(1,uVar1);
   func_0200ab88(uVar1);
   return;
 }

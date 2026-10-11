@@ -28,7 +28,7 @@ void func_02044a24(undefined4 param_1,uint param_2,undefined4 param_3,undefined4
   undefined4 uStack_28;
 
   if ((param_2 & 0x100) == 0) {
-    iVar2 = ((unsigned int)0x02044ae0);
+    iVar2 = ((unsigned int)0x00010001);
     if ((param_2 & 0x8000) == 0) {
       iVar2 = 0;
     }
@@ -51,6 +51,6 @@ void func_02044a24(undefined4 param_1,uint param_2,undefined4 param_3,undefined4
     }
     uVar3 = uVar3 * 2;
     iVar2 = iVar2 + 1;
-  } while (uVar3 < 0x4001);
+  } while (uVar3 <= 0x4000);
   return;
 }

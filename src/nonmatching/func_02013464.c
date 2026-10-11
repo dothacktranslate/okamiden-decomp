@@ -92,7 +92,7 @@ extern int func_02007844();
 void func_02013464(uint param_1,uint param_2,uint param_3)
 
 {
-  if (param_3 <= param_2) {
+  if (param_2 >= param_3) {
     func_020077b4();
     return;
   }
@@ -103,6 +103,6 @@ void func_02013464(uint param_1,uint param_2,uint param_3)
     param_2 = param_2 + 0x20;
   }
   func_020077e8(param_1,param_2);
-  func_02007844();
+  func_02007844(param_1);
   return;
 }

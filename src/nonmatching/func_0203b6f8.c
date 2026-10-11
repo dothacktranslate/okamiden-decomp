@@ -102,8 +102,8 @@ void func_0203b6f8(int param_1)
   }
   uVar1 = (uint)*(ushort *)(param_1 + 0x1c);
   if (uVar1 != 0) {
-    iVar3 = *(int *)(param_1 + 0x28);
     uVar2 = (*(uint *)(param_1 + 0x18) & 0xffff) * 8;
+    iVar3 = *(int *)(param_1 + 0x28);
     func_02039090((*(unsigned int *)0x0203b770),0,uVar2,param_1 + *(int *)(param_1 + 0x24),uVar1 << 3);
     func_02039090((*(unsigned int *)0x0203b770),0,
                  ((uVar2 & ((unsigned int)0x0203b774)) >> 1) + ((unsigned int)0x0203b774) + 1 + ((uVar2 & 0x40000) >> 2),

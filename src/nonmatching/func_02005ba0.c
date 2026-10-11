@@ -166,16 +166,16 @@ void func_02005ba0(int param_1)
   ushort *puVar1;
 
   puVar1 = ((unsigned int)0x02005c04);
-  (*(unsigned int *)0x02005c04) = ~(ushort)param_1 & ((*(unsigned int *)0x02005c04) | ((unsigned int *)0x02005c04)[10]);
+  (*(unsigned short *)0x02005c04) = ~(ushort)param_1 & ((*(unsigned int *)0x02005c04) | ((unsigned int *)0x02005c04)[10]);
   puVar1[10] = (ushort)param_1;
   if (param_1 != 0) {
     if (param_1 == 8) {
-      (*(unsigned int *)0x02005c0c) = 0x84;
+      (*(unsigned int *)0x04000243) = 0x84;
     }
     else if (param_1 == 0x100) {
       (*(unsigned int *)0x02005c08) = 0x82;
     }
   }
-  func_0200522c((*(unsigned int *)0x02005c04));
+  func_0200522c((*(unsigned short *)0x02005c04));
   return;
 }

@@ -101,6 +101,6 @@ undefined4 func_0204eaa0(undefined4 param_1,int param_2,undefined4 param_3,undef
   }
   uVar2 = func_02047d64(param_1,param_2,((unsigned int)0x0204eb04),((unsigned int)0x0204eb08));
   uVar2 = func_02046960(param_1,((unsigned int)0x0204eb0c),uVar2);
-  func_0204626c(param_1,0xfffffffe);
+  func_0204626c(uVar2,param_1,0xfffffffe);
   return uVar2;
 }

@@ -98,7 +98,7 @@ undefined4 func_02046c1c(int param_1)
     iVar2 = *(int *)(*piVar1 + 8);
   }
   else {
-    iVar2 = *(int *)(*(int *)(param_1 + 0x10) + iVar2 * 4 + 0x7c);
+    iVar2 = *(int *)(*(int *)(param_1 + 0x10) + iVar2 * 0x7c + 4);
   }
   if (iVar2 == 0) {
     return 0;

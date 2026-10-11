@@ -111,8 +111,8 @@ undefined4 func_0202a8f0(undefined4 param_1,undefined4 param_2,undefined4 param_
   iVar8 = iVar7 + 0x14;
   uVar6 = (*(unsigned int *)0x0202ab14);
   uStack_18 = param_4;
-  uVar2 = func_020465d8(param_1,2);
   iVar3 = func_020465d8(param_1,1);
+  uVar2 = func_020465d8(param_1,2);
   switch(iVar3 - ((unsigned int)0x0202ab18)) {
   case 0:
     iVar3 = func_020465d8(param_1,3);
@@ -140,7 +140,7 @@ undefined4 func_0202a8f0(undefined4 param_1,undefined4 param_2,undefined4 param_
     uVar2 = 0xffffffff;
     iVar3 = 0;
     do {
-      piVar5 = *(int **)(iVar8 + iVar3 * 0x10 + 0x5c);
+      piVar5 = *(int **)(iVar3 + iVar8 * 0x10 + 0x5c);
       if ((piVar5 != (int *)0x0) && (iVar7 = (**(code **)(*piVar5 + 0x28))(), iVar7 == 0)) {
         uVar2 = 0;
         break;

@@ -106,7 +106,7 @@ undefined4 func_02022244(int param_1)
   undefined1 auStack_414 [1024];
 
   iVar1 = ((unsigned int)0x020223a0);
-  iVar2 = func_02032e4c((*(unsigned int *)0x02022398),((unsigned int)0x0202239c),local_42c,0x18,1);
+  iVar2 = func_02032e4c((*(unsigned int *)0x02022398),((unsigned int)0x00001e60),local_42c,0x18,1);
   if (iVar2 != 0) {
     uVar4 = 0;
     do {
@@ -118,8 +118,8 @@ undefined4 func_02022244(int param_1)
     }
   }
   func_02015440(auStack_414,((unsigned int)0x020223a8));
-  iVar6 = 0;
   iVar5 = 0x18;
+  iVar6 = 0;
   iVar3 = func_02032e4c((*(unsigned int *)0x02022398),0,((unsigned int)0x020223ac),0x18,1);
   iVar2 = ((unsigned int)0x020223ac);
   if (iVar3 == 0) {

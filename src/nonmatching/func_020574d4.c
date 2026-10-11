@@ -90,8 +90,8 @@ undefined4 func_020574d4(int *param_1,undefined2 *param_2,uint param_3)
   undefined2 uVar1;
   undefined2 uVar2;
   bool bVar3;
-  uint uVar4;
   int iVar5;
+  int uVar4;
   int iVar6;
   int iVar7;
 
@@ -115,7 +115,7 @@ undefined4 func_020574d4(int *param_1,undefined2 *param_2,uint param_3)
     do {
       uVar1 = param_2[1];
       uVar2 = param_2[2];
-      iVar7 = iVar6 + iVar5 * 8;
+      iVar7 = iVar5 + iVar6 * 8;
       *(undefined2 *)(iVar6 + iVar5 * 8) = *param_2;
       *(undefined2 *)(iVar7 + 2) = uVar1;
       *(undefined2 *)(iVar7 + 4) = uVar2;

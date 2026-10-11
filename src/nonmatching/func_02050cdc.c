@@ -98,7 +98,7 @@ void func_02050cdc(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   *(int *)(iVar2 + 0x14) = param_2 - *(int *)(iVar2 + 0x10);
   iVar2 = func_02050d78(param_1,param_2,param_3,iVar2,param_4);
   if (iVar2 == 0) {
-    *(undefined4 *)(param_1 + iVar1 * 8 + 0x14) = 0xffffffff;
+    *(undefined4 *)(param_1 + (iVar1 * 8 + 0x14)) = 0xffffffff;
   }
   return;
 }

@@ -87,8 +87,8 @@ extern int LZCOUNT();
 int func_02006acc(int *param_1,int param_2)
 
 {
-  int iVar1;
   int iVar2;
+  int iVar1;
   int iVar3;
 
   iVar2 = *param_1;
@@ -97,7 +97,7 @@ int func_02006acc(int *param_1,int param_2)
     if (iVar1 == 0) {
       return 0;
     }
-    iVar2 = *(int *)(iVar1 + 0x80);
+    iVar2 = *(unsigned short *)(iVar1 + 0x80);
   } while (iVar1 != param_2);
   iVar3 = *(int *)(iVar1 + 0x7c);
   if (*param_1 == iVar1) {

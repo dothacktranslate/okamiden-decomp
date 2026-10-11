@@ -106,6 +106,6 @@ void func_0205642c(undefined4 *param_1,undefined4 param_2,undefined4 param_3,und
     *piVar1 = 1;
   }
   uVar2 = func_02056404(param_1);
-  func_02056208(uVar2,param_1);
+  func_02056208(uVar2,param_1,uVar2,uVar2);
   return;
 }

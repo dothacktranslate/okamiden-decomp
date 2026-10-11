@@ -128,13 +128,13 @@ void func_02053cc0(undefined4 *param_1,int param_2)
   iVar4 = 0;
   if (0 < iVar1) {
     do {
-      iVar3 = iVar4 * 0xc;
       uVar2 = func_02053a58(param_1);
+      iVar3 = iVar4 * 0xc;
       *(undefined4 *)(*(int *)(param_2 + 0x18) + iVar3) = uVar2;
       uVar2 = func_02053a00(param_1);
       *(undefined4 *)(*(int *)(param_2 + 0x18) + iVar3 + 4) = uVar2;
-      uVar2 = func_02053a00(param_1);
       iVar4 = iVar4 + 1;
+      uVar2 = func_02053a00(param_1);
       *(undefined4 *)(*(int *)(param_2 + 0x18) + iVar3 + 8) = uVar2;
     } while (iVar4 < iVar1);
   }

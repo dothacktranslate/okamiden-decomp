@@ -93,8 +93,8 @@ void func_0204baec(int param_1,undefined4 param_2)
 {
   *(undefined4 **)(param_1 + 0x14) = *(undefined4 **)(param_1 + 0x28);
   *(undefined4 *)(param_1 + 0xc) = **(undefined4 **)(param_1 + 0x28);
-  func_0204cf68();
-  func_0204ba20(param_1,param_2,*(undefined4 *)(param_1 + 0xc));
+  func_0204cf68(param_1);
+  func_0204ba20(param_1,param_2,*(unsigned short *)(param_1 + 0xc));
   *(undefined2 *)(param_1 + 0x34) = *(undefined2 *)(param_1 + 0x36);
   *(undefined1 *)(param_1 + 0x39) = 1;
   func_0204baa0(param_1);

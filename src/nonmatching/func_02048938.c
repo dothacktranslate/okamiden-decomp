@@ -115,7 +115,7 @@ undefined4 func_02048938(undefined4 param_1)
   }
   if (iVar1 != 5) {
     uVar2 = func_0201e6a0();
-    func_0204684c(param_1,uVar2);
+    func_0204684c(param_1,uVar2,uVar2);
     return 1;
   }
   func_02046a48(param_1,uVar2);

@@ -94,8 +94,8 @@ void func_02013218(undefined4 param_1,undefined4 param_2)
   int *piVar2;
   int *piVar3;
 
-  uVar1 = func_02008b6c();
   piVar3 = (int *)(*(unsigned int *)0x02013280);
+  uVar1 = func_02008b6c();
   piVar2 = ((unsigned int)0x02013284);
   while (piVar3 != (int *)0x0) {
     if ((code *)piVar3[2] != (code *)0x0) {

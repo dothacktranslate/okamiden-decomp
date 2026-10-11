@@ -100,7 +100,7 @@ undefined4 func_0201aa50(int param_1,int param_2)
     do {
       pcVar3 = pcVar3 + 1;
       if ((char *)(iVar2 + (uint)*(byte *)(param_1 + 4)) <= pcVar3) {
-        if ((*(byte *)(param_1 + param_2 + 4) & 1) == 0) {
+        if ((*(byte *)((param_2 + param_1) + 4) & 1) == 0) {
           uVar1 = 0xffffffff;
         }
         else {

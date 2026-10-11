@@ -93,8 +93,8 @@ void func_02061968(int *param_1,int param_2)
   longlong lVar4;
   int iVar5;
 
-  iVar5 = *(int *)(param_2 + 0x1c);
   lVar3 = (longlong)*(int *)(param_2 + 0x18) * (longlong)*(int *)(param_2 + 0x24);
+  iVar5 = *(int *)(param_2 + 0x1c);
   lVar4 = (longlong)iVar5 * (longlong)*(int *)(param_2 + 0x28);
   uVar1 = *(ushort *)(param_2 + 0x2e);
   uVar2 = *(ushort *)(param_2 + 0x2c);

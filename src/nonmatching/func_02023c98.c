@@ -97,7 +97,7 @@ void func_02023c98(int param_1)
   uint uVar5;
 
   uVar5 = 0;
-  iVar4 = ((unsigned int)0x02023dcc) + -0x1000;
+  iVar4 = ((unsigned int)0x0400106c) + -0x1000;
   do {
     iVar2 = param_1 + uVar5 * 2;
     switch(*(undefined2 *)(iVar2 + 0x34)) {
@@ -116,7 +116,7 @@ void func_02023c98(int param_1)
       iVar3 = param_1 + uVar5 * 4;
       iVar1 = *(int *)(iVar3 + 0x3c) + *(int *)(iVar3 + 0x44);
       *(int *)(iVar3 + 0x3c) = iVar1;
-      if (iVar1 < 1) {
+      if (iVar1 <= 0) {
         *(undefined4 *)(iVar3 + 0x3c) = 0;
         *(undefined2 *)(iVar2 + 0x34) = 0;
       }
@@ -148,11 +148,11 @@ LAB_02023cec:
     unaff_r7 = 1;
 switchD_02023ccc_default:
     if (unaff_r7 != 0) {
-      iVar2 = ((unsigned int)0x02023dcc);
+      iVar2 = ((unsigned int)0x0400106c);
       if (uVar5 != 1) {
         iVar2 = iVar4;
       }
-      func_020034c8(iVar2,*(int *)(param_1 + uVar5 * 4 + 0x3c) >> 0xc);
+      func_020034c8(iVar2,*(int *)(param_1 + (uVar5 * 4 + 0x3c)) >> 0xc);
     }
     uVar5 = uVar5 + 1 & 0xffff;
     if (1 < uVar5) {

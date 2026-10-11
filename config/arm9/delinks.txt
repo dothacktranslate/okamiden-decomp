@@ -2137,3 +2137,11 @@ src/main/func_02066680.c:
 src/main/func_02068b80.c:
     complete
     .text       start:0x02068b80 end:0x02068ba4
+
+src/main/func_02013030.c:
+    complete
+    .text       start:0x02013030 end:0x02013058
+
+src/main/func_02034b58.c:
+    complete
+    .text       start:0x02034b58 end:0x02034b96

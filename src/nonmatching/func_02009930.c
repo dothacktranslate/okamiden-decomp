@@ -101,8 +101,8 @@ void func_02009930(undefined4 *param_1,undefined4 *param_2,uint param_3)
   iVar9 = (int)param_2 + param_3;
   iVar10 = (int)param_2 + (param_3 & 0xffffffe0);
   for (; (int)param_2 < iVar10; param_2 = param_2 + 8) {
-    uVar1 = *param_1;
     uVar2 = param_1[1];
+    uVar1 = *param_1;
     uVar3 = param_1[2];
     uVar4 = param_1[3];
     uVar5 = param_1[4];

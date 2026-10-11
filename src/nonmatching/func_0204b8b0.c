@@ -109,7 +109,7 @@ void func_0204b8b0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     uStack_18 = param_4;
     uVar1 = func_0204a704(param_1,iVar3);
     iVar3 = func_0204a804(iVar3);
-    func_0204f91c(auStack_54,*(int *)(iVar3 + 0x20) + 0x10,0x3c);
+    func_0204f91c(iVar3,auStack_54,*(int *)(iVar3 + 0x20) + 0x10,0x3c);
     func_0204f8f4(param_1,((unsigned int)0x0204b930),auStack_54,uVar1);
     return;
   }

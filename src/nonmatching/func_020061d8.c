@@ -96,9 +96,9 @@ void func_020061d8(int param_1,uint param_2)
 
   func_02008b6c();
   if (param_1 != 0) {
-    *(uint *)(((unsigned int)0x02006244) + 0x3ff8) = *(uint *)(((unsigned int)0x02006244) + 0x3ff8) & ~param_2;
+    *(uint *)(((unsigned int)0x02006244) + 0x3ff8) = *(unsigned short *)(((unsigned int)0x02006244) + 0x3ff8) & ~param_2;
   }
-  func_02008b80();
+  func_02008b80(param_1);
   uVar1 = ((unsigned int)0x02006248);
   if ((param_2 & *(uint *)(((unsigned int)0x02006244) + 0x3ff8)) != 0) {
     return;

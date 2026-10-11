@@ -94,7 +94,7 @@ void func_02059cb0(int param_1,int param_2,int param_3,int param_4,int param_5,i
   int iVar2;
   int iVar3;
 
-  if (param_6 < 0x21) {
+  if (param_6 <= 0x20) {
     func_02059d60(param_1 + (param_6 * param_5 + param_4) * 2,param_2,param_3,param_6,param_7,param_8
                 );
     return;
@@ -103,7 +103,7 @@ void func_02059cb0(int param_1,int param_2,int param_3,int param_4,int param_5,i
   if (param_5 < param_3) {
     do {
       iVar1 = param_5;
-      if (0x1f < param_5) {
+      if (0x20 <= param_5) {
         iVar1 = param_5 + 0x20;
       }
       for (iVar3 = param_4; iVar3 < param_4 + param_2; iVar3 = iVar3 + 1) {
@@ -111,7 +111,7 @@ void func_02059cb0(int param_1,int param_2,int param_3,int param_4,int param_5,i
         if (0x1f < iVar3) {
           iVar2 = iVar3 + 0x3e0;
         }
-        *(ushort *)(param_1 + iVar1 * 0x40 + iVar2 * 2) =
+        *(unsigned char *)(param_1 + iVar1 * 0x40 + iVar2 * 2) =
              (ushort)param_7 | (ushort)((uint)(param_8 << 0x1c) >> 0x10);
         param_7 = param_7 + 1;
       }

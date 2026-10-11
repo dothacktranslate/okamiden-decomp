@@ -110,7 +110,7 @@ LAB_0205bb34:
         piVar1 = (int *)0x0;
       }
       else {
-        piVar1 = (int *)(*(ushort *)(iVar2 + (uint)*(ushort *)(param_1 + 0xe)) * uVar3 +
+        piVar1 = (int *)(*(ushort *)(iVar2 + (uint)*(unsigned char *)(param_1 + 0xe)) * uVar3 +
                         iVar2 + (uint)*(ushort *)(param_1 + 0xe) + 4);
       }
       if (piVar1 == (int *)0x0) goto LAB_0205bb34;

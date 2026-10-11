@@ -98,7 +98,7 @@ void func_020143e8(void)
   undefined2 uVar1;
   int iVar2;
 
-  *(undefined4 *)(((unsigned int)0x02014458) + 0xc) = ((unsigned int)0x02014454);
+  *(unsigned short *)(((unsigned int)0x02014458) + 0xc) = ((unsigned int)0x02014454);
   iVar2 = func_02008c24();
   if (iVar2 != 1) {
     return;

@@ -118,7 +118,7 @@ void func_0203b7a4(uint *param_1,int param_2,uint *param_3,int param_4)
               uVar1 = uVar4 + 1;
             }
             if ((uVar3 & 0x20000000) != 0) {
-              *param_1 = *(short *)(param_4 + uVar1 * 2) * 3 + (int)*(short *)(param_4 + uVar4 * 2)
+              *param_1 = *(short *)(uVar1 + param_4 * 2) * 3 + (int)*(short *)(param_4 + uVar4 * 2)
                          >> 2;
               return;
             }
@@ -142,11 +142,11 @@ void func_0203b7a4(uint *param_1,int param_2,uint *param_3,int param_4)
         uVar4 = uVar4 >> 1;
 LAB_0203b84a:
         if ((uVar3 & 0x20000000) != 0) {
-          *param_1 = (int)*(short *)(param_4 + uVar4 * 2) + (int)*(short *)(param_4 + uVar4 * 2 + 2)
+          *param_1 = (int)*(short *)(param_4 + uVar4 * 2) + (int)*(short *)(param_4 + (uVar4 * 2 + 2))
                      >> 1;
           return;
         }
-        *param_1 = (*(int *)(param_4 + uVar4 * 4) >> 1) + (*(int *)(param_4 + uVar4 * 4 + 4) >> 1);
+        *param_1 = (*(int *)(param_4 + uVar4 * 4) >> 1) + (*(int *)(param_4 + (uVar4 * 4 + 4)) >> 1);
         return;
       }
       uVar4 = (uVar1 >> 0x11) + 1;

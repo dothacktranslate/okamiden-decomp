@@ -96,7 +96,7 @@ void func_0200829c(void)
   undefined4 uVar3;
 
   psVar1 = ((unsigned int)0x02008300);
-  if ((*(unsigned int *)0x02008300) != 0) {
+  if ((*(unsigned short *)0x02008300) != 0) {
     return;
   }
   (*(unsigned int *)0x02008300) = 1;

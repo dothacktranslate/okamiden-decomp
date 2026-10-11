@@ -114,13 +114,13 @@ undefined4 func_020491b0(undefined4 param_1)
       func_02046bc4(param_1,0,0);
       func_02046414(param_1,0xffffffff);
       func_02046a48(param_1,1);
-      func_02046dac(param_1,((unsigned int)0x020492ac));
+      func_02046dac(param_1,((unsigned int)0xffffd8ed));
     }
     else {
       iVar2 = func_02046c1c(param_1,1);
-      iVar1 = ((unsigned int)0x020492ac);
+      iVar1 = ((unsigned int)0xffffd8ed);
       if (iVar2 != 0) {
-        func_02046b4c(param_1,((unsigned int)0x020492ac));
+        func_02046b4c(param_1,((unsigned int)0xffffd8ed));
         iVar3 = func_0204661c(param_1,iVar1 >> 0xe);
         func_02046204(param_1,iVar1 >> 0xd);
       }

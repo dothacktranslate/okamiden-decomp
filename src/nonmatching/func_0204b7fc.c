@@ -87,11 +87,11 @@ extern int LZCOUNT();
 void func_0204b7fc(undefined4 param_1,int param_2,int param_3)
 
 {
-  if (*(int *)(param_2 + 4) - 3U < 2) {
+  if (*(int *)(4 + param_2) - 3U < 2) {
     param_2 = param_3;
   }
                     /* WARNING: Could not recover jumptable at 0x0204b814. Too many branches */
                     /* WARNING: Treating indirect jump as call */
-  ((code *)(*(unsigned int *)0x0204b818))(param_1,param_2,((unsigned int)0x0204b81c));
+  ((code *)(*(unsigned short *)0x0204b818))(param_1,param_2,((unsigned int)0x0204b81c));
   return;
 }

@@ -88,7 +88,7 @@ void func_0205facc(uint *param_1,int param_2,uint *param_3,int param_4)
 
 {
   longlong lVar1;
-  uint uVar2;
+  int uVar2;
   uint uVar3;
   uint uVar4;
 
@@ -113,7 +113,7 @@ void func_0205facc(uint *param_1,int param_2,uint *param_3,int param_4)
               uVar2 = uVar3 + 1;
             }
             if ((uVar4 & 0x20000000) == 0) {
-              uVar4 = *(uint *)(param_4 + uVar2 * 4);
+              uVar4 = *(unsigned short *)(param_4 + uVar2 * 4);
               lVar1 = (ulonglong)uVar4 * 3;
               uVar2 = (uint)lVar1;
               uVar3 = *(uint *)(param_4 + uVar3 * 4);
@@ -140,7 +140,7 @@ void func_0205facc(uint *param_1,int param_2,uint *param_3,int param_4)
         uVar3 = uVar3 >> 1;
 LAB_0205fbc0:
         if ((uVar4 & 0x20000000) == 0) {
-          uVar3 = (*(int *)(param_4 + uVar3 * 4 + 4) >> 1) + (*(int *)(param_4 + uVar3 * 4) >> 1);
+          uVar3 = (*(int *)(param_4 + (uVar3 * 4 + 4)) >> 1) + (*(int *)(param_4 + uVar3 * 4) >> 1);
         }
         else {
           uVar3 = (int)*(short *)(param_4 + uVar3 * 2) + (int)*(short *)(param_4 + uVar3 * 2 + 2) >>

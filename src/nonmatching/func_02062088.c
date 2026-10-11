@@ -109,10 +109,10 @@ void func_02062088(uint *param_1)
 
   local_48 = ((unsigned int)0x02062234);
   if ((*param_1 & 8) != 0) {
-    local_48 = ((unsigned int)0x02062230);
+    local_48 = ((unsigned int)0x00101710);
   }
-  local_40 = *param_1;
   local_44 = 3;
+  local_40 = *param_1;
   local_10 = 2;
   local_14 = 0;
   local_20 = 0;

@@ -91,8 +91,8 @@ void func_02062ca0(undefined4 *param_1,int param_2)
   undefined4 uVar2;
   int iVar3;
 
+  iVar3 = *(unsigned short *)(param_2 + 0x1c);
   uVar1 = *(ushort *)(param_2 + 0x2e);
-  iVar3 = *(int *)(param_2 + 0x1c);
   uVar2 = *(undefined4 *)(param_2 + 0x18);
   param_1[5] = iVar3;
   *param_1 = uVar2;

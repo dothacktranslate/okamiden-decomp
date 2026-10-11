@@ -140,16 +140,16 @@ void func_0203ed7c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     func_0205e0c0(0x10,&local_6c,1);
     func_02009930(param_1 + 0x58,local_48 + 8,0xc);
     func_0205e0c0(local_48[8],&local_24,2);
-    local_48[8] = ((unsigned int)0x0203ef60);
+    local_48[8] = ((unsigned int)0x00293130);
     local_20 = 0;
     local_24 = ((unsigned int)0x0203ef68);
     iVar2 = (int)*(short *)(param_1 + 0x10) >> 0x1f;
     local_1c = ((unsigned int)0x0203ef64) |
                (((uint)(*(short *)(param_1 + 0x10) * 0x8000000 + iVar2) >> 0x1b | iVar2 << 5) -
                iVar2) * 0x10000 | 0x3d000000;
-    func_0205e0c0(((unsigned int)0x0203ef60),&local_24,3);
-    local_24 = 0;
+    func_0205e0c0(((unsigned int)0x00293130),&local_24,3);
     local_70 = 1;
+    local_24 = 0;
     func_0205e0c0(0x40,&local_70,1);
     func_0205e0c0(0x15,0,0);
     do {

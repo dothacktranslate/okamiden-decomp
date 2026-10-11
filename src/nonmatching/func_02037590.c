@@ -107,9 +107,9 @@ int func_02037590(int param_1,int param_2,int param_3,undefined4 param_4,int par
     iVar2 = 0;
     iVar1 = iVar3;
   }
-  if ((iVar4 != 0 && iVar1 != 0) && -1 < iVar3) {
+  if ((iVar4 != 0 && iVar1 != 0) && -2 <= iVar3) {
     do {
-      if (param_2 == *(int *)(iVar4 + iVar2 * 4)) {
+      if (param_2 == *(int *)(iVar2 + iVar4 * 4)) {
         param_3 = 0;
         break;
       }

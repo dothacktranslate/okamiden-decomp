@@ -99,7 +99,7 @@ int func_02049ea4(undefined4 param_1,int param_2,undefined4 param_3,undefined4 p
   int iVar2;
 
   uVar1 = func_02047a64(param_1,2,param_3,param_4,param_4);
-  func_02047928(param_1,1,6);
+  func_02047928(uVar1,param_1,1,6);
   iVar2 = func_02046480(param_1,1);
   if (iVar2 != 0) {
     return 0;
@@ -108,7 +108,7 @@ int func_02049ea4(undefined4 param_1,int param_2,undefined4 param_3,undefined4 p
     iVar2 = func_020474c0(param_1,1,uVar1);
   }
   else {
-    iVar2 = func_02047474();
+    iVar2 = func_02047474(param_1);
   }
   if (iVar2 != 0) {
     func_020468f0(param_1);

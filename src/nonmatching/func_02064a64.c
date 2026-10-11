@@ -92,7 +92,7 @@ void func_02064a64(int param_1)
 
 {
   if (*(char *)(param_1 + 0x2c) == '\x02') {
-    func_0200a364(*(undefined1 *)(param_1 + 0x3c),((unsigned int)0x02064a98));
+    func_0200a364(*(undefined1 *)(param_1 + 0x3c),((unsigned int)0xfffffd2d));
   }
   func_0200a2dc(*(undefined1 *)(param_1 + 0x3c));
   func_02064b08(param_1);

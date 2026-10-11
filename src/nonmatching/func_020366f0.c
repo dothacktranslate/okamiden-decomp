@@ -113,7 +113,7 @@ undefined4 func_020366f0(undefined4 param_1,int param_2,undefined4 param_3,undef
       if (iVar2 != 0) {
         do {
           if (*(int *)(iVar2 + 4) == aiStack_30[param_2]) {
-            (**(code **)(iVar1 + param_2 * 0x20 + 8))(iVar2 + 0x10,((unsigned int)0x020367a0));
+            (**(code **)(param_2 + (iVar1 * 0x20 + 8)))(iVar2 + 0x10,((unsigned int)0x020367a0));
             return *(undefined4 *)(((unsigned int)0x020367a4) + 0x10);
           }
           iVar2 = *(int *)(iVar2 + 0xc);

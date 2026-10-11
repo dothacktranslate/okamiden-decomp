@@ -102,11 +102,11 @@ undefined4 func_0200b210(int param_1,undefined2 *param_2,uint *param_3)
     return 0;
   }
 LAB_0200b228:
-  uVar8 = *(uint *)(param_1 + uVar8 * 4 + 0x3c);
+  uVar8 = *(uint *)(param_1 + (uVar8 * 4 + 0x3c));
   uVar7 = uVar8 & 0xff;
   *(char *)param_2 = (char)uVar8;
   uVar8 = uVar8 >> 8;
-  if (0x10 < uVar7) {
+  if (0x11 <= uVar7) {
     if (uVar7 == 0x11) {
       uVar7 = param_3[1];
       if ((uVar7 < 8) && (*(char *)(param_1 + uVar8 + uVar7) != '\0')) {
@@ -114,8 +114,8 @@ LAB_0200b228:
         uVar1 = *(undefined2 *)(iVar6 + 10);
         uVar2 = *(undefined2 *)(iVar6 + 0xc);
         uVar3 = *(undefined2 *)(iVar6 + 0xe);
-        uVar4 = *(undefined2 *)(iVar6 + 0x10);
         uVar5 = *(undefined2 *)(iVar6 + 0x12);
+        uVar4 = *(undefined2 *)(iVar6 + 0x10);
         *param_2 = *(undefined2 *)(iVar6 + 8);
         param_2[1] = uVar1;
         param_2[5] = uVar5;

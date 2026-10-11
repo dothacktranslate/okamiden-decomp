@@ -87,5 +87,5 @@ extern int LZCOUNT();
 undefined2 func_020084ac(void)
 
 {
-  return (*(unsigned int *)0x020084b8);
+  return (*(unsigned short *)0x020084b8);
 }

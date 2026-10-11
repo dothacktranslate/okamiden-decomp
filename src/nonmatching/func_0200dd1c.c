@@ -92,7 +92,7 @@ void func_0200dd1c(undefined4 param_1,int param_2,undefined4 param_3,undefined4 
   int iVar1;
 
   *(short *)(param_2 + 0x34) = (short)param_3;
-  *(undefined4 *)(param_2 + 8) = param_1;
+  *(unsigned short *)(param_2 + 8) = param_1;
   *(undefined4 *)(param_2 + 0x30) = param_1;
   *(short *)(param_2 + 0x36) = (short)((uint)param_3 >> 0x10);
   *(undefined4 *)(param_2 + 0x38) = param_4;

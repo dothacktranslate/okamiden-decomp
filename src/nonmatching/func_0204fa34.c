@@ -94,7 +94,7 @@ void func_0204fa34(int param_1,undefined4 param_2)
   iVar1 = func_0204e55c(param_2,0,0,0xc0);
   *(int *)(param_1 + 0x28) = iVar1;
   *(int *)(param_1 + 0x14) = iVar1;
-  *(undefined4 *)(param_1 + 0x30) = 8;
+  *(unsigned short *)(param_1 + 0x30) = 8;
   *(int *)(param_1 + 0x24) = iVar1 + 0xa8;
   iVar1 = func_0204e55c(param_2,0,0,0x2a8);
   *(int *)(param_1 + 0x20) = iVar1;

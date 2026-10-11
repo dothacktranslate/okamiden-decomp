@@ -94,7 +94,7 @@ void func_02051938(undefined4 param_1,undefined4 *param_2,undefined4 param_3,int
   char cVar1;
   undefined4 uVar2;
   undefined4 uVar3;
-  char *pcVar4;
+  unsigned char *pcVar4;
   int iVar5;
   undefined4 uVar6;
   char *pcVar7;
@@ -114,8 +114,8 @@ void func_02051938(undefined4 param_1,undefined4 *param_2,undefined4 param_3,int
   *puVar8 = 0x22;
   uVar3 = ((unsigned int)0x02051ad0);
   uVar2 = ((unsigned int)0x02051acc);
-  iVar5 = local_28 + -1;
   bVar11 = local_28 != 0;
+  iVar5 = local_28 + -1;
   local_28 = iVar5;
   if (bVar11) {
     puVar10 = param_2 + 0x403;

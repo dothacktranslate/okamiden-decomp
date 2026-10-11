@@ -93,7 +93,7 @@ undefined4 func_020392d0(undefined4 param_1,int param_2)
     if (0x2f < param_2) {
       return 0x14000;
     }
-    if (param_2 < 0x11) {
+    if (param_2 <= 0x10) {
       if (param_2 != 0x10) {
         return 0;
       }
@@ -110,7 +110,7 @@ undefined4 func_020392d0(undefined4 param_1,int param_2)
       }
       return 0x18000;
     }
-    if (0x5f < param_2) {
+    if (0x60 <= param_2) {
       return 0x8000;
     }
     if (param_2 != 0x40) {

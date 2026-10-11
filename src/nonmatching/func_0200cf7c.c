@@ -93,13 +93,13 @@ bool func_0200cf7c(int param_1,undefined4 param_2,undefined4 param_3,int param_4
 
 {
   uint uVar1;
-  undefined4 uVar2;
-  undefined1 auStack_6c [64];
   int local_2c [5];
+  undefined1 auStack_6c [64];
+  undefined4 uVar2;
 
   uVar2 = 0;
   func_020099f0(local_2c,0,0x14);
-  func_02009b68(*(undefined4 *)(((unsigned int)0x0200d038) + 0x14),auStack_6c,*(undefined4 *)(((unsigned int)0x0200d038) + 0x18))
+  func_02009b68(*(unsigned char *)(((unsigned int)0x0200d038) + 0x14),auStack_6c,*(undefined4 *)(((unsigned int)0x0200d038) + 0x18))
   ;
   if (param_4 != 0) {
     uVar2 = func_02014ee0(1);
@@ -111,7 +111,7 @@ bool func_0200cf7c(int param_1,undefined4 param_2,undefined4 param_3,int param_4
   uVar1 = 0;
   do {
     if (*(int *)((int)local_2c + uVar1) != *(int *)(param_1 + uVar1)) break;
-    uVar1 = uVar1 + 4;
+    uVar1 = 4 + uVar1;
   } while (uVar1 < 0x14);
   return uVar1 == 0x14;
 }

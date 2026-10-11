@@ -169,8 +169,8 @@ int func_02040dc8(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 {
   undefined4 *puVar1;
   int iVar2;
-  undefined4 uVar3;
   undefined4 uVar4;
+  undefined4 uVar3;
   undefined1 auStack_2c [20];
   undefined4 uStack_18;
 

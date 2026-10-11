@@ -87,16 +87,16 @@ extern int LZCOUNT();
 void func_0200ae3c(void)
 
 {
-  int iVar1;
+  uint iVar1;
   int iVar2;
   int iVar3;
 
-  iVar1 = ((unsigned int)0x0200ae70);
   iVar3 = 0;
+  iVar1 = ((unsigned int)0x0200ae70);
   do {
     *(undefined4 *)(iVar1 + iVar3 * 0xc) = 0;
     iVar2 = iVar1 + iVar3 * 0xc;
-    *(undefined4 *)(iVar2 + 4) = 0;
+    *(undefined4 *)(4 + iVar2) = 0;
     iVar3 = iVar3 + 1;
     *(undefined1 *)(iVar2 + 8) = 0;
   } while (iVar3 < 8);

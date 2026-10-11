@@ -100,7 +100,7 @@ void func_020071d0(uint param_1)
 
   func_020084bc(auStack_38);
   local_3c = **(int **)(((unsigned int)0x02007264) + 8);
-  uVar2 = func_02008b6c();
+  uVar2 = func_02008b6c(param_1);
   uVar1 = (ulonglong)((unsigned int)0x02007268);
   *(undefined1 **)(local_3c + 0xb0) = auStack_38;
   uVar1 = uVar1 * param_1 >> 6;

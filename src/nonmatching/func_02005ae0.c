@@ -90,8 +90,8 @@ void func_02005ae0(ushort param_1)
   code *UNRECOVERED_JUMPTABLE;
 
   UNRECOVERED_JUMPTABLE = ((unsigned int)0x02005b00);
-  (*(unsigned int *)0x02005afc) = (*(unsigned int *)0x02005afc) | param_1;
-                    /* WARNING: Could not recover jumptable at 0x02005af8. Too many branches */
+  (*(unsigned short *)0x02005afc) = (*(unsigned int *)0x02005afc) | param_1;
+                    /* WARNING: Could not recover jumptable at 0xe12fff1c. Too many branches */
                     /* WARNING: Treating indirect jump as call */
   (*UNRECOVERED_JUMPTABLE)();
   return;

@@ -104,8 +104,8 @@ char * func_0201705c(int param_1,int param_2,uint param_3,undefined4 param_4,int
   char local_7;
   byte local_3;
 
+  extraout_r1 = 0;
   bVar2 = false;
-  iVar5 = 0;
   pcVar3 = (char *)(param_2 + -1);
   *pcVar3 = '\0';
   uVar1 = param_3 >> 0x18;
@@ -151,12 +151,12 @@ LAB_02017160:
   }
 LAB_02017164:
   do {
-    iVar6 = iVar5;
+    iVar6 = extraout_r1;
     pcVar4 = pcVar3;
     func_0201ebe0(param_1,unaff_r4);
     param_1 = func_0201ebe0(param_1,unaff_r4);
-    cVar7 = (char)extraout_r1;
-    if (extraout_r1 < 10) {
+    cVar7 = (char)iVar5;
+    if (iVar5 < 10) {
       cVar7 = cVar7 + '0';
     }
     else if (local_3 == 0x78) {
@@ -167,7 +167,7 @@ LAB_02017164:
     }
     pcVar3 = pcVar4 + -1;
     *pcVar3 = cVar7;
-    iVar5 = iVar6 + 1;
+    extraout_r1 = iVar6 + 1;
   } while (param_1 != 0);
   if (unaff_r4 == 8) {
     cVar7 = '\0';
@@ -177,7 +177,7 @@ LAB_02017164:
     if (uVar1 != 0 && cVar7 != '0') {
       pcVar3 = pcVar4 + -2;
       *pcVar3 = '0';
-      iVar5 = iVar6 + 2;
+      extraout_r1 = iVar6 + 2;
     }
   }
   local_8 = (char)param_3;
@@ -193,7 +193,7 @@ LAB_02017164:
   if (((unsigned int)0x020172a8) < param_6 + (param_2 - (int)pcVar3)) {
     return (char *)0x0;
   }
-  for (; iVar5 < param_6; iVar5 = iVar5 + 1) {
+  for (; extraout_r1 < param_6; extraout_r1 = extraout_r1 + 1) {
     pcVar3 = pcVar3 + -1;
     *pcVar3 = '0';
   }

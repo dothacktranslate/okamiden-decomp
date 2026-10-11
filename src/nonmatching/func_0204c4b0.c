@@ -96,13 +96,13 @@ void func_0204c4b0(int param_1,undefined4 param_2,undefined4 param_3)
   ushort uVar1;
   int iVar2;
 
-  *(short *)(param_1 + 0x34) = *(short *)(param_1 + 0x34) + 1;
+  *(short *)(0x34 + param_1) = *(short *)(param_1 + 0x34) + 1;
   uVar1 = *(ushort *)(param_1 + 0x34);
-  if (199 < uVar1) {
+  if (200 <= uVar1) {
     if (uVar1 == 200) {
       func_0204b9e0(param_1,((unsigned int)0x0204c548));
     }
-    else if (0xe0 < uVar1) {
+    else if (0xe1 <= uVar1) {
       func_0204bb44(param_1,5);
     }
   }

@@ -97,8 +97,8 @@ int * func_02056b88(int param_1,int param_2)
       if (*piVar1 == param_2) {
         return piVar1;
       }
-      uVar2 = uVar2 + 1;
       piVar1 = (int *)((int)piVar1 + piVar1[1]);
+      uVar2 = uVar2 + 1;
     } while (uVar2 < *(ushort *)(param_1 + 0xe));
   }
   return (int *)0x0;

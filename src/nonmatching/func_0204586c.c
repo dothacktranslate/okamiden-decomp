@@ -34,7 +34,7 @@ void func_0204586c(int param_1)
   func_02056d88();
   func_02056d5c();
   uVar1 = func_020584f8();
-  func_020584c4(1);
+  func_020584c4(1,uVar1);
   func_020584e8(0x199);
   func_02045428(param_1);
   func_020584e8(uVar1);

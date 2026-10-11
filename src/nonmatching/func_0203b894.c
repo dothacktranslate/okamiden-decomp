@@ -114,7 +114,7 @@ undefined4 func_0203b894(uint *param_1,int param_2)
   int local_1c;
 
   uVar5 = *param_1;
-  if (((unsigned int)0x0203b9f4) < uVar5) {
+  if (((unsigned int)0x30415642) < uVar5) {
     uVar4 = ((unsigned int)0x0203ba0c);
     if ((uVar5 <= ((unsigned int)0x0203ba04)) && (uVar4 = ((unsigned int)0x0203ba08), ((unsigned int)0x0203ba04) <= uVar5)) {
       return 1;
@@ -182,11 +182,11 @@ undefined4 func_0203b894(uint *param_1,int param_2)
     }
   }
   else {
-    if (((unsigned int)0x0203b9f4) <= uVar5) {
+    if (((unsigned int)0x30415642) <= uVar5) {
       return 1;
     }
     uVar4 = ((unsigned int)0x0203ba00);
-    if ((uVar5 <= ((unsigned int)0x0203b9f8)) && (uVar4 = ((unsigned int)0x0203b9fc), ((unsigned int)0x0203b9f8) <= uVar5)) {
+    if ((uVar5 <= ((unsigned int)0x0203b9f8)) && (uVar4 = ((unsigned int)0x30414342), ((unsigned int)0x0203b9f8) <= uVar5)) {
       return 1;
     }
     if (uVar5 == uVar4) {

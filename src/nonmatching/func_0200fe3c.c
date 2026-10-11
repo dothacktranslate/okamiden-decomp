@@ -98,7 +98,7 @@ undefined4 func_0200fe3c(int param_1,int param_2,int param_3,int param_4)
   int iVar3;
   int iVar4;
 
-  uVar1 = ((unsigned int)0x02010028);
+  uVar1 = ((unsigned int)0x00051d23);
   if (param_1 == 0) {
     iVar3 = func_0200fa00(0);
     while (iVar3 != 0) {
@@ -143,7 +143,7 @@ undefined4 func_0200fe3c(int param_1,int param_2,int param_3,int param_4)
         }
       }
       else {
-        iVar3 = func_0200f874(param_2);
+        iVar3 = func_02008be8(param_2);
         while (iVar3 != 0) {
           func_02008be8(uVar1);
           iVar3 = func_0200f874(param_2);

@@ -90,8 +90,8 @@ extern int func_0204f6b0();
 void func_02046924(int param_1,undefined4 param_2,undefined4 param_3)
 
 {
-  if (*(uint *)(*(int *)(param_1 + 0x10) + 0x40) <= *(uint *)(*(int *)(param_1 + 0x10) + 0x44)) {
-    func_0204e284();
+  if (*(uint *)(*(int *)(0x10 + param_1) + 0x40) <= *(uint *)(*(int *)(param_1 + 0x10) + 0x44)) {
+    func_0204e284(param_1);
   }
   func_0204f6b0(param_1,param_2,param_3);
   return;

@@ -119,6 +119,6 @@ int func_020523e4(int param_1,int param_2)
     *(int *)(param_2 + iVar6 * 4) = *(int *)(param_2 + iVar6 * 4) + iVar4;
     iVar6 = iVar6 + 1;
     iVar7 = iVar7 << 1;
-  } while (iVar6 < 0x1b);
+  } while (iVar6 <= 0x1a);
   return iVar2;
 }

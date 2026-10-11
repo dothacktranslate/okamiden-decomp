@@ -92,7 +92,7 @@ int func_0204a838(int param_1,int *param_2,int param_3)
 
 {
   undefined4 uVar1;
-  int iVar2;
+  uint iVar2;
   bool bVar3;
   undefined8 uVar4;
 

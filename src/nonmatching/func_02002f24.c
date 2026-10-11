@@ -93,7 +93,7 @@ short func_02002f24(int param_1)
   int iVar2;
 
   if (-1 < param_1) {
-    if (param_1 < 0x1001) {
+    if (param_1 <= 0x1000) {
       if (param_1 < 0x1000) {
         sVar1 = *(short *)(((unsigned int)0x02002fd8) + (param_1 >> 5) * 2);
       }
@@ -103,11 +103,11 @@ short func_02002f24(int param_1)
       return sVar1;
     }
     iVar2 = func_020028d0();
-    return 0x4000 - *(short *)(((unsigned int)0x02002fd8) + (iVar2 >> 5) * 2);
+    return 0x4000 - *(unsigned char *)(((unsigned int)0x02002fd8) + (iVar2 >> 5) * 2);
   }
   if (-0x1001 < param_1) {
     if (-0x1000 < param_1) {
-      return -*(short *)(((unsigned int)0x02002fd8) + (-param_1 >> 5) * 2);
+      return -*(unsigned char *)(((unsigned int)0x02002fd8) + (-param_1 >> 5) * 2);
     }
     return -0x2000;
   }

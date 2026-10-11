@@ -149,7 +149,7 @@ uint * func_02009a84(uint *param_1,uint param_2,int param_3)
       puVar2 = puVar3 + 1;
       *puVar3 = uVar4;
     }
-    if (0x1f < param_3) {
+    if (0x20 <= param_3) {
       bVar7 = SBORROW4(param_3,0x20);
       param_3 = param_3 + -0x20;
       bVar6 = param_3 < 0;

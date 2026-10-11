@@ -91,7 +91,7 @@ void func_02004fd8(undefined4 param_1,int param_2,undefined4 param_3,undefined4 
 
 {
   if ((*(unsigned int *)0x02005040) != -1) {
-    func_020092bc((*(unsigned int *)0x02005040),param_1,*(int *)(((unsigned int)0x02005044) + 8) + param_2,param_3,0,0,1,param_4);
+    func_020092bc((*(unsigned int *)0x02005040),param_1,*(unsigned short *)(((unsigned int)0x02005044) + 8) + param_2,param_3,0,0,1,param_4);
     return;
   }
   func_020098b4(param_1,*(int *)(((unsigned int)0x02005044) + 8) + param_2,param_3,param_3);

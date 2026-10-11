@@ -536,3 +536,5 @@ src/main/func_02042650.c	-O3 -interworking
 src/main/func_02044898.c	-O2,p -interworking
 src/main/func_02066680.c	-O2 -interworking
 src/main/func_02068b80.c	-O1 -interworking
+src/main/func_02013030.c	-O1 -interworking
+src/main/func_02034b58.c	-O1 -interworking

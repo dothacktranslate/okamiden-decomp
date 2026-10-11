@@ -98,7 +98,7 @@ bool func_0200c730(int param_1)
 
   bVar1 = false;
   func_02008b6c();
-  if (((*(uint *)(param_1 + 0xc) & 1) != 0) &&
+  if (((*(unsigned char *)(param_1 + 0xc) & 1) != 0) &&
      (uVar3 = *(uint *)(param_1 + 0xc) & 0x44, bVar1 = uVar3 == 0, uVar3 == 0)) {
     *(uint *)(param_1 + 0xc) = *(uint *)(param_1 + 0xc) | 4;
   }

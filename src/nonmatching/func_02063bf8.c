@@ -100,7 +100,7 @@ uint func_02063bf8(int param_1,int param_2,undefined4 param_3,uint param_4)
   else {
     uVar3 = param_1 + 0xfU & 0xfffffff0;
   }
-  if (((unsigned int)0x02063c6c) <= uVar3) {
+  if (((unsigned int)0x0007fff0) <= uVar3) {
     return 0;
   }
   uVar1 = ((unsigned int)0x02063c74);

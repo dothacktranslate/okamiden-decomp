@@ -40,6 +40,6 @@ void func_02044ae8(undefined4 param_1,uint param_2)
     }
     uVar4 = uVar4 * 2;
     iVar3 = iVar3 + 1;
-  } while (uVar4 < 0x4001);
+  } while (uVar4 <= 0x4000);
   return;
 }

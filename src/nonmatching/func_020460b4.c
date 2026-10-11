@@ -93,7 +93,7 @@ undefined4 func_020460b4(int param_1,int param_2)
   int iVar2;
 
   if ((8000 < param_2) ||
-     (iVar2 = *(int *)(param_1 + 8) - *(int *)(param_1 + 0xc),
+     (iVar2 = *(int *)(param_1 + 8) - *(unsigned short *)(param_1 + 0xc),
      8000 < param_2 + ((int)(iVar2 + ((uint)(iVar2 >> 2) >> 0x1d)) >> 3))) {
     return 0;
   }

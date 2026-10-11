@@ -94,8 +94,8 @@ void func_02050c74(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   int iVar2;
 
   iVar2 = *(int *)(param_1 + 0xc);
-  if (0x1f < iVar2) {
-    func_02047714(*(undefined4 *)(param_1 + 8),((unsigned int)0x02050cd8));
+  if (0x20 <= iVar2) {
+    func_02047714(*(undefined4 *)(8 + param_1),((unsigned int)0x02050cd8));
   }
   iVar1 = param_1 + iVar2 * 8;
   *(undefined4 *)(iVar1 + 0x10) = param_2;

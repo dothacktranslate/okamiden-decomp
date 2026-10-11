@@ -95,7 +95,7 @@ extern int func_0203aed4();
 void func_0202d9bc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  short sVar1;
+  unsigned short sVar1;
   int iVar2;
   int iVar3;
   int iVar4;
@@ -163,7 +163,7 @@ void func_0202d9bc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       iVar8 = param_1 + iVar11 * 2;
       *(undefined2 *)(iVar8 + 0xdb0) = 0;
       *(undefined2 *)(iVar8 + iVar4) = 0;
-      puVar9 = *(undefined2 **)(param_1 + iVar11 * 4 + 0xd30);
+      puVar9 = *(undefined2 **)(param_1 + (iVar11 * 4 + 0xd30));
       if (puVar9 != (undefined2 *)0x0) {
         func_0202cd5c(param_1,*(undefined2 *)(iVar13 + iVar2),*(undefined2 *)(iVar13 + iVar3),*puVar9
                     );

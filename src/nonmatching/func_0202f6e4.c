@@ -93,9 +93,9 @@ void func_0202f6e4(int param_1)
 
 {
   if (*(int *)(param_1 + 0x48) != 0) {
-    func_0202f9e4();
-    func_0203d1d8((*(unsigned int *)0x0202f704),*(undefined4 *)(param_1 + 0x48));
-    *(undefined4 *)(param_1 + 0x48) = 0;
+    func_0202f9e4(param_1);
+    func_0203d1d8((*(unsigned int *)0x0202f704),*(undefined4 *)(0x48 + param_1));
+    *(undefined4 *)(0x48 + param_1) = 0;
   }
   return;
 }

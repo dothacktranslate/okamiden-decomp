@@ -92,8 +92,8 @@ void func_0204cb40(int param_1,int param_2,undefined4 param_3,undefined4 param_4
 
 {
   undefined4 uVar1;
-  int iVar2;
   int iVar3;
+  int iVar2;
   int iVar4;
 
   if (*(int *)(param_2 + 0xc) == 0) {

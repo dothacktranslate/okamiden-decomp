@@ -87,8 +87,8 @@ extern int LZCOUNT();
 void func_0205b948(int param_1,int param_2)
 
 {
-  int iVar1;
   uint uVar2;
+  int iVar1;
 
   if (param_1 != 0) {
     param_2 = *(int *)(param_1 + 8);

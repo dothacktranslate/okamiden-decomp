@@ -103,7 +103,7 @@ void func_020640d0(void)
   }
   *(undefined4 *)(((unsigned int)0x02064138) + 0xc) = 1;
   func_0200a6fc();
-  *(undefined4 *)(puVar1 + 0x10) = ((unsigned int)0x0206413c);
+  *(unsigned short *)(puVar1 + 0x10) = ((unsigned int)0x0206413c);
   uVar2 = ((unsigned int)0x02064140);
   *(undefined4 *)(puVar1 + 0x14) = 0;
   *(undefined4 *)(puVar1 + 0x20) = uVar2;

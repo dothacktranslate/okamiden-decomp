@@ -103,7 +103,7 @@ void func_02067080(void)
   int iVar7;
 
   iVar3 = ((unsigned int)0x02067188);
-  iVar2 = ((unsigned int)0x02067184);
+  iVar5 = ((unsigned int)0x02067184);
   iVar7 = 0;
   do {
     iVar6 = iVar7 * 0x17c + iVar3;
@@ -113,32 +113,32 @@ LAB_0206716c:
         func_02067508(iVar6);
       }
       else {
-        iVar5 = *(int *)(iVar6 + 0x118) << 0x1d;
-        iVar4 = iVar5 >> 0x1f;
-        if (iVar5 < 0) {
+        iVar2 = *(int *)(iVar6 + 0x118) << 0x1d;
+        iVar4 = iVar2 >> 0x1f;
+        if (iVar2 < 0) {
           iVar4 = *(int *)(iVar6 + 0x120);
         }
-        if (iVar5 < 0 && iVar4 != 0) {
+        if (iVar2 < 0 && iVar4 != 0) {
           func_02064ed0(iVar6);
           *(uint *)(iVar6 + 0x118) = *(uint *)(iVar6 + 0x118) & 0xfffffffb | 2;
         }
         if (*(int *)(iVar6 + 0x118) << 0x1e < 0) {
           func_02068620(iVar6 + 0xf0);
-          sVar1 = *(short *)(iVar2 + *(int *)(iVar6 + 0x15c) * 2);
-          iVar5 = func_020685ec(iVar6 + 0xf0);
-          iVar5 = (int)*(short *)(iVar2 + *(int *)(iVar6 + 0x160) * 2) +
-                  (int)*(short *)(iVar2 + (iVar5 >> 8) * 2) + (int)sVar1;
-          if (iVar5 != *(int *)(iVar6 + 0x164)) {
-            func_02064f40(iVar6,iVar5);
-            *(int *)(iVar6 + 0x164) = iVar5;
+          iVar2 = func_020685ec(iVar6 + 0xf0);
+          sVar1 = *(short *)(iVar5 + *(int *)(iVar6 + 0x15c) * 2);
+          iVar2 = (int)*(short *)(iVar5 + *(int *)(iVar6 + 0x160) * 2) +
+                  (int)*(short *)(iVar5 + (iVar2 >> 8) * 2) + (int)sVar1;
+          if (iVar2 != *(int *)(iVar6 + 0x164)) {
+            func_02064f40(iVar6,iVar2);
+            *(int *)(iVar6 + 0x164) = iVar2;
           }
           if ((*(int *)(iVar6 + 0x118) << 0x1c < 0) &&
-             (iVar5 = func_02068638(iVar6 + 0xf0), iVar5 != 0)) goto LAB_0206716c;
+             (iVar2 = func_02068638(iVar6 + 0xf0), iVar2 != 0)) goto LAB_0206716c;
         }
       }
     }
     iVar7 = iVar7 + 1;
-    if (3 < iVar7) {
+    if (4 <= iVar7) {
       return;
     }
   } while( true );

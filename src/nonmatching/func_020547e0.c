@@ -98,7 +98,7 @@ uint func_020547e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   bool bVar5;
 
   iVar2 = func_02053958(param_1,param_2,param_4);
-  if (*(int *)(iVar2 + 4) == 0) {
+  if (*(unsigned short *)(iVar2 + 4) == 0) {
     return 0xffffffff;
   }
   uVar3 = func_02053958(param_1,param_3,param_4);

@@ -96,9 +96,9 @@ void func_02065458(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   int iVar1;
 
   *(undefined4 *)(param_1 + 0x98) = 0;
-  *(undefined4 *)(param_1 + 0x90) = 0;
-  *(undefined4 *)(param_1 + 0x94) = 0;
-  *(undefined4 *)(param_1 + 0x9c) = 0;
+  *(unsigned short *)(param_1 + 0x90) = 0;
+  *(unsigned short *)(param_1 + 0x94) = 0;
+  *(unsigned short *)(param_1 + 0x9c) = 0;
   *(undefined4 *)(param_1 + 0x84) = 0;
   *(undefined4 *)(param_1 + 0x88) = 0;
   *(undefined4 *)(param_1 + 0x8c) = 0;

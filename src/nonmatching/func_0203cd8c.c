@@ -94,7 +94,7 @@ void func_0203cd8c(int param_1,int param_2)
   int iVar1;
   undefined4 uVar2;
   uint uVar3;
-  int iVar4;
+  uint iVar4;
 
   iVar4 = *(int *)(param_1 + 0x14);
   uVar3 = 0;
@@ -102,7 +102,7 @@ void func_0203cd8c(int param_1,int param_2)
     do {
       iVar1 = 0;
       do {
-        if (uVar3 == (int)*(short *)(param_1 + iVar1 * 2 + 0xe2)) {
+        if (uVar3 == (int)*(short *)(iVar1 + (param_1 * 2 + 0xe2))) {
           if (param_2 == 0) {
             uVar2 = 2;
           }

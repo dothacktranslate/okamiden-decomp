@@ -100,8 +100,8 @@ bool func_0200be7c(undefined4 *param_1,int param_2,int param_3)
   undefined4 *puVar3;
   uint uVar4;
   uint uVar5;
-  undefined4 uVar6;
   int iVar7;
+  undefined4 uVar6;
   undefined4 uVar8;
   bool bVar9;
 
@@ -114,7 +114,7 @@ bool func_0200be7c(undefined4 *param_1,int param_2,int param_3)
     param_1[5] = 6;
     return false;
   }
-  uVar4 = param_1[3] & 0xffff00ff | param_2 << 8;
+  uVar4 = param_1[3] & param_2 | 0xffff00ff << 8;
   uVar5 = uVar4 | 1;
   param_1[3] = uVar5;
   if (param_3 != 0) {
@@ -130,8 +130,8 @@ bool func_0200be7c(undefined4 *param_1,int param_2,int param_3)
     puVar3 = *(undefined4 **)(iVar7 + 8);
     puVar2 = (undefined4 *)(iVar7 + 8);
     while (puVar1 = puVar3, puVar1 != (undefined4 *)0x0) {
-      puVar2 = puVar1;
       puVar3 = (undefined4 *)*puVar1;
+      puVar2 = puVar1;
     }
     *puVar2 = param_1;
   }

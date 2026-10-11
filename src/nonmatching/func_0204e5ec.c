@@ -98,13 +98,13 @@ extern int func_0204737c();
 undefined4 * func_0204e5ec(undefined4 param_1,undefined4 param_2)
 
 {
-  int iVar1;
   int iVar2;
+  int iVar1;
   undefined4 *puVar3;
 
   func_02046960(param_1,((unsigned int)0x0204e6bc),((unsigned int)0x0204e6c0),param_2);
-  iVar1 = ((unsigned int)0x0204e6c4);
-  func_02046ac0(param_1,((unsigned int)0x0204e6c4));
+  iVar1 = ((unsigned int)0xffffd8f0);
+  func_02046ac0(param_1,((unsigned int)0xffffd8f0));
   iVar2 = func_02046444(param_1,iVar1 >> 0xe);
   if (iVar2 == 0) {
     iVar2 = iVar1 >> 0xd;

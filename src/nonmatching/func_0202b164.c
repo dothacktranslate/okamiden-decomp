@@ -122,7 +122,7 @@ void func_0202b164(undefined4 *param_1,int param_2,int param_3,uint param_4)
     func_0201ebe0(param_2,iVar3);
     uVar2 = func_0201e9d4(iVar3,10);
     iVar4 = func_0201ebe0(extraout_r1,uVar2);
-    if (param_4 + iVar4 == param_4) {
+    if (param_4 + param_4 == iVar4) {
       if (!bVar1) goto LAB_0202b1d4;
     }
     else {

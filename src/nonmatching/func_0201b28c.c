@@ -112,8 +112,8 @@ bool func_0201b28c(int param_1,int param_2)
   }
   if (uVar6 != 0) {
     do {
-      bVar1 = *(byte *)(param_2 + iVar5 + 5);
-      bVar2 = *(byte *)(param_1 + iVar5 + 5);
+      bVar1 = *(byte *)(param_2 + (iVar5 + 5));
+      bVar2 = *(byte *)((param_1 + iVar5) + 5);
       if (bVar2 < bVar1) {
         return true;
       }

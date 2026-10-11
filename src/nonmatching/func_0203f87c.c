@@ -97,7 +97,7 @@ void func_0203f87c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   *(undefined2 *)(param_1 + 0x10) = 0x12;
   *(undefined4 *)(param_1 + 0xd0) = 0;
   *(undefined4 *)(param_1 + 0xdc) = 0;
-  *(undefined4 *)(param_1 + 0x6c) = 0;
+  *(unsigned short *)(param_1 + 0x6c) = 0;
   *(undefined2 *)(param_1 + 0x112) = 0x78;
   *(undefined1 *)(param_1 + 0x121) = 1;
   *(undefined1 *)(param_1 + 0x120) = *(undefined1 *)(param_1 + 0x121);

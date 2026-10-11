@@ -175,7 +175,7 @@ void func_020234b0(int param_1,int param_2)
       uVar2 = uVar2 & ~(1 << (uVar1 & 0xff));
     }
     else {
-      uVar2 = uVar2 | 1 << (uVar1 & 0xff);
+      uVar2 = 1 | uVar2 << (uVar1 & 0xff);
     }
     _REG_A_DISPCNT = uVar2 << 8 | _REG_A_DISPCNT & ((unsigned int)0x0202352c);
     return;

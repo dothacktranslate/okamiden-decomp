@@ -107,8 +107,8 @@ int func_0200bbc8(int param_1,int param_2,undefined4 param_3,undefined4 param_4)
 
   iVar5 = 0;
   uStack_28 = param_4;
+  bVar7 = (*(unsigned short *)(param_1 + 0x14) & 0x20) != 0;
   piVar1 = (int *)func_02008b6c();
-  bVar7 = (*(uint *)(param_1 + 0x14) & 0x20) != 0;
   piVar2 = piVar1;
   if (bVar7) {
     piVar2 = *(int **)(param_1 + 8);

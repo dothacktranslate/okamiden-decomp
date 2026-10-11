@@ -92,9 +92,9 @@ void func_020065c8(void)
   int iVar3;
 
   iVar3 = ((unsigned int)0x020065f8);
-  uVar2 = ((unsigned int)0x020065f4);
+  uVar2 = ((unsigned int)0x7bf9dd5b);
   iVar1 = ((unsigned int)0x020065ec);
-  *(undefined4 *)(((unsigned int)0x020065ec) + 0x3f7c) = ((unsigned int)0x020065f0);
+  *(undefined4 *)(((unsigned int)0x020065ec) + 0x3f7c) = ((unsigned int)0xfddb597d);
   *(undefined4 *)((iVar1 + 0x3f80) - iVar3) = uVar2;
   return;
 }

@@ -95,13 +95,13 @@ void func_0205980c(int param_1,int param_2,short param_3,int param_4,int param_5
 
   uVar1 = ((unsigned int)0x02059890);
   iVar2 = 0;
-  if (param_2 < 1) {
+  if (param_2 <= 0) {
     return;
   }
   do {
-    iVar3 = param_1 + iVar2 * 8;
+    iVar3 = iVar2 + param_1 * 8;
     *(ushort *)(iVar3 + 4) = *(ushort *)(iVar3 + 4) & 0xf3ff | param_3 << 10;
-    *(uint *)(param_1 + iVar2 * 8) = *(uint *)(param_1 + iVar2 * 8) & 0xfffff3ff | param_4 << 10;
+    *(uint *)(iVar2 + param_1 * 8) = *(uint *)(param_1 + iVar2 * 8) & 0xfffff3ff | param_4 << 10;
     *(ushort *)(iVar3 + 4) = *(ushort *)(iVar3 + 4) & 0xfff | param_7 << 0xc;
     uVar4 = *(uint *)(param_1 + iVar2 * 8) & uVar1 | param_6;
     *(uint *)(param_1 + iVar2 * 8) = uVar4;

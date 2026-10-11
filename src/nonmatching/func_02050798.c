@@ -90,7 +90,7 @@ char * func_02050798(int param_1,char *param_2)
 
 {
   undefined4 uVar1;
-  char *pcVar2;
+  unsigned char *pcVar2;
   char *pcVar3;
 
   uVar1 = ((unsigned int)0x0205083c);
@@ -109,7 +109,7 @@ char * func_02050798(int param_1,char *param_2)
   }
   do {
     if (*pcVar2 == '\0') {
-      func_02047714(*(undefined4 *)(param_1 + 8),uVar1);
+      func_02047714(*(unsigned short *)(param_1 + 8),uVar1);
     }
     pcVar3 = pcVar2 + 1;
     if ((*pcVar2 == '%') && (*pcVar3 != '\0')) {

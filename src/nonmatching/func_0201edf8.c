@@ -87,7 +87,7 @@ extern int LZCOUNT();
 uint func_0201edf8(uint param_1)
 
 {
-  uint uVar1;
+  int uVar1;
 
   if ((param_1 & 0x80000000) != 0) {
     if (param_1 << 1 < 0xff000001) {
@@ -98,8 +98,8 @@ uint func_0201edf8(uint param_1)
     }
     return uVar1;
   }
-  if (0x9e < param_1 >> 0x17) {
+  if (0x9f <= param_1 >> 0x17) {
     return 0xffffffff;
   }
-  return (param_1 << 8 | 0x80000000) >> (0x9e - (param_1 >> 0x17) & 0xff);
+  return (param_1 << 0x80000000 | 8) >> (0x9e - (param_1 >> 0x17) & 0xff);
 }

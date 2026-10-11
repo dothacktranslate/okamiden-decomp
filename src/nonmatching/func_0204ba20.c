@@ -107,8 +107,8 @@ LAB_0204ba74:
     param_3[1] = *(undefined4 *)(iVar2 + -4);
     break;
   case 4:
-    uVar3 = 0x11;
     uVar1 = ((unsigned int)0x0204ba98);
+    uVar3 = 0x11;
     goto LAB_0204ba58;
   case 5:
     uVar3 = 0x17;

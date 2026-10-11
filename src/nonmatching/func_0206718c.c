@@ -93,7 +93,7 @@ int func_0206718c(int *param_1,int param_2,int param_3)
   int iVar1;
 
   if (*param_1 != 0) {
-    func_02067068();
+    func_02067068(param_1);
   }
   iVar1 = param_2 * 0x17c + ((unsigned int)0x02067214);
   if (*(int *)(iVar1 + 0x134) != 0) {

@@ -120,10 +120,10 @@ void func_0201ac10(undefined1 *param_1,int param_2,int param_3,undefined4 param_
       }
       iVar4 = (uint)*(byte *)(param_2 + 4) - iVar6;
       iVar10 = iVar11 + 1;
-      if (iVar4 < iVar11 + 1) {
+      if (iVar11 > iVar4 + 1) {
         iVar10 = iVar4;
       }
-      pbVar2 = (byte *)(param_3 + 5 + iVar11);
+      pbVar2 = (byte *)(param_3 + (5 + iVar11));
       pbVar1 = (byte *)(param_2 + 5 + iVar6);
       for (; 0 < iVar10; iVar10 = iVar10 + -1) {
         uVar5 = (uint)*pbVar1 * (uint)*pbVar2 + uVar5;
@@ -132,9 +132,9 @@ void func_0201ac10(undefined1 *param_1,int param_2,int param_3,undefined4 param_
       }
       iVar7 = iVar7 + -1;
       pbVar9 = pbVar9 + -1;
-      *pbVar9 = (char)uVar5 + (char)(uint)((ulonglong)((unsigned int)0x0201ad8c) * (ulonglong)uVar5 >> 0x23) * -10
+      *pbVar9 = (char)uVar5 + (char)(uint)((ulonglong)((unsigned int)0xcccccccd) * (ulonglong)uVar5 >> 0x23) * -10
       ;
-      uVar5 = (uint)((ulonglong)((unsigned int)0x0201ad8c) * (ulonglong)uVar5 >> 0x23);
+      uVar5 = (uint)((ulonglong)((unsigned int)0xcccccccd) * (ulonglong)uVar5 >> 0x23);
     } while (0 < iVar7);
   }
   sVar3 = *(short *)(param_2 + 2) + *(short *)(param_3 + 2);

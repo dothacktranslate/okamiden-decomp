@@ -89,16 +89,16 @@ extern int LZCOUNT();
 void func_0202e104(int param_1)
 
 {
-  short sVar1;
+  unsigned short sVar1;
   int iVar2;
 
-  iVar2 = ((unsigned int)0x0202e12c);
-  *(int *)(param_1 + ((unsigned int)0x0202e12c) + 4) = *(int *)(param_1 + ((unsigned int)0x0202e12c)) + 1;
+  iVar2 = ((unsigned int)0x00000ac8);
+  *(int *)(param_1 + ((unsigned int)0x00000ac8) + 4) = *(int *)(param_1 + ((unsigned int)0x00000ac8)) + 1;
   sVar1 = *(short *)(param_1 + iVar2 + -0x18);
   if ((sVar1 != 6) && (sVar1 != 9)) {
     *(undefined2 *)(param_1 + iVar2 + -0x18) = 8;
     return;
   }
-  *(undefined2 *)(param_1 + ((unsigned int)0x0202e130)) = 8;
+  *(undefined2 *)(param_1 + ((unsigned int)0x00000ab2)) = 8;
   return;
 }

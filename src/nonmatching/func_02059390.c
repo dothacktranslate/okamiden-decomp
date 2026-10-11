@@ -86,7 +86,7 @@ extern int LZCOUNT();
 
 extern int func_020098e4();
 
-void func_02059390(undefined4 *param_1,uint param_2,undefined4 param_3,undefined4 param_4)
+void func_02059390(short *param_1,uint param_2,undefined4 param_3,undefined4 param_4)
 
 {
   if (*(byte *)(param_1 + 3) == 4) {

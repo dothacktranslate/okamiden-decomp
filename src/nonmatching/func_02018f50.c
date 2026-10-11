@@ -118,13 +118,13 @@ int func_02018f50(uint *param_1,uint *param_2)
       param_2 = (uint *)((int)param_2 + 1);
     }
     uVar1 = *param_1;
-    if ((uVar1 + ((unsigned int)0x0201905c) & ~uVar1 & ((unsigned int)0x02019060)) == 0) {
+    if ((uVar1 + ((unsigned int)0xfefefeff) & ~uVar1 & ((unsigned int)0x02019060)) == 0) {
       if (uVar1 == *param_2) {
         do {
           param_1 = param_1 + 1;
           uVar1 = *param_1;
           param_2 = param_2 + 1;
-          if ((uVar1 + ((unsigned int)0x0201905c) & ((unsigned int)0x02019060)) != 0) goto LAB_02019018;
+          if ((uVar1 + ((unsigned int)0xfefefeff) & ((unsigned int)0x02019060)) != 0) goto LAB_02019018;
         } while (uVar1 == *param_2);
       }
       param_1 = (uint *)((int)param_1 + -1);

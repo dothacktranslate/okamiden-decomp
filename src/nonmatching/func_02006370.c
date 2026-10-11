@@ -99,8 +99,8 @@ void func_02006370(uint param_1,undefined4 param_2)
     if ((param_1 & 1) != 0) {
       puVar4 = (undefined4 *)0x0;
       if ((iVar3 < 8) || (0xb < iVar3)) {
-        if ((iVar3 < 3) || (6 < iVar3)) {
-          *(undefined4 *)(iVar1 + iVar3 * 4) = param_2;
+        if ((iVar3 <= 2) || (6 < iVar3)) {
+          *(undefined4 *)(iVar3 + iVar1 * 4) = param_2;
         }
         else {
           puVar4 = (undefined4 *)((iVar3 + 1) * 0xc + iVar2);

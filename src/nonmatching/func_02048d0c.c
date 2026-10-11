@@ -96,7 +96,7 @@ void func_02048d0c(undefined4 param_1)
   undefined4 uVar1;
 
   uVar1 = func_020479b8(param_1,2,((unsigned int)0x02048d6c),0);
-  func_02047928(param_1,1,6);
+  func_02047928(param_1,1,6,uVar1);
   func_02046204(param_1,3);
   uVar1 = func_02047108(param_1,((unsigned int)0x02048d70),0,uVar1);
   func_02048bac(param_1,uVar1);

@@ -100,8 +100,8 @@ undefined4 func_0200e2a8(int param_1,undefined4 param_2,undefined4 param_3,uint 
   int local_28;
   uint local_24;
 
-  local_24 = 0;
   uVar2 = 5;
+  local_24 = 0;
   func_020099f0(param_4,0,0x54);
   iVar1 = func_0200de9c(param_1,param_2,param_3,&local_24,1);
   if (iVar1 == 0) {

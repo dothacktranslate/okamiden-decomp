@@ -95,7 +95,7 @@ extern int func_020679d0();
 void func_02067b0c(int param_1)
 
 {
-  char cVar1;
+  unsigned char cVar1;
   byte bVar2;
   short sVar3;
   int iVar4;
@@ -147,7 +147,7 @@ LAB_02068250:
       iVar15 = 0;
       if (0 < *(int *)(param_1 + 0x10)) {
         do {
-          func_02007820(*(undefined4 *)(param_1 + iVar15 * 4 + 0x14),*(undefined4 *)(param_1 + 0x2c))
+          func_02007820(*(undefined4 *)(iVar15 + param_1 * 4 + 0x14),*(undefined4 *)(param_1 + 0x2c))
           ;
           iVar15 = iVar15 + 1;
         } while (iVar15 < *(int *)(param_1 + 0x10));

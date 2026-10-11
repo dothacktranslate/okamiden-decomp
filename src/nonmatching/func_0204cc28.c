@@ -97,7 +97,7 @@ void func_0204cc28(int param_1,int param_2,int param_3,undefined4 param_4)
   int iVar1;
   int iVar2;
 
-  iVar1 = *(int *)(param_1 + 0x20);
+  iVar1 = *(unsigned short *)(param_1 + 0x20);
   iVar2 = 1;
   if ((iVar1 != param_2) && (*(int *)(param_3 + 0xc) == 0)) {
     iVar2 = 0;

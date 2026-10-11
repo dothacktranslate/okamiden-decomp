@@ -94,8 +94,8 @@ int * func_02036cac(int param_1,undefined4 param_2)
   int iVar2;
   int *piVar3;
 
-  iVar1 = func_02019328(param_2,0x2e);
   piVar3 = *(int **)(param_1 + 0x1c);
+  iVar1 = func_02019328(param_2,0x2e);
   if (piVar3 != (int *)(param_1 + 0x1c)) {
     do {
       iVar2 = func_02015ce0(piVar3[7],iVar1 + 1);

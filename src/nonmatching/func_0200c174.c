@@ -203,7 +203,7 @@ LAB_0200c2b8:
         iVar7 = iVar7 + 1 + (uint)((uVar3 ^ 0x20) - 0xa1 < 0x3c)) {
       if (uVar3 == 0x3a) {
         local_2c = func_0200bfb4(param_1,iVar7);
-        param_1 = param_1 + iVar7 + 1;
+        param_1 = param_1 + (iVar7 + 1);
         if (*param_1 == '/' || *param_1 == '\\') {
           param_1 = param_1 + 1;
         }
@@ -238,7 +238,7 @@ LAB_0200c2b8:
               bVar9 = param_1[1] == '.';
             }
             if (bVar9) {
-              if (0 < iVar6) {
+              if (1 <= iVar6) {
                 iVar6 = iVar6 + -1;
               }
               iVar6 = func_0200c868(param_3,iVar6);

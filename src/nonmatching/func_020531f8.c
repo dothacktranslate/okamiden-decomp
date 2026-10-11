@@ -100,7 +100,7 @@ undefined4 func_020531f8(undefined4 param_1,undefined4 param_2,undefined4 param_
   func_02047928(param_1,1,5,param_4,param_4);
   iVar1 = func_020466e4(param_1,1);
   iVar2 = func_02047aa8(param_1,2,iVar1);
-  if ((0 < iVar2) && (iVar2 <= iVar1)) {
+  if ((1 <= iVar2) && (iVar2 <= iVar1)) {
     func_02046b84(param_1,1,iVar2);
     for (; iVar2 < iVar1; iVar2 = iVar2 + 1) {
       func_02046b84(param_1,1,iVar2 + 1);

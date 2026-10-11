@@ -159,8 +159,8 @@ void func_02008d18(byte *param_1,undefined4 param_2,undefined4 param_3,undefined
   int iVar3;
 
   iVar2 = (*(unsigned int *)0x02008d94);
-  iVar3 = (*(unsigned int *)0x02008d94) + 6;
-  *param_1 = (byte)(((uint)*(ushort *)((*(unsigned int *)0x02008d94) + 100) << 0x1d) >> 0x1d);
+  iVar3 = (*(unsigned short *)0x02008d94) + 6;
+  *param_1 = (byte)(((uint)*(ushort *)((*(unsigned short *)0x02008d94) + 100) << 0x1d) >> 0x1d);
   param_1[1] = (byte)(((uint)*(byte *)(iVar2 + 2) << 0x1c) >> 0x1c);
   param_1[2] = *(byte *)(iVar2 + 3);
   param_1[3] = *(byte *)(iVar2 + 4);

@@ -156,8 +156,8 @@ void func_02010094(int *param_1,int param_2,int param_3,int param_4)
 
 {
   int iVar1;
-  int iVar2;
   int iVar3;
+  int iVar2;
 
   if (param_1 != (int *)0x0) {
     *(int *)(param_2 + 8) = param_3;
@@ -166,8 +166,8 @@ void func_02010094(int *param_1,int param_2,int param_3,int param_4)
     iVar2 = 0;
     while (((iVar1 = iVar3, iVar1 != 0 && ((param_4 != 0 || (*(int *)(iVar1 + 8) <= param_3)))) &&
            ((param_4 != 1 || (*(int *)(iVar1 + 8) < param_3))))) {
-      iVar2 = iVar1;
       iVar3 = *(int *)(iVar1 + 0xc);
+      iVar2 = iVar1;
     }
     if (iVar1 == 0) {
       *(undefined4 *)(param_2 + 0xc) = 0;

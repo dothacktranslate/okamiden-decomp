@@ -92,7 +92,7 @@ void func_020469a8(int param_1,undefined4 param_2,int param_3)
 
 {
   undefined4 uVar1;
-  int iVar2;
+  uint iVar2;
   int *piVar3;
   undefined4 *puVar4;
 
@@ -107,7 +107,7 @@ void func_020469a8(int param_1,undefined4 param_2,int param_3)
     do {
       param_3 = param_3 + -1;
       puVar4 = (undefined4 *)(*(int *)(param_1 + 8) + param_3 * 8);
-      *(undefined4 *)(iVar2 + 0x14 + param_3 * 8) = *puVar4;
+      *(undefined4 *)((iVar2 + 0x14) + param_3 * 8) = *puVar4;
       *(undefined4 *)(iVar2 + 0x14 + param_3 * 8 + 4) = puVar4[1];
     } while (param_3 != 0);
   }

@@ -111,7 +111,7 @@ void func_0204e454(int param_1,undefined4 *param_2)
   *(byte *)((int)param_2 + 5) = bVar1 | 4;
   if (3 < ((int *)param_2[2])[1]) {
     if ((*(byte *)(*(int *)param_2[2] + 5) & 3) != 0) {
-      func_0204e3d4();
+      func_0204e3d4(param_1);
       return;
     }
     return;

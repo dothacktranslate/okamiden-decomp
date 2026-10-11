@@ -27,7 +27,7 @@ undefined2 * func_02044144(int param_1,undefined4 param_2,undefined4 param_3,und
 
   iVar1 = func_02059dbc(*(undefined4 *)(param_1 + 4),*(undefined4 *)(param_1 + 8),param_3,param_4,
                        param_4);
-  puVar2 = (undefined2 *)func_02032bcc(iVar1 * 6 + 0x20,4,((unsigned int)0x020441a8));
+  puVar2 = (undefined2 *)func_02032bcc(iVar1 * 0x20 + 6,4,((unsigned int)0x020441a8));
   if (puVar2 != (undefined2 *)0x0) {
     func_020098e4(0,puVar2,0x18);
     *puVar2 = 1;

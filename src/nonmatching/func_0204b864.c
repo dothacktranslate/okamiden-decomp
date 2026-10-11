@@ -93,8 +93,8 @@ undefined4 func_0204b864(undefined4 param_1,int param_2,int param_3,undefined4 p
   int iVar2;
   int iVar3;
 
-  iVar2 = *(int *)(((unsigned int)0x0204b8a4) + *(int *)(param_2 + 4) * 4);
-  iVar3 = *(int *)(((unsigned int)0x0204b8a4) + *(int *)(param_3 + 4) * 4);
+  iVar2 = *(unsigned short *)(((unsigned int)0x0204b8a4) + *(int *)(param_2 + 4) * 4);
+  iVar3 = *(unsigned short *)(((unsigned int)0x0204b8a4) + *(int *)(param_3 + 4) * 4);
   uVar1 = ((unsigned int)0x0204b8ac);
   if (*(char *)(iVar2 + 2) == *(char *)(iVar3 + 2)) {
     uVar1 = ((unsigned int)0x0204b8a8);

@@ -152,7 +152,7 @@ int func_020511f4(undefined4 param_1,int param_2)
         iVar1 = func_0205117c(&local_134,0,0);
         return iVar1 + 2;
       }
-      bVar6 = uVar5 < local_130;
+      bVar6 = local_130 > uVar5;
       uVar5 = uVar5 + 1;
     } while ((bVar6) && (unaff_r8 == 0));
   }

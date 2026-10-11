@@ -122,7 +122,7 @@ void func_0203f31c(int param_1,int param_2,int param_3)
   int local_20;
   int local_1c;
 
-  iVar3 = *(int *)(param_1 + 100);
+  iVar3 = *(unsigned short *)(param_1 + 100);
   iVar1 = (param_3 + 1) * 0xc;
   *(int *)(param_1 + 0x70) = param_3;
   iVar2 = iVar3 + iVar1;

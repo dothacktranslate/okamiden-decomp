@@ -96,8 +96,8 @@ void func_0200d12c(int param_1)
   undefined4 *puVar4;
   undefined4 *puVar5;
   undefined4 *puVar6;
-  uint uVar7;
   uint uVar8;
+  uint uVar7;
   undefined4 *puVar9;
   uint uVar10;
   undefined4 *puVar11;
@@ -116,7 +116,7 @@ void func_0200d12c(int param_1)
       uVar10 = puVar2[2];
       puVar9 = (undefined4 *)*puVar2;
       if ((((uVar10 == 0) && (uVar7 <= (uint)puVar2[1])) && ((uint)puVar2[1] < uVar8)) ||
-         ((puVar4 = puVar2, uVar7 <= uVar10 && (uVar10 < uVar8)))) {
+         ((puVar4 = puVar2, uVar10 >= uVar7 && (uVar10 < uVar8)))) {
         puVar4 = puVar2;
         if (puVar6 != (undefined4 *)0x0) {
           *puVar6 = puVar2;

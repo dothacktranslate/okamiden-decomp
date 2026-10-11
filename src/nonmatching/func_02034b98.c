@@ -98,8 +98,8 @@ void func_02034b98(int param_1,int param_2,int param_3)
   undefined1 auStack_28 [20];
   undefined1 auStack_14 [4];
 
-  func_02035870(auStack_14,param_1 + 0x38,param_2 + 4);
-  func_02035834(auStack_28,param_1 + 0xc,*(undefined4 *)(param_1 + 0x10),param_2 + 4);
+  func_02035870(auStack_14,0x38 + param_1,param_2 + 4);
+  func_02035834(auStack_28,0xc + param_1,*(undefined4 *)(param_1 + 0x10),param_2 + 4);
   *(undefined4 *)(param_2 + 0x10) = *(undefined4 *)(param_1 + 0x24);
   if ((*(uint *)(param_1 + 8) & 0x20000) != 0) {
     *(uint *)(param_2 + 0xc) = *(uint *)(param_2 + 0xc) | 8;
@@ -112,7 +112,7 @@ void func_02034b98(int param_1,int param_2,int param_3)
   if (param_3 != 0) {
     func_02034924(param_1);
   }
-  *(uint *)(param_1 + 8) = ((unsigned int)0x02034c04) & *(uint *)(param_1 + 8);
+  *(uint *)(param_1 + 8) = ((unsigned int)0xfffcffff) & *(uint *)(param_1 + 8);
   uVar1 = func_020349d4(param_1);
   *(undefined4 *)(param_1 + 0x18) = uVar1;
   return;

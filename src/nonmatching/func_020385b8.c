@@ -108,7 +108,7 @@ void func_020385b8(int param_1,int param_2)
       if (*(short *)(iVar4 + 4) == 0) {
         *(undefined2 *)(iVar4 + 8) = 0;
         iVar2 = *(ushort *)(iVar4 + 10) + 1;
-        if (iVar1 < iVar2) {
+        if (iVar2 > iVar1) {
           iVar2 = iVar1;
         }
         *(short *)(iVar4 + 10) = (short)iVar2;

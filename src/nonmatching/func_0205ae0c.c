@@ -88,8 +88,8 @@ void func_0205ae0c(int *param_1,int param_2)
 
 {
   int iVar1;
-  int iVar2;
   int iVar3;
+  uint iVar2;
   int iVar4;
 
   iVar4 = *param_1;
@@ -116,8 +116,8 @@ void func_0205ae0c(int *param_1,int param_2)
   do {
     iVar2 = iVar3;
     if (*(byte *)(param_2 + 0x18) <= *(byte *)(iVar2 + 0x18)) {
-      iVar1 = *(int *)(param_2 + 0x10);
       iVar3 = param_2;
+      iVar1 = *(int *)(param_2 + 0x10);
       while (iVar1 != 0) {
         iVar3 = *(int *)(iVar3 + 0x10);
         iVar1 = *(int *)(iVar3 + 0x10);

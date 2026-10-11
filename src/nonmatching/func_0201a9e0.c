@@ -160,7 +160,7 @@ int func_0201a9e0(int param_1,int param_2)
   if ((param_1 != 0) && (uVar2 = *(uint *)(param_1 + 4), (uVar2 & 0x3ff) >> 7 != 0)) {
     uVar1 = (uVar2 & 0xfff) >> 10;
     if (uVar1 == 0) {
-      if (param_2 < 1) {
+      if (param_2 <= 0) {
         if (param_2 < 0) {
           *(uint *)(param_1 + 4) = uVar2 & 0xfffff3ff | 0x400;
         }

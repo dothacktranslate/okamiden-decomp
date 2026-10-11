@@ -95,9 +95,9 @@ void func_02014f1c(undefined4 *param_1)
 
   uVar5 = ((unsigned int)0x02014f6c);
   uVar4 = ((unsigned int)0x02014f68);
-  uVar3 = ((unsigned int)0x02014f64);
   uVar2 = ((unsigned int)0x02014f60);
-  uVar1 = ((unsigned int)0x02014f5c);
+  uVar3 = ((unsigned int)0x02014f64);
+  uVar1 = ((unsigned int)0x67452301);
   param_1[0x16] = 0;
   param_1[0x17] = 0;
   param_1[0x15] = 0;

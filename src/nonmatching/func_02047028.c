@@ -89,7 +89,7 @@ extern int func_0204c4b0();
 void func_02047028(int param_1,int param_2,int param_3,undefined4 param_4)
 
 {
-  func_0204c4b0(param_1,*(int *)(param_1 + 8) + (param_2 + 1) * -8,param_3,*(int *)(param_1 + 8),
+  func_0204c4b0(param_1,*(unsigned short *)(param_1 + 8) + (param_2 + 1) * -8,param_3,*(int *)(param_1 + 8),
                param_4);
   if (param_3 != -1) {
     return;

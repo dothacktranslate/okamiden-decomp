@@ -96,5 +96,5 @@ undefined4 func_02013d8c(void)
   (*(unsigned int *)0x02013ddc) = (*(unsigned int *)0x02013dd8) & 0xf8ffe000 | 0xa7000000;
   do {
   } while ((*puVar1 & 0x800000) == 0);
-  return (*(unsigned int *)0x02013de0);
+  return (*(unsigned int *)0x04100010);
 }

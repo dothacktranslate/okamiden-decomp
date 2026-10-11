@@ -92,17 +92,17 @@ undefined4 func_0200b5ac(uint param_1,int param_2,uint param_3)
 {
   ushort *puVar1;
 
-  puVar1 = ((unsigned int)0x0200b620);
-  if (((*(unsigned int *)0x0200b620) & 0x4000) != 0) {
-    (*(unsigned int *)0x0200b620) = (*(unsigned int *)0x0200b620) | 0xc000;
+  puVar1 = ((unsigned int)0x04000184);
+  if (((*(unsigned int *)0x04000184) & 0x4000) != 0) {
+    (*(unsigned int *)0x04000184) = (*(unsigned int *)0x04000184) | 0xc000;
     return 0xffffffff;
   }
-  func_02008b6c((*(unsigned int *)0x0200b620));
+  func_02008b6c((*(unsigned int *)0x04000184));
   if ((*puVar1 & 2) == 0) {
-    *(uint *)(puVar1 + 2) = param_1 & 0x1f | (param_3 & 1) << 5 | param_2 << 6;
+    *(uint *)(puVar1 + 2) = param_1 & 0x1f | (param_3 & 1) << param_2 | 5 << 6;
     func_02008b80();
     return 0;
   }
-  func_02008b80();
+  func_02008b80(param_1);
   return 0xfffffffe;
 }

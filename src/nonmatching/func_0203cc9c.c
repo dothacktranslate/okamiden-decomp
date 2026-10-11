@@ -94,8 +94,8 @@ void func_0203cc9c(int param_1,int param_2)
   bool bVar1;
   int iVar2;
   int iVar3;
-  int iVar4;
   uint uVar5;
+  int iVar4;
 
   *(uint *)(param_1 + 0xc) = *(uint *)(param_1 + 0xc) | 0x40000000;
   iVar2 = *(int *)(param_1 + 0x14);

@@ -24,10 +24,10 @@ void func_02044b6c(int param_1,undefined4 param_2,uint param_3,undefined4 param_
   int iVar1;
   uint uVar2;
 
-  uVar2 = (uint)((param_3 & 1) != 0);
   iVar1 = *(int *)(param_1 + 0x10);
+  uVar2 = (uint)((param_3 & 1) != 0);
   if ((param_3 & 2) == 0) {
-    func_02039090((*(unsigned int *)0x02044bec),*(undefined4 *)(((unsigned int)0x02044bf0) + uVar2 * 4),param_2,
+    func_02039090((*(unsigned short *)0x02044bec),*(unsigned short *)(((unsigned int)0x02044bf0) + uVar2 * 4),param_2,
                  *(undefined4 *)(iVar1 + 0x14),*(undefined4 *)(iVar1 + 0x10),param_4);
     return;
   }

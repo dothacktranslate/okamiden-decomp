@@ -181,7 +181,7 @@ int func_02003c4c(void)
     break;
   case 5:
     if (((*(volatile unsigned short *)0x0400000c) & 0x80) == 0) {
-      iVar2 = iVar2 + 0x6000000 + uVar1 * 0x800;
+      iVar2 = (iVar2 + 0x6000000) + uVar1 * 0x800;
     }
     else {
       iVar2 = uVar1 * 0x4000 + 0x6000000;
@@ -192,5 +192,5 @@ int func_02003c4c(void)
   default:
     return 0;
   }
-  return iVar2 + 0x6000000 + uVar1 * 0x800;
+  return iVar2 + uVar1 + 0x6000000 * 0x800;
 }

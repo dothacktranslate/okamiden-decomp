@@ -90,9 +90,9 @@ void func_0202fec0(int param_1,int *param_2,int *param_3)
 
 {
   int iVar1;
-  int iVar2;
-  int iVar3;
+  uint iVar3;
   int iVar4;
+  int iVar2;
 
   iVar2 = *param_3 - *param_2;
   iVar3 = (int)(iVar2 + ((uint)(iVar2 >> 3) >> 0x1c)) >> 4;

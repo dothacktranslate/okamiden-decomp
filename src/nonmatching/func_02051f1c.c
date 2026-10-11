@@ -98,7 +98,7 @@ void func_02051f1c(undefined4 param_1)
   func_02046898(param_1,((unsigned int)0x02051f9c),0);
   func_02046414(param_1,0xfffffffe);
   func_02046eb0(param_1,0xfffffffe);
-  func_02046204(param_1,0xfffffffe);
+  func_02046d44(param_1,0xfffffffe);
   func_02046414(param_1,0xfffffffe);
   func_02046d44(param_1,0xfffffffe,((unsigned int)0x02051fa0));
   func_02046204(param_1,0xfffffffe);

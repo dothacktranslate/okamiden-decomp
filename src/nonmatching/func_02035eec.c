@@ -97,8 +97,8 @@ undefined4 func_02035eec(int param_1,int param_2,int param_3,int param_4)
   undefined1 *puVar2;
   undefined4 uVar3;
   undefined1 *puVar4;
-  int iVar5;
   int iVar6;
+  int iVar5;
   undefined1 auStack_3c [12];
   undefined1 auStack_30 [12];
 
@@ -116,7 +116,7 @@ undefined4 func_02035eec(int param_1,int param_2,int param_3,int param_4)
               puVar4 = (undefined1 *)(iVar6 + 4);
             }
             else {
-              func_02002ac4(iVar1 + 4,iVar6 + 4,auStack_30);
+              func_02002c10(iVar1 + 4,iVar6 + 4,auStack_30);
               func_02002c10(auStack_30,auStack_30);
               func_02002ac4(param_1 + (iVar5 + 1) * 0x20 + 4,iVar6 + 4,auStack_3c);
               func_02002c10(auStack_3c,auStack_3c);

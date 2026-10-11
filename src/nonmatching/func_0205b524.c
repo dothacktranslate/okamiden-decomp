@@ -98,7 +98,7 @@ undefined4 func_0205b524(int param_1,int param_2,uint param_3,uint param_4)
     iVar2 = *(int *)(param_1 + 8);
   }
   if (param_1 != 0 && iVar2 != 0) {
-    puVar1 = (ushort *)(param_1 + iVar2);
+    puVar1 = (ushort *)(iVar2 + param_1);
   }
   else {
     puVar1 = (ushort *)0x0;

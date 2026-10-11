@@ -149,8 +149,8 @@ void func_020103f4(undefined4 param_1,uint param_2,int param_3)
   uVar9 = 0;
   switch(*(undefined4 *)(((unsigned int)0x02010828) + 0x18)) {
   case 0:
-    puVar10 = *(undefined4 **)(((unsigned int)0x02010828) + 0xc);
     uVar4 = func_02010834((*(unsigned int *)0x0201082c) & 0xff);
+    puVar10 = *(undefined4 **)(((unsigned int)0x02010828) + 0xc);
     *puVar10 = uVar4;
     uVar4 = func_02010834((*puVar11 & 0x1fff) >> 8);
     puVar10[1] = uVar4;

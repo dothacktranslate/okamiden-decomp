@@ -188,7 +188,7 @@ void func_0206529c(undefined4 param_1,undefined4 param_2,int param_3,undefined4 
     func_0200a428(((unsigned int *)0x02065378)[9],((unsigned int *)0x02065378)[10],param_3,0,param_4);
     if (!bVar4) {
       uVar2 = func_0200abf4();
-      func_0200a9ec(1);
+      func_0200a9ec(1,uVar2);
       func_0200ab88(uVar2);
       uVar2 = ((unsigned int)0x0206537c);
       do {

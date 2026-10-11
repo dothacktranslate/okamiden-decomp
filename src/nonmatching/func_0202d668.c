@@ -89,7 +89,7 @@ extern int LZCOUNT();
 undefined4 func_0202d668(int param_1)
 
 {
-  char cVar1;
+  unsigned char cVar1;
   char *pcVar2;
 
   cVar1 = **(char **)(param_1 + 0xdf4);

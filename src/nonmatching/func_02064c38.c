@@ -98,7 +98,7 @@ void func_02064c38(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     *piVar1 = 1;
   }
   uVar2 = ((unsigned int)0x02064ca8);
-  *(undefined4 *)(param_1 + 8) = ((unsigned int)0x02064ca4);
+  *(unsigned char *)(param_1 + 8) = ((unsigned int)0x02064ca4);
   *(int *)(param_1 + 0xc) = param_1;
   *(undefined4 *)(param_1 + 0x18) = uVar2;
   *(int *)(param_1 + 0x1c) = param_1;

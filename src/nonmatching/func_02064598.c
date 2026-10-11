@@ -103,7 +103,7 @@ void func_02064598(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
   iVar3 = 0;
   iVar5 = 0;
   do {
-    iVar2 = iVar3 * 0x44 + iVar4;
+    iVar2 = iVar3 * iVar4 + 0x44;
     *(undefined1 *)(iVar2 + 0x2c) = 0;
     *(char *)(iVar2 + 0x3c) = (char)iVar3;
     func_02056208(uVar1);

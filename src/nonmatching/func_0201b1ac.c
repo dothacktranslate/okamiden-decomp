@@ -98,21 +98,21 @@ bool func_0201b1ac(int param_1,int param_2)
     if (*(short *)(param_1 + 2) != *(short *)(param_2 + 2)) {
       return false;
     }
-    uVar1 = (uint)*(byte *)(param_1 + 4);
+    uVar3 = (uint)*(byte *)(param_1 + 4);
     iVar2 = 0;
-    uVar3 = uVar1;
-    if (*(byte *)(param_2 + 4) < uVar1) {
-      uVar3 = (uint)*(byte *)(param_2 + 4);
+    uVar1 = uVar3;
+    if (*(byte *)(param_2 + 4) < uVar3) {
+      uVar1 = (uint)*(byte *)(param_2 + 4);
     }
-    if (uVar3 != 0) {
+    if (uVar1 != 0) {
       do {
-        if (*(char *)(param_1 + iVar2 + 5) != *(char *)(param_2 + iVar2 + 5)) {
+        if (*(char *)(param_1 + (iVar2 + 5)) != *(char *)(param_2 + iVar2 + 5)) {
           return false;
         }
         iVar2 = iVar2 + 1;
-      } while (iVar2 < (int)uVar3);
+      } while (iVar2 < (int)uVar1);
     }
-    if (uVar3 == uVar1) {
+    if (uVar1 == uVar3) {
       param_1 = param_2;
     }
     if (iVar2 < (int)(uint)*(byte *)(param_1 + 4)) {

@@ -96,7 +96,7 @@ ulonglong func_0201ee84(uint param_1,uint param_2)
       if (0x3f < (int)uVar1) {
         return 0;
       }
-      uVar2 = param_2 << 0xb | 0x80000000 | param_1 >> 0x15;
+      uVar2 = param_2 << 0x80000000 | 0xb | param_1 >> 0x15;
       if (0x20 < (int)uVar1) {
         return (ulonglong)(uVar2 >> (uVar1 - 0x20 & 0xff));
       }

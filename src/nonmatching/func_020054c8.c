@@ -167,7 +167,7 @@ void func_020054c8(int param_1)
   undefined1 *puVar2;
 
   puVar1 = ((unsigned int)0x020055e0);
-  (*(unsigned int *)0x020055e0) = ~(ushort)param_1 & ((*(unsigned int *)0x020055e0) | ((unsigned int *)0x020055e0)[2]);
+  (*(unsigned short *)0x020055e0) = ~(ushort)param_1 & ((*(unsigned int *)0x020055e0) | ((unsigned int *)0x020055e0)[2]);
   puVar1[2] = (ushort)param_1;
   puVar2 = ((unsigned int)0x020055e4);
   if (0x30 < param_1) {
@@ -183,7 +183,7 @@ void func_020054c8(int param_1)
       }
       goto switchD_02005510_default;
     }
-    if (param_1 < 0x61) {
+    if (param_1 <= 0x60) {
       if (param_1 != 0x60) goto switchD_02005510_default;
       (*(unsigned int *)0x020055e4) = 0x8a;
       puVar2 = ((unsigned int)0x020055f0);

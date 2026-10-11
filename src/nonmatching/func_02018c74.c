@@ -105,8 +105,8 @@ undefined4 func_02018c74(int param_1)
   }
   iVar4 = func_02007600(((unsigned int)0x02018d88));
   iVar3 = ((unsigned int)0x02018d94);
-  iVar2 = ((unsigned int)0x02018d90);
   iVar5 = ((unsigned int)0x02018d8c);
+  iVar2 = ((unsigned int)0x02018d90);
   if (iVar4 == 0) {
     *(undefined4 *)(((unsigned int)0x02018d90) + 0x1c) = *(undefined4 *)(*(int *)(((unsigned int)0x02018d8c) + 4) + 0x6c);
     *(undefined4 *)(iVar3 + 0x1c) = 1;

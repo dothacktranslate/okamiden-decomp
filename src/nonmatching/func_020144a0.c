@@ -172,7 +172,7 @@ void func_020144a0(undefined4 param_1,uint param_2,undefined4 param_3,undefined4
   piVar1 = ((unsigned int)0x0201452c);
   if ((param_2 & 0x3f) != 0x11) {
     if ((param_2 & 0x3f) == 2) {
-      (*(unsigned int *)0x0201452c) = (*(unsigned int *)0x0201452c) + 1;
+      (*(unsigned short *)0x0201452c) = (*(unsigned int *)0x0201452c) + 1;
       piVar1[1] = 0;
       func_02013218(2);
       return;

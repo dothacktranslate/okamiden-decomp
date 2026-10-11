@@ -98,7 +98,7 @@ int func_02036c3c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
   int iVar2;
   undefined4 uVar3;
 
-  if ((*(unsigned int *)0x02036ca0) == 0) {
+  if ((*(short *)0x02036ca0) == 0) {
     if (param_1 == 0) {
       param_1 = 1;
     }

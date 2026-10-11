@@ -92,7 +92,7 @@ void func_0200f290(ushort *param_1,ushort *param_2)
   ushort uVar3;
   ushort uVar4;
   longlong lVar5;
-  uint *puVar6;
+  undefined2 *puVar6;
   uint uVar7;
   uint uVar8;
   uint uVar9;

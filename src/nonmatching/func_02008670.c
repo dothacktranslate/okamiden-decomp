@@ -100,7 +100,7 @@ void func_02008670(void)
   bool bVar6;
   undefined8 uVar7;
 
-  (*(unsigned int *)0x02008750) = 0;
+  (*(unsigned short *)0x02008750) = 0;
   func_0200656c(0x10);
   *(uint *)(((unsigned int)0x02008754) + 0x3ff8) = *(uint *)(((unsigned int)0x02008754) + 0x3ff8) | 0x10;
   uVar7 = func_02008384();
@@ -111,7 +111,7 @@ void func_02008670(void)
     return;
   }
   bVar6 = (uint)puVar5[4] <= uVar3;
-  if (uVar3 == puVar5[4]) {
+  if (puVar5[4] == uVar3) {
     bVar6 = (uint)puVar5[3] <= (uint)uVar7;
   }
   if (bVar6) {

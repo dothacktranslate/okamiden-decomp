@@ -100,8 +100,8 @@ void func_0204f064(undefined4 param_1,int param_2)
   func_02046d44(param_1,0xfffffffe,((unsigned int)0x0204f0e8));
   func_020468f0(param_1,param_2);
   func_02046d44(param_1,0xfffffffe,((unsigned int)0x0204f0ec));
-  iVar1 = func_02019328(param_2,0x2e);
   iVar2 = param_2;
+  iVar1 = func_02019328(param_2,0x2e);
   if (iVar1 != 0) {
     iVar2 = iVar1 + 1;
   }

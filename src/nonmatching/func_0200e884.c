@@ -117,7 +117,7 @@ void func_0200e884(undefined4 param_1)
   if (iVar4 == 1) {
     iVar5 = func_02012f88();
     iVar6 = func_02012f88();
-    iVar4 = ((unsigned int)0x0200e9c0);
+    iVar4 = ((unsigned int)0x00000682);
     func_0200e564(iVar2,((unsigned int)0x0200e9bc));
     iVar5 = *(int *)(iVar5 + 0x40);
     if (iVar5 != -1 && iVar5 != 0) {

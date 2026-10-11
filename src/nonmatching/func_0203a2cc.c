@@ -99,9 +99,9 @@ void func_0203a2cc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   undefined1 auStack_54 [64];
   undefined4 uStack_14;
 
-  iVar1 = ((unsigned int)0x0203a360);
-  iVar2 = *(int *)(param_1 + ((unsigned int)0x0203a360));
-  *(undefined4 *)(iVar2 + ((unsigned int)0x0203a360) + -0x9c) = 4;
+  iVar1 = ((unsigned int)0x00001f04);
+  iVar2 = *(int *)(param_1 + ((unsigned int)0x00001f04));
+  *(undefined4 *)(iVar2 + ((unsigned int)0x00001f04) + -0x9c) = 4;
   *(undefined4 *)(iVar2 + iVar1 + -0x90) = 0x400;
   *(undefined4 *)(iVar2 + iVar1 + -0xb0) = 0;
   *(undefined4 *)(iVar2 + iVar1 + -0xac) = 1;

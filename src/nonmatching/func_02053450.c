@@ -104,7 +104,7 @@ undefined4 func_02053450(undefined4 param_1,int param_2,int param_3,undefined4 p
     func_02046414(param_1,param_3 + -2);
     func_02047028(param_1,2,1);
     uVar2 = func_0204661c(param_1,0xffffffff);
-    func_02046204(param_1,0xfffffffe);
+    func_02046204(uVar2,param_1,0xfffffffe);
     return uVar2;
   }
   uVar2 = func_0204654c(param_1,param_2,param_3);

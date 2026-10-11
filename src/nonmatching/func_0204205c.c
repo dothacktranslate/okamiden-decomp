@@ -99,14 +99,14 @@ void func_0204205c(int param_1)
   if ((*(uint *)(param_1 + 0x124) & 0x80000000) == 0) {
     uVar1 = (*(unsigned int *)0x020420c4);
     (*(unsigned int *)0x020420c4) = 0;
-    puVar3 = ((unsigned int)0x020420c8);
-    (*(unsigned int *)0x020420c8) = *(int *)(param_1 + 0x198) << 1 | *(uint *)(param_1 + 0x194);
+    puVar3 = ((unsigned int)0x04000540);
+    (*(unsigned int *)0x04000540) = *(int *)(param_1 + 0x198) << 1 | *(uint *)(param_1 + 0x194);
     *(uint *)(param_1 + 0x124) = (uint)puVar3 >> 0xc | *(uint *)(param_1 + 0x124);
     func_020420d8();
     *puVar2 = uVar1;
   }
-  puVar2 = ((unsigned int)0x020420d0);
-  *(uint *)(param_1 + 0x124) = ((unsigned int)0x020420cc) & *(uint *)(param_1 + 0x124);
+  puVar2 = ((unsigned int)0x04000604);
+  *(uint *)(param_1 + 0x124) = ((unsigned int)0x7fffffff) & *(uint *)(param_1 + 0x124);
   *(undefined2 *)(param_1 + 0x19e) = *puVar2;
   *(undefined2 *)(param_1 + 0x1a0) = puVar2[1];
   *(undefined2 *)(param_1 + 0x1a2) = (*(unsigned int *)0x020420d4);

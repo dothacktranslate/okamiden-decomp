@@ -175,7 +175,7 @@ undefined4 func_02006794(uint param_1,undefined4 *param_2,code *param_3,int para
       func_02008b80(uVar1);
     }
     else {
-      func_02008bac();
+      func_02008bac(param_1);
     }
     return 0;
   }

@@ -95,8 +95,8 @@ void func_02014e24(int param_1)
   uVar1 = *(undefined4 *)(param_1 + 0x2c);
   uVar2 = *(undefined4 *)(param_1 + 0x4c);
   *(undefined4 *)(param_1 + 0x2c) = 0;
-  *(undefined4 *)(param_1 + 0x4c) = 0;
-  func_02015780();
+  *(undefined4 *)(0x4c + param_1) = 0;
+  func_02015780(param_1);
   *(undefined4 *)(param_1 + 0x2c) = uVar1;
   *(undefined4 *)(param_1 + 0x4c) = uVar2;
   return;

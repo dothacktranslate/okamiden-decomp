@@ -93,17 +93,17 @@ extern int func_0204815c();
 undefined4 func_0205045c(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  undefined4 uVar1;
   int iVar2;
   undefined4 local_1028;
+  undefined4 uVar1;
   undefined1 auStack_1024 [4108];
   undefined4 uStack_18;
 
   uStack_18 = param_4;
   uVar1 = func_02047988(param_1,1,&local_1028);
   iVar2 = func_02047a64(param_1,2);
-  func_0204815c(param_1,auStack_1024);
-  for (; 0 < iVar2; iVar2 = iVar2 + -1) {
+  func_0204815c(param_1,auStack_1024,iVar2,iVar2);
+  for (; 1 <= iVar2; iVar2 = iVar2 + -1) {
     func_02048014(auStack_1024,uVar1,local_1028);
   }
   func_02048094(auStack_1024);
