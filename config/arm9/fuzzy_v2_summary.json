@@ -1,0 +1,26 @@
+{
+  "arm9_total_code_bytes": 431680,
+  "cumulative_selected_v2_gain_over_pre_a9": {
+    "equivalent_bytes": 1889.9783637103276,
+    "percentage_points": 0.43781930219383053
+  },
+  "latest_profile_sweep": {
+    "equivalent_byte_gain": 143.0666188458152,
+    "functions_with_profile_objects": 655,
+    "functions_without_matching_profile_objects": 74,
+    "percentage_point_gain": 0.033141822379034284,
+    "profile_objects_scored": 4086
+  },
+  "legacy_reporting": {
+    "exact_bytes": 15940,
+    "exact_functions": 535,
+    "note": "Legacy fuzzy reporting remains separate from V2; fuzzy_sources.tsv has not been rewritten with V2 scores.",
+    "overall_fuzzy_percent": 41.34938
+  },
+  "metric": "V2",
+  "metric_description": "50% normalized instruction-sequence similarity + 30% mnemonic-sequence similarity + 20% relocation-masked byte-sequence similarity",
+  "v2_preferences": {
+    "profile_choices_improved_in_latest_sweep": 25,
+    "tracked_fuzzy_functions": 729
+  }
+}
