@@ -90,7 +90,7 @@ extern int func_02047550();
 extern int func_02047988();
 extern int func_020479b8();
 
-int func_02047760(undefined4 param_1,undefined4 param_2,int param_3,undefined2 *param_4)
+int func_02047760(undefined4 param_1,undefined4 param_2,int param_3,int *param_4)
 
 {
   undefined4 uVar1;

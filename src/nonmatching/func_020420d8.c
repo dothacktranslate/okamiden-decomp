@@ -133,7 +133,7 @@ void func_020420d8(int param_1)
     if (*(int *)(param_1 + 0x1cc) == 6) {
       iVar2 = *(int *)(((unsigned int)0x020421fc) + 0x10);
       if (*(int *)(iVar2 + 0x1d4) != -0x80000000) {
-        func_020034c8(((unsigned int)0x0400006c));
+        func_020034c8(((unsigned int)0x02042200));
         *(undefined4 *)(iVar2 + 0x1d4) = 0x80000000;
       }
       func_02041680();

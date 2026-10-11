@@ -104,7 +104,7 @@ int func_02038524(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
   undefined1 auStack_20 [8];
   undefined4 uStack_18;
 
-  if ((*(short *)0x020385ac) == 0) {
+  if ((*(unsigned int *)0x020385ac) == 0) {
     uStack_18 = param_4;
     func_0200eda4();
     iVar1 = func_0200ee18(auStack_20);

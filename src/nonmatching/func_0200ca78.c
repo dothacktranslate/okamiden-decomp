@@ -93,8 +93,8 @@ uint func_0200ca78(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 {
   int iVar1;
   uint uVar2;
-  undefined4 local_144;
   undefined4 local_148;
+  undefined4 local_144;
   undefined1 *local_140;
   undefined4 local_13c;
   undefined1 auStack_138 [280];

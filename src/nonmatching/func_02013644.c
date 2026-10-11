@@ -105,8 +105,8 @@ void func_02013644(int *param_1)
 
   iVar3 = param_1[0x144];
   iVar4 = param_1[0x146];
-  uVar5 = 0x100;
   iVar7 = param_1[0x145];
+  uVar5 = 0x100;
   func_02000b64(((unsigned int)0x020137d0));
   if (iVar3 == 0xb) {
     uVar5 = func_02013c98();

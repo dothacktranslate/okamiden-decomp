@@ -96,12 +96,12 @@ void func_0205b6ac(int param_1,ushort *param_2,int param_3,ushort *param_4)
   int iVar7;
   uint uVar8;
 
-  uVar5 = *(uint *)(param_3 + 0x2c) & 0xffff;
   uVar1 = *param_2;
+  uVar5 = *(uint *)(param_3 + 0x2c) & 0xffff;
   uVar2 = *param_4;
   if ((param_4[1] & 1) == 0) {
-    uVar5 = uVar5 >> 1;
     uVar2 = uVar2 >> 1;
+    uVar5 = uVar5 >> 1;
   }
   uVar4 = 0;
   if ((char)param_2[1] != '\0') {

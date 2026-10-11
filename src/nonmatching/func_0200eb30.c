@@ -113,7 +113,7 @@ void func_0200eb30(undefined4 param_1,uint param_2,int param_3)
     switch(param_2 & 0xff) {
     case 0:
       if (uVar1 == 0) {
-        iVar3 = (*(unsigned short *)0x0200eda0);
+        iVar3 = (*(unsigned int *)0x0200eda0);
         *(ushort *)(((unsigned int)0x0200ed9c) + 8) = (ushort)((uint)(iVar3 << 0x14) >> 0x14);
         *(ushort *)(iVar4 + 10) = (ushort)((uint)iVar3 >> 8) >> 4;
         *(ushort *)(iVar4 + 0xc) = (ushort)((uint)(iVar3 << 7) >> 0x1f);
@@ -157,8 +157,8 @@ void func_0200eb30(undefined4 param_1,uint param_2,int param_3)
   if (*(ushort *)(iVar4 + 0x18) <= *(ushort *)(iVar4 + 0x10)) {
     *(undefined2 *)(iVar4 + 0x10) = 0;
   }
-  iVar3 = (*(unsigned int *)0x0200eda0);
   uVar2 = *(ushort *)(iVar4 + 0x10);
+  iVar3 = (*(unsigned int *)0x0200eda0);
   iVar6 = *(int *)(iVar4 + 0x14);
   *(ushort *)(iVar6 + (uint)uVar2 * 8) = (ushort)((uint)(iVar3 << 0x14) >> 0x14);
   iVar6 = iVar6 + (uint)uVar2 * 8;

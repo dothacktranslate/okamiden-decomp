@@ -173,8 +173,8 @@ void func_02006bf4(void)
   code *pcVar5;
   int iVar6;
 
-  puVar1 = ((unsigned int)0x02006cb0);
   puVar2 = ((unsigned int)0x02006cb4);
+  puVar1 = ((unsigned int)0x02006cb0);
   if (((unsigned int *)0x02006cb0)[1] != 0) {
     return;
   }

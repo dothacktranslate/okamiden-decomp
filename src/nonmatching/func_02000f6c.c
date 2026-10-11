@@ -93,7 +93,7 @@ extern int func_02009984();
 undefined4 func_02000f6c(uint *param_1,uint *param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  uint iVar1;
+  int iVar1;
   longlong lVar2;
   longlong lVar3;
   longlong lVar4;
@@ -144,7 +144,7 @@ undefined4 func_02000f6c(uint *param_1,uint *param_2,undefined4 param_3,undefine
   uVar16 = uVar12 + 0x800 >> 0xc |
            (((int)((ulonglong)lVar4 >> 0x20) -
             ((int)((ulonglong)lVar5 >> 0x20) + (uint)(uVar16 < uVar11))) +
-           (uint)(0xfffff800 <= uVar12)) * 0x100000;
+           (uint)(0xfffff7ff < uVar12)) * 0x100000;
   uVar10 = uVar9 - uVar15;
   uVar12 = (uint)((longlong)(int)*param_1 * (longlong)(int)uVar16);
   uVar11 = (uint)((longlong)(int)param_1[1] * (longlong)(int)uVar13);

@@ -170,7 +170,7 @@ void func_0200578c(int param_1)
 
   puVar3 = ((unsigned int)0x020058f0);
   puVar1 = ((unsigned int)0x020058ec);
-  (*(unsigned short *)0x020058ec) = ~(ushort)param_1 & ((*(unsigned short *)0x020058ec) | ((unsigned int *)0x020058ec)[4]);
+  (*(unsigned int *)0x020058ec) = ~(ushort)param_1 & ((*(unsigned int *)0x020058ec) | ((unsigned int *)0x020058ec)[4]);
   puVar1[4] = (ushort)param_1;
   puVar1 = ((unsigned int)0x020058f4);
   puVar4 = puVar3 + -1;

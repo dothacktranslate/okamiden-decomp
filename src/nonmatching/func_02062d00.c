@@ -123,11 +123,11 @@ void func_02062d00(uint *param_1)
   }
   bVar2 = (*param_1 & 2) != 0;
   if (bVar2) {
-    *(unsigned char *)(param_1 + 8) = 0;
+    *(undefined2 *)(param_1 + 8) = 0;
   }
   local_14 = 0x1000;
   if (bVar2) {
-    *(unsigned char *)((int)param_1 + 0x22) = 0x1000;
+    *(undefined2 *)((int)param_1 + 0x22) = 0x1000;
   }
   if ((*param_1 & 4) != 0) {
     param_1[10] = 0;

@@ -345,20 +345,20 @@ LAB_02017f68:
     if ((int)(param_7 + 1) < (int)(uint)bStack_58) {
       func_02017a2c(acStack_5c);
     }
-    iVar11 = ((unsigned int)0x0201824c);
+    iVar6 = ((unsigned int)0x0201824c);
     iVar3 = (int)sStack_5a;
     bVar12 = 0x2b;
-    iVar6 = 0;
+    iVar11 = 0;
     if (iVar3 < 0) {
       iVar3 = -iVar3;
       bVar12 = 0x2d;
     }
-    for (; (iVar3 != 0 || (iVar6 < 2)); iVar6 = iVar6 + 1) {
+    for (; (iVar3 != 0 || (iVar11 < 2)); iVar11 = iVar11 + 1) {
       pbVar9 = pbVar9 + -1;
       *pbVar9 = (char)iVar3 +
-                ((char)(int)((longlong)iVar11 * (longlong)iVar3 >> 0x22) - (char)(iVar3 >> 0x1f)) *
+                ((char)(int)((longlong)iVar6 * (longlong)iVar3 >> 0x22) - (char)(iVar3 >> 0x1f)) *
                 -10 + 0x30;
-      iVar3 = (int)((longlong)iVar11 * (longlong)iVar3 >> 0x22) - (iVar3 >> 0x1f);
+      iVar3 = (int)((longlong)iVar6 * (longlong)iVar3 >> 0x22) - (iVar3 >> 0x1f);
     }
     pbVar9[-1] = bVar12;
     pbVar10 = pbVar9 + -2;
@@ -435,41 +435,41 @@ LAB_02017ef8:
 LAB_020180a4:
     iVar3 = (int)sStack_5a;
     uVar8 = (uint)bStack_58;
-    iVar11 = (uVar8 - iVar3) + -1;
-    if (iVar11 < 0) {
-      iVar11 = 0;
+    iVar6 = (uVar8 - iVar3) + -1;
+    if (iVar6 < 0) {
+      iVar6 = 0;
     }
-    if ((int)param_7 < iVar11) {
-      func_02017a2c(acStack_5c,uVar8 - (iVar11 - param_7));
+    if ((int)param_7 < iVar6) {
+      func_02017a2c(acStack_5c,uVar8 - (iVar6 - param_7));
       iVar3 = (int)sStack_5a;
       uVar8 = (uint)bStack_58;
-      iVar11 = (uVar8 - iVar3) + -1;
-      if (iVar11 < 0) {
-        iVar11 = 0;
+      iVar6 = (uVar8 - iVar3) + -1;
+      if (iVar6 < 0) {
+        iVar6 = 0;
       }
     }
     iVar3 = iVar3 + 1;
     if (iVar3 < 0) {
       iVar3 = 0;
     }
-    if (((unsigned int)0x02018224) < iVar3 + iVar11) {
+    if (((unsigned int)0x02018224) < iVar3 + iVar6) {
       return (byte *)0x0;
     }
     pbVar10 = abStack_57 + uVar8;
-    iVar6 = 0;
-    if (0 < (int)(param_7 - iVar11)) {
+    iVar11 = 0;
+    if (0 < (int)(param_7 - iVar6)) {
       do {
-        iVar6 = iVar6 + 1;
+        iVar11 = iVar11 + 1;
         pbVar9 = pbVar9 + -1;
         *pbVar9 = 0x30;
-      } while (iVar6 < (int)(param_7 - iVar11));
+      } while (iVar11 < (int)(param_7 - iVar6));
     }
-    for (iVar6 = 0; (iVar6 < iVar11 && (iVar6 < (int)(uint)bStack_58)); iVar6 = iVar6 + 1) {
+    for (iVar11 = 0; (iVar11 < iVar6 && (iVar11 < (int)(uint)bStack_58)); iVar11 = iVar11 + 1) {
       pbVar10 = pbVar10 + -1;
       pbVar9 = pbVar9 + -1;
       *pbVar9 = *pbVar10;
     }
-    for (; iVar6 < iVar11; iVar6 = iVar6 + 1) {
+    for (; iVar11 < iVar6; iVar11 = iVar11 + 1) {
       pbVar9 = pbVar9 + -1;
       *pbVar9 = 0x30;
     }
@@ -482,15 +482,15 @@ LAB_020180a4:
       *pbVar9 = 0x30;
     }
     else {
-      iVar11 = 0;
+      iVar6 = 0;
       if (0 < (int)(iVar3 - (uint)bStack_58)) {
         do {
           pbVar9 = pbVar9 + -1;
           *pbVar9 = 0x30;
-          iVar11 = iVar11 + 1;
-        } while (iVar11 < (int)(iVar3 - (uint)bStack_58));
+          iVar6 = iVar6 + 1;
+        } while (iVar6 < (int)(iVar3 - (uint)bStack_58));
       }
-      for (; iVar11 < iVar3; iVar11 = iVar11 + 1) {
+      for (; iVar6 < iVar3; iVar6 = iVar6 + 1) {
         pbVar10 = pbVar10 + -1;
         pbVar9 = pbVar9 + -1;
         *pbVar9 = *pbVar10;

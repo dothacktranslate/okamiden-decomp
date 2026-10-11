@@ -103,7 +103,7 @@ undefined4 func_0202582c(undefined4 param_1,undefined4 param_2,undefined4 param_
   int iVar7;
 
   piVar1 = ((unsigned int)0x02025948);
-  iVar7 = (*(short *)0x02025948);
+  iVar7 = (*(unsigned int *)0x02025948);
   iVar5 = func_020465d8(param_1,1,param_3,param_4,param_4);
   switch(iVar5 - ((unsigned int)0x0202594c)) {
   case 0:

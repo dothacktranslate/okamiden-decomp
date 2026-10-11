@@ -106,8 +106,8 @@ undefined4 func_020667c8(int param_1,uint param_2,undefined4 param_3,int param_4
   }
   iVar1 = func_0200b3bc(param_1);
   uVar2 = iVar1 - 1;
-  bVar5 = uVar2 > param_2;
   iVar1 = param_1 + (*(int *)(param_1 + 0x38) + param_2) * 4;
+  bVar5 = param_2 < uVar2;
   if (bVar5) {
     uVar2 = *(uint *)(iVar1 + 0x40);
   }
@@ -124,7 +124,7 @@ undefined4 func_020667c8(int param_1,uint param_2,undefined4 param_3,int param_4
     return 0;
   }
   iVar1 = func_02065a48(param_3,iVar3,iVar4,iVar1);
-  if (iVar1 == iVar4) {
+  if (iVar4 == iVar1) {
     func_02007804(iVar3,iVar4);
     func_0200b3c4(param_1,param_2,iVar3);
     return 1;

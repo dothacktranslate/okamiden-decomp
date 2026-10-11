@@ -23,7 +23,7 @@ void func_02044da8(int param_1,int param_2,undefined4 param_3,uint param_4)
 {
   int iVar1;
 
-  iVar1 = *(unsigned short *)(param_2 + 0x10);
+  iVar1 = *(int *)(param_2 + 0x10);
   if ((param_4 & 2) != 0) {
     func_02007820(iVar1 + 0xc);
     (**(code **)(((unsigned int)0x02044e14) + param_1 * 4))(iVar1 + 0xc,param_3,*(undefined4 *)(iVar1 + 8));

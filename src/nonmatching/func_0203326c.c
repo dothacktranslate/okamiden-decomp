@@ -100,7 +100,7 @@ void func_0203326c(undefined4 *param_1,undefined4 *param_2)
   param_1[2] = uVar3;
   *param_1 = uVar2;
   param_1[6] = *param_2;
-  *(undefined2 *)(param_1 + 7) = *(signed char *)((int)param_2 + 0x12);
+  *(undefined2 *)(param_1 + 7) = *(undefined2 *)((int)param_2 + 0x12);
   iVar4 = param_2[5];
   *(ushort *)((int)param_1 + 0x1e) =
        (ushort)(((int)(uint)*(byte *)(iVar4 + 8) >> 3) << 10) |

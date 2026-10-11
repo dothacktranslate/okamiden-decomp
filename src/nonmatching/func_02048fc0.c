@@ -98,7 +98,7 @@ void func_02048fc0(undefined4 param_1)
   func_02047958(param_1,1);
   iVar1 = func_020461e8(param_1);
   iVar1 = func_02047078(param_1,iVar1 + -1,0xffffffff,0);
-  func_02046a48(param_1,iVar1 == 0,iVar1);
+  func_02046a48(param_1,iVar1 == 0);
   func_020462bc(param_1,1);
   func_020461e8(param_1);
   return;

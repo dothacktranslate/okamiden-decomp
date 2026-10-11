@@ -106,8 +106,8 @@ void func_02060c80(int param_1,int *param_2,ushort param_3)
   else {
     iVar2 = (uint)*(ushort *)(iVar4 + 4) * 0x1000 + -1;
   }
-  iVar3 = iVar4 + 8;
   iVar2 = iVar2 >> 0xc;
+  iVar3 = iVar4 + 8;
   if ((iVar3 == 0) || (*(byte *)(iVar4 + 9) <= param_3)) {
     puVar5 = (undefined4 *)0x0;
   }

@@ -94,7 +94,7 @@ short func_02002fdc(int param_1,int param_2)
   short sVar3;
   int iVar4;
 
-  if (param_1 <= 0) {
+  if (param_1 < 1) {
     if (-1 < param_1) {
       sVar2 = 0;
       if (param_2 < 0) {
@@ -106,7 +106,7 @@ short func_02002fdc(int param_1,int param_2)
     if (param_2 < 0) {
       iVar1 = -param_2;
       if (param_1 == param_2 || iVar1 < iVar4) {
-        if (iVar1 >= iVar4) {
+        if (iVar4 <= iVar1) {
           return -0x6000;
         }
         sVar2 = -0x4000;
@@ -140,7 +140,7 @@ short func_02002fdc(int param_1,int param_2)
       }
     }
   }
-  else if (param_2 <= 0) {
+  else if (param_2 < 1) {
     if (-1 < param_2) {
       return 0x4000;
     }

@@ -96,10 +96,10 @@ void func_02067508(int param_1)
   if (*(int *)(((unsigned int)0x0206759c) + 4) != 0) {
     func_02007558(*(int *)(((unsigned int)0x0206759c) + 4) + 0x10c8);
   }
-  if (*(unsigned short *)(param_1 + 0x118) << 0x1e < 0) {
+  if (*(int *)(param_1 + 0x118) << 0x1e < 0) {
     func_02064f24(param_1);
   }
-  if (*(unsigned short *)(param_1 + 0x118) << 0x1f < 0) {
+  if (*(int *)(param_1 + 0x118) << 0x1f < 0) {
     (**(code **)(param_1 + 0x178))(param_1);
   }
   func_020675a0(param_1);

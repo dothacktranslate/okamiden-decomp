@@ -105,8 +105,8 @@ undefined4 func_0204c150(int param_1,int *param_2,int param_3)
   if (param_2[1] != 6) {
     param_2 = (int *)func_0204c09c();
   }
-  iVar3 = *param_2;
   iVar5 = *(int *)(param_1 + 0x20);
+  iVar3 = *param_2;
   *(undefined4 *)(*(int *)(param_1 + 0x14) + 0xc) = *(undefined4 *)(param_1 + 0x18);
   if (*(char *)(iVar3 + 6) == '\0') {
     iVar3 = *(int *)(iVar3 + 0x10);

@@ -105,9 +105,9 @@ undefined4 func_02053324(undefined4 param_1)
   undefined1 auStack_1024 [4108];
 
   uVar1 = func_020479b8(param_1,2,((unsigned int)0x02053418),&local_1028);
-  func_02047928(param_1,1,5,uVar1,uVar1);
-  iVar3 = func_02046444(param_1,4);
+  func_02047928(param_1,1,5);
   iVar2 = func_02047aa8(param_1,3,1);
+  iVar3 = func_02046444(param_1,4);
   if (iVar3 < 1) {
     iVar3 = func_020466e4(param_1,1);
   }

@@ -102,7 +102,7 @@ void func_02053958(int param_1,int *param_2,int param_3,undefined4 param_4)
   if (iVar1 == 0) {
     return;
   }
-  func_02052b04(iVar1,*(undefined4 *)(*(int *)(param_1 + 0x10) + param_3 * 0xa0 + 4),param_3,iVar2,
+  func_02052b04(iVar1,*(undefined4 *)(*(int *)(param_1 + 0x10) + param_3 * 4 + 0xa0),param_3,iVar2,
                param_4);
   return;
 }

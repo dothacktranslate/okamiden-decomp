@@ -162,7 +162,7 @@ bool func_02012998(int param_1,int *param_2,int param_3,int param_4,int *param_5
                  undefined2 *param_7)
 
 {
-  uint iVar1;
+  int iVar1;
   ushort uVar2;
   ushort uVar3;
   short sVar4;
@@ -273,7 +273,7 @@ LAB_02012d4c:
         if (1 < (int)(uVar19 - uVar13)) {
           sVar4 = *(short *)(iVar22 + uVar13 * 4);
           sVar5 = *(short *)(iVar22 + uVar19 * 4);
-          sVar6 = *(short *)(iVar22 + (uVar19 * 4 + 2));
+          sVar6 = *(short *)(iVar22 + uVar19 * 4 + 2);
           sVar7 = *(short *)(iVar22 + uVar13 * 4 + 2);
           iVar15 = (int)sVar5 - (int)sVar4;
           iVar21 = (int)sVar6 - (int)sVar7;

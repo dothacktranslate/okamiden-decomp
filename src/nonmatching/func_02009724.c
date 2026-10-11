@@ -168,7 +168,7 @@ void func_02009724(void)
 
   func_0200656c(0x200000);
   puVar1 = ((unsigned int)0x02009780);
-  (*(unsigned short *)0x04000600) = (*(unsigned int *)0x04000600) & 0x3fffffff | ((unsigned int *)0x02009780)[6] << 0x1e;
+  (*(unsigned int *)0x0200977c) = (*(unsigned int *)0x0200977c) & 0x3fffffff | ((unsigned int *)0x02009780)[6] << 0x1e;
   func_02006370(0x200000,puVar1[7]);
   *puVar1 = 0;
   if ((code *)puVar1[4] == (code *)0x0) {

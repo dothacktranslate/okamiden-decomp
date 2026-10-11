@@ -110,7 +110,7 @@ undefined4 func_02048754(undefined4 param_1)
   uVar3 = iVar1 == 0;
   if (!(bool)uVar3) {
     uVar2 = func_02046598(param_1,1);
-    func_0201e54c(0,uVar2,uVar2);
+    func_0201e54c(0,uVar2);
     if ((bool)uVar3) {
       func_02046a90(param_1);
       func_020462bc(param_1,0xfffffffe);

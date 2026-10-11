@@ -96,7 +96,7 @@ void func_0205ebc0(int param_1,int param_2,uint param_3)
   uint uVar6;
 
   if (param_1 != 0) {
-    unaff_r4 = *(unsigned char *)(param_1 + 8);
+    unaff_r4 = *(int *)(param_1 + 8);
   }
   bVar1 = *(byte *)(param_1 + 0x18);
   if (param_1 != 0 && unaff_r4 != 0) {

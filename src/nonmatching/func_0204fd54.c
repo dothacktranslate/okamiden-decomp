@@ -100,7 +100,7 @@ undefined4 * func_0204fd54(code *param_1,undefined4 param_2,undefined4 param_3,u
     *puVar1 = 0;
     *(undefined1 *)(puVar1 + 1) = 8;
     *(undefined1 *)(puVar1 + 0x1f) = 0x21;
-    *(undefined1 *)((int)5 + puVar1) = 0x61;
+    *(undefined1 *)((int)puVar1 + 5) = 0x61;
     func_0204fbc8(puVar1,puVar1 + 0x1a);
     puVar1[0x1d] = param_1;
     puVar1[0x1e] = param_2;

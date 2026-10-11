@@ -167,7 +167,7 @@ void func_02038d88(int param_1,undefined4 param_2,int param_3)
   int *piVar4;
 
   puVar1 = ((unsigned int)0x02038e28);
-  (*(unsigned short *)0x02038e28) = 0;
+  (*(unsigned int *)0x02038e28) = 0;
   *(int *)(puVar1 + 8) = param_3;
   puVar1[0xc] = 8;
   puVar1[0xd] = 0;
@@ -178,8 +178,8 @@ void func_02038d88(int param_1,undefined4 param_2,int param_3)
   } while ((*puVar1 & 0x8000) != 0);
   do {
   } while (((*(unsigned int *)0x02038e28) & 0x8000) != 0);
-  piVar4 = ((unsigned int)0x02038e2c) + -2;
   iVar3 = (*(unsigned int *)0x02038e2c);
+  piVar4 = ((unsigned int)0x02038e2c) + -2;
   ((unsigned int *)0x02038e2c)[-4] = param_3;
   *piVar4 = 8;
   piVar2[-1] = 0;

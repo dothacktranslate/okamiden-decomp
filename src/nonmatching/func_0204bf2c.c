@@ -127,7 +127,7 @@ void func_0204bf2c(int param_1,int param_2,int param_3)
         iVar5 = iVar8 * 8;
         iVar8 = iVar8 + 1;
         *puVar2 = *(undefined4 *)(iVar7 + iVar5);
-        puVar2[1] = *(undefined4 *)(iVar7 + (iVar1 + 4));
+        puVar2[1] = *(undefined4 *)(iVar7 + iVar1 + 4);
       } while (iVar8 < iVar4);
     }
     uVar3 = func_02050028(param_1,((unsigned int)0x0204c098),1);
@@ -141,7 +141,7 @@ void func_0204bf2c(int param_1,int param_2,int param_3)
   if (uVar9 != 0) {
     do {
       puVar2 = *(undefined4 **)(param_1 + 8);
-      iVar5 = iVar8 + iVar4 * 8;
+      iVar5 = iVar4 + iVar8 * 8;
       *(undefined4 **)(param_1 + 8) = puVar2 + 2;
       iVar1 = iVar8 * 8;
       iVar8 = iVar8 + 1;

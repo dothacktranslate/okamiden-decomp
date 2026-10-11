@@ -98,10 +98,10 @@ int func_02052064(int param_1,uint *param_2)
   case 0:
     break;
   case 1:
-    return (*param_2 & (1 << *(sbyte *)(param_1 + 7)) - 1U) * 0x14 + *(unsigned char *)(param_1 + 0x10);
+    return (*param_2 & (1 << *(sbyte *)(param_1 + 7)) - 1U) * 0x14 + *(int *)(param_1 + 0x10);
   case 2:
     func_0201ebe0(*param_2,(1 << (uint)*(byte *)(param_1 + 7)) - 1U | 1);
-    return extraout_r1 * 0x14 + *(unsigned short *)(param_1 + 0x10);
+    return extraout_r1 * 0x14 + *(int *)(param_1 + 0x10);
   case 3:
     iVar1 = func_02051ffc(param_1,*param_2);
     return iVar1;

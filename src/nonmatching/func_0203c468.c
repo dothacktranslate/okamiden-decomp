@@ -114,12 +114,12 @@ void func_0203c468(int param_1)
       iVar3 = *(int *)(*(int *)(param_1 + 0x18) + iVar2 + 0x48);
       if (iVar3 != 0) {
         *(int *)(uVar1 * 0x5c + *(int *)(param_1 + 0x18) + 0x48) =
-             param_1 + *(int *)(*(int *)(param_1 + 0x24) + iVar3 + param_1 * 4 + -4);
+             param_1 + *(int *)(*(int *)(param_1 + 0x24) + param_1 + iVar3 * 4 + -4);
       }
       iVar3 = *(int *)(*(int *)(param_1 + 0x18) + iVar2 + 0x4c);
       if (iVar3 != 0) {
         *(int *)(uVar1 * 0x5c + *(int *)(param_1 + 0x18) + 0x4c) =
-             param_1 + *(int *)(*(int *)(param_1 + 0x28) + iVar3 + param_1 * 4 + -4);
+             param_1 + *(int *)(*(int *)(param_1 + 0x28) + param_1 + iVar3 * 4 + -4);
       }
       iVar3 = *(int *)(*(int *)(param_1 + 0x18) + iVar2 + 0x50);
       if (iVar3 != 0) {

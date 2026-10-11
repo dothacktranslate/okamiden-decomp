@@ -115,6 +115,6 @@ void func_02054028(undefined4 param_1,undefined4 param_2,undefined4 param_3,char
   pcStack_10 = param_4;
   func_02053fc4(&local_20);
   uVar2 = func_02050028(param_1,((unsigned int)0x020540a8),2);
-  func_02053e74(uVar2,&local_20,uVar2);
+  func_02053e74(&local_20,uVar2);
   return;
 }

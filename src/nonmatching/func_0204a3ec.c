@@ -177,8 +177,8 @@ undefined4 func_0204a3ec(int param_1)
 {
   char cVar1;
   bool bVar2;
-  int iVar4;
   int iVar3;
+  int iVar4;
   int iVar5;
   int iVar6;
   undefined *puVar7;
@@ -203,8 +203,8 @@ undefined4 func_0204a3ec(int param_1)
     iVar4 = func_020465d8(param_1,local_80 + 2);
     func_02046204(param_1,0xfffffffe);
   }
-  iVar5 = func_020461e8(param_1);
   iVar6 = local_80;
+  iVar5 = func_020461e8(param_1);
   if (iVar6 == iVar5) {
     uVar8 = 0;
     puVar7 = ((unsigned int)0x0204a658);
@@ -227,7 +227,7 @@ undefined4 func_0204a3ec(int param_1)
       func_0204ac2c(iVar3,((unsigned int)0x0204a66c),auStack_7c);
       func_02046960(param_1,((unsigned int)0x0204a670),auStack_58);
       if (0 < local_68) {
-        func_0204ac2c(param_1,((unsigned int)0x0204a674));
+        func_02046960(param_1,((unsigned int)0x0204a674));
       }
       puVar7 = ((unsigned int)0x0204a678);
       if (((*local_74 == '\0') &&

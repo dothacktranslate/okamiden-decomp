@@ -124,7 +124,7 @@ undefined4 func_0202c488(int param_1)
   uVar2 = *(uint *)(iVar1 + 0x14);
   if (uVar2 != 0) {
     do {
-      iVar10 = local_48 + iVar1 * 0x18;
+      iVar10 = iVar1 + local_48 * 0x18;
       if (*(short *)(iVar10 + 6) == 0x1e) {
         uVar7 = (uint)*(ushort *)(param_1 + ((unsigned int)0x0202c590) + -2);
         iVar3 = 0;
@@ -161,10 +161,10 @@ LAB_0202c574:
         func_0202cd5c(param_1,sVar6,uVar8,uVar9);
       }
       else {
-        puVar12 = *(undefined2 **)(param_1 + (iVar1 * 4 + 0xd30));
+        puVar12 = *(undefined2 **)(param_1 + iVar1 * 4 + 0xd30);
         if (puVar12 != (undefined2 *)0x0) {
           uVar9 = *puVar12;
-          uVar8 = *(undefined2 *)(param_1 + (iVar1 * 2 + iVar10));
+          uVar8 = *(undefined2 *)(param_1 + iVar1 * 2 + iVar10);
           goto LAB_0202c574;
         }
       }

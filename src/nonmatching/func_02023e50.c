@@ -100,7 +100,7 @@ undefined4 func_02023e50(int param_1,undefined4 param_2,int param_3)
     func_02068924(param_1 + 0x4c);
     uVar1 = **(ushort **)((*(unsigned int *)0x02023ecc) + 0xc);
     if ((((uVar1 & 0x200) != 0) && ((uVar1 & 0x100) != 0)) && ((uVar1 & 0x40) != 0)) {
-      func_02023ed4(param_1);
+      func_02023ed4();
       if (*(int **)((*(unsigned int *)0x02023ed0) + 0xa4) != (int *)0x0) {
         (**(code **)(**(int **)((*(unsigned int *)0x02023ed0) + 0xa4) + 0x10))();
       }

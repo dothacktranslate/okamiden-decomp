@@ -96,8 +96,8 @@ undefined4 func_02063b08(int *param_1,int *param_2,int param_3,int param_4)
   int local_14;
   int iStack_10;
 
-  local_18 = param_3;
   local_14 = param_3 + param_4;
+  local_18 = param_3;
   iStack_10 = param_4;
   func_020637a8(param_1,param_2,&local_18);
   piVar1 = (int *)*param_2;

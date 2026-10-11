@@ -108,7 +108,7 @@ undefined4 * func_02037050(undefined4 *param_1,undefined4 param_2)
   param_1[8] = 0;
   param_1[7] = param_1 + 7;
   param_1[8] = param_1 + 7;
-  func_02035924(param_1);
+  func_02035924();
   func_02036fa4(param_1,((unsigned int)0x020370b0),6);
   func_02036fa4(param_1,((unsigned int)0x020370b4),7);
   func_02036fa4(param_1,((unsigned int)0x020370b8),1);

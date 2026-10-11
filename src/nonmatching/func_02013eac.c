@@ -92,8 +92,8 @@ void func_02013eac(void)
   uint *puVar1;
 
   func_02013cd8(0xb5,0);
-  puVar1 = ((unsigned int)0x040001a4);
-  (*(unsigned int *)0x040001a4) = (*(unsigned int *)0x02013ef0) & 0xf8ffe000 | 0xa0000000;
+  puVar1 = ((unsigned int)0x02013ef4);
+  (*(unsigned int *)0x02013ef4) = (*(unsigned int *)0x02013ef0) & 0xf8ffe000 | 0xa0000000;
   do {
   } while ((*puVar1 & 0x80000000) != 0);
   return;

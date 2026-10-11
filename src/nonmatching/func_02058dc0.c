@@ -93,8 +93,8 @@ void func_02058dc0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4
 {
   uint *puVar1;
   uint *puVar2;
-  int iVar4;
   int iVar3;
+  int iVar4;
   int iVar5;
   int iVar6;
   uint uVar7;
@@ -130,10 +130,10 @@ void func_02058dc0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4
     iVar3 = 0;
   }
   iVar4 = iVar5 + param_1[5];
-  if (8 <= iVar15) {
+  if (7 < iVar15) {
     iVar15 = 8;
   }
-  if (8 <= iVar4) {
+  if (7 < iVar4) {
     iVar4 = 8;
   }
   if (0 < iVar5) {

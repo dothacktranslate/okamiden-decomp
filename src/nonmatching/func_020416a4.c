@@ -91,7 +91,7 @@ extern int func_02002d24();
 void func_020416a4(int param_1,uint param_2,undefined2 *param_3,undefined4 param_4)
 
 {
-  unsigned short sVar1;
+  short sVar1;
   short *psVar2;
   int iVar3;
   int iVar4;
@@ -111,24 +111,24 @@ void func_020416a4(int param_1,uint param_2,undefined2 *param_3,undefined4 param
     *(int *)(param_1 + 0x15c) = 1 << (param_2 & 0xff);
     func_02002d24(psVar2,psVar2,sVar1,0x160,param_4);
     if (0xfff < *(short *)(iVar4 + iVar3)) {
-      *psVar2 = (short)((unsigned int)0x00000fff);
+      *psVar2 = (short)((unsigned int)0x0204174c);
     }
-    if (*psVar2 <= ((unsigned int)0xfffff000)) {
-      *psVar2 = (short)((unsigned int)0xfffff000);
+    if (*psVar2 <= ((unsigned int)0x02041750)) {
+      *psVar2 = (short)((unsigned int)0x02041750);
     }
     psVar2 = (short *)(param_1 + 0x164 + iVar3);
     if (0xfff < *(short *)(param_1 + 0x164 + iVar3)) {
       *psVar2 = 0xfff;
     }
-    if (*psVar2 <= ((unsigned int)0xfffff000)) {
-      *psVar2 = (short)((unsigned int)0xfffff000);
+    if (*psVar2 <= ((unsigned int)0x02041750)) {
+      *psVar2 = (short)((unsigned int)0x02041750);
     }
     psVar2 = (short *)(param_1 + ((unsigned int)0x02041754) + iVar3);
     if (0xfff < *(short *)(param_1 + ((unsigned int)0x02041754) + iVar3)) {
       *psVar2 = 0xfff;
     }
-    if (*psVar2 <= ((unsigned int)0xfffff000)) {
-      *psVar2 = (short)((unsigned int)0xfffff000);
+    if (*psVar2 <= ((unsigned int)0x02041750)) {
+      *psVar2 = (short)((unsigned int)0x02041750);
       return;
     }
   }

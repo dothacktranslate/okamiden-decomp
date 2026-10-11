@@ -103,7 +103,7 @@ void func_02033504(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
     if (0xfff < param_5) {
       param_5 = 0x1000;
     }
-    if (param_5 <= 0) {
+    if (param_5 < 1) {
       param_5 = 0;
     }
     uVar3 = param_4;

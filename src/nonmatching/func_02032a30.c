@@ -92,10 +92,10 @@ int func_02032a30(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 {
   int *piVar1;
   int iVar2;
-  int iVar4;
   int iVar3;
+  int iVar4;
 
-  (*(unsigned short *)0x02032aa8) = 2;
+  (*(unsigned int *)0x02032aa8) = 2;
   iVar4 = 0;
   for (iVar3 = 0; (iVar4 < *(int *)(param_1 + 0xe0) && ((param_6 == 0 || (iVar3 < param_7))));
       iVar3 = iVar3 + iVar2) {

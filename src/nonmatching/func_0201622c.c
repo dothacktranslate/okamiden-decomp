@@ -106,7 +106,7 @@ uint func_0201622c(int param_1)
       if (uVar3 == 3) {
         *(undefined4 *)(param_1 + 0x28) = *(undefined4 *)(param_1 + 0x30);
       }
-      return (uint)*(byte *)((param_1 + 0xf) + uVar3);
+      return (uint)*(byte *)(param_1 + uVar3 + 0xf);
     }
     uVar3 = 0;
     *(uint *)(param_1 + 8) = uVar4 & 0xfffffff8 | 2;

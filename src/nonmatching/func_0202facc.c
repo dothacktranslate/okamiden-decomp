@@ -92,8 +92,8 @@ extern int func_0203b220();
 void func_0202facc(int param_1,undefined4 param_2)
 
 {
-  int extraout_r1;
   int iVar1;
+  int extraout_r1;
   int iVar2;
   int iVar3;
   int iVar4;
@@ -107,7 +107,7 @@ void func_0202facc(int param_1,undefined4 param_2)
   }
   iVar4 = 0;
   do {
-    iVar5 = *(int *)(param_1 + (iVar4 * 4 + 0x6c));
+    iVar5 = *(int *)(param_1 + iVar4 * 4 + 0x6c);
     if (iVar5 != 0) {
       iVar3 = (uint)*(ushort *)(*(int *)(iVar5 + 0x1c) + 4) * 0x1000;
       iVar1 = *(int *)(param_1 + 0x110);

@@ -91,7 +91,7 @@ void func_0203b470(int param_1)
 {
   int *piVar1;
 
-  if ((*(unsigned short *)(param_1 + 8) & 1) != 0) {
+  if ((*(uint *)(param_1 + 8) & 1) != 0) {
     return;
   }
   piVar1 = *(int **)(param_1 + 0x10);

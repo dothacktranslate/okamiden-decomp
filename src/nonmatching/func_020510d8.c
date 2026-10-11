@@ -93,7 +93,7 @@ void func_020510d8(int *param_1,int param_2,int param_3,int param_4)
 {
   int iVar1;
 
-  if (param_2 >= param_1[3]) {
+  if (param_1[3] <= param_2) {
     if (param_2 == 0) {
       func_02046898(param_1[2],param_3,param_4 - param_3);
       return;
@@ -101,7 +101,7 @@ void func_020510d8(int *param_1,int param_2,int param_3,int param_4)
     func_02047714(param_1[2],((unsigned int)0x02051174));
     return;
   }
-  iVar1 = param_1[param_2 * 5 + 2];
+  iVar1 = param_1[param_2 * 2 + 5];
   if (iVar1 == -1) {
     func_02047714(param_1[2],((unsigned int)0x02051178));
   }

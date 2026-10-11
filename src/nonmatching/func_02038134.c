@@ -100,7 +100,7 @@ undefined4 func_02038134(int param_1,int *param_2,undefined4 param_3,undefined4 
     if ((param_2[3] & 2U) != 0) {
       return 0;
     }
-    iVar1 = (**(code **)(*param_2 + 0xc))(param_2,*(unsigned char *)(param_1 + 4),0,0,param_4);
+    iVar1 = (**(code **)(*param_2 + 0xc))(param_2,*(undefined4 *)(param_1 + 4),0,0,param_4);
     if (iVar1 != 1) {
       param_2[3] = param_2[3] | 2;
     }

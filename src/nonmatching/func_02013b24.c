@@ -91,7 +91,7 @@ void func_02013b24(int *param_1,undefined4 param_2,undefined4 param_3,undefined4
 {
   func_020134f4(param_1,2,1,param_4,param_4);
   *(undefined4 *)(*param_1 + 0xc) = 0;
-  *(unsigned char *)(*param_1 + 0x10) = ((unsigned int)0x02013b70);
+  *(undefined4 *)(*param_1 + 0x10) = ((unsigned int)0x02013b70);
   *(undefined4 *)(*param_1 + 0x14) = 1;
   func_020134f4(param_1,6,1);
   return;

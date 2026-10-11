@@ -112,7 +112,7 @@ void func_020390f8(int param_1)
         if (((unsigned int)0x020391f4) <= uVar5) break;
         func_0200656c(1);
         iVar1 = func_02063740(piVar3[2],piVar3[3],piVar3[4],piVar3[5]);
-        func_0200653c(1,iVar1);
+        func_0200653c(1);
         if (iVar1 == 0) {
           return;
         }
@@ -151,7 +151,7 @@ void func_020390f8(int param_1)
   }
   else {
     iVar1 = *(int *)(param_1 + 0x10);
-    while (param_1 != iVar1 + 0x10) {
+    while (iVar1 != param_1 + 0x10) {
       func_0200656c(1);
       iVar2 = func_02063740(*(undefined4 *)(iVar1 + 8),*(undefined4 *)(iVar1 + 0xc),
                            *(undefined4 *)(iVar1 + 0x10),*(undefined4 *)(iVar1 + 0x14));

@@ -95,7 +95,7 @@ undefined4 func_02064224(uint param_1,undefined4 param_2,undefined4 param_3,unde
   if (param_1 == 0) {
     return 1;
   }
-  if ((param_1 & *(unsigned short *)(((unsigned int)0x02064264) + 8)) == 0) {
+  if ((param_1 & *(uint *)(((unsigned int)0x02064264) + 8)) == 0) {
     func_0200a4cc(param_1,0,param_3,param_4,param_4);
     *(uint *)(iVar1 + 8) = *(uint *)(iVar1 + 8) | param_1;
     return 1;

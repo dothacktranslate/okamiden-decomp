@@ -106,7 +106,7 @@ void func_0204128c(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   local_20 = 0;
   local_24 = 0;
   local_28 = 0;
-  *(unsigned short *)(param_1 + 0x34) = param_2;
+  *(int *)(param_1 + 0x34) = param_2;
   uStack_18 = param_4;
   func_02015a9c(&local_28,param_3);
   if (param_2 != 0) {

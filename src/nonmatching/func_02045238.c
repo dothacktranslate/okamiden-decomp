@@ -32,11 +32,11 @@ void func_02045238(int param_1,int param_2,int *param_3)
   if (0 < iVar1) {
     iVar1 = (int)*(short *)(param_2 + 0x26);
   }
-  if (iVar1 <= 0) {
+  if (iVar1 < 1) {
     return;
   }
-  bVar3 = (*(uint *)(param_2 + 0xc) & 0x100) == 0;
   iVar2 = 0;
+  bVar3 = (*(uint *)(param_2 + 0xc) & 0x100) == 0;
   iVar1 = 1;
   if (!bVar3) {
     param_3 = *(int **)(param_2 + 0x2c);
@@ -66,7 +66,7 @@ void func_02045238(int param_1,int param_2,int *param_3)
   else {
     iVar1 = 2;
   }
-  *(int *)(*(int *)((param_1 + iVar1 * 4) + 0x458) + (uint)*(ushort *)(param_1 + iVar1 * 2 + 0x18) * 4
+  *(int *)(*(int *)(param_1 + iVar1 * 4 + 0x458) + (uint)*(ushort *)(param_1 + iVar1 * 2 + 0x18) * 4
           ) = param_2;
   *(int *)(param_2 + 0x34) = iVar2;
   *(short *)(param_1 + 0x18 + iVar1 * 2) = *(short *)(param_1 + 0x18 + iVar1 * 2) + 1;

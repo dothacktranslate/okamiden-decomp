@@ -106,13 +106,13 @@ void func_02022cb8(int param_1,uint param_2,int param_3,int *param_4,int *param_
     break;
   case 3:
     if (param_5 != (int *)0x0) {
-      *param_5 = *param_5 + (uint)*(unsigned char *)(param_1 + 0x4a);
+      *param_5 = *param_5 + (uint)*(ushort *)(param_1 + 0x4a);
     }
-    *param_4 = *param_4 + (uint)*(unsigned char *)(param_1 + 0x4a);
+    *param_4 = *param_4 + (uint)*(ushort *)(param_1 + 0x4a);
     return;
   case 4:
     if (param_5 != (int *)0x0) {
-      *param_5 = *param_5 + (uint)*(unsigned char *)(param_1 + 0x4c);
+      *param_5 = *param_5 + (uint)*(ushort *)(param_1 + 0x4c);
     }
     *param_4 = *param_4 + (uint)*(ushort *)(param_1 + 0x4c);
     return;

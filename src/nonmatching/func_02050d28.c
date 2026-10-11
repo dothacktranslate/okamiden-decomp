@@ -94,10 +94,10 @@ int func_02050d28(int param_1,int param_2,undefined4 param_3,undefined4 param_4)
   uint uVar2;
 
   iVar1 = func_02050710(param_1,param_3,param_3,param_4,param_4);
-  iVar1 = iVar1 + param_1 * 8;
+  iVar1 = param_1 + iVar1 * 8;
   uVar2 = *(uint *)(iVar1 + 0x14);
-  if ((uVar2 <= (uint)(*(unsigned char *)(param_1 + 4) - param_2)) &&
-     (iVar1 = func_02016b10(*(unsigned short *)(iVar1 + 0x10),param_2,uVar2), iVar1 == 0)) {
+  if ((uVar2 <= (uint)(*(int *)(param_1 + 4) - param_2)) &&
+     (iVar1 = func_02016b10(*(undefined4 *)(iVar1 + 0x10),param_2,uVar2), iVar1 == 0)) {
     return param_2 + uVar2;
   }
   return 0;

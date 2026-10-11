@@ -127,7 +127,7 @@ func_020342f4(undefined4 *param_1,int param_2,int param_3,undefined4 *param_4,un
     if (param_6 == 1) {
       iVar1 = uVar8 * 0xc;
       iVar2 = param_2 + iVar1;
-      iVar4 = *(short *)(iVar2 + 8);
+      iVar4 = *(int *)(iVar2 + 8);
       iVar3 = *(int *)(iVar2 + 4);
       aiStack_104[iVar6 * 0xf] = *(int *)(param_2 + iVar1);
       aiStack_104[iVar6 * 0xf + 1] = param_3 + iVar3;
@@ -168,7 +168,7 @@ func_020342f4(undefined4 *param_1,int param_2,int param_3,undefined4 *param_4,un
       aiStack_104[iVar6 * 0xf + 10] = *(int *)(iVar7 + 4);
       aiStack_104[iVar6 * 0xf + 0xb] = *(int *)(iVar7 + 8);
     }
-    func_02002ac4((aiStack_104 + iVar6 * 0xf) + 6,aiStack_104 + iVar6 * 0xf + 9,&local_110);
+    func_02002ac4(aiStack_104 + iVar6 * 0xf + 6,aiStack_104 + iVar6 * 0xf + 9,&local_110);
     func_02002c10(&local_110,&local_110);
     func_02002b30(&local_110,param_2 + 0x30,aiStack_104 + iVar6 * 0xf + 0xc);
     iVar6 = iVar6 + 1;
@@ -186,7 +186,7 @@ func_020342f4(undefined4 *param_1,int param_2,int param_3,undefined4 *param_4,un
   local_178 = -1;
   if (param_7 == '\0') {
     iVar1 = 0;
-    iVar6 = ((unsigned int)0x7fffffff);
+    iVar6 = ((unsigned int)0x020345bc);
     do {
       iVar2 = func_02033e40(auStack_128,auStack_11c,aiStack_104 + iVar1 * 0xf,&local_110);
       if ((iVar2 != 0) && (iVar2 = func_02002ea8(auStack_128,&local_110), iVar2 < iVar6)) {
@@ -201,7 +201,7 @@ func_020342f4(undefined4 *param_1,int param_2,int param_3,undefined4 *param_4,un
   }
   else {
     iVar1 = 0;
-    iVar6 = ((unsigned int)0x7fffffff);
+    iVar6 = ((unsigned int)0x020345bc);
     do {
       iVar2 = func_02033e40(auStack_128,auStack_11c,aiStack_104 + iVar1 * 0xf,&local_110);
       if (((iVar2 != 0) ||

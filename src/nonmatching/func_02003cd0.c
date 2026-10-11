@@ -165,7 +165,7 @@ int func_02003cd0(void)
   int iVar2;
 
   uVar1 = ((ushort)((unsigned int *)0x02003d40)[3] & 0x1f00) >> 8;
-  switch((*(unsigned short *)0x02003d40) & 7) {
+  switch((*(unsigned int *)0x02003d40) & 7) {
   case 0:
     break;
   case 1:

@@ -86,7 +86,7 @@ extern int LZCOUNT();
 
 extern int func_02035870();
 
-void func_020358c8(undefined2 *param_1,undefined4 param_2,int *param_3,int param_4)
+void func_020358c8(int *param_1,undefined4 param_2,int *param_3,int param_4)
 
 {
   undefined1 auStack_30 [4];

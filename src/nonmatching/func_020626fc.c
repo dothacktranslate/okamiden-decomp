@@ -89,8 +89,8 @@ extern int func_0205e0c0();
 void func_020626fc(uint *param_1)
 
 {
-  uint uVar2;
   uint uVar1;
+  uint uVar2;
   bool bVar3;
   uint local_58;
   undefined4 local_54;
@@ -112,8 +112,8 @@ void func_020626fc(uint *param_1)
   undefined4 local_14;
   undefined4 local_10;
 
-  uVar2 = *param_1;
   bVar3 = (*param_1 & 8) != 0;
+  uVar2 = *param_1;
   if (bVar3) {
     uVar2 = ((unsigned int)0x02062828);
   }

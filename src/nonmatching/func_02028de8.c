@@ -98,8 +98,8 @@ undefined4 func_02028de8(undefined4 param_1,undefined4 param_2,undefined4 param_
   int iVar4;
   int iVar5;
 
-  uVar3 = func_020465d8(param_1,2,param_3,param_4,param_4);
   iVar5 = (*(unsigned int *)0x02028e74);
+  uVar3 = func_020465d8(param_1,2,param_3,param_4,param_4);
   iVar4 = func_020465d8(param_1,1);
   if (iVar4 == ((unsigned int)0x02028e78)) {
     if (uVar3 == 0) {

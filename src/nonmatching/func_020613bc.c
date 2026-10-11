@@ -110,7 +110,7 @@ void func_020613bc(undefined4 param_1,uint *param_2,undefined2 param_3,undefined
   }
   iVar1 = func_0205f364(uVar4,param_3,(uVar3 & 0xfffffff) >> 0xc,uVar3,param_4);
   uVar2 = func_0205f314(uVar4,*(undefined1 *)(iVar1 + 2));
-  func_02061284(param_2[5],uVar2,param_1,uVar2);
+  func_02061284(param_2[5],uVar2,param_1);
   if (*(char *)(iVar1 + 3) != -1) {
     uVar2 = func_0205f33c(uVar4);
     func_02061358(param_2[5],uVar2,param_1);

@@ -167,7 +167,7 @@ void func_0205a68c(int param_1,int param_2,int param_3,int param_4,undefined4 pa
                  int param_7,undefined4 param_8)
 
 {
-  uint iVar1;
+  int iVar1;
   int iVar2;
   int iVar3;
   int iVar4;

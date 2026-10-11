@@ -101,7 +101,7 @@ int func_0200b848(int param_1,uint param_2)
   undefined4 *puVar8;
   code *pcVar9;
 
-  iVar1 = *(unsigned short *)(param_1 + 8);
+  iVar1 = *(int *)(param_1 + 8);
   puVar8 = *(undefined4 **)(iVar1 + 0x24);
   if (0x22 < param_2) {
     iVar1 = 4;

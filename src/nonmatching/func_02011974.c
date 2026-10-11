@@ -112,7 +112,7 @@ int func_02011974(int param_1,int param_2,int param_3,undefined4 param_4,ushort 
   iVar3 = 0;
   if (0 < param_3) {
     do {
-      *(undefined4 *)(iVar3 + param_1 * 4) = 0;
+      *(undefined4 *)(param_1 + iVar3 * 4) = 0;
       *(undefined4 *)(param_2 + iVar3 * 4) = 0;
       iVar3 = iVar3 + 1;
     } while (iVar3 < param_3);
@@ -126,8 +126,8 @@ int func_02011974(int param_1,int param_2,int param_3,undefined4 param_4,ushort 
     local_38 = iVar3;
   }
   else {
-    local_3c = param_8[1];
     local_38 = *param_8;
+    local_3c = param_8[1];
   }
   local_34 = 0;
   local_40 = 0;

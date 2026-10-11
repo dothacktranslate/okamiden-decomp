@@ -88,7 +88,7 @@ undefined8 func_02010a18(int *param_1)
 
 {
   longlong lVar1;
-  uint iVar2;
+  int iVar2;
   int iVar3;
   int iVar4;
 
@@ -105,7 +105,7 @@ undefined8 func_02010a18(int *param_1)
   }
   iVar2 = iVar2 * 0x1a + -2;
   iVar2 = iVar4 + param_1[2] +
-                  ((int)((longlong)((unsigned int)0x66666667) * (longlong)iVar2 >> 0x22) - (iVar2 >> 0x1f)) +
+                  ((int)((longlong)((unsigned int)0x02010acc) * (longlong)iVar2 >> 0x22) - (iVar2 >> 0x1f)) +
           ((int)(iVar4 + ((uint)(iVar4 >> 1) >> 0x1e)) >> 2) +
           ((int)(iVar3 + ((uint)(iVar3 >> 1) >> 0x1e)) >> 2) + iVar3 * 5;
   lVar1 = (longlong)

@@ -97,7 +97,7 @@ void func_0205e008(undefined4 *param_1,uint param_2,undefined4 param_3,undefined
   uint uVar3;
 
   puVar1 = ((unsigned int)0x0205e0b0);
-  if (0x100 <= param_2) {
+  if (0xff < param_2) {
     if ((*(unsigned int *)0x0205e0b0) != 0xffffffff) {
       func_0205df8c();
       iVar2 = ((unsigned int)0x0205e0b4);
@@ -107,13 +107,13 @@ void func_0205e008(undefined4 *param_1,uint param_2,undefined4 param_3,undefined
         if (3 < uVar3) {
           uVar3 = 0xffffffff;
         }
-        func_02009784(uVar3,param_1,param_2,((unsigned int)0x0205e0bc),((unsigned int)0x01fffb84));
+        func_02009784(uVar3,param_1,param_2,((unsigned int)0x0205e0bc),((unsigned int)0x0205e0b8));
         return;
       }
       if (3 < uVar3) {
         uVar3 = 0xffffffff;
       }
-      func_02009584(uVar3,param_1,param_2,((unsigned int)0x0205e0bc),((unsigned int)0x01fffb84));
+      func_02009584(uVar3,param_1,param_2,((unsigned int)0x0205e0bc),((unsigned int)0x0205e0b8));
       return;
     }
   }

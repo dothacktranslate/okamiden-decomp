@@ -106,7 +106,7 @@ void func_0202b2b8(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   do {
     iVar3 = iVar5 * 2;
     iVar5 = iVar5 + 1;
-    *(undefined2 *)(param_1 + (iVar3 + iVar2)) = 0;
+    *(undefined2 *)(param_1 + iVar3 + iVar2) = 0;
   } while (iVar5 < 0x20);
   func_02037ba4(uVar1,0x5c,0,0,param_2,uVar1,param_4);
   uVar6 = 1;
@@ -123,7 +123,7 @@ void func_0202b2b8(int param_1,int param_2,undefined4 param_3,undefined4 param_4
         }
         iVar2 = 0;
         while( true ) {
-          iVar5 = iVar2 + param_1 * 2;
+          iVar5 = param_1 + iVar2 * 2;
           if (uVar4 == *(ushort *)(iVar5 + ((unsigned int)0x0202b354))) break;
           if (*(ushort *)(iVar5 + ((unsigned int)0x0202b354)) == 0) {
             *(short *)(iVar5 + ((unsigned int)0x0202b354)) = (short)uVar4;

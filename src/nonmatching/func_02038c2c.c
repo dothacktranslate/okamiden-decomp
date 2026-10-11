@@ -108,7 +108,7 @@ func_02038c2c(undefined4 *param_1,undefined4 param_2,undefined4 *param_3,undefin
       *puVar2 = param_3;
       uVar1 = uVar1 + 1;
       puVar2 = param_3;
-    } while (param_6 > uVar1 - 1U);
+    } while (uVar1 < param_6 - 1U);
   }
   *param_3 = 0;
   return param_1;

@@ -104,12 +104,12 @@ void func_02040f74(int param_1)
 
   iVar2 = ((unsigned int)0x02041028);
   if ((*(uint *)(param_1 + 0x18) & 4) == 0) {
-    bVar1 = true;
     iVar3 = *(int *)(param_1 + 0x30);
+    bVar1 = true;
     iVar5 = 0;
     if (0 < iVar3) {
       do {
-        iVar3 = func_02036edc((*(unsigned int *)0x0204102c),*(undefined4 *)(iVar5 + iVar2 * 4));
+        iVar3 = func_02036edc((*(unsigned int *)0x0204102c),*(undefined4 *)(iVar2 + iVar5 * 4));
         if (((iVar3 == 0) || (*(int *)(iVar3 + 0x1c) == 0)) || (*(int *)(iVar3 + 0x10) == 0)) {
           bVar1 = false;
         }
@@ -122,7 +122,7 @@ void func_02040f74(int param_1)
       iVar5 = 0;
       if (0 < iVar3) {
         do {
-          uVar4 = func_02036edc((*(unsigned int *)0x0204102c),*(undefined4 *)(iVar5 + iVar2 * 4));
+          uVar4 = func_02036edc((*(unsigned int *)0x0204102c),*(undefined4 *)(iVar2 + iVar5 * 4));
           iVar3 = *(int *)(((unsigned int)0x02041030) + iVar5 * 4);
           if (iVar3 == 0) {
             func_0203ba20(uVar4,0);

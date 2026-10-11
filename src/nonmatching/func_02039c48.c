@@ -92,8 +92,8 @@ void func_02039c48(int param_1)
 {
   int *piVar1;
   int iVar2;
-  int iVar4;
   int iVar3;
+  int iVar4;
 
   piVar1 = ((unsigned int)0x02039ce8);
   if (*(int *)(param_1 + 0x1c) != 4) {

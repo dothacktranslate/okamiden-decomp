@@ -92,7 +92,7 @@ extern int func_02052148();
 int func_02052184(undefined4 param_1,int param_2,int *param_3)
 
 {
-  uint iVar1;
+  int iVar1;
   int iVar2;
   bool bVar3;
 

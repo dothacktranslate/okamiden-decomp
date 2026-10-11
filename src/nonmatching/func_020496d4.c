@@ -98,8 +98,8 @@ void func_020496d4(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
 {
   undefined4 uVar1;
 
-  uVar1 = ((unsigned int)0xffffd8ee);
-  func_02046414(param_1,((unsigned int)0xffffd8ee),param_3,param_4,param_4);
+  uVar1 = ((unsigned int)0x020497c4);
+  func_02046414(param_1,((unsigned int)0x020497c4),param_3,param_4,param_4);
   func_02046d44(param_1,uVar1,((unsigned int)0x020497c8));
   func_02047bc4(param_1,((unsigned int)0x020497cc),((unsigned int)0x020497d0));
   func_02046898(param_1,((unsigned int)0x020497d4),7);

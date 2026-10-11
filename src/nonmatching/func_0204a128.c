@@ -110,7 +110,7 @@ undefined4 func_0204a128(undefined4 param_1,undefined4 param_2,undefined4 param_
   local_20 = param_4;
   uVar1 = func_020499ac(param_1,&local_20);
   iVar2 = func_02046444(param_1,local_20 + 1);
-  if (iVar2 <= 0) {
+  if (iVar2 < 1) {
     func_02046204(param_1,local_20 + 1);
     uVar5 = 0;
     uVar3 = 0;

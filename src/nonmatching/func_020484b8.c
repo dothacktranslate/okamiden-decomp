@@ -97,10 +97,10 @@ void func_020484b8(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
 {
   int iVar1;
   int iVar2;
-  uint iVar3;
+  int iVar3;
 
   iVar1 = func_02047aa8(param_1,2,1,param_4,param_4);
-  func_02046204(param_1,1,iVar1);
+  func_02046204(param_1,1);
   iVar2 = func_020464e8(param_1,1);
   iVar3 = 0;
   if (iVar2 != 0) {

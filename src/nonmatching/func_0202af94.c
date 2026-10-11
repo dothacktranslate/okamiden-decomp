@@ -101,14 +101,14 @@ int func_0202af94(undefined2 *param_1,undefined4 param_2,uint *param_3)
   uint uVar5;
   int iVar6;
 
-  iVar2 = 0;
+  iVar6 = 0;
   uVar5 = 0;
-  iVar6 = func_0202af54(param_1 + 8,((unsigned int)0x0202b0cc));
+  iVar2 = func_0202af54(param_1 + 8,((unsigned int)0x0202b0cc));
   if ((*(uint *)(param_1 + 6) & 1) != 0) {
     uVar5 = 2;
   }
   if ((*(uint *)(param_1 + 6) & 4) != 0) {
-    iVar2 = func_0202af54(param_1 + 8,((unsigned int)0x0202b0d0));
+    iVar6 = func_0202af54(param_1 + 8,((unsigned int)0x0202b0d0));
     uVar5 = uVar5 | 0x100;
   }
   if ((*(uint *)(param_1 + 6) & 0x8000) == 0) {
@@ -121,13 +121,13 @@ int func_0202af94(undefined2 *param_1,undefined4 param_2,uint *param_3)
   uVar5 = uVar5 | uVar3;
 LAB_0202afec:
   iVar4 = func_0204560c((*(unsigned int *)0x0202b0d4),(uVar5 & 0x100) != 0,0,1,param_2);
-  if (iVar6 != 0) {
+  if (iVar2 != 0) {
     if ((uVar5 & 0x100) == 0) {
-      *(int *)(iVar4 + 0x28) = iVar6;
+      *(int *)(iVar4 + 0x28) = iVar2;
       *(undefined2 *)(iVar4 + 0x10) = *param_1;
     }
-    else if (iVar2 != 0) {
-      func_020450bc(iVar4,iVar6,iVar2,*param_1);
+    else if (iVar6 != 0) {
+      func_020450bc(iVar4,iVar2,iVar6,*param_1);
     }
   }
   sVar1 = param_1[3];

@@ -89,9 +89,9 @@ uint func_02003188(int param_1)
 {
   int iVar1;
   short sVar2;
+  uint uVar3;
   uint uVar4;
   int in_r12;
-  uint uVar3;
 
   if (param_1 < 0) {
     uVar3 = 0x400;
@@ -105,7 +105,7 @@ uint func_02003188(int param_1)
     do {
       in_r12 = (int)(uVar3 + uVar4) / 2;
       sVar2 = *(short *)(((unsigned int)0x02003204) + in_r12 * 4 + 2);
-      if ((short)sVar2 == param_1) break;
+      if ((short)param_1 == sVar2) break;
       if (sVar2 < (short)param_1) {
         uVar4 = in_r12 - 1;
       }

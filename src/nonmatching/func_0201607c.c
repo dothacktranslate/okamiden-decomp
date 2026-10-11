@@ -99,7 +99,7 @@ undefined4 func_0201607c(void)
   iVar4 = 1;
   iVar2 = ((unsigned int)0x020160dc);
   do {
-    if (((*(unsigned short *)(iVar2 + 4) & 0x3ff) >> 7 != 0) && (iVar2 = func_020167e0(), iVar2 != 0)) {
+    if (((*(uint *)(iVar2 + 4) & 0x3ff) >> 7 != 0) && (iVar2 = func_020167e0(), iVar2 != 0)) {
       uVar3 = 0xffffffff;
     }
     if (iVar4 < 3) {

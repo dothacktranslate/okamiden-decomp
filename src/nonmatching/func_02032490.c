@@ -98,9 +98,9 @@ void func_02032490(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   int iVar2;
 
   func_02031fac();
-  func_02021a28(*(short *)(param_1 + 0xdc),0x20,8,((unsigned int)0x020324e8),param_4);
+  func_02021a28(*(undefined4 *)(param_1 + 0xdc),0x20,8,((unsigned int)0x020324e8),param_4);
   iVar2 = 0;
-  if (0 < *(short *)(param_1 + 0xe0)) {
+  if (0 < *(int *)(param_1 + 0xe0)) {
     do {
       piVar1 = *(int **)(*(int *)(param_1 + 0xe4) + iVar2 * 4);
       if (piVar1 != (int *)0x0) {

@@ -103,6 +103,6 @@ void func_02048dd8(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
     return;
   }
   uVar2 = func_020479b8(param_1,2,((unsigned int)0x02048e34),0);
-  func_02047714(uVar2,param_1,((unsigned int)0x02048e38),uVar2);
+  func_02047714(param_1,((unsigned int)0x02048e38),uVar2);
   return;
 }

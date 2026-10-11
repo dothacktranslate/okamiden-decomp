@@ -103,15 +103,15 @@ undefined4 func_0202d6dc(int param_1,undefined4 param_2,undefined4 param_3,undef
   bool bVar6;
   undefined4 local_18;
 
-  local_18 = param_4;
   piVar1 = ((unsigned int)0x0202d834);
+  local_18 = param_4;
   iVar3 = func_02022ffc((*(unsigned int *)0x0202d834) + 0xf0,0xfc);
-  iVar5 = ((unsigned int)0x00000be8);
+  iVar5 = ((unsigned int)0x0202d838);
   if (iVar3 != 0) {
     return 0;
   }
-  if (((*(uint *)(param_1 + ((unsigned int)0x00000be8)) & 1) == 0) &&
-     ((*(uint *)(param_1 + ((unsigned int)0x00000be8)) & 2) == 0)) {
+  if (((*(uint *)(param_1 + ((unsigned int)0x0202d838)) & 1) == 0) &&
+     ((*(uint *)(param_1 + ((unsigned int)0x0202d838)) & 2) == 0)) {
     uVar4 = *(undefined4 *)*piVar1;
     if (*(char *)(*piVar1 + 0x14f) == '\0') {
       iVar3 = func_0202404c(uVar4,0);
@@ -123,7 +123,7 @@ undefined4 func_0202d6dc(int param_1,undefined4 param_2,undefined4 param_3,undef
           uVar2 = 0xb;
         }
         else {
-          *(uint *)(param_1 + ((unsigned int)0x00000be8)) = *(uint *)(param_1 + ((unsigned int)0x00000be8)) | 0x30;
+          *(uint *)(param_1 + ((unsigned int)0x0202d838)) = *(uint *)(param_1 + ((unsigned int)0x0202d838)) | 0x30;
           func_02023f04(*(undefined4 *)(*(unsigned int *)0x0202d834),0,4,4);
           uVar2 = 7;
         }
@@ -140,9 +140,9 @@ undefined4 func_0202d6dc(int param_1,undefined4 param_2,undefined4 param_3,undef
         bVar6 = ((uint)*(ushort *)(*(int *)((*(unsigned int *)0x0202d83c) + 0xc) + 2) & iVar5 + 0x27U) != 0;
         iVar5 = func_020389a8((*(unsigned int *)0x0202d840),0,(int)&local_18 + 2,&local_18);
         if (iVar5 == 0) {
-          *(uint *)(param_1 + ((unsigned int)0x00000be8)) = *(uint *)(param_1 + ((unsigned int)0x00000be8)) | 0x100;
+          *(uint *)(param_1 + ((unsigned int)0x0202d838)) = *(uint *)(param_1 + ((unsigned int)0x0202d838)) | 0x100;
         }
-        else if ((*(uint *)(param_1 + ((unsigned int)0x00000be8)) & 0x100) != 0) {
+        else if ((*(uint *)(param_1 + ((unsigned int)0x0202d838)) & 0x100) != 0) {
           bVar6 = true;
         }
         piVar1 = ((unsigned int)0x0202d834);

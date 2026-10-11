@@ -110,8 +110,8 @@ undefined4 func_02019124(int param_1,byte *param_2,undefined4 param_3)
   byte *pbVar16;
   byte *pbVar17;
 
-  iVar3 = func_02018d9c(param_2);
   iVar2 = func_02018d9c(param_2);
+  iVar3 = func_02018d9c(param_2);
   pbVar4 = (byte *)func_02016050((iVar3 + 1) * 3);
   iVar10 = **(int **)(((unsigned int)0x02019324) + 4);
   iVar3 = (*(int **)(((unsigned int)0x02019324) + 4))[1];

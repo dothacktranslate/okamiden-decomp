@@ -101,10 +101,10 @@ void func_02042518(undefined4 *param_1,int param_2,uint param_3)
   }
   else {
     iVar2 = param_2 + 0x3c + (uint)*(ushort *)(param_2 + 0x42);
-    puVar1 = (undefined4 *)(iVar2 + (uint)*(unsigned char *)(iVar2 + 2) + param_3 * 0x10);
+    puVar1 = (undefined4 *)(iVar2 + (uint)*(ushort *)(iVar2 + 2) + param_3 * 0x10);
   }
-  uVar4 = puVar1[2];
   uVar3 = puVar1[1];
+  uVar4 = puVar1[2];
   uVar5 = puVar1[3];
   *param_1 = *puVar1;
   param_1[1] = uVar3;

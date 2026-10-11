@@ -90,7 +90,7 @@ extern int func_020098b4();
 void func_020041f0(undefined4 param_1,int param_2,uint param_3,undefined4 param_4)
 
 {
-  if (((*(unsigned char *)0x02004248) != -1) && (0x30 < param_3)) {
+  if (((*(unsigned int *)0x02004248) != -1) && (0x30 < param_3)) {
     func_02009068((*(unsigned int *)0x02004248),param_1,param_2 + 0x7000400,param_3,1);
     return;
   }

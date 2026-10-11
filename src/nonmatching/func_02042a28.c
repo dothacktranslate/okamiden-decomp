@@ -100,7 +100,7 @@ int func_02042a28(uint *param_1,int *param_2,int param_3)
 {
   int iVar1;
   undefined4 uVar2;
-  uint iVar3;
+  int iVar3;
   int iVar4;
   int extraout_r1;
   int extraout_r1_00;
@@ -110,8 +110,8 @@ int func_02042a28(uint *param_1,int *param_2,int param_3)
   if (((*param_1 & 8) != 0) || (*param_2 != 3)) {
     return -1;
   }
-  uVar2 = (*(short *)0x02042bbc);
   iVar1 = param_2[1];
+  uVar2 = (*(unsigned int *)0x02042bbc);
   iVar3 = func_0203c3bc(uVar2,iVar1);
   if ((iVar3 == 0) || (iVar4 = func_0203bc28(), iVar4 == 0)) {
     param_2[5] = param_2[5] | 0x40;

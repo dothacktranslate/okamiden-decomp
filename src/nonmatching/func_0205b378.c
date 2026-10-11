@@ -95,13 +95,13 @@ void func_0205b378(int param_1,ushort *param_2)
   int iVar6;
   uint uVar7;
 
-  uVar1 = *param_2;
   uVar2 = ((unsigned int)0x0205b42c);
+  uVar1 = *param_2;
   uVar7 = 0;
   if ((char)param_2[1] != '\0') {
     iVar3 = param_1 + 4;
     do {
-      uVar4 = (uint)*(byte *)(param_1 + (uint)uVar7 + uVar1);
+      uVar4 = (uint)*(byte *)(param_1 + (uint)uVar1 + uVar7);
       if (param_1 == 0) {
 LAB_0205b3f4:
         iVar6 = 0;

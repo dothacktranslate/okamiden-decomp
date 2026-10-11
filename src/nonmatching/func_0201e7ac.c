@@ -192,8 +192,8 @@ ulonglong func_0201e7ac(uint param_1,uint param_2,uint param_3,uint param_4)
     uVar3 = 0;
   }
   else {
-    iVar8 = 1;
     uVar7 = 0;
+    iVar8 = 1;
     if (-1 < (int)param_4) {
       do {
         uVar3 = uVar7;
@@ -211,8 +211,8 @@ ulonglong func_0201e7ac(uint param_1,uint param_2,uint param_3,uint param_4)
     }
     iVar9 = 0;
     while( true ) {
-      uVar4 = param_2 - (param_4 + (param_3 > param_1));
       uVar3 = param_1 - param_3;
+      uVar4 = param_2 - (param_4 + (param_3 > param_1));
       for (iVar9 = iVar9 - (uint)(param_2 <= param_4 &&
                                  (uint)(param_3 <= param_1) <= param_2 - param_4); iVar9 < 0;
           iVar9 = iVar9 * 2 + (uint)(bVar10 || CARRY4(uVar2,(uint)bVar11)) +

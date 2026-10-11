@@ -96,7 +96,7 @@ int func_0200c814(int param_1,int param_2,uint param_3)
     }
     if ((bVar1 == 0 || param_3 == 0x2f) || (param_3 == 0x5c)) break;
     param_3 = (uint)((bVar1 ^ 0x20) - 0xa1 < 0x3c);
-    param_2 = (param_2 + param_3) + 1;
+    param_2 = param_2 + 1 + param_3;
   }
   return param_2;
 }

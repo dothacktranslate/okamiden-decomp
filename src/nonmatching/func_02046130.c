@@ -101,10 +101,10 @@ void func_02046130(int param_1,int param_2,int param_3)
     return;
   }
   do {
-    iVar3 = *(int *)(param_1 + 8);
     puVar1 = *(undefined4 **)(param_2 + 8);
+    iVar3 = *(int *)(param_1 + 8);
     *(undefined4 **)(param_2 + 8) = puVar1 + 2;
-    puVar4 = (undefined4 *)(iVar2 + iVar3 * 8);
+    puVar4 = (undefined4 *)(iVar3 + iVar2 * 8);
     iVar2 = iVar2 + 1;
     *puVar1 = *puVar4;
     puVar1[1] = puVar4[1];

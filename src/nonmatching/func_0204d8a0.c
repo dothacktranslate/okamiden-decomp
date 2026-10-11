@@ -96,10 +96,10 @@ void func_0204d8a0(undefined4 param_1,int param_2)
   int *piVar4;
 
   if ((3 < *(int *)(param_2 + 0x4c)) && ((*(byte *)(*(int *)(param_2 + 0x48) + 5) & 3) != 0)) {
-    func_0204d1d8(param_1);
+    func_0204d1d8();
   }
-  piVar2 = *(int **)(param_2 + 8);
   uVar3 = *(uint *)(param_2 + 0x28);
+  piVar2 = *(int **)(param_2 + 8);
   while (uVar3 <= *(uint *)(param_2 + 0x14)) {
     puVar1 = (uint *)(uVar3 + 8);
     uVar3 = uVar3 + 0x18;
@@ -110,7 +110,7 @@ void func_0204d8a0(undefined4 param_1,int param_2)
   piVar4 = *(int **)(param_2 + 0x20);
   if (piVar4 < *(int **)(param_2 + 8)) {
     do {
-      if ((4 <= piVar4[1]) && ((*(byte *)(*piVar4 + 5) & 3) != 0)) {
+      if ((3 < piVar4[1]) && ((*(byte *)(*piVar4 + 5) & 3) != 0)) {
         func_0204d1d8(param_1);
       }
       piVar4 = piVar4 + 2;

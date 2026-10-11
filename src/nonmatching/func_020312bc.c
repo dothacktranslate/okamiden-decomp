@@ -108,7 +108,7 @@ void func_020312bc(undefined2 *param_1,undefined2 *param_2,int param_3,int param
   *(int *)(param_1 + 4) = (int)param_2 + *(int *)(param_2 + 4);
   if (0 < param_4) {
     do {
-      iVar4 = iVar3 + param_3 * 0x20;
+      iVar4 = param_3 + iVar3 * 0x20;
       iVar1 = func_02030340(iVar4);
       if ((short)param_1[2] == iVar1) {
         *(int *)(param_1 + 6) = iVar4;

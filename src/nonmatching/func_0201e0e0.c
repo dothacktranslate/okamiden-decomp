@@ -93,12 +93,12 @@ uint func_0201e0e0(uint param_1,uint param_2,uint param_3,uint param_4)
   byte in_Q;
 
   if (((0xffdfffff < param_2 * 2) && ((param_2 * 2 != 0xffe00000 || (param_1 != 0)))) ||
-     ((0xffe00000 <= param_4 * 2 && (((param_4 & 0x7fffffff) != 0x7ff00000 || (param_3 != 0)))))) {
+     ((0xffdfffff < param_4 * 2 && (((param_4 & 0x7fffffff) != 0x7ff00000 || (param_3 != 0)))))) {
     return 0;
   }
   if (-1 < (int)(param_4 | param_2)) {
-    bVar1 = param_2 == param_4;
     bVar3 = param_4 <= param_2;
+    bVar1 = param_2 == param_4;
     if (bVar1) {
       bVar3 = param_3 <= param_1;
     }

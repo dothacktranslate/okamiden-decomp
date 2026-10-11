@@ -98,8 +98,8 @@ void func_020396d0(int param_1,int param_2,undefined4 param_3,undefined4 param_4
 {
   int iVar1;
   int iVar2;
-  undefined1 auStack_3c [36];
   undefined1 auStack_60 [36];
+  undefined1 auStack_3c [36];
   undefined4 uStack_18;
 
   iVar1 = ((unsigned int)0x0203979c);

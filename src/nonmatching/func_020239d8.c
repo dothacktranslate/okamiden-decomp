@@ -93,14 +93,14 @@ void func_020239d8(int param_1)
 
   uVar1 = ((unsigned int)0x02023a38);
   uVar3 = 0;
-  *(undefined4 *)(param_1 + 0x14) = 0;
+  *(undefined4 *)(0x14 + param_1) = 0;
   *(undefined2 *)(param_1 + 0x34) = 0;
   *(undefined2 *)(param_1 + 0x38) = 5;
   *(short *)(param_1 + 0x3c) = 0;
   *(undefined4 *)(param_1 + 0x44) = 0;
   *(undefined2 *)(param_1 + 0x36) = 0;
   *(undefined2 *)(param_1 + 0x3a) = 5;
-  *(short *)(param_1 + 0x40) = 0;
+  *(undefined4 *)(param_1 + 0x40) = 0;
   *(undefined4 *)(param_1 + 0x48) = 0;
   *(undefined4 *)(param_1 + 0x5c) = 0;
   do {

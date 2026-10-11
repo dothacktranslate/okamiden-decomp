@@ -96,7 +96,7 @@ uint func_0201ee38(uint param_1,uint param_2)
     return ~((int)param_2 >> 0x1f) + 0x80000000;
   }
   if ((int)uVar2 < 0x20) {
-    uVar1 = (param_2 << 0x80000000 | 0xb | param_1 >> 0x15) >> (uVar2 & 0xff);
+    uVar1 = (param_2 << 0xb | 0x80000000 | param_1 >> 0x15) >> (uVar2 & 0xff);
     if ((int)param_2 < 0) {
       uVar1 = -uVar1;
     }

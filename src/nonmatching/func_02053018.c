@@ -110,7 +110,7 @@ undefined4 func_02053018(undefined4 param_1)
   while (iVar1 != 0) {
     func_02046204(param_1,0xfffffffe);
     uVar2 = func_02046444(param_1,0xffffffff);
-    uVar6 = 3 <= uVar2;
+    uVar6 = 2 < uVar2;
     uVar5 = uVar2 == 3;
     if ((bool)uVar5) {
       uVar3 = func_02046598(param_1,0xffffffff);

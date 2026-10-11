@@ -97,7 +97,7 @@ void func_020541f4(int param_1,uint param_2,undefined4 param_3,undefined4 param_
   uint uVar6;
 
   bVar1 = *(byte *)(param_1 + 0x38);
-  uVar6 = *(unsigned short *)(param_1 + 0x18);
+  uVar6 = *(uint *)(param_1 + 0x18);
   *(uint *)(param_1 + 0x18) = param_2;
   if (((bVar1 & 8) != 0) && (*(int *)(param_1 + 0x40) == 0)) {
     *(undefined4 *)(param_1 + 0x40) = *(undefined4 *)(param_1 + 0x3c);
@@ -114,7 +114,7 @@ void func_020541f4(int param_1,uint param_2,undefined4 param_3,undefined4 param_
     iVar4 = 0;
   }
   else {
-    iVar4 = *(int *)(iVar3 + iVar2 * 4);
+    iVar4 = *(int *)(iVar2 + iVar3 * 4);
   }
   if ((iVar3 != 0) && (uVar6 < param_2)) {
     if (iVar2 == 0) {

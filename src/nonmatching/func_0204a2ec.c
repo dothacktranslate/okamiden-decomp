@@ -178,8 +178,8 @@ undefined4 func_0204a2ec(undefined4 param_1)
   undefined4 uVar6;
   undefined1 auStack_120 [252];
 
-  puVar3 = ((unsigned char *)0x0204a3dc);
   puVar4 = ((unsigned int)0x0204a3e0);
+  puVar3 = ((unsigned char *)0x0204a3dc);
   puVar2 = ((unsigned int)0x0204a3d8);
   puVar1 = ((unsigned int)0x0204a3d4);
   while( true ) {

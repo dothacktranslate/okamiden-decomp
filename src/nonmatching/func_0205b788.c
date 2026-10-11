@@ -106,19 +106,19 @@ undefined4 func_0205b788(int param_1,int param_2)
   else {
     param_1 = 0;
   }
-  uVar4 = 0;
   uVar5 = 1;
+  uVar4 = 0;
   iVar2 = param_1 + (uint)*(ushort *)(param_1 + 2);
   uVar1 = (uint)*(byte *)(iVar2 + 1);
   if (uVar1 != 0) {
     do {
-      if ((iVar2 == 0) || (uVar1 = (uint)*(byte *)(iVar2 + 1), uVar4 >= uVar1)) {
+      if ((iVar2 == 0) || (uVar1 = (uint)*(byte *)(iVar2 + 1), uVar1 <= uVar4)) {
         iVar3 = 0;
       }
       else {
         iVar3 = iVar2 + (uint)*(ushort *)(iVar2 + 6);
         uVar1 = iVar3 + (uint)*(ushort *)(iVar3 + 2);
-        iVar3 = uVar4 + uVar1 * 0x10;
+        iVar3 = uVar1 + uVar4 * 0x10;
       }
       if (param_2 != 0) {
         uVar1 = (uint)*(ushort *)(param_2 + 0x34);

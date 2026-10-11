@@ -100,15 +100,15 @@ extern int func_0204f064();
 undefined4 func_0204f0f4(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
+  undefined4 uVar1;
   int iVar2;
   int iVar3;
-  undefined4 uVar1;
   int iVar4;
 
-  iVar2 = func_020461e8(param_1);
   uVar1 = func_02047988(param_1,1,0,param_4,param_4);
-  iVar4 = ((unsigned int)0xffffd8f0);
-  func_02046ae8(param_1,((unsigned int)0xffffd8f0),((unsigned int)0x0204f224));
+  iVar2 = func_020461e8(param_1);
+  iVar4 = ((unsigned int)0x0204f220);
+  func_02046ae8(param_1,((unsigned int)0x0204f220),((unsigned int)0x0204f224));
   func_02046ae8(param_1,iVar2 + 1,uVar1);
   iVar3 = func_02046444(param_1,iVar4 >> 0xe);
   if (iVar3 != 5) {

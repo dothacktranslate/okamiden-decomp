@@ -98,7 +98,7 @@ int func_0205471c(int param_1,int param_2,int param_3,uint param_4)
   }
   else if (((uint)*(byte *)(param_2 + 6) & 1 << (param_4 & 0xff)) == 0) {
     iVar2 = func_02053918(param_2,param_4,
-                         *(undefined4 *)(*(unsigned short *)(param_1 + 0x10) + param_4 * 4 + 0xa0));
+                         *(undefined4 *)(*(int *)(param_1 + 0x10) + param_4 * 4 + 0xa0));
   }
   else {
     iVar2 = 0;

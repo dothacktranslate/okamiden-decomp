@@ -114,7 +114,7 @@ undefined4 func_0205be34(undefined4 param_1,int param_2,undefined4 param_3,undef
     uVar3 = 0;
     iVar5 = iVar9;
     for (iVar2 = iVar9; iVar2 < 4; iVar2 = iVar2 + 1) {
-      uVar6 = local_68[iVar2 + iVar9 * 4];
+      uVar6 = local_68[iVar9 + iVar2 * 4];
       if ((int)uVar6 < 0) {
         uVar6 = -uVar6;
       }
@@ -171,7 +171,7 @@ undefined4 func_0205be34(undefined4 param_1,int param_2,undefined4 param_3,undef
                (((int)uVar3 >> 0x1f) * uVar6 +
                uVar3 * ((int)uVar6 >> 0x1f) + (int)((ulonglong)uVar6 * (ulonglong)uVar3 >> 0x20)) *
                0x100000);
-          uVar6 = *(uint *)(param_2 + (iVar9 * 0x10 + iVar4) * 4);
+          uVar6 = *(uint *)(param_2 + iVar9 * 0x10 + iVar4 * 4);
           *(uint *)(iVar5 + iVar4 * 4) =
                *(int *)(iVar5 + iVar4 * 4) -
                ((uint)((ulonglong)uVar6 * (ulonglong)uVar3) >> 0xc |

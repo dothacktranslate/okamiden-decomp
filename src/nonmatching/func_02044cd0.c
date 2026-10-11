@@ -25,8 +25,8 @@ void func_02044cd0(uint param_1,int param_2,undefined4 param_3,uint param_4)
   uint uVar2;
   bool bVar3;
 
-  iVar1 = *(int *)(param_2 + 0x10);
   uVar2 = (uint)(3 < (int)param_1);
+  iVar1 = *(int *)(param_2 + 0x10);
   if ((param_4 & 2) == 0) {
     bVar3 = (param_4 & 4) != 0;
     if (bVar3) {

@@ -105,7 +105,7 @@ void func_02010c68(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 
   uStack_18 = param_4;
   uVar1 = func_02010fc4(&local_3c,param_2,param_4,param_5);
-  *(unsigned char *)(param_1 + 4) = local_3c;
+  *(undefined4 *)(param_1 + 4) = local_3c;
   *(undefined4 *)(param_1 + 8) = local_38;
   *(undefined4 *)(param_1 + 0xc) = local_34;
   *(undefined4 *)(param_1 + 0x10) = local_30;

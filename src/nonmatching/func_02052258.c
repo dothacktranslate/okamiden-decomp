@@ -114,7 +114,7 @@ undefined4 func_02052258(undefined4 param_1,int param_2,undefined4 *param_3)
     } while (iVar1 < iVar3);
   }
   iVar1 = iVar1 - iVar3;
-  if (iVar1 <= 0 << *(sbyte *)(param_2 + 7)) {
+  if (iVar1 < 1 << *(sbyte *)(param_2 + 7)) {
     do {
       iVar5 = iVar1 * 0x14;
       iVar3 = *(int *)(param_2 + 0x10) + iVar5;
@@ -123,11 +123,11 @@ undefined4 func_02052258(undefined4 param_1,int param_2,undefined4 *param_3)
         param_3[1] = *(undefined4 *)(iVar3 + 0xc);
         iVar1 = *(int *)(param_2 + 0x10);
         param_3[2] = *(undefined4 *)(iVar1 + iVar5);
-        param_3[3] = *(undefined4 *)((iVar1 + iVar5) + 4);
+        param_3[3] = *(undefined4 *)(iVar1 + iVar5 + 4);
         return 1;
       }
       iVar1 = iVar1 + 1;
-    } while (iVar1 <= 0 << *(sbyte *)(param_2 + 7));
+    } while (iVar1 < 1 << *(sbyte *)(param_2 + 7));
   }
   return 0;
 }

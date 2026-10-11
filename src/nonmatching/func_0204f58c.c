@@ -101,7 +101,7 @@ bool func_0204f58c(byte *param_1,undefined4 *param_2,undefined4 param_3,byte *pa
   func_0201a470(param_1,&local_10);
   uVar3 = func_0201df60();
   *param_2 = uVar3;
-  if (param_1 == local_10) {
+  if (local_10 == param_1) {
     return false;
   }
   if (*local_10 == 0x78 || *local_10 == 0x58) {

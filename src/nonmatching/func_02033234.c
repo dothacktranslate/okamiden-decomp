@@ -105,7 +105,7 @@ void func_02033234(undefined4 *param_1,undefined4 *param_2,int param_3,int param
     param_1[iVar3 * 3 + 4] = *(undefined4 *)(iVar2 + 4);
     param_1[iVar3 * 3 + 5] = uVar1;
     iVar2 = iVar3 + 1;
-    param_1[iVar3 + 0xc] = *(undefined4 *)(iVar3 + param_4 * 4);
+    param_1[iVar3 + 0xc] = *(undefined4 *)(param_4 + iVar3 * 4);
     iVar3 = iVar2;
   } while (iVar2 < 3);
   return;

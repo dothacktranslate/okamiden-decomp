@@ -167,7 +167,7 @@ bool func_02038e70(int param_1,undefined4 param_2,int param_3)
   int iVar4;
 
   puVar1 = ((unsigned int)0x02038f08);
-  (*(unsigned short *)0x02038f08) = 0;
+  (*(unsigned int *)0x02038f08) = 0;
   *(int *)(puVar1 + 8) = param_3;
   puVar1[0xc] = 8;
   puVar1[0xd] = 0;
@@ -187,5 +187,5 @@ bool func_02038e70(int param_1,undefined4 param_2,int param_3)
   } while ((*(ushort *)(piVar2 + -8) & 0x8000) != 0);
   do {
   } while (((*(unsigned int *)0x02038f08) & 0x8000) != 0);
-  return ((uint)*(byte *)(iVar4 + param_1) & 1 << ((*(unsigned int *)0x02038f10) & 0xff)) != 0;
+  return ((uint)*(byte *)(param_1 + iVar4) & 1 << ((*(unsigned int *)0x02038f10) & 0xff)) != 0;
 }

@@ -87,7 +87,7 @@ extern int LZCOUNT();
 void func_020069d8(int param_1)
 
 {
-  undefined2 *puVar1;
+  uint *puVar1;
   uint uVar2;
 
   if (param_1 + -0x60 < 0) {

@@ -93,18 +93,18 @@ void func_02008424(int param_1)
 {
   undefined2 *puVar1;
   uint uVar2;
-  uint iVar3;
+  int iVar3;
   uint uVar4;
   undefined8 uVar5;
 
   uVar5 = func_02008384();
-  (*(unsigned short *)0x0200849c) = 0;
+  (*(unsigned int *)0x0200849c) = 0;
   uVar4 = *(uint *)(param_1 + 0xc) - (uint)uVar5;
   iVar3 = *(int *)(param_1 + 0x10) -
           ((int)((ulonglong)uVar5 >> 0x20) + (uint)(*(uint *)(param_1 + 0xc) < (uint)uVar5));
   func_020064cc(1,((unsigned int)0x020084a0),0);
   puVar1 = ((unsigned int)0x020084a8);
-  uVar2 = ((unsigned int)0x0000fffe);
+  uVar2 = ((unsigned int)0x020084a4);
   if ((-1 < iVar3) && (uVar2 = 0, iVar3 < (int)(uint)(uVar4 < 0x10000))) {
     uVar2 = ~uVar4 & 0xffff;
   }

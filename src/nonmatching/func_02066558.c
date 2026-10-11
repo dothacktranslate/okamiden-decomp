@@ -131,7 +131,7 @@ int func_02066558(undefined4 param_1,int param_2,int param_3,undefined4 param_4)
       return 0;
     }
     iVar4 = func_02065a48(param_1,iVar2,iVar1 + 0x3c,0);
-    if (iVar1 != iVar4 + 0x3c) {
+    if (iVar4 != iVar1 + 0x3c) {
       return 0;
     }
     func_02009b68(iVar2 + 0x3c,iVar2 + 0x3c + *(int *)(iVar2 + 0x38) * 4,iVar1);

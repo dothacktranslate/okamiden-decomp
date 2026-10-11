@@ -28,10 +28,10 @@ void func_02045ae0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 {
   undefined4 uVar1;
 
-  *(unsigned short *)(param_1 + 0xc) = param_6;
+  *(undefined4 *)(param_1 + 0xc) = param_6;
   *(undefined4 *)(param_1 + 0x14) = param_7;
-  *(unsigned short *)(param_1 + 0x18) = param_8;
-  *(unsigned short *)(param_1 + 0x1c) = param_9;
+  *(undefined4 *)(param_1 + 0x18) = param_8;
+  *(undefined4 *)(param_1 + 0x1c) = param_9;
   *(undefined4 *)(param_1 + 0x24) = 0;
   if (param_10 == 0) {
     *(undefined1 *)(param_1 + 0x28) = 0;

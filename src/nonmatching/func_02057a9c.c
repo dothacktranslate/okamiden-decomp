@@ -119,7 +119,7 @@ void func_02057a9c(int *param_1,ushort *param_2,int param_3,int param_4,int *par
     do {
       iVar4 = param_1[3];
       iVar3 = iVar7 * uVar6;
-      iVar5 = iVar7 * (uint)*(ushort *)(*(unsigned short *)(param_2 + 2) + uVar6 * 2);
+      iVar5 = iVar7 * (uint)*(ushort *)(*(int *)(param_2 + 2) + uVar6 * 2);
       func_02007820(iVar4,param_1[2]);
       if (param_4 == 0) {
         func_02004fa4();

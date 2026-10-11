@@ -109,8 +109,8 @@ undefined4 func_0205312c(undefined4 param_1,undefined4 param_2,undefined4 param_
       uVar4 = func_02047714(param_1,((unsigned int)0x020531f4));
       return uVar4;
     }
-    iVar2 = iVar1;
     iVar3 = func_02047a64(param_1,2);
+    iVar2 = iVar1;
     if (iVar1 < iVar3) {
       iVar2 = iVar3;
     }

@@ -118,8 +118,8 @@ undefined4 func_0204e148(int param_1)
     piVar3[0x12] = piVar3[0x12] - (iVar4 - piVar3[0x11]);
     return 10;
   case 3:
-    piVar2 = (int *)func_0204dcd0(param_1,piVar3[8],0x28);
     iVar5 = piVar3[0x11];
+    piVar2 = (int *)func_0204dcd0(param_1,piVar3[8],0x28);
     piVar3[8] = (int)piVar2;
     if (*piVar2 == 0) {
       func_0204dd80(param_1);

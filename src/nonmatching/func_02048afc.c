@@ -96,9 +96,9 @@ undefined4 func_02048afc(undefined4 param_1)
   int iVar1;
   undefined4 uVar2;
 
-  iVar1 = func_02047a64(param_1,2);
   uVar2 = 2;
-  func_02047928(iVar1,param_1,1,5,iVar1);
+  iVar1 = func_02047a64(param_1,2);
+  func_02047928(param_1,1,5);
   func_02046868(param_1,iVar1 + 1);
   func_02046b84(param_1,1,iVar1 + 1);
   iVar1 = func_02046444(param_1,0xffffffff);

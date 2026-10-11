@@ -131,10 +131,10 @@ func_02037e10(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefine
     param_1[uVar5 + 0x165] = 0xffffffff;
     iVar4 = uVar5 * 2;
     uVar5 = uVar5 + 1;
-    *(undefined2 *)((int)param_1 + (iVar4 + 0x5d4)) = 0;
-    iVar4 = ((unsigned int)0x000005f4);
+    *(undefined2 *)((int)param_1 + iVar4 + 0x5d4) = 0;
+    iVar4 = ((unsigned int)0x02037ef8);
   } while (uVar5 < 0x10);
-  *(undefined4 *)((int)param_1 + ((unsigned int)0x000005f4)) = 0;
+  *(undefined4 *)((int)param_1 + ((unsigned int)0x02037ef8)) = 0;
   do {
     iVar3 = uVar2 * 4;
     uVar2 = uVar2 + 1;

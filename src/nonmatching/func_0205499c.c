@@ -98,7 +98,7 @@ uint func_0205499c(undefined4 param_1,undefined4 *param_2,undefined4 *param_3,un
   bool bVar4;
 
   uVar2 = param_2[1];
-  if (param_3[1] != uVar2) {
+  if (uVar2 != param_3[1]) {
     uVar2 = func_0204b864();
     return uVar2;
   }

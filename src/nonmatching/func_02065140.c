@@ -94,10 +94,10 @@ void func_02065140(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 {
   undefined4 uVar1;
 
-  if (-1 < *(unsigned short *)(param_1 + 0x2c) << 0x1e) {
+  if (-1 < *(int *)(param_1 + 0x2c) << 0x1e) {
     return;
   }
-  func_0200a428(*(unsigned short *)(param_1 + 0x4c),0,1 << (*(unsigned char *)(param_1 + 0x48) & 0xff),0,param_4);
+  func_0200a428(*(undefined4 *)(param_1 + 0x4c),0,1 << (*(uint *)(param_1 + 0x48) & 0xff),0,param_4);
   uVar1 = func_0200abf4();
   func_0200a9ec(1);
   func_0200ab88(uVar1);

@@ -164,7 +164,7 @@ extern int func_02009884();
 void func_02004078(undefined4 param_1,int param_2,uint param_3,undefined4 param_4)
 
 {
-  if (((*(unsigned char *)0x020040d0) != -1) && (0x1c < param_3)) {
+  if (((*(unsigned int *)0x020040d0) != -1) && (0x1c < param_3)) {
     func_0200910c((*(unsigned int *)0x020040d0),param_1,((unsigned char *)0x05000400) + param_2,param_3,1);
     return;
   }

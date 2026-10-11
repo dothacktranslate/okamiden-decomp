@@ -251,7 +251,7 @@ void func_0203e814(int param_1)
     func_02009930(param_1 + 0x58,&local_60,0xc);
     func_0205e0c0(local_60,&local_5c,2);
     piVar5 = ((unsigned int)0x0203ea40);
-    local_5c = ((unsigned int)0x0000ffff);
+    local_5c = ((unsigned int)0x0203ea34);
     iVar2 = iVar3 >> 0x1f;
     local_60 = ((unsigned int)0x0203ea38);
     local_58 = 0;
@@ -278,7 +278,7 @@ void func_0203e814(int param_1)
       local_bc = *(undefined4 *)(param_1 + 0x70);
       local_b8 = 0x1000;
       func_0205e0c0(0x1b,&local_bc,3);
-      func_0205e0c0(0x1c,local_b0 + (iVar2 * 3 + 8),3);
+      func_0205e0c0(0x1c,local_b0 + iVar2 * 3 + 8,3);
       func_0205e0c0(((unsigned int)0x0203ea44),&local_60,2);
       local_cc = 1;
       func_0205e0c0(0x12,&local_cc,1);

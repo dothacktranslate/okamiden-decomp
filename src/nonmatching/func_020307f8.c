@@ -110,23 +110,23 @@ void func_020307f8(undefined4 *param_1,int param_2,int param_3,undefined4 param_
   undefined4 uStack_2c;
   undefined4 uStack_28;
 
-  uVar6 = 0;
+  uVar5 = 0;
   uStack_28 = param_4;
   do {
-    uVar5 = 0;
-    iVar4 = uVar6 + param_2 * 0x10;
+    uVar6 = 0;
+    iVar4 = param_2 + uVar5 * 0x10;
     do {
-      iVar3 = param_3 + uVar5 * 4;
+      iVar3 = param_3 + uVar6 * 4;
       lVar1 = (longlong)*(int *)(iVar3 + 0x30) * (longlong)*(int *)(iVar4 + 0xc) +
               (longlong)*(int *)(iVar3 + 0x20) * (longlong)*(int *)(iVar4 + 8) +
-              (longlong)*(int *)(param_3 + uVar5 * 4) * (longlong)*(int *)(param_2 + uVar6 * 0x10) +
+              (longlong)*(int *)(param_3 + uVar6 * 4) * (longlong)*(int *)(param_2 + uVar5 * 0x10) +
               (longlong)*(int *)(iVar4 + 4) * (longlong)*(int *)(iVar3 + 0x10);
       uVar2 = func_02030454((int)lVar1,(int)((ulonglong)lVar1 >> 0x20),0xc);
-      local_68[uVar6 * 4 + uVar5] = uVar2;
-      uVar5 = uVar5 + 1;
-    } while (uVar5 < 4);
-    uVar6 = uVar6 + 1;
-  } while (uVar6 < 4);
+      local_68[uVar5 * 4 + uVar6] = uVar2;
+      uVar6 = uVar6 + 1;
+    } while (uVar6 < 4);
+    uVar5 = uVar5 + 1;
+  } while (uVar5 < 4);
   *param_1 = local_68[0];
   param_1[1] = local_68[1];
   param_1[2] = local_68[2];

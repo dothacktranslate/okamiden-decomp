@@ -165,7 +165,7 @@ extern int func_020099f0();
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
-void func_0206937c(undefined2 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
+void func_0206937c(uint *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
   if ((*param_1 & 2) != 0) {

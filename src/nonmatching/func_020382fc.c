@@ -108,8 +108,8 @@ int func_020382fc(int param_1,undefined4 param_2,undefined4 param_3)
           iVar4 = iVar4 + iVar2;
         }
       }
-      uVar6 = uVar6 << 1;
       uVar5 = uVar5 + 1;
+      uVar6 = uVar6 << 1;
     } while (uVar5 < *(ushort *)(param_1 + 0x10));
   }
   return iVar4;

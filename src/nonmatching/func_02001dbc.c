@@ -86,7 +86,7 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-void func_02001dbc(undefined1 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
+void func_02001dbc(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
   *param_1 = param_2;

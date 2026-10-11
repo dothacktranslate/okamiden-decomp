@@ -94,11 +94,11 @@ void func_020419d4(int param_1,int param_2,int param_3,undefined4 param_4)
   undefined4 uVar1;
   int iVar2;
 
-  if ((*(short *)0x02041a34) != 0) {
-    iVar2 = param_3 * 4;
+  if ((*(unsigned int *)0x02041a34) != 0) {
     param_1 = param_1 + 0x1e4;
+    iVar2 = param_3 * 4;
     if (*(int *)(param_1 + iVar2) == 0) {
-      uVar1 = func_02040dbc((*(short *)0x02041a34),(*(unsigned int *)0x02041a38),1);
+      uVar1 = func_02040dbc((*(unsigned int *)0x02041a34),(*(unsigned int *)0x02041a38),1);
       *(undefined4 *)(param_1 + iVar2) = uVar1;
     }
     (**(code **)(**(int **)(param_1 + iVar2) + 0x70))

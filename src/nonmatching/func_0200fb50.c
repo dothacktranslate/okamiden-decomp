@@ -205,10 +205,10 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
 
   bVar3 = false;
   func_02010178(*(undefined4 *)(((unsigned int)0x0200fe28) + 0x10));
-  uVar1 = (*(unsigned int *)0x04000208);
-  (*(unsigned int *)0x04000208) = 0;
-  uVar10 = func_0200656c(((unsigned int)0x0200fe30));
+  uVar1 = (*(unsigned int *)0x0200fe2c);
+  (*(unsigned int *)0x0200fe2c) = 0;
   uVar9 = func_02008b6c();
+  uVar10 = func_0200656c(((unsigned int)0x0200fe30));
   iVar11 = func_0200830c();
   if (iVar11 == 0) {
     uVar12 = 0;
@@ -218,8 +218,8 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
   }
   func_02006510(uVar12 | 0x40000);
   func_02008b80(uVar9);
-  uVar2 = (*(unsigned int *)0x04000208);
-  (*(unsigned int *)0x04000208) = 1;
+  uVar2 = (*(unsigned int *)0x0200fe2c);
+  (*(unsigned int *)0x0200fe2c) = 1;
   if (((param_1 & 8) != 0) && (sVar8 = func_02008c24(uVar2), (ushort)(sVar8 - 2U) < 2)) {
     param_1 = param_1 & 0xfff7;
   }
@@ -297,8 +297,8 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
   _REG_B_DISPCNT = uVar7;
   _REG_A_DISPCNT = uVar15;
   func_02008be8(0x360000);
-  puVar4 = ((unsigned int)0x04000208);
-  (*(unsigned int *)0x04000208) = 0;
+  puVar4 = ((unsigned int)0x0200fe2c);
+  (*(unsigned int *)0x0200fe2c) = 0;
   func_02006510(uVar10);
   func_02008b80(uVar9);
   uVar2 = *puVar4;

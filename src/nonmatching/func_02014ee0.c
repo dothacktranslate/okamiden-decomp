@@ -87,10 +87,10 @@ extern int LZCOUNT();
 int func_02014ee0(int param_1)
 
 {
-  int iVar2;
   undefined4 uVar1;
+  int iVar2;
 
-  iVar2 = (*(unsigned char *)0x02014f0c);
+  iVar2 = (*(unsigned int *)0x02014f0c);
   (*(unsigned int *)0x02014f0c) = param_1;
   uVar1 = ((unsigned int)0x02014f10);
   if (param_1 == 0) {

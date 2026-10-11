@@ -92,9 +92,9 @@ extern int func_02044ae8();
 void func_02023448(int param_1,int param_2)
 
 {
-  if ((*(short *)(param_2 + 0x18) & 2) == 0) {
+  if ((*(uint *)(param_2 + 0x18) & 2) == 0) {
     func_02044ae8(param_2 + 0x34,0x1000);
-    if (*(unsigned char *)(param_1 + 0x2c) != 0) {
+    if (*(int *)(param_1 + 0x2c) != 0) {
       func_02044ae8(param_2 + 0x74,0x100);
     }
     if (*(int *)(param_1 + 0x30) != 0) {

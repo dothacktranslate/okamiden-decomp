@@ -184,8 +184,8 @@ undefined4 func_02041758(int param_1,int param_2,int param_3)
   }
   piVar3 = (int *)func_0205c030();
   piVar2 = ((unsigned int)0x020418e4);
-  param_3 = param_3 + 0x1000;
   puVar1 = (uint *)(((unsigned int)0x020418e4) + 2);
+  param_3 = param_3 + 0x1000;
   if ((*puVar1 & 1) == 0) {
     ((unsigned int *)0x020418e4)[5] = 0x80000;
     piVar2[2] = *puVar1 | 1;
@@ -193,7 +193,7 @@ undefined4 func_02041758(int param_1,int param_2,int param_3)
   piVar2 = ((unsigned int)0x020418e4);
   puVar1 = (uint *)(((unsigned int)0x020418e4) + 3);
   if ((*puVar1 & 1) == 0) {
-    (*(unsigned short *)0x020418e4) = 0x60000;
+    (*(unsigned int *)0x020418e4) = 0x60000;
     piVar2[3] = *puVar1 | 1;
   }
   iVar4 = func_020028c0(param_1 * 0x1000 - ((unsigned int *)0x020418e4)[5]);

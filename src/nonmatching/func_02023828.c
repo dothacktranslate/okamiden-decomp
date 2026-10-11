@@ -101,7 +101,7 @@ int func_02023828(undefined4 param_1,undefined4 param_2,undefined4 param_3)
   if (iVar1 != 0) {
     iVar2 = func_02023934(iVar1,param_1,param_1,param_1,param_2,0,param_3);
   }
-  func_020381cc((*(short *)0x02023890),iVar2,0xf,1,0,((unsigned int)0x0202388c));
+  func_020381cc((*(unsigned int *)0x02023890),iVar2,0xf,1,0,((unsigned int)0x0202388c));
   if (iVar2 != 0) {
     *(uint *)(iVar2 + 0x18) = *(uint *)(iVar2 + 0x18) | 2;
     return iVar2;

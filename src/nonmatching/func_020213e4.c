@@ -125,7 +125,7 @@ void func_020213e4(int *param_1)
   iVar1 = func_020211ac(param_1,&local_28,&local_38);
   local_34 = *(undefined4 *)(iVar1 + 1);
   uVar2 = func_0202027c(iVar1 + 5,&local_30);
-  func_020201f8(uVar2,&local_2c,uVar2,uVar2,uVar2);
+  func_020201f8(uVar2,&local_2c);
   func_02020744(param_1,&local_28,iVar1);
   func_02021388(param_1,local_2c,local_38);
   func_02021ba0(param_1,&local_28,local_28 + local_30);

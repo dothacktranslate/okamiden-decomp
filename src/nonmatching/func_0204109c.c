@@ -101,19 +101,19 @@ void func_0204109c(int param_1)
   piVar1 = ((unsigned int)0x020410f4);
   if ((*(unsigned int *)0x020410f4) != 0) {
     do {
-      iVar2 = *(int *)(param_1 + 0x30) + 1;
-      *(int *)(param_1 + 0x30) = iVar2;
-    } while (piVar1[iVar2] != 0);
+      iVar4 = *(int *)(param_1 + 0x30) + 1;
+      *(int *)(param_1 + 0x30) = iVar4;
+    } while (piVar1[iVar4] != 0);
   }
   piVar1 = ((unsigned int)0x020410f4);
-  iVar2 = 0;
-  iVar4 = *(int *)(((unsigned int)0x020410f8) + 0x40);
-  while (iVar4 != 0) {
-    iVar4 = iVar2 * 4;
-    uVar3 = func_02036db8((*(unsigned int *)0x020410fc),piVar1[iVar2],0);
-    iVar2 = iVar2 + 1;
-    *(undefined4 *)((param_1 + iVar4) + 0x28) = uVar3;
-    iVar4 = piVar1[iVar2];
+  iVar4 = 0;
+  iVar2 = *(int *)(((unsigned int)0x020410f8) + 0x40);
+  while (iVar2 != 0) {
+    iVar2 = iVar4 * 4;
+    uVar3 = func_02036db8((*(unsigned int *)0x020410fc),piVar1[iVar4],0);
+    iVar4 = iVar4 + 1;
+    *(undefined4 *)(param_1 + iVar2 + 0x28) = uVar3;
+    iVar2 = piVar1[iVar4];
   }
   func_02041050(param_1,0);
   return;

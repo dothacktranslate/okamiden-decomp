@@ -102,13 +102,13 @@ void func_02021ccc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   func_020364e4(uVar1,4,((unsigned int)0x02021de4),0x21);
   func_020364e4(uVar1,5,((unsigned int)0x02021de8),6);
   func_020364e4(uVar1,6,((unsigned int)0x02021dec),7);
-  *(unsigned short *)(param_1 + 0x150) = 0;
+  *(undefined4 *)(param_1 + 0x150) = 0;
   func_02021fa8(param_1 + 4);
   func_02024354(param_1 + 0x14);
   func_02022be4(param_1 + 0xf0,((unsigned int)0x02021df0));
   *(undefined1 *)(param_1 + 0x14f) = 0;
   *(undefined1 *)(param_1 + 0x14e) = 1;
-  *(unsigned char *)(param_1 + 0x140) = 0xffff;
+  *(undefined2 *)(param_1 + 0x140) = 0xffff;
   *(undefined2 *)(param_1 + 0x14c) = 0xffff;
   *(undefined2 *)(param_1 + 0x142) = 1;
   *(undefined2 *)(param_1 + 0x144) = 1;

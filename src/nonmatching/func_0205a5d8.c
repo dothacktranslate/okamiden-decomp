@@ -162,7 +162,7 @@ extern int func_02059aa8();
 
 /* WARNING: Restarted to delay deadcode elimination for space: stack */
 
-void func_0205a5d8(undefined2 *param_1,int param_2,int param_3,undefined4 param_4,undefined4 param_5,
+void func_0205a5d8(undefined4 *param_1,int param_2,int param_3,undefined4 param_4,undefined4 param_5,
                  undefined4 *param_6,undefined4 param_7)
 
 {

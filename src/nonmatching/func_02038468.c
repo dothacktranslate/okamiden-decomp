@@ -91,8 +91,8 @@ void func_02038468(undefined2 *param_1)
   int iVar2;
 
   iVar2 = (ushort)param_1[5] + 1;
-  if (((unsigned int)0x00008ca0) < (int)((ushort)param_1[5] + 1)) {
-    iVar2 = ((unsigned int)0x00008ca0);
+  if (((unsigned int)0x020384ac) < (int)((ushort)param_1[5] + 1)) {
+    iVar2 = ((unsigned int)0x020384ac);
   }
   uVar1 = (undefined2)((unsigned int)0x020384a8);
   *param_1 = uVar1;

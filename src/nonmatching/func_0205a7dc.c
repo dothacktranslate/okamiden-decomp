@@ -166,8 +166,8 @@ void func_0205a7dc(int param_1,int param_2,int param_3,undefined4 param_4,uint p
 
 {
   int iVar1;
-  uint local_28;
-  uint local_24;
+  int local_28;
+  int local_24;
   int local_20;
   int local_1c;
 

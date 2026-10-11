@@ -97,7 +97,7 @@ void func_02038898(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   iVar1 = func_02010078();
   if (iVar1 == 1) {
     func_0200efbc();
-    *(unsigned char *)(param_1 + 8) = *(uint *)(param_1 + 8) | 1;
+    *(uint *)(param_1 + 8) = *(uint *)(param_1 + 8) | 1;
     return;
   }
   func_02038468(*(undefined4 *)(param_1 + 0x20));

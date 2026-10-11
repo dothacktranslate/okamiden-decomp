@@ -113,13 +113,13 @@ undefined4 func_02048378(undefined4 param_1,undefined4 param_2,undefined4 param_
     iVar2 = func_020464b0(param_1,1);
     if (iVar2 != 0) {
       uVar3 = func_02046598(param_1,1);
-      func_0204684c(uVar3,param_1,uVar3);
+      func_0204684c(param_1,uVar3);
       return 1;
     }
   }
   else {
     pbVar4 = (byte *)func_02047988(param_1,1,0);
-    if ((iVar2 <= 1) || (0x24 < iVar2)) {
+    if ((iVar2 < 2) || (0x24 < iVar2)) {
       func_02047550(param_1,2,((unsigned int)0x020484b0));
     }
     func_0201a868(pbVar4,&local_18,iVar2);
@@ -127,7 +127,7 @@ undefined4 func_02048378(undefined4 param_1,undefined4 param_2,undefined4 param_
       while( true ) {
         bVar1 = *local_18;
         if (bVar1 < 0x80) {
-          uVar5 = *(unsigned char *)(((unsigned int)0x020484b4) + (uint)bVar1 * 2) & 0x100;
+          uVar5 = *(ushort *)(((unsigned int)0x020484b4) + (uint)bVar1 * 2) & 0x100;
         }
         else {
           uVar5 = 0;

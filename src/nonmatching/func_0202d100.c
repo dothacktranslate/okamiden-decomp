@@ -100,10 +100,10 @@ void func_0202d100(int param_1,int param_2,int param_3,undefined4 param_4)
   int iVar3;
   undefined1 auStack_28 [20];
 
-  param_2 = param_3 + param_2 * 0x10000;
+  param_2 = param_2 + param_3 * 0x10000;
   uVar1 = func_0202b26c();
-  iVar3 = 0;
   iVar2 = func_02032ac4(0x120,((unsigned int)0x0202d17c),((unsigned int)0x0202d180),0x1e);
+  iVar3 = 0;
   if (iVar2 != 0) {
     iVar3 = func_0202ff68(iVar2,param_2,uVar1,param_4,param_3);
   }

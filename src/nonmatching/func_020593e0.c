@@ -103,8 +103,8 @@ void func_020593e0(int *param_1,uint param_2)
   else {
     param_2 = param_2 | param_2 << 8;
   }
-  iVar3 = param_1[4];
   iVar1 = (int)((uint)*(byte *)(param_1 + 3) * 0x40) >> 3;
+  iVar3 = param_1[4];
   iVar2 = param_1[1];
   iVar4 = 0;
   if (0 < param_1[2]) {

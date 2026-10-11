@@ -89,7 +89,7 @@ extern int func_020362c4();
 uint func_0203633c(uint param_1)
 
 {
-  int uVar1;
+  uint uVar1;
 
   uVar1 = func_020362c4();
   if (param_1 != 0) {

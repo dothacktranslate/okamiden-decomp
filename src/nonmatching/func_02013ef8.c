@@ -102,12 +102,12 @@ uint func_02013ef8(undefined4 param_1,uint param_2,uint param_3,uint param_4)
   uint uVar8;
   uint local_30;
 
-  puVar1 = ((unsigned int)0x04100010);
   puVar2 = ((unsigned int)0x0201400c);
+  puVar1 = ((unsigned int)0x02014008);
   local_30 = (*(unsigned int *)0x02014004);
   for (uVar8 = param_4; uVar8 != 0; uVar8 = uVar8 - uVar7) {
-    uVar7 = 0x200;
     uVar6 = param_3 & 0xfffffe00;
+    uVar7 = 0x200;
     uVar5 = ((unsigned int)0x02014010);
     if (uVar6 != local_30) {
       if (((uVar6 != param_3) || ((param_2 & 3) != 0)) || (uVar5 = param_2, uVar8 < 0x200)) {

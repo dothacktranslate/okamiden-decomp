@@ -103,7 +103,7 @@ undefined4 func_02052e9c(undefined4 param_1,undefined4 param_2,undefined4 param_
   iVar3 = 1;
   func_02047928(param_1,1,5,param_4,param_4);
   iVar1 = func_020466e4(param_1,1);
-  func_02047928(iVar1,param_1,2,6);
+  func_02047928(param_1,2,6);
   if (0 < iVar1) {
     do {
       func_02046414(param_1,2);

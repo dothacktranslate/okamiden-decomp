@@ -104,7 +104,7 @@ void func_0200af54(undefined4 *param_1,undefined4 param_2,undefined4 param_3,und
     do {
       iVar1 = iVar2 * 2;
       iVar2 = iVar2 + 1;
-      *(undefined2 *)((int)(param_1 + iVar3) + iVar1 * 0x24 + 0x20) = 0xffff;
+      *(undefined2 *)((int)param_1 + iVar1 + iVar3 * 0x24 + 0x20) = 0xffff;
     } while (iVar2 < 0x10);
     iVar3 = iVar3 + 1;
   } while (iVar3 < 0x10);

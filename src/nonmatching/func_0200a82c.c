@@ -118,8 +118,8 @@ int * func_0200a82c(uint param_1)
       } while (puVar1[1] == iVar3);
     }
   }
-  piVar5 = *(int **)(((unsigned int)0x0200a928) + puVar1[5] * 4);
   iVar3 = puVar1[5] + 1;
+  piVar5 = *(int **)(((unsigned int)0x0200a928) + puVar1[5] * 4);
   puVar1[5] = iVar3;
   if (8 < iVar3) {
     puVar1[5] = 0;
@@ -134,7 +134,7 @@ int * func_0200a82c(uint param_1)
     *puVar1 = piVar5;
   }
   else {
-    *(unsigned short *)puVar1[4] = piVar5;
+    *(undefined4 *)puVar1[4] = piVar5;
   }
   puVar1[4] = piVar4;
   puVar1[7] = puVar1[7] + -1;

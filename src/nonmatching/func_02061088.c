@@ -99,7 +99,7 @@ void func_02061088(int param_1,int param_2,int param_3)
   bVar4 = param_3 != 0;
   iVar2 = param_1;
   if (bVar4) {
-    iVar2 = *(unsigned short *)(param_3 + 8);
+    iVar2 = *(int *)(param_3 + 8);
   }
   if (bVar4 && iVar2 != 0) {
     unaff_r8 = param_3 + iVar2;
@@ -123,7 +123,7 @@ void func_02061088(int param_1,int param_2,int param_3)
       iVar2 = func_0205f0cc(unaff_r8 + 4);
     }
     if (-1 < iVar2) {
-      *(ushort *)((param_1 + iVar2 * 2) + 0x1a) = (ushort)uVar3 | 0x100;
+      *(ushort *)(param_1 + iVar2 * 2 + 0x1a) = (ushort)uVar3 | 0x100;
     }
     uVar3 = uVar3 + 1;
   } while (uVar3 < *(byte *)(param_2 + 9));

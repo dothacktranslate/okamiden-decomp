@@ -98,7 +98,7 @@ int func_020411d8(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 
   bool bVar6;
   undefined8 uVar7;
 
-  uVar7 = func_02036edc((*(unsigned short *)0x02041230));
+  uVar7 = func_02036edc((*(unsigned int *)0x02041230));
   iVar3 = (int)((ulonglong)uVar7 >> 0x20);
   iVar1 = (int)uVar7;
   bVar4 = iVar1 != 0;

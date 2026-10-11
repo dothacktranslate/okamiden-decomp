@@ -91,13 +91,13 @@ extern int func_02008b80();
 bool func_0200c5d8(int param_1)
 
 {
+  undefined4 uVar1;
   uint uVar2;
   undefined4 uVar3;
-  undefined4 uVar1;
   bool bVar4;
 
   uVar1 = func_02008b6c();
-  bVar4 = (*(unsigned short *)(param_1 + 0x14) & 8) == 0;
+  bVar4 = (*(uint *)(param_1 + 0x14) & 8) == 0;
   if (bVar4) {
     uVar2 = *(uint *)(param_1 + 0x14);
     if ((uVar2 & 0x10) == 0) {
@@ -105,8 +105,8 @@ bool func_0200c5d8(int param_1)
     }
     else {
       *(uint *)(param_1 + 0x14) = uVar2 | 0x40;
-      uVar2 = *(uint *)(param_1 + 0x14);
       uVar3 = func_02008b6c();
+      uVar2 = *(uint *)(param_1 + 0x14);
       while ((uVar2 & 0x40) != 0) {
         func_02007000(param_1 + 0xc);
         uVar2 = *(uint *)(param_1 + 0x14);

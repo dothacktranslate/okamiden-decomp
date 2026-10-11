@@ -96,13 +96,13 @@ void func_020542c0(int param_1,int param_2,undefined4 *param_3,undefined4 *param
   undefined4 *puVar3;
   int iVar4;
 
-  iVar2 = *(unsigned char *)(param_1 + 0x20);
+  iVar2 = *(int *)(param_1 + 0x20);
   puVar3 = *(undefined4 **)(param_1 + 8);
   uVar1 = param_3[1];
   *puVar3 = *param_3;
   puVar3[1] = uVar1;
-  uVar1 = param_4[1];
   iVar4 = *(int *)(param_1 + 8);
+  uVar1 = param_4[1];
   *(undefined4 *)(iVar4 + 8) = *param_4;
   *(undefined4 *)(iVar4 + 0xc) = uVar1;
   iVar4 = *(int *)(param_1 + 8);
@@ -120,6 +120,6 @@ void func_020542c0(int param_1,int param_2,undefined4 *param_3,undefined4 *param
   puVar3 = (undefined4 *)(iVar2 + -8);
   *(undefined4 **)(param_1 + 8) = puVar3;
   *(undefined4 *)(iVar4 + param_2) = *puVar3;
-  *(undefined4 *)((iVar4 + param_2) + 4) = *(undefined4 *)(iVar2 + -4);
+  *(undefined4 *)(iVar4 + param_2 + 4) = *(undefined4 *)(iVar2 + -4);
   return;
 }

@@ -29,7 +29,7 @@ void func_02044264(int param_1,int param_2)
 
   iVar1 = (**(code **)((uint)*(ushort *)(param_2 + 4) * 0x18 + ((unsigned int)0x0204435c) +
                       (uint)*(ushort *)(param_2 + 6) * 4))();
-  iVar3 = *(unsigned short *)(((unsigned int)0x02044364) + (uint)*(ushort *)(param_2 + 4) * 4);
+  iVar3 = *(int *)(((unsigned int)0x02044364) + (uint)*(ushort *)(param_2 + 4) * 4);
   iVar2 = (**(code **)(((unsigned int)0x02044360) + (uint)*(ushort *)(param_2 + 4) * 4))();
   if (((unsigned int)0x02044368) < iVar2) {
     if (((unsigned int)0x02044368) + 0x100000 < iVar2) {

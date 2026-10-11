@@ -95,7 +95,7 @@ uint func_0201651c(uint param_1,int param_2)
   undefined1 *puVar3;
 
   *(undefined4 *)(param_2 + 0x28) = 0;
-  if ((*(char *)(param_2 + 0xd) != '\0') || ((*(unsigned short *)(param_2 + 4) & 0x3ff) >> 7 == 0)) {
+  if ((*(char *)(param_2 + 0xd) != '\0') || ((*(uint *)(param_2 + 4) & 0x3ff) >> 7 == 0)) {
     return 0xffffffff;
   }
   if (((*(uint *)(param_2 + 8) & 7) == 0) && (((*(uint *)(param_2 + 4) & 0x1f) >> 2 & 2) != 0)) {
