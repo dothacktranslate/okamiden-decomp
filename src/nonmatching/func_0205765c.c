@@ -152,7 +152,7 @@ void func_0205765c(int *param_1)
   iVar5 = iVar7 * 0x540 + ((unsigned int)0x02057850) + 0x100;
   iVar8 = ((*(ushort *)((int)param_1 + 6) - uVar4) + 1 & 0x1fff) << 3;
   iVar1 = (uVar4 & 0x1fff) << 3;
-  func_02007820(iVar5 + uVar4 * 8,iVar8);
+  func_02007820(uVar4 + iVar5 * 8,iVar8);
   if (iVar7 == 0) {
     func_0200418c(iVar5 + uVar4 * 8,iVar1,iVar8);
     return;

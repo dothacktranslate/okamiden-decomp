@@ -99,7 +99,7 @@ void func_0204b744(int param_1,int param_2,undefined4 param_3,undefined4 param_4
 
   iVar3 = 0;
   local_20 = 0;
-  uVar2 = *(undefined4 *)(((unsigned int)0x0204b7f0) + *(int *)(param_2 + 4) * 4);
+  uVar2 = *(unsigned short *)(((unsigned int)0x0204b7f0) + *(int *)(param_2 + 4) * 4);
   uStack_1c = param_4;
   iVar1 = func_0204b714(*(undefined4 *)(param_1 + 0x14));
   if (iVar1 != 0) {

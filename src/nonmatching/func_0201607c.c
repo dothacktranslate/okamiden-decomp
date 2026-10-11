@@ -103,7 +103,7 @@ undefined4 func_0201607c(void)
       uVar3 = 0xffffffff;
     }
     if (iVar4 < 3) {
-      iVar2 = iVar1 + iVar4 * 0x4c;
+      iVar2 = iVar4 + iVar1 * 0x4c;
       iVar4 = iVar4 + 1;
     }
     else {

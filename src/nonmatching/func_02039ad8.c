@@ -91,7 +91,7 @@ void func_02039ad8(int param_1)
   undefined4 *puVar2;
   int iVar3;
 
-  uVar1 = ((unsigned int)0x02039b00);
+  uVar1 = ((unsigned int)0xc1c00ec0);
   iVar3 = 0;
   do {
     puVar2 = (undefined4 *)(*(int *)(param_1 + 0x20) + iVar3 * 8);

@@ -98,15 +98,15 @@ undefined4 func_0200e6c4(int param_1)
 
   uVar3 = 0;
   if ((*(uint *)(param_1 + 0x14) & 2) != 0) {
-    iVar4 = *(int *)(param_1 + 0x20);
+    iVar2 = *(int *)(param_1 + 0x20);
     iVar1 = func_0200c5d8(param_1);
-    iVar2 = func_0200e758(param_1);
-    if (iVar2 != 0) {
+    iVar4 = func_0200e758(param_1);
+    if (iVar4 != 0) {
       *(uint *)(param_1 + 0x14) = *(uint *)(param_1 + 0x14) & 0xfffffffb;
-      uVar3 = *(undefined4 *)(iVar4 + 0x1c);
-      *(undefined4 *)(iVar4 + 4) = *(undefined4 *)(iVar4 + 0x14);
-      *(undefined4 *)(iVar4 + 0xc) = *(undefined4 *)(iVar4 + 0x18);
-      *(undefined4 *)(iVar4 + 0x1c) = 0;
+      uVar3 = *(undefined4 *)(iVar2 + 0x1c);
+      *(undefined4 *)(iVar2 + 4) = *(undefined4 *)(iVar2 + 0x14);
+      *(undefined4 *)(iVar2 + 0xc) = *(undefined4 *)(iVar2 + 0x18);
+      *(undefined4 *)(iVar2 + 0x1c) = 0;
     }
     if (iVar1 != 0) {
       func_0200c668(param_1);

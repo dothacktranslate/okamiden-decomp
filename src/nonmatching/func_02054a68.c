@@ -126,7 +126,7 @@ bool func_02054a68(int param_1,int *param_2,int *param_3)
       return true;
     }
 LAB_02054b24:
-    iVar2 = func_0205471c(param_1,*(undefined4 *)(iVar2 + 8),*(undefined4 *)(iVar3 + 8),4);
+    iVar2 = func_0205471c(param_1,*(unsigned char *)(iVar2 + 8),*(undefined4 *)(iVar3 + 8),4);
     if (iVar2 != 0) {
       func_020542c0(param_1,*(undefined4 *)(param_1 + 8),iVar2,param_2);
       bVar1 = true;

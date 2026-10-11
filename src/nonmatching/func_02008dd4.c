@@ -109,7 +109,7 @@ void func_02008dd4(uint param_1,uint param_2)
     iVar4 = func_02008d98(uVar8);
     uVar6 = 0x1f - iVar4;
     if ((int)uVar6 < 0) break;
-    uVar5 = (uint)*(ushort *)(uVar6 + iVar2 * 2);
+    uVar5 = (uint)*(ushort *)(iVar2 + uVar6 * 2);
     uVar7 = ~(1 << (uVar6 & 0xff));
     bVar9 = param_2 == uVar5;
     if (bVar9) {

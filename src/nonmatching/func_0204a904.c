@@ -98,8 +98,8 @@ void func_0204a904(int param_1,int param_2,int param_3,undefined4 param_4)
   iVar3 = *(int *)(param_1 + 0x28);
   iVar1 = func_0204a838(param_1,iVar3 + iVar2,param_3,*(int *)(param_2 + 0x60),param_4);
   if (iVar1 != 0) {
-    iVar4 = *(int *)(param_1 + 8);
     iVar1 = *(int *)(iVar3 + iVar2);
+    iVar4 = *(int *)(param_1 + 8);
     *(undefined4 *)(iVar1 + (param_3 + -1) * 8) = *(undefined4 *)(iVar4 + -8);
     *(undefined4 *)(iVar1 + (param_3 + -1) * 8 + 4) = *(undefined4 *)(iVar4 + -4);
   }

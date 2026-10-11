@@ -98,7 +98,7 @@ void func_020132fc(void)
   iVar1 = ((unsigned int)0x02013344);
   do {
     uVar2 = func_02008b6c();
-    while ((*(unsigned short *)(4 + iVar1) & 8) == 0) {
+    while ((*(uint *)(iVar1 + 4) & 8) == 0) {
       func_02007000(0);
     }
     func_02008b80(uVar2);

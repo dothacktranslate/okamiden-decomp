@@ -106,7 +106,7 @@ void func_0202f9e4(int param_1)
       func_0203b44c(uVar1,*(undefined4 *)(iVar3 + 0x6c));
       *(undefined4 *)(iVar3 + 0x6c) = 0;
     }
-    if (*(int *)(*(int *)(param_1 + 0x114) * 4 + param_1 + iVar2 * 8 + 0x4c) != 0) {
+    if (*(int *)(*(int *)(param_1 + 0x114) * 4 + (param_1 + iVar2) * 8 + 0x4c) != 0) {
       func_02036eb8((*(unsigned int *)0x0202fa48));
       *(undefined4 *)(*(int *)(param_1 + 0x114) * 4 + param_1 + iVar2 * 8 + 0x4c) = 0;
     }

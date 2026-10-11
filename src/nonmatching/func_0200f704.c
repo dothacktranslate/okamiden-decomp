@@ -94,7 +94,7 @@ undefined4 func_0200f704(uint param_1,uint param_2)
   uint local_20;
   uint local_1c;
 
-  local_20 = ((unsigned int)0x0200f788);
+  local_20 = ((unsigned int)0x03006000);
   func_0200f640(&local_20,1);
   do {
     iVar1 = func_0200fe3c(0,2,0,1);

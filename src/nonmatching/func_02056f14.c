@@ -98,7 +98,7 @@ void func_02056f14(uint *param_1)
   }
   if ((uVar1 == 3) || (uVar1 == 4)) {
     param_1[2] = param_1[2] ^ 1;
-    if ((*(int *)(param_1[7] + 0xc) + (uint)*(ushort *)(param_1[7] + 2) * 8) - 8 < *param_1)
+    if ((*(unsigned short *)(param_1[7] + 0xc) + (uint)*(ushort *)(param_1[7] + 2) * 8) - 8 < *param_1)
     goto LAB_02056ff4;
     if (param_1[8] == 1) {
       (*(code *)param_1[10])(param_1[9],param_1[4]);

@@ -92,7 +92,7 @@ int func_0200c7d4(int param_1,int param_2)
   iVar1 = param_2;
   do {
     iVar1 = iVar1 + -1;
-    if (iVar1 < 1) break;
+    if (iVar1 <= 0) break;
   } while ((*(byte *)(param_1 + iVar1 + -1) ^ 0x20) - 0xa1 < 0x3c);
   return (param_2 + -1) - ((param_2 + -1) - iVar1 & 1U);
 }

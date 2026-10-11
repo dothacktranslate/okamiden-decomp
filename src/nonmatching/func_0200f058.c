@@ -99,8 +99,8 @@ func_0200f058(undefined2 *param_1,undefined4 param_2,undefined4 param_3,undefine
     uVar1 = *(undefined2 *)(((unsigned int)0x0200f0a0) + 10);
     *param_1 = *(undefined2 *)(((unsigned int)0x0200f0a0) + 8);
     param_1[1] = uVar1;
-    uVar1 = *(undefined2 *)(iVar3 + 0xc);
     uVar2 = *(undefined2 *)(iVar3 + 0xe);
+    uVar1 = *(undefined2 *)(iVar3 + 0xc);
     param_1[2] = uVar1;
     param_1[3] = uVar2;
     func_0200f290(param_1,param_1,uVar2,uVar1,param_4);

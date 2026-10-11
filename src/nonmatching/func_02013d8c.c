@@ -92,9 +92,9 @@ undefined4 func_02013d8c(void)
   uint *puVar1;
 
   func_02013cd8(0xb8,0);
-  puVar1 = ((unsigned int)0x02013ddc);
-  (*(unsigned int *)0x02013ddc) = (*(unsigned int *)0x02013dd8) & 0xf8ffe000 | 0xa7000000;
+  puVar1 = ((unsigned int)0x040001a4);
+  (*(unsigned int *)0x040001a4) = (*(unsigned int *)0x02013dd8) & 0xf8ffe000 | 0xa7000000;
   do {
   } while ((*puVar1 & 0x800000) == 0);
-  return (*(unsigned int *)0x02013de0);
+  return (*(unsigned int *)0x04100010);
 }

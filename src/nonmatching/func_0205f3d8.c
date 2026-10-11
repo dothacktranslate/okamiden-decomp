@@ -90,9 +90,9 @@ int func_0205f3d8(int param_1,uint param_2)
   int iVar1;
 
   iVar1 = param_1 + 0xc;
-  if ((iVar1 != 0) && (param_2 < *(byte *)(param_1 + 0xd))) {
+  if ((iVar1 != 0) && (param_2 < *(byte *)(0xd + param_1))) {
     return *(ushort *)(iVar1 + (uint)*(ushort *)(param_1 + 0x12)) * param_2 +
-           iVar1 + (uint)*(ushort *)(param_1 + 0x12) + 4;
+           iVar1 + (uint)*(unsigned char *)(param_1 + 0x12) + 4;
   }
   return 0;
 }

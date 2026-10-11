@@ -163,7 +163,7 @@ extern int LZCOUNT();
 void func_02003400(void)
 
 {
-  ushort uVar1;
+  short uVar1;
 
   uVar1 = (*(signed char *)0x0200343c);
   (*(unsigned int *)0x02003440) = 1;

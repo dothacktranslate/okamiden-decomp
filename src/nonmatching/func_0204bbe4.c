@@ -88,7 +88,7 @@ void func_0204bbe4(int param_1,int param_2)
 
 {
   int *piVar1;
-  int iVar2;
+  uint iVar2;
 
   piVar1 = *(int **)(param_1 + 0x58);
   iVar2 = *(int *)(param_1 + 8) - param_2;

@@ -101,7 +101,7 @@ void func_02007558(undefined4 param_1)
   while (iVar2 = func_02007000(param_1), iVar2 == 0) {
     *(undefined4 *)(iVar3 + 0x84) = param_1;
     func_02007000(param_1);
-    *(unsigned short *)(iVar3 + 0x84) = 0;
+    *(signed char *)(iVar3 + 0x84) = 0;
   }
   func_02008b80(uVar1);
   return;

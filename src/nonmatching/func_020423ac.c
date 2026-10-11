@@ -92,9 +92,9 @@ undefined4 func_020423ac(int param_1)
   bool bVar1;
   undefined4 uVar2;
 
-  uVar2 = 1;
   bVar1 = true;
-  if ((*(int *)(param_1 + 0x1cc) != 2) && (*(int *)(param_1 + 0x1cc) != 3)) {
+  uVar2 = 1;
+  if ((*(int *)(0x1cc + param_1) != 2) && (*(int *)(param_1 + 0x1cc) != 3)) {
     bVar1 = false;
   }
   if ((!bVar1) && ((*(uint *)(param_1 + 0x124) & 0x80) == 0)) {

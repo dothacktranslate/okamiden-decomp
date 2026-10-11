@@ -154,7 +154,7 @@ extern int func_0200b5ac();
 bool func_020108e4(uint param_1)
 
 {
-  int iVar1;
+  uint iVar1;
 
   iVar1 = func_0200b5ac(5,(param_1 & 0x7f) << 8,0);
   return -1 < iVar1;

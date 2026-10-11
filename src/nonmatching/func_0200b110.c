@@ -104,7 +104,7 @@ void func_0200b110(int param_1)
     iVar3 = param_1 + iVar6 * 8;
     iVar2 = *(int *)(iVar3 + 0x18);
     if (iVar2 != 0) {
-      iVar5 = (param_1 + 0x18) + iVar6 * 8;
+      iVar5 = param_1 + 0x18 + iVar6 * 8;
       iVar1 = *(int *)(iVar2 + 0x18);
       if (iVar5 == *(int *)(iVar2 + 0x18)) {
         uVar4 = 0x3c;
@@ -122,7 +122,7 @@ void func_0200b110(int param_1)
       func_02007804(iVar2,uVar4);
     }
     iVar6 = iVar6 + 1;
-    if (3 < iVar6) {
+    if (4 <= iVar6) {
       func_0200a748();
       return;
     }

@@ -115,7 +115,7 @@ undefined4 func_0203575c(undefined4 param_1)
   func_02038898((*(unsigned int *)0x020357dc));
   func_02036a70((*(unsigned int *)0x020357e0));
   func_02038900(*puVar1);
-  func_0203da18((*(unsigned int *)0x020357e4));
+  func_0203da18((*(short *)0x020357e4));
   func_0203c3fc((*(unsigned int *)0x020357e8));
   func_02038218((*(unsigned int *)0x020357ec));
   func_02034e24((*(unsigned int *)0x020357f0));

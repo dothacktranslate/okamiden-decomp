@@ -110,7 +110,7 @@ int func_020656d8(uint param_1)
       iVar1 = 0;
     }
     else {
-      iVar1 = *(int *)((*(unsigned int *)0x02065738) + 0x98) + puVar3[param_1 + 1];
+      iVar1 = *(unsigned short *)((*(unsigned int *)0x02065738) + 0x98) + puVar3[param_1 + 1];
     }
     return iVar1;
   }

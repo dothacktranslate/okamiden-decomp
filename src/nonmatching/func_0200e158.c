@@ -154,7 +154,7 @@ typedef int code();
 undefined4 func_0200e158(undefined4 param_1,int param_2,int *param_3,int param_4)
 
 {
-  int iVar1;
+  uint iVar1;
   int iVar2;
 
   iVar2 = *(int *)(param_2 + 4);

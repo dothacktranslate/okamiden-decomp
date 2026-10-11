@@ -25,8 +25,8 @@ void func_02044cd0(uint param_1,int param_2,undefined4 param_3,uint param_4)
   uint uVar2;
   bool bVar3;
 
-  uVar2 = (uint)(3 < (int)param_1);
   iVar1 = *(int *)(param_2 + 0x10);
+  uVar2 = (uint)(3 < (int)param_1);
   if ((param_4 & 2) == 0) {
     bVar3 = (param_4 & 4) != 0;
     if (bVar3) {
@@ -35,7 +35,7 @@ void func_02044cd0(uint param_1,int param_2,undefined4 param_3,uint param_4)
     if (bVar3) {
       uVar2 = param_1 & 0xffff;
     }
-    func_02039090((*(unsigned int *)0x02044da0),*(undefined4 *)(((unsigned int)0x02044da4) + uVar2 * 4),param_3,
+    func_02039090((*(unsigned short *)0x02044da0),*(undefined4 *)(((unsigned int)0x02044da4) + uVar2 * 4),param_3,
                  *(undefined4 *)(iVar1 + 0xc),*(undefined4 *)(iVar1 + 8));
     return;
   }

@@ -95,7 +95,7 @@ undefined4 func_0200e7e8(undefined4 param_1,int param_2)
   }
   if (param_2 != 9) {
     if (param_2 != 10) {
-      return ((unsigned int)0x0200e854);
+      return ((unsigned int)0x00000102);
     }
     func_02013004(*(uint *)(((unsigned int)0x0200e850) + 4) & 0xffff);
     return 0;

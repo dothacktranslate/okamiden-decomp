@@ -22,8 +22,8 @@ void func_0204374c(int param_1,undefined4 param_2)
 {
   undefined1 uVar1;
   int iVar2;
-  int unaff_r4;
   int unaff_r5;
+  int unaff_r4;
   int unaff_r7;
   int unaff_r8;
 

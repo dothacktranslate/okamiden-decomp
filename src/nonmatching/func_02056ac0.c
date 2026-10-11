@@ -92,7 +92,7 @@ undefined4 func_02056ac0(undefined4 param_1,int *param_2,undefined4 param_3,unde
 {
   int iVar1;
 
-  iVar1 = func_02056b88(param_1,((unsigned int)0x02056af8),param_3,param_4,param_4);
+  iVar1 = func_02056b88(param_1,((unsigned int)0x504c5454),param_3,param_4,param_4);
   if (iVar1 != 0) {
     func_02056b48(iVar1 + 8);
     *param_2 = iVar1 + 8;

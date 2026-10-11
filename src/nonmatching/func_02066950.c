@@ -116,17 +116,17 @@ undefined4 func_02066950(uint param_1)
       uVar1 = *(uint *)(pbVar2 + 4);
       if (bVar6 && param_1 != 0) {
         uVar3 = (uint)*pbVar2;
-        unaff_r8 = 0;
+        iVar4 = 0;
         uVar1 = uVar3;
       }
       if (((bVar6 && param_1 != 0) && uVar1 != 0) && -1 < (int)uVar3) {
         do {
-          iVar4 = func_0206436c(iVar5,param_1,*(undefined4 *)(pbVar2 + 4));
-          if (iVar4 == 0) {
+          unaff_r8 = func_0206436c(iVar5,param_1,*(undefined4 *)(pbVar2 + 4));
+          if (unaff_r8 == 0) {
             return 0;
           }
-          unaff_r8 = unaff_r8 + 1;
-        } while (unaff_r8 < (int)(uint)*pbVar2);
+          iVar4 = iVar4 + 1;
+        } while (iVar4 < (int)(uint)*pbVar2);
       }
     }
     iVar5 = iVar5 + 1;

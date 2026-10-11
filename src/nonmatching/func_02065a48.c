@@ -115,7 +115,7 @@ int func_02065a48(uint param_1,int param_2,uint param_3,int param_4)
         uVar5 = uVar4;
       }
       uVar1 = piVar7[1] - param_4;
-      if (uVar1 < uVar5) {
+      if (uVar5 > uVar1) {
         uVar5 = uVar1;
       }
       if (uVar5 == 0) {

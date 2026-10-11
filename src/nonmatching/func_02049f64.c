@@ -111,7 +111,7 @@ void func_02049f64(undefined4 param_1,undefined1 *param_2)
     func_02046830(param_1);
   }
   else {
-    func_02046868();
+    func_02046868(param_1);
   }
   func_02047028(param_1,2,0);
   return;

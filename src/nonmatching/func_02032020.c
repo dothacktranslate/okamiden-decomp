@@ -96,8 +96,8 @@ void func_02032020(int param_1)
   undefined4 uVar1;
   undefined4 uVar2;
   undefined1 auStack_150 [64];
-  undefined1 auStack_110 [64];
   undefined1 auStack_d0 [64];
+  undefined1 auStack_110 [64];
   undefined1 auStack_90 [64];
   undefined1 auStack_50 [64];
 
@@ -106,7 +106,7 @@ void func_02032020(int param_1)
   func_020307f8(auStack_150,uVar1,uVar2,uVar2);
   uVar1 = func_020306fc(auStack_d0,param_1 + 0x48);
   func_020307f8(auStack_110,auStack_150,uVar1,uVar1);
-  func_020307ec(param_1 + 0x54,auStack_110);
+  func_020304ac(param_1 + 0x54,auStack_110);
   *(undefined1 *)(param_1 + 0xd4) = 0;
   return;
 }

@@ -218,13 +218,13 @@ void func_0203ea90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     func_0205e0c0(0x10,&local_8c,1);
     func_02009930(param_1 + 0x58,&local_28,0xc);
     func_0205e0c0(local_28,&local_24,2);
-    local_28 = ((unsigned int)0x0203ec08);
+    local_28 = ((unsigned int)0x00293130);
     local_24 = ((unsigned int)0x0203ec0c);
     iVar1 = iVar3 >> 0x1f;
     local_1c = (((uint)(iVar3 * 0x8000000 + iVar1) >> 0x1b | iVar1 << 5) - iVar1) * 0x10000 |
                ((unsigned int)0x0203ec10);
     local_20 = 0;
-    func_0205e0c0(((unsigned int)0x0203ec08),&local_24,3);
+    func_0205e0c0(((unsigned int)0x00293130),&local_24,3);
     local_90 = 1;
     local_24 = 0;
     func_0205e0c0(0x40,&local_90,1);

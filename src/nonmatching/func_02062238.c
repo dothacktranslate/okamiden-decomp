@@ -131,7 +131,7 @@ void func_02062238(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   uVar7 = (uint)lVar3;
   param_1[0xc] = (uVar7 - uVar12 >> 8 |
                  ((int)((ulonglong)lVar3 >> 0x20) -
-                 ((int)((ulonglong)lVar2 >> 0x20) + (uint)(uVar7 < uVar12))) * 0x1000000) +
+                 ((int)((ulonglong)lVar2 >> 0x20) + (uint)(uVar12 > uVar7))) * 0x1000000) +
                  uVar6 * 0x8000;
   param_1[0xd] = ((uint)lVar1 >> 8 | (int)((ulonglong)lVar1 >> 0x20) << 0x18) + uVar5 * 0x8000;
   iVar11 = func_02002964();

@@ -93,7 +93,7 @@ void func_0205bccc(void)
   undefined4 local_8 [2];
 
   local_8[0] = in_r3;
-  func_0205e0c0(((unsigned int)0x0205bd30),((unsigned int)0x0205bd34),0x11);
+  func_0205e0c0(((unsigned int)0x00001610),((unsigned int)0x0205bd34),0x11);
   func_0205e0c0(0x19,((unsigned int)0x0205bd38),0xc);
   local_8[0] = 2;
   func_0205e0c0(0x10,local_8,1);

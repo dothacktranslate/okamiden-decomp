@@ -96,7 +96,7 @@ void func_02003804(void)
   int local_10;
   int iVar3;
 
-  (*(unsigned char *)0x04000600) = (*(unsigned short *)0x04000600) | 0x8000;
+  (*(unsigned char *)0x04000600) = (*(unsigned char *)0x04000600) | 0x8000;
   do {
     iVar3 = func_02003a50(&local_c);
   } while (iVar3 != 0);

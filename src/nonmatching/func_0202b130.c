@@ -100,7 +100,7 @@ void func_0202b130(int param_1,int param_2,undefined4 param_3,undefined4 param_4
       *(uint *)(param_1 + 0xc) = uVar1;
     }
     else {
-      *(uint *)(param_1 + 0xc) = uVar1 | 1;
+      *(unsigned char *)(param_1 + 0xc) = uVar1 | 1;
     }
     func_0202b110(param_1,param_3,param_3,uVar1,param_4);
   }

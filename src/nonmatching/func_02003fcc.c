@@ -91,5 +91,5 @@ int func_02003fcc(void)
      ((5 < ((*(unsigned int *)0x02004010) & 7) || ((*(ushort *)((int)((unsigned int)0x02004010) + 0xe) & 0x80) != 0)))) {
     return 0;
   }
-  return ((*(ushort *)((int)((unsigned int)0x02004010) + 0xe) & 0x3c) >> 2) * 0x4000 + 0x6200000;
+  return ((*(unsigned char *)((int)((unsigned int)0x02004010) + 0xe) & 0x3c) >> 2) * 0x4000 + 0x6200000;
 }

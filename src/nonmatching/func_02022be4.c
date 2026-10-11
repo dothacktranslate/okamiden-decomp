@@ -93,7 +93,7 @@ void func_02022be4(undefined4 *param_1,undefined4 param_2,undefined4 param_3,und
 
 {
   int iVar1;
-  short sVar2;
+  unsigned short sVar2;
   int iVar3;
   int iVar4;
 

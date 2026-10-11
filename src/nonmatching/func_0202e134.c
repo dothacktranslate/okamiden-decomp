@@ -97,8 +97,8 @@ int func_0202e134(int param_1,int param_2,uint param_3)
     iVar1 = param_1 + iVar2 * 0x10;
     if ((*(short *)(iVar1 + 0x28) != 0) && ((param_3 | param_2 << 0x10) == *(uint *)(iVar1 + 0x30)))
     break;
-    iVar2 = iVar2 + 1;
-    if (0xf < iVar2) {
+    iVar2++;
+    if (0x10 <= iVar2) {
       return 0;
     }
   }

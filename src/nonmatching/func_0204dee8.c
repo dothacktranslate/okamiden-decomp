@@ -96,7 +96,7 @@ void func_0204dee8(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   *(undefined1 *)(piVar1 + 5) = 0x43;
   func_0204dcd0(param_1,piVar1 + 7,0xfffffffd,param_4,param_4);
   iVar2 = 0;
-  if (piVar1[2] < 1) {
+  if (piVar1[2] <= 0) {
     return;
   }
   do {

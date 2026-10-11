@@ -200,7 +200,7 @@ void func_02014260(uint param_1,int param_2,int param_3,int param_4,undefined4 p
     param_1 = param_1 & 3;
   }
   *(uint *)(iVar1 + 0x508) = param_1;
-  if (param_1 < 4) {
+  if (param_1 <= 3) {
     (**(code **)(*(int *)(iVar1 + 0x50c) + 4))();
   }
   iVar4 = ((unsigned int)0x020143d4);

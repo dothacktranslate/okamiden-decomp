@@ -100,9 +100,9 @@ void func_0200831c(void)
   piVar1 = (int *)(((unsigned int)0x02008378) + 0xc);
   *(uint *)(((unsigned int)0x02008378) + 8) = uVar4 + 1;
   *(uint *)(iVar2 + 0xc) = *piVar1 + (uint)(0xfffffffe < uVar4);
-  puVar3 = ((unsigned int)0x0200837c);
+  puVar3 = ((unsigned int)0x04000102);
   if (*(int *)(iVar2 + 4) != 0) {
-    (*(unsigned int *)0x0200837c) = 0;
+    (*(unsigned int *)0x04000102) = 0;
     puVar3[-1] = 0;
     *puVar3 = 0xc1;
     *(undefined4 *)(iVar2 + 4) = 0;

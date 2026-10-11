@@ -166,21 +166,21 @@ void func_0200807c(void)
   bool bVar3;
   uint uVar4;
 
-  uVar1 = (*(unsigned int *)0x020080d8);
+  uVar4 = (*(unsigned int *)0x020080d8);
   bVar3 = false;
-  ((unsigned int *)0x020080dc)[2] = uVar1;
-  if ((0x25fffff < uVar1) && (uVar1 < 0x2800000)) {
+  ((unsigned int *)0x020080dc)[2] = uVar4;
+  if ((0x2600000 <= uVar4) && (uVar4 < 0x2800000)) {
     bVar3 = true;
   }
   if (!bVar3) {
-    uVar1 = 0;
+    uVar4 = 0;
   }
-  (*(unsigned int *)0x020080dc) = uVar1;
-  uVar4 = ((unsigned int)0x020080e0);
-  if (uVar1 == 0) {
+  (*(unsigned int *)0x020080dc) = uVar4;
+  uVar1 = ((unsigned int)0x020080e0);
+  if (uVar4 == 0) {
     puVar2 = (uint *)((uint)((unsigned int)0x020080d8) & 0xff7fffff);
     (*(unsigned int *)0x020080d8) = ((unsigned int)0x020080e0);
-    *puVar2 = uVar4;
+    *puVar2 = uVar1;
   }
   ((unsigned int *)0x020080dc)[3] = 0;
   return;

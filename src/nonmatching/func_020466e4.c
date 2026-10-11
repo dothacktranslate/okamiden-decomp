@@ -120,7 +120,7 @@ undefined4 func_020466e4(undefined4 param_1)
   case 6:
     break;
   case 7:
-    return *(undefined4 *)(*piVar1 + 0x10);
+    return *(unsigned short *)(*piVar1 + 0x10);
   }
   return 0;
 }

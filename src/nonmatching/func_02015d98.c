@@ -105,7 +105,7 @@ int func_02015d98(uint param_1,uint param_2,int param_3)
       }
       while (((param_3 >= iVar1 + -4 &&
               (uVar3 = *(uint *)(param_1 + iVar1), uVar3 == *(uint *)(param_2 + iVar1))) &&
-             (((uVar3 & ((unsigned int)0x02015e7c)) + ((unsigned int)0x02015e7c) | uVar3 | ((unsigned int)0x02015e7c)) == 0xffffffff))) {
+             (((uVar3 & ((unsigned int)0x7f7f7f7f)) + ((unsigned int)0x7f7f7f7f) | uVar3 | ((unsigned int)0x7f7f7f7f)) == 0xffffffff))) {
         iVar1 = iVar1 + 4;
       }
     }

@@ -90,5 +90,5 @@ bool func_0200b724(int param_1)
   if (0x1a < param_1 - 9U) {
     return false;
   }
-  return (((unsigned int)0x0200b748) & 1 << (param_1 - 9U & 0xff)) != 0;
+  return (((unsigned int)0x0400030f) & 1 << (param_1 - 9U & 0xff)) != 0;
 }

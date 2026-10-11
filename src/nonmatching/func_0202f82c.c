@@ -114,7 +114,7 @@ void func_0202f82c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   func_02018ba4(auStack_28,((unsigned int)0x0202f9c8),param_2);
   iVar5 = 0;
   do {
-    if ((iVar5 == 3) && ((*(uint *)(param_1 + 0x108) & 0xffff) == ((unsigned int)0x0202f9cc))) {
+    if ((iVar5 == 3) && ((*(uint *)(param_1 + 0x108) & 0xffff) == ((unsigned int)0x000003e9))) {
       uVar2 = func_0x0209113c(*(undefined4 *)(*(int *)(*(int *)(*(unsigned int *)0x0202f9d0) + 0x5c) + 0x34));
       func_02018ba4(auStack_28,((unsigned int)0x0202f9d4),uVar2);
     }

@@ -90,8 +90,8 @@ int func_02003dc8(void)
   uint uVar1;
   int iVar2;
 
-  uVar1 = (*(unsigned char *)((int)((unsigned int)0x02003e38) + 0xe) & 0x1f00) >> 8;
-  switch((*(unsigned int *)0x02003e38) & 7) {
+  uVar1 = (*(unsigned char *)((int)((unsigned int)0x04001000) + 0xe) & 0x1f00) >> 8;
+  switch((*(unsigned int *)0x04001000) & 7) {
   case 0:
     break;
   case 1:
@@ -104,7 +104,7 @@ int func_02003dc8(void)
     goto LAB_02003e14;
   case 5:
 LAB_02003e14:
-    if ((*(ushort *)((int)((unsigned int)0x02003e38) + 0xe) & 0x80) == 0) {
+    if ((*(ushort *)((int)((unsigned int)0x04001000) + 0xe) & 0x80) == 0) {
       iVar2 = uVar1 << 0xb;
     }
     else {

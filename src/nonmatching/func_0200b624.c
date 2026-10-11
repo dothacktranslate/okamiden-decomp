@@ -167,7 +167,7 @@ void func_0200b624(void)
 
 {
   uint uVar1;
-  ushort *puVar2;
+  short *puVar2;
   int iVar3;
   int iVar4;
   code *pcVar5;

@@ -139,7 +139,7 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
   if (param_5 != 0) {
     local_48 = (uint)*(byte *)(param_2 + 0x18) * 0x38;
   }
-  iVar4 = uVar3 * 0x48 + 0x108 + iVar4;
+  iVar4 = uVar3 * 0x48 + (0x108 + iVar4);
   iVar5 = iVar4 + local_44;
   puVar1 = (undefined4 *)
            (**(code **)(**(int **)(param_1 + 4) + 8))

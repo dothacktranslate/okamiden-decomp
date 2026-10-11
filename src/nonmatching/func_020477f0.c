@@ -97,8 +97,8 @@ undefined4 func_020477f0(undefined4 param_1,undefined4 param_2,undefined4 param_
   int iVar1;
   int iVar2;
 
-  iVar1 = ((unsigned int)0x02047868);
-  func_02046ae8(param_1,((unsigned int)0x02047868),param_2,param_4,param_4);
+  iVar1 = ((unsigned int)0xffffd8f0);
+  func_02046ae8(param_1,((unsigned int)0xffffd8f0),param_2,param_4,param_4);
   iVar2 = func_02046444(param_1,iVar1 >> 0xe);
   if (iVar2 == 0) {
     func_02046204(param_1,iVar1 >> 0xd);

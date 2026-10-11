@@ -90,6 +90,6 @@ void func_02013d58(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
 
 {
   func_02013cd8(0xb7,param_1,param_3,param_4,param_4);
-  (*(unsigned int *)0x02013d88) = (*(unsigned int *)0x02013d84) & 0xf8ffffff | 0xa1000000;
+  (*(unsigned int *)0x040001a4) = (*(unsigned int *)0x02013d84) & 0xf8ffffff | 0xa1000000;
   return;
 }

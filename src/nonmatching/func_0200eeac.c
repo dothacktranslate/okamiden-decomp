@@ -98,7 +98,7 @@ void func_0200eeac(short *param_1)
   iVar3 = ((unsigned int)0x0200ef90);
   if (param_1 != (short *)0x0) {
     func_02008b6c();
-    puVar2 = ((unsigned int)0x0200ef94);
+    puVar2 = ((unsigned int)0x04000280);
     iVar4 = (int)param_1[2];
     if (iVar4 == 0) {
       *(undefined4 *)(iVar3 + 0x1c) = 0;
@@ -106,7 +106,7 @@ void func_0200eeac(short *param_1)
       *(undefined4 *)(iVar3 + 0x24) = 0;
     }
     else {
-      (*(unsigned int *)0x0200ef94) = 0;
+      (*(unsigned int *)0x04000280) = 0;
       puVar2[8] = 0;
       puVar2[9] = 0x1000;
       sVar1 = *param_1;
@@ -119,7 +119,7 @@ void func_0200eeac(short *param_1)
       } while ((*puVar2 & 0x8000) != 0);
       *(undefined4 *)(iVar3 + 0x24) = (*(unsigned int *)0x0200ef98);
     }
-    puVar2 = ((unsigned int)0x0200ef94);
+    puVar2 = ((unsigned int)0x04000280);
     iVar4 = (int)param_1[3];
     if (iVar4 == 0) {
       *(undefined4 *)(iVar3 + 0x28) = 0;
@@ -127,7 +127,7 @@ void func_0200eeac(short *param_1)
       *(undefined4 *)(iVar3 + 0x30) = 0;
     }
     else {
-      (*(unsigned int *)0x0200ef94) = 0;
+      (*(unsigned int *)0x04000280) = 0;
       puVar2[8] = 0;
       puVar2[9] = 0x1000;
       sVar1 = param_1[1];

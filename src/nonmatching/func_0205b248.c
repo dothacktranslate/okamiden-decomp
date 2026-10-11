@@ -127,8 +127,8 @@ LAB_0205b2e8:
         iVar9 = param_1 + *piVar4;
       }
       *(uint *)(iVar9 + 0x14) = *(uint *)(iVar9 + 0x14) | *param_4 + (uVar2 & 0xffff);
-      uVar6 = param_4[1] & ((unsigned int)0x0205b374);
-      uVar5 = (param_4[1] & ((unsigned int)0x0205b374) << 0xb) >> 0xb;
+      uVar6 = param_4[1] & ((unsigned int)0x000007ff);
+      uVar5 = (param_4[1] & ((unsigned int)0x000007ff) << 0xb) >> 0xb;
       if (uVar6 == *(ushort *)(iVar9 + 0x20)) {
         uVar3 = 0x1000;
       }

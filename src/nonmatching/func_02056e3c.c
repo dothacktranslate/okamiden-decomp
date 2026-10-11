@@ -93,8 +93,8 @@ void func_02056e3c(int param_1,int param_2,int param_3,int param_4,int param_5,u
 {
   int *piVar1;
 
-  piVar1 = ((unsigned int)0x02056ea4);
-  (*(unsigned int *)0x02056ea4) = param_4 * 0x800 + param_1 * 0x1000;
+  piVar1 = ((unsigned int)0x04000470);
+  (*(unsigned char *)0x04000470) = param_4 * 0x800 + param_1 * 0x1000;
   *piVar1 = param_5 * 0x800 + param_2 * 0x1000;
   *piVar1 = param_3;
   func_02056c6c(param_6);

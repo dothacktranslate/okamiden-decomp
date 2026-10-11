@@ -140,7 +140,7 @@ LAB_02051598:
       *puVar4 = *(undefined1 *)(iVar3 + uVar5);
     }
     uVar5 = uVar5 + 1;
-    if (local_28 <= uVar5) {
+    if (uVar5 >= local_28) {
       return;
     }
   } while( true );

@@ -106,7 +106,7 @@ int func_02037500(undefined4 param_1,undefined4 param_2,undefined4 param_3,int p
   }
   *(undefined4 *)(iVar1 + 0x10) = param_3;
   *(int *)(iVar1 + 0x18) = param_4;
-  if (-1 < param_4) {
+  if (-2 <= param_4) {
     func_02064478(iVar1 + 0x2c,param_4);
   }
   *(undefined4 *)(iVar1 + 0x20) = 0;

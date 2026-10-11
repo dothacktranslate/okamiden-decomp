@@ -93,7 +93,7 @@ void func_020510d8(int *param_1,int param_2,int param_3,int param_4)
 {
   int iVar1;
 
-  if (param_1[3] <= param_2) {
+  if (param_2 >= param_1[3]) {
     if (param_2 == 0) {
       func_02046898(param_1[2],param_3,param_4 - param_3);
       return;

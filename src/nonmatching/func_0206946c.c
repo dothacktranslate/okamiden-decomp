@@ -97,8 +97,8 @@ uint func_0206946c(undefined4 *param_1,undefined4 param_2,undefined4 param_3,und
   uVar2 = func_0201e96c(*(undefined4 *)*param_1,((undefined4 *)*param_1)[1],0x1e,0,param_4);
   uVar2 = func_0201e96c((int)uVar2,(int)((ulonglong)uVar2 >> 0x20),0x3c,0);
   uVar1 = func_0201e96c((int)uVar2,(int)((ulonglong)uVar2 >> 0x20),0x3c,0);
-  if ((int)((unsigned int)0x02069498) < (int)uVar1) {
-    uVar1 = ((unsigned int)0x02069498);
+  if ((int)((unsigned int)0x000003e7) < (int)uVar1) {
+    uVar1 = ((unsigned int)0x000003e7);
   }
   return uVar1 & 0xffff;
 }

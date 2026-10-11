@@ -116,7 +116,7 @@ void func_02009b68(ushort *param_1,ushort *param_2,uint param_3)
   if ((((uint)param_2 ^ (uint)param_1) & 1) == 0) {
     puVar3 = param_2;
     if ((((uint)param_2 ^ (uint)param_1) & 2) == 0) {
-      if (1 < param_3) {
+      if (2 <= param_3) {
         puVar4 = param_1;
         puVar6 = param_2;
         if (((uint)param_2 & 2) != 0) {

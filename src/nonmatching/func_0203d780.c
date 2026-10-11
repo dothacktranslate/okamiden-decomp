@@ -99,7 +99,7 @@ undefined4 func_0203d780(undefined4 param_1,int param_2,undefined4 param_3,undef
   if (param_2 != 0) {
     uStack_10 = param_4;
     if ((*(int *)(param_2 + 0x10) != 0) && ((*(uint *)(param_2 + 0x30) & 2) == 0)) {
-      (*(code *)(*(unsigned int *)0x0203d7dc))();
+      (*(code *)(*(short *)0x0203d7dc))();
     }
     if ((*(int *)(param_2 + 0x14) != 0) && ((*(uint *)(param_2 + 0x30) & 4) == 0)) {
       (*(code *)(*(unsigned int *)0x0203d7dc))();

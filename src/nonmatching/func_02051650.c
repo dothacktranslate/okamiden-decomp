@@ -128,7 +128,7 @@ LAB_020516a0:
   case 6:
     func_02046414(uVar3,3);
     uVar1 = func_0205117c(param_1,param_3,param_4);
-    func_02047028(uVar3,uVar1,1);
+    func_02047028(uVar1,uVar3,uVar1,1);
   }
   iVar2 = func_0204661c(uVar3,0xffffffff);
   if (iVar2 == 0) {

@@ -110,7 +110,7 @@ void func_0203bd10(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   *(undefined4 *)(param_1 + 0xc) = *(undefined4 *)(param_2 + 0xc);
   uStack_20 = param_4;
   func_0203c468(param_2);
-  uVar1 = ((unsigned int)0x0203be74);
+  uVar1 = ((unsigned int)0xba2e8ba3);
   iVar6 = param_2 + *(int *)(param_2 + 0x10);
   *(int *)(param_1 + 0x10) = iVar6;
   uVar7 = 0;

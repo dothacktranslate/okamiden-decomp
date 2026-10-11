@@ -124,7 +124,7 @@ void func_02005084(void)
     return;
   case 0xc:
 LAB_020050e0:
-    puVar1[4] = ((unsigned int)0x02005108);
+    puVar1[4] = ((unsigned int)0x06840000);
     return;
   default:
     return;

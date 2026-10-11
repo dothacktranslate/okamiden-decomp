@@ -92,7 +92,7 @@ extern int func_02045df0();
 void func_02024130(int param_1)
 
 {
-  int iVar1;
+  uint iVar1;
 
   if (*(int *)(param_1 + 0x20) != 0) {
     func_02045df0((*(unsigned int *)0x02024194));

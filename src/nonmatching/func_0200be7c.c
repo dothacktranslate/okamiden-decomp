@@ -100,8 +100,8 @@ bool func_0200be7c(undefined4 *param_1,int param_2,int param_3)
   undefined4 *puVar3;
   uint uVar4;
   uint uVar5;
-  undefined4 uVar6;
   int iVar7;
+  undefined4 uVar6;
   undefined4 uVar8;
   bool bVar9;
 

@@ -102,7 +102,7 @@ undefined4 func_020414cc(undefined4 param_1,undefined4 param_2,undefined4 param_
   if (*(int *)(((unsigned int)0x02041534) + 0x10) != 0) {
     return 0;
   }
-  iVar1 = func_02032bcc(((unsigned int)0x0204153c),4,((unsigned int)0x02041538));
+  iVar1 = func_02032bcc(((unsigned int)0x00000404),4,((unsigned int)0x02041538));
   if (iVar1 != 0) {
     uVar2 = func_02042474();
     *(undefined4 *)(((unsigned int)0x02041534) + 0x10) = uVar2;

@@ -103,6 +103,6 @@ void func_0202ca4c(int param_1,int param_2)
   else {
     func_0203ac7c(0);
   }
-  *(char *)(param_1 + ((unsigned int)0x0202ca7c)) = (char)param_2;
+  *(char *)(param_1 + ((unsigned int)0x00000abc)) = (char)param_2;
   return;
 }

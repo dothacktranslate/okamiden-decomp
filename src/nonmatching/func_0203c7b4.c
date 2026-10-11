@@ -91,7 +91,7 @@ extern int func_02000c60();
 void func_0203c7b4(int param_1)
 
 {
-  *(undefined4 *)(param_1 + 0xc) = ((unsigned int)0x0203c850);
+  *(undefined4 *)(param_1 + 0xc) = ((unsigned int)0x00b80001);
   *(undefined4 *)(param_1 + 0x78) = 0x1000;
   *(undefined4 *)(param_1 + 0x74) = 0x1000;
   *(undefined4 *)(param_1 + 0x70) = 0x1000;

@@ -98,14 +98,14 @@ void func_0202c634(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   undefined4 uVar3;
   undefined4 uVar4;
 
-  uVar3 = *(undefined4 *)(*(int *)(param_1 + ((unsigned int)0x0202c674)) + 0x14);
-  uVar4 = *(undefined4 *)(*(int *)(param_1 + ((unsigned int)0x0202c674)) + 0x10);
+  uVar3 = *(undefined4 *)(*(int *)(param_1 + ((unsigned int)0x00000be4)) + 0x14);
+  uVar4 = *(undefined4 *)(*(int *)(param_1 + ((unsigned int)0x00000be4)) + 0x10);
   uVar2 = func_02032bcc(uVar3,4,((unsigned int)0x0202c678),param_4,param_4);
   *(undefined4 *)(param_1 + 0xdf0) = uVar2;
   func_02009b68(uVar4,uVar2,uVar3);
   *(undefined4 *)(param_1 + 0xdf4) = *(undefined4 *)(param_1 + 0xdf0);
   puVar1 = ((unsigned int)0x0202c67c);
   *(undefined4 *)(param_1 + 0xdf8) = uVar3;
-  func_02034d04(*puVar1,*(undefined4 *)(param_1 + ((unsigned int)0x0202c674)));
+  func_02034d04(*puVar1,*(undefined4 *)(param_1 + ((unsigned int)0x00000be4)));
   return;
 }

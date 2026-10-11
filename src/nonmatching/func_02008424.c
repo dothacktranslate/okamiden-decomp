@@ -98,7 +98,7 @@ void func_02008424(int param_1)
   undefined8 uVar5;
 
   uVar5 = func_02008384();
-  (*(unsigned int *)0x0200849c) = 0;
+  (*(unsigned short *)0x0200849c) = 0;
   uVar4 = *(uint *)(param_1 + 0xc) - (uint)uVar5;
   iVar3 = *(int *)(param_1 + 0x10) -
           ((int)((ulonglong)uVar5 >> 0x20) + (uint)(*(uint *)(param_1 + 0xc) < (uint)uVar5));

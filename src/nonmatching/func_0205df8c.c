@@ -176,7 +176,7 @@ void func_0205df8c(undefined4 param_1,undefined4 param_2,int param_3)
     param_3 = *piVar2;
   }
   if (piVar2 != (int *)0x0 && param_3 != 0) {
-    func_020098cc(piVar2 + 1,((unsigned int)0x0205dfe0),param_3 << 2);
+    func_020098cc(piVar2 + 1,((unsigned int)0x04000400),param_3 << 2);
     *(undefined4 *)*puVar1 = 0;
     return;
   }

@@ -99,13 +99,13 @@ undefined4 func_0203cb88(int param_1,undefined4 param_2,undefined4 param_3,undef
   int iVar3;
   undefined4 uVar4;
 
-  uVar1 = *(undefined4 *)(param_1 + 0x14);
-  uVar4 = 0;
-  iVar2 = func_0203cb34(uVar1,param_3);
+  uVar4 = *(undefined4 *)(param_1 + 0x14);
+  uVar1 = 0;
+  iVar2 = func_0203cb34(uVar4,param_3);
   iVar3 = func_0203cb6c(param_2,param_4);
   if ((-1 < iVar2) && (-1 < iVar3)) {
-    uVar4 = func_0205b524(uVar1,param_2,iVar2,iVar3);
-    func_0205b884(uVar1,param_2,iVar2,iVar3);
+    uVar1 = func_0205b524(uVar4,param_2,iVar2,iVar3);
+    func_0205b884(uVar4,param_2,iVar2,iVar3);
   }
-  return uVar4;
+  return uVar1;
 }

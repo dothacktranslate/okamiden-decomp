@@ -93,7 +93,7 @@ void func_0204d744(undefined4 param_1,int param_2)
   int iVar2;
 
   if ((*(byte *)(*(int *)(param_2 + 0xc) + 5) & 3) != 0) {
-    func_0204d1d8();
+    func_0204d1d8(param_1);
   }
   if (*(char *)(param_2 + 6) != '\0') {
     iVar2 = 0;

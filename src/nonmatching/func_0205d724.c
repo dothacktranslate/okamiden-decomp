@@ -180,7 +180,7 @@ void func_0205d724(int *param_1)
   }
   if ((param_1[2] & 0x100U) == 0 && uVar2 == 0) {
     iVar1 = *param_1;
-    func_0205e008(iVar1 + *(int *)(iVar1 + 1),*(undefined4 *)(iVar1 + 5));
+    func_0205e008(iVar1 + *(unsigned char *)(iVar1 + 1),*(undefined4 *)(iVar1 + 5));
   }
   if (cVar3 == '\x03') {
     param_1[2] = param_1[2] & 0xffffffbf;

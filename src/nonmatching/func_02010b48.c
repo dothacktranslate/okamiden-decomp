@@ -91,9 +91,9 @@ void func_02010b48(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
   undefined1 auStack_18 [4];
-  undefined4 local_c;
-  undefined4 local_10;
   undefined4 local_8 [2];
+  undefined4 local_10;
+  undefined4 local_c;
   undefined1 auStack_14 [4];
 
   func_02010d04(local_8,&local_c,&local_10,auStack_14,auStack_18,param_1,param_2,param_3);

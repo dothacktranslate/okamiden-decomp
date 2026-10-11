@@ -103,6 +103,6 @@ undefined4 func_0203d4bc(int param_1)
       return 0;
     }
   }
-  *(uint *)(param_1 + 0x30) = *(uint *)(param_1 + 0x30) & 0xfffffffe;
+  *(uint *)(param_1 + 0x30) = *(unsigned short *)(param_1 + 0x30) & 0xfffffffe;
   return 1;
 }

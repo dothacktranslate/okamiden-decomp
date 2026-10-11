@@ -156,5 +156,5 @@ typedef int code();
 uint func_0204402c(void)
 
 {
-  return (*(volatile unsigned int *)0x04000000) & (*(unsigned int *)0x02044040);
+  return (*(volatile unsigned int *)0x04000000) & (*(signed char *)0x00300010);
 }

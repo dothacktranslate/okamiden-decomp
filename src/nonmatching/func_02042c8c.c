@@ -95,7 +95,7 @@ undefined4 func_02042c8c(int param_1,undefined4 *param_2,undefined4 param_3)
   bool bVar1;
   undefined4 uVar2;
   uint extraout_r1;
-  int iVar3;
+  uint iVar3;
   uint uVar4;
   uint local_24;
 

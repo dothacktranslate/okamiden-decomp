@@ -202,8 +202,8 @@ void func_0205e0c0(undefined4 param_1,undefined4 param_2,int param_3,undefined4 
     func_0205dfe4();
   }
 LAB_0205e17c:
-  puVar2 = ((unsigned int)0x0205e198);
-  (*(unsigned int *)0x0205e198) = param_1;
+  puVar2 = ((unsigned int)0x04000400);
+  (*(unsigned int *)0x04000400) = param_1;
   func_020098cc(param_2,puVar2,param_3 << 2);
   return;
 }

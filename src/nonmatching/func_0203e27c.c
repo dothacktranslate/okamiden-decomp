@@ -157,8 +157,8 @@ void func_0203e27c(int param_1,undefined4 *param_2,int param_3,undefined4 param_
   undefined4 uVar1;
   undefined4 uVar2;
 
-  uVar2 = param_2[2];
   uVar1 = param_2[1];
+  uVar2 = param_2[2];
   *(undefined4 *)(param_1 + 0x24) = *param_2;
   *(int *)(param_1 + 0x3c) = param_3 / 2;
   *(int *)(param_1 + 0x30) = -param_3 / 2;

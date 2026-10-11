@@ -100,7 +100,7 @@ undefined4 func_020481c4(int param_1,int param_2,uint param_3,uint param_4)
     else {
       uVar1 = (*pcVar2)(*(int **)(param_1 + 4),param_4,4,0);
       if (param_2 != 0) {
-        if (param_4 < param_3) {
+        if (param_3 > param_4) {
           param_3 = param_4;
         }
         func_02009c98(param_2,uVar1,param_3);

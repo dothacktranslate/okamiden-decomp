@@ -99,7 +99,7 @@ void func_020419d4(int param_1,int param_2,int param_3,undefined4 param_4)
     iVar2 = param_3 * 4;
     if (*(int *)(param_1 + iVar2) == 0) {
       uVar1 = func_02040dbc((*(unsigned int *)0x02041a34),(*(unsigned int *)0x02041a38),1);
-      *(undefined4 *)(param_1 + iVar2) = uVar1;
+      *(undefined4 *)(iVar2 + param_1) = uVar1;
     }
     (**(code **)(**(int **)(param_1 + iVar2) + 0x70))
               (*(int **)(param_1 + iVar2),((unsigned int)0x02041a48),*(undefined4 *)(((unsigned int)0x02041a40) + param_2 * 4),

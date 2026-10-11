@@ -95,8 +95,8 @@ void func_02046960(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 
   uStack_8 = param_3;
   uStack_4 = param_4;
-  if (*(uint *)(*(int *)(param_1 + 0x10) + 0x40) <= *(uint *)(*(int *)(param_1 + 0x10) + 0x44)) {
-    func_0204e284();
+  if (*(uint *)(*(unsigned char *)(param_1 + 0x10) + 0x40) <= *(uint *)(*(int *)(param_1 + 0x10) + 0x44)) {
+    func_0204e284(param_1);
   }
   func_0204f6b0(param_1,param_2,&uStack_8);
   return;

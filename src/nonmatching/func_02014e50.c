@@ -97,7 +97,7 @@ void func_02014e50(int param_1,undefined4 param_2,uint param_3)
   if (param_3 != 0) {
     do {
       uVar3 = 0x40 - *(int *)(0x54 + param_1);
-      if (param_3 < uVar3) {
+      if (uVar3 > param_3) {
         uVar3 = param_3;
       }
       func_020099f0(param_1 + 0x14 + *(int *)(param_1 + 0x54),param_2,uVar3);

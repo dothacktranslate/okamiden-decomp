@@ -127,11 +127,11 @@ void func_0203e2d4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   func_0205e0c0(0x11,0,0);
   local_8c = 2;
   func_0205e0c0(0x10,&local_8c,1);
-  local_88 = ((unsigned int)0x0203e3ec);
+  local_88 = ((unsigned int)0x00293130);
   local_84[0] = *(ushort *)(param_1 + 0x14) | 0x8000;
   local_84[2] = ((unsigned int)0x0203e3f0) | 0x15000000;
   local_84[1] = 0;
-  func_0205e0c0(((unsigned int)0x0203e3ec),local_84,3);
+  func_0205e0c0(((unsigned int)0x00293130),local_84,3);
   local_88 = 0;
   local_84[0] = 0;
   local_78[0] = *(undefined4 *)(param_1 + 0x3c);

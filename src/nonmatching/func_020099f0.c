@@ -103,7 +103,7 @@ void func_020099f0(uint *param_1,uint param_2,uint param_3)
       return;
     }
   }
-  if (1 < param_3) {
+  if (2 <= param_3) {
     uVar3 = param_2 | param_2 << 8;
     puVar1 = param_1;
     if (((uint)param_1 & 2) != 0) {

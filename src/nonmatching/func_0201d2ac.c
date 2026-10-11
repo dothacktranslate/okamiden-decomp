@@ -109,7 +109,7 @@ undefined8 func_0201d2ac(int param_1,uint param_2,int param_3)
   uVar8 = CONCAT44(param_2,param_1);
   iVar6 = func_02016974(param_1,param_2);
   bVar7 = iVar6 == 2;
-  if ((iVar6 < 3) || (func_0201e2b8(0,0,param_1,param_2), uVar1 = ((unsigned int)0x0201d4e0), bVar7)) {
+  if ((iVar6 <= 2) || (func_0201e2b8(0,0,param_1,param_2), uVar1 = ((unsigned int)0x0201d4e0), bVar7)) {
     return CONCAT44(param_2,param_1);
   }
   iVar6 = (int)(param_2 & ((unsigned int)0x0201d4e0)) >> 0x14;

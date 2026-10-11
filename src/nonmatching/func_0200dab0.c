@@ -98,8 +98,8 @@ int func_0200dab0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
   undefined4 uStack_14;
   undefined4 uStack_10;
 
-  iStack_20 = *(int *)(param_1 + 8);
   iVar2 = *(int *)(param_1 + 0x34);
+  iStack_20 = *(int *)(param_1 + 8);
   if (*(uint *)(*(int *)(iStack_20 + 0x20) + 8) <= (uint)(iVar2 * 8)) {
     return 0xb;
   }

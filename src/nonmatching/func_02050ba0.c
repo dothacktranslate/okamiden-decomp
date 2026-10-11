@@ -91,7 +91,7 @@ int func_02050ba0(int param_1,int param_2,undefined4 param_3,int param_4)
 
 {
   int iVar1;
-  int iVar2;
+  uint iVar2;
 
   iVar2 = 0;
   while (((uint)(param_2 + iVar2) < *(uint *)(param_1 + 4) &&

@@ -90,7 +90,7 @@ extern int func_0205aec4();
 void func_0205af28(char *param_1,int param_2)
 
 {
-  char cVar1;
+  unsigned char cVar1;
   char *pcVar2;
 
   pcVar2 = param_1;

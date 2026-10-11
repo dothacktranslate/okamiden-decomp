@@ -122,7 +122,7 @@ LAB_0205718c:
       if (0 < (int)param_1[5]) {
         uVar3 = 1;
       }
-      if ((int)param_1[5] < 1) {
+      if ((int)param_1[5] <= 0) {
         uVar3 = 0;
       }
       if (uVar3 == param_1[2]) {

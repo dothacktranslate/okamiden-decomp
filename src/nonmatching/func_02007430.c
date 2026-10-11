@@ -98,6 +98,6 @@ void func_02007430(void)
   }
   *(unsigned char *)(((unsigned int)0x02007460) + 4) = 0x80000001;
   uVar2 = func_02007464();
-  *(uint *)(4 + iVar1) = *(unsigned short *)(4 + iVar1) | uVar2;
+  *(uint *)(iVar1 + 4) = *(unsigned char *)(4 + iVar1) | uVar2;
   return;
 }

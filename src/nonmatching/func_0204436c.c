@@ -27,7 +27,7 @@ void func_0204436c(int param_1,int param_2)
 
   iVar1 = (**(code **)((uint)*(ushort *)(param_2 + 4) * 0x18 + ((unsigned int)0x0204440c) +
                       (uint)*(ushort *)(param_2 + 6) * 4))();
-  iVar2 = *(int *)(((unsigned int)0x02044410) + (uint)*(ushort *)(param_2 + 4) * 4);
+  iVar2 = *(unsigned short *)(((unsigned int)0x02044410) + (uint)*(ushort *)(param_2 + 4) * 4);
   func_02059dbc(*(undefined4 *)(param_2 + 0xc),*(undefined4 *)(param_2 + 0x10));
   func_02059c74(param_1 + 0x14,iVar1 + *(int *)(param_2 + 8) * 0x20,*(undefined4 *)(param_2 + 0xc),
                *(undefined4 *)(param_2 + 0x10),4);

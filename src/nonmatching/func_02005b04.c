@@ -170,8 +170,8 @@ void func_02005b04(int param_1)
   puVar1[9] = (ushort)param_1;
   if (param_1 < 0x81) {
     if (param_1 < 0x80) {
-      if ((((param_1 < 5) && (-1 < param_1)) && (param_1 != 0)) && (param_1 == 4)) {
-        (*(unsigned int *)0x04000242) = 0x84;
+      if ((((param_1 <= 4) && (-1 < param_1)) && (param_1 != 0)) && (param_1 == 4)) {
+        (*(unsigned int *)0x02005b94) = 0x84;
       }
       goto LAB_02005b80;
     }

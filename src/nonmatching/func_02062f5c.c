@@ -116,6 +116,6 @@ void func_02062f5c(void)
       *puVar3 = 0;
       puVar3[1] = 0x10000;
     }
-  } while (iVar2 <= 4);
+  } while (iVar2 < 5);
   return;
 }

@@ -100,7 +100,7 @@ void func_02006250(int param_1)
   *(undefined4 *)(((unsigned int)0x020062c4) + iVar4) = 0;
   uVar1 = 1 << (uVar2 & 0xff);
   if (pcVar3 != (code *)0x0) {
-    (*pcVar3)(*(undefined4 *)(((unsigned int)0x020062cc) + iVar4));
+    (*pcVar3)(*(signed char *)(((unsigned int)0x020062cc) + iVar4));
   }
   iVar4 = *(int *)(((unsigned int)0x020062d4) + iVar4);
   *(uint *)(((unsigned int)0x020062d0) + 0x3ff8) = *(uint *)(((unsigned int)0x020062d0) + 0x3ff8) | uVar1;

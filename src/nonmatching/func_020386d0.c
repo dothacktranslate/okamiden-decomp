@@ -97,8 +97,8 @@ uint func_020386d0(int param_1,undefined4 param_2)
   piVar3 = *(int **)(param_1 + 0x10);
   uVar4 = 0;
   while (piVar3 != (int *)(param_1 + 0x10)) {
-    iVar1 = func_020383dc(piVar3 + -1,param_2);
     uVar2 = 0;
+    iVar1 = func_020383dc(piVar3 + -1,param_2);
     if (iVar1 != 0) {
       uVar2 = (uint)*(ushort *)(piVar3 + 2);
     }

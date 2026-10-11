@@ -116,7 +116,7 @@ void func_020541f4(int param_1,uint param_2,undefined4 param_3,undefined4 param_
   else {
     iVar4 = *(int *)(iVar2 + iVar3 * 4);
   }
-  if ((iVar3 != 0) && (uVar6 < param_2)) {
+  if ((iVar3 != 0) && (param_2 > uVar6)) {
     if (iVar2 == 0) {
       iVar2 = 0;
     }

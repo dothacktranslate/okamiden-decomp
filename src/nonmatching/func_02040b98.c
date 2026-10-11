@@ -150,7 +150,7 @@ void func_02040b98(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       func_02009930(param_1 + 0x58,&local_28,0xc);
       func_0205e0c0(local_28,&local_24,2);
     }
-    local_24 = ((unsigned int)0x02040d4c);
+    local_24 = ((unsigned int)0x0000ffff);
     iVar2 = 0;
     local_28 = ((unsigned int)0x02040d50);
     local_20 = 0;

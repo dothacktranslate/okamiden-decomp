@@ -167,14 +167,14 @@ void func_02005c90(int param_1)
   undefined1 *puVar2;
 
   puVar1 = ((unsigned int)0x02005d04);
-  (*(unsigned short *)0x02005d04) = ~(ushort)param_1 & ((*(unsigned short *)0x02005d04) | ((unsigned int *)0x02005d04)[0xc]);
+  (*(unsigned short *)0x02005d04) = ~(ushort)param_1 & ((*(unsigned int *)0x02005d04) | ((unsigned int *)0x02005d04)[0xc]);
   puVar1[0xc] = (ushort)param_1;
   puVar2 = ((unsigned int)0x04000249);
   if (param_1 == 0) {
-    (*(unsigned int *)0x02005d08) = (*(unsigned int *)0x02005d08) & 0x7fffffff;
+    (*(unsigned int *)0x04001000) = (*(unsigned int *)0x04001000) & 0x7fffffff;
   }
   else if (param_1 == 0x100) {
-    (*(unsigned int *)0x02005d08) = (*(unsigned int *)0x02005d08) | 0x80000000;
+    (*(unsigned int *)0x04001000) = (*(unsigned int *)0x04001000) | 0x80000000;
     *puVar2 = 0x83;
   }
   func_0200522c((*(unsigned int *)0x02005d04));

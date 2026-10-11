@@ -97,8 +97,8 @@ undefined4 func_02007128(int param_1,int param_2)
   int iVar3;
   int iVar4;
 
-  iVar2 = func_02008b6c();
   iVar3 = 0;
+  iVar2 = func_02008b6c();
   for (iVar4 = *(int *)(((unsigned int)0x020071c8) + 0x24); (iVar4 != 0 && (iVar4 != param_1));
       iVar4 = *(int *)(iVar4 + 0x68)) {
     iVar3 = iVar4;

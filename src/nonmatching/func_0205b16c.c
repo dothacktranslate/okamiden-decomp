@@ -89,7 +89,7 @@ void func_0205b16c(int param_1,undefined4 *param_2,undefined4 *param_3)
 {
   if (param_2 != (undefined4 *)0x0) {
     *(ushort *)(param_1 + 0x10) = *(ushort *)(param_1 + 0x10) & 0xfffe;
-    *param_2 = *(undefined4 *)(param_1 + 8);
+    *param_2 = *(unsigned short *)(param_1 + 8);
     *(undefined4 *)(param_1 + 8) = 0;
   }
   if (param_3 == (undefined4 *)0x0) {

@@ -90,7 +90,7 @@ void func_0206314c(undefined4 param_1,int param_2)
 
 {
   undefined4 uVar1;
-  undefined4 *puVar2;
+  short *puVar2;
 
   *(undefined4 *)(((unsigned int)0x02063184) + 8) = param_1;
   func_020632bc();

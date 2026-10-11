@@ -109,7 +109,7 @@ undefined4 func_020501bc(undefined4 param_1,undefined4 param_2,undefined4 param_
   if (iVar3 < 1) {
     iVar3 = 1;
   }
-  if (local_18 < iVar4) {
+  if (iVar4 > local_18) {
     iVar4 = local_18;
   }
   if (iVar4 < iVar3) {

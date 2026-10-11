@@ -41,7 +41,7 @@ void func_0204353c(
         data->field_00
         + data->field_04;
 
-    if (low > high) {
+    if (high < low) {
         temp = low;
         low = high;
         high = temp;

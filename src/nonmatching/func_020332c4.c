@@ -105,7 +105,7 @@ void func_020332c4(undefined4 *param_1,undefined4 *param_2)
   param_1[5] = uVar3;
   param_1[3] = uVar2;
   param_1[9] = *param_2;
-  *(undefined2 *)(param_1 + 10) = *(undefined2 *)((int)param_2 + 0x1e);
+  *(undefined2 *)(param_1 + 10) = *(signed char *)((int)param_2 + 0x1e);
   iVar4 = param_2[8];
   *(ushort *)((int)param_1 + 0x2a) =
        (ushort)(((int)(uint)*(byte *)(iVar4 + 8) >> 3) << 10) |

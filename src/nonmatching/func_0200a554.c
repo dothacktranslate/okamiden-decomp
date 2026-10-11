@@ -90,7 +90,7 @@ void func_0200a554(uint param_1,int param_2,undefined4 param_3,int param_4,uint 
                  int param_7,int param_8,int param_9,int param_10)
 
 {
-  func_0200a6b8(0xe,param_1 | param_9 << 0x10,param_3,param_6 | param_8 << 0x16 | param_7 << 0x18,
+  func_0200a6b8(0xe,param_1 | param_9 << 0x10,param_3,param_8 | param_6 << 0x16 | param_7 << 0x18,
                param_2 | param_5 << 0x18 | param_4 << 0x1a | param_10 << 0x10);
   return;
 }

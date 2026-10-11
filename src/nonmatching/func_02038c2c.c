@@ -96,7 +96,7 @@ func_02038c2c(undefined4 *param_1,undefined4 param_2,undefined4 *param_3,undefin
   uint uVar1;
   undefined4 *puVar2;
 
-  func_020351ac(param_1,param_2,((unsigned int)0x02038c6c),param_3,param_4,param_7,param_4);
+  func_020351ac(param_1,param_2,((unsigned int)0x554e5448),param_3,param_4,param_7,param_4);
   uVar1 = 0;
   *param_1 = ((unsigned int)0x02038c70);
   param_1[0xc] = param_5;

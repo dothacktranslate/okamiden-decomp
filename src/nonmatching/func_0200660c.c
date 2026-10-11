@@ -93,6 +93,6 @@ void func_0200660c(undefined4 param_1,uint param_2)
     func_02008e58();
     return;
   }
-  (*(unsigned int *)0x02006638) = 1;
+  (*(unsigned short *)0x02006638) = 1;
   return;
 }

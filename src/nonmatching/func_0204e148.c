@@ -112,7 +112,7 @@ undefined4 func_0204e148(int param_1)
     iVar4 = piVar3[0x11];
     piVar3[6] = iVar5 + 1;
     func_0204dcd0(param_1,*piVar3 + iVar5 * 4,0xfffffffd);
-    if (piVar3[2] <= piVar3[6]) {
+    if (piVar3[6] >= piVar3[2]) {
       *(undefined1 *)((int)piVar3 + 0x15) = 3;
     }
     piVar3[0x12] = piVar3[0x12] - (iVar4 - piVar3[0x11]);

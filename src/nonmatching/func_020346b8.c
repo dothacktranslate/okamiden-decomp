@@ -95,11 +95,11 @@ void func_020346b8(int param_1,int param_2)
   int iVar6;
 
   iVar6 = *(int *)(param_1 + 0x2c);
-  uVar1 = 0;
+  uVar5 = 0;
   if (param_2 < 0) {
     param_2 = -param_2;
   }
-  uVar5 = 0xffffffff;
+  uVar1 = 0xffffffff;
   if (iVar6 == 0) {
     return;
   }
@@ -109,9 +109,9 @@ void func_020346b8(int param_1,int param_2)
     uVar2 = *(int *)(iVar6 + 4) + iVar4;
     if (uVar3 < uVar2) {
       uVar2 = uVar2 - uVar3;
-      if ((uVar1 < uVar2) || ((uVar2 == uVar1 && (uVar3 - iVar4 < uVar5)))) {
-        uVar1 = uVar2;
-        uVar5 = uVar3 - iVar4;
+      if ((uVar5 < uVar2) || ((uVar2 == uVar5 && (uVar3 - iVar4 < uVar1)))) {
+        uVar5 = uVar2;
+        uVar1 = uVar3 - iVar4;
       }
     }
     iVar6 = *(int *)(iVar6 + 0xc);

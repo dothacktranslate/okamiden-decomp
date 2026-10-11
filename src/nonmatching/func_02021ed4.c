@@ -106,7 +106,7 @@ undefined4 func_02021ed4(undefined4 param_1,int param_2,int param_3,undefined4 p
     *(undefined4 *)(param_3 + 0x14) = 0;
     uVar2 = func_020154bc(param_4,param_3,0x18);
     *(undefined4 *)(param_3 + 0x14) = uVar2;
-    iVar1 = func_02033028((*(unsigned int *)0x02021f3c),param_2 * ((unsigned int)0x02021f40),param_3,0x18,1);
+    iVar1 = func_02033028((*(unsigned int *)0x02021f3c),param_2 * ((unsigned int)0x00001e60),param_3,0x18,1);
     if (iVar1 == 0) {
       iVar1 = func_02021f80(param_1);
       if (iVar1 != 0) {

@@ -88,7 +88,7 @@ void func_02006178(void)
 
 {
   undefined2 *puVar1;
-  undefined4 *puVar2;
+  short *puVar2;
 
   puVar1 = ((unsigned int)0x020061d0);
   (*(unsigned short *)0x020061d0) = 0;
@@ -106,7 +106,7 @@ void func_02006178(void)
   puVar2 = ((unsigned int)0x04000240);
   puVar1[0xc] = 0;
   *puVar2 = 0;
-  *(undefined1 *)(1 + puVar2) = 0;
+  *(undefined1 *)(puVar2 + 1) = 0;
   *(undefined1 *)((int)puVar2 + 5) = 0;
   *(undefined1 *)((int)puVar2 + 6) = 0;
   *(undefined2 *)(puVar2 + 2) = 0;

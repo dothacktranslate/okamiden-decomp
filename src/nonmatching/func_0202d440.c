@@ -101,7 +101,7 @@ int func_0202d440(int param_1,uint param_2,uint param_3)
         return iVar2;
       }
       iVar2 = 1 + iVar2;
-    } while (iVar2 < (int)(uint)*(ushort *)(param_1 + ((unsigned int)0x00000bec)));
+    } while (iVar2 < (int)(uint)*(unsigned char *)(param_1 + ((unsigned int)0x00000bec)));
   }
   return -1;
 }

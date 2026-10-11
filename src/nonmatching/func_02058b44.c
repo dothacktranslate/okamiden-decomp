@@ -88,8 +88,8 @@ uint func_02058b44(uint param_1)
 
 {
   uint uVar1;
-  uint uVar2;
   uint uVar3;
+  uint uVar2;
   uint uVar4;
   uint uVar5;
 
@@ -106,8 +106,8 @@ uint func_02058b44(uint param_1)
       uVar2 = uVar1;
       uVar3 = uVar5;
     } while (param_1 <= uVar1 * uVar1);
-    uVar3 = uVar1;
     uVar2 = uVar4;
+    uVar3 = uVar1;
   } while (uVar1 != uVar5);
   return uVar5;
 }

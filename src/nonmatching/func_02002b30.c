@@ -125,7 +125,7 @@ void func_02002b30(int *param_1,int *param_2,uint *param_3)
   param_3[1] = uVar12 + 0x800 >> 0xc |
                (((int)((ulonglong)lVar3 >> 0x20) -
                 ((int)((ulonglong)lVar4 >> 0x20) + (uint)(uVar14 < uVar11))) +
-               (uint)(0xfffff7ff < uVar12)) * 0x100000;
+               (uint)(0xfffff800 <= uVar12)) * 0x100000;
   param_3[2] = uVar10 + 0x800 >> 0xc |
                (((int)((ulonglong)lVar5 >> 0x20) -
                 ((int)((ulonglong)lVar6 >> 0x20) + (uint)(uVar15 < uVar9))) +

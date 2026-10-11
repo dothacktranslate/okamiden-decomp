@@ -88,6 +88,6 @@ void func_0200f46c(void)
 
 {
   do {
-  } while ((*(unsigned short *)0x0200f49c) == (*(unsigned int *)0x0200f49c));
+  } while ((*(unsigned int *)0x0200f49c) == (*(unsigned char *)0x0200f49c));
   return;
 }

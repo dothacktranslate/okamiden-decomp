@@ -101,7 +101,7 @@ void func_020534e0(undefined4 param_1,int param_2,int param_3)
   undefined4 local_28;
 
   local_28 = param_3;
-  if (param_3 <= param_2) {
+  if (param_2 >= param_3) {
     return;
   }
   do {

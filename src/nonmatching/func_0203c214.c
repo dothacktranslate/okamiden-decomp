@@ -98,7 +98,7 @@ undefined4 func_0203c214(undefined4 param_1,int param_2,undefined4 param_3,undef
   }
   iVar1 = *(int *)(param_2 + 0x24) + -1;
   *(int *)(param_2 + 0x24) = iVar1;
-  if (iVar1 < 1) {
+  if (iVar1 <= 0) {
     uStack_10 = param_4;
     func_0203bbe8(param_2);
     func_0203c0cc(&uStack_10,param_1,param_2);

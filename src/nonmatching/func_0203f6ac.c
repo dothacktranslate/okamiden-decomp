@@ -165,7 +165,7 @@ void func_0203f6ac(int param_1,undefined4 *param_2,int param_3)
   *(undefined4 *)(param_1 + 0x88) = param_2[param_3 * 3 + -2];
   *(undefined4 *)(param_1 + 0x8c) = param_2[param_3 * 3 + -1];
   func_02001c28(param_1 + 0x90);
-  *(undefined1 *)(param_1 + (*(unsigned int *)0x0203f708)) = 0;
+  *(undefined1 *)(param_1 + (*(unsigned int *)0x00000122)) = 0;
   *(uint *)(param_1 + 0xc) = *(uint *)(param_1 + 0xc) | 1;
   return;
 }

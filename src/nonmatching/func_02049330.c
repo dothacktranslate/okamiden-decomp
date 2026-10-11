@@ -99,6 +99,6 @@ undefined4 func_02049330(undefined4 param_1)
     func_02047550(param_1,1,((unsigned int)0x02049384));
   }
   iVar1 = func_020492b4(param_1,iVar1);
-  func_020468f0(param_1,*(undefined4 *)(((unsigned int)0x02049388) + iVar1 * 4));
+  func_020468f0(param_1,*(undefined4 *)(((unsigned int)0x02049388) + iVar1 * 4),iVar1);
   return 1;
 }

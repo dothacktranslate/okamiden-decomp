@@ -96,7 +96,7 @@ uint func_02054894(int param_1,int param_2)
   int iVar4;
 
   iVar3 = *(int *)(param_1 + 0xc);
-  iVar4 = *(int *)(param_2 + 0xc);
+  iVar2 = *(int *)(param_2 + 0xc);
   param_1 = param_1 + 0x10;
   param_2 = param_2 + 0x10;
   while( true ) {
@@ -104,16 +104,16 @@ uint func_02054894(int param_1,int param_2)
     if (uVar1 != 0) {
       return uVar1;
     }
-    iVar2 = func_02018d9c(param_1);
-    if (iVar2 == iVar4) break;
-    if (iVar2 == iVar3) {
+    iVar4 = func_02018d9c(param_1);
+    if (iVar4 == iVar2) break;
+    if (iVar4 == iVar3) {
       return 0xffffffff;
     }
-    iVar2 = iVar2 + 1;
-    param_1 = param_1 + iVar2;
-    iVar3 = iVar3 - iVar2;
-    param_2 = param_2 + iVar2;
-    iVar4 = iVar4 - iVar2;
+    iVar4 = iVar4 + 1;
+    param_1 = param_1 + iVar4;
+    iVar3 = iVar3 - iVar4;
+    param_2 = param_2 + iVar4;
+    iVar2 = iVar2 - iVar4;
   }
-  return (uint)(iVar2 != iVar3);
+  return (uint)(iVar4 != iVar3);
 }

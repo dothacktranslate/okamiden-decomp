@@ -101,7 +101,7 @@ void func_0200fabc(void)
   uVar5 = 0;
   do {
     iVar3 = uVar5 * 0xc;
-    *(undefined4 *)(iVar2 + uVar5 * 4) = *(undefined4 *)(iVar3 + 0x40000b8);
+    *(undefined4 *)(uVar5 + iVar2 * 4) = *(undefined4 *)(iVar3 + 0x40000b8);
     uVar4 = *(uint *)(iVar3 + 0x40000b8) & 0x38000000;
     if (uVar4 == 0x18000000 || uVar4 == 0x20000000) {
 LAB_0200fb18:

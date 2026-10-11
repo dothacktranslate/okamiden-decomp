@@ -102,7 +102,7 @@ void func_0200829c(void)
   (*(unsigned int *)0x02008300) = 1;
   func_02008278(0);
   psVar1[4] = 0;
-  puVar2 = ((unsigned int)0x02008304);
+  puVar2 = ((unsigned int)0x04000102);
   psVar1[5] = 0;
   psVar1[6] = 0;
   psVar1[7] = 0;

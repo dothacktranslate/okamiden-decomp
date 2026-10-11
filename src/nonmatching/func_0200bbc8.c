@@ -125,8 +125,8 @@ int func_0200bbc8(int param_1,int param_2,undefined4 param_3,undefined4 param_4)
     } while (piVar2 != (int *)0x0);
   }
   func_02008b80(piVar1);
-  uVar3 = func_02008b6c();
   uVar4 = *(uint *)(param_1 + 0x14);
+  uVar3 = func_02008b6c();
   if ((((uVar4 & 0x40) == 0) && ((uVar4 & 8) == 0)) && (*(int *)(param_1 + 8) != 0)) {
     if ((param_2 == 0) || ((uVar4 & 0x10) != 0)) {
       bVar7 = false;

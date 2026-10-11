@@ -109,7 +109,7 @@ void func_02040f74(int param_1)
     iVar5 = 0;
     if (0 < iVar3) {
       do {
-        iVar3 = func_02036edc((*(unsigned int *)0x0204102c),*(undefined4 *)(iVar2 + iVar5 * 4));
+        iVar3 = func_02036edc((*(unsigned int *)0x0204102c),*(undefined4 *)(iVar5 + iVar2 * 4));
         if (((iVar3 == 0) || (*(int *)(iVar3 + 0x1c) == 0)) || (*(int *)(iVar3 + 0x10) == 0)) {
           bVar1 = false;
         }

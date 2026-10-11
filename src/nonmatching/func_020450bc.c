@@ -30,6 +30,6 @@ void func_020450bc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   *(undefined4 *)(param_1 + 0x28) = param_2;
   *puVar2 = param_3;
   uVar1 = func_020568cc(param_3,param_4,param_3,param_4,param_4);
-  func_02057d64(uVar1,puVar2 + 1,uVar1,param_2);
+  func_02057d64(uVar1,uVar1,puVar2 + 1,uVar1,param_2);
   return;
 }

@@ -93,7 +93,7 @@ void func_020636a8(undefined4 param_1,undefined4 param_2)
 
   UNRECOVERED_JUMPTABLE = ((unsigned int)0x020636c4);
   puVar1 = ((unsigned int)0x020636c0);
-  (*(unsigned int *)0x020636c0) = param_1;
+  (*(signed char *)0x020636c0) = param_1;
   uVar2 = ((unsigned int)0x020636c8);
   puVar1[1] = param_2;
                     /* WARNING: Could not recover jumptable at 0x020636bc. Too many branches */

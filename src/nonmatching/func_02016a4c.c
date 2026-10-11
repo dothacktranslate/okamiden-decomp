@@ -106,7 +106,7 @@ uint func_02016a4c(int param_1,short *param_2,uint param_3,undefined4 param_4)
     }
     param_2 = param_2 + 1;
     iVar1 = func_02016a30(&uStack_20);
-    if (param_3 < uVar2 + iVar1) break;
+    if (uVar2 > param_3 + iVar1) break;
     func_02018e80(param_1 + uVar2,&uStack_20,iVar1);
     uVar2 = uVar2 + iVar1;
     if (param_3 < uVar2) {

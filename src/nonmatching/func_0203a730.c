@@ -115,8 +115,8 @@ void func_0203a730(undefined4 param_1,undefined4 param_2,undefined4 *param_3,und
   if (bVar5) {
     *(uint *)(((unsigned int)0x0203a7c0) + 0xc) = uVar2;
   }
-  iVar1 = ((unsigned int)0x0203a7c0);
   uVar3 = param_3[2];
+  iVar1 = ((unsigned int)0x0203a7c0);
   uVar4 = param_3[1];
   *(undefined4 *)(((unsigned int)0x0203a7c0) + 0x50) = *param_3;
   *(undefined4 *)(iVar1 + 0x54) = uVar4;

@@ -90,7 +90,7 @@ void func_02009884(int param_1,int param_2,int param_3)
   int iVar1;
 
   for (iVar1 = 0; iVar1 < param_3; iVar1 = iVar1 + 2) {
-    *(undefined2 *)(param_2 + iVar1) = *(undefined2 *)(param_1 + iVar1);
+    *(undefined2 *)(iVar1 + param_2) = *(undefined2 *)(param_1 + iVar1);
   }
   return;
 }

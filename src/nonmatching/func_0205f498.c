@@ -90,7 +90,7 @@ void func_0205f498(undefined4 param_1,int *param_2,undefined4 param_3,undefined4
 
 {
   uint uVar1;
-  uint iVar2 = *param_2;
+  int iVar2 = *param_2;
   uVar1 = (uint)*(ushort *)(param_2[2] + 4);
   if (iVar2 < (int)(uVar1 * 0x1000)) {
     if (iVar2 < 0) {

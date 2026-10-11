@@ -154,7 +154,7 @@ extern int func_02031fac();
 undefined4 * func_02031f44(undefined4 *param_1)
 
 {
-  *param_1 = (*(unsigned int *)0x02031f60);
-  func_02031fac();
+  *param_1 = (*(unsigned char *)0x02031f60);
+  func_02031fac(param_1);
   return param_1;
 }

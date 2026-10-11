@@ -106,6 +106,6 @@ undefined4 * func_02045eb8(byte *param_1,undefined4 param_2)
   *param_1 = ((unsigned int)0x02045ef0);
   uVar1 = func_02048278(param_1);
   param_1[6] = uVar1;
-  func_0204e4dc();
+  func_0204e4dc(param_1);
   return param_1;
 }

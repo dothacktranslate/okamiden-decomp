@@ -90,8 +90,8 @@ uint func_0200afd0(int param_1)
   int iVar1;
   int iVar2;
 
-  iVar1 = ((unsigned int)0x0200b038);
-  if ((((unsigned int)0x0200b038) <= param_1) && (iVar1 = param_1, 0 < param_1)) {
+  iVar1 = ((unsigned int)0xfffffd2d);
+  if ((((unsigned int)0xfffffd2d) <= param_1) && (iVar1 = param_1, 0 < param_1)) {
     iVar1 = 0;
   }
   if (iVar1 < -0xf0) {

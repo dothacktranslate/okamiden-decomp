@@ -113,7 +113,7 @@ void func_0204e080(int param_1)
   *(undefined4 *)(iVar3 + 0x28) = 0;
   func_0204dac4(iVar3);
   iVar1 = func_0204d340(param_1,0);
-  func_0204d2f4(iVar3);
+  func_0204d2f4(iVar1,iVar3);
   iVar2 = func_0204dac4(iVar3);
   func_0204db54(*(undefined4 *)(iVar3 + 0x2c));
   *(byte *)(iVar3 + 0x14) = *(byte *)(iVar3 + 0x14) ^ 3;

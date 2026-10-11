@@ -169,7 +169,7 @@ void func_020056f0(int param_1)
   undefined1 *puVar2;
 
   puVar1 = ((unsigned int)0x02005780);
-  (*(unsigned int *)0x02005780) = ~(ushort)param_1 & ((*(unsigned int *)0x02005780) | ((unsigned int *)0x02005780)[8]);
+  (*(unsigned short *)0x02005780) = ~(ushort)param_1 & ((*(unsigned short *)0x02005780) | ((unsigned int *)0x02005780)[8]);
   puVar1[8] = (ushort)param_1;
   if (param_1 == 0) {
     _REG_A_DISPCNT = _REG_A_DISPCNT & 0x7fffffff;

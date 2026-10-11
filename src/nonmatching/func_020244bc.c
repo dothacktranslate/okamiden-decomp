@@ -97,8 +97,8 @@ void func_020244bc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 
   uVar2 = *(undefined4 *)(*(int *)(param_1 + 0x80) + 0x18);
   func_020469a8(uVar2,((unsigned int)0x020244f0),0,param_4,param_4);
-  uVar1 = ((unsigned int)0x020244f4);
-  func_02046d44(uVar2,((unsigned int)0x020244f4),((unsigned int)0x020244f8));
+  uVar1 = ((unsigned int)0xffffd8ee);
+  func_02046d44(uVar2,((unsigned int)0xffffd8ee),((unsigned int)0x020244f8));
   func_020469a8(uVar2,((unsigned int)0x020244fc),0);
   func_02046d44(uVar2,uVar1,((unsigned int)0x02024500));
   return;

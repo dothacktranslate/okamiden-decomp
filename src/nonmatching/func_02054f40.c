@@ -170,16 +170,16 @@ void func_02054f40(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   uStack_28 = param_4;
   local_7c = param_2;
 LAB_02054f50:
-  uVar12 = ((unsigned int)0x02055f08);
+  uVar12 = ((unsigned int)0xfffe0001);
   iVar20 = *(int *)(param_1 + 0xc);
   iVar1 = **(int **)(*(int *)(param_1 + 0x14) + 4);
   uVar2 = *(uint *)(*(int *)(iVar1 + 0x10) + 8);
-  uVar3 = 0x20000 - ((unsigned int)0x02055f08);
-  uVar4 = 0x20000 - ((unsigned int)0x02055f08);
-  uVar5 = 0x20000 - ((unsigned int)0x02055f08);
-  uVar6 = 0x20000 - ((unsigned int)0x02055f08);
-  uVar7 = 0x20000 - ((unsigned int)0x02055f08);
-  uVar8 = 0x20000 - ((unsigned int)0x02055f08);
+  uVar3 = 0x20000 - ((unsigned int)0xfffe0001);
+  uVar4 = 0x20000 - ((unsigned int)0xfffe0001);
+  uVar5 = 0x20000 - ((unsigned int)0xfffe0001);
+  uVar6 = 0x20000 - ((unsigned int)0xfffe0001);
+  uVar7 = 0x20000 - ((unsigned int)0xfffe0001);
+  uVar8 = 0x20000 - ((unsigned int)0xfffe0001);
   puVar14 = *(uint **)(param_1 + 0x18);
 switchD_02055078_default:
   puVar13 = puVar14;
@@ -195,7 +195,7 @@ switchD_02055078_default:
     }
     iVar20 = *(int *)(param_1 + 0xc);
   }
-  uVar29 = ((unsigned int)0x02055f08);
+  uVar29 = ((unsigned int)0xfffe0001);
   uVar27 = uVar23 >> 6 & 0xff;
   uVar10 = uVar23 & 0x3f;
   puVar21 = (uint *)(iVar20 + uVar27 * 8);
@@ -211,9 +211,9 @@ switchD_02055078_default:
     uVar23 = *(uint *)(uVar2 + ((uVar23 & 0xffffc000) >> 0xb) + 4);
     goto LAB_020551c0;
   case 2:
-    *puVar21 = (uVar23 & ((unsigned int)0x02055f08)) >> 0x17;
+    *puVar21 = (uVar23 & ((unsigned int)0xfffe0001)) >> 0x17;
     puVar21[1] = 1;
-    if ((uVar23 >> 0xe & ((unsigned int)0x02055f08) >> 0x17) != 0) {
+    if ((uVar23 >> 0xe & ((unsigned int)0xfffe0001) >> 0x17) != 0) {
       puVar14 = puVar13 + 2;
     }
     goto switchD_02055078_default;
@@ -263,8 +263,8 @@ LAB_02055314:
     func_02054538(param_1,puVar21);
     break;
   case 10:
-    uVar15 = func_0204f4a4((uVar23 & ((unsigned int)0x02055f08)) >> 0x17);
-    func_0204f4a4(uVar23 >> 0xe & ((unsigned int)0x02055f08) >> 0x17);
+    uVar15 = func_0204f4a4((uVar23 & ((unsigned int)0xfffe0001)) >> 0x17);
+    func_0204f4a4(uVar23 >> 0xe & ((unsigned int)0xfffe0001) >> 0x17);
     uVar23 = func_02052828(param_1,uVar15);
     *puVar21 = uVar23;
     puVar21[1] = 5;
@@ -282,14 +282,14 @@ LAB_020553c8:
     func_02054408(param_1,puVar17);
     break;
   case 0xc:
-    uVar29 = (uVar23 & ((unsigned int)0x02055f08)) >> 0x17;
+    uVar29 = (uVar23 & ((unsigned int)0xfffe0001)) >> 0x17;
     if ((uVar29 & 0x100) == 0) {
       puVar17 = (undefined4 *)(iVar20 + uVar29 * 8);
     }
     else {
       puVar17 = (undefined4 *)(uVar2 + (uVar29 & 0xfffffeff) * 8);
     }
-    uVar23 = uVar23 >> 0xe & ((unsigned int)0x02055f08) >> 0x17;
+    uVar23 = uVar23 >> 0xe & ((unsigned int)0xfffe0001) >> 0x17;
     if ((uVar23 & 0x100) == 0) {
       puVar19 = (undefined4 *)(iVar20 + uVar23 * 8);
     }
@@ -308,14 +308,14 @@ LAB_020553c8:
     uVar23 = func_0201f370(*puVar17,*puVar19);
     goto LAB_02055700;
   case 0xd:
-    uVar29 = (uVar23 & ((unsigned int)0x02055f08)) >> 0x17;
+    uVar29 = (uVar23 & ((unsigned int)0xfffe0001)) >> 0x17;
     if ((uVar29 & 0x100) == 0) {
       puVar17 = (undefined4 *)(iVar20 + uVar29 * 8);
     }
     else {
       puVar17 = (undefined4 *)(uVar2 + (uVar29 & 0xfffffeff) * 8);
     }
-    uVar23 = uVar23 >> 0xe & ((unsigned int)0x02055f08) >> 0x17;
+    uVar23 = uVar23 >> 0xe & ((unsigned int)0xfffe0001) >> 0x17;
     if ((uVar23 & 0x100) == 0) {
       puVar19 = (undefined4 *)(iVar20 + uVar23 * 8);
     }
@@ -337,14 +337,14 @@ LAB_02055668:
     uVar23 = func_0201f5a0(uVar11,uVar15);
     goto LAB_02055700;
   case 0xe:
-    uVar29 = (uVar23 & ((unsigned int)0x02055f08)) >> 0x17;
+    uVar29 = (uVar23 & ((unsigned int)0xfffe0001)) >> 0x17;
     if ((uVar29 & 0x100) == 0) {
       puVar17 = (undefined4 *)(iVar20 + uVar29 * 8);
     }
     else {
       puVar17 = (undefined4 *)(uVar2 + (uVar29 & 0xfffffeff) * 8);
     }
-    uVar23 = uVar23 >> 0xe & ((unsigned int)0x02055f08) >> 0x17;
+    uVar23 = uVar23 >> 0xe & ((unsigned int)0xfffe0001) >> 0x17;
     if ((uVar23 & 0x100) == 0) {
       puVar19 = (undefined4 *)(iVar20 + uVar23 * 8);
     }
@@ -363,14 +363,14 @@ LAB_02055668:
     uVar23 = func_0201f190(*puVar17,*puVar19);
     goto LAB_02055700;
   case 0xf:
-    uVar29 = (uVar23 & ((unsigned int)0x02055f08)) >> 0x17;
+    uVar29 = (uVar23 & ((unsigned int)0xfffe0001)) >> 0x17;
     if ((uVar29 & 0x100) == 0) {
       puVar17 = (undefined4 *)(iVar20 + uVar29 * 8);
     }
     else {
       puVar17 = (undefined4 *)(uVar2 + (uVar29 & 0xfffffeff) * 8);
     }
-    uVar23 = uVar23 >> 0xe & ((unsigned int)0x02055f08) >> 0x17;
+    uVar23 = uVar23 >> 0xe & ((unsigned int)0xfffe0001) >> 0x17;
     if ((uVar23 & 0x100) == 0) {
       puVar19 = (undefined4 *)(iVar20 + uVar23 * 8);
     }
@@ -389,14 +389,14 @@ LAB_02055668:
     uVar23 = func_0201f824(*puVar17,*puVar19);
     goto LAB_02055700;
   case 0x10:
-    uVar29 = (uVar23 & ((unsigned int)0x02055f08)) >> 0x17;
+    uVar29 = (uVar23 & ((unsigned int)0xfffe0001)) >> 0x17;
     if ((uVar29 & 0x100) == 0) {
       puVar17 = (undefined4 *)(iVar20 + uVar29 * 8);
     }
     else {
       puVar17 = (undefined4 *)(uVar2 + (uVar29 & 0xfffffeff) * 8);
     }
-    uVar23 = uVar23 >> 0xe & ((unsigned int)0x02055f08) >> 0x17;
+    uVar23 = uVar23 >> 0xe & ((unsigned int)0xfffe0001) >> 0x17;
     if ((uVar23 & 0x100) == 0) {
       puVar19 = (undefined4 *)(iVar20 + uVar23 * 8);
     }
@@ -472,8 +472,8 @@ LAB_020551c0:
     puVar21[1] = uVar23;
     goto switchD_02055078_default;
   case 0x15:
-    uVar10 = (uVar23 & ((unsigned int)0x02055f08)) >> 0x17;
-    uVar29 = ((unsigned int)0x02055f08) >> 0x17;
+    uVar10 = (uVar23 & ((unsigned int)0xfffe0001)) >> 0x17;
+    uVar29 = ((unsigned int)0xfffe0001) >> 0x17;
     *(uint **)(param_1 + 0x18) = puVar14;
     func_02054bd0(param_1,((uVar23 >> 0xe & uVar29) - uVar10) + 1);
     if (*(uint *)(*(int *)(param_1 + 0x10) + 0x40) <= *(uint *)(*(int *)(param_1 + 0x10) + 0x44)) {
@@ -487,7 +487,7 @@ LAB_020551c0:
     goto LAB_02055cdc;
   case 0x17:
     uVar10 = uVar23 >> 0x17;
-    uVar28 = (uVar23 & ((unsigned int)0x02055f08)) >> 0x17;
+    uVar28 = (uVar23 & ((unsigned int)0xfffe0001)) >> 0x17;
     bVar31 = (uVar28 & 0x100) != 0;
     if (bVar31) {
       uVar10 = uVar28 & 0xfffffeff;
@@ -521,12 +521,12 @@ LAB_020551c0:
       uVar23 = 0;
     }
     if (uVar27 == uVar23) {
-      puVar14 = puVar14 + (uVar7 & *puVar14 >> 0xe) + ((unsigned int)0x02055f08);
+      puVar14 = puVar14 + (uVar7 & *puVar14 >> 0xe) + ((unsigned int)0xfffe0001);
     }
     goto LAB_02055920;
   case 0x18:
     *(uint **)(param_1 + 0x18) = puVar14;
-    uVar23 = (uVar23 & ((unsigned int)0x02055f08)) >> 0x17;
+    uVar23 = (uVar23 & ((unsigned int)0xfffe0001)) >> 0x17;
     if ((uVar23 & 0x100) == 0) {
       iVar20 = iVar20 + uVar23 * 8;
     }
@@ -535,12 +535,12 @@ LAB_020551c0:
     }
     uVar23 = func_02054904(param_1,iVar20);
     if (uVar27 == uVar23) {
-      puVar14 = puVar14 + (uVar6 & *puVar14 >> 0xe) + ((unsigned int)0x02055f08);
+      puVar14 = puVar14 + (uVar6 & *puVar14 >> 0xe) + ((unsigned int)0xfffe0001);
     }
     goto LAB_02055920;
   case 0x19:
     *(uint **)(param_1 + 0x18) = puVar14;
-    uVar23 = (uVar23 & ((unsigned int)0x02055f08)) >> 0x17;
+    uVar23 = (uVar23 & ((unsigned int)0xfffe0001)) >> 0x17;
     if ((uVar23 & 0x100) == 0) {
       iVar20 = iVar20 + uVar23 * 8;
     }
@@ -549,7 +549,7 @@ LAB_020551c0:
     }
     uVar23 = func_0205499c(param_1,iVar20);
     if (uVar27 == uVar23) {
-      puVar14 = puVar14 + (uVar5 & *puVar14 >> 0xe) + ((unsigned int)0x02055f08);
+      puVar14 = puVar14 + (uVar5 & *puVar14 >> 0xe) + ((unsigned int)0xfffe0001);
     }
 LAB_02055920:
     iVar20 = *(int *)(param_1 + 0xc);
@@ -566,8 +566,8 @@ LAB_02055920:
         uVar10 = 0;
       }
     }
-    if ((uVar23 >> 0xe & ((unsigned int)0x02055f08) >> 0x17) != uVar10) {
-      puVar14 = puVar14 + (uVar4 & *puVar14 >> 0xe) + ((unsigned int)0x02055f08);
+    if ((uVar23 >> 0xe & ((unsigned int)0xfffe0001) >> 0x17) != uVar10) {
+      puVar14 = puVar14 + (uVar4 & *puVar14 >> 0xe) + ((unsigned int)0xfffe0001);
     }
     goto LAB_02055924;
   case 0x1b:
@@ -583,15 +583,15 @@ LAB_02055920:
         uVar10 = 0;
       }
     }
-    if ((uVar23 >> 0xe & ((unsigned int)0x02055f08) >> 0x17) != uVar10) {
+    if ((uVar23 >> 0xe & ((unsigned int)0xfffe0001) >> 0x17) != uVar10) {
       *puVar21 = *puVar13;
       puVar21[1] = puVar13[1];
-      puVar14 = puVar14 + (uVar3 & *puVar14 >> 0xe) + ((unsigned int)0x02055f08);
+      puVar14 = puVar14 + (uVar3 & *puVar14 >> 0xe) + ((unsigned int)0xfffe0001);
     }
     goto LAB_02055924;
   case 0x1c:
-    uVar10 = (uVar23 & ((unsigned int)0x02055f08)) >> 0x17;
-    uVar29 = ((unsigned int)0x02055f08) >> 0x17;
+    uVar10 = (uVar23 & ((unsigned int)0xfffe0001)) >> 0x17;
+    uVar29 = ((unsigned int)0xfffe0001) >> 0x17;
     if (uVar10 != 0) {
       *(uint **)(param_1 + 8) = puVar21 + uVar10 * 2;
     }
@@ -609,7 +609,7 @@ LAB_02055920:
     }
     break;
   case 0x1d:
-    uVar23 = (uVar23 & ((unsigned int)0x02055f08)) >> 0x17;
+    uVar23 = (uVar23 & ((unsigned int)0xfffe0001)) >> 0x17;
     if (uVar23 != 0) {
       *(uint **)(param_1 + 8) = puVar21 + uVar23 * 2;
     }
@@ -663,7 +663,7 @@ LAB_02055920:
     func_0201e488(uVar29,uVar10);
     if (!(bool)uVar32 || (bool)uVar30) {
       *puVar21 = uVar27;
-      iVar9 = (uVar8 & uVar23 >> 0xe) + ((unsigned int)0x02055f08);
+      iVar9 = (uVar8 & uVar23 >> 0xe) + ((unsigned int)0xfffe0001);
       puVar21[1] = 3;
       puVar21[6] = uVar27;
       puVar21[7] = 3;
@@ -686,10 +686,10 @@ LAB_02055920:
     *puVar21 = uVar29;
     puVar21[1] = 3;
 LAB_02055cdc:
-    puVar14 = puVar14 + (0x20000 - uVar12 & uVar23 >> 0xe) + ((unsigned int)0x02055f08);
+    puVar14 = puVar14 + (0x20000 - uVar12 & uVar23 >> 0xe) + ((unsigned int)0xfffe0001);
     goto switchD_02055078_default;
   case 0x21:
-    uVar29 = ((unsigned int)0x02055f08) >> 0x17;
+    uVar29 = ((unsigned int)0xfffe0001) >> 0x17;
     puVar21[10] = puVar21[4];
     puVar21[0xb] = puVar21[5];
     puVar21[8] = puVar21[2];
@@ -705,7 +705,7 @@ LAB_02055cdc:
     if (*(int *)(iVar9 + 0x1c) != 0) {
       *(undefined4 *)(iVar9 + 0x10) = *(undefined4 *)(iVar9 + 0x18);
       *(undefined4 *)(iVar9 + 0x14) = *(undefined4 *)(iVar9 + 0x1c);
-      puVar14 = puVar14 + (*puVar14 >> 0xe) + ((unsigned int)0x02055f08);
+      puVar14 = puVar14 + (*puVar14 >> 0xe) + ((unsigned int)0xfffe0001);
     }
 LAB_02055924:
     puVar14 = puVar14 + 1;

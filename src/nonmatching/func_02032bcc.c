@@ -91,7 +91,7 @@ int func_02032bcc(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
 {
   int iVar1;
 
-  iVar1 = (**(code **)(**(int **)((*(unsigned int *)0x02032c1c) + 0x10) + 8))
+  iVar1 = (**(code **)(**(int **)((*(unsigned short *)0x02032c1c) + 0x10) + 8))
                     (*(int **)((*(unsigned int *)0x02032c1c) + 0x10),param_1,param_2,param_3,param_4);
   if (iVar1 != 0) {
     func_020098a0(0,iVar1,param_1);

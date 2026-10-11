@@ -102,7 +102,7 @@ void func_02042410(int param_1)
   *(undefined1 *)(param_1 + 0xf0) = 0;
   *(uint *)(param_1 + 0x124) = (int)uVar2 >> 1 & uVar1;
   func_0204195c();
-  uVar2 = *(uint *)(param_1 + 0x124) & ((unsigned int)0x02042468);
+  uVar2 = *(uint *)(param_1 + 0x124) & ((unsigned int)0xffff7fff);
   *(uint *)(param_1 + 0x124) = uVar2;
   *(uint *)(param_1 + 0x124) = ((unsigned int)0xfff7ffff) & uVar2;
   return;

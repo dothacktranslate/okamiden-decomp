@@ -103,7 +103,7 @@ int func_020523e4(int param_1,int param_2)
     iVar1 = *(int *)(param_1 + 0x1c);
     iVar4 = 0;
     iVar5 = iVar7;
-    if ((iVar1 < iVar7) && (iVar5 = iVar1, iVar1 < iVar3)) {
+    if ((iVar7 > iVar1) && (iVar5 = iVar1, iVar1 < iVar3)) {
       return iVar2;
     }
     if (iVar3 <= iVar5) {

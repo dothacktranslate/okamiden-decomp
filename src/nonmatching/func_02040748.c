@@ -109,7 +109,7 @@ undefined4 func_02040748(int param_1,undefined4 param_2,undefined4 param_3,undef
     }
   }
   if (*(int *)(param_1 + 0x30) != 0) {
-    func_020426cc(param_1 + 0x30,param_1 + ((unsigned int)0x020407c8));
+    func_020426cc(param_1 + 0x30,param_1 + ((unsigned int)0x00000106));
     func_02042650(param_1 + 0x58,*(undefined4 *)(param_1 + 0x34),*(undefined4 *)(param_1 + 0x38),
                  *(undefined4 *)(param_1 + 0x3c));
     if ((*(ushort *)(*(int *)(param_1 + 0x34) + 0x32) & 1) != 0) {

@@ -97,11 +97,11 @@ void func_0202ca98(undefined4 param_1,int param_2)
 
   func_0202f9e4(param_2);
   puVar1 = ((unsigned int)0x0202cad4);
-  *(uint *)(*(int *)(param_2 + 0x48) + 0xc) = *(uint *)(*(int *)(param_2 + 0x48) + 0xc) & 0xfffffffe
+  *(uint *)(*(int *)(param_2 + 0x48) + 0xc) = *(uint *)(*(int *)(0x48 + param_2) + 0xc) & 0xfffffffe
   ;
   iVar2 = 0;
   do {
-    if (*(int *)(*(int *)(param_2 + 0x114) * 4 + param_2 + iVar2 * 8 + 0x4c) != 0) {
+    if (*(int *)(*(int *)(param_2 + 0x114) * 4 + (param_2 + iVar2) * 8 + 0x4c) != 0) {
       func_02036eb8(*puVar1);
     }
     iVar2 = iVar2 + 1;

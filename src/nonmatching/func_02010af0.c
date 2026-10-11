@@ -96,8 +96,8 @@ undefined4 func_02010af0(undefined4 *param_1,undefined4 *param_2)
   uVar3 = param_1[1];
   if (uVar3 <= (uint)param_2[2]) {
     param_2[1] = uVar3;
-    puVar5 = (undefined2 *)*param_1;
     iVar2 = 0;
+    puVar5 = (undefined2 *)*param_1;
     puVar4 = (undefined2 *)*param_2;
     if (0 < (int)uVar3) {
       do {

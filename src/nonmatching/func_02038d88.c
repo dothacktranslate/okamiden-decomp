@@ -167,7 +167,7 @@ void func_02038d88(int param_1,undefined4 param_2,int param_3)
   int *piVar4;
 
   puVar1 = ((unsigned int)0x02038e28);
-  (*(unsigned int *)0x02038e28) = 0;
+  (*(unsigned short *)0x02038e28) = 0;
   *(int *)(puVar1 + 8) = param_3;
   puVar1[0xc] = 8;
   puVar1[0xd] = 0;

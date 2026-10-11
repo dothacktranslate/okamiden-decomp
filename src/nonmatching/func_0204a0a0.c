@@ -101,8 +101,8 @@ void func_0204a0a0(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
 
   uVar1 = ((unsigned int)0x0204a120);
   func_02046a74(param_1,((unsigned int)0x0204a120),param_3,param_4,param_4);
-  iVar2 = ((unsigned int)0x0204a124);
-  func_02046b4c(param_1,((unsigned int)0x0204a124));
+  iVar2 = ((unsigned int)0xffffd8f0);
+  func_02046b4c(param_1,((unsigned int)0xffffd8f0));
   iVar3 = func_02046444(param_1,iVar2 >> 0xe);
   if (iVar3 == 5) {
     return;

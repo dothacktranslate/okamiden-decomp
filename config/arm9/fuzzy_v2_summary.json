@@ -1,8 +1,40 @@
 {
   "arm9_total_code_bytes": 431680,
   "cumulative_selected_v2_gain_over_pre_a9": {
-    "equivalent_bytes": 2838.0928316810277,
-    "percentage_points": 0.6574529354338927
+    "equivalent_bytes": 4268.834025626613,
+    "percentage_points": 0.9888885344761427
+  },
+  "full_corpus_v2": {
+    "coverage_percent": 100.0,
+    "exact_bytes": 15940,
+    "exact_functions": 535,
+    "fuzzy_equivalent_bytes": 192204.4030838492,
+    "fuzzy_functions_scored": 2541,
+    "fuzzy_functions_unscored": 0,
+    "fuzzy_source_targets": 2541,
+    "overall_equivalent_bytes": 208144.4030838492,
+    "overall_v2_percent": 48.21729130000213
+  },
+  "latest_full_corpus_pass": {
+    "candidate_errors_skipped": 0,
+    "candidate_objects_scored": 94739,
+    "engine_batch_failures": 0,
+    "exact_bytes": 15940,
+    "exact_functions": 535,
+    "functions_improved": 442,
+    "fuzzy_equivalent_bytes": 192204.4030838492,
+    "fuzzy_source_targets": 2541,
+    "fuzzy_v2_scored": 2541,
+    "fuzzy_v2_unscored": 0,
+    "improvement_events": 442,
+    "overall_v2_equivalent_bytes": 208144.4030838492,
+    "overall_v2_percent": 48.21729130000213,
+    "pass_equivalent_byte_gain": 1430.741193945585,
+    "pass_percentage_point_gain": 0.33143559904225006,
+    "profile_only_improvements": 0,
+    "provisional_exact_candidates": 0,
+    "source_files_improved": 442,
+    "v2_coverage_percent": 100.0
   },
   "latest_high_return_pass": {
     "candidate_errors": 0,

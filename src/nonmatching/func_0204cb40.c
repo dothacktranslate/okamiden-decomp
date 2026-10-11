@@ -124,7 +124,7 @@ void func_0204cb40(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   }
   func_0204c980(iVar4,param_2);
   iVar2 = 0;
-  if (iVar4 < 1) {
+  if (iVar4 <= 0) {
     return;
   }
   do {

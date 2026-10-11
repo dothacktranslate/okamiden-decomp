@@ -95,7 +95,7 @@ int func_0200c89c(int param_1)
 
   iVar1 = func_02015c38();
   iVar2 = func_0200c7d4(param_1,iVar1);
-  if ((-1 < iVar2) && (*(char *)(param_1 + iVar2) == '/' || *(char *)(param_1 + iVar2) == '\\')) {
+  if ((-2 <= iVar2) && (*(char *)(param_1 + iVar2) == '/' || *(char *)(param_1 + iVar2) == '\\')) {
     *(undefined1 *)(param_1 + iVar2) = 0;
     iVar1 = iVar2;
   }

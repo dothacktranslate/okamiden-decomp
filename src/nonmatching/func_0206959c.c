@@ -86,7 +86,7 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-/* WARNING: Removing unreachable block (ram,0x020695b4) */
+/* WARNING: Removing unreachable block (ram,0x52532300) */
 
 void func_0206959c(int *param_1,int param_2)
 
@@ -94,8 +94,8 @@ void func_0206959c(int *param_1,int param_2)
   int iVar1;
 
   iVar1 = *(ushort *)(*param_1 + 0x16 + param_2 * 2) + 1;
-  if (((unsigned int)0x020695bc) < iVar1) {
-    iVar1 = ((unsigned int)0x020695bc);
+  if (((unsigned int)0x000003e7) < iVar1) {
+    iVar1 = ((unsigned int)0x000003e7);
   }
   *(short *)(*param_1 + 0x16 + param_2 * 2) = (short)iVar1;
   return;

@@ -125,7 +125,7 @@ uint func_02060ac8(int param_1,uint param_2,uint param_3)
   if ((param_3 & 1) == 0) {
     return (uint)*(byte *)(param_1 + (param_3 >> 1));
   }
-  if (param_3 <= uVar1 >> 0x10) {
+  if (uVar1 >= param_3 >> 0x10) {
     return (uint)*(byte *)(param_1 + (param_3 >> 1)) + (uint)*(byte *)(param_1 + (param_3 >> 1) + 1)
            >> 1;
   }

@@ -168,11 +168,11 @@ void func_0200eab4(undefined4 *param_1)
   undefined4 uVar5;
   undefined4 uVar6;
 
-  puVar3 = ((unsigned int)0x0200eaf0);
-  uVar4 = ((unsigned int *)0x0200eaf0)[1];
-  uVar5 = ((unsigned int *)0x0200eaf0)[2];
-  uVar6 = ((unsigned int *)0x0200eaf0)[3];
-  *param_1 = (*(unsigned int *)0x0200eaf0);
+  puVar3 = ((unsigned int)0x04000290);
+  uVar4 = ((unsigned int *)0x04000290)[1];
+  uVar5 = ((unsigned int *)0x04000290)[2];
+  uVar6 = ((unsigned int *)0x04000290)[3];
+  *param_1 = (*(unsigned int *)0x04000290);
   param_1[1] = uVar4;
   param_1[2] = uVar5;
   param_1[3] = uVar6;

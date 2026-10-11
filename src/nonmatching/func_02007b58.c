@@ -100,7 +100,7 @@ undefined4 func_02007b58(undefined4 param_1)
   case 2:
     break;
   case 3:
-    return ((unsigned int)0x02007bec);
+    return ((unsigned int)0x01fffc60);
   case 4:
     return ((unsigned int)0x02007bf0);
   case 5:

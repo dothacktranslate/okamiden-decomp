@@ -155,6 +155,6 @@ void func_02040684(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 
 {
   func_02018ba4(param_1 + 0xe6,(*(unsigned int *)0x020406a4),param_2,param_2,param_4);
-  func_02018ba4(param_1 + (*(unsigned int *)0x020406a8),(*(unsigned int *)0x020406ac),param_3);
+  func_02018ba4(param_1 + (*(unsigned int *)0x00000106),(*(unsigned int *)0x020406ac),param_3);
   return;
 }

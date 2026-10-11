@@ -102,6 +102,6 @@ void func_0200a9b4(undefined4 *param_1)
   }
   *(undefined4 **)(iVar1 + 0xc) = param_1;
   *param_1 = 0;
-  func_02008b80();
+  func_02008b80(param_1);
   return;
 }

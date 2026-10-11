@@ -103,7 +103,7 @@ undefined4 func_020492b4(int param_1,int param_2,undefined4 param_3,undefined4 p
   iVar1 = func_0204719c(param_2);
   if (iVar1 == 0) {
     iVar1 = func_0204a77c(param_2,0,auStack_70);
-    if (iVar1 < 1) {
+    if (iVar1 <= 0) {
       iVar1 = func_020461e8(param_2);
       if (iVar1 == 0) {
         uVar2 = 3;

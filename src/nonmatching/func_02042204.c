@@ -97,7 +97,7 @@ bool func_02042204(int param_1)
       (**(code **)(param_1 + 0x3fc))(param_1);
       *(undefined4 *)(param_1 + 0x3fc) = 0;
     }
-    *(uint *)(param_1 + 0x124) = ((unsigned int)0x02042244) & *(uint *)(param_1 + 0x124);
+    *(uint *)(param_1 + 0x124) = ((unsigned int)0xffffbfff) & *(uint *)(param_1 + 0x124);
   }
   return bVar1;
 }

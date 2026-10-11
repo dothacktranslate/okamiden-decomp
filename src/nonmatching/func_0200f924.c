@@ -95,7 +95,7 @@ int func_0200f924(undefined4 param_1,undefined4 param_2,undefined4 param_3,int p
 
   aiStack_8[0] = param_4;
   iVar1 = func_0200f89c(param_1,param_2,((unsigned int)0x0200f948),aiStack_8);
-  if (!(iVar1 < 1)) {
+  if (!(iVar1 <= 0)) {
     return iVar1;
   }
   func_0200f3ac();

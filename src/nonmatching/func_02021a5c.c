@@ -88,8 +88,8 @@ undefined4 func_02021a5c(int param_1)
 
 {
   int iVar1;
-  uint uVar2;
   int iVar3;
+  uint uVar2;
   undefined4 *puVar4;
 
   iVar3 = *(int *)(param_1 + 0x60);

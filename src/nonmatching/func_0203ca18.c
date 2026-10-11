@@ -101,8 +101,8 @@ uint func_0203ca18(int *param_1,int *param_2,int param_3)
   local_1c = 0;
   if (0 < param_3) {
     do {
-      uVar1 = func_0205e2b0(*param_2,*(short *)(((unsigned int)0x0203ca7c) + 4),*(undefined1 *)*param_1);
-      uVar1 = 0xffff & uVar1;
+      uVar1 = func_0205e2b0(*param_2,*(undefined4 *)(((unsigned int)0x0203ca7c) + 4),*(undefined1 *)*param_1);
+      uVar1 = uVar1 & 0xffff;
       local_18 = *param_2;
       if (uVar1 != 0) {
         *param_2 = local_18 + uVar1;

@@ -104,7 +104,7 @@ uint func_02063f5c(int param_1,int param_2)
   else {
     uVar4 = param_1 + 7U & 0xfffffff8;
   }
-  if (((unsigned int)0x02064024) <= uVar4) {
+  if (((unsigned int)0x0007fff8) <= uVar4) {
     return 0;
   }
   if (param_2 == 0) {

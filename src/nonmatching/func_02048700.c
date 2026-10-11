@@ -100,7 +100,7 @@ undefined4 func_02048700(undefined4 param_1,undefined4 param_2,undefined4 param_
     func_02046c8c(param_1,0xffffffff);
   }
   else {
-    func_02046414(param_1,((unsigned int)0x02048750));
+    func_02046414(param_1,((unsigned int)0xffffd8ee));
   }
   return 1;
 }

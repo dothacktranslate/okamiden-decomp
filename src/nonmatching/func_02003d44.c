@@ -166,8 +166,8 @@ int func_02003d44(void)
   uint uVar1;
   int iVar2;
 
-  iVar2 = ((_REG_A_DISPCNT & 0x38000000) >> 0x1b) * 0x10000;
   uVar1 = ((*(volatile unsigned short *)0x0400000e) & 0x1f00) >> 8;
+  iVar2 = ((_REG_A_DISPCNT & 0x38000000) >> 0x1b) * 0x10000;
   switch(_REG_A_DISPCNT & 7) {
   case 0:
     break;
@@ -182,7 +182,7 @@ int func_02003d44(void)
   case 5:
 LAB_02003da0:
     if (((*(volatile unsigned short *)0x0400000e) & 0x80) == 0) {
-      iVar2 = (iVar2 + 0x6000000) + uVar1 * 0x800;
+      iVar2 = iVar2 + 0x6000000 + uVar1 * 0x800;
     }
     else {
       iVar2 = uVar1 * 0x4000 + 0x6000000;

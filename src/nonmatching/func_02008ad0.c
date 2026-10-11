@@ -91,7 +91,7 @@ undefined4 func_02008ad0(int param_1,int param_2,int param_3)
 
   param_3 = param_3 - *(short *)(param_1 + 0x10);
   if ((-1 < param_2 - *(int *)(param_1 + 0xc)) &&
-     ((param_2 != *(int *)(param_1 + 0xc) || (-1 < param_3)))) {
+     ((param_2 != *(unsigned char *)(param_1 + 0xc) || (-1 < param_3)))) {
     if (param_3 < 0) {
       param_3 = param_3 + 0x107;
     }

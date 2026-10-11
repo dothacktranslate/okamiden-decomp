@@ -101,7 +101,7 @@ undefined4 func_0206394c(uint *param_1,uint *param_2,uint *param_3,uint param_4,
     puVar2 = (uint *)*param_1;
     do {
       puVar5 = puVar2;
-      if (param_5 < 2) {
+      if (param_5 <= 1) {
         in_lr = *puVar5;
         unaff_r5 = 0;
         unaff_r4 = param_4;

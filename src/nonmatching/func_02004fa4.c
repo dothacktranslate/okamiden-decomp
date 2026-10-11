@@ -96,7 +96,7 @@ void func_02004fa4(void)
   iVar3 = func_02005dcc();
   iVar2 = ((unsigned int)0x02004fd0);
   uVar1 = *(ushort *)(((unsigned int)0x02004fd4) + (iVar3 >> 4) * 2);
-  *(unsigned short *)(((unsigned int)0x02004fd0) + 0xc) = iVar3;
+  *(unsigned char *)(((unsigned int)0x02004fd0) + 0xc) = iVar3;
   *(uint *)(8 + iVar2) = (uint)uVar1 << 0xc;
   return;
 }

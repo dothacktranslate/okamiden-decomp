@@ -94,7 +94,7 @@ undefined4 func_02047b4c(undefined4 param_1,int param_2,undefined4 param_3)
 {
   int iVar1;
 
-  if ((param_2 <= 0) && (((unsigned int)0x02047bc0) < param_2)) {
+  if ((param_2 <= 0) && (((unsigned int)0xffffd8f0) < param_2)) {
     iVar1 = func_020461e8(param_1);
     param_2 = (param_2 + iVar1) + 1;
   }

@@ -111,7 +111,7 @@ void func_0203a2cc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   uStack_14 = param_4;
   func_02001f48(param_1 + 0x38,(int)*(short *)(((unsigned int)0x0203a364) + 0x14),
                (int)*(short *)(((unsigned int)0x0203a364) + 0x16));
-  func_02001ddc(param_1 + 0x38,param_1 + 0x38,((unsigned int)0x0203a368),0x1000,0x1000);
+  func_02001ddc(param_1 + 0x38,param_1 + 0x38,((unsigned int)0x00000999),0x1000,0x1000);
   func_02001f48(auStack_54,(int)*(short *)(((unsigned int)0x0203a36c) + 0x28),(int)*(short *)(((unsigned int)0x0203a36c) + 0x2a))
   ;
   func_02001f6c(auStack_54,param_1 + 0x38,param_1 + 0x38);

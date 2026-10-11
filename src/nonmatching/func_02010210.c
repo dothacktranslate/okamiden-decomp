@@ -102,7 +102,7 @@ void func_02010210(void)
   iVar2 = func_02010078();
   if (iVar2 != 1) {
     iVar2 = func_0200f924(2,0);
-    uVar1 = ((unsigned int)0x020102b4);
+    uVar1 = ((unsigned int)0x00051d23);
     while (iVar2 != 0) {
       func_02008be8(uVar1);
       iVar2 = func_0200f924(2,0);

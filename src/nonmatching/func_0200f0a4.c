@@ -263,7 +263,7 @@ func_0200f0a4(undefined2 *param_1,undefined2 *param_2,uint param_3,uint param_4,
     iVar7 = ((param_3 + param_7) * 0x100 - (int)(short)param_1[3] * ((uint)param_5 + (uint)param_9))
             * 0x200;
     iVar1 = iVar7 >> 0x10;
-    if ((iVar1 < 0x8000) && (-0x8001 < iVar1)) {
+    if ((iVar1 <= 0x7fff) && (-0x8001 < iVar1)) {
       param_1[1] = (short)((uint)iVar7 >> 0x10);
       return (undefined2 *)0x0;
     }

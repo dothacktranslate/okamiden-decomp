@@ -155,6 +155,6 @@ undefined4
 func_02049830(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  func_02046414(param_1,(*(unsigned int *)0x02049844),param_3,param_4,param_4);
+  func_02046414(param_1,(*(unsigned short *)0xffffd8f0),param_3,param_4,param_4);
   return 1;
 }

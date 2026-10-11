@@ -98,17 +98,17 @@ undefined4 * func_02045fac(int param_1,int param_2)
     }
     return puVar1;
   }
-  if (((unsigned int)0x0204606c) < param_2) {
+  if (((unsigned int)0xffffd8f0) < param_2) {
     return (undefined4 *)(*(int *)(param_1 + 8) + param_2 * 8);
   }
-  if (param_2 == ((unsigned int)0x0204606c) + -2) {
+  if (param_2 == ((unsigned int)0xffffd8f0) + -2) {
     return (undefined4 *)(param_1 + 0x48);
   }
-  if (param_2 != ((unsigned int)0x0204606c) + -1) {
-    if (param_2 == ((unsigned int)0x0204606c)) {
+  if (param_2 != ((unsigned int)0xffffd8f0) + -1) {
+    if (param_2 == ((unsigned int)0xffffd8f0)) {
       return (undefined4 *)(*(int *)(param_1 + 0x10) + 0x5c);
     }
-    param_2 = (((unsigned int)0x0204606c) + -2) - param_2;
+    param_2 = (((unsigned int)0xffffd8f0) + -2) - param_2;
     iVar2 = **(int **)(*(int *)(param_1 + 0x14) + 4);
     puVar1 = ((unsigned int)0x02046068);
     if (param_2 <= (int)(uint)*(byte *)(iVar2 + 7)) {

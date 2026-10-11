@@ -92,7 +92,7 @@ undefined4 func_02048b64(undefined4 param_1,undefined4 param_2,undefined4 param_
 
 {
   func_02047928(param_1,1,5,param_4,param_4);
-  func_02046414(param_1,((unsigned int)0x02048ba8));
+  func_02046414(param_1,((unsigned int)0xffffd8ed));
   func_02046414(param_1,1);
   func_02046868(param_1,0);
   return 3;

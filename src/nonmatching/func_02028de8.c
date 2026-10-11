@@ -92,7 +92,7 @@ extern int func_02046868();
 undefined4 func_02028de8(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  short sVar1;
+  unsigned short sVar1;
   ushort uVar2;
   uint uVar3;
   int iVar4;

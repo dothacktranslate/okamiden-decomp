@@ -100,8 +100,8 @@ undefined4 func_020637a8(int *param_1,int *param_2,int *param_3)
     if (*piVar1 == param_3[1]) {
       uVar5 = 1;
       param_3[1] = *piVar1 + piVar1[1];
-      iVar3 = piVar1[2];
       iVar2 = piVar1[3];
+      iVar3 = piVar1[2];
       if (iVar3 == 0) {
         *param_1 = iVar2;
       }

@@ -100,7 +100,7 @@ void func_02062690(int *param_1,int param_2)
   *param_1 = iVar3;
   param_1[1] = 0;
   param_1[0xc] = (0x1000 - iVar3) * (uint)uVar1 * 8;
-  param_1[0xd] = (0x1000 - iVar4) * (uint)uVar2 * 8;
+  param_1[0xd] = (0x1000 - iVar4) * (uint)8 * uVar2;
   param_1[4] = 0;
   return;
 }

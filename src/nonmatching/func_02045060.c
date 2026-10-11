@@ -33,7 +33,7 @@ void func_02045060(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   iVar1 = (int)(uint)*(ushort *)(param_1 + 0x24) >> 4;
   uStack_18 = param_4;
   func_02000c00(auStack_28,(int)*(short *)(((unsigned int)0x020450b8) + iVar1 * 4),
-               (int)*(short *)(((unsigned int)0x020450b8) + (iVar1 * 2 + 1) * 2));
+               (int)*(short *)(((unsigned int)0x020450b8) + (iVar1 * 1 + 2) * 2));
   func_02000c0c(auStack_28,param_2,*(undefined4 *)(param_1 + 0x1c),*(undefined4 *)(param_1 + 0x20));
   uVar2 = func_0201e9d4(0x1000000,*(undefined4 *)(param_1 + 0x1c));
   uVar3 = func_0201e9d4(0x1000000,*(undefined4 *)(param_1 + 0x20));

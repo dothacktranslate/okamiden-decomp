@@ -93,7 +93,7 @@ bool func_02063c7c(uint param_1,undefined4 param_2,undefined4 param_3,undefined4
   undefined4 uVar2;
   int iVar3;
 
-  uVar1 = (param_1 & ((unsigned int)0x02063cd8)) >> 0x10;
+  uVar1 = (param_1 & ((unsigned int)0x7fff0000)) >> 0x10;
   if (uVar1 == 0) {
     return (bool)2;
   }

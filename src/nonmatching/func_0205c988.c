@@ -90,7 +90,7 @@ void func_0205c988(int *param_1,undefined4 param_2,undefined4 param_3,uint param
 
 {
   uint uVar1;
-  char cVar2;
+  unsigned char cVar2;
   uint local_10;
 
   if (((param_1[2] & 0x200U) == 0) && ((param_1[2] & 1U) != 0)) {

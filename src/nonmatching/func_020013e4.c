@@ -94,8 +94,8 @@ void func_020013e4(int *param_1,int *param_2,uint *param_3)
   int iVar5;
   int iVar6;
 
-  iVar4 = param_1[1];
   iVar5 = *param_1;
+  iVar4 = param_1[1];
   iVar6 = param_1[2];
   lVar1 = (longlong)param_2[7] * (longlong)iVar6 +
           (longlong)param_2[1] * (longlong)iVar5 + (longlong)iVar4 * (longlong)param_2[4];

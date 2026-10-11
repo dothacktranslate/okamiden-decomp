@@ -114,7 +114,7 @@ uint func_020695cc(undefined4 param_1)
     iVar6 = iVar6 + *(int *)(((unsigned int)0x0206963c) + iVar2) * iVar1;
   } while (iVar3 < 5);
   if (0 < iVar5) {
-    local_18 = func_0201e9d4(iVar6,iVar5);
+    local_18 = func_0201e9d4(iVar6,iVar5,local_18);
     func_0201e9d4(iVar6,iVar5);
     if (0 < extraout_r1) {
       local_18 = local_18 + 1;

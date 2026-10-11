@@ -95,19 +95,19 @@ int func_02002ea8(int *param_1,int *param_2)
   int iVar6;
   int iVar7;
 
-  puVar1 = ((unsigned int)0x02002f1c);
+  puVar1 = ((unsigned int)0x040002b0);
   iVar5 = param_1[1];
   iVar3 = param_2[1];
   iVar6 = *param_1;
   iVar7 = *param_2;
   iVar4 = param_1[2];
   iVar2 = param_2[2];
-  (*(unsigned int *)0x02002f1c) = 1;
+  (*(unsigned int *)0x040002b0) = 1;
   *(longlong *)(puVar1 + 4) =
        ((longlong)(iVar4 - iVar2) * (longlong)(iVar4 - iVar2) +
        (longlong)(iVar6 - iVar7) * (longlong)(iVar6 - iVar7) +
        (longlong)(iVar5 - iVar3) * (longlong)(iVar5 - iVar3)) * 4;
   do {
   } while ((*puVar1 & 0x8000) != 0);
-  return (*(unsigned int *)0x02002f20) + 1 >> 1;
+  return (*(unsigned int *)0x040002b4) + 1 >> 1;
 }

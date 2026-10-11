@@ -111,7 +111,7 @@ void func_0205b0b4(int param_1,int param_2,undefined4 param_3,undefined4 param_4
     iVar4 = *(int *)(param_1 + 0x28);
     func_02004e14(param_1 + *(int *)(param_1 + 0x24),uVar1,uVar2 << 3);
     func_02004e14(param_1 + iVar4,
-                 ((((unsigned int)0x0205b168) & (uVar3 & 0xffff) << 3) >> 1) + 0x20000 + ((uVar1 & 0x40000) >> 2),
+                 ((((unsigned int)0x0001ffff) & (uVar3 & 0xffff) << 3) >> 1) + 0x20000 + ((uVar1 & 0x40000) >> 2),
                  uVar2 << 2);
     *(ushort *)(param_1 + 0x20) = *(ushort *)(param_1 + 0x20) | 1;
   }

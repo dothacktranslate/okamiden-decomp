@@ -101,7 +101,7 @@ uint func_02058888(ushort *param_1,uint param_2)
     uVar3 = (uint)param_1[(param_2 - *param_1) + 6];
   }
   else {
-    uVar3 = ((unsigned int)0x0205894c);
+    uVar3 = ((unsigned int)0x0000ffff);
     if (uVar2 == 2) {
       puVar4 = param_1 + 7;
       puVar5 = puVar4 + (param_1[6] - 1) * 2;

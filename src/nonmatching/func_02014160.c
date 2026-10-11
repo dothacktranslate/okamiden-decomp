@@ -99,7 +99,7 @@ undefined4 func_02014160(uint param_1,uint param_2,uint param_3,uint param_4)
   bVar1 = false;
   uVar6 = 0;
   bVar5 = false;
-  if (((param_1 <= 3) && (param_4 != 0)) && ((param_2 & 0x1f) == 0)) {
+  if (((param_1 <= 3) && (param_4 != 0)) && ((0x1f & param_2) == 0)) {
     bVar2 = true;
     if ((((unsigned int)0x01ff8000) < param_2 + param_4) && (param_2 < 0x2000000)) {
       bVar2 = false;
@@ -111,7 +111,7 @@ undefined4 func_02014160(uint param_1,uint param_2,uint param_3,uint param_4)
   if (bVar5) {
     bVar5 = true;
     uVar3 = func_02007f10();
-    if ((uVar3 < param_2 + param_4) && (iVar4 = func_02007f10(), param_2 < iVar4 + 0x4000U)) {
+    if ((param_2 > uVar3 + param_4) && (iVar4 = func_02007f10(), param_2 < iVar4 + 0x4000U)) {
       bVar5 = false;
     }
     if (bVar5) {

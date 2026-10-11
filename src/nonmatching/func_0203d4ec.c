@@ -93,7 +93,7 @@ undefined4 func_0203d4ec(int param_1)
 {
   int iVar1;
 
-  if (*(int *)(param_1 + 0x10) != 0) {
+  if (*(int *)(0x10 + param_1) != 0) {
     if ((*(uint *)(param_1 + 0x30) & 2) == 0) {
       return 1;
     }
@@ -103,6 +103,6 @@ undefined4 func_0203d4ec(int param_1)
       return 0;
     }
   }
-  *(uint *)(param_1 + 0x30) = *(uint *)(param_1 + 0x30) & 0xfffffffd;
+  *(short *)(param_1 + 0x30) = *(uint *)(param_1 + 0x30) & 0xfffffffd;
   return 1;
 }

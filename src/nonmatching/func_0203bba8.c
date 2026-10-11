@@ -154,7 +154,7 @@ extern int func_0203bbe8();
 undefined4 * func_0203bba8(undefined4 *param_1)
 
 {
-  *param_1 = (*(unsigned int *)0x0203bbc4);
-  func_0203bbe8();
+  *param_1 = (*(unsigned char *)0x0203bbc4);
+  func_0203bbe8(param_1);
   return param_1;
 }

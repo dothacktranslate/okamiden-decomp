@@ -91,7 +91,7 @@ extern int func_0204faec();
 void func_0204fd18(undefined4 param_1,int param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  func_0204cf68(param_2,*(undefined4 *)(param_2 + 0x20),param_3,param_4,param_4);
+  func_0204cf68(param_2,*(unsigned char *)(param_2 + 0x20),param_3,param_4,param_4);
   func_0204faec(param_1,param_2);
   func_0204e55c(param_1,param_2,0x68,0);
   return;

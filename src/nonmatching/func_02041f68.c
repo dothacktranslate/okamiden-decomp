@@ -112,7 +112,7 @@ void func_02041f68(int param_1,int param_2,int param_3,undefined4 param_4)
     }
     *(uint *)(*(unsigned int *)0x02041fcc) = *(uint *)(*(unsigned int *)0x02041fcc) & 0xfffffffe;
     if (param_3 != 0) {
-      func_0204201c();
+      func_0204201c(param_1);
     }
   }
   return;

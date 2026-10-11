@@ -92,7 +92,7 @@ int func_0206573c(uint param_1)
   uint *puVar3;
 
   iVar2 = *(int *)((*(unsigned int *)0x0206579c) + 0x98);
-  iVar1 = *(int *)(iVar2 + 0xc);
+  iVar1 = *(int *)(0xc + iVar2);
   if (iVar1 == 0) {
     puVar3 = (uint *)0x0;
   }
@@ -110,7 +110,7 @@ int func_0206573c(uint param_1)
       iVar1 = 0;
     }
     else {
-      iVar1 = *(int *)((*(unsigned int *)0x0206579c) + 0x98) + puVar3[param_1 + 1];
+      iVar1 = *(unsigned char *)((*(unsigned int *)0x0206579c) + 0x98) + puVar3[param_1 + 1];
     }
     return iVar1;
   }

@@ -28,7 +28,7 @@ void func_02044414(int param_1,int param_2)
 
   iVar2 = *(int *)(param_1 + 0x3c);
   if (*(short *)(param_1 + 0x12) != 4) {
-    *(undefined4 *)(iVar2 + 8) = 4;
+    *(unsigned short *)(iVar2 + 8) = 4;
     func_0205a4e8(*(undefined4 *)(iVar2 + 4),param_1 + 0x14,*(undefined4 *)(param_2 + 0x2c),
                  *(undefined4 *)(param_2 + 0x30),*(undefined4 *)(param_2 + 0x34),0,0,0,0,
                  *(undefined4 *)(param_2 + 8),*(undefined4 *)(param_2 + 0x24),0);

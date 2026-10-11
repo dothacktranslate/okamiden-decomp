@@ -89,6 +89,6 @@ void func_0203b090(undefined4 param_1,undefined4 param_2)
 {
                     /* WARNING: Could not recover jumptable at 0x0203b0a8. Too many branches */
                     /* WARNING: Treating indirect jump as call */
-  ((code *)(*(unsigned int *)0x0203b0b0))((*(unsigned int *)0x0203b0ac),param_1,param_2);
+  ((code *)(*(unsigned short *)0x0203b0b0))((*(unsigned int *)0x0203b0ac),param_1,param_2);
   return;
 }

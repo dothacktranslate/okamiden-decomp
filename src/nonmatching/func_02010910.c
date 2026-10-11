@@ -100,7 +100,7 @@ int func_02010910(uint *param_1)
     if ((2 < uVar2) && ((uVar4 & 3) == 0)) {
       iVar3 = iVar3 + 1;
     }
-    return uVar4 * ((unsigned int)0x020109a0) + iVar3 + (uVar4 + 3 >> 2);
+    return uVar4 * ((unsigned int)0x0000016d) + iVar3 + (uVar4 + 3 >> 2);
   }
   return -1;
 }

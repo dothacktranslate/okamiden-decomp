@@ -126,7 +126,7 @@ bool func_0200cd9c(int param_1,int param_2,int param_3,undefined4 param_4)
       iVar2 = func_02012f88();
       piVar5 = (int *)(iVar2 + 0x58);
     }
-    if ((uint)piVar5[1] <= uVar1) {
+    if ((uint)uVar1 >= piVar5[1]) {
       return false;
     }
     puVar4 = auStack_b0;

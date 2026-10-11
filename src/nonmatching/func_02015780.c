@@ -101,17 +101,17 @@ void func_02015780(uint *param_1)
   uint local_68 [16];
 
   puVar1 = local_68;
-  uVar2 = param_1[5];
-  uVar3 = param_1[6];
+  uVar3 = param_1[5];
+  uVar2 = param_1[6];
   uVar6 = param_1[7];
   uVar7 = param_1[8];
   puVar8 = param_1 + 9;
   iVar10 = 0x10;
   while( true ) {
-    *puVar1 = (uVar2 ^ (uVar2 >> 0x10 | uVar2 << 0x10)) >> 8 & 0xffff00ff ^
-              (uVar2 >> 8 | uVar2 << 0x18);
-    puVar1[1] = (uVar3 ^ (uVar3 >> 0x10 | uVar3 << 0x10)) >> 8 & 0xffff00ff ^
-                (uVar3 >> 8 | uVar3 << 0x18);
+    *puVar1 = (uVar3 ^ (uVar3 >> 0x10 | uVar3 << 0x10)) >> 8 & 0xffff00ff ^
+              (uVar3 >> 8 | uVar3 << 0x18);
+    puVar1[1] = (uVar2 ^ (uVar2 >> 0x10 | uVar2 << 0x10)) >> 8 & 0xffff00ff ^
+                (uVar2 >> 8 | uVar2 << 0x18);
     puVar1[2] = (uVar6 ^ (uVar6 >> 0x10 | uVar6 << 0x10)) >> 8 & 0xffff00ff ^
                 (uVar6 >> 8 | uVar6 << 0x18);
     puVar1[3] = (uVar7 ^ (uVar7 >> 0x10 | uVar7 << 0x10)) >> 8 & 0xffff00ff ^
@@ -119,39 +119,39 @@ void func_02015780(uint *param_1)
     puVar1 = puVar1 + 4;
     iVar10 = iVar10 + -4;
     if (iVar10 == 0) break;
-    uVar2 = *puVar8;
-    uVar3 = puVar8[1];
+    uVar3 = *puVar8;
+    uVar2 = puVar8[1];
     uVar6 = puVar8[2];
     uVar7 = puVar8[3];
     puVar8 = puVar8 + 4;
   }
   uVar11 = 0;
-  uVar3 = *param_1;
+  uVar2 = *param_1;
   uVar6 = param_1[1];
-  uVar2 = param_1[2];
+  uVar3 = param_1[2];
   uVar7 = param_1[3];
   uVar5 = param_1[4];
   do {
     uVar9 = uVar7;
-    uVar7 = uVar2;
-    uVar4 = uVar3;
-    uVar3 = (uVar6 & uVar7 | ~uVar6 & uVar9) + ((unsigned int)0x02015770) + uVar5 + local_68[uVar11 & 0xf] +
+    uVar7 = uVar3;
+    uVar4 = uVar2;
+    uVar2 = (uVar6 & uVar7 | ~uVar6 & uVar9) + ((unsigned int)0x02015770) + uVar5 + local_68[uVar11 & 0xf] +
             (uVar4 >> 0x1b | uVar4 << 5);
-    uVar2 = uVar6 >> 2 | uVar6 << 0x1e;
+    uVar3 = uVar6 >> 2 | uVar6 << 0x1e;
     uVar11 = uVar11 + 1;
     uVar6 = uVar4;
     uVar5 = uVar9;
   } while (uVar11 != 0x10);
   do {
     uVar5 = uVar7;
-    uVar7 = uVar2;
-    uVar6 = uVar3;
-    uVar2 = local_68[uVar11 - 0x10 & 0xf] ^ local_68[uVar11 - 0xe & 0xf] ^
+    uVar7 = uVar3;
+    uVar6 = uVar2;
+    uVar3 = local_68[uVar11 - 0x10 & 0xf] ^ local_68[uVar11 - 0xe & 0xf] ^
             local_68[uVar11 - 8 & 0xf] ^ local_68[uVar11 - 3 & 0xf];
-    local_68[uVar11 & 0xf] = uVar2 >> 0x1f | uVar2 << 1;
-    uVar3 = (uVar4 & uVar7 | ~uVar4 & uVar5) + ((unsigned int)0x02015770) + uVar9 + local_68[uVar11 & 0xf] +
+    local_68[uVar11 & 0xf] = uVar3 >> 0x1f | uVar3 << 1;
+    uVar2 = (uVar4 & uVar7 | ~uVar4 & uVar5) + ((unsigned int)0x02015770) + uVar9 + local_68[uVar11 & 0xf] +
             (uVar6 >> 0x1b | uVar6 << 5);
-    uVar2 = uVar4 >> 2 | uVar4 << 0x1e;
+    uVar3 = uVar4 >> 2 | uVar4 << 0x1e;
     uVar11 = uVar11 + 1;
     uVar4 = uVar6;
     uVar9 = uVar5;
@@ -159,14 +159,14 @@ void func_02015780(uint *param_1)
   uVar11 = 0x14;
   do {
     uVar9 = uVar7;
-    uVar7 = uVar2;
-    uVar4 = uVar3;
-    uVar2 = local_68[uVar11 - 0x10 & 0xf] ^ local_68[uVar11 - 0xe & 0xf] ^
+    uVar7 = uVar3;
+    uVar4 = uVar2;
+    uVar3 = local_68[uVar11 - 0x10 & 0xf] ^ local_68[uVar11 - 0xe & 0xf] ^
             local_68[uVar11 - 8 & 0xf] ^ local_68[uVar11 - 3 & 0xf];
-    local_68[uVar11 & 0xf] = uVar2 >> 0x1f | uVar2 << 1;
-    uVar3 = (uVar6 ^ uVar7 ^ uVar9) + ((unsigned int)0x02015774) + uVar5 + local_68[uVar11 & 0xf] +
+    local_68[uVar11 & 0xf] = uVar3 >> 0x1f | uVar3 << 1;
+    uVar2 = (uVar6 ^ uVar7 ^ uVar9) + ((unsigned int)0x02015774) + uVar5 + local_68[uVar11 & 0xf] +
             (uVar4 >> 0x1b | uVar4 << 5);
-    uVar2 = uVar6 >> 2 | uVar6 << 0x1e;
+    uVar3 = uVar6 >> 2 | uVar6 << 0x1e;
     uVar11 = uVar11 + 1;
     uVar6 = uVar4;
     uVar5 = uVar9;
@@ -174,14 +174,14 @@ void func_02015780(uint *param_1)
   uVar6 = 0x28;
   do {
     uVar11 = uVar7;
-    uVar7 = uVar2;
-    uVar5 = uVar3;
-    uVar2 = local_68[uVar6 - 0x10 & 0xf] ^ local_68[uVar6 - 0xe & 0xf] ^ local_68[uVar6 - 8 & 0xf] ^
+    uVar7 = uVar3;
+    uVar5 = uVar2;
+    uVar3 = local_68[uVar6 - 0x10 & 0xf] ^ local_68[uVar6 - 0xe & 0xf] ^ local_68[uVar6 - 8 & 0xf] ^
             local_68[uVar6 - 3 & 0xf];
-    local_68[uVar6 & 0xf] = uVar2 >> 0x1f | uVar2 << 1;
-    uVar3 = (uVar4 & (uVar7 | uVar11) | uVar7 & uVar11) + ((unsigned int)0x02015778) + uVar9 +
+    local_68[uVar6 & 0xf] = uVar3 >> 0x1f | uVar3 << 1;
+    uVar2 = (uVar4 & (uVar7 | uVar11) | uVar7 & uVar11) + ((unsigned int)0x02015778) + uVar9 +
             local_68[uVar6 & 0xf] + (uVar5 >> 0x1b | uVar5 << 5);
-    uVar2 = uVar4 >> 2 | uVar4 << 0x1e;
+    uVar3 = uVar4 >> 2 | uVar4 << 0x1e;
     uVar6 = uVar6 + 1;
     uVar4 = uVar5;
     uVar9 = uVar11;
@@ -189,21 +189,21 @@ void func_02015780(uint *param_1)
   uVar6 = 0x3c;
   do {
     uVar9 = uVar7;
-    uVar7 = uVar2;
-    uVar4 = uVar3;
-    uVar2 = local_68[uVar6 - 0x10 & 0xf] ^ local_68[uVar6 - 0xe & 0xf] ^ local_68[uVar6 - 8 & 0xf] ^
+    uVar7 = uVar3;
+    uVar4 = uVar2;
+    uVar3 = local_68[uVar6 - 0x10 & 0xf] ^ local_68[uVar6 - 0xe & 0xf] ^ local_68[uVar6 - 8 & 0xf] ^
             local_68[uVar6 - 3 & 0xf];
-    local_68[uVar6 & 0xf] = uVar2 >> 0x1f | uVar2 << 1;
-    uVar3 = (uVar5 ^ uVar7 ^ uVar9) + ((unsigned int)0x0201577c) + uVar11 + local_68[uVar6 & 0xf] +
+    local_68[uVar6 & 0xf] = uVar3 >> 0x1f | uVar3 << 1;
+    uVar2 = (uVar5 ^ uVar7 ^ uVar9) + ((unsigned int)0x0201577c) + uVar11 + local_68[uVar6 & 0xf] +
             (uVar4 >> 0x1b | uVar4 << 5);
-    uVar2 = uVar5 >> 2 | uVar5 << 0x1e;
+    uVar3 = uVar5 >> 2 | uVar5 << 0x1e;
     uVar6 = uVar6 + 1;
     uVar5 = uVar4;
     uVar11 = uVar9;
   } while (uVar6 != 0x50);
-  *param_1 = *param_1 + uVar3;
+  *param_1 = *param_1 + uVar2;
   param_1[1] = param_1[1] + uVar4;
-  param_1[2] = param_1[2] + uVar2;
+  param_1[2] = param_1[2] + uVar3;
   param_1[3] = param_1[3] + uVar7;
   param_1[4] = param_1[4] + uVar9;
   return;

@@ -158,8 +158,8 @@ void func_0203e1d8(int param_1,undefined4 *param_2,ushort *param_3,undefined4 pa
 
 {
   ushort uVar1;
-  ushort uVar2;
   int iVar3;
+  ushort uVar2;
   undefined4 uVar4;
   undefined4 uVar5;
   undefined1 auStack_58 [64];

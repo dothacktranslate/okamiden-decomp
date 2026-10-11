@@ -100,8 +100,8 @@ undefined4 func_0200cb3c(int param_1,undefined4 param_2,undefined4 param_3,undef
   iVar1 = func_0200e4e4(param_1,&local_14);
   if (iVar1 == 0) {
     *(undefined4 **)(param_1 + 0x10) = &local_18;
-    iVar1 = func_0200be7c(param_1,0xf,1);
     local_18 = 0;
+    iVar1 = func_0200be7c(param_1,0xf,1);
     if (iVar1 != 0) {
       local_14 = local_18;
     }

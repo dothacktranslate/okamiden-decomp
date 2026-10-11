@@ -89,7 +89,7 @@ extern int func_0200dbc4();
 
 /* WARNING: Restarted to delay deadcode elimination for space: stack */
 
-void func_0200de9c(undefined4 param_1,undefined2 param_2,undefined4 param_3,uint *param_4,int param_5
+void func_0200de9c(undefined4 param_1,undefined2 param_2,undefined4 param_3,short *param_4,int param_5
                  )
 
 {

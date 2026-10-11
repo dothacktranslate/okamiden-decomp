@@ -96,9 +96,9 @@ void func_02069444(undefined4 *param_1)
   puVar1 = (uint *)*param_1;
   uVar2 = *puVar1 + 1;
   uVar3 = puVar1[1] + (uint)(0xfffffffe < *puVar1);
-  if ((uint)(uVar2 <= ((unsigned int)0x02069468)) <= -uVar3) {
+  if ((uint)(uVar2 <= ((unsigned int)0x00a4cb62)) <= -uVar3) {
     uVar3 = 0;
-    uVar2 = ((unsigned int)0x02069468);
+    uVar2 = ((unsigned int)0x00a4cb62);
   }
   *puVar1 = uVar2;
   puVar1[1] = uVar3;

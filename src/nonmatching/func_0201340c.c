@@ -101,7 +101,7 @@ undefined4 func_0201340c(uint param_1,int param_2)
   }
   uVar1 = 0;
   if (((param_1 & 0xffffffef) < 4) && (uVar1 = ((unsigned int)0x02013444), param_2 != 0)) {
-    func_02008e58();
+    func_02008e58(param_1);
     uVar1 = 0;
   }
   return uVar1;

@@ -96,7 +96,7 @@ int func_0204f6b0(int param_1,int param_2,int *param_3,undefined4 param_4)
 
 {
   char cVar1;
-  int iVar2;
+  uint iVar2;
   undefined4 uVar3;
   int iVar4;
   int iVar5;

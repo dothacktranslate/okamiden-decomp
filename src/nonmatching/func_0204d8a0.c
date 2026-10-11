@@ -96,7 +96,7 @@ void func_0204d8a0(undefined4 param_1,int param_2)
   int *piVar4;
 
   if ((3 < *(int *)(param_2 + 0x4c)) && ((*(byte *)(*(int *)(param_2 + 0x48) + 5) & 3) != 0)) {
-    func_0204d1d8();
+    func_0204d1d8(param_1);
   }
   uVar3 = *(uint *)(param_2 + 0x28);
   piVar2 = *(int **)(param_2 + 8);

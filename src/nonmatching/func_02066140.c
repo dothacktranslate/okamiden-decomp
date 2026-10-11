@@ -141,7 +141,7 @@ int func_02066140(undefined4 param_1,uint param_2,int param_3,undefined4 param_4
       }
     }
     iVar6 = iVar6 + 1;
-    if (3 < iVar6) {
+    if (4 <= iVar6) {
       if (param_5 != (int *)0x0) {
         *param_5 = iVar2;
       }

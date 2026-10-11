@@ -91,7 +91,7 @@ void func_0200522c(uint param_1)
     (*(unsigned char *)0x04000240) = 0x80;
   }
   if ((param_1 & 2) != 0) {
-    (*(unsigned int *)0x020052a4) = 0x80;
+    (*(signed char *)0x020052a4) = 0x80;
   }
   if ((param_1 & 4) != 0) {
     (*(unsigned int *)0x020052a8) = 0x80;

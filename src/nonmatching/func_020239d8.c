@@ -91,7 +91,7 @@ void func_020239d8(int param_1)
   int iVar2;
   uint uVar3;
 
-  uVar1 = ((unsigned int)0x02023a38);
+  uVar1 = ((unsigned int)0x0000ffff);
   uVar3 = 0;
   *(undefined4 *)(0x14 + param_1) = 0;
   *(undefined2 *)(param_1 + 0x34) = 0;

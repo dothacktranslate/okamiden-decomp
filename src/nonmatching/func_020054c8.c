@@ -208,14 +208,14 @@ LAB_02005594:
   case 0:
     goto switchD_02005510_default;
   case 1:
-    puVar2 = ((unsigned int)0x020055ec);
+    puVar2 = ((unsigned int)0x04000240);
     break;
   case 2:
-    puVar2 = ((unsigned int)0x04000241);
+    puVar2 = ((unsigned int)0x020055e8);
     break;
   case 3:
-    (*(unsigned int *)0x04000241) = 0x8a;
-    puVar2 = ((unsigned int)0x020055ec);
+    (*(unsigned int *)0x020055e8) = 0x8a;
+    puVar2 = ((unsigned int)0x04000240);
     break;
   default:
     goto switchD_02005510_default;

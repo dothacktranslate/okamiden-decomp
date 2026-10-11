@@ -111,7 +111,7 @@ byte * func_020194ec(byte *param_1,byte *param_2,uint param_3)
       do {
         bVar1 = pbVar3[1];
         bVar2 = *pbVar5;
-        if (bVar2 != bVar1) break;
+        if (bVar1 != bVar2) break;
         pbVar5 = pbVar5 + 1;
         pbVar3 = pbVar3 + 1;
       } while (bVar2 != 0);

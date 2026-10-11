@@ -91,8 +91,8 @@ void func_0205ad48(int param_1,int param_2)
     return;
   }
   if (param_2 < (int)(uint)*(byte *)(param_1 + 0x19)) {
-    if ((*(ushort *)(param_1 + param_2 * 2 + 0x1a) & 0x100) != 0) {
-      *(ushort *)(param_1 + 0x1a + param_2 * 2) = *(ushort *)(param_1 + 0x1a + param_2 * 2) & 0xfdff
+    if ((*(ushort *)((param_1 + param_2 * 2) + 0x1a) & 0x100) != 0) {
+      *(ushort *)((param_1 + 0x1a) + param_2 * 2) = *(signed char *)(param_1 + 0x1a + param_2 * 2) & 0xfdff
       ;
     }
     return;

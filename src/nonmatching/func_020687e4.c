@@ -156,9 +156,9 @@ extern int func_02044fe8();
 void func_020687e4(undefined4 param_1,int *param_2,int *param_3,int param_4,int param_5)
 
 {
-  undefined4 uVar1;
   int iVar2;
   int iVar3;
+  undefined4 uVar1;
 
   if (param_4 == 0) {
     uVar1 = func_02044b5c(param_1,0);

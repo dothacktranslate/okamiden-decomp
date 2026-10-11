@@ -112,7 +112,7 @@ func_02066bb4(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined
   if (iVar3 == 0) {
     func_02064858(iVar1,param_6 + *(int *)(param_6 + 0x18),*param_5,uStack_1c);
     func_0206448c(param_1,*(undefined1 *)((int)param_5 + 6));
-    func_020644bc(param_1,*(undefined1 *)((int)param_5 + 7));
+    func_020644bc(param_1,*(undefined1 *)((int)7 + param_5));
     func_0206451c(param_1,param_7,param_8);
     return 1;
   }

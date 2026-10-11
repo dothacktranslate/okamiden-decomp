@@ -100,7 +100,7 @@ undefined4 func_020063f8(uint param_1)
       return 0;
     }
   }
-  if ((7 < iVar1) && (iVar1 < 0xc)) {
+  if ((7 < iVar1) && (iVar1 <= 0xb)) {
     return *(undefined4 *)(((unsigned int)0x02006480) + (iVar1 + -8) * 0xc);
   }
   if ((2 < iVar1) && (iVar1 < 7)) {

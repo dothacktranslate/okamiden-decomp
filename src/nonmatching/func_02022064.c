@@ -154,6 +154,6 @@ extern int func_0202207c();
 void func_02022064(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  func_0202207c(param_1,(*(unsigned int *)0x02022074),(*(unsigned int *)0x02022078),0,param_4);
+  func_0202207c(param_1,(*(unsigned int *)0x02022074),(*(short *)0x02022078),0,param_4);
   return;
 }

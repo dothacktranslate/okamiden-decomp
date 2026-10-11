@@ -286,7 +286,7 @@ LAB_0205cda0:
         local_30 = ((unsigned int)0x0205cec4);
         local_2c = puVar11[4];
         local_28 = puVar11[5];
-        func_0205e0c0(((unsigned int)0x0205cec0),&local_3c,6,local_28,((unsigned int)0x0205cec0));
+        func_0205e0c0(((unsigned int)0x00293130),&local_3c,6,local_28,((unsigned int)0x00293130));
         if ((*puVar11 & 0x18) != 0) {
           (**(code **)(param_1 + 0xf0))(puVar11);
         }

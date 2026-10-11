@@ -112,7 +112,7 @@ int func_0204938c(undefined4 param_1,undefined4 param_2,undefined4 param_3)
   func_02046130(param_1,param_2,param_3);
   func_02046188(param_1,param_2);
   uVar3 = func_0204c654(param_2,param_3);
-  if (uVar3 < 2) {
+  if (uVar3 <= 1) {
     iVar1 = func_020461e8(param_2);
     iVar2 = func_020460b4(param_1,iVar1 + 1);
     if (iVar2 == 0) {

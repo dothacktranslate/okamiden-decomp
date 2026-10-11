@@ -99,9 +99,9 @@ int func_02042a28(uint *param_1,int *param_2,int param_3)
 
 {
   int iVar1;
-  int iVar3;
   undefined4 uVar2;
   int iVar4;
+  int iVar3;
   int extraout_r1;
   int extraout_r1_00;
   uint uVar5;

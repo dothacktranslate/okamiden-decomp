@@ -96,8 +96,8 @@ int func_02023828(undefined4 param_1,undefined4 param_2,undefined4 param_3)
   int iVar1;
   int iVar2;
 
-  iVar1 = func_02032ac4(0xf4,((unsigned int)0x02023884),((unsigned int)0x02023888),0x1e);
   iVar2 = 0;
+  iVar1 = func_02032ac4(0xf4,((unsigned int)0x02023884),((unsigned int)0x02023888),0x1e);
   if (iVar1 != 0) {
     iVar2 = func_02023934(iVar1,param_1,param_1,param_1,param_2,0,param_3);
   }

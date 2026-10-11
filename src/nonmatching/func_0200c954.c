@@ -106,19 +106,19 @@ bool func_0200c954(int *param_1,undefined4 param_2)
 
   bVar3 = false;
   local_190 = 0;
-  iVar1 = func_0200c174(param_2,&local_190,auStack_134);
-  if (iVar1 != 0) {
+  local_184 = func_0200c174(param_2,&local_190,auStack_134);
+  if (local_184 != 0) {
     func_0200c8e0(auStack_17c);
     local_16c = &local_18c;
     local_18c = local_190;
     local_180 = 0;
     local_188 = auStack_134;
-    local_174 = iVar1;
+    local_174 = local_184;
     iVar2 = func_0200be7c(auStack_17c,4,1);
     bVar3 = iVar2 != 0;
     if (bVar3) {
-      *param_1 = iVar1;
-      param_1[1] = local_184;
+      *param_1 = local_184;
+      param_1[1] = iVar1;
     }
   }
   return bVar3;

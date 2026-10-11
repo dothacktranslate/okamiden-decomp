@@ -171,8 +171,8 @@ void func_02066c7c(undefined4 param_1,undefined4 param_2)
 {
   undefined4 uVar1;
   int iVar2;
-  int iVar3;
   int iVar4;
+  int iVar3;
 
   uVar1 = ((unsigned int)0x02066d68);
   if ((*(unsigned int *)0x02066d64) != 0) {

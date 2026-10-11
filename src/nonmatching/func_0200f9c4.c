@@ -86,7 +86,7 @@ extern int LZCOUNT();
 
 extern int func_02008b6c();
 extern int func_02008be8();
-extern int func_0200947c();
+extern int func_02008b6c();
 extern int func_0200947c();
 extern int func_0200f978();
 
@@ -97,7 +97,7 @@ void func_0200f9c4(void)
   int iVar2;
 
   iVar2 = func_0200f978();
-  uVar1 = ((unsigned int)0x0200f9fc);
+  uVar1 = ((unsigned int)0x00051d23);
   while (iVar2 != 0) {
     func_02008be8(uVar1);
     iVar2 = func_0200f978();

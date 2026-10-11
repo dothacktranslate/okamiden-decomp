@@ -100,8 +100,8 @@ void func_02001d88(undefined4 *param_1,undefined4 *param_2)
 
   uVar10 = param_1[0xc];
   uVar1 = param_1[1];
-  uVar2 = param_1[2];
   uVar3 = param_1[3];
+  uVar2 = param_1[2];
   uVar4 = param_1[4];
   uVar5 = param_1[5];
   uVar6 = param_1[6];

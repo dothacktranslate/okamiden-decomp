@@ -95,9 +95,9 @@ void func_020472dc(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   int iVar2;
   undefined4 *puVar3;
 
-  if (1 < param_2) {
+  if (2 <= param_2) {
     if (*(uint *)(*(int *)(param_1 + 0x10) + 0x40) <= *(uint *)(*(int *)(param_1 + 0x10) + 0x44)) {
-      func_0204e284();
+      func_0204e284(param_1);
     }
     iVar2 = *(int *)(param_1 + 8) - *(int *)(param_1 + 0xc);
     func_02054bd0(param_1,param_2,((int)(iVar2 + ((uint)(iVar2 >> 2) >> 0x1d)) >> 3) + -1);

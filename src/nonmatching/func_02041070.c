@@ -95,9 +95,9 @@ void func_02041070(int param_1)
   int iVar2;
 
   uVar1 = 0;
-  if (*(int *)(param_1 + 0x30) != 0) {
+  if (*(int *)(0x30 + param_1) != 0) {
     do {
-      iVar2 = uVar1 + param_1 * 4;
+      iVar2 = param_1 + uVar1 * 4;
       func_02036eb8((*(unsigned int *)0x02041098),*(undefined4 *)(iVar2 + 0x28));
       *(undefined4 *)(iVar2 + 0x28) = 0;
       uVar1 = uVar1 + 1;

@@ -180,7 +180,7 @@ void func_020234b0(int param_1,int param_2)
     _REG_A_DISPCNT = uVar2 << 8 | _REG_A_DISPCNT & ((unsigned int)0x0202352c);
     return;
   }
-  if ((3 < (int)uVar1) && ((int)uVar1 < 8)) {
+  if ((3 < (int)uVar1) && ((int)uVar1 <= 7)) {
     uVar2 = ((*(unsigned int *)0x02023530) & 0x1f00) >> 8;
     if (param_2 == 0) {
       uVar2 = uVar2 & ~(1 << (uVar1 - 4 & 0xff));

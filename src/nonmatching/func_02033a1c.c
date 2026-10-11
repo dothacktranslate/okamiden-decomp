@@ -117,7 +117,7 @@ undefined4 func_02033a1c(int param_1,undefined4 param_2,int param_3,undefined4 p
   local_2c = 0;
   local_28 = 0;
   do {
-    iVar4 = *(int *)(param_1 + iVar3 * 4 + 0x30);
+    iVar4 = *(int *)(iVar3 + param_1 * 4 + 0x30);
     if (0 < iVar4) {
       uVar1 = func_02002af4(auStack_24,param_1 + 0xc + iVar3 * 0xc);
       iVar2 = func_020028c0(uVar1,iVar4);

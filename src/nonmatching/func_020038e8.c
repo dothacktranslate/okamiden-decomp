@@ -89,8 +89,8 @@ extern int func_020099c4();
 undefined4 func_020038e8(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  if (((*(unsigned int *)0x02003914) & 0x8000000) == 0) {
-    func_020099c4(((unsigned int)0x02003914) + 0x10,param_1,((unsigned int)0x02003914),param_4,param_4);
+  if (((*(unsigned int *)0x04000600) & 0x8000000) == 0) {
+    func_020099c4(((unsigned int)0x04000600) + 0x10,param_1,((unsigned int)0x04000600),param_4,param_4);
     return 0;
   }
   return 0xffffffff;

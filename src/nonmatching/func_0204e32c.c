@@ -114,7 +114,7 @@ void func_0204e32c(int param_1)
     cVar1 = *(char *)(iVar2 + 0x15);
   }
   *(uint *)(iVar2 + 0x40) =
-       (uint)((ulonglong)((unsigned int)0x0204e3d0) * (ulonglong)*(uint *)(iVar2 + 0x48) >> 0x25) *
+       (uint)((ulonglong)((unsigned int)0x51eb851f) * (ulonglong)*(uint *)(iVar2 + 0x48) >> 0x25) *
        *(int *)(iVar2 + 0x50);
   return;
 }

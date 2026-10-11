@@ -97,6 +97,6 @@ undefined4 * func_02021df4(undefined4 *param_1,undefined4 param_2)
   func_02024338(param_1 + 5);
   param_1[0x54] = 0;
   func_02021ccc(param_1);
-  func_020381cc((*(unsigned int *)0x02021e5c),param_2,0,3,0,((unsigned int)0x02021e58));
+  func_020381cc((*(unsigned short *)0x02021e5c),param_2,0,3,0,((unsigned int)0x02021e58));
   return param_1;
 }

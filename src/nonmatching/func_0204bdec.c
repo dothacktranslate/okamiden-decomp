@@ -93,8 +93,8 @@ void func_0204bdec(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 {
   int iVar1;
 
-  iVar1 = ((unsigned int)0x0204be40);
-  if (((unsigned int)0x0204be40) < *(int *)(param_1 + 0x30)) {
+  iVar1 = ((unsigned int)0x00004e20);
+  if (((unsigned int)0x00004e20) < *(int *)(param_1 + 0x30)) {
     func_0204bb44(param_1,5);
   }
   else {

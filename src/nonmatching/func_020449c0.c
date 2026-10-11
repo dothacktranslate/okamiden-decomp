@@ -20,6 +20,6 @@ extern int func_02018ba4();
 void func_020449c0(undefined4 param_1,undefined4 param_2,int param_3,undefined4 param_4)
 
 {
-  func_02018ba4(param_1,((unsigned int)0x020449e4),param_2,*(undefined4 *)(((unsigned int)0x020449e0) + param_3 * 0x20),param_4);
+  func_02018ba4(param_1,((unsigned int)0x020449e4),param_2,*(signed char *)(((unsigned int)0x020449e0) + param_3 * 0x20),param_4);
   return;
 }

@@ -91,7 +91,7 @@ void func_0203cc14(int param_1,int param_2)
 {
   bool bVar1;
   int iVar3;
-  uint uVar2;
+  int uVar2;
   int iVar4;
   int iVar5;
 
@@ -119,7 +119,7 @@ void func_0203cc14(int param_1,int param_2)
         bVar1 = false;
 LAB_0203cc72:
         if (bVar1) {
-          *(unsigned short *)(*(int *)(param_1 + 0xa8) + uVar2 * 0x48) =
+          *(uint *)(*(int *)(param_1 + 0xa8) + uVar2 * 0x48) =
                *(uint *)(*(int *)(param_1 + 0xa8) + uVar2 * 0x48) | 0x400;
         }
       }

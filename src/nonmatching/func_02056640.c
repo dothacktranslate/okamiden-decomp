@@ -93,7 +93,7 @@ void func_02056640(int param_1,int param_2,int param_3,undefined4 param_4)
   if (param_2 == 0) {
     param_2 = 1;
   }
-  if (-1 < param_3) {
+  if (-2 <= param_3) {
     func_02056508();
     return;
   }

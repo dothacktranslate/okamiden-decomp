@@ -106,39 +106,39 @@ void func_02060f8c(int param_1,uint param_2,undefined4 param_3,uint *param_4)
              (*(ushort *)(iVar3 + (uint)*(ushort *)(param_1 + 0xe)) * param_2 +
              iVar3 + (uint)*(ushort *)(param_1 + 0xe) + 4);
   }
-  uVar5 = *param_4;
+  uVar1 = *param_4;
   puVar6 = param_4;
-  uVar1 = func_02060d8c(param_1,puVar4[6],puVar4[7],param_3,param_4);
+  uVar5 = func_02060d8c(param_1,puVar4[6],puVar4[7],param_3,param_4);
   uVar2 = func_02060d8c(param_1,puVar4[8],puVar4[9],param_3);
-  if (uVar1 != 0 || uVar2 != 0) {
+  if (uVar5 != 0 || uVar2 != 0) {
     param_4[10] = uVar2;
-    param_4[9] = uVar1;
+    param_4[9] = uVar5;
   }
   else {
-    uVar5 = uVar5 | 4;
+    uVar1 = uVar1 | 4;
   }
-  if (uVar1 != 0 || uVar2 != 0) {
-    uVar5 = uVar5 & 0xfffffffb;
+  if (uVar5 != 0 || uVar2 != 0) {
+    uVar1 = uVar1 & 0xfffffffb;
   }
   iVar3 = func_02060e80(param_1,puVar4[4],puVar4[5],param_3);
   if (iVar3 == 0x10000000) {
-    uVar5 = uVar5 | 2;
+    uVar1 = uVar1 | 2;
   }
   else {
     *(short *)(param_4 + 8) = (short)iVar3;
     *(short *)((int)param_4 + 0x22) = (short)((uint)iVar3 >> 0x10);
-    uVar5 = uVar5 & 0xfffffffd;
+    uVar1 = uVar1 & 0xfffffffd;
   }
-  uVar1 = func_02060d8c(param_1,*puVar4,puVar4[1],param_3,puVar6);
+  uVar5 = func_02060d8c(param_1,*puVar4,puVar4[1],param_3,puVar6);
   uVar2 = func_02060d8c(param_1,puVar4[2],puVar4[3],param_3);
-  if (uVar1 == 0x1000 && uVar2 == 0x1000) {
-    uVar5 = uVar5 | 1;
+  if (uVar5 == 0x1000 && uVar2 == 0x1000) {
+    uVar1 = uVar1 | 1;
   }
   else {
-    uVar5 = uVar5 & 0xfffffffe;
-    param_4[6] = uVar1;
+    uVar1 = uVar1 & 0xfffffffe;
+    param_4[6] = uVar5;
     param_4[7] = uVar2;
   }
-  *param_4 = uVar5;
+  *param_4 = uVar1;
   return;
 }

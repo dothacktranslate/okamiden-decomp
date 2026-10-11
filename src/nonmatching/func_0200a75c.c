@@ -175,7 +175,7 @@ void func_0200a75c(void)
 
   func_0200ad28();
   iVar4 = ((unsigned int)0x0200a814);
-  (*(unsigned int *)0x0200a818) = ((unsigned int)0x0200a814);
+  (*(unsigned short *)0x0200a818) = ((unsigned int)0x0200a814);
   iVar5 = 0;
   while (iVar5 < 0xff) {
     *(int *)(iVar4 + iVar5 * 0x18) = (iVar5 + 1) * 0x18 + iVar4;

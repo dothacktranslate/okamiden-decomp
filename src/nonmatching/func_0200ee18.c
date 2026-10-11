@@ -90,7 +90,7 @@ undefined4
 func_0200ee18(undefined2 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  short sVar1;
+  unsigned short sVar1;
   short sVar2;
   short sVar3;
   int iVar4;

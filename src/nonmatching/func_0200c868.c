@@ -89,7 +89,7 @@ extern int func_0200c7d4();
 int func_0200c868(int param_1)
 
 {
-  int iVar1;
+  uint iVar1;
 
   while( true ) {
     iVar1 = func_0200c7d4(param_1);

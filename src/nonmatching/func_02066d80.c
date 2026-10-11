@@ -102,7 +102,7 @@ undefined4 func_02066d80(int param_1)
   iVar1 = ((unsigned int)0x02066e40);
   iVar6 = 0;
   do {
-    iVar7 = iVar6 * 0x17c + iVar1;
+    iVar7 = iVar6 + iVar1 * 0x17c;
     pbVar2 = (byte *)func_02065930(iVar6);
     if (pbVar2 != (byte *)0x0) {
       iVar4 = 0;

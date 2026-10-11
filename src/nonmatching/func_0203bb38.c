@@ -156,6 +156,6 @@ void func_0203bb38(void)
 {
   undefined4 in_r3;
 
-  func_020219cc((*(unsigned int *)0x0203bb48),7,0x20,(*(unsigned int *)0x0203bb4c),in_r3);
+  func_020219cc((*(unsigned short *)0x0203bb48),7,0x20,(*(unsigned int *)0x0203bb4c),in_r3);
   return;
 }

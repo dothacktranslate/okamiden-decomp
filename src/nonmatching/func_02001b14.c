@@ -102,8 +102,8 @@ void func_02001b14(int *param_1,undefined4 param_2,int *param_3,undefined4 *para
   int local_24;
   int local_20;
 
-  local_28 = *param_1 - *param_3;
   local_24 = param_1[1] - param_3[1];
+  local_28 = *param_1 - *param_3;
   local_20 = param_1[2] - param_3[2];
   func_02002c10(&local_28,&local_28);
   func_02002b30(param_2,&local_28,&local_34);

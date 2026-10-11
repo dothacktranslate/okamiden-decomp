@@ -97,7 +97,7 @@ void func_0203f87c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   *(undefined2 *)(param_1 + 0x10) = 0x12;
   *(undefined4 *)(param_1 + 0xd0) = 0;
   *(undefined4 *)(param_1 + 0xdc) = 0;
-  *(unsigned short *)(param_1 + 0x6c) = 0;
+  *(undefined4 *)(param_1 + 0x6c) = 0;
   *(undefined2 *)(param_1 + 0x112) = 0x78;
   *(undefined1 *)(param_1 + 0x121) = 1;
   *(undefined1 *)(param_1 + 0x120) = *(undefined1 *)(param_1 + 0x121);
@@ -105,8 +105,8 @@ void func_0203f87c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   *(undefined4 *)(param_1 + 0xd8) = ((unsigned int)0x0203f904);
   *(undefined4 *)(param_1 + 0x118) = 0x10000;
   *(undefined2 *)(param_1 + 0xd4) = 0x1000;
-  uVar1 = ((unsigned int)0x0203f908);
-  *(short *)(param_1 + 0xe0) = (short)((unsigned int)0x0203f908);
+  uVar1 = ((unsigned int)0x00007fff);
+  *(short *)(param_1 + 0xe0) = (short)((unsigned int)0x00007fff);
   *(undefined2 *)(param_1 + 0xd6) = 0;
   *(undefined4 *)(param_1 + 0x11c) = 0;
   func_020099f0(param_1 + 0xe2,0,0x20,uVar1,param_4);

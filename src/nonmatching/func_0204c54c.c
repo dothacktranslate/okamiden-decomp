@@ -91,7 +91,7 @@ extern int func_02054f40();
 void func_0204c54c(int param_1,int param_2)
 
 {
-  int iVar1;
+  uint iVar1;
 
   if (*(char *)(param_1 + 6) == '\0') {
     iVar1 = func_0204c150(param_1,param_2 + -8,0xffffffff);

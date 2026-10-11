@@ -100,8 +100,8 @@ void func_02063ba0(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
   *(undefined4 *)(iVar1 + 0x14) = param_3;
   *(undefined4 *)(iVar1 + 0x18) = param_4;
   func_02063ce8();
-  puVar3 = ((unsigned int)0x02063bf4);
   uVar2 = ((unsigned int)0x02063bf0);
+  puVar3 = ((unsigned int)0x02063bf4);
   if (param_5 == 0) {
     return;
   }

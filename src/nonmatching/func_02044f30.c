@@ -36,8 +36,8 @@ void func_02044f30(ushort *param_1,undefined4 param_2)
   uVar4 = 0;
   if (*param_1 != 0) {
     do {
-      puVar5 = (ushort *)func_0205694c(param_1,uVar4);
       uVar8 = 0;
+      puVar5 = (ushort *)func_0205694c(param_1,uVar4);
       iVar7 = *(int *)(puVar5 + 2);
       if (*puVar5 != 0) {
         do {

@@ -105,7 +105,7 @@ void func_020140b4(int param_1)
   func_0200653c(0x80000);
   func_02008b80(uVar2);
   (*(code *)**(undefined4 **)(((unsigned int)0x02014128) + 0x50c))
-            (*(undefined4 *)(((unsigned int)0x02014128) + 0x508),((unsigned int)0x0201412c),*(undefined4 *)(param_1 + 0x10),
+            (*(unsigned short *)(((unsigned int)0x02014128) + 0x508),((unsigned int)0x0201412c),*(undefined4 *)(param_1 + 0x10),
              0x200);
   func_02013d58(*(undefined4 *)(param_1 + 0xc));
   return;

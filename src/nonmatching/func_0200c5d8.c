@@ -91,8 +91,8 @@ extern int func_02008b80();
 bool func_0200c5d8(int param_1)
 
 {
-  undefined4 uVar1;
   uint uVar2;
+  undefined4 uVar1;
   undefined4 uVar3;
   bool bVar4;
 
