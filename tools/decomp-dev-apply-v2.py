@@ -1134,6 +1134,70 @@ def main():
     )
 
 
+    # FUZZY_EQUIVALENT_FUNCTION_COUNTER_V1
+    #
+    # Objdiff/decomp.dev represents matched_functions as an integer.
+    # Preserve the precise fractional equivalent in the human report,
+    # but use the nearest integer for the displayed headline counter.
+
+    displayed_matched_functions = int(
+        round(
+            fuzzy_function_equivalent
+        )
+    )
+
+    displayed_function_percent = pct(
+        displayed_matched_functions,
+        total_functions,
+    )
+
+    # The headline function counter now tracks fuzzy-equivalent
+    # progress just as matched_code tracks fuzzy-equivalent bytes.
+    #
+    # Strict exact-function progress remains separately available
+    # through exact_functions and complete-unit information.
+
+    top[
+        "matched_functions"
+    ] = displayed_matched_functions
+
+    top[
+        "matched_functions_percent"
+    ] = displayed_function_percent
+
+
+    # Keep the whole-ARM9 category headline coherent with the
+    # report-level headline. Per-function units retain their exact
+    # completion state.
+
+    for category in categories:
+
+        category_measures = category.get(
+            "measures",
+            {}
+        )
+
+        category_total_functions = int(
+            category_measures.get(
+                "total_functions",
+                0,
+            )
+        )
+
+        if (
+            category_total_functions
+            == total_functions
+        ):
+
+            category_measures[
+                "matched_functions"
+            ] = displayed_matched_functions
+
+            category_measures[
+                "matched_functions_percent"
+            ] = displayed_function_percent
+
+
     zero_functions = (
         total_functions
         - exact_functions
@@ -1158,6 +1222,11 @@ Displayed decomp.dev matched-equivalent bytes:
 Fuzzy-equivalent functions:
   {fuzzy_function_equivalent:.6f} / {total_functions}
   {pct(fuzzy_function_equivalent, total_functions):.6f}%
+
+Displayed decomp.dev matched-equivalent functions:
+  {displayed_matched_functions} / {total_functions}
+  {displayed_function_percent:.6f}%
+  rounded from {fuzzy_function_equivalent:.6f}
 
 Strict exact progress
 ---------------------
@@ -1184,9 +1253,13 @@ It increases when a non-exact function becomes closer to the target.
 Exact/complete figures remain strict and only increase after an
 authoritative exact match is validated.
 
-The decomp.dev report keeps complete_code and exact-function counts
-strict while matched_code and fuzzy_match_percent reflect Stable V2
-partial progress.
+The decomp.dev report uses matched_code and matched_functions for
+Stable V2 fuzzy-equivalent headline progress. Because the report schema
+stores matched_functions as an integer, that value is rounded to the
+nearest equivalent function.
+
+Strict exact progress remains separate: complete_code stays exact, and
+the exact-function total is listed above independently.
 """
 
 
@@ -1269,6 +1342,25 @@ partial progress.
     print(
         "FUZZY_FUNCTION_PERCENT="
         + f"{pct(fuzzy_function_equivalent, total_functions):.9f}%"
+    )
+
+    print(
+        "DISPLAYED_MATCHED_FUNCTIONS="
+        + str(
+            displayed_matched_functions
+        )
+    )
+
+    print(
+        "DISPLAYED_FUNCTION_PERCENT="
+        + f"{displayed_function_percent:.9f}%"
+    )
+
+    print(
+        "STRICT_EXACT_FUNCTIONS="
+        + str(
+            exact_functions
+        )
     )
 
     print(
