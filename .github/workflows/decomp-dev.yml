@@ -25,7 +25,7 @@ jobs:
 
       - name: Apply fuzzy progress
         run: |
-          python3 tools/decomp-dev-apply-fuzzy.py \
+          python3 tools/decomp-dev-apply-v2.py \
             --report build/decomp-dev/report.json \
             --manifest config/arm9/fuzzy_sources.tsv
 
