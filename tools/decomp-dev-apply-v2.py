@@ -6,77 +6,41 @@ import argparse
 import csv
 import hashlib
 import json
-import math
 
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
 
-DEFAULT_REPORT = (
-    ROOT
-    / "build/decomp-dev/report.json"
-)
-
-DEFAULT_V2 = (
-    ROOT
-    / "config/arm9/fuzzy_v2_preferences.tsv"
-)
-
-DEFAULT_EXACT = (
-    ROOT
-    / "config/arm9/mwcc_sources.tsv"
-)
-
-DEFAULT_HUMAN = (
-    ROOT
-    / "reports/decomp-progress-v2.txt"
-)
+DEFAULT_REPORT = ROOT / "build/decomp-dev/report.json"
+DEFAULT_V2 = ROOT / "config/arm9/fuzzy_v2_preferences.tsv"
+DEFAULT_EXACT = ROOT / "config/arm9/mwcc_sources.tsv"
+DEFAULT_HUMAN = ROOT / "reports/decomp-progress-v2.txt"
 
 
-def pct(
-    part: float,
-    total: float,
-) -> float:
-
-    if total == 0:
-        return 0.0
-
-    return (
-        float(part)
-        * 100.0
-        / float(total)
-    )
-
-
-def sha256(
-    path: Path,
-) -> str:
-
+def sha256(path: Path) -> str:
     h = hashlib.sha256()
 
     with path.open("rb") as f:
-
         while True:
+            chunk = f.read(1024 * 1024)
 
-            block = f.read(
-                1024 * 1024
-            )
-
-            if not block:
+            if not chunk:
                 break
 
-            h.update(
-                block
-            )
+            h.update(chunk)
 
     return h.hexdigest()
 
 
-def read_exact_names(
-    path: Path,
-) -> set[str]:
+def pct(part: float, total: float) -> float:
+    if total == 0:
+        return 0.0
 
+    return float(part) * 100.0 / float(total)
+
+
+def exact_names(path: Path) -> set[str]:
     result = set()
 
     for raw in path.read_text(
@@ -93,58 +57,40 @@ def read_exact_names(
             continue
 
         source = (
-            line.split(
-                "\t",
-                1,
-            )[0]
-            .split(
-                None,
-                1,
-            )[0]
+            line.split("\t", 1)[0]
+            .split(None, 1)[0]
             .strip()
         )
 
         if source:
-
             result.add(
-                Path(
-                    source
-                ).stem.lower()
+                Path(source).stem.lower()
             )
 
     return result
 
 
-def read_v2(
-    path: Path,
-) -> dict[str, dict]:
-
+def v2_rows(path: Path) -> dict[str, dict]:
     with path.open(
         newline="",
         encoding="utf-8",
         errors="replace",
     ) as f:
-
         reader = csv.DictReader(
             f,
             delimiter="\t",
         )
 
         fields = list(
-            reader.fieldnames
-            or []
+            reader.fieldnames or []
         )
 
-        rows = list(
-            reader
-        )
-
+        rows = list(reader)
 
     source_field = next(
         (
             field
-            for field
-            in fields
+            for field in fields
             if field.strip().lower()
             in {
                 "# source",
@@ -154,12 +100,10 @@ def read_v2(
         None,
     )
 
-
     score_field = next(
         (
             field
-            for field
-            in fields
+            for field in fields
             if field.strip().lower()
             in {
                 "v2_score",
@@ -169,26 +113,19 @@ def read_v2(
         None,
     )
 
-
     if source_field is None:
-
         raise RuntimeError(
-            "V2 manifest has no source column."
+            "No source column in V2 manifest."
         )
-
 
     if score_field is None:
-
         raise RuntimeError(
-            "V2 manifest has no score column."
+            "No V2 score column in manifest."
         )
-
 
     result = {}
 
-
     for row in rows:
-
         source_rel = str(
             row.get(
                 source_field,
@@ -196,24 +133,16 @@ def read_v2(
             )
         ).strip()
 
-
         if not source_rel:
             continue
 
-
-        source = (
-            ROOT
-            / source_rel
-        )
-
+        source = ROOT / source_rel
 
         if not source.is_file():
-
             raise RuntimeError(
-                "V2 source is missing: "
+                "Missing V2 source: "
                 + source_rel
             )
-
 
         expected_hash = str(
             row.get(
@@ -222,98 +151,61 @@ def read_v2(
             )
         ).strip()
 
-
         if expected_hash:
-
-            actual_hash = sha256(
-                source
-            )
-
+            actual_hash = sha256(source)
 
             if actual_hash != expected_hash:
-
                 raise RuntimeError(
                     "Stale V2 source hash: "
                     + source_rel
                 )
 
-
         score = float(
-            row[
-                score_field
-            ]
+            row[score_field]
         )
 
-
         if not (
-            0.0
-            <= score
-            <= 100.0
+            0.0 < score <= 100.0
         ):
-
             raise RuntimeError(
-                f"Invalid V2 score for "
+                f"Invalid V2 fuzzy score for "
                 f"{source_rel}: {score}"
             )
 
-
-        name = (
-            Path(
-                source_rel
-            ).stem.lower()
-        )
-
+        name = Path(
+            source_rel
+        ).stem.lower()
 
         if name in result:
-
             raise RuntimeError(
                 "Duplicate V2 function: "
                 + name
             )
 
-
-        result[
-            name
-        ] = {
-            "source":
-                source_rel,
-
-            "score":
-                score,
+        result[name] = {
+            "source": source_rel,
+            "raw_score": score,
         }
-
 
     return result
 
 
-def collect_functions(
-    report: dict,
-) -> list[dict]:
-
-    result = []
-
+def function_units(report: dict) -> dict[str, dict]:
+    result = {}
 
     for unit in report.get(
         "units",
-        []
+        [],
     ):
-
         functions = unit.get(
             "functions",
-            []
+            [],
         )
 
-
-        if len(
-            functions
-        ) != 1:
-
+        if len(functions) != 1:
             continue
 
-
-        function = functions[
-            0
-        ]
+        function = functions[0]
 
         name = str(
             function.get(
@@ -322,700 +214,98 @@ def collect_functions(
             )
         ).lower()
 
-
         if not name.startswith(
             "func_"
         ):
-
             continue
 
-
-        size = int(
-            function.get(
-                "size",
-                "0",
-            )
-        )
-
-
-        if size <= 0:
-
+        if name in result:
             raise RuntimeError(
-                "Invalid function size for "
+                "Duplicate function unit: "
                 + name
             )
 
-
-        result.append(
-            {
-                "name":
-                    name,
-
-                "size":
-                    size,
-
-                "unit":
-                    unit,
-
-                "function":
-                    function,
-            }
-        )
-
-
-    return result
-
-
-def allocate_matched_bytes(
-    entries: list[dict],
-) -> tuple[
-    dict[str, int],
-    float,
-]:
-
-    floors = {}
-    fractions = []
-
-    raw_total = 0.0
-
-
-    for entry in entries:
-
-        raw = (
-            entry[
-                "size"
-            ]
-            * entry[
-                "score"
-            ]
-            / 100.0
-        )
-
-        floor_value = math.floor(
-            raw
-        )
-
-        floors[
-            entry[
-                "name"
-            ]
-        ] = floor_value
-
-        raw_total += raw
-
-
-        fractions.append(
-            (
-                raw
-                - floor_value,
-
-                entry[
-                    "name"
-                ],
-            )
-        )
-
-
-    target_total = int(
-        round(
-            raw_total
-        )
-    )
-
-    current_total = sum(
-        floors.values()
-    )
-
-    remaining = (
-        target_total
-        - current_total
-    )
-
-
-    fractions.sort(
-        key=lambda item: (
-            item[0],
-            item[1],
-        ),
-        reverse=True,
-    )
-
-
-    for _fraction, name in fractions[
-        :remaining
-    ]:
-
-        floors[
-            name
-        ] += 1
-
-
-    if sum(
-        floors.values()
-    ) != target_total:
-
-        raise RuntimeError(
-            "Equivalent-byte allocation failed."
-        )
-
-
-    return (
-        floors,
-        raw_total,
-    )
-
-
-def set_unit_progress(
-    entry: dict,
-    exact_names: set[str],
-    byte_map: dict[str, int],
-) -> None:
-
-    name = entry[
-        "name"
-    ]
-
-    size = entry[
-        "size"
-    ]
-
-    score = entry[
-        "score"
-    ]
-
-    unit = entry[
-        "unit"
-    ]
-
-    function = entry[
-        "function"
-    ]
-
-    exact = (
-        name
-        in exact_names
-    )
-
-    matched_bytes = byte_map[
-        name
-    ]
-
-
-    function[
-        "fuzzy_match_percent"
-    ] = score
-
-
-    for section in unit.get(
-        "sections",
-        []
-    ):
-
-        section[
-            "fuzzy_match_percent"
-        ] = score
-
-
-    measures = unit.setdefault(
-        "measures",
-        {}
-    )
-
-
-    measures[
-        "fuzzy_match_percent"
-    ] = score
-
-    measures[
-        "total_code"
-    ] = str(
-        size
-    )
-
-    measures[
-        "matched_code"
-    ] = str(
-        matched_bytes
-    )
-
-    measures[
-        "matched_code_percent"
-    ] = pct(
-        matched_bytes,
-        size,
-    )
-
-
-    # matched_functions remains STRICT.
-    #
-    # Partial progress belongs in fuzzy_match_percent.
-    # Do not use a rounded fuzzy-equivalent count here.
-    measures[
-        "total_functions"
-    ] = 1
-
-    measures[
-        "matched_functions"
-    ] = (
-        1
-        if exact
-        else 0
-    )
-
-    measures[
-        "matched_functions_percent"
-    ] = (
-        100.0
-        if exact
-        else 0.0
-    )
-
-
-    # complete_code is also strict exact progress.
-    measures[
-        "complete_code"
-    ] = str(
-        size
-        if exact
-        else 0
-    )
-
-    measures[
-        "complete_code_percent"
-    ] = (
-        100.0
-        if exact
-        else 0.0
-    )
-
-
-    measures[
-        "total_data"
-    ] = "0"
-
-    measures[
-        "matched_data"
-    ] = "0"
-
-    measures[
-        "matched_data_percent"
-    ] = 0.0
-
-    measures[
-        "complete_data"
-    ] = "0"
-
-    measures[
-        "complete_data_percent"
-    ] = 0.0
-
-    measures[
-        "total_units"
-    ] = 1
-
-    measures[
-        "complete_units"
-    ] = (
-        1
-        if exact
-        else 0
-    )
-
-
-    metadata = unit.setdefault(
-        "metadata",
-        {}
-    )
-
-    metadata[
-        "complete"
-    ] = bool(
-        exact
-    )
-
-
-def aggregate(
-    units: list[dict],
-) -> dict:
-
-    total_code = 0
-    matched_code = 0
-    complete_code = 0
-
-    total_functions = 0
-    matched_functions = 0
-
-    complete_units = 0
-
-
-    fuzzy_numerator = 0.0
-
-
-    for unit in units:
-
-        measures = unit.get(
-            "measures",
-            {}
-        )
-
-
-        unit_total_code = int(
-            measures.get(
-                "total_code",
-                "0",
-            )
-        )
-
-        unit_matched_code = int(
-            measures.get(
-                "matched_code",
-                "0",
-            )
-        )
-
-        unit_complete_code = int(
-            measures.get(
-                "complete_code",
-                "0",
-            )
-        )
-
-
-        total_code += (
-            unit_total_code
-        )
-
-        matched_code += (
-            unit_matched_code
-        )
-
-        complete_code += (
-            unit_complete_code
-        )
-
-
-        total_functions += int(
-            measures.get(
-                "total_functions",
-                0,
-            )
-        )
-
-        matched_functions += int(
-            measures.get(
-                "matched_functions",
-                0,
-            )
-        )
-
-        complete_units += int(
-            measures.get(
-                "complete_units",
-                0,
-            )
-        )
-
-
-        functions = unit.get(
-            "functions",
-            []
-        )
-
-
-        if len(
-            functions
-        ) == 1:
-
-            function = functions[
-                0
-            ]
-
-            size = int(
+        result[name] = {
+            "unit": unit,
+            "function": function,
+            "size": int(
                 function.get(
                     "size",
                     "0",
                 )
-            )
-
-            score = float(
-                function.get(
-                    "fuzzy_match_percent",
-                    0.0,
-                )
-            )
-
-            fuzzy_numerator += (
-                size
-                * score
-                / 100.0
-            )
-
-
-    fuzzy_percent = pct(
-        fuzzy_numerator,
-        total_code,
-    )
-
-
-    return {
-        "fuzzy_match_percent":
-            fuzzy_percent,
-
-        "total_code":
-            str(
-                total_code
             ),
+        }
 
-        "matched_code":
-            str(
-                matched_code
-            ),
-
-        "matched_code_percent":
-            pct(
-                matched_code,
-                total_code,
-            ),
-
-        "total_data":
-            "0",
-
-        "matched_data":
-            "0",
-
-        "matched_data_percent":
-            0.0,
-
-        "total_functions":
-            total_functions,
-
-        "matched_functions":
-            matched_functions,
-
-        "matched_functions_percent":
-            pct(
-                matched_functions,
-                total_functions,
-            ),
-
-        "complete_code":
-            str(
-                complete_code
-            ),
-
-        "complete_code_percent":
-            pct(
-                complete_code,
-                total_code,
-            ),
-
-        "complete_data":
-            "0",
-
-        "complete_data_percent":
-            0.0,
-
-        "total_units":
-            len(
-                units
-            ),
-
-        "complete_units":
-            complete_units,
-    }
+    return result
 
 
-def validate_consistency(
-    report: dict,
-) -> None:
+def weighted_fuzzy_percent(
+    units: list[dict],
+) -> float:
+    equivalent = 0.0
+    total = 0
 
-    units = report.get(
-        "units",
-        []
-    )
+    for unit in units:
+        measures = unit.get(
+            "measures",
+            {},
+        )
 
-    top = report[
-        "measures"
-    ]
-
-
-    unit_total_code = sum(
-        int(
-            unit.get(
-                "measures",
-                {},
-            ).get(
+        size = int(
+            measures.get(
                 "total_code",
                 "0",
             )
         )
-        for unit
-        in units
-    )
 
-    unit_matched_code = sum(
-        int(
-            unit.get(
-                "measures",
-                {},
-            ).get(
-                "matched_code",
-                "0",
+        score = float(
+            measures.get(
+                "fuzzy_match_percent",
+                0.0,
             )
         )
-        for unit
-        in units
-    )
 
-    unit_complete_code = sum(
-        int(
-            unit.get(
-                "measures",
-                {},
-            ).get(
-                "complete_code",
-                "0",
-            )
+        total += size
+        equivalent += (
+            size
+            * score
+            / 100.0
         )
-        for unit
-        in units
+
+    return pct(
+        equivalent,
+        total,
     )
-
-    unit_total_functions = sum(
-        int(
-            unit.get(
-                "measures",
-                {},
-            ).get(
-                "total_functions",
-                0,
-            )
-        )
-        for unit
-        in units
-    )
-
-    unit_matched_functions = sum(
-        int(
-            unit.get(
-                "measures",
-                {},
-            ).get(
-                "matched_functions",
-                0,
-            )
-        )
-        for unit
-        in units
-    )
-
-
-    checks = {
-        "total_code":
-            (
-                int(
-                    top[
-                        "total_code"
-                    ]
-                ),
-                unit_total_code,
-            ),
-
-        "matched_code":
-            (
-                int(
-                    top[
-                        "matched_code"
-                    ]
-                ),
-                unit_matched_code,
-            ),
-
-        "complete_code":
-            (
-                int(
-                    top[
-                        "complete_code"
-                    ]
-                ),
-                unit_complete_code,
-            ),
-
-        "total_functions":
-            (
-                int(
-                    top[
-                        "total_functions"
-                    ]
-                ),
-                unit_total_functions,
-            ),
-
-        "matched_functions":
-            (
-                int(
-                    top[
-                        "matched_functions"
-                    ]
-                ),
-                unit_matched_functions,
-            ),
-    }
-
-
-    for field, (
-        aggregate_value,
-        unit_value,
-    ) in checks.items():
-
-        if (
-            aggregate_value
-            != unit_value
-        ):
-
-            raise RuntimeError(
-                f"Inconsistent {field}: "
-                f"top={aggregate_value}, "
-                f"units={unit_value}"
-            )
 
 
 def main() -> None:
-
     parser = argparse.ArgumentParser()
-
 
     parser.add_argument(
         "--report",
         type=Path,
-        default=
-            DEFAULT_REPORT,
+        default=DEFAULT_REPORT,
     )
 
     parser.add_argument(
         "--v2",
         type=Path,
-        default=
-            DEFAULT_V2,
+        default=DEFAULT_V2,
     )
 
     parser.add_argument(
         "--exact",
         type=Path,
-        default=
-            DEFAULT_EXACT,
+        default=DEFAULT_EXACT,
     )
 
     parser.add_argument(
         "--human-out",
         type=Path,
-        default=
-            DEFAULT_HUMAN,
+        default=DEFAULT_HUMAN,
     )
 
-
     args = parser.parse_args()
-
 
     report = json.loads(
         args.report.read_text(
@@ -1023,154 +313,169 @@ def main() -> None:
         )
     )
 
-
-    if report.get(
-        "version"
-    ) != 2:
-
+    if report.get("version") != 2:
         raise RuntimeError(
-            "Expected report version 2."
+            "Expected objdiff report version 2."
         )
 
+    if "measures" not in report:
+        raise RuntimeError(
+            "Report has no top-level measures."
+        )
 
-    exact_names = read_exact_names(
+    if "units" not in report:
+        raise RuntimeError(
+            "Report has no units."
+        )
+
+    if "categories" not in report:
+        raise RuntimeError(
+            "Report has no categories."
+        )
+
+    exact = exact_names(
         args.exact
     )
 
-    v2 = read_v2(
+    v2 = v2_rows(
         args.v2
     )
 
-    entries = collect_functions(
+    units = function_units(
         report
     )
 
-
-    entry_names = {
-        entry[
-            "name"
-        ]
-        for entry
-        in entries
-    }
-
+    unit_names = set(units)
 
     missing_exact = sorted(
-        exact_names
-        - entry_names
+        exact - unit_names
     )
 
-
     if missing_exact:
-
         raise RuntimeError(
             "Exact functions missing from report: "
             + ", ".join(
-                missing_exact[
-                    :20
-                ]
+                missing_exact[:20]
             )
         )
 
-
     missing_v2 = sorted(
-        set(
-            v2
-        )
-        - entry_names
+        set(v2) - unit_names
     )
 
-
     if missing_v2:
-
         raise RuntimeError(
             "V2 functions missing from report: "
             + ", ".join(
-                missing_v2[
-                    :20
-                ]
+                missing_v2[:20]
             )
         )
 
-
-    overlap = (
-        exact_names
-        & set(
-            v2
-        )
-    )
-
+    overlap = exact & set(v2)
 
     if overlap:
-
         raise RuntimeError(
-            "Functions appear in both exact and V2 manifests: "
+            "Exact/V2 manifest overlap: "
             + ", ".join(
-                sorted(
-                    overlap
-                )[
-                    :20
-                ]
+                sorted(overlap)[:20]
             )
         )
 
+    # Preserve authoritative exact fields before touching
+    # fuzzy_match_percent.
+    exact_snapshot = {
+        key: report["measures"].get(key)
+        for key in (
+            "total_code",
+            "matched_code",
+            "matched_code_percent",
+            "complete_code",
+            "complete_code_percent",
+            "total_functions",
+            "matched_functions",
+            "matched_functions_percent",
+            "total_units",
+            "complete_units",
+        )
+    }
 
-    for entry in entries:
+    raw_equivalent_bytes = 0.0
+    raw_equivalent_functions = 0.0
 
-        name = entry[
-            "name"
-        ]
+    exported_100_clamps = 0
 
+    for name, entry in units.items():
+        unit = entry["unit"]
+        function = entry["function"]
+        size = entry["size"]
 
-        if name in exact_names:
-
-            entry[
-                "score"
-            ] = 100.0
+        if name in exact:
+            raw_score = 100.0
+            export_score = 100.0
 
         elif name in v2:
+            raw_score = float(
+                v2[name]["raw_score"]
+            )
 
-            entry[
-                "score"
-            ] = v2[
-                name
-            ][
-                "score"
-            ]
+            # Proven legacy fuzzy reporting required:
+            #
+            #     0 < fuzzy score < 100
+            #
+            # A V2 score of 100 without authoritative exact
+            # promotion therefore remains fuzzy for decomp.dev.
+            if raw_score >= 100.0:
+                export_score = 99.999999
+                exported_100_clamps += 1
+            else:
+                export_score = raw_score
 
         else:
+            raw_score = 0.0
+            export_score = 0.0
 
-            entry[
-                "score"
-            ] = 0.0
-
-
-    (
-        byte_map,
-        raw_equivalent_bytes,
-    ) = allocate_matched_bytes(
-        entries
-    )
-
-
-    for entry in entries:
-
-        set_unit_progress(
-            entry,
-            exact_names,
-            byte_map,
+        raw_equivalent_bytes += (
+            size
+            * raw_score
+            / 100.0
         )
 
+        raw_equivalent_functions += (
+            raw_score
+            / 100.0
+        )
 
-    # --------------------------------------------------------
-    # Recalculate category aggregates.
-    # --------------------------------------------------------
+        # This is the ONLY progress value changed on a
+        # function/unit.
+        function[
+            "fuzzy_match_percent"
+        ] = export_score
 
+        unit.setdefault(
+            "measures",
+            {},
+        )[
+            "fuzzy_match_percent"
+        ] = export_score
+
+        # Some objdiff reports include sections.
+        # Updating this standard field is safe and schema-valid.
+        for section in unit.get(
+            "sections",
+            [],
+        ):
+            section[
+                "fuzzy_match_percent"
+            ] = export_score
+
+    # Recalculate fuzzy_match_percent for categories only.
+    #
+    # DO NOT rewrite matched_code, complete_code,
+    # matched_functions, or their percentages.
     for category in report.get(
         "categories",
-        []
+        [],
     ):
-
         category_id = str(
             category.get(
                 "id",
@@ -1178,177 +483,139 @@ def main() -> None:
             )
         )
 
-
         category_units = []
-
 
         for unit in report.get(
             "units",
-            []
+            [],
         ):
-
             progress_categories = (
                 unit.get(
                     "metadata",
-                    {}
+                    {},
                 ).get(
                     "progress_categories",
                     [],
                 )
             )
 
-
-            if (
-                category_id
-                in progress_categories
-            ):
-
-                category_units.append(
-                    unit
-                )
-
+            if category_id in progress_categories:
+                category_units.append(unit)
 
         if category_units:
-
-            category[
-                "measures"
-            ] = aggregate(
+            category.setdefault(
+                "measures",
+                {},
+            )[
+                "fuzzy_match_percent"
+            ] = weighted_fuzzy_percent(
                 category_units
             )
 
-
-    # --------------------------------------------------------
-    # Recalculate report aggregate.
-    # --------------------------------------------------------
-
+    # Top-level fuzzy progress is byte weighted across ALL
+    # report units, including explicit gaps at 0%.
     report[
         "measures"
-    ] = aggregate(
+    ][
+        "fuzzy_match_percent"
+    ] = weighted_fuzzy_percent(
         report.get(
             "units",
-            []
+            [],
         )
     )
 
+    # Verify none of the strict fields moved.
+    for key, before in exact_snapshot.items():
+        after = report[
+            "measures"
+        ].get(key)
 
-    validate_consistency(
-        report
-    )
-
-
-    top = report[
-        "measures"
-    ]
+        if after != before:
+            raise RuntimeError(
+                f"Strict report field changed: "
+                f"{key}: {before!r} -> {after!r}"
+            )
 
     total_code = int(
-        top[
+        report[
+            "measures"
+        ][
             "total_code"
         ]
     )
 
     total_functions = int(
-        top[
+        report[
+            "measures"
+        ][
             "total_functions"
         ]
     )
 
+    exact_code = int(
+        report[
+            "measures"
+        ][
+            "matched_code"
+        ]
+    )
+
     exact_functions = int(
-        top[
+        report[
+            "measures"
+        ][
             "matched_functions"
         ]
     )
 
-    exact_bytes = int(
-        top[
-            "complete_code"
-        ]
-    )
-
-
-    fuzzy_equivalent_functions = (
-        exact_functions
-        + sum(
-            row[
-                "score"
-            ]
-            / 100.0
-            for row
-            in v2.values()
-        )
-    )
-
-
-    zero_functions = (
-        total_functions
-        - exact_functions
-        - len(
-            v2
-        )
-    )
-
-
-    precise_code_percent = pct(
+    stable_v2_percent = pct(
         raw_equivalent_bytes,
         total_code,
     )
 
-    fuzzy_function_percent = pct(
-        fuzzy_equivalent_functions,
+    equivalent_function_percent = pct(
+        raw_equivalent_functions,
         total_functions,
     )
-
 
     human = f"""OKAMIDEN DECOMPILATION PROGRESS
 ================================
 
-Primary progress
-----------------
-Stable V2 fuzzy-equivalent code:
-  {raw_equivalent_bytes:.6f} / {total_code} bytes
-  {precise_code_percent:.6f}%
+Primary Stable V2 progress
+--------------------------
+Fuzzy-equivalent code:
+  {raw_equivalent_bytes:.6f} / {total_code}
+  {stable_v2_percent:.6f}%
 
-Displayed matched-equivalent code:
-  {top['matched_code']} / {total_code}
-  {float(top['matched_code_percent']):.6f}%
-
-Fuzzy-equivalent function progress
-----------------------------------
-Project V2 equivalent functions:
-  {fuzzy_equivalent_functions:.6f} / {total_functions}
-  {fuzzy_function_percent:.6f}%
-
-This is a project progress metric and is intentionally separate from
-objdiff/decomp.dev's integer matched_functions field.
+Fuzzy-equivalent functions:
+  {raw_equivalent_functions:.6f} / {total_functions}
+  {equivalent_function_percent:.6f}%
 
 Strict exact progress
 ---------------------
 Exact code:
-  {exact_bytes} / {total_code}
-  {pct(exact_bytes, total_code):.6f}%
+  {exact_code} / {total_code}
+  {pct(exact_code, total_code):.6f}%
 
 Exact functions:
   {exact_functions} / {total_functions}
   {pct(exact_functions, total_functions):.6f}%
 
-Population
-----------
-Exact functions       : {exact_functions}
-V2-scored functions   : {len(v2)}
-Zero/unscored         : {zero_functions}
-Total functions       : {total_functions}
+decomp.dev reporting
+--------------------
+fuzzy_match_percent carries partial V2 progress.
 
-Reporting policy
-----------------
-Partial source improvements contribute to fuzzy_match_percent and
-matched_code, so the primary code progress moves whenever V2 improves.
+matched_code, complete_code, matched_functions, and their
+corresponding percentages remain strict exact values.
 
-complete_code and matched_functions remain strict exact measures.
+Non-exact V2 scores of 100 are exported as 99.999999 only in
+the decomp.dev report so they remain fuzzy until authoritative
+exact validation promotes them.
 
-The fractional fuzzy-equivalent function count above is maintained as
-a separate project metric because objdiff's matched_functions field is
-an integer exact-function count.
+V2 fuzzy rows          : {len(v2)}
+V2 100% rows clamped   : {exported_100_clamps}
 """
-
 
     args.human_out.parent.mkdir(
         parents=True,
@@ -1359,7 +626,6 @@ an integer exact-function count.
         human,
         encoding="utf-8",
     )
-
 
     args.report.write_text(
         json.dumps(
@@ -1373,81 +639,47 @@ an integer exact-function count.
         encoding="utf-8",
     )
 
-
     print(
-        "V2_FUNCTIONS="
-        + str(
-            len(
-                v2
-            )
-        )
+        "EXACT_MATCHED_CODE="
+        + str(exact_code)
     )
 
     print(
-        "ZERO_FUNCTIONS="
-        + str(
-            zero_functions
-        )
+        "EXACT_MATCHED_FUNCTIONS="
+        + str(exact_functions)
     )
 
     print(
-        "EXACT_FUNCTIONS="
-        + str(
-            exact_functions
-        )
-    )
-
-    print(
-        "EXACT_BYTES="
-        + str(
-            exact_bytes
-        )
-    )
-
-    print(
-        "FUZZY_EQUIVALENT_BYTES="
+        "STABLE_V2_EQUIVALENT_BYTES="
         + f"{raw_equivalent_bytes:.6f}"
     )
 
     print(
-        "DISPLAYED_MATCHED_CODE="
-        + str(
-            top[
-                "matched_code"
-            ]
-        )
+        "STABLE_V2_PERCENT="
+        + f"{stable_v2_percent:.9f}%"
     )
 
     print(
-        "FUZZY_MATCH_PERCENT="
-        + f"{precise_code_percent:.9f}%"
+        "STABLE_V2_EQUIVALENT_FUNCTIONS="
+        + f"{raw_equivalent_functions:.6f}"
     )
 
     print(
-        "FUZZY_EQUIVALENT_FUNCTIONS="
-        + f"{fuzzy_equivalent_functions:.6f}"
+        "EXPORTED_100_CLAMPS="
+        + str(exported_100_clamps)
     )
 
     print(
-        "FUZZY_FUNCTION_PERCENT="
-        + f"{fuzzy_function_percent:.9f}%"
+        "DECOMPDEV_FUZZY_PERCENT="
+        + f"{report['measures']['fuzzy_match_percent']:.9f}%"
     )
 
     print(
-        "STRICT_MATCHED_FUNCTIONS="
-        + str(
-            top[
-                "matched_functions"
-            ]
-        )
+        "STRICT_FIELDS_UNCHANGED=PASS"
     )
 
     print(
-        "REPORT_INTERNAL_CONSISTENCY=PASS"
-    )
-
-    print(
-        "V2_PROGRESS_APPLY=PASS"
+        "V2_REPORT_APPLY=PASS"
     )
 
 

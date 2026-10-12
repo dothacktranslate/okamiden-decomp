@@ -23,24 +23,29 @@ jobs:
           python3 tools/decomp-dev-report.py \
             --out build/decomp-dev/report.json
 
-      - name: Apply fuzzy progress
+      - name: Apply Stable V2 fuzzy progress
         run: |
           python3 tools/decomp-dev-apply-v2.py \
             --report build/decomp-dev/report.json \
-            --manifest config/arm9/fuzzy_sources.tsv
+            --human-out reports/decomp-progress-v2.txt
 
       - name: Validate report
         run: |
           python3 - <<'PY'
           import json
+          import math
+
           from pathlib import Path
+
 
           path = Path(
               "build/decomp-dev/report.json"
           )
 
           report = json.loads(
-              path.read_text()
+              path.read_text(
+                  encoding="utf-8",
+              )
           )
 
           assert report["version"] == 2
@@ -50,24 +55,174 @@ jobs:
 
           m = report["measures"]
 
-          print(
-              "Code:",
-              m["matched_code"],
-              "/",
-              m["total_code"],
-              "(",
-              m["matched_code_percent"],
-              "%)",
+          total_code = int(
+              m["total_code"]
+          )
+
+          matched_code = int(
+              m["matched_code"]
+          )
+
+          complete_code = int(
+              m["complete_code"]
+          )
+
+          total_functions = int(
+              m["total_functions"]
+          )
+
+          matched_functions = int(
+              m["matched_functions"]
+          )
+
+          fuzzy = float(
+              m["fuzzy_match_percent"]
+          )
+
+          # Exact fields remain exact.
+          assert matched_code == complete_code
+
+          assert math.isclose(
+              float(
+                  m["matched_code_percent"]
+              ),
+              matched_code
+              * 100.0
+              / total_code,
+              abs_tol=1e-9,
+          )
+
+          assert math.isclose(
+              float(
+                  m["matched_functions_percent"]
+              ),
+              matched_functions
+              * 100.0
+              / total_functions,
+              abs_tol=1e-9,
+          )
+
+          # Fuzzy percentage is independent of exact counts.
+          assert 0.0 <= fuzzy <= 100.0
+
+          # Per-unit strict counts must sum to the report.
+          unit_matched_code = sum(
+              int(
+                  unit.get(
+                      "measures",
+                      {},
+                  ).get(
+                      "matched_code",
+                      "0",
+                  )
+              )
+              for unit in report["units"]
+          )
+
+          unit_complete_code = sum(
+              int(
+                  unit.get(
+                      "measures",
+                      {},
+                  ).get(
+                      "complete_code",
+                      "0",
+                  )
+              )
+              for unit in report["units"]
+          )
+
+          unit_matched_functions = sum(
+              int(
+                  unit.get(
+                      "measures",
+                      {},
+                  ).get(
+                      "matched_functions",
+                      0,
+                  )
+              )
+              for unit in report["units"]
+          )
+
+          assert (
+              unit_matched_code
+              == matched_code
+          )
+
+          assert (
+              unit_complete_code
+              == complete_code
+          )
+
+          assert (
+              unit_matched_functions
+              == matched_functions
+          )
+
+          # Recompute fuzzy percentage from the unit treemap.
+          equivalent = 0.0
+
+          for unit in report["units"]:
+              um = unit.get(
+                  "measures",
+                  {},
+              )
+
+              size = int(
+                  um.get(
+                      "total_code",
+                      "0",
+                  )
+              )
+
+              score = float(
+                  um.get(
+                      "fuzzy_match_percent",
+                      0.0,
+                  )
+              )
+
+              equivalent += (
+                  size
+                  * score
+                  / 100.0
+              )
+
+          recomputed = (
+              equivalent
+              * 100.0
+              / total_code
+          )
+
+          assert math.isclose(
+              fuzzy,
+              recomputed,
+              abs_tol=1e-8,
           )
 
           print(
-              "Functions:",
-              m["matched_functions"],
+              "Code fuzzy:",
+              fuzzy,
+              "%",
+          )
+
+          print(
+              "Exact code:",
+              matched_code,
               "/",
-              m["total_functions"],
-              "(",
-              m["matched_functions_percent"],
-              "%)",
+              total_code,
+          )
+
+          print(
+              "Exact functions:",
+              matched_functions,
+              "/",
+              total_functions,
+          )
+
+          print(
+              "SCHEMA_STRICT_REPORT=YES"
           )
           PY
 
