@@ -34,7 +34,24 @@ DEFAULT_HUMAN = (
 )
 
 
-def sha256(path: Path) -> str:
+def pct(
+    part: float,
+    total: float,
+) -> float:
+
+    if total == 0:
+        return 0.0
+
+    return (
+        float(part)
+        * 100.0
+        / float(total)
+    )
+
+
+def sha256(
+    path: Path,
+) -> str:
 
     h = hashlib.sha256()
 
@@ -56,27 +73,27 @@ def sha256(path: Path) -> str:
     return h.hexdigest()
 
 
-def parse_exact_manifest(
+def read_exact_names(
     path: Path,
-):
+) -> set[str]:
 
-    names = set()
+    result = set()
 
     for raw in path.read_text(
         encoding="utf-8",
         errors="replace",
     ).splitlines():
 
-        raw = raw.strip()
+        line = raw.strip()
 
         if (
-            not raw
-            or raw.startswith("#")
+            not line
+            or line.startswith("#")
         ):
             continue
 
         source = (
-            raw.split(
+            line.split(
                 "\t",
                 1,
             )[0]
@@ -89,18 +106,18 @@ def parse_exact_manifest(
 
         if source:
 
-            names.add(
+            result.add(
                 Path(
                     source
                 ).stem.lower()
             )
 
-    return names
+    return result
 
 
-def parse_v2_manifest(
+def read_v2(
     path: Path,
-):
+) -> dict[str, dict]:
 
     with path.open(
         newline="",
@@ -113,13 +130,13 @@ def parse_v2_manifest(
             delimiter="\t",
         )
 
-        rows = list(
-            reader
-        )
-
         fields = list(
             reader.fieldnames
             or []
+        )
+
+        rows = list(
+            reader
         )
 
 
@@ -136,6 +153,7 @@ def parse_v2_manifest(
         ),
         None,
     )
+
 
     score_field = next(
         (
@@ -155,14 +173,14 @@ def parse_v2_manifest(
     if source_field is None:
 
         raise RuntimeError(
-            "Unable to locate V2 source column."
+            "V2 manifest has no source column."
         )
 
 
     if score_field is None:
 
         raise RuntimeError(
-            "Unable to locate V2 score column."
+            "V2 manifest has no score column."
         )
 
 
@@ -197,7 +215,7 @@ def parse_v2_manifest(
             )
 
 
-        recorded_hash = str(
+        expected_hash = str(
             row.get(
                 "source_sha256",
                 "",
@@ -205,17 +223,17 @@ def parse_v2_manifest(
         ).strip()
 
 
-        if recorded_hash:
+        if expected_hash:
 
             actual_hash = sha256(
                 source
             )
 
 
-            if actual_hash != recorded_hash:
+            if actual_hash != expected_hash:
 
                 raise RuntimeError(
-                    "Stale V2 score/source hash: "
+                    "Stale V2 source hash: "
                     + source_rel
                 )
 
@@ -268,44 +286,16 @@ def parse_v2_manifest(
     return result
 
 
-def int_string(
-    value,
-):
+def collect_functions(
+    report: dict,
+) -> list[dict]:
 
-    return str(
-        int(
-            value
-        )
-    )
+    result = []
 
 
-def pct(
-    part,
-    total,
-):
-
-    if total == 0:
-        return 0.0
-
-    return (
-        float(part)
-        * 100.0
-        / float(total)
-    )
-
-
-def function_entries(
-    report,
-):
-
-    entries = []
-
-
-    for unit_index, unit in enumerate(
-        report.get(
-            "units",
-            []
-        )
+    for unit in report.get(
+        "units",
+        []
     ):
 
         functions = unit.get(
@@ -314,17 +304,19 @@ def function_entries(
         )
 
 
-        if len(functions) != 1:
+        if len(
+            functions
+        ) != 1:
 
             continue
 
 
-        fn = functions[
+        function = functions[
             0
         ]
 
         name = str(
-            fn.get(
+            function.get(
                 "name",
                 "",
             )
@@ -339,14 +331,22 @@ def function_entries(
 
 
         size = int(
-            fn.get(
+            function.get(
                 "size",
                 "0",
             )
         )
 
 
-        entries.append(
+        if size <= 0:
+
+            raise RuntimeError(
+                "Invalid function size for "
+                + name
+            )
+
+
+        result.append(
             {
                 "name":
                     name,
@@ -358,20 +358,20 @@ def function_entries(
                     unit,
 
                 "function":
-                    fn,
-
-                "unit_index":
-                    unit_index,
+                    function,
             }
         )
 
 
-    return entries
+    return result
 
 
-def allocate_integer_matched_bytes(
-    entries,
-):
+def allocate_matched_bytes(
+    entries: list[dict],
+) -> tuple[
+    dict[str, int],
+    float,
+]:
 
     floors = {}
     fractions = []
@@ -403,6 +403,7 @@ def allocate_integer_matched_bytes(
 
         raw_total += raw
 
+
         fractions.append(
             (
                 raw
@@ -415,32 +416,33 @@ def allocate_integer_matched_bytes(
         )
 
 
-    target = int(
+    target_total = int(
         round(
             raw_total
         )
     )
 
-    current = sum(
+    current_total = sum(
         floors.values()
     )
 
-    need = (
-        target
-        - current
+    remaining = (
+        target_total
+        - current_total
     )
 
 
     fractions.sort(
-        reverse=True
+        key=lambda item: (
+            item[0],
+            item[1],
+        ),
+        reverse=True,
     )
 
 
     for _fraction, name in fractions[
-        :max(
-            0,
-            need,
-        )
+        :remaining
     ]:
 
         floors[
@@ -448,18 +450,26 @@ def allocate_integer_matched_bytes(
         ] += 1
 
 
+    if sum(
+        floors.values()
+    ) != target_total:
+
+        raise RuntimeError(
+            "Equivalent-byte allocation failed."
+        )
+
+
     return (
         floors,
         raw_total,
-        target,
     )
 
 
-def apply_function_unit(
-    entry,
-    exact_names,
-    matched_bytes,
-):
+def set_unit_progress(
+    entry: dict,
+    exact_names: set[str],
+    byte_map: dict[str, int],
+) -> None:
 
     name = entry[
         "name"
@@ -477,7 +487,7 @@ def apply_function_unit(
         "unit"
     ]
 
-    fn = entry[
+    function = entry[
         "function"
     ]
 
@@ -486,12 +496,12 @@ def apply_function_unit(
         in exact_names
     )
 
-    assigned = matched_bytes[
+    matched_bytes = byte_map[
         name
     ]
 
 
-    fn[
+    function[
         "fuzzy_match_percent"
     ] = score
 
@@ -511,29 +521,35 @@ def apply_function_unit(
         {}
     )
 
+
     measures[
         "fuzzy_match_percent"
     ] = score
 
     measures[
         "total_code"
-    ] = int_string(
+    ] = str(
         size
     )
 
     measures[
         "matched_code"
-    ] = int_string(
-        assigned
+    ] = str(
+        matched_bytes
     )
 
     measures[
         "matched_code_percent"
     ] = pct(
-        assigned,
+        matched_bytes,
         size,
     )
 
+
+    # matched_functions remains STRICT.
+    #
+    # Partial progress belongs in fuzzy_match_percent.
+    # Do not use a rounded fuzzy-equivalent count here.
     measures[
         "total_functions"
     ] = 1
@@ -554,9 +570,11 @@ def apply_function_unit(
         else 0.0
     )
 
+
+    # complete_code is also strict exact progress.
     measures[
         "complete_code"
-    ] = int_string(
+    ] = str(
         size
         if exact
         else 0
@@ -570,13 +588,10 @@ def apply_function_unit(
         else 0.0
     )
 
-    measures[
-        "complete_data"
-    ] = "0"
 
     measures[
-        "complete_data_percent"
-    ] = 0.0
+        "total_data"
+    ] = "0"
 
     measures[
         "matched_data"
@@ -587,8 +602,12 @@ def apply_function_unit(
     ] = 0.0
 
     measures[
-        "total_data"
+        "complete_data"
     ] = "0"
+
+    measures[
+        "complete_data_percent"
+    ] = 0.0
 
     measures[
         "total_units"
@@ -615,9 +634,9 @@ def apply_function_unit(
     )
 
 
-def aggregate_units(
-    units,
-):
+def aggregate(
+    units: list[dict],
+) -> dict:
 
     total_code = 0
     matched_code = 0
@@ -626,15 +645,10 @@ def aggregate_units(
     total_functions = 0
     matched_functions = 0
 
-    total_units = len(
-        units
-    )
-
     complete_units = 0
 
 
-    weighted_score_sum = 0.0
-    weighted_score_size = 0
+    fuzzy_numerator = 0.0
 
 
     for unit in units:
@@ -644,21 +658,22 @@ def aggregate_units(
             {}
         )
 
-        unit_total = int(
+
+        unit_total_code = int(
             measures.get(
                 "total_code",
                 "0",
             )
         )
 
-        unit_matched = int(
+        unit_matched_code = int(
             measures.get(
                 "matched_code",
                 "0",
             )
         )
 
-        unit_complete = int(
+        unit_complete_code = int(
             measures.get(
                 "complete_code",
                 "0",
@@ -666,9 +681,17 @@ def aggregate_units(
         )
 
 
-        total_code += unit_total
-        matched_code += unit_matched
-        complete_code += unit_complete
+        total_code += (
+            unit_total_code
+        )
+
+        matched_code += (
+            unit_matched_code
+        )
+
+        complete_code += (
+            unit_complete_code
+        )
 
 
         total_functions += int(
@@ -703,44 +726,35 @@ def aggregate_units(
             functions
         ) == 1:
 
-            fn = functions[
+            function = functions[
                 0
             ]
 
             size = int(
-                fn.get(
+                function.get(
                     "size",
                     "0",
                 )
             )
 
             score = float(
-                fn.get(
+                function.get(
                     "fuzzy_match_percent",
                     0.0,
                 )
             )
 
-            weighted_score_sum += (
+            fuzzy_numerator += (
                 size
                 * score
-            )
-
-            weighted_score_size += (
-                size
+                / 100.0
             )
 
 
-    if total_code:
-
-        fuzzy_percent = pct(
-            matched_code,
-            total_code,
-        )
-
-    else:
-
-        fuzzy_percent = 0.0
+    fuzzy_percent = pct(
+        fuzzy_numerator,
+        total_code,
+    )
 
 
     return {
@@ -748,17 +762,20 @@ def aggregate_units(
             fuzzy_percent,
 
         "total_code":
-            int_string(
+            str(
                 total_code
             ),
 
         "matched_code":
-            int_string(
+            str(
                 matched_code
             ),
 
         "matched_code_percent":
-            fuzzy_percent,
+            pct(
+                matched_code,
+                total_code,
+            ),
 
         "total_data":
             "0",
@@ -782,7 +799,7 @@ def aggregate_units(
             ),
 
         "complete_code":
-            int_string(
+            str(
                 complete_code
             ),
 
@@ -799,16 +816,174 @@ def aggregate_units(
             0.0,
 
         "total_units":
-            total_units,
+            len(
+                units
+            ),
 
         "complete_units":
             complete_units,
     }
 
 
-def main():
+def validate_consistency(
+    report: dict,
+) -> None:
+
+    units = report.get(
+        "units",
+        []
+    )
+
+    top = report[
+        "measures"
+    ]
+
+
+    unit_total_code = sum(
+        int(
+            unit.get(
+                "measures",
+                {},
+            ).get(
+                "total_code",
+                "0",
+            )
+        )
+        for unit
+        in units
+    )
+
+    unit_matched_code = sum(
+        int(
+            unit.get(
+                "measures",
+                {},
+            ).get(
+                "matched_code",
+                "0",
+            )
+        )
+        for unit
+        in units
+    )
+
+    unit_complete_code = sum(
+        int(
+            unit.get(
+                "measures",
+                {},
+            ).get(
+                "complete_code",
+                "0",
+            )
+        )
+        for unit
+        in units
+    )
+
+    unit_total_functions = sum(
+        int(
+            unit.get(
+                "measures",
+                {},
+            ).get(
+                "total_functions",
+                0,
+            )
+        )
+        for unit
+        in units
+    )
+
+    unit_matched_functions = sum(
+        int(
+            unit.get(
+                "measures",
+                {},
+            ).get(
+                "matched_functions",
+                0,
+            )
+        )
+        for unit
+        in units
+    )
+
+
+    checks = {
+        "total_code":
+            (
+                int(
+                    top[
+                        "total_code"
+                    ]
+                ),
+                unit_total_code,
+            ),
+
+        "matched_code":
+            (
+                int(
+                    top[
+                        "matched_code"
+                    ]
+                ),
+                unit_matched_code,
+            ),
+
+        "complete_code":
+            (
+                int(
+                    top[
+                        "complete_code"
+                    ]
+                ),
+                unit_complete_code,
+            ),
+
+        "total_functions":
+            (
+                int(
+                    top[
+                        "total_functions"
+                    ]
+                ),
+                unit_total_functions,
+            ),
+
+        "matched_functions":
+            (
+                int(
+                    top[
+                        "matched_functions"
+                    ]
+                ),
+                unit_matched_functions,
+            ),
+    }
+
+
+    for field, (
+        aggregate_value,
+        unit_value,
+    ) in checks.items():
+
+        if (
+            aggregate_value
+            != unit_value
+        ):
+
+            raise RuntimeError(
+                f"Inconsistent {field}: "
+                f"top={aggregate_value}, "
+                f"units={unit_value}"
+            )
+
+
+def main() -> None:
 
     parser = argparse.ArgumentParser()
+
 
     parser.add_argument(
         "--report",
@@ -838,6 +1013,7 @@ def main():
             DEFAULT_HUMAN,
     )
 
+
     args = parser.parse_args()
 
 
@@ -853,19 +1029,19 @@ def main():
     ) != 2:
 
         raise RuntimeError(
-            "Expected objdiff report version 2."
+            "Expected report version 2."
         )
 
 
-    exact_names = parse_exact_manifest(
+    exact_names = read_exact_names(
         args.exact
     )
 
-    fuzzy = parse_v2_manifest(
+    v2 = read_v2(
         args.v2
     )
 
-    entries = function_entries(
+    entries = collect_functions(
         report
     )
 
@@ -899,7 +1075,7 @@ def main():
 
     missing_v2 = sorted(
         set(
-            fuzzy
+            v2
         )
         - entry_names
     )
@@ -917,6 +1093,28 @@ def main():
         )
 
 
+    overlap = (
+        exact_names
+        & set(
+            v2
+        )
+    )
+
+
+    if overlap:
+
+        raise RuntimeError(
+            "Functions appear in both exact and V2 manifests: "
+            + ", ".join(
+                sorted(
+                    overlap
+                )[
+                    :20
+                ]
+            )
+        )
+
+
     for entry in entries:
 
         name = entry[
@@ -926,11 +1124,15 @@ def main():
 
         if name in exact_names:
 
-            score = 100.0
+            entry[
+                "score"
+            ] = 100.0
 
-        elif name in fuzzy:
+        elif name in v2:
 
-            score = fuzzy[
+            entry[
+                "score"
+            ] = v2[
                 name
             ][
                 "score"
@@ -938,43 +1140,36 @@ def main():
 
         else:
 
-            score = 0.0
-
-
-        entry[
-            "score"
-        ] = score
+            entry[
+                "score"
+            ] = 0.0
 
 
     (
-        matched_byte_map,
+        byte_map,
         raw_equivalent_bytes,
-        displayed_equivalent_bytes,
-    ) = allocate_integer_matched_bytes(
+    ) = allocate_matched_bytes(
         entries
     )
 
 
     for entry in entries:
 
-        apply_function_unit(
+        set_unit_progress(
             entry,
             exact_names,
-            matched_byte_map,
+            byte_map,
         )
 
 
     # --------------------------------------------------------
-    # Recalculate category measures from their actual units.
+    # Recalculate category aggregates.
     # --------------------------------------------------------
 
-    categories = report.get(
+    for category in report.get(
         "categories",
         []
-    )
-
-
-    for category in categories:
+    ):
 
         category_id = str(
             category.get(
@@ -992,18 +1187,21 @@ def main():
             []
         ):
 
-            metadata = unit.get(
-                "metadata",
-                {}
+            progress_categories = (
+                unit.get(
+                    "metadata",
+                    {}
+                ).get(
+                    "progress_categories",
+                    [],
+                )
             )
 
-            progress_categories = metadata.get(
-                "progress_categories",
-                []
-            )
 
-
-            if category_id in progress_categories:
+            if (
+                category_id
+                in progress_categories
+            ):
 
                 category_units.append(
                     unit
@@ -1014,24 +1212,33 @@ def main():
 
             category[
                 "measures"
-            ] = aggregate_units(
+            ] = aggregate(
                 category_units
             )
 
 
     # --------------------------------------------------------
-    # Top-level report measures.
+    # Recalculate report aggregate.
     # --------------------------------------------------------
 
-    all_units = report.get(
-        "units",
-        []
+    report[
+        "measures"
+    ] = aggregate(
+        report.get(
+            "units",
+            []
+        )
     )
 
-    top = aggregate_units(
-        all_units
+
+    validate_consistency(
+        report
     )
 
+
+    top = report[
+        "measures"
+    ]
 
     total_code = int(
         top[
@@ -1039,194 +1246,79 @@ def main():
         ]
     )
 
-
-    # Preserve exact V2 percentage rather than the very slightly
-    # rounded integer-byte percentage used for matched_code.
-    exact_v2_percent = pct(
-        raw_equivalent_bytes,
-        total_code,
-    )
-
-
-    top[
-        "fuzzy_match_percent"
-    ] = exact_v2_percent
-
-    top[
-        "matched_code_percent"
-    ] = exact_v2_percent
-
-    report[
-        "measures"
-    ] = top
-
-
-    # If there is one ARM9 category covering the entire report,
-    # preserve the exact Stable V2 percentage there too.
-    for category in categories:
-
-        measures = category.get(
-            "measures",
-            {}
-        )
-
-
-        if int(
-            measures.get(
-                "total_code",
-                "0",
-            )
-        ) == total_code:
-
-            measures[
-                "fuzzy_match_percent"
-            ] = exact_v2_percent
-
-            measures[
-                "matched_code_percent"
-            ] = exact_v2_percent
-
-
-    # --------------------------------------------------------
-    # Human-readable progress summary.
-    # --------------------------------------------------------
-
     total_functions = int(
-        top.get(
-            "total_functions",
-            0,
-        )
-    )
-
-    exact_functions = len(
-        exact_names
-        & entry_names
-    )
-
-    exact_bytes = sum(
-        entry[
-            "size"
+        top[
+            "total_functions"
         ]
+    )
 
-        for entry
-        in entries
-
-        if entry[
-            "name"
+    exact_functions = int(
+        top[
+            "matched_functions"
         ]
-        in exact_names
+    )
+
+    exact_bytes = int(
+        top[
+            "complete_code"
+        ]
     )
 
 
-    fuzzy_function_equivalent = (
+    fuzzy_equivalent_functions = (
         exact_functions
         + sum(
-            fuzzy[
-                name
-            ][
+            row[
                 "score"
             ]
             / 100.0
-
-            for name
-            in fuzzy
+            for row
+            in v2.values()
         )
     )
-
-
-    # FUZZY_EQUIVALENT_FUNCTION_COUNTER_V1
-    #
-    # Objdiff/decomp.dev represents matched_functions as an integer.
-    # Preserve the precise fractional equivalent in the human report,
-    # but use the nearest integer for the displayed headline counter.
-
-    displayed_matched_functions = int(
-        round(
-            fuzzy_function_equivalent
-        )
-    )
-
-    displayed_function_percent = pct(
-        displayed_matched_functions,
-        total_functions,
-    )
-
-    # The headline function counter now tracks fuzzy-equivalent
-    # progress just as matched_code tracks fuzzy-equivalent bytes.
-    #
-    # Strict exact-function progress remains separately available
-    # through exact_functions and complete-unit information.
-
-    top[
-        "matched_functions"
-    ] = displayed_matched_functions
-
-    top[
-        "matched_functions_percent"
-    ] = displayed_function_percent
-
-
-    # Keep the whole-ARM9 category headline coherent with the
-    # report-level headline. Per-function units retain their exact
-    # completion state.
-
-    for category in categories:
-
-        category_measures = category.get(
-            "measures",
-            {}
-        )
-
-        category_total_functions = int(
-            category_measures.get(
-                "total_functions",
-                0,
-            )
-        )
-
-        if (
-            category_total_functions
-            == total_functions
-        ):
-
-            category_measures[
-                "matched_functions"
-            ] = displayed_matched_functions
-
-            category_measures[
-                "matched_functions_percent"
-            ] = displayed_function_percent
 
 
     zero_functions = (
         total_functions
         - exact_functions
         - len(
-            fuzzy
+            v2
         )
+    )
+
+
+    precise_code_percent = pct(
+        raw_equivalent_bytes,
+        total_code,
+    )
+
+    fuzzy_function_percent = pct(
+        fuzzy_equivalent_functions,
+        total_functions,
     )
 
 
     human = f"""OKAMIDEN DECOMPILATION PROGRESS
 ================================
 
-Primary progress metric
------------------------
+Primary progress
+----------------
 Stable V2 fuzzy-equivalent code:
   {raw_equivalent_bytes:.6f} / {total_code} bytes
-  {exact_v2_percent:.6f}%
+  {precise_code_percent:.6f}%
 
-Displayed decomp.dev matched-equivalent bytes:
-  {displayed_equivalent_bytes} / {total_code}
+Displayed matched-equivalent code:
+  {top['matched_code']} / {total_code}
+  {float(top['matched_code_percent']):.6f}%
 
-Fuzzy-equivalent functions:
-  {fuzzy_function_equivalent:.6f} / {total_functions}
-  {pct(fuzzy_function_equivalent, total_functions):.6f}%
+Fuzzy-equivalent function progress
+----------------------------------
+Project V2 equivalent functions:
+  {fuzzy_equivalent_functions:.6f} / {total_functions}
+  {fuzzy_function_percent:.6f}%
 
-Displayed decomp.dev matched-equivalent functions:
-  {displayed_matched_functions} / {total_functions}
-  {displayed_function_percent:.6f}%
-  rounded from {fuzzy_function_equivalent:.6f}
+This is a project progress metric and is intentionally separate from
+objdiff/decomp.dev's integer matched_functions field.
 
 Strict exact progress
 ---------------------
@@ -1241,25 +1333,20 @@ Exact functions:
 Population
 ----------
 Exact functions       : {exact_functions}
-V2-scored functions   : {len(fuzzy)}
+V2-scored functions   : {len(v2)}
 Zero/unscored         : {zero_functions}
 Total functions       : {total_functions}
 
 Reporting policy
 ----------------
-Stable V2 fuzzy-equivalent progress is the primary progress figure.
-It increases when a non-exact function becomes closer to the target.
+Partial source improvements contribute to fuzzy_match_percent and
+matched_code, so the primary code progress moves whenever V2 improves.
 
-Exact/complete figures remain strict and only increase after an
-authoritative exact match is validated.
+complete_code and matched_functions remain strict exact measures.
 
-The decomp.dev report uses matched_code and matched_functions for
-Stable V2 fuzzy-equivalent headline progress. Because the report schema
-stores matched_functions as an integer, that value is rounded to the
-nearest equivalent function.
-
-Strict exact progress remains separate: complete_code stays exact, and
-the exact-function total is listed above independently.
+The fractional fuzzy-equivalent function count above is maintained as
+a separate project metric because objdiff's matched_functions field is
+an integer exact-function count.
 """
 
 
@@ -1291,7 +1378,7 @@ the exact-function total is listed above independently.
         "V2_FUNCTIONS="
         + str(
             len(
-                fuzzy
+                v2
             )
         )
     )
@@ -1325,42 +1412,38 @@ the exact-function total is listed above independently.
     print(
         "DISPLAYED_MATCHED_CODE="
         + str(
-            displayed_equivalent_bytes
+            top[
+                "matched_code"
+            ]
         )
     )
 
     print(
         "FUZZY_MATCH_PERCENT="
-        + f"{exact_v2_percent:.9f}%"
+        + f"{precise_code_percent:.9f}%"
     )
 
     print(
         "FUZZY_EQUIVALENT_FUNCTIONS="
-        + f"{fuzzy_function_equivalent:.6f}"
+        + f"{fuzzy_equivalent_functions:.6f}"
     )
 
     print(
         "FUZZY_FUNCTION_PERCENT="
-        + f"{pct(fuzzy_function_equivalent, total_functions):.9f}%"
+        + f"{fuzzy_function_percent:.9f}%"
     )
 
     print(
-        "DISPLAYED_MATCHED_FUNCTIONS="
+        "STRICT_MATCHED_FUNCTIONS="
         + str(
-            displayed_matched_functions
+            top[
+                "matched_functions"
+            ]
         )
     )
 
     print(
-        "DISPLAYED_FUNCTION_PERCENT="
-        + f"{displayed_function_percent:.9f}%"
-    )
-
-    print(
-        "STRICT_EXACT_FUNCTIONS="
-        + str(
-            exact_functions
-        )
+        "REPORT_INTERNAL_CONSISTENCY=PASS"
     )
 
     print(

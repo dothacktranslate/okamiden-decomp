@@ -1,23 +1,24 @@
 OKAMIDEN DECOMPILATION PROGRESS
 ================================
 
-Primary progress metric
------------------------
+Primary progress
+----------------
 Stable V2 fuzzy-equivalent code:
   211173.803498 / 431680 bytes
   48.919061%
 
-Displayed decomp.dev matched-equivalent bytes:
+Displayed matched-equivalent code:
   211174 / 431680
+  48.919107%
 
-Fuzzy-equivalent functions:
+Fuzzy-equivalent function progress
+----------------------------------
+Project V2 equivalent functions:
   2013.562457 / 3223
   62.474789%
 
-Displayed decomp.dev matched-equivalent functions:
-  2014 / 3223
-  62.488365%
-  rounded from 2013.562457
+This is a project progress metric and is intentionally separate from
+objdiff/decomp.dev's integer matched_functions field.
 
 Strict exact progress
 ---------------------
@@ -38,16 +39,11 @@ Total functions       : 3223
 
 Reporting policy
 ----------------
-Stable V2 fuzzy-equivalent progress is the primary progress figure.
-It increases when a non-exact function becomes closer to the target.
+Partial source improvements contribute to fuzzy_match_percent and
+matched_code, so the primary code progress moves whenever V2 improves.
 
-Exact/complete figures remain strict and only increase after an
-authoritative exact match is validated.
+complete_code and matched_functions remain strict exact measures.
 
-The decomp.dev report uses matched_code and matched_functions for
-Stable V2 fuzzy-equivalent headline progress. Because the report schema
-stores matched_functions as an integer, that value is rounded to the
-nearest equivalent function.
-
-Strict exact progress remains separate: complete_code stays exact, and
-the exact-function total is listed above independently.
+The fractional fuzzy-equivalent function count above is maintained as
+a separate project metric because objdiff's matched_functions field is
+an integer exact-function count.
