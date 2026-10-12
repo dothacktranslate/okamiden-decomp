@@ -104,18 +104,18 @@ void func_0200b110(int param_1)
     iVar3 = param_1 + iVar6 * 8;
     iVar2 = *(int *)(iVar3 + 0x18);
     if (iVar2 != 0) {
-      iVar5 = param_1 + 0x18 + iVar6 * 8;
-      iVar1 = *(int *)(iVar2 + 0x18);
-      if (iVar5 == *(int *)(iVar2 + 0x18)) {
+      iVar1 = (param_1 + 0x18) + iVar6 * 8;
+      iVar5 = *(int *)(iVar2 + 0x18);
+      if (iVar1 == *(int *)(iVar2 + 0x18)) {
         uVar4 = 0x3c;
         *(undefined4 *)(iVar2 + 0x18) = *(undefined4 *)(iVar3 + 0x1c);
       }
       else {
         do {
-          iVar2 = iVar1;
+          iVar2 = iVar5;
           if (iVar2 == 0) break;
-          iVar1 = *(int *)(iVar2 + 4);
-        } while (iVar5 != *(int *)(iVar2 + 4));
+          iVar5 = *(int *)(iVar2 + 4);
+        } while (iVar1 != *(int *)(iVar2 + 4));
         uVar4 = 8;
         *(undefined4 *)(iVar2 + 4) = *(undefined4 *)(iVar6 + param_1 * 8 + 0x1c);
       }

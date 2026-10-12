@@ -97,9 +97,9 @@ int func_02032a30(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
 
   (*(unsigned short *)0x04000280) = 2;
   iVar4 = 0;
-  for (iVar3 = 0; (iVar4 < *(int *)(param_1 + 0xe0) && ((param_6 == 0 || (iVar3 < param_7))));
+  for (iVar3 = 0; (iVar4 < *(short *)(0xe0 + param_1) && ((param_6 == 0 || (iVar3 < param_7))));
       iVar3 = iVar3 + iVar2) {
-    piVar1 = *(int **)(*(int *)(param_1 + 0xe4) + iVar4 * 4);
+    piVar1 = *(int **)(*(unsigned char *)(param_1 + 0xe4) + iVar4 * 4);
     iVar2 = (**(code **)(*piVar1 + 0x18))
                       (piVar1,param_2,param_3,param_4,param_5,param_6 + iVar3 * 0x28,param_7 - iVar3
                        ,param_8,param_9);

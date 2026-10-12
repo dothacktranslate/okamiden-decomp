@@ -99,7 +99,7 @@ int func_020511f4(undefined4 param_1,int param_2)
 
 {
   uint iVar1;
-  char *pcVar2;
+  unsigned char *pcVar2;
   undefined4 uVar3;
   int iVar4;
   uint uVar5;
@@ -120,7 +120,7 @@ int func_020511f4(undefined4 param_1,int param_2)
   if ((int)uVar5 < 0) {
     uVar5 = 0;
   }
-  else if (local_138 < uVar5) {
+  else if (uVar5 > local_138) {
     uVar5 = local_138;
   }
   if ((param_2 == 0) ||

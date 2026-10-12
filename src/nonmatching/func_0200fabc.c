@@ -97,7 +97,7 @@ void func_0200fabc(void)
   uint uVar5;
 
   iVar2 = ((unsigned int)0x0200fb4c);
-  puVar1 = ((unsigned int)0x0200fb48);
+  puVar1 = ((unsigned int)0x040001a4);
   uVar5 = 0;
   do {
     iVar3 = uVar5 * 0xc;

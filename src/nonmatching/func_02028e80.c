@@ -109,35 +109,35 @@ undefined4 func_02028e80(undefined4 param_1)
   undefined4 uVar8;
   undefined4 uVar9;
 
-  uVar9 = *(undefined4 *)((*(unsigned int *)0x02028fa4) + 0x20);
+  uVar9 = *(unsigned char *)((*(unsigned int *)0x02028fa4) + 0x20);
   uVar5 = func_020465d8(param_1,2);
   iVar6 = func_020465d8(param_1,1);
-  if (iVar6 != ((unsigned int)0x02028fa8)) {
-    if (iVar6 != ((unsigned int)0x02028fa8) + 1) {
+  if (iVar6 != ((unsigned int)0x00001401)) {
+    if (iVar6 != ((unsigned int)0x00001401) + 1) {
       return 1;
     }
-    uVar2 = func_020465d8(param_1,3);
-    uVar3 = func_020465d8(param_1,4);
+    uVar3 = func_020465d8(param_1,3);
+    uVar2 = func_020465d8(param_1,4);
     uVar4 = func_020465d8(param_1,5);
-    func_0202d2f4(uVar9,uVar2,uVar3,uVar4,0);
+    func_0202d2f4(uVar9,uVar3,uVar2,uVar4,0);
     uVar5 = 0xffffffff;
     goto switchD_02028ef0_default;
   }
-  uVar2 = func_020465d8(param_1,3);
+  uVar3 = func_020465d8(param_1,3);
   uVar1 = func_020465d8(param_1,4);
   uVar7 = func_020465d8(param_1,5);
   uVar8 = 0;
   if (1 < uVar1) {
-    uVar8 = func_0202d2e8(uVar9,uVar2);
+    uVar8 = func_0202d2e8(uVar9,uVar3);
   }
   switch(uVar1) {
   case 0:
-    func_0202cd5c(uVar9,uVar2,0,uVar7 & 0xffff);
+    func_0202cd5c(uVar9,uVar3,0,uVar7 & 0xffff);
     goto LAB_02028f56;
   case 1:
-    iVar6 = func_0202d2d8(uVar9,uVar2,0);
+    iVar6 = func_0202d2d8(uVar9,uVar3,0);
     if (iVar6 != 0) {
-      func_0202d100(uVar9,uVar2,0,0);
+      func_0202d100(uVar9,uVar3,0,0);
       uVar5 = 0xffffffff;
     }
     goto switchD_02028ef0_default;
@@ -153,7 +153,7 @@ undefined4 func_02028e80(undefined4 param_1)
   case 6:
     break;
   case 7:
-    func_0202d288(uVar9,uVar2,0);
+    func_0202d288(uVar9,uVar3,0);
 LAB_02028f56:
     uVar5 = 0xffffffff;
   default:

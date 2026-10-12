@@ -107,7 +107,7 @@ void func_02052624(undefined4 param_1,int param_2,int param_3,undefined4 param_4
   sVar1 = *(sbyte *)(param_2 + 7);
   iVar6 = *(int *)(param_2 + 0x10);
   uVar8 = param_4;
-  if (iVar5 < param_3) {
+  if (param_3 > iVar5) {
     func_020524e4();
   }
   func_0205254c(param_1,param_2,param_4);

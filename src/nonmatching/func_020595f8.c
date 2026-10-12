@@ -89,7 +89,7 @@ extern int func_02058c90();
 
 /* WARNING: Restarted to delay deadcode elimination for space: stack */
 
-void func_020595f8(int *param_1,undefined4 param_2,uint param_3,uint param_4,int param_5,int param_6)
+void func_020595f8(short *param_1,undefined4 param_2,uint param_3,uint param_4,int param_5,int param_6)
 
 {
   int iVar1;
@@ -112,8 +112,8 @@ void func_020595f8(int *param_1,undefined4 param_2,uint param_3,uint param_4,int
   uVar8 = param_3 & 0xfffffff8;
   uVar9 = param_4 + param_6 + 7 & 0xfffffff8;
   local_30 = param_4 & 0xfffffff8;
-  iVar1 = (int)(uVar8 + ((uint)((int)uVar8 >> 2) >> 0x1d)) >> 3;
   iVar13 = (int)(local_30 + ((uint)((int)local_30 >> 2) >> 0x1d)) >> 3;
+  iVar1 = (int)(uVar8 + ((uint)((int)uVar8 >> 2) >> 0x1d)) >> 3;
   iVar10 = param_1[1];
   iVar11 = param_1[2];
   iVar5 = *param_1;

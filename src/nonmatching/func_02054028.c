@@ -105,7 +105,7 @@ void func_02054028(undefined4 param_1,undefined4 param_2,undefined4 param_3,char
   }
   else {
     local_14 = param_4;
-    if (cVar1 == (*(unsigned int *)0x020540a0)) {
+    if (cVar1 == (*(signed char *)0x020540a0)) {
       local_14 = ((unsigned int)0x020540a4);
     }
   }

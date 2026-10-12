@@ -91,9 +91,9 @@ void func_0200290c(int param_1)
 {
   undefined2 *puVar1;
 
-  puVar1 = ((unsigned int)0x0200293c);
+  puVar1 = ((unsigned int)0x040002b0);
   if (0 < param_1) {
-    (*(unsigned int *)0x0200293c) = 1;
+    (*(unsigned short *)0x040002b0) = 1;
     *(undefined4 *)(puVar1 + 4) = 0;
     *(int *)(puVar1 + 6) = param_1;
     func_020029c8();

@@ -153,7 +153,7 @@ undefined4 * func_0203d5e4(int param_1,int param_2,undefined4 param_3,uint param
         if (uVar4 != 0) {
           do {
             iVar9 = uVar7 * 2;
-            uVar1 = func_0203dc34(*(undefined2 *)(iVar8 + iVar9),((unsigned int)0x0203d770),((unsigned int)0x0203d774),0);
+            uVar1 = func_0203dc34(*(undefined2 *)(iVar8 + iVar9),((unsigned int)0xbd23d70a),((unsigned int)0x3d23d70a),0);
             uVar7 = uVar7 + 1;
             *(undefined2 *)(puVar3[8] + iVar9) = uVar1;
           } while (uVar7 < uVar4 << 2);

@@ -88,11 +88,11 @@ ulonglong func_0201ee84(uint param_1,uint param_2)
 
 {
   uint uVar1;
-  uint uVar2;
+  int uVar2;
 
   if ((param_2 & 0x80000000) == 0) {
-    uVar1 = ((unsigned int)0x0201ef0c) - (param_2 >> 0x14);
-    if ((int)(param_2 >> 0x14) <= ((unsigned int)0x0201ef0c)) {
+    uVar1 = ((unsigned int)0x0000043e) - (param_2 >> 0x14);
+    if ((int)(param_2 >> 0x14) <= ((unsigned int)0x0000043e)) {
       if (0x3f < (int)uVar1) {
         return 0;
       }
@@ -101,7 +101,7 @@ ulonglong func_0201ee84(uint param_1,uint param_2)
         return (ulonglong)(uVar2 >> (uVar1 - 0x20 & 0xff));
       }
       return CONCAT44(uVar2 >> (uVar1 & 0xff),
-                      (param_1 << 0xb) >> (uVar1 & 0xff) | uVar2 << (0x20 - uVar1 & 0xff));
+                      (param_1 << 0xb) >> (uVar1 & 0xff) | uVar2 << (0x20 - 0xff & uVar1));
     }
   }
   else if (param_2 < 0xfff00000 || param_2 == 0xfff00000 && param_1 == 0) {

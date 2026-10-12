@@ -124,14 +124,14 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
 
   func_0205ebc0(param_2,1,0x30);
   func_0205ee90(param_2,(*(uint *)(param_1 + 0x1c) & 0x10) != 0);
-  iVar4 = 0;
+  iVar6 = 0;
   func_0205eed0(param_2,0);
   func_0205ee50(param_2,0);
   uVar3 = (uint)*(byte *)(param_2 + 0x17);
   local_44 = 0;
   local_48 = 0;
   if (param_3 != 0) {
-    iVar4 = param_3 * 0xc;
+    iVar6 = param_3 * 0xc;
   }
   if (param_4 != 0) {
     local_44 = uVar3 * 0x58;
@@ -139,8 +139,8 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
   if (param_5 != 0) {
     local_48 = (uint)*(byte *)(param_2 + 0x18) * 0x38;
   }
-  iVar4 = uVar3 * 0x48 + (0x108 + iVar4);
-  iVar5 = iVar4 + local_44;
+  iVar6 = uVar3 * 0x48 + (0x108 + iVar6);
+  iVar5 = iVar6 + local_44;
   puVar1 = (undefined4 *)
            (**(code **)(**(int **)(param_1 + 4) + 8))
                      (*(int **)(param_1 + 4),local_48 + iVar5,4,param_6);
@@ -158,36 +158,36 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
   func_0205adb8(puVar1 + 4,param_2);
   puVar1[0x2a] = puVar1 + 0x42;
   if (param_3 != 0) {
-    puVar1[0x2b] = puVar1 + uVar3 * 0x12 + 0x42;
+    puVar1[0x2b] = puVar1 + (uVar3 * 0x12 + 0x42);
     puVar1[0x2c] = param_3;
   }
   if (param_4 != 0) {
-    puVar1[0x32] = iVar4 + (int)puVar1;
+    puVar1[0x32] = iVar6 + (int)puVar1;
     puVar1[0x11] = puVar1[0x32];
   }
   if (param_5 != 0) {
     puVar1[0x33] = iVar5 + (int)puVar1;
     puVar1[0x12] = puVar1[0x33];
   }
-  iVar4 = 0;
+  iVar6 = 0;
   if (*(char *)(param_2 + 0x17) != '\0') {
     do {
-      iVar6 = iVar4 * 0x48;
-      *(undefined4 *)(puVar1[0x2a] + iVar6) = 0x32;
-      iVar5 = puVar1[0x2a] + iVar6;
+      iVar4 = iVar6 * 0x48;
+      *(undefined4 *)(puVar1[0x2a] + iVar4) = 0x32;
+      iVar5 = puVar1[0x2a] + iVar4;
       *(undefined4 *)(iVar5 + 8) = 0;
       *(undefined4 *)(iVar5 + 0xc) = 0;
       *(undefined4 *)(iVar5 + 0x10) = 0;
-      iVar5 = puVar1[0x2a] + iVar6;
+      iVar5 = puVar1[0x2a] + iVar4;
       *(undefined4 *)(iVar5 + 0x14) = 0x1000;
       *(undefined4 *)(iVar5 + 0x18) = 0x1000;
       *(undefined4 *)(iVar5 + 0x1c) = 0x1000;
-      func_02000c60(puVar1[0x2a] + iVar6 + 0x20);
-      iVar4 = iVar4 + 1;
-      *(short *)(puVar1[0x2a] + iVar6 + 6) = (short)((unsigned int)0x0203d1a4);
-      *(undefined2 *)(puVar1[0x2a] + iVar6 + 4) = 0x1f;
-      *(undefined4 *)(puVar1[0x2a] + iVar6 + 0x44) = 0;
-    } while (iVar4 < (int)(uint)*(byte *)(param_2 + 0x17));
+      func_02000c60(puVar1[0x2a] + iVar4 + 0x20);
+      iVar6 = iVar6 + 1;
+      *(short *)(puVar1[0x2a] + iVar4 + 6) = (short)((unsigned int)0x00007fff);
+      *(undefined2 *)(puVar1[0x2a] + iVar4 + 4) = 0x1f;
+      *(undefined4 *)(puVar1[0x2a] + iVar4 + 0x44) = 0;
+    } while (iVar6 < (int)(uint)*(byte *)(param_2 + 0x17));
   }
   if (param_3 == 0) {
     puVar1[0x2b] = 0;
@@ -195,28 +195,28 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
   }
   else {
     puVar1[0x2c] = param_3;
-    iVar4 = 0;
+    iVar6 = 0;
     if (0 < param_3) {
       do {
-        iVar5 = iVar4 * 0xc;
+        iVar5 = iVar6 * 0xc;
         *(undefined4 *)(puVar1[0x2b] + iVar5) = 0;
-        iVar4 = iVar4 + 1;
+        iVar6 = iVar6 + 1;
         *(undefined4 *)(puVar1[0x2b] + iVar5 + 4) = 0;
         *(undefined4 *)(puVar1[0x2b] + iVar5 + 8) = 0;
-      } while (iVar4 < param_3);
+      } while (iVar6 < param_3);
     }
   }
   iVar7 = *(int *)(param_2 + 0x38);
   iVar8 = iVar7 >> 0x1f;
   uVar9 = func_0201e9b4((int)*(short *)(param_2 + 0x2c),(int)*(short *)(param_2 + 0x2c) >> 0x1f,iVar7
                        ,iVar8);
-  iVar4 = (int)((ulonglong)uVar9 >> 0x20) + ((unsigned int)0x0203d1a8);
+  iVar6 = (int)((ulonglong)uVar9 >> 0x20) + ((unsigned int)0x0203d1a8);
   uVar10 = func_0201e9b4((int)*(short *)(param_2 + 0x2e),(int)*(short *)(param_2 + 0x2e) >> 0x1f,
                         iVar7,iVar8);
   iVar5 = (int)((ulonglong)uVar10 >> 0x20) + ((unsigned int)0x0203d1a8);
   uVar11 = func_0201e9b4((int)*(short *)(param_2 + 0x30),(int)*(short *)(param_2 + 0x30) >> 0x1f,
                         iVar7,iVar8);
-  iVar6 = (int)((ulonglong)uVar11 >> 0x20) + ((unsigned int)0x0203d1a8);
+  iVar4 = (int)((ulonglong)uVar11 >> 0x20) + ((unsigned int)0x0203d1a8);
   uVar12 = func_0201e9b4((int)*(short *)(param_2 + 0x32),(int)*(short *)(param_2 + 0x32) >> 0x1f,
                         iVar7,iVar8);
   local_20 = (uint)uVar12 + 0x800 >> 0xc |
@@ -233,11 +233,11 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
              ((int)((ulonglong)uVar12 >> 0x20) + ((unsigned int)0x0203d1a8) + (uint)(0xfffff7ff < (uint)uVar12)) *
              0x100000;
   puVar1[0x2d] = (int)(((uint)uVar9 + 0x800 >> 0xc |
-                       (iVar4 + (uint)(0xfffff7ff < (uint)uVar9)) * 0x100000) + local_20) >> 1;
+                       (iVar6 + (uint)(0xfffff7ff < (uint)uVar9)) * 0x100000) + local_20) >> 1;
   puVar1[0x2e] = (int)(((uint)uVar10 + 0x800 >> 0xc |
                        (iVar5 + (uint)(0xfffff7ff < (uint)uVar10)) * 0x100000) + local_1c) >> 1;
   puVar1[0x2f] = (int)(((uint)uVar11 + 0x800 >> 0xc |
-                       (iVar6 + (uint)(0xfffff7ff < (uint)uVar11)) * 0x100000) + local_18) >> 1;
+                       (iVar4 + (uint)(0xfffff7ff < (uint)uVar11)) * 0x100000) + local_18) >> 1;
   uVar2 = func_02002ea8(puVar1 + 0x2d,&local_20);
   puVar1[0x30] = uVar2;
   local_20 = puVar1[0x2d];
@@ -247,12 +247,12 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
   if ((local_44 != 0) || (local_48 != 0)) {
     func_0203c9b0(puVar1);
   }
-  iVar4 = 0;
+  iVar6 = 0;
   do {
-    iVar5 = iVar4 * 2;
-    iVar4 = iVar4 + 1;
-    *(undefined2 *)((int)puVar1 + iVar5 + 0xe2) = 0xffff;
-  } while (iVar4 < 0x10);
+    iVar5 = iVar6 * 2;
+    iVar6 = iVar6 + 1;
+    *(undefined2 *)((int)(puVar1 + iVar5) + 0xe2) = 0xffff;
+  } while (iVar6 < 0x10);
   func_0205b070(puVar1 + 4,((unsigned int)0x0203d1ac));
   puVar1[0xf] = puVar1;
   func_02035834(auStack_34,param_1 + 0xc,param_1 + 0x10,puVar1 + 1);

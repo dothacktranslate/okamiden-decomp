@@ -94,15 +94,15 @@ uint func_02013ef8(undefined4 param_1,uint param_2,uint param_3,uint param_4)
 {
   undefined4 *puVar1;
   uint *puVar2;
-  uint uVar3;
   uint uVar4;
+  uint uVar3;
   uint uVar5;
   uint uVar6;
   uint uVar7;
   uint uVar8;
   uint local_30;
 
-  puVar2 = ((unsigned int)0x0201400c);
+  puVar2 = ((unsigned int)0x040001a4);
   puVar1 = ((unsigned int)0x04100010);
   local_30 = (*(unsigned int *)0x02014004);
   for (uVar8 = param_4; uVar8 != 0; uVar8 = uVar8 - uVar7) {

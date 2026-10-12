@@ -173,29 +173,29 @@ void func_0205a68c(int param_1,int param_2,int param_3,int param_4,undefined4 pa
   int iVar4;
   int iVar5;
 
-  iVar3 = *(int *)(param_1 + 0xc) + (int)*(char *)(**(int **)(param_1 + 4) + 1);
+  iVar3 = *(signed char *)(param_1 + 0xc) + (int)*(char *)(**(int **)(param_1 + 4) + 1);
   iVar2 = 0;
   if (param_7 == 0) {
     return;
   }
   do {
     iVar4 = iVar2 * iVar3 * -(int)(*(unsigned char *)((unsigned char *)&param_8 + 1)) + param_2;
-    iVar5 = iVar2 * iVar3 * (char)param_8 + param_3;
+    iVar1 = iVar2 * iVar3 * (char)param_8 + param_3;
     if ((param_6 & 0x800) == 0) {
       if ((param_6 & 0x400) != 0) {
-        iVar1 = func_02058a04(*(undefined4 *)(param_1 + 4),*(undefined4 *)(param_1 + 8),param_7,0);
-        iVar1 = (param_4 + 1) / 2 - (iVar1 + 1) / 2;
+        iVar5 = func_02058a04(*(undefined4 *)(param_1 + 4),*(undefined4 *)(param_1 + 8),param_7,0);
+        iVar5 = (param_4 + 1) / 2 - (iVar5 + 1) / 2;
         goto LAB_0205a788;
       }
     }
     else {
-      iVar1 = func_02058a04(*(undefined4 *)(param_1 + 4),*(undefined4 *)(param_1 + 8),param_7,0);
-      iVar1 = param_4 - iVar1;
+      iVar5 = func_02058a04(*(undefined4 *)(param_1 + 4),*(undefined4 *)(param_1 + 8),param_7,0);
+      iVar5 = param_4 - iVar5;
 LAB_0205a788:
-      iVar4 = iVar1 * (char)param_8 + iVar4;
-      iVar5 = iVar1 * (*(unsigned char *)((unsigned char *)&param_8 + 1)) + iVar5;
+      iVar4 = iVar5 * (char)param_8 + iVar4;
+      iVar1 = iVar5 * (*(unsigned char *)((unsigned char *)&param_8 + 1)) + iVar1;
     }
-    func_0205a5d8(param_1,iVar4,iVar5,param_5);
+    func_0205a5d8(param_1,iVar4,iVar1,param_5);
     iVar2 = iVar2 + 1;
     if (param_7 == 0) {
       return;

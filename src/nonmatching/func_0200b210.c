@@ -93,7 +93,7 @@ undefined4 func_0200b210(int param_1,undefined2 *param_2,uint *param_3)
   undefined2 uVar4;
   undefined2 uVar5;
   int iVar6;
-  uint uVar7;
+  int uVar7;
   uint uVar8;
   byte *pbVar9;
 
@@ -132,8 +132,8 @@ LAB_0200b228:
     pbVar9 = (byte *)(param_1 + uVar8);
     uVar8 = param_3[1];
     if (uVar8 < ((uint)pbVar9[1] - (uint)*pbVar9) + 1) {
-      uVar1 = *(undefined2 *)(pbVar9 + uVar8 * 0xc + 4);
       uVar2 = *(undefined2 *)(pbVar9 + uVar8 * 0xc + 6);
+      uVar1 = *(undefined2 *)(pbVar9 + uVar8 * 0xc + 4);
       uVar3 = *(undefined2 *)(pbVar9 + uVar8 * 0xc + 8);
       uVar4 = *(undefined2 *)(pbVar9 + uVar8 * 0xc + 10);
       uVar5 = *(undefined2 *)(pbVar9 + uVar8 * 0xc + 0xc);

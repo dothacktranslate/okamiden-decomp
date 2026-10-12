@@ -122,7 +122,7 @@ undefined4 func_0204ae84(int param_1,int param_2,uint param_3)
       uVar4 = uVar5 & 0x3f;
       uVar10 = 0;
       uVar8 = uVar5 >> 6 & 0xff;
-      if (0x25 < uVar4) {
+      if (0x26 <= uVar4) {
         return 0;
       }
       if (*(byte *)(param_1 + 0x4b) <= uVar8) {
@@ -132,8 +132,8 @@ undefined4 func_0204ae84(int param_1,int param_2,uint param_3)
       uVar12 = (uint)bVar2;
       uVar1 = (int)uVar12 >> 4;
       if ((bVar2 & 3) == 0) {
-        uVar9 = ((unsigned int)0x0204b488) & uVar5 >> 0x17;
-        uVar10 = ((unsigned int)0x0204b488) & uVar5 >> 0xe;
+        uVar9 = ((unsigned int)0x000001ff) & uVar5 >> 0x17;
+        uVar10 = ((unsigned int)0x000001ff) & uVar5 >> 0xe;
         iVar7 = func_0204ae0c(param_1,uVar9,uVar1 & 3);
         if (iVar7 == 0) {
           return 0;
@@ -144,13 +144,13 @@ undefined4 func_0204ae84(int param_1,int param_2,uint param_3)
         }
       }
       else if ((uVar12 & 3) == 1) {
-        uVar9 = ((unsigned int)0x0204b48c) & uVar5 >> 0xe;
+        uVar9 = ((unsigned int)0x0003ffff) & uVar5 >> 0xe;
         if (((uVar1 & 3) == 3) && (*(int *)(param_1 + 0x28) <= (int)uVar9)) {
           return 0;
         }
       }
       else if (((uVar12 & 3) == 2) &&
-              (uVar9 = (((unsigned int)0x0204b48c) & uVar5 >> 0xe) + (0x20000 - ((unsigned int)0x0204b48c)), (uVar1 & 3) == 2))
+              (uVar9 = (((unsigned int)0x0003ffff) & uVar5 >> 0xe) + (0x20000 - ((unsigned int)0x0003ffff)), (uVar1 & 3) == 2))
       {
         iVar7 = iVar3 + 1 + uVar9;
         if ((iVar7 < 0) || (*(int *)(param_1 + 0x2c) <= iVar7)) {
@@ -160,7 +160,7 @@ undefined4 func_0204ae84(int param_1,int param_2,uint param_3)
           if (0 < iVar7) {
             do {
               uVar5 = *(uint *)(*(int *)(param_1 + 0xc) + ((iVar7 + -1) - uVar11) * 4);
-              if (((uVar5 & 0x3f) != 0x22) || ((uVar5 >> 0xe & ((unsigned int)0x0204b48c) >> 9) != 0)) break;
+              if (((uVar5 & 0x3f) != 0x22) || ((uVar5 >> 0xe & ((unsigned int)0x0003ffff) >> 9) != 0)) break;
               uVar11 = uVar11 + 1;
             } while ((int)uVar11 < iVar7);
           }
@@ -191,7 +191,7 @@ undefined4 func_0204ae84(int param_1,int param_2,uint param_3)
             return 0;
           }
           uVar8 = *(uint *)(*(int *)(param_1 + 0xc) + iVar3 * 4 + 4);
-          if (((uVar8 & 0x3f) == 0x22) && ((((unsigned int)0x0204b488) & uVar8 >> 0xe) == 0)) {
+          if (((uVar8 & 0x3f) == 0x22) && ((((unsigned int)0x000001ff) & uVar8 >> 0xe) == 0)) {
             return 0;
           }
         }

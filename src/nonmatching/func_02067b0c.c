@@ -127,8 +127,8 @@ void func_02067b0c(int param_1)
   iVar15 = *(int *)(uVar6 + 0x118) << 0x1a;
   iVar7 = iVar15 >> 0x1f;
   if (iVar15 < 0) {
-    iVar7 = *(int *)(uVar6 + 0x11c);
     in_OV = '\0';
+    iVar7 = *(int *)(uVar6 + 0x11c);
   }
   if ((iVar15 < 0 && iVar7 != 0) && iVar7 < 0 == (bool)in_OV) {
     *(int *)(uVar6 + 0x11c) = *(int *)(uVar6 + 0x11c) + -1;
@@ -200,7 +200,7 @@ LAB_02068250:
       }
     }
     bVar20 = false;
-    if ((uVar10 <= local_40 + local_48) &&
+    if ((local_40 >= uVar10 + local_48) &&
        (local_48 = uVar10 - local_40, *(int *)(uVar6 + 0xdc) - 1U <= uVar9)) {
       if (*(char *)(uVar6 + 0xc9) == '\0') {
         *(uint *)(uVar6 + 0x118) = *(uint *)(uVar6 + 0x118) | 0x20;

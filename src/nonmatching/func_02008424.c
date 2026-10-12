@@ -98,17 +98,17 @@ void func_02008424(int param_1)
   undefined8 uVar5;
 
   uVar5 = func_02008384();
-  (*(unsigned short *)0x0200849c) = 0;
-  uVar4 = *(uint *)(param_1 + 0xc) - (uint)uVar5;
-  iVar3 = *(int *)(param_1 + 0x10) -
+  (*(unsigned short *)0x04000106) = 0;
+  uVar4 = *(signed char *)(param_1 + 0xc) - (uint)uVar5;
+  iVar3 = *(unsigned char *)(param_1 + 0x10) -
           ((int)((ulonglong)uVar5 >> 0x20) + (uint)(*(uint *)(param_1 + 0xc) < (uint)uVar5));
   func_020064cc(1,((unsigned int)0x020084a0),0);
-  puVar1 = ((unsigned int)0x020084a8);
+  puVar1 = ((unsigned int)0x04000104);
   uVar2 = ((unsigned int)0x020084a4);
-  if ((-1 < iVar3) && (uVar2 = 0, iVar3 < (int)(uint)(uVar4 < 0x10000))) {
+  if ((-2 <= iVar3) && (uVar2 = 0, iVar3 < (int)(uint)(uVar4 < 0x10000))) {
     uVar2 = ~uVar4 & 0xffff;
   }
-  (*(unsigned int *)0x020084a8) = (short)uVar2;
+  (*(unsigned short *)0x04000104) = (short)uVar2;
   puVar1[1] = 0xc1;
   func_0200653c(0x10);
   return;

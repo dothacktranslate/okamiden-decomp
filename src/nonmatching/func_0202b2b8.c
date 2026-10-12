@@ -99,7 +99,7 @@ void func_0202b2b8(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   uint uVar6;
   uint uVar7;
 
-  iVar2 = ((unsigned int)0x0202b354);
+  iVar2 = ((unsigned int)0x00000e14);
   iVar5 = 0;
   uVar1 = (*(unsigned int *)0x0202b350);
   uVar7 = *(uint *)(param_2 + 0x14);
@@ -124,12 +124,12 @@ void func_0202b2b8(int param_1,int param_2,undefined4 param_3,undefined4 param_4
         iVar2 = 0;
         while( true ) {
           iVar5 = param_1 + iVar2 * 2;
-          if (uVar4 == *(ushort *)(iVar5 + ((unsigned int)0x0202b354))) break;
-          if (*(ushort *)(iVar5 + ((unsigned int)0x0202b354)) == 0) {
-            *(short *)(iVar5 + ((unsigned int)0x0202b354)) = (short)uVar4;
+          if (uVar4 == *(ushort *)(iVar5 + ((unsigned int)0x00000e14))) break;
+          if (*(ushort *)(iVar5 + ((unsigned int)0x00000e14)) == 0) {
+            *(short *)(iVar5 + ((unsigned int)0x00000e14)) = (short)uVar4;
             iVar2 = func_02037ba4(uVar1,uVar4,0,0,param_2,uVar1,param_4);
             if (iVar2 != 0) {
-              *(undefined2 *)(iVar5 + ((unsigned int)0x0202b354)) = 0;
+              *(undefined2 *)(iVar5 + ((unsigned int)0x00000e14)) = 0;
             }
             break;
           }

@@ -99,7 +99,7 @@ void func_02020744(int param_1,int param_2,byte *param_3)
 {
   byte bVar1;
   byte bVar2;
-  short sVar3;
+  unsigned short sVar3;
   undefined4 uVar4;
   undefined4 *puVar5;
   uint uVar6;
@@ -200,7 +200,7 @@ switchD_020207ac_default:
       uVar4 = *(undefined4 *)(*(int *)(param_1 + 0x18) + local_38);
     }
     else {
-      uVar4 = *(undefined4 *)(param_1 + local_38 * 4 + 0x1c);
+      uVar4 = *(undefined4 *)(local_38 + param_1 * 4 + 0x1c);
     }
     (*(code *)*puVar5)(uVar4,0xffffffff);
     break;

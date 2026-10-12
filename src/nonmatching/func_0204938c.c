@@ -106,7 +106,7 @@ int func_0204938c(undefined4 param_1,undefined4 param_2,undefined4 param_3)
     func_02047714(param_1,((unsigned int)0x02049478));
   }
   if (iVar1 != 1) {
-    func_02046960(param_1,((unsigned int)0x02049480),*(undefined4 *)(((unsigned int)0x0204947c) + iVar1 * 4));
+    func_02046960(param_1,((unsigned int)0x02049480),*(unsigned short *)(((unsigned int)0x0204947c) + iVar1 * 4));
     return -1;
   }
   func_02046130(param_1,param_2,param_3);

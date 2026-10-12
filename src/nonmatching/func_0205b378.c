@@ -95,7 +95,7 @@ void func_0205b378(int param_1,ushort *param_2)
   int iVar6;
   uint uVar7;
 
-  uVar2 = ((unsigned int)0x0205b42c);
+  uVar2 = ((unsigned int)0xc00f0000);
   uVar1 = *param_2;
   uVar7 = 0;
   if ((char)param_2[1] != '\0') {

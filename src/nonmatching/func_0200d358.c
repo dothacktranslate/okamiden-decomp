@@ -116,7 +116,7 @@ int func_0200d358(int param_1)
       *(undefined2 *)(param_1 + 0x26) = local_14;
       *(int *)(param_1 + 0x28) = *(int *)(iVar3 + 0xc) + local_18;
     }
-    *(uint *)(param_1 + 0x2c) = local_12 & ((unsigned int)0x0200d3f0);
+    *(uint *)(param_1 + 0x2c) = local_12 & ((unsigned int)0x00000fff);
   }
   return iVar1;
 }

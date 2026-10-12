@@ -91,7 +91,7 @@ void func_02035c2c(uint *param_1,int param_2,uint *param_3,int param_4)
 {
   longlong lVar1;
   uint uVar2;
-  uint uVar3;
+  int uVar3;
   uint uVar4;
   int iVar5;
 

@@ -137,7 +137,7 @@ void func_0203f970(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     uStack_18 = param_4;
     iVar4 = func_02036edc(uVar10,param_1 + 0xe2);
     if (((iVar4 != 0) && (*(int *)(iVar4 + 0x10) != 0)) && (*(int *)(param_1 + 0x34) == 0)) {
-      func_0204278c(param_1 + 0x30,param_1 + 0xe2,param_1 + ((unsigned int)0x0203fcb4));
+      func_0204278c(param_1 + 0x30,param_1 + 0xe2,param_1 + ((unsigned int)0x00000102));
       func_02042650(param_1 + 0x58,*(undefined4 *)(param_1 + 0x34),*(undefined4 *)(param_1 + 0x38),
                    *(undefined4 *)(param_1 + 0x3c));
       *(uint *)(param_1 + 0x5c) = *(uint *)(param_1 + 0x5c) | 0x30000;
@@ -259,7 +259,7 @@ void func_0203f970(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
           }
           func_0205e0c0(0x41,0,0);
         }
-        if (*(char *)(param_1 + ((unsigned int)0x0203fcd0)) != '\0') {
+        if (*(char *)(param_1 + ((unsigned int)0x00000121)) != '\0') {
           local_60 = 3;
           func_0205e0c0(0x40,&local_60,1);
           iVar8 = *(int *)(param_1 + 0x70);

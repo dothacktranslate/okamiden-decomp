@@ -173,7 +173,7 @@ uint * func_02009a84(uint *param_1,uint param_2,int param_3)
     }
     while (3 < param_3) {
       iVar5 = param_3 + -4;
-      bVar6 = 3 < param_3;
+      bVar6 = 4 <= param_3;
       param_3 = iVar5;
       if (bVar6) {
         *puVar2 = uVar4;
@@ -182,7 +182,7 @@ uint * func_02009a84(uint *param_1,uint param_2,int param_3)
     }
     iVar5 = param_3 + -1;
     puVar3 = puVar2;
-    if (0 < param_3) {
+    if (1 <= param_3) {
       puVar3 = (uint *)((int)puVar2 + 1);
       *(undefined1 *)puVar2 = uVar1;
       iVar5 = param_3 + -2;

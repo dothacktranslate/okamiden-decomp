@@ -147,7 +147,7 @@ undefined4 func_0201b838(char *param_1)
   byte local_45 [33];
 
   if (param_1[4] == '\0') {
-    uVar7 = ((unsigned int)0x0201be0c);
+    uVar7 = ((unsigned int)0x3ff00000);
     if (*param_1 != '\0') {
       uVar7 = ((unsigned int)0x0201be10);
     }
@@ -156,7 +156,7 @@ undefined4 func_0201b838(char *param_1)
   }
   cVar2 = param_1[5];
   if (cVar2 == '0') {
-    uVar7 = ((unsigned int)0x0201be0c);
+    uVar7 = ((unsigned int)0x3ff00000);
     if (*param_1 != '\0') {
       uVar7 = ((unsigned int)0x0201be10);
     }
@@ -164,7 +164,7 @@ undefined4 func_0201b838(char *param_1)
     return uVar7;
   }
   if (cVar2 == 'I') {
-    uVar7 = ((unsigned int)0x0201be0c);
+    uVar7 = ((unsigned int)0x3ff00000);
     if (*param_1 != '\0') {
       uVar7 = ((unsigned int)0x0201be10);
     }
@@ -199,7 +199,7 @@ undefined4 func_0201b838(char *param_1)
   func_0201ad90(auStack_70,((unsigned int)0x0201be1c),0x134);
   iVar8 = func_0201b28c(auStack_70,local_4a);
   if (iVar8 != 0) {
-    uVar7 = ((unsigned int)0x0201be0c);
+    uVar7 = ((unsigned int)0x3ff00000);
     if (*param_1 != '\0') {
       uVar7 = ((unsigned int)0x0201be10);
     }

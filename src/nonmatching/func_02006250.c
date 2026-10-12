@@ -103,7 +103,7 @@ void func_02006250(int param_1)
     (*pcVar3)(*(signed char *)(((unsigned int)0x020062cc) + iVar4));
   }
   iVar4 = *(int *)(((unsigned int)0x020062d4) + iVar4);
-  *(uint *)(((unsigned int)0x020062d0) + 0x3ff8) = *(uint *)(((unsigned int)0x020062d0) + 0x3ff8) | uVar1;
+  *(uint *)(((unsigned int)0x020062d0) + 0x3ff8) = *(signed char *)(((unsigned int)0x020062d0) + 0x3ff8) | uVar1;
   if (iVar4 != 0) {
     return;
   }

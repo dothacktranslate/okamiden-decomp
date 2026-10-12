@@ -102,13 +102,13 @@ void func_02009584(int param_1,int param_2,int param_3,code *param_4,int param_5
   undefined4 uVar4;
   int iVar5;
 
-  puVar2 = ((unsigned int)0x02009668);
+  puVar2 = ((unsigned int)0x04000600);
   piVar1 = ((unsigned int)0x02009664);
   if (param_3 != 0) {
     do {
     } while ((*(unsigned int *)0x02009664) != 0);
     do {
-    } while ((((*(unsigned int *)0x02009668) & 0x7000000) >> 0x18 & 2) == 0);
+    } while ((((*(unsigned int *)0x04000600) & 0x7000000) >> 0x18 & 2) == 0);
     (*(unsigned int *)0x02009664) = 1;
     piVar1[1] = param_1;
     piVar1[2] = param_2;

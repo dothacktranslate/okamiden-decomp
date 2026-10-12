@@ -87,15 +87,15 @@ extern int LZCOUNT();
 undefined8 func_02030454(uint param_1,int param_2,uint param_3)
 
 {
+  int uVar3;
   uint uVar1;
   int iVar2;
-  uint uVar3;
 
   if (param_2 < 0) {
     iVar2 = -(param_2 + (uint)(param_1 != 0));
-    uVar3 = -param_1 >> (param_3 & 0xff) | iVar2 << (0x20 - param_3 & 0xff);
+    uVar3 = -param_1 >> (param_3 & 0xff) | iVar2 << (0x20 - 0xff & param_3);
     if (param_3 - 0x20 != 0 && 0x1f < (int)param_3) {
-      uVar3 = uVar3 | iVar2 >> (param_3 - 0x20 & 0xff);
+      uVar3 = iVar2 | uVar3 >> (param_3 - 0x20 & 0xff);
     }
     uVar1 = -uVar3;
     iVar2 = -((iVar2 >> (param_3 & 0xff)) + (uint)(uVar3 != 0));

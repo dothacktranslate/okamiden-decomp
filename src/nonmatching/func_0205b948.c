@@ -91,7 +91,7 @@ void func_0205b948(int param_1,int param_2)
   int iVar1;
 
   if (param_1 != 0) {
-    param_2 = *(int *)(param_1 + 8);
+    param_2 = *(unsigned char *)(param_1 + 8);
   }
   uVar2 = 0;
   if (param_1 != 0 && param_2 != 0) {

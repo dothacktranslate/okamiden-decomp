@@ -90,7 +90,7 @@ void func_02001864(int *param_1,uint *param_2,uint *param_3)
   longlong lVar1;
   longlong lVar2;
   uint *puVar3;
-  int iVar4;
+  uint iVar4;
   uint uVar5;
   uint uVar6;
   int iVar7;
@@ -142,8 +142,8 @@ void func_02001864(int *param_1,uint *param_2,uint *param_3)
   lVar1 = (longlong)(int)param_2[7] * (longlong)iVar10 +
           (longlong)(int)param_2[1] * (longlong)iVar7 + (longlong)iVar4 * (longlong)(int)param_2[4];
   puVar3[4] = (uint)lVar1 >> 0xc | (int)((ulonglong)lVar1 >> 0x20) << 0x14;
-  uVar6 = param_2[3];
   uVar14 = *param_2;
+  uVar6 = param_2[3];
   uVar5 = param_2[6];
   iVar8 = param_1[7];
   lVar1 = (longlong)(int)uVar5 * (longlong)iVar10 +

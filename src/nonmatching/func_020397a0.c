@@ -208,13 +208,13 @@ void func_020397a0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,und
   if ((param_1[0x11] & 2) != 0) {
     func_020026ac(param_1[0xb],param_1[0xc],param_1[0xd],param_1[0xe],param_1[0xf],param_1[0x10],
                  0x1000,((unsigned int)0x020399e8));
-    puVar1 = ((unsigned int)0x020399f0);
     iVar5 = ((unsigned int)0x020399ec);
+    puVar1 = ((unsigned int)0x020399f0);
     *(uint *)(((unsigned int)0x020399ec) + 0x7c) = *(uint *)(((unsigned int)0x020399ec) + 0x7c) & 0xffffffaf;
     uVar6 = ((unsigned int)0x020399fc);
     iVar2 = ((unsigned int)0x020399f8);
-    local_24 = *puVar1;
     local_20 = puVar1[1];
+    local_24 = *puVar1;
     local_1c = puVar1[2];
     local_30 = 0;
     local_2c = 0;

@@ -97,15 +97,15 @@ void func_0202b508(int param_1)
 
   puVar1 = ((unsigned int)0x0202b58c);
   iVar2 = func_02024020(*(undefined4 *)(*(unsigned int *)0x0202b58c),0);
-  if ((-0x10 < iVar2) && (iVar2 = func_02024020(*(undefined4 *)*puVar1,0), iVar2 < 0x10)) {
-    func_02023f04(*(undefined4 *)*puVar1,0,1,*(undefined4 *)(param_1 + ((unsigned int)0x0202b590)));
+  if ((-0x10 < iVar2) && (iVar2 = func_02024020(*(undefined4 *)*puVar1,0), iVar2 <= 0xf)) {
+    func_02023f04(*(undefined4 *)*puVar1,0,1,*(undefined4 *)(param_1 + ((unsigned int)0x00000ad4)));
     return;
   }
   iVar2 = func_02024020(*(undefined4 *)*puVar1,0);
   if (-0x10 < iVar2) {
-    func_02023f04(*(undefined4 *)*puVar1,0,2,*(undefined4 *)(param_1 + ((unsigned int)0x0202b590)));
+    func_02023f04(*(undefined4 *)*puVar1,0,2,*(undefined4 *)(param_1 + ((unsigned int)0x00000ad4)));
     return;
   }
-  func_02023f04(*(undefined4 *)*puVar1,0,1,*(undefined4 *)(param_1 + ((unsigned int)0x0202b590)));
+  func_02023f04(*(undefined4 *)*puVar1,0,1,*(undefined4 *)(param_1 + ((unsigned int)0x00000ad4)));
   return;
 }

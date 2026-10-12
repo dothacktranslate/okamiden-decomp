@@ -121,7 +121,7 @@ void func_020604c8(int *param_1,uint param_2,uint *param_3,int param_4)
 
   uVar2 = (int)param_2 >> 0xc;
   iVar8 = param_4 + param_3[1];
-  iVar5 = *(int *)(param_4 + 0xc);
+  iVar5 = *(unsigned short *)(param_4 + 0xc);
   iVar9 = *(int *)(param_4 + 0x10);
   uVar4 = *param_3;
   iStack_28 = param_4;
@@ -157,7 +157,7 @@ void func_020604c8(int *param_1,uint param_2,uint *param_3,int param_4)
       if (uVar2 < uVar1) {
         uVar2 = uVar2 >> 2;
         iVar6 = uVar2 + 1;
-        param_2 = param_2 & ((unsigned int)0x020607f8);
+        param_2 = param_2 & ((unsigned int)0x00003fff);
         iVar7 = 4;
         goto LAB_02060634;
       }
@@ -165,7 +165,7 @@ void func_020604c8(int *param_1,uint param_2,uint *param_3,int param_4)
       iVar6 = uVar2 + 1;
     }
     else {
-      if (uVar2 < uVar1) {
+      if (uVar1 > uVar2) {
         uVar2 = uVar2 >> 1;
         iVar6 = uVar2 + 1;
         param_2 = param_2 & ((unsigned int)0x1fff0000) >> 0x10;

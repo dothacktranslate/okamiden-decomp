@@ -97,7 +97,7 @@ void func_0204fb30(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   int iVar2;
   int iVar3;
 
-  iVar2 = *(int *)(param_1 + 0x10);
+  iVar2 = *(unsigned short *)(param_1 + 0x10);
   func_0204fa34(param_1,param_1,param_3,param_4,param_4);
   uVar1 = func_02052828(param_1,0,2);
   *(undefined4 *)(param_1 + 0x48) = uVar1;

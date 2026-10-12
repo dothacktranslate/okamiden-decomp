@@ -84,7 +84,7 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_0204630c();
+extern int func_02046868();
 extern int func_020465d8();
 extern int func_02046654();
 extern int func_02046868();
@@ -125,7 +125,7 @@ undefined4 func_020513d8(undefined4 param_1,undefined4 param_2,undefined4 param_
           iVar1 = iVar1 + 1;
         }
         func_02046868(param_1,iVar1);
-        func_0204630c(param_1,((unsigned int)0x020514b8));
+        func_0204630c(param_1,((unsigned int)0xffffd8eb));
         uVar2 = func_0205117c(&local_134,uVar4,uVar5);
         return uVar2;
       }

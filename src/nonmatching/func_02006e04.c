@@ -111,11 +111,11 @@ void func_02006e04(int param_1,undefined4 param_2,undefined4 param_3,int param_4
   func_02006b50(param_1);
   *(int *)(param_1 + 0x94) = param_4;
   *(undefined4 *)(param_1 + 0x98) = 0;
-  uVar2 = ((unsigned int)0x02006ee8);
+  uVar2 = ((unsigned int)0xfddb597d);
   *(int *)(param_1 + 0x90) = param_4 - param_5;
   *(undefined4 *)(param_4 + -8) = uVar2;
   puVar3 = *(undefined4 **)(param_1 + 0x90);
-  *puVar3 = ((unsigned int)0x02006eec);
+  *puVar3 = ((unsigned int)0x7bf9dd5b);
   *(undefined4 *)(param_1 + 0xa0) = 0;
   *(undefined4 *)(param_1 + 0x9c) = 0;
   func_02007334(param_1,param_2,param_4 + -8,puVar3,iVar4);

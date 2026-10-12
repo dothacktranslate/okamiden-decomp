@@ -169,8 +169,8 @@ void func_02021bd0(void)
   undefined4 local_a8;
   undefined4 local_a4;
   int local_a0;
-  undefined4 local_9c;
   int local_98;
+  undefined4 local_9c;
   int local_94;
   int local_70 [5];
 

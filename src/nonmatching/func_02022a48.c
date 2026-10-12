@@ -213,8 +213,8 @@ void func_02022a48(void)
       *(undefined2 *)((int)piVar2 + 0x26) = 1;
     }
   }
-  piVar3 = ((unsigned int)0x02022b28);
   piVar2 = ((unsigned int)0x02022b24);
+  piVar3 = ((unsigned int)0x02022b28);
   uVar9 = 0;
   *(undefined2 *)(((unsigned int)0x02022b24) + 10) = 0;
   do {
@@ -223,7 +223,7 @@ void func_02022a48(void)
     if (iVar7 != 0) {
       *(ushort *)(piVar2 + 10) = *(ushort *)(piVar2 + 10) | (ushort)(1 << (uVar9 & 0xff));
     }
-    uVar9 = uVar9 + 1;
+    uVar9++;
   } while ((int)uVar9 < 0xb);
   return;
 }

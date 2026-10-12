@@ -93,11 +93,11 @@ void func_0200eaf4(undefined4 *param_1)
   undefined4 uVar4;
   undefined4 uVar5;
 
-  puVar2 = ((unsigned int)0x0200eb2c);
+  puVar2 = ((unsigned int)0x04000290);
   uVar3 = param_1[1];
   uVar4 = param_1[2];
   uVar5 = param_1[3];
-  (*(unsigned int *)0x0200eb2c) = *param_1;
+  (*(unsigned int *)0x04000290) = *param_1;
   puVar2[1] = uVar3;
   puVar2[2] = uVar4;
   puVar2[3] = uVar5;

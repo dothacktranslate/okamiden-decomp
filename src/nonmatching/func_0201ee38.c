@@ -91,8 +91,8 @@ uint func_0201ee38(uint param_1,uint param_2)
   uint uVar2;
 
   uVar1 = (param_2 & 0x7fffffff) >> 0x14;
-  uVar2 = ((unsigned int)0x0201ee80) - uVar1;
-  if (uVar2 == 0 || ((unsigned int)0x0201ee80) < (int)uVar1) {
+  uVar2 = ((unsigned int)0x0000041e) - uVar1;
+  if (uVar2 == 0 || ((unsigned int)0x0000041e) < (int)uVar1) {
     return ~((int)param_2 >> 0x1f) + 0x80000000;
   }
   if ((int)uVar2 < 0x20) {

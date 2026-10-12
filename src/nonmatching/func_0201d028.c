@@ -101,19 +101,19 @@ undefined8 func_0201d028(uint param_1,uint param_2)
   undefined1 uVar7;
   undefined8 uVar8;
 
-  iVar2 = ((unsigned int)0x0201d1e8);
+  iVar2 = ((unsigned int)0x000fffff);
   uVar4 = (((unsigned int)0x000007ff) & (int)param_2 >> 0x14) + (0x400 - ((unsigned int)0x000007ff));
   if ((int)uVar4 < 0x14) {
     uVar7 = uVar4 == 0;
     uVar6 = 1;
     if ((int)uVar4 < 0) {
-      uVar8 = func_0201d518(((unsigned int)0x8800759c),((unsigned int)0x0201d1e0),param_1,param_2);
+      uVar8 = func_0201d518(((unsigned int)0x8800759c),((unsigned int)0x7e37e43c),param_1,param_2);
       func_0201e0e0((int)uVar8,(int)((ulonglong)uVar8 >> 0x20),0,0);
       if ((bool)uVar6 && !(bool)uVar7) {
         if ((int)param_2 < 0) {
           if ((param_2 & 0x7fffffff) != 0 || param_1 != 0) {
             param_1 = 0;
-            param_2 = ((unsigned int)0x0201d1e4);
+            param_2 = ((unsigned int)0xbff00000);
           }
         }
         else {
@@ -123,13 +123,13 @@ undefined8 func_0201d028(uint param_1,uint param_2)
       }
     }
     else {
-      bVar1 = (param_2 & ((unsigned int)0x0201d1e8) >> (uVar4 & 0xff)) == 0;
+      bVar1 = (param_2 & ((unsigned int)0x000fffff) >> (uVar4 & 0xff)) == 0;
       uVar7 = param_1 == 0 && bVar1;
       uVar6 = 1;
       if (param_1 == 0 && bVar1) {
         return CONCAT44(param_2,param_1);
       }
-      func_0201d518(((unsigned int)0x8800759c),((unsigned int)0x0201d1e0),param_1,param_2);
+      func_0201d518(((unsigned int)0x8800759c),((unsigned int)0x7e37e43c),param_1,param_2);
       func_0201e0e0();
       if ((bool)uVar6 && !(bool)uVar7) {
         if ((int)param_2 < 0) {
@@ -150,12 +150,12 @@ undefined8 func_0201d028(uint param_1,uint param_2)
     }
     uVar3 = ((unsigned int)0x000007ff) - 0x800;
     uVar5 = uVar4 - 0x14 & 0xff;
-    uVar6 = uVar5 == 0 && 0x32 < uVar4 || uVar5 != 0 && (bool)((byte)(uVar3 >> uVar5 - 1) & 1);
+    uVar6 = uVar5 == 0 && 0x33 <= uVar4 || uVar5 != 0 && (bool)((byte)(uVar3 >> uVar5 - 1) & 1);
     uVar7 = (param_1 & uVar3 >> uVar5) == 0;
     if ((bool)uVar7) {
       return CONCAT44(param_2,param_1);
     }
-    func_0201d518(((unsigned int)0x8800759c),((unsigned int)0x0201d1e0),param_1,param_2);
+    func_0201d518(((unsigned int)0x8800759c),((unsigned int)0x7e37e43c),param_1,param_2);
     func_0201e0e0();
     if ((bool)uVar6 && !(bool)uVar7) {
       uVar5 = param_1;

@@ -149,8 +149,8 @@ func_020342f4(undefined4 *param_1,int param_2,int param_3,undefined4 *param_4,un
     else {
       iVar1 = iVar6 * 0xc;
       iVar7 = param_2 + iVar1;
-      iVar2 = *(int *)(iVar7 + 8);
       iVar3 = *(int *)(iVar7 + 4);
+      iVar2 = *(int *)(iVar7 + 8);
       aiStack_104[iVar6 * 0xf] = *(int *)(param_2 + iVar1);
       aiStack_104[iVar6 * 0xf + 1] = param_3 + iVar3;
       aiStack_104[iVar6 * 0xf + 2] = iVar2;

@@ -91,10 +91,10 @@ undefined4 * func_0204dcd0(int param_1,undefined4 *param_2,int param_3)
 {
   byte bVar1;
   undefined4 *puVar2;
-  int iVar3;
+  uint iVar3;
   bool bVar4;
 
-  iVar3 = *(int *)(param_1 + 0x10);
+  iVar3 = *(int *)(0x10 + param_1);
   bVar1 = *(byte *)(iVar3 + 0x14);
   while ((puVar2 = (undefined4 *)*param_2, puVar2 != (undefined4 *)0x0 &&
          (bVar4 = param_3 != 0, param_3 = param_3 + -1, bVar4))) {

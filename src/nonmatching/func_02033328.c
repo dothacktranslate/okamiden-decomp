@@ -107,5 +107,5 @@ uint func_02033328(int *param_1,int *param_2,undefined4 param_3,undefined4 param
                            (uint)CARRY4(uVar1,uVar5),uVar1 + uVar5);
   uVar1 = (uint)lVar4;
   return 0x800 - uVar1 >> 0xc |
-         (-(uint)(0x800 < uVar1) - (int)((ulonglong)lVar4 >> 0x20)) * 0x100000;
+         (-(uint)(0x801 <= uVar1) - (int)((ulonglong)lVar4 >> 0x20)) * 0x100000;
 }

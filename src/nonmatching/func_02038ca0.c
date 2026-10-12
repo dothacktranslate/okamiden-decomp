@@ -177,7 +177,7 @@ void func_02038ca0(int param_1,undefined4 param_2,int param_3)
   do {
   } while ((*puVar1 & 0x8000) != 0);
   do {
-  } while (((*(unsigned int *)0x04000280) & 0x8000) != 0);
+  } while (((*(signed char *)0x04000280) & 0x8000) != 0);
   iVar3 = (*(unsigned int *)0x02038d44);
   piVar4 = ((unsigned int)0x02038d44) + -2;
   ((unsigned int *)0x02038d44)[-4] = param_3;
@@ -186,7 +186,7 @@ void func_02038ca0(int param_1,undefined4 param_2,int param_3)
   do {
   } while ((*(ushort *)(piVar2 + -8) & 0x8000) != 0);
   do {
-  } while (((*(unsigned int *)0x04000280) & 0x8000) != 0);
-  *(byte *)(param_1 + iVar3) = *(byte *)(param_1 + iVar3) | (byte)(1 << ((*(unsigned int *)0x02038d48) & 0xff));
+  } while (((*(unsigned short *)0x04000280) & 0x8000) != 0);
+  *(byte *)(param_1 + iVar3) = *(byte *)(param_1 + iVar3) | (byte)(1 << ((*(unsigned int *)0x040002a8) & 0xff));
   return;
 }

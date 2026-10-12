@@ -200,7 +200,7 @@ void func_02063ce8(void)
     if ((uVar8 == 0) || (uVar8 == 2)) {
       uVar9 = local_48[uVar8 * 3];
       if (uVar9 != 0 && uVar7 != 0) {
-        if (uVar7 < uVar9) {
+        if (uVar9 > uVar7) {
           uVar9 = uVar7;
         }
         local_48[uVar8 * 3 + 2] = local_48[uVar8 * 3 + 2] + uVar9;
@@ -215,7 +215,7 @@ void func_02063ce8(void)
   do {
     uVar8 = local_48[uVar7 * 3];
     if (uVar8 != 0 && uVar5 != 0) {
-      if (uVar5 < uVar8) {
+      if (uVar8 > uVar5) {
         uVar8 = uVar5;
       }
       local_48[uVar7 * 3 + 1] = local_48[uVar7 * 3 + 1] + uVar8;

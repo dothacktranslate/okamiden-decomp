@@ -190,7 +190,7 @@ byte * func_02017b40(undefined4 param_1,undefined4 param_2,int param_3,uint para
   uVar8 = (uint)(*(unsigned char *)((unsigned char *)&param_5 + 1));
   local_1 = (char)(param_4 >> 0x18);
   uVar7 = param_4 >> 8 & 0xff;
-  if (((unsigned int)0x02018224) < (int)param_7) {
+  if (((unsigned int)0x000001fd) < (int)param_7) {
     return (byte *)0x0;
   }
   auStack_60[0] = 0;
@@ -363,7 +363,7 @@ LAB_02017f68:
     pbVar9[-1] = bVar12;
     pbVar10 = pbVar9 + -2;
     *pbVar10 = (*(unsigned char *)((unsigned char *)&param_5 + 1));
-    if (((unsigned int)0x02018224) < (int)(param_7 + (param_3 - (int)pbVar10))) {
+    if (((unsigned int)0x000001fd) < (int)(param_7 + (param_3 - (int)pbVar10))) {
       return (byte *)0x0;
     }
     if ((int)(uint)bStack_58 < (int)(param_7 + 1)) {
@@ -452,7 +452,7 @@ LAB_020180a4:
     if (iVar3 < 0) {
       iVar3 = 0;
     }
-    if (((unsigned int)0x02018224) < iVar3 + iVar6) {
+    if (((unsigned int)0x000001fd) < iVar3 + iVar6) {
       return (byte *)0x0;
     }
     pbVar10 = abStack_57 + uVar8;

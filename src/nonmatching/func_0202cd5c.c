@@ -106,7 +106,7 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
     if (param_2 < ((unsigned int)0x0202d00c)) {
       if (param_2 < ((unsigned int)0x0202d034)) {
         if (param_2 < ((unsigned int)0x0202d040)) {
-          if (param_2 < 4000) {
+          if (param_2 <= 3999) {
             if (param_2 < ((unsigned int)0x0202d034) >> 1) {
               if (param_2 < 2000) {
                 if (param_2 < 1000) {

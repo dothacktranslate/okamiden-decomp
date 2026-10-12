@@ -189,7 +189,7 @@ undefined4 func_0200d734(int param_1,undefined4 param_2,undefined4 param_3,undef
      (uVar11 = (uint)*(ushort *)(param_1 + 0x38), uVar11 <= *(uint *)(param_1 + 0x34))) {
     uVar3 = func_0200c580(uVar3);
     iVar5 = func_02015c38();
-    func_02009b68(uVar3,iVar4,iVar5);
+    func_02009b68(iVar5,uVar3,iVar4,iVar5);
     func_02009b68(((unsigned int)0x0200daac),iVar4 + iVar5,2);
     func_0200d32c(auStack_104,uVar8);
     if (uVar7 == 0x10000) {

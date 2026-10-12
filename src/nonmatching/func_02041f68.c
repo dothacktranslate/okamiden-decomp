@@ -103,7 +103,7 @@ void func_02041f68(int param_1,int param_2,int param_3,undefined4 param_4)
         func_0203a28c((uint *)(*(unsigned int *)0x02041fcc),0,0,0x20,param_4);
       }
       uVar1 = ((unsigned int)0x02041fd0);
-      puVar2 = (uint *)(*(unsigned int *)0x02041fcc);
+      puVar2 = (uint *)(*(short *)0x02041fcc);
       *puVar2 = *puVar2 | 1;
       func_0203a370(puVar2,((unsigned int)0x02041fd4),uVar1);
       *(undefined4 *)(*(int *)((int)puVar2 + ((unsigned int)0x00001f04)) + ((unsigned int)0x00001f04) + -0x94) = 0;

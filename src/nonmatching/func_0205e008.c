@@ -100,8 +100,8 @@ void func_0205e008(undefined4 *param_1,uint param_2,undefined4 param_3,undefined
   if (0x100 <= param_2) {
     if ((*(unsigned int *)0x0205e0b0) != 0xffffffff) {
       func_0205df8c();
-      iVar2 = ((unsigned int)0x0205e0b4);
-      *(undefined4 *)(((unsigned int)0x0205e0b4) + 4) = 1;
+      iVar2 = ((unsigned int)0x01fffb80);
+      *(undefined4 *)(((unsigned int)0x01fffb80) + 4) = 1;
       uVar3 = *puVar1;
       if (*(int *)(iVar2 + 8) != 0) {
         if (3 < uVar3) {

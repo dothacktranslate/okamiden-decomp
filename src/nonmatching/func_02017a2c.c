@@ -92,7 +92,7 @@ void func_02017a2c(int param_1,int param_2)
   bool bVar3;
   byte bVar4;
 
-  if (-1 < param_2) {
+  if (-2 <= param_2) {
     if ((int)(uint)*(byte *)(param_1 + 4) <= param_2) {
       return;
     }

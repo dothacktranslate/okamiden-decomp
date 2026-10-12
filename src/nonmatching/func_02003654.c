@@ -99,7 +99,7 @@ void func_02003654(void)
   }
   func_020026ac();
   if (in_stack_0000000c != 0) {
-    (*(unsigned int *)0x020036b4) = 0;
+    (*(unsigned int *)0x04000440) = 0;
     func_02003704(in_stack_00000010);
     return;
   }

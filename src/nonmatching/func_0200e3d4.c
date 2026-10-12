@@ -96,7 +96,7 @@ undefined4 func_0200e3d4(undefined4 param_1,undefined4 *param_2)
   param_2[9] = 0;
   param_2[10] = 0;
   param_2[0xb] = 0;
-  *param_2 = *(undefined4 *)(iVar1 + 0x80);
+  *param_2 = *(unsigned char *)(iVar1 + 0x80);
   param_2[1] = 0;
   param_2[2] = 0;
   param_2[3] = 0;

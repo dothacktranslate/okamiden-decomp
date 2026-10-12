@@ -103,7 +103,7 @@ void func_0204d814(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   iVar2 = param_2 >> 3;
   iVar4 = *(int *)(param_1 + 0x30);
   iVar3 = (int)((longlong)((unsigned int)0x2aaaaaab) * (longlong)iVar3 >> 0x22) - (iVar3 >> 0x1f);
-  if (((unsigned int)0x0204d89c) < iVar4) {
+  if (((unsigned int)0x00004e20) < iVar4) {
     return;
   }
   iVar1 = iVar3 * 4;
@@ -116,7 +116,7 @@ void func_0204d814(int param_1,int param_2,undefined4 param_3,undefined4 param_4
     bVar5 = iVar4 == 0x10;
   }
   if (!bVar5 && iVar3 < 0 == bVar6) {
-    func_0204bd40(param_1,iVar4 / 2,((unsigned int)0x0204d89c),param_2,param_4);
+    func_0204bd40(param_1,iVar4 / 2,((unsigned int)0x00004e20),param_2,param_4);
   }
   iVar4 = *(int *)(param_1 + 0x2c);
   iVar3 = iVar2 * 4;

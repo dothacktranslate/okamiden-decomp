@@ -113,8 +113,8 @@ uint func_02058888(ushort *param_1,uint param_2)
             puVar4 = puVar4 + iVar1 * 2 + 2;
           }
           else {
-            if (puVar4[iVar1 * 2] <= param_2) {
-              return (uint)puVar4[iVar1 * 2 + 1];
+            if (param_2 >= puVar4[iVar1 * 2]) {
+              return (uint)puVar4[iVar1 * 1 + 2];
             }
             puVar5 = puVar4 + iVar1 * 2 + -2;
           }

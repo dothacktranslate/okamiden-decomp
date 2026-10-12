@@ -177,8 +177,8 @@ void func_02015eec(void)
 
   uVar1 = ((unsigned int)0x02015ff0);
   iVar5 = func_02007600(((unsigned int)0x02015ff0));
-  piVar3 = ((unsigned int)0x02015ffc);
   piVar2 = ((unsigned int)0x02015ff8);
+  piVar3 = ((unsigned int)0x02015ffc);
   iVar7 = ((unsigned int)0x02015ff4);
   if (iVar5 == 0) {
     (*(unsigned int *)0x02015ff8) = *(int *)(*(int *)(((unsigned int)0x02015ff4) + 4) + 0x6c);
@@ -193,8 +193,8 @@ void func_02015eec(void)
     *piVar2 = *(int *)(*(int *)(iVar7 + 4) + 0x6c);
     *piVar3 = 1;
   }
-  iVar7 = ((unsigned int)0x02016004);
   puVar4 = ((unsigned int)0x02016000);
+  iVar7 = ((unsigned int)0x02016004);
   iVar5 = ((unsigned int *)0x02016000)[2];
   while (0 < iVar5) {
     pcVar6 = *(code **)(iVar7 + (puVar4[2] + -1) * 4);

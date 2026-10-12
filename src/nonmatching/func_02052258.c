@@ -96,8 +96,8 @@ undefined4 func_02052258(undefined4 param_1,int param_2,undefined4 *param_3)
   undefined4 *puVar4;
   int iVar5;
 
-  iVar1 = func_02052184();
   iVar3 = *(int *)(param_2 + 0x1c);
+  iVar1 = func_02052184();
   iVar1 = iVar1 + 1;
   if (iVar1 < iVar3) {
     do {

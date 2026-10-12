@@ -171,14 +171,14 @@ void func_02003208(void)
 {
   ushort *puVar1;
   int iVar2;
-  int iVar3;
+  uint iVar3;
   undefined2 *puVar4;
   undefined2 *puVar5;
   int iVar6;
 
   iVar2 = ((unsigned int)0xfffffdf1);
   puVar1 = ((unsigned int)0x02003334);
-  (*(unsigned short *)0x02003334) = (*(unsigned int *)0x02003334) | 0x8000;
+  (*(unsigned short *)0x02003334) = (*(unsigned short *)0x02003334) | 0x8000;
   *puVar1 = *puVar1 & (ushort)iVar2 | 0x20e;
   *puVar1 = *puVar1 | 1;
   func_02006178();
@@ -192,7 +192,7 @@ void func_02003208(void)
       *(short *)(iVar3 + 2) = (short)iVar6;
     } while (*(short *)(iVar3 + 2) == 0);
   }
-  (*(unsigned int *)0x02003340) = 0;
+  (*(unsigned int *)0x04000004) = 0;
   iVar2 = ((unsigned int)0x02003344);
   _REG_A_DISPCNT = 0;
   if (*(int *)(((unsigned int)0x02003344) + 4) == -1) {
@@ -210,7 +210,7 @@ void func_02003208(void)
   puVar4[3] = 0x100;
   puVar4[8] = 0x100;
   puVar4[0xb] = 0x100;
-  puVar5 = ((unsigned int)0x0200334c);
+  puVar5 = ((unsigned int)0x04001026);
   puVar4[0x800] = 0x100;
   *puVar5 = 0x100;
   puVar5[5] = 0x100;

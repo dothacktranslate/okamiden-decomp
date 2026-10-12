@@ -141,8 +141,8 @@ func_02037e10(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefine
     *(undefined4 *)((int)param_1 + iVar4 + 4 + iVar3) = 0;
   } while (uVar2 < 6);
   uVar1 = func_02065d84(param_1[6]);
-  iVar4 = ((unsigned int)0x02037efc);
-  *(undefined4 *)((int)param_1 + ((unsigned int)0x02037efc)) = uVar1;
+  iVar4 = ((unsigned int)0x000005f8);
+  *(undefined4 *)((int)param_1 + ((unsigned int)0x000005f8)) = uVar1;
   func_02008ea4(param_1 + 0x5f);
   func_02006e04(param_1 + 0x2f,((unsigned int)0x02037f00),param_1,(int)param_1 + iVar4 + -100,0x400,0x13);
   func_020070b8(param_1 + 0x2f);

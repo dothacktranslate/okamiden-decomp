@@ -124,7 +124,7 @@ int func_0202207c(undefined4 param_1,undefined4 param_2,int param_3,int param_4)
     return 9;
   }
   if (param_4 == 0) {
-    func_02015440(local_414,((unsigned int)0x0202222c));
+    func_02015440(local_414,((unsigned int)0xedb88320));
     func_02009b68(((unsigned int)0x02022230),param_3,0x10);
     iVar4 = ((unsigned int)0x00000f1c);
     *(undefined4 *)(param_3 + ((unsigned int)0x00000f1c)) = 0;

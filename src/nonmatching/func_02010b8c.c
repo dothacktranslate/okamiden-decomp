@@ -106,8 +106,8 @@ void func_02010b8c(undefined4 *param_1,undefined4 param_2,int param_3,undefined4
 
   func_02010d04(param_1 + 5,param_1 + 0xb,param_1 + 1,param_1 + 0xc,param_1 + 0xd,param_3,param_4,
                param_5);
-  uVar1 = func_02010e00(&local_38,param_2,param_1[5],param_1[0xb],param_1[1]);
   uVar2 = *(undefined4 *)(param_3 + 0x10);
+  uVar1 = func_02010e00(&local_38,param_2,param_1[5],param_1[0xb],param_1[1]);
   *param_1 = local_38;
   param_1[2] = local_34;
   param_1[3] = local_30;

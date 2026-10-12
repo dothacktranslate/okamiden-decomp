@@ -102,7 +102,7 @@ void func_0203f87c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   *(undefined1 *)(param_1 + 0x121) = 1;
   *(undefined1 *)(param_1 + 0x120) = *(undefined1 *)(param_1 + 0x121);
   *(undefined2 *)(param_1 + 0x114) = 8;
-  *(undefined4 *)(param_1 + 0xd8) = ((unsigned int)0x0203f904);
+  *(undefined4 *)(param_1 + 0xd8) = ((unsigned int)0x000004cc);
   *(undefined4 *)(param_1 + 0x118) = 0x10000;
   *(undefined2 *)(param_1 + 0xd4) = 0x1000;
   uVar1 = ((unsigned int)0x00007fff);

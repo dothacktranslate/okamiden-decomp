@@ -125,8 +125,8 @@ LAB_0200b91c:
     iVar5 = *piVar7;
     break;
   case 2:
-    piVar4 = *(int **)(param_1 + 0x10);
     pcVar9 = (code *)puVar8[2];
+    piVar4 = *(int **)(param_1 + 0x10);
     goto LAB_0200b93c;
   case 3:
     puVar3 = *(undefined4 **)(param_1 + 0x10);

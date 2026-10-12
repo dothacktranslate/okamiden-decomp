@@ -91,7 +91,7 @@ extern int func_02002d24();
 void func_020416a4(int param_1,uint param_2,undefined2 *param_3,undefined4 param_4)
 
 {
-  short sVar1;
+  unsigned short sVar1;
   short *psVar2;
   int iVar3;
   int iVar4;
@@ -123,8 +123,8 @@ void func_020416a4(int param_1,uint param_2,undefined2 *param_3,undefined4 param
     if (*psVar2 <= ((unsigned int)0x02041750)) {
       *psVar2 = (short)((unsigned int)0x02041750);
     }
-    psVar2 = (short *)(param_1 + ((unsigned int)0x02041754) + iVar3);
-    if (0xfff < *(short *)(param_1 + ((unsigned int)0x02041754) + iVar3)) {
+    psVar2 = (short *)(param_1 + ((unsigned int)0x00000166) + iVar3);
+    if (0xfff < *(short *)(param_1 + ((unsigned int)0x00000166) + iVar3)) {
       *psVar2 = 0xfff;
     }
     if (*psVar2 <= ((unsigned int)0x02041750)) {

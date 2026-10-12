@@ -99,7 +99,7 @@ void func_0205fc1c(int *param_1,uint param_2,uint *param_3,int param_4)
   uVar8 = (int)param_2 >> 0xc;
   piVar6 = (int *)(param_4 + param_3[1]);
   uVar3 = *param_3;
-  if (*(ushort *)(param_4 + 4) - 1 == uVar8) {
+  if (*(ushort *)(4 + param_4) - 1 == uVar8) {
     if ((uVar3 & 0xc0000000) != 0) {
       if ((uVar3 & 0x40000000) == 0) {
         uVar8 = (uVar8 & 3) + (uVar8 >> 2);
@@ -130,11 +130,11 @@ void func_0205fc1c(int *param_1,uint param_2,uint *param_3,int param_4)
     return;
   }
   if ((uVar3 & 0xc0000000) != 0) {
-    uVar1 = (uVar3 & ((unsigned int)0x0205fd68)) >> 0x10;
+    uVar1 = (uVar3 & ((unsigned int)0x1fff0000)) >> 0x10;
     if ((uVar3 & 0x40000000) == 0) {
       if (uVar8 < uVar1) {
         uVar8 = uVar8 >> 2;
-        param_2 = param_2 & ((unsigned int)0x0205fd6c);
+        param_2 = param_2 & ((unsigned int)0x00003fff);
         iVar5 = 4;
         iVar2 = 2;
         goto LAB_0205fd28;
@@ -144,12 +144,12 @@ void func_0205fc1c(int *param_1,uint param_2,uint *param_3,int param_4)
     else {
       if (uVar8 < uVar1) {
         uVar8 = uVar8 >> 1;
-        param_2 = param_2 & ((unsigned int)0x0205fd68) >> 0x10;
+        param_2 = param_2 & ((unsigned int)0x1fff0000) >> 0x10;
         iVar5 = 2;
         iVar2 = 1;
         goto LAB_0205fd28;
       }
-      uVar8 = (uVar3 & ((unsigned int)0x0205fd68)) >> 0x11;
+      uVar8 = (uVar3 & ((unsigned int)0x1fff0000)) >> 0x11;
     }
   }
   iVar5 = 1;
@@ -162,7 +162,7 @@ LAB_0205fd28:
   }
   else {
     iVar7 = (int)*(short *)((int)piVar6 + uVar8 * 2);
-    iVar4 = (int)*(short *)((int)piVar6 + uVar8 * 2 + 2);
+    iVar4 = (int)*(short *)((int)piVar6 + (uVar8 * 2 + 2));
   }
   *param_1 = iVar7 * iVar5 + ((int)(param_2 * (iVar4 - iVar7)) >> 0xc) >> iVar2;
   return;

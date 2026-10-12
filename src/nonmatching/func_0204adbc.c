@@ -105,5 +105,5 @@ bool func_0204adbc(uint param_1)
   default:
     return false;
   }
-  return (((unsigned int)0x0204ae08) & param_1 >> 0x17) == 0;
+  return (((unsigned int)0x000001ff) & param_1 >> 0x17) == 0;
 }

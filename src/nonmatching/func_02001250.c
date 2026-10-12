@@ -84,7 +84,7 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-void func_02001250(int *param_1,uint *param_2,uint *param_3)
+void func_02001250(byte *param_1,uint *param_2,uint *param_3)
 
 {
   longlong lVar1;
@@ -92,7 +92,7 @@ void func_02001250(int *param_1,uint *param_2,uint *param_3)
   uint *puVar3;
   int iVar4;
   int iVar5;
-  int iVar6;
+  uint iVar6;
   int iVar7;
   int iVar8;
   int iVar9;
@@ -119,8 +119,8 @@ void func_02001250(int *param_1,uint *param_2,uint *param_3)
   lVar1 = (longlong)(int)param_2[7] * (longlong)iVar6 +
           (longlong)(int)param_2[1] * (longlong)iVar8 + (longlong)iVar7 * (longlong)(int)param_2[4];
   puVar3[1] = (uint)lVar1 >> 0xc | (int)((ulonglong)lVar1 >> 0x20) << 0x14;
-  iVar4 = param_1[4];
   iVar5 = param_1[3];
+  iVar4 = param_1[4];
   iVar9 = param_1[5];
   lVar1 = (longlong)(int)param_2[8] * (longlong)iVar6 +
           (longlong)(int)param_2[2] * (longlong)iVar8 + (longlong)iVar7 * (longlong)(int)param_2[5];
@@ -132,8 +132,8 @@ void func_02001250(int *param_1,uint *param_2,uint *param_3)
   lVar1 = (longlong)(int)param_2[7] * (longlong)iVar9 +
           (longlong)(int)param_2[1] * (longlong)iVar5 + (longlong)iVar4 * (longlong)(int)param_2[4];
   puVar3[4] = (uint)lVar1 >> 0xc | (int)((ulonglong)lVar1 >> 0x20) << 0x14;
-  iVar7 = param_1[6];
   iVar6 = param_1[8];
+  iVar7 = param_1[6];
   lVar1 = (longlong)(int)param_2[6] * (longlong)iVar9 +
           (longlong)(int)*param_2 * (longlong)iVar5 + (longlong)iVar4 * (longlong)(int)param_2[3];
   lVar2 = (longlong)(int)param_2[6] * (longlong)iVar6 +

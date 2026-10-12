@@ -117,7 +117,7 @@ undefined4 func_02022244(int param_1)
       *(undefined1 *)(param_1 + 0xd) = 1;
     }
   }
-  func_02015440(auStack_414,((unsigned int)0x020223a8));
+  func_02015440(auStack_414,((unsigned int)0xedb88320));
   iVar6 = 0;
   iVar5 = 0x18;
   iVar3 = func_02032e4c((*(unsigned int *)0x02022398),0,((unsigned int)0x020223ac),0x18,1);
@@ -140,7 +140,7 @@ undefined4 func_02022244(int param_1)
         func_02021eb0(param_1,iVar1);
         return 3;
       }
-      func_02015440(auStack_414,((unsigned int)0x020223a8));
+      func_02015440(auStack_414,((unsigned int)0xedb88320));
       iVar2 = *(int *)(iVar1 + 0xf1c);
       *(undefined4 *)(iVar1 + 0xf1c) = 0;
       iVar3 = func_02021f44(param_1,iVar1,1);
@@ -148,7 +148,7 @@ undefined4 func_02022244(int param_1)
          (iVar3 = func_020154bc(auStack_414,iVar1,0xf20), iVar2 == iVar3)) break;
       iVar6 = iVar6 + 1;
       iVar5 = iVar5 + 0xf20;
-      if (1 < iVar6) {
+      if (2 <= iVar6) {
         func_02021eb0(param_1,iVar1);
         return 2;
       }

@@ -215,7 +215,7 @@ LAB_0205dd80:
     if ((*(uint *)(((unsigned int)0x0205df58) + 0xfc) & 1) == 0) {
       if ((*(uint *)(((unsigned int)0x0205df58) + 0xfc) & 2) == 0) {
         uVar4 = func_0205bdf4();
-        func_0205e0c0(0x19,uVar4,0xc);
+        func_0205e0c0(uVar4,0x19,uVar4,0xc,uVar4,uVar4);
       }
     }
     else {

@@ -166,8 +166,8 @@ void func_0205d0ec(int *param_1,int param_2,undefined4 param_3,undefined4 param_
   }
   if ((param_1[2] & 0x100U) != 0 || uVar7 != 0) goto LAB_0205d328;
   func_0205df8c();
-  puVar4 = ((unsigned int)0x0205d3b8);
-  (*(unsigned int *)0x0205d3b8) = ((unsigned int)0x0205d3b4);
+  puVar4 = ((unsigned int)0x04000400);
+  (*(unsigned int *)0x04000400) = ((unsigned int)0x0205d3b4);
   *puVar4 = 0;
   *puVar4 = 0;
   do {
@@ -198,18 +198,18 @@ LAB_0205d240:
   iVar5 = ((unsigned int)0x0205d3bc);
   puVar3[2] = uVar6;
   uVar6 = ((unsigned int)0x0205d3c8);
-  puVar2 = ((unsigned int)0x0205d3b8);
+  puVar2 = ((unsigned int)0x04000400);
   if ((*(uint *)(iVar5 + 0xfc) & 1) == 0) {
     if ((*(uint *)(iVar5 + 0xfc) & 2) == 0) {
-      func_020098cc(((unsigned int)0x0205d3d4),((unsigned int)0x0205d3b8),0x48);
+      func_020098cc(((unsigned int)0x0205d3d4),((unsigned int)0x04000400),0x48);
       goto LAB_0205d328;
     }
-    (*(unsigned int *)0x0205d3b8) = ((unsigned int)0x0205d3c4);
+    (*(unsigned int *)0x04000400) = ((unsigned int)0x00171012);
     func_020098cc(uVar6,puVar2,8);
     uVar6 = func_0205bdf4();
   }
   else {
-    (*(unsigned int *)0x0205d3b8) = ((unsigned int)0x0205d3c4);
+    (*(unsigned int *)0x04000400) = ((unsigned int)0x00171012);
     func_020098cc(uVar6,puVar2,8);
     uVar6 = func_0205c108();
   }

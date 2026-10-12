@@ -98,7 +98,7 @@ void func_020356f0(uint *param_1)
   undefined4 *puVar1;
 
   puVar1 = ((unsigned int)0x02035758);
-  if ((int)((*(unsigned int *)0x0203574c) & 0x8000) >> 0xf != 0) {
+  if ((int)((*(unsigned short *)0x0203574c) & 0x8000) >> 0xf != 0) {
     if (*(uint *)((*(unsigned int *)0x02035750) + 0x1cc) < 0xd) {
       if (((((unsigned int)0x00001801) & 1 << (*(uint *)((*(unsigned int *)0x02035750) + 0x1cc) & 0xff)) != 0) &&
          ((*param_1 & 0x800) == 0)) {

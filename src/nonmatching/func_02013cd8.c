@@ -90,13 +90,13 @@ void func_02013cd8(uint param_1,uint param_2)
   uint uVar1;
   ushort *puVar2;
 
-  puVar2 = ((unsigned int)0x02013d54);
+  puVar2 = ((unsigned int)0x040001a0);
   uVar1 = param_2 >> 8;
   do {
   } while (((*(unsigned int *)0x02013d50) & 0x80000000) != 0);
-  (*(unsigned short *)0x02013d54) = (*(unsigned int *)0x02013d54) & 0xdfff | 0xc000;
+  (*(unsigned short *)0x040001a0) = (*(unsigned short *)0x040001a0) & 0xc000 | 0xdfff;
   *(uint *)(puVar2 + 4) =
-       (uVar1 & 0xff0000) >> 8 | param_1 & 0xff | (uVar1 & 0xff00) << 8 | uVar1 << 0x18;
+       (uVar1 & 0xff0000) >> param_1 | 8 & 0xff | (uVar1 & 0xff00) << 8 | uVar1 << 0x18;
   *(uint *)(puVar2 + 6) = param_2 & 0xff;
   return;
 }

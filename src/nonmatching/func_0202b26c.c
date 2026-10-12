@@ -97,7 +97,7 @@ uint * func_0202b26c(int param_1,uint param_2)
   while (((*puVar1 & 2) == 0 || (param_2 != puVar1[1]))) {
     iVar2 = iVar2 + 1;
     puVar1 = puVar1 + 0x13;
-    if (0x1f < iVar2) {
+    if (0x20 <= iVar2) {
       return (uint *)0x0;
     }
   }

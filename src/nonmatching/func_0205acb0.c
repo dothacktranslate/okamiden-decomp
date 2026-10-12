@@ -89,8 +89,8 @@ void func_0205acb0(undefined4 *param_1,byte *param_2,undefined4 param_3,undefine
 {
   uint *puVar1;
   code *pcVar2;
-  uint uVar3;
   uint uVar4;
+  uint uVar3;
   uint *puVar5;
   bool bVar6;
 
@@ -112,8 +112,8 @@ void func_0205acb0(undefined4 *param_1,byte *param_2,undefined4 param_3,undefine
     puVar1 = (uint *)(uint)*(byte *)(((unsigned int)0x0205ad40) + uVar4 * 8);
     bVar6 = (uint *)(uint)*param_2 == puVar1;
     if (bVar6) {
-      puVar5 = (uint *)(uint)*(ushort *)(param_2 + 2);
-      puVar1 = (uint *)(uint)*(ushort *)(((unsigned int)0x0205ad40) + uVar4 * 8 + 2);
+      puVar5 = (uint *)(uint)*(ushort *)(2 + param_2);
+      puVar1 = (uint *)(uint)*(unsigned char *)(((unsigned int)0x0205ad40) + uVar4 * 8 + 2);
     }
     if (bVar6 && puVar1 == puVar5) break;
     uVar4 = uVar4 + 1;

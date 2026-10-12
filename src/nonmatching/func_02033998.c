@@ -103,7 +103,7 @@ undefined4 func_02033998(int param_1,int param_2,int param_3)
 
   iVar1 = func_02033ab4();
   iVar4 = *(int *)(param_1 + 8) + *(int *)(param_2 + 8);
-  if (iVar1 <= iVar4) {
+  if (iVar4 >= iVar1) {
     iVar1 = *(int *)(param_3 + 0x28);
     if (iVar1 == 1) {
       func_02002ac4(param_3,param_3 + 0xc,param_3 + 0x18);

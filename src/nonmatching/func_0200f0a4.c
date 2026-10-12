@@ -172,16 +172,16 @@ func_0200f0a4(undefined2 *param_1,undefined2 *param_2,uint param_3,uint param_4,
   undefined2 *puVar4;
   undefined2 *puVar5;
   uint uVar6;
-  int iVar7;
   uint uVar8;
+  int iVar7;
   undefined2 *unaff_r4;
   bool bVar9;
   bool bVar10;
   bool bVar11;
   bool bVar12;
 
+  bVar10 = 0x1000 <= param_3;
   bVar9 = (undefined2 *)0xfff < param_2;
-  bVar10 = 0xfff < param_3;
   if (!bVar9 && !bVar10) {
     unaff_r4 = (undefined2 *)(uint)param_6;
   }
@@ -226,18 +226,18 @@ func_0200f0a4(undefined2 *param_1,undefined2 *param_2,uint param_3,uint param_4,
     return puVar4;
   }
   func_02008b6c(puVar4);
-  puVar2 = ((unsigned int)0x0200f288);
-  (*(unsigned int *)0x0200f288) = 0;
+  puVar2 = ((unsigned int)0x04000280);
+  (*(short *)0x04000280) = 0;
   *(uint *)(puVar2 + 8) = ((int)param_2 - (uint)param_6) * 0x100;
   *(uint *)(puVar2 + 0xc) = param_4 - param_8;
   puVar2[0xe] = 0;
   puVar2[0xf] = 0;
   do {
   } while ((*puVar2 & 0x8000) != 0);
-  iVar7 = (*(unsigned int *)0x0200f28c);
+  iVar7 = (*(unsigned int *)0x040002a0);
   *puVar2 = 0;
-  piVar3 = ((unsigned int)0x0200f28c);
-  ((unsigned int *)0x0200f28c)[-4] = (param_3 - param_7) * 0x100;
+  piVar3 = ((unsigned int)0x040002a0);
+  ((unsigned int *)0x040002a0)[-4] = (param_3 - param_7) * 0x100;
   piVar3[-2] = (uint)param_5 - (uint)param_9;
   piVar3[-1] = 0;
   if ((0x7fff < iVar7) || (iVar7 < -0x8000)) {
@@ -245,7 +245,7 @@ func_0200f0a4(undefined2 *param_1,undefined2 *param_2,uint param_3,uint param_4,
     return (undefined2 *)0x1;
   }
   param_1[2] = (short)iVar7;
-  piVar3 = ((unsigned int)0x0200f28c);
+  piVar3 = ((unsigned int)0x040002a0);
   iVar7 = (((int)param_2 + (uint)param_6) * 0x100 - (int)(short)param_1[2] * (param_4 + param_8)) *
           0x200;
   iVar1 = iVar7 >> 0x10;
@@ -256,7 +256,7 @@ func_0200f0a4(undefined2 *param_1,undefined2 *param_2,uint param_3,uint param_4,
   *param_1 = (short)((uint)iVar7 >> 0x10);
   do {
   } while ((*(ushort *)(piVar3 + -8) & 0x8000) != 0);
-  iVar7 = (*(unsigned int *)0x0200f28c);
+  iVar7 = (*(unsigned int *)0x040002a0);
   func_02008b80();
   if ((iVar7 < 0x8000) && (-0x8001 < iVar7)) {
     param_1[3] = (short)iVar7;

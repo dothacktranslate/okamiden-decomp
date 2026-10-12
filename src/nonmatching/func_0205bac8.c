@@ -91,7 +91,7 @@ void func_0205bac8(int param_1)
 
 {
   int *piVar1;
-  int iVar2;
+  uint iVar2;
   uint uVar3;
   int iVar4;
 

@@ -105,7 +105,7 @@ undefined4 func_0202582c(undefined4 param_1,undefined4 param_2,undefined4 param_
   piVar1 = ((unsigned int)0x02025948);
   iVar7 = (*(short *)0x02025948);
   iVar5 = func_020465d8(param_1,1,param_3,param_4,param_4);
-  switch(iVar5 - ((unsigned int)0x0202594c)) {
+  switch(iVar5 - ((unsigned int)0x00000601)) {
   case 0:
     uVar6 = func_020465d8(param_1,3);
     *(undefined4 *)(iVar7 + 0x9c) = uVar6;
@@ -144,7 +144,7 @@ undefined4 func_0202582c(undefined4 param_1,undefined4 param_2,undefined4 param_
     break;
   case 5:
   case 6:
-    iVar5 = func_02024bf8(iVar7 + 0x14,iVar5 == ((unsigned int)0x0202594c) + 6);
+    iVar5 = func_02024bf8(iVar7 + 0x14,iVar5 == ((unsigned int)0x00000601) + 6);
     if (-1 < iVar5) {
       uVar6 = func_020465d8(param_1,iVar5 + 3);
       *(undefined4 *)(iVar7 + 0x9c) = uVar6;

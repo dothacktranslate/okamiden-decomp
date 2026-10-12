@@ -102,8 +102,8 @@ uint func_0205499c(undefined4 param_1,undefined4 *param_2,undefined4 *param_3,un
     uVar2 = func_0204b864();
     return uVar2;
   }
-  bVar4 = 2 < uVar2;
   bVar3 = uVar2 == 3;
+  bVar4 = 2 < uVar2;
   if (bVar3) {
     func_0201e488(*param_2,*param_3);
     return (uint)(!bVar4 || bVar3);
@@ -112,7 +112,7 @@ uint func_0205499c(undefined4 param_1,undefined4 *param_2,undefined4 *param_3,un
     iVar1 = func_02054894(*param_2,*param_3,param_3,param_3[1],param_4);
     return (uint)(iVar1 <= 0);
   }
-  uVar2 = func_020547e0();
+  uVar2 = func_020547e0(param_1);
   if (uVar2 == 0xffffffff) {
     iVar1 = func_020547e0(param_1,param_3,param_2,0xd);
     if (iVar1 == -1) {

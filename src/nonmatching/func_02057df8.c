@@ -106,12 +106,12 @@ uint func_02057df8(int param_1,uint param_2,ushort *param_3,int *param_4,int *pa
   local_48 = 0;
   if (param_2 != 0) {
     do {
-      puVar5 = (uint *)(param_1 + local_48 * 8);
-      iVar6 = *(int *)(param_3 + 2) + local_48 * 6;
+      puVar5 = (uint *)(local_48 + param_1 * 8);
+      iVar8 = *(int *)(param_3 + 2) + local_48 * 6;
       *(undefined2 *)(param_1 + local_48 * 8) =
            *(undefined2 *)(*(int *)(param_3 + 2) + local_48 * 6);
-      *(undefined2 *)((int)puVar5 + 2) = *(undefined2 *)(iVar6 + 2);
-      *(undefined2 *)(puVar5 + 1) = *(undefined2 *)(iVar6 + 4);
+      *(undefined2 *)((int)puVar5 + 2) = *(undefined2 *)(iVar8 + 2);
+      *(undefined2 *)(puVar5 + 1) = *(undefined2 *)(iVar8 + 4);
       if ((param_4 != (int *)0x0) || (param_5 != (int *)0x0)) {
         local_30 = (int)(*puVar5 & ((unsigned int)0x01ff0000)) >> 0x10;
         if (0xff < local_30) {
@@ -130,10 +130,10 @@ uint func_02057df8(int param_1,uint param_2,ushort *param_3,int *param_4,int *pa
             uVar4 = uVar7 & 0x30000300;
           }
           if (uVar4 == 0x300) {
-            iVar1 = (int)(uVar7 & ((unsigned int)0x02058148) & 0xc000) >> 0xe;
-            iVar6 = ((uVar7 & ((unsigned int)0x02058148)) >> 0x1e) * 2;
-            local_30 = local_30 + (uint)*(ushort *)(iVar6 + ((unsigned int)0x0205814c) + iVar1 * 8) * 0x800;
-            local_2c = local_2c + (uint)*(ushort *)(iVar6 + ((unsigned int)0x02058150) + iVar1 * 8) * 0x800;
+            iVar1 = (int)(uVar7 & ((unsigned int)0xc000c000) & 0xc000) >> 0xe;
+            iVar8 = ((uVar7 & ((unsigned int)0xc000c000)) >> 0x1e) * 2;
+            local_30 = local_30 + (uint)*(ushort *)(iVar8 + ((unsigned int)0x0205814c) + iVar1 * 8) * 0x800;
+            local_2c = local_2c + (uint)*(ushort *)(iVar8 + ((unsigned int)0x02058150) + iVar1 * 8) * 0x800;
           }
           uVar4 = 0x300;
           if (param_7 == 0) {
@@ -144,26 +144,26 @@ uint func_02057df8(int param_1,uint param_2,ushort *param_3,int *param_4,int *pa
           lVar3 = (longlong)local_30 * (longlong)param_4[1] +
                   (longlong)param_4[3] * (longlong)local_2c + 0x1000;
           if (uVar4 == 0x100 || uVar4 == 0x300) {
-            uVar7 = *puVar5 & ((unsigned int)0x02058154) | uVar4 | (uint)param_6 << 0x19;
+            uVar7 = *puVar5 & ((unsigned int)0xc1fffcff) | uVar4 | (uint)param_6 << 0x19;
           }
           else {
-            uVar7 = *puVar5 & ((unsigned int)0x02058154) | uVar4;
+            uVar7 = *puVar5 & ((unsigned int)0xc1fffcff) | uVar4;
           }
           *puVar5 = uVar7;
-          iVar1 = (int)(*puVar5 & ((unsigned int)0x02058148) & 0xc000) >> 0xe;
-          iVar6 = ((*puVar5 & ((unsigned int)0x02058148)) >> 0x1e) * 2;
-          iVar8 = (int)(uint)*(ushort *)(iVar6 + ((unsigned int)0x0205814c) + iVar1 * 8) >> 1;
-          iVar6 = (int)(uint)*(ushort *)(iVar6 + ((unsigned int)0x02058150) + iVar1 * 8) >> 1;
+          iVar1 = (int)(*puVar5 & ((unsigned int)0xc000c000) & 0xc000) >> 0xe;
+          iVar8 = ((*puVar5 & ((unsigned int)0xc000c000)) >> 0x1e) * 2;
+          iVar6 = (int)(uint)*(ushort *)(iVar8 + ((unsigned int)0x0205814c) + iVar1 * 8) >> 1;
+          iVar8 = (int)(uint)*(ushort *)(iVar8 + ((unsigned int)0x02058150) + iVar1 * 8) >> 1;
           local_30 = ((uint)lVar2 >> 0xc | (int)((ulonglong)lVar2 >> 0x20) << 0x14) +
-                     param_4[2] * iVar6 + *param_4 * iVar8 + iVar8 * -0x1000;
+                     param_4[2] * iVar8 + *param_4 * iVar6 + iVar6 * -0x1000;
           iVar1 = local_30;
           if (uVar4 == 0x300) {
-            iVar1 = local_30 + iVar8 * -0x1000;
+            iVar1 = local_30 + iVar6 * -0x1000;
           }
           local_2c = ((uint)lVar3 >> 0xc | (int)((ulonglong)lVar3 >> 0x20) << 0x14) +
-                     param_4[3] * iVar6 + param_4[1] * iVar8 + iVar6 * -0x1000;
+                     param_4[3] * iVar8 + param_4[1] * iVar6 + iVar8 * -0x1000;
           if (uVar4 == 0x300) {
-            local_2c = local_2c + iVar6 * -0x1000;
+            local_2c = local_2c + iVar8 * -0x1000;
             local_30 = iVar1;
           }
         }
@@ -171,7 +171,7 @@ uint func_02057df8(int param_1,uint param_2,ushort *param_3,int *param_4,int *pa
           local_30 = local_30 + *param_5;
           local_2c = local_2c + param_5[1];
         }
-        *puVar5 = *puVar5 & ((unsigned int)0x02058158) | local_2c + 0x800 >> 0xc & 0xffU |
+        *puVar5 = *puVar5 & ((unsigned int)0xfe00ff00) | local_2c + 0x800 >> 0xc & 0xffU |
                   (local_30 + 0x800 >> 0xc & 0x1ffU) << 0x10;
       }
       uVar4 = local_48 + 1;

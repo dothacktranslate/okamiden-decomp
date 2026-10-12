@@ -89,12 +89,12 @@ void func_02003894(int param_1,short param_2,short param_3,undefined2 param_4)
 {
   undefined2 *puVar1;
 
-  puVar1 = ((unsigned int)0x020038e4);
+  puVar1 = ((unsigned int)0x0400035c);
   if (param_1 != 0) {
-    (*(unsigned short *)0x020038e4) = param_4;
+    (*(unsigned short *)0x0400035c) = param_4;
     puVar1[-0x17e] = puVar1[-0x17e] & 0xc0bf | param_2 << 6 | param_3 << 8 | 0x80U;
     return;
   }
-  (*(unsigned int *)0x020038dc) = (*(unsigned int *)0x020038dc) & (ushort)((unsigned int)0x020038e0);
+  (*(unsigned short *)0x04000060) = (*(unsigned short *)0x04000060) & (ushort)((unsigned int)0x0000cf7f);
   return;
 }

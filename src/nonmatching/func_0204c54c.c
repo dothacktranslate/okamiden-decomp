@@ -101,7 +101,7 @@ void func_0204c54c(int param_1,int param_2)
   }
   else {
     *(undefined1 *)(param_1 + 6) = 0;
-    if (*(char *)(*(int *)(*(undefined4 **)(param_1 + 0x14))[1] + 6) == '\0') {
+    if (*(char *)(*(unsigned char *)(*(undefined4 **)(param_1 + 0x14))[1] + 6) == '\0') {
       *(undefined4 *)(param_1 + 0xc) = **(undefined4 **)(param_1 + 0x14);
     }
     else {

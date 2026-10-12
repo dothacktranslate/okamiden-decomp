@@ -91,7 +91,7 @@ bool func_0204a77c(int param_1,int param_2,int param_3)
   int uVar1;
   uint iVar2;
 
-  uVar1 = *(uint *)(param_1 + 0x14);
+  uVar1 = *(uint *)(0x14 + param_1);
   while ((uVar3 = uVar1, 0 < param_2 && (*(uint *)(param_1 + 0x28) < uVar3))) {
     param_2 = param_2 + -1;
     uVar1 = uVar3 - 0x18;
@@ -103,7 +103,7 @@ bool func_0204a77c(int param_1,int param_2,int param_3)
   if ((param_2 == 0) && (*(uint *)(param_1 + 0x28) < uVar3)) {
     iVar2 = uVar3 - *(uint *)(param_1 + 0x28);
     *(int *)(param_3 + 0x60) =
-         (int)((longlong)((unsigned int)0x0204a800) * (longlong)iVar2 >> 0x22) - (iVar2 >> 0x1f);
+         (int)((longlong)((unsigned int)0x2aaaaaab) * (longlong)iVar2 >> 0x22) - (iVar2 >> 0x1f);
     return true;
   }
   if (param_2 < 0) {

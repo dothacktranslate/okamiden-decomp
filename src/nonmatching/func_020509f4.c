@@ -103,7 +103,7 @@ bool func_020509f4(uint param_1,byte *param_2,byte *param_3)
     while( true ) {
       while( true ) {
         pbVar1 = param_2 + 1;
-        if (param_3 <= pbVar1) {
+        if (pbVar1 >= param_3) {
           return !bVar4;
         }
         if (*pbVar1 != 0x25) break;

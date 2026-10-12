@@ -164,15 +164,15 @@ func_020347b0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefine
   undefined4 uStack_10;
 
   uStack_10 = param_4;
-  func_020351ac(param_1,param_2,(*(unsigned int *)0x020347fc),param_3,param_4,param_5);
-  *param_1 = (*(unsigned int *)0x02034800);
+  func_020351ac(param_1,param_2,(*(unsigned int *)0x45585048),param_3,param_4,param_5);
+  *param_1 = (*(short *)0x02034800);
   *(undefined2 *)(param_1 + 0xf) = 0;
   *(undefined2 *)((int)param_1 + 0x3e) = 0;
   param_1[0x10] = 0;
   func_02034674(param_1,0);
   local_14 = param_1[6];
   local_18 = param_1[5];
-  uVar1 = func_02034648(&local_18,(*(unsigned int *)0x02034804));
+  uVar1 = func_02034648(&local_18,(*(unsigned int *)0x00004652));
   param_1[0xb] = uVar1;
   param_1[0xc] = uVar1;
   param_1[0xd] = 0;

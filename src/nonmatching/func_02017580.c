@@ -206,7 +206,7 @@ char * func_02017580(uint param_1,undefined4 param_2,int param_3,undefined4 para
   cVar8 = (*(unsigned char *)((unsigned char *)&uStack_4 + 3));
   (*(unsigned char *)((unsigned char *)&uStack_4 + 1)) = (char)((uint)param_4 >> 8);
   cVar1 = (*(unsigned char *)((unsigned char *)&uStack_4 + 1));
-  if (((unsigned int)0x02017a04) < param_7) {
+  if (((unsigned int)0x000001fd) < param_7) {
     return (char *)0x0;
   }
   auStack_70[0] = 0;
@@ -317,7 +317,7 @@ char * func_02017580(uint param_1,undefined4 param_2,int param_3,undefined4 para
   do {
     iVar2 = -iVar12;
     uVar17 = *(undefined1 *)((int)&local_10 + iVar12);
-    *(undefined1 *)((int)&local_10 + iVar12) = *(undefined1 *)((int)&local_c + iVar2 + 3);
+    *(undefined1 *)((int)&local_10 + iVar12) = *(undefined1 *)((int)&local_c + (iVar2 + 3));
     iVar12 = iVar12 + 1;
     *(undefined1 *)((int)&local_c + iVar2 + 3) = uVar17;
   } while (iVar12 < 4);
@@ -370,7 +370,7 @@ char * func_02017580(uint param_1,undefined4 param_2,int param_3,undefined4 para
     *pcVar14 = '.';
   }
   uVar18 = func_0201d008(param_1,param_2);
-  func_0201e344(0,0,(int)uVar18,(int)((ulonglong)uVar18 >> 0x20));
+  func_0201e344(0,0,(int)uVar18,(int)((ulonglong)uVar18 >> 0x20),uVar18);
   if ((bool)uVar17) {
     cVar8 = '0';
   }

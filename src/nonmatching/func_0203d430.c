@@ -107,7 +107,7 @@ undefined4 func_0203d430(int param_1,undefined4 param_2,undefined4 param_3,undef
       iVar3 = func_0203d9a0((*(unsigned int *)0x0203d4ac),*(undefined4 *)(param_1 + 0x28),((unsigned int)0x0203d4b0),param_4,
                            param_4);
       *(int *)(param_1 + 0x1c) = iVar3;
-      uVar1 = ((unsigned int)0x0203d4b4);
+      uVar1 = ((unsigned int)0xbe19999a);
       if (iVar3 == 0) {
         return 0;
       }
@@ -115,7 +115,7 @@ undefined4 func_0203d430(int param_1,undefined4 param_2,undefined4 param_3,undef
       if (*(uint *)(param_1 + 0x28) >> 1 != 0) {
         do {
           iVar3 = uVar4 * 2;
-          uVar2 = func_0203dc34(*(undefined2 *)(*(int *)(param_1 + 0x18) + iVar3),uVar1,((unsigned int)0x0203d4b8),
+          uVar2 = func_0203dc34(*(undefined2 *)(*(int *)(param_1 + 0x18) + iVar3),uVar1,((unsigned int)0x3db851ec),
                                7);
           uVar4 = uVar4 + 1;
           *(undefined2 *)(*(int *)(param_1 + 0x1c) + iVar3) = uVar2;

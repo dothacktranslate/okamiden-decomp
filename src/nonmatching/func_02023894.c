@@ -104,7 +104,7 @@ int func_02023894(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
   if (iVar1 != 0) {
     iVar2 = func_02023934(iVar1,param_1,param_2,param_3,param_4,param_5,param_6,param_3,uVar3);
   }
-  func_020381cc((*(unsigned int *)0x020238f4),iVar2,0xf,1,0,((unsigned int)0x020238f0));
+  func_020381cc((*(signed char *)0x020238f4),iVar2,0xf,1,0,((unsigned int)0x020238f0));
   if (iVar2 == 0) {
     iVar2 = 0;
   }

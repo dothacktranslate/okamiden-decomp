@@ -99,7 +99,7 @@ undefined4 * func_020647b0(int *param_1,int param_2,int param_3)
 
   iVar3 = param_2 * 0x24 + ((unsigned int)0x02064848);
   if (*param_1 != 0) {
-    func_0206445c();
+    func_0206445c(param_1);
   }
   if (*(uint *)(iVar3 + 0x18) <= (uint)*(ushort *)(iVar3 + 8)) {
     iVar1 = func_02056370(iVar3,0);

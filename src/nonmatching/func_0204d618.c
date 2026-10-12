@@ -100,7 +100,7 @@ void func_0204d618(uint param_1,int param_2)
   }
   iVar3 = 0;
   if (iVar2 != 0) {
-    *(byte *)(iVar2 + 5) = (byte)uVar1 & 0xfc;
+    *(byte *)(iVar2 + 5) = (byte)0xfc & uVar1;
   }
   if (0 < *(int *)(param_2 + 0x28)) {
     do {

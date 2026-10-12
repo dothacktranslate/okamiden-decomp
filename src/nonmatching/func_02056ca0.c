@@ -100,9 +100,9 @@ void func_02056ca0(int param_1,int param_2,int param_3,int param_4)
   puVar5 = ((unsigned int)0x04000500);
   iVar3 = (param_4 << 8) >> 0x10;
   iVar4 = (param_3 << 8) >> 0x10;
-  uVar1 = (param_1 << 8) >> 0x10 & 0xffff;
   uVar2 = (param_2 << 8) >> 0x10 & 0xffff;
-  (*(unsigned int *)0x04000500) = 1;
+  uVar1 = (param_1 << 8) >> 0x10 & 0xffff;
+  (*(unsigned char *)0x04000500) = 1;
   puVar7 = puVar5 + -0x1e;
   *puVar7 = uVar1 | iVar3 << 0x10;
   piVar8 = puVar5 + -0x1d;

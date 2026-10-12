@@ -92,8 +92,8 @@ void func_020064cc(int param_1,undefined4 param_2,undefined4 param_3)
   int iVar1;
   int iVar2;
 
-  iVar1 = ((unsigned int)0x02006508);
   iVar2 = param_1 * 0xc;
+  iVar1 = ((unsigned int)0x02006508);
   *(undefined4 *)(((unsigned int)0x02006504) + iVar2) = param_2;
   *(undefined4 *)(iVar1 + iVar2) = param_3;
   func_0200653c(1 << (param_1 + 3U & 0xff));

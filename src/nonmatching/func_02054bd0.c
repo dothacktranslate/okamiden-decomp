@@ -105,49 +105,49 @@ void func_02054bd0(int param_1,int param_2,int param_3,undefined4 param_4)
   uint uVar8;
 
   do {
-    iVar6 = 2;
+    iVar3 = 2;
     piVar2 = (int *)(*(int *)(param_1 + 0xc) + param_3 * 8);
     if ((piVar2[-1] - 3U < 2) &&
-       ((piVar2[1] == 4 || (iVar3 = func_02054180(param_1,piVar2), iVar3 != 0)))) {
+       ((piVar2[1] == 4 || (iVar6 = func_02054180(param_1,piVar2), iVar6 != 0)))) {
       uVar1 = ((unsigned int)0x02054d80);
-      iVar3 = *(int *)(*piVar2 + 0xc);
-      if (iVar3 == 0) {
+      iVar6 = *(int *)(*piVar2 + 0xc);
+      if (iVar6 == 0) {
         if (piVar2[-1] != 4) {
           func_02054180(param_1,piVar2 + -2);
         }
       }
       else {
-        iVar6 = 1;
-        while ((iVar6 < param_2 &&
-               ((piVar2[iVar6 * -2 + 1] == 4 ||
-                (iVar4 = func_02054180(param_1,piVar2 + iVar6 * -2), iVar4 != 0))))) {
-          uVar8 = *(uint *)(piVar2[iVar6 * -2] + 0xc);
-          if (-iVar3 - 3U <= uVar8) {
+        iVar3 = 1;
+        while ((iVar3 < param_2 &&
+               ((piVar2[iVar3 * -2 + 1] == 4 ||
+                (iVar4 = func_02054180(param_1,piVar2 + iVar3 * -2), iVar4 != 0))))) {
+          uVar8 = *(uint *)(piVar2[iVar3 * -2] + 0xc);
+          if (-iVar6 - 3U <= uVar8) {
             func_0204b9e0(param_1,uVar1);
           }
-          iVar3 = iVar3 + uVar8;
-          iVar6 = iVar6 + 1;
+          iVar6 = iVar6 + uVar8;
+          iVar3 = iVar3 + 1;
         }
-        iVar5 = func_02056174(param_1,*(int *)(param_1 + 0x10) + 0x34,iVar3);
-        iVar3 = 0;
-        for (iVar4 = iVar6; 0 < iVar4; iVar4 = iVar4 + -1) {
+        iVar5 = func_02056174(param_1,*(int *)(param_1 + 0x10) + 0x34,iVar6);
+        iVar6 = 0;
+        for (iVar4 = iVar3; 0 < iVar4; iVar4 = iVar4 + -1) {
           iVar7 = *(int *)(piVar2[iVar4 * -2 + 2] + 0xc);
-          func_02016ac4(iVar5 + iVar3,piVar2[iVar4 * -2 + 2] + 0x10,iVar7);
-          iVar3 = iVar3 + iVar7;
+          func_02016ac4(iVar5 + iVar6,piVar2[iVar4 * -2 + 2] + 0x10,iVar7);
+          iVar6 = iVar6 + iVar7;
         }
-        iVar3 = func_02050028(param_1,iVar5,iVar3);
-        piVar2[iVar6 * -2 + 2] = iVar3;
-        (piVar2 + iVar6 * -2 + 2)[1] = 4;
+        iVar6 = func_02050028(param_1,iVar5,iVar6);
+        piVar2[iVar3 * -2 + 2] = iVar6;
+        (piVar2 + iVar3 * -2 + 2)[1] = 4;
       }
     }
     else {
-      iVar3 = func_020546b0(param_1,piVar2 + -2,piVar2,piVar2 + -2,0xf,param_3,param_4);
-      if (iVar3 == 0) {
+      iVar6 = func_020546b0(param_1,piVar2 + -2,piVar2,piVar2 + -2,0xf,param_3,param_4);
+      if (iVar6 == 0) {
         func_0204b7fc(param_1,piVar2 + -2,piVar2);
       }
     }
-    param_2 = param_2 - (iVar6 + -1);
-    param_3 = param_3 - (iVar6 + -1);
+    param_2 = param_2 - (iVar3 + -1);
+    param_3 = param_3 - (iVar3 + -1);
   } while (1 < param_2);
   return;
 }

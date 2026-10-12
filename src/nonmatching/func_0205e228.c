@@ -87,7 +87,7 @@ extern int LZCOUNT();
 int func_0205e228(byte *param_1)
 
 {
-  uint iVar1;
+  int iVar1;
 
   iVar1 = (int)*(char *)(((unsigned int)0x0205e264) + (uint)*param_1);
   if (iVar1 < 0) {

@@ -112,8 +112,8 @@ void func_02023354(undefined4 param_1,uint param_2,uint param_3)
       iVar6 = 0;
       if ((int)(uint)uVar1 >> 3 != 0) {
         do {
-          uVar3 = (ushort)((unsigned int)0x020233ec) & *puVar4;
           uVar5 = (uint)(*puVar4 >> 0xc);
+          uVar3 = (ushort)((unsigned int)0x00000fff) & *puVar4;
           if (param_2 != 0) {
             uVar3 = uVar3 + (short)(param_2 >> 5);
           }
@@ -121,7 +121,7 @@ void func_02023354(undefined4 param_1,uint param_2,uint param_3)
             uVar5 = uVar5 + (param_3 >> 5) & 0xffff;
           }
           iVar6 = iVar6 + 1;
-          *puVar4 = uVar3 & (ushort)((unsigned int)0x020233ec) | (ushort)(uVar5 << 0xc);
+          *puVar4 = uVar3 & (ushort)((unsigned int)0x00000fff) | (ushort)(uVar5 << 0xc);
           puVar4 = puVar4 + 1;
         } while (iVar6 < (int)(uint)uVar1 >> 3);
       }

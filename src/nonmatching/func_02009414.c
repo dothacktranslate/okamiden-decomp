@@ -172,14 +172,14 @@ void func_02009414(int param_1)
 
   uVar1 = func_02008b6c();
   iVar3 = param_1 * 0xc;
-  *(uint *)(iVar3 + 0x40000b8) = *(uint *)(iVar3 + 0x40000b8) & 0xc5ffffff;
+  *(unsigned char *)(iVar3 + 0x40000b8) = *(uint *)(iVar3 + 0x40000b8) & 0xc5ffffff;
   *(uint *)(iVar3 + 0x40000b8) = *(uint *)(iVar3 + 0x40000b8) & 0x7fffffff;
   uVar2 = *(undefined4 *)(iVar3 + 0x40000b8);
   if (param_1 == 0) {
     _DMA_CHANNEL_0_to_3 = 0;
     (*(volatile unsigned int *)0x040000b4) = 0;
-    (*(volatile unsigned int *)0x040000b8) = ((unsigned int)0x02009478);
-    uVar2 = ((unsigned int)0x02009478);
+    (*(volatile unsigned int *)0x040000b8) = ((unsigned int)0x81400001);
+    uVar2 = ((unsigned int)0x81400001);
   }
   func_02008b80(uVar1,uVar2);
   return;

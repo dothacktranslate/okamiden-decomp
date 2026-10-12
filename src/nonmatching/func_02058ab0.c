@@ -96,8 +96,8 @@ void func_02058ab0(int *param_1,int *param_2,undefined4 param_3,int param_4,int 
   undefined4 uVar5;
   int iVar6;
 
-  iVar4 = 0;
   uVar5 = 0;
+  iVar4 = 0;
   iVar3 = 1;
   iVar6 = param_4;
   while (param_5 != 0) {

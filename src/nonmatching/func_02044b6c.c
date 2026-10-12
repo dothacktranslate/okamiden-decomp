@@ -28,10 +28,10 @@ void func_02044b6c(int param_1,undefined4 param_2,uint param_3,undefined4 param_
   uVar2 = (uint)((param_3 & 1) != 0);
   if ((param_3 & 2) == 0) {
     func_02039090((*(unsigned short *)0x02044bec),*(unsigned short *)(((unsigned int)0x02044bf0) + uVar2 * 4),param_2,
-                 *(undefined4 *)(iVar1 + 0x14),*(undefined4 *)(iVar1 + 0x10),param_4);
+                 *(short *)(iVar1 + 0x14),*(undefined4 *)(iVar1 + 0x10),param_4);
     return;
   }
-  func_02007820(*(undefined4 *)(iVar1 + 0x14),*(undefined4 *)(iVar1 + 0x10));
+  func_02007820(*(unsigned char *)(iVar1 + 0x14),*(undefined4 *)(iVar1 + 0x10));
   (**(code **)(((unsigned int)0x02044be8) + uVar2 * 4))
             (*(undefined4 *)(iVar1 + 0x14),param_2,*(undefined4 *)(iVar1 + 0x10));
   return;

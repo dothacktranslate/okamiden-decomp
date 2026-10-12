@@ -103,8 +103,8 @@ void func_0203962c(int param_1,int param_2)
   uVar2 = *puVar1;
   uVar4 = puVar1[1];
   puVar1 = (undefined4 *)func_02041758(0x100,0xc0,0x1000);
-  uVar3 = *puVar1;
   uVar5 = puVar1[1];
+  uVar3 = *puVar1;
   *(undefined4 *)(param_1 + 0x1c) = uVar2;
   *(undefined4 *)(param_1 + 0x14) = uVar4;
   *(undefined4 *)(param_1 + 0x20) = uVar3;

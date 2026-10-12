@@ -120,11 +120,11 @@ void func_02006cb8(void)
   iVar5 = (((unsigned int)0x02006de0) + 0x3f80) - ((unsigned int)0x02006de4);
   *(int *)(((unsigned int)0x02006dd4) + 0x94) = iVar5;
   *(int *)(iVar1 + 0x90) = iVar4 - iVar3;
-  uVar2 = ((unsigned int)0x02006de8);
+  uVar2 = ((unsigned int)0xfddb597d);
   *(undefined4 *)(iVar1 + 0x98) = 0;
   *(undefined4 *)(iVar5 + -8) = uVar2;
   iVar4 = ((unsigned int)0x02006dcc);
-  **(undefined4 **)(iVar1 + 0x90) = ((unsigned int)0x02006dec);
+  **(undefined4 **)(iVar1 + 0x90) = ((unsigned int)0x7bf9dd5b);
   *(undefined4 *)(iVar1 + 0xa0) = 0;
   *(undefined4 *)(iVar1 + 0x9c) = 0;
   *(undefined2 *)(iVar4 + 0x1c) = 0;

@@ -116,7 +116,7 @@ char * func_0201705c(int param_1,int param_2,uint param_3,undefined4 param_4,int
   }
   if (local_3 <= 0x69) {
     if (local_3 < 0x69) {
-      if (local_3 < 0x59) {
+      if (local_3 <= 0x58) {
         if (local_3 != 0x58) goto LAB_02017164;
 LAB_0201715c:
         unaff_r4 = 0x10;
@@ -133,7 +133,7 @@ LAB_0201715c:
     }
   }
   else {
-    if (local_3 < 0x70) {
+    if (local_3 <= 0x6f) {
       if (local_3 == 0x6f) {
         unaff_r4 = 8;
         local_7 = '\0';
@@ -190,7 +190,7 @@ LAB_02017164:
       param_6 = param_6 + -2;
     }
   }
-  if (((unsigned int)0x020172a8) < param_6 + (param_2 - (int)pcVar3)) {
+  if (((unsigned int)0x000001fd) < param_6 + (param_2 - (int)pcVar3)) {
     return (char *)0x0;
   }
   for (; iVar5 < param_6; iVar5 = iVar5 + 1) {

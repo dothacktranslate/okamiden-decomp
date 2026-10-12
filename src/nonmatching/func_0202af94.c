@@ -141,8 +141,8 @@ LAB_0202afec:
     uVar3 = (uint)(ushort)param_1[2];
     uVar5 = (uint)(ushort)param_1[3];
     if ((*(uint *)(param_1 + 6) & 8) == 0) {
-      uVar3 = (int)(short)param_1[2] - ((int)(uint)(ushort)param_1[4] >> 1) & 0xffff;
       uVar5 = (int)(short)param_1[3] - ((int)(uint)(ushort)param_1[5] >> 1) & 0xffff;
+      uVar3 = (int)(short)param_1[2] - ((int)(uint)(ushort)param_1[4] >> 1) & 0xffff;
     }
     func_02038728((*(unsigned int *)0x0202b0d8),param_1[1],0,uVar3,uVar5,param_1[4],param_1[5]);
     if ((param_3 != (uint *)0x0) && ((*(uint *)(iVar4 + 0xc) & 1) != 0)) {

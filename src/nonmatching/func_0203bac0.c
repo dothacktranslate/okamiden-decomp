@@ -92,7 +92,7 @@ extern int func_0205f40c();
 undefined4 func_0203bac0(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint *param_4)
 
 {
-  uint *puVar1;
+  undefined2 *puVar1;
   uint *puVar2;
   uint uVar3;
 

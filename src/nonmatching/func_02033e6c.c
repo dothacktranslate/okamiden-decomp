@@ -192,7 +192,7 @@ func_02033e6c(undefined4 *param_1,int param_2,undefined4 *param_3,undefined4 *pa
   local_150 = -1;
   if (param_5 == '\0') {
     iVar3 = 0;
-    iVar2 = ((unsigned int)0x020341dc);
+    iVar2 = ((unsigned int)0x7fffffff);
     do {
       iVar1 = func_02033e40(auStack_134,auStack_128,auStack_104 + iVar3 * 0x3c,&local_11c);
       if ((iVar1 != 0) && (iVar1 = func_02002ea8(auStack_134,&local_11c), iVar1 < iVar2)) {
@@ -207,7 +207,7 @@ func_02033e6c(undefined4 *param_1,int param_2,undefined4 *param_3,undefined4 *pa
   }
   else {
     iVar3 = 0;
-    iVar2 = ((unsigned int)0x020341dc);
+    iVar2 = ((unsigned int)0x7fffffff);
     do {
       iVar1 = func_02033e40(auStack_134,auStack_128,auStack_104 + iVar3 * 0x3c,&local_11c);
       if (((iVar1 != 0) ||

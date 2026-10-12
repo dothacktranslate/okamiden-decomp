@@ -183,12 +183,12 @@ void func_02008968(void)
   bool bVar10;
 
   func_0200656c(4);
-  uVar2 = (ushort)((unsigned int)0x02008ac4);
+  uVar2 = (ushort)((unsigned int)0x0000ffdf);
   _REG_A_DISPSTAT = _REG_A_DISPSTAT & uVar2;
   *(uint *)(((unsigned int)0x02008ac0) + 0x3ff8) = *(uint *)(((unsigned int)0x02008ac0) + 0x3ff8) | 4;
   func_02008b1c(((int)(uint)_REG_A_DISPSTAT >> 8 | (_REG_A_DISPSTAT & 0x80) << 1) - 1);
-  puVar4 = ((unsigned int)0x02008acc);
   iVar3 = ((unsigned int)0x02008ac8);
+  puVar4 = ((unsigned int)0x04000006);
   puVar9 = *(undefined4 **)(((unsigned int)0x02008ac8) + 0xc);
   if (puVar9 == (undefined4 *)0x0) {
     return;
@@ -204,7 +204,7 @@ void func_02008968(void)
       if (bVar10) {
         uVar7 = puVar9[3];
       }
-      if (!bVar10 || uVar7 != uVar5) {
+      if (!bVar10 || uVar5 != uVar7) {
         return;
       }
       func_0200656c(4);

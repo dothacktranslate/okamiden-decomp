@@ -94,23 +94,23 @@ int func_020217d4(int param_1,int param_2,uint param_3,code *param_4)
   undefined1 auStack_38 [20];
   undefined1 *local_24;
 
-  iVar1 = func_02032ad8(param_1 * param_2 + param_3);
-  if (iVar1 != 0) {
+  iVar2 = func_02032ad8(param_2 * param_1 + param_3);
+  if (iVar2 != 0) {
     if (param_3 != 0) {
-      *(int *)(iVar1 + param_3 + -4) = param_1;
+      *(int *)(iVar2 + param_3 + -4) = param_1;
       if (7 < param_3) {
-        *(int *)(iVar1 + param_3 + -8) = param_2;
+        *(int *)(iVar2 + param_3 + -8) = param_2;
       }
     }
     if (param_4 != (code *)0x0) {
-      iVar2 = iVar1 + param_3;
+      iVar1 = iVar2 + param_3;
       local_24 = auStack_38;
       for (; param_1 != 0; param_1 = param_1 + -1) {
-        (*param_4)(iVar2);
-        iVar2 = iVar2 + param_2;
+        (*param_4)(iVar1);
+        iVar1 = iVar1 + param_2;
       }
     }
-    return iVar1 + param_3;
+    return iVar2 + param_3;
   }
   return 0;
 }

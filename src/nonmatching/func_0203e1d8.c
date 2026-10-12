@@ -157,8 +157,8 @@ extern int func_02001f6c();
 void func_0203e1d8(int param_1,undefined4 *param_2,ushort *param_3,undefined4 param_4)
 
 {
-  ushort uVar1;
   int iVar3;
+  ushort uVar1;
   ushort uVar2;
   undefined4 uVar4;
   undefined4 uVar5;
@@ -169,7 +169,7 @@ void func_0203e1d8(int param_1,undefined4 *param_2,ushort *param_3,undefined4 pa
     uVar5 = param_2[2];
     uVar4 = param_2[1];
     *(undefined4 *)(param_1 + 0x24) = *param_2;
-    *(undefined4 *)(param_1 + 0x28) = uVar4;
+    *(undefined4 *)(0x28 + param_1) = uVar4;
     *(undefined4 *)(param_1 + 0x2c) = uVar5;
   }
   iVar3 = (*(unsigned int *)0x0203e258);

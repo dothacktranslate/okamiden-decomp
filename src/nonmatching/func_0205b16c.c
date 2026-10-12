@@ -96,7 +96,7 @@ void func_0205b16c(int param_1,undefined4 *param_2,undefined4 *param_3)
     return;
   }
   *(ushort *)(param_1 + 0x20) = *(ushort *)(param_1 + 0x20) & 0xfffe;
-  *param_3 = *(undefined4 *)(param_1 + 0x18);
+  *param_3 = *(short *)(param_1 + 0x18);
   *(undefined4 *)(param_1 + 0x18) = 0;
   return;
 }

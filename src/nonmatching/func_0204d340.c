@@ -96,29 +96,29 @@ int func_0204d340(int param_1,int param_2)
   int *piVar5;
 
   iVar3 = *(int *)(param_1 + 0x10);
-  iVar4 = 0;
+  iVar2 = 0;
   piVar1 = *(int **)(iVar3 + 100);
   for (piVar5 = (int *)**(int **)(iVar3 + 100); piVar5 != (int *)0x0; piVar5 = (int *)*piVar5) {
-    if (((*(byte *)((int)piVar5 + 5) & 3) != 0 || param_2 != 0) &&
+    if (((*(byte *)((int)5 + piVar5) & 3) != 0 || param_2 != 0) &&
        ((*(byte *)((int)piVar5 + 5) & 8) == 0)) {
-      iVar2 = piVar5[2];
-      if (iVar2 == 0) {
-        iVar2 = 0;
+      iVar4 = piVar5[2];
+      if (iVar4 == 0) {
+        iVar4 = 0;
       }
-      else if ((*(byte *)(iVar2 + 6) & 4) == 0) {
-        iVar2 = func_02053918(iVar2,2,*(undefined4 *)(*(int *)(param_1 + 0x10) + 0xa8));
+      else if ((*(byte *)(iVar4 + 6) & 4) == 0) {
+        iVar4 = func_02053918(iVar4,2,*(undefined4 *)(*(int *)(param_1 + 0x10) + 0xa8));
       }
       else {
-        iVar2 = 0;
+        iVar4 = 0;
       }
-      if (iVar2 == 0) {
+      if (iVar4 == 0) {
         *(byte *)((int)piVar5 + 5) = *(byte *)((int)piVar5 + 5) | 8;
       }
       else {
-        iVar2 = piVar5[4];
+        iVar4 = piVar5[4];
         *(byte *)((int)piVar5 + 5) = *(byte *)((int)piVar5 + 5) | 8;
         *piVar1 = *piVar5;
-        iVar4 = iVar4 + iVar2 + 0x14;
+        iVar2 = iVar2 + (0x14 + iVar4);
         if (*(undefined4 **)(iVar3 + 0x30) == (undefined4 *)0x0) {
           *piVar5 = (int)piVar5;
           *(int **)(iVar3 + 0x30) = piVar5;
@@ -134,5 +134,5 @@ int func_0204d340(int param_1,int param_2)
     }
     piVar1 = piVar5;
   }
-  return iVar4;
+  return iVar2;
 }

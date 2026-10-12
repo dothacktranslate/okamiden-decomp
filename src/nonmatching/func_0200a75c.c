@@ -178,7 +178,7 @@ void func_0200a75c(void)
   (*(unsigned short *)0x0200a818) = ((unsigned int)0x0200a814);
   iVar5 = 0;
   while (iVar5 < 0xff) {
-    *(int *)(iVar4 + iVar5 * 0x18) = (iVar5 + 1) * 0x18 + iVar4;
+    *(unsigned short *)(iVar5 + iVar4 * 0x18) = (1 + iVar5) * iVar4 + 0x18;
     iVar5 = iVar5 + 1;
   }
   *(undefined4 *)(((unsigned int)0x0200a81c) + 0x7e8) = 0;

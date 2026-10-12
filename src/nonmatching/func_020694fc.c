@@ -94,8 +94,8 @@ void func_020694fc(int *param_1)
   int iVar1;
 
   iVar1 = *(ushort *)(*param_1 + 0xc) + 1;
-  if (((unsigned int)0x02069518) < iVar1) {
-    iVar1 = ((unsigned int)0x02069518);
+  if (((unsigned int)0x000003e7) < iVar1) {
+    iVar1 = ((unsigned int)0x000003e7);
   }
   *(short *)(*param_1 + 0xc) = (short)iVar1;
   return;

@@ -37,7 +37,7 @@ undefined4 * func_0204560c(int param_1,int param_2,int param_3,undefined4 param_
     }
     else {
       iVar4 = func_020581b0(param_3,param_4);
-      iVar4 = iVar4 + 0x18;
+      iVar4 = 0x18 + iVar4;
     }
   }
   else {
@@ -54,7 +54,7 @@ undefined4 * func_0204560c(int param_1,int param_2,int param_3,undefined4 param_
     uVar1 = ((unsigned int)0x02045704);
     puVar2[2] = 0;
     *puVar2 = uVar1;
-    func_02045038();
+    func_02045038(param_1);
   }
   if (param_2 == 0) {
     if (param_3 == 0) goto LAB_020456d8;

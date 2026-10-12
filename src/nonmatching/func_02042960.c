@@ -97,7 +97,7 @@ void func_02042960(undefined4 param_1,int param_2)
   undefined4 uVar2;
 
   *(undefined4 *)(param_2 + 8) = 0;
-  if (*(int *)(param_2 + 0x74) != 0) {
+  if (*(signed char *)(param_2 + 0x74) != 0) {
     func_02043a14((*(unsigned int *)0x020429a8));
     *(undefined4 *)(param_2 + 0x74) = 0;
   }

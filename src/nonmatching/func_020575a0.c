@@ -87,7 +87,7 @@ extern int LZCOUNT();
 uint func_020575a0(int *param_1,int *param_2)
 
 {
-  ushort uVar1;
+  short uVar1;
   bool bVar2;
   int iVar3;
   int iVar4;
@@ -108,7 +108,7 @@ uint func_020575a0(int *param_1,int *param_2)
     uVar6 = 0;
   }
   if (uVar6 == 0) {
-    return ((unsigned int)0x02057654);
+    return ((unsigned int)0x0000fffe);
   }
   uVar1 = *(ushort *)((int)param_1 + 0xe);
   iVar7 = param_2[1];

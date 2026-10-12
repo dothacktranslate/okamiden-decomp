@@ -94,9 +94,7 @@ void func_0203cd8c(int param_1,int param_2)
   int iVar1;
   undefined4 uVar2;
   int uVar3;
-  int iVar4;
-
-  iVar4 = *(int *)(param_1 + 0x14);
+  uint iVar4 = *(int *)(param_1 + 0x14);
   uVar3 = 0;
   if (*(char *)(iVar4 + 0x18) != '\0') {
     do {

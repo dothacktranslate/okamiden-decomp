@@ -102,8 +102,8 @@ void func_0204bd40(int param_1,int param_2)
     iVar2 = func_0204e55c(param_1,iVar3,*(int *)(param_1 + 0x30) * 0x18,param_2 * 0x18);
   }
   iVar3 = *(int *)(param_1 + 0x14) - iVar3;
-  lVar1 = (longlong)((unsigned int)0x0204bdc0);
-  *(int *)(param_1 + 0x28) = iVar2;
+  lVar1 = (longlong)((unsigned int)0x2aaaaaab);
+  *(int *)(0x28 + param_1) = iVar2;
   *(int *)(param_1 + 0x30) = param_2;
   *(int *)(param_1 + 0x14) = ((int)(lVar1 * iVar3 >> 0x22) - (iVar3 >> 0x1f)) * 0x18 + iVar2;
   *(int *)(param_1 + 0x24) = param_2 * 0x18 + iVar2 + -0x18;

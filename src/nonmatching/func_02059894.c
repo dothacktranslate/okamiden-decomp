@@ -90,8 +90,8 @@ void func_02059894(undefined2 *param_1,int param_2,int param_3,short param_4,sho
                  int param_6,int param_7,uint param_8,int param_9)
 
 {
-  int iVar1;
-  int iVar2;
+  uint iVar1;
+  uint iVar2;
   int iVar3;
   uint uVar4;
   int iVar5;
@@ -118,8 +118,8 @@ void func_02059894(undefined2 *param_1,int param_2,int param_3,short param_4,sho
     puVar11 = param_1 + 8;
     local_28 = 0x800;
   }
-  uVar4 = ((unsigned int)0x02059aa0);
-  uVar7 = ((unsigned int)0x02059a9c);
+  uVar4 = ((unsigned int)0x01ff0000);
+  uVar7 = ((unsigned int)0xc000c000);
   iVar6 = ((unsigned int)0x02059a98);
   iVar5 = ((unsigned int)0x02059a94);
   iVar10 = 0;
@@ -129,8 +129,8 @@ void func_02059894(undefined2 *param_1,int param_2,int param_3,short param_4,sho
         uVar8 = *(uint *)(param_2 + iVar10 * 8);
         iVar3 = (int)(uVar8 & uVar7 & 0xc000) >> 0xe;
         iVar1 = ((uVar8 & uVar7) >> 0x1e) * 2;
-        iVar2 = ((uVar8 & 0xff) - *(ushort *)(iVar1 + iVar5 + iVar3 * 8) / 2) * 0x10000;
-        iVar1 = (((uVar8 & uVar4) >> 0x10) - (uint)(*(ushort *)(iVar1 + iVar6 + iVar3 * 8) >> 1)) *
+        iVar2 = ((uVar8 & 0xff) - *(ushort *)(iVar1 + (iVar5 + iVar3) * 8) / 2) * 0x10000;
+        iVar1 = (((uVar8 & uVar4) >> 0x10) - (uint)(*(ushort *)(iVar1 + iVar3 + iVar6 * 8) >> 1)) *
                 0x10000;
         uVar8 = iVar1 >> 0x10;
         if (0xff < (int)uVar8) {

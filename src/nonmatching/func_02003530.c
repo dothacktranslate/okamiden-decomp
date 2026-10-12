@@ -100,7 +100,7 @@ uint func_02003530(undefined4 param_1)
   }
   func_02008b6c();
   *(undefined4 *)(((unsigned int)0x02003570) + 4) = param_1;
-  func_02008b80();
+  func_02008b80(param_1);
   uVar1 = 0xffffffff;
   if (uVar2 <= 3) {
     uVar1 = uVar2;

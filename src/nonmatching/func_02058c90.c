@@ -94,9 +94,9 @@ void func_02058c90(int param_1,int param_2,int param_3,int param_4,int param_5,u
   int iVar2;
   uint *puVar3;
   uint *puVar4;
-  uint uVar5;
   int unaff_r4;
   uint uVar6;
+  uint uVar5;
   uint *puVar7;
   uint uVar8;
 
@@ -109,7 +109,7 @@ void func_02058c90(int param_1,int param_2,int param_3,int param_4,int param_5,u
   }
   if (param_7 == 4) {
     uVar6 = 0x20 - (param_2 * 4 + param_4 * 4);
-    uVar1 = (0xffffffffU >> (param_2 * 4 & 0xffU)) << (uVar6 + param_2 * 4 & 0xff);
+    uVar1 = (0xffffffffU >> (param_2 * 4 & 0xffU)) << (param_2 + uVar6 * 4 & 0xff);
     puVar3 = (uint *)(param_1 + param_3 * 4);
     puVar7 = puVar3;
     if (puVar3 + param_5 <= puVar3) {
@@ -140,9 +140,9 @@ void func_02058c90(int param_1,int param_2,int param_3,int param_4,int param_5,u
   else {
     uVar8 = (uVar8 >> ((uVar1 - 0x20) + uVar5 & 0xff)) << (uVar1 - 0x20 & 0xff);
   }
-  puVar7 = (uint *)(param_1 + param_3 * 8);
+  puVar7 = (uint *)(param_3 + param_1 * 8);
   puVar3 = puVar7 + param_5 * 2;
-  if (puVar3 <= puVar7) {
+  if (puVar7 >= puVar3) {
     return;
   }
   do {

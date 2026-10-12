@@ -172,19 +172,19 @@ void func_020052c4(int param_1)
   puVar3 = ((unsigned int)0x020054ac);
   (*(unsigned short *)0x020054a8) = ~(ushort)param_1 & ((*(unsigned short *)0x020054a8) | ((unsigned int *)0x020054a8)[1]);
   puVar1[1] = (ushort)param_1;
-  puVar2 = ((unsigned int)0x020054bc);
   puVar4 = ((unsigned int)0x020054b0);
-  if (0x40 < param_1) {
+  puVar2 = ((unsigned int)0x020054bc);
+  if (0x41 <= param_1) {
     if (0x60 < param_1) {
       if (param_1 != 0x70) goto switchD_02005314_default;
       (*(unsigned int *)0x020054b0) = 0x99;
 LAB_0200546c:
-      (*(unsigned int *)0x020054c0) = 0x91;
+      (*(unsigned int *)0x04000245) = 0x91;
 LAB_02005474:
       (*(unsigned int *)0x020054c4) = 0x81;
       goto switchD_02005314_default;
     }
-    if (param_1 < 0x60) {
+    if (param_1 <= 0x5f) {
       if (param_1 == 0x50) {
         (*(unsigned int *)0x020054b0) = 0x91;
         puVar4[-2] = 0x81;
@@ -192,10 +192,10 @@ LAB_02005474:
       goto switchD_02005314_default;
     }
     (*(unsigned int *)0x020054b0) = 0x89;
-    puVar4 = ((unsigned int)0x020054c0);
+    puVar4 = ((unsigned int)0x04000245);
     goto LAB_02005494;
   }
-  if (0x3f < param_1) goto LAB_02005494;
+  if (0x40 <= param_1) goto LAB_02005494;
   if (0x20 < param_1) {
     if (param_1 != 0x30) goto switchD_02005314_default;
     goto LAB_0200546c;
@@ -207,12 +207,12 @@ LAB_02005474:
     puVar4 = ((unsigned int)0x020054bc);
     goto LAB_02005494;
   case 2:
-    puVar4 = ((unsigned int)0x020054b8);
+    puVar4 = ((unsigned int)0x04000241);
     goto LAB_02005494;
   case 3:
     goto LAB_02005410;
   case 4:
-    puVar4 = ((unsigned int)0x020054b4);
+    puVar4 = ((unsigned int)0x04000242);
     goto LAB_02005494;
   case 5:
     puVar3 = ((unsigned int)0x020054bc);
@@ -229,7 +229,7 @@ LAB_02005474:
     puVar2[3] = 0x89;
     break;
   case 10:
-    puVar3 = ((unsigned int)0x020054b8);
+    puVar3 = ((unsigned int)0x04000241);
     goto LAB_0200543c;
   case 0xb:
     (*(unsigned int *)0x020054bc) = 0x81;
@@ -238,7 +238,7 @@ LAB_02005474:
     break;
   case 0xc:
     *puVar3 = 0x89;
-    puVar4 = ((unsigned int)0x020054b4);
+    puVar4 = ((unsigned int)0x04000242);
     goto LAB_02005494;
   case 0xd:
     *puVar3 = 0x91;
@@ -250,15 +250,15 @@ LAB_0200543c:
   case 0xe:
     *puVar3 = 0x91;
 LAB_020053f0:
-    (*(unsigned int *)0x020054b4) = 0x89;
-    puVar4 = ((unsigned int)0x020054b8);
+    (*(unsigned int *)0x04000242) = 0x89;
+    puVar4 = ((unsigned int)0x04000241);
     goto LAB_02005494;
   case 0xf:
     *puVar3 = 0x99;
 LAB_02005408:
-    (*(unsigned int *)0x020054b4) = 0x91;
+    (*(unsigned int *)0x04000242) = 0x91;
 LAB_02005410:
-    (*(unsigned int *)0x020054b8) = 0x89;
+    (*(unsigned int *)0x04000241) = 0x89;
     puVar4 = ((unsigned int)0x020054bc);
     goto LAB_02005494;
   case 0x10:
@@ -294,7 +294,7 @@ LAB_02005410:
   case 0x1f:
     break;
   case 0x20:
-    puVar4 = ((unsigned int)0x020054c0);
+    puVar4 = ((unsigned int)0x04000245);
 LAB_02005494:
     *puVar4 = 0x81;
   }

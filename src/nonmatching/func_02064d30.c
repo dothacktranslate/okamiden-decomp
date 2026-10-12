@@ -127,7 +127,7 @@ func_02064d30(int param_1,int param_2,int param_3,undefined4 param_4,int param_5
     do {
       uVar4 = (uint)*(byte *)(param_1 + iVar1 + 0x54);
       *(int *)(iVar2 + uVar4 * 8) = *(int *)(param_1 + 0x30) * iVar1 + param_3;
-      *(undefined4 *)(iVar2 + uVar4 * 8 + 4) = 0;
+      *(undefined4 *)(uVar4 + iVar2 * 8 + 4) = 0;
       func_0200a554(uVar4,param_2,*(undefined4 *)(iVar2 + uVar4 * 8),1);
       iVar1 = iVar1 + 1;
     } while (iVar1 < *(int *)(param_1 + 0x50));

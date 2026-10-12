@@ -110,7 +110,7 @@ void func_02039c48(int param_1)
     iVar2 = *(int *)(param_1 + 0x4c);
     iVar3 = iVar3 * (iVar2 - *(int *)(param_1 + 0x50));
     func_02039618(iVar4 + 0x10,iVar2,
-                 iVar2 - ((int)((longlong)((unsigned int)0x02039cec) * (longlong)iVar3 >> 0x25) - (iVar3 >> 0x1f))
+                 iVar2 - ((int)((longlong)((unsigned int)0x2aaaaaab) * (longlong)iVar3 >> 0x25) - (iVar3 >> 0x1f))
                  ,*(undefined4 *)(param_1 + 0x54));
     return;
   }

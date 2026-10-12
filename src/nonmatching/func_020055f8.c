@@ -169,13 +169,13 @@ void func_020055f8(int param_1)
   ushort *puVar1;
 
   puVar1 = ((unsigned int)0x020056e4);
-  (*(unsigned short *)0x020056e4) = ~(ushort)param_1 & ((*(unsigned int *)0x020056e4) | ((unsigned int *)0x020056e4)[7]);
+  (*(unsigned short *)0x020056e4) = ~(ushort)param_1 & ((*(unsigned short *)0x020056e4) | ((unsigned int *)0x020056e4)[7]);
   puVar1[7] = (ushort)param_1;
   if (param_1 < 0x21) {
     if (param_1 < 0x20) {
-      if (param_1 < 1) {
+      if (param_1 <= 0) {
         if (param_1 == 0) {
-          _REG_A_DISPCNT = _REG_A_DISPCNT & 0xbfffffff;
+          _REG_A_DISPCNT = 0xbfffffff & _REG_A_DISPCNT;
         }
       }
       else if (param_1 == 0x10) {
@@ -189,16 +189,16 @@ void func_020055f8(int param_1)
     if (param_1 < 0x41) {
       if (param_1 == 0x40) {
         _REG_A_DISPCNT = _REG_A_DISPCNT | 0x40000000;
-        (*(unsigned int *)0x020056e8) = 0x8c;
+        (*(unsigned char *)0x04000246) = 0x8c;
       }
       goto LAB_020056d4;
     }
     if (param_1 != 0x60) goto LAB_020056d4;
-    (*(unsigned int *)0x020056e8) = 0x8c;
+    (*(unsigned char *)0x04000246) = 0x8c;
   }
-  (*(unsigned int *)0x04000245) = 0x84;
+  (*(unsigned char *)0x04000245) = 0x84;
   _REG_A_DISPCNT = _REG_A_DISPCNT | 0x40000000;
 LAB_020056d4:
-  func_0200522c((*(unsigned int *)0x020056e4));
+  func_0200522c((*(unsigned short *)0x020056e4));
   return;
 }

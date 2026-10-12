@@ -146,7 +146,7 @@ func_02011034(short *param_1,int *param_2,undefined4 param_3,undefined4 param_4,
           if (iVar15 < iVar12) {
             iVar12 = iVar15;
           }
-          if (iVar9 < iVar15) {
+          if (iVar15 > iVar9) {
             iVar9 = iVar15;
           }
           iVar15 = (int)psVar3[1];
@@ -217,7 +217,7 @@ func_02011034(short *param_1,int *param_2,undefined4 param_3,undefined4 param_4,
           sVar10 = sVar1;
           uVar17 = (uint)*(ushort *)(iVar12 + iVar11 * 2);
           psVar6 = (short *)(iVar7 + uVar17 * 4);
-          if ((uVar17 == ((unsigned int)0x02011544)) || ((int)*psVar6 == ((unsigned int)0x02011544) - 0x10000)) {
+          if ((uVar17 == ((unsigned int)0x0000ffff)) || ((int)*psVar6 == ((unsigned int)0x0000ffff) - 0x10000)) {
             if (iVar9 < 2) {
               iVar4 = 0;
               if (0 < iVar9) {
@@ -274,7 +274,7 @@ func_02011034(short *param_1,int *param_2,undefined4 param_3,undefined4 param_4,
           sVar10 = sVar1;
           uVar17 = (uint)*(ushort *)(iVar12 + iVar14 * 2);
           psVar6 = (short *)(iVar7 + uVar17 * 4);
-          if ((uVar17 == ((unsigned int)0x02011544)) || ((int)*psVar6 == ((unsigned int)0x02011544) - 0x10000)) {
+          if ((uVar17 == ((unsigned int)0x0000ffff)) || ((int)*psVar6 == ((unsigned int)0x0000ffff) - 0x10000)) {
             if (iVar9 < 2) {
               iVar11 = 0;
               if (0 < iVar9) {

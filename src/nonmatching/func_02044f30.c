@@ -32,7 +32,7 @@ void func_02044f30(ushort *param_1,undefined4 param_2)
   uint uVar9;
 
   sVar3 = func_020449a4(param_2,*(unsigned short *)(((unsigned int)0x02044fe0) + *(int *)(param_1 + 4) * 4));
-  uVar2 = ((unsigned int)0x02044fe4);
+  uVar2 = ((unsigned int)0x000003ff);
   uVar4 = 0;
   if (*param_1 != 0) {
     do {

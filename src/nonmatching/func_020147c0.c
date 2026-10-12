@@ -89,8 +89,8 @@ void func_020147c0(int *param_1)
 {
   ushort *puVar1;
 
-  puVar1 = ((unsigned int)0x020147f0);
-  (*(unsigned int *)0x020147f0) = (*(unsigned short *)0x020147f0) & 0xfff3 | (ushort)(*param_1 << 2);
+  puVar1 = ((unsigned int)0x04000204);
+  (*(unsigned short *)0x04000204) = (*(unsigned short *)0x04000204) & 0xfff3 | (ushort)(*param_1 << 2);
   *puVar1 = *puVar1 & 0xffef | (ushort)(param_1[1] << 4);
   return;
 }

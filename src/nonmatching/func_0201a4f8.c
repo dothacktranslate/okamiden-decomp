@@ -119,7 +119,7 @@ uint func_0201a4f8(int param_1,int param_2,code *param_3,undefined4 param_4,int 
     local_2c = func_0201ebe0(0xffffffff,param_1);
   }
 LAB_0201a804:
-  if (((param_2 < iVar3) || (unaff_r6 == 0xffffffff)) || ((uVar4 & 0x60) != 0)) {
+  if (((iVar3 > param_2) || (unaff_r6 == 0xffffffff)) || ((uVar4 & 0x60) != 0)) {
     if ((uVar4 & 0x34) == 0) {
       uVar5 = 0;
       *param_5 = 0;

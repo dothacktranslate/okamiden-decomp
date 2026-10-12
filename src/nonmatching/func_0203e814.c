@@ -174,7 +174,7 @@ void func_0203e814(int param_1)
 
 {
   short sVar1;
-  int iVar2;
+  uint iVar2;
   int iVar3;
   int iVar4;
   int *piVar5;
@@ -253,11 +253,11 @@ void func_0203e814(int param_1)
     piVar5 = ((unsigned int)0x0203ea40);
     local_5c = ((unsigned int)0x0000ffff);
     iVar2 = iVar3 >> 0x1f;
-    local_60 = ((unsigned int)0x0203ea38);
+    local_60 = ((unsigned int)0x00293130);
     local_58 = 0;
     local_54 = (((uint)(iVar3 * 0x8000000 + iVar2) >> 0x1b | iVar2 << 5) - iVar2) * 0x10000 |
                ((unsigned int)0x0203ea3c) | (uint)*(ushort *)((*(unsigned int *)0x0203ea40) + 0x34) << 0x18;
-    func_0205e0c0(((unsigned int)0x0203ea38),&local_5c,3);
+    func_0205e0c0(((unsigned int)0x00293130),&local_5c,3);
     iVar2 = *piVar5;
     *(short *)(iVar2 + 0x34) = *(short *)(iVar2 + 0x34) + 1;
     if (0x28 < *(ushort *)(iVar2 + 0x34)) {
@@ -278,7 +278,7 @@ void func_0203e814(int param_1)
       local_bc = *(undefined4 *)(param_1 + 0x70);
       local_b8 = 0x1000;
       func_0205e0c0(0x1b,&local_bc,3);
-      func_0205e0c0(0x1c,local_b0 + iVar2 * 3 + 8,3);
+      func_0205e0c0(0x1c,(local_b0 + iVar2 * 3) + 8,3);
       func_0205e0c0(((unsigned int)0x0203ea44),&local_60,2);
       local_cc = 1;
       func_0205e0c0(0x12,&local_cc,1);

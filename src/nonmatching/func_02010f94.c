@@ -87,5 +87,5 @@ extern int LZCOUNT();
 int func_02010f94(int param_1,int param_2)
 
 {
-  return param_1 * 0xc + param_2 * 8 + 0x16;
+  return param_1 * 0xc + 0x16 + param_2 * 8;
 }

@@ -98,12 +98,12 @@ int func_02058a04(int *param_1,int param_2,undefined4 param_3,undefined4 *param_
   undefined4 local_28;
   undefined4 *puStack_24;
 
-  pcVar5 = (code *)param_1[1];
   iVar4 = 0;
+  pcVar5 = (code *)param_1[1];
   local_28 = param_3;
   puStack_24 = param_4;
   iVar2 = (*pcVar5)(&local_28);
-  uVar1 = ((unsigned int)0x02058aac);
+  uVar1 = ((unsigned int)0x0000ffff);
   while ((iVar2 != 0 && (iVar2 != 10))) {
     uVar3 = func_02058974(param_1);
     if (uVar3 == uVar1) {

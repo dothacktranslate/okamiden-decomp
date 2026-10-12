@@ -136,7 +136,7 @@ LAB_02054494:
     }
     param_2 = piVar4;
     iVar2 = iVar2 + 1;
-    if (99 < iVar2) {
+    if (100 <= iVar2) {
       func_0204b9e0(param_1,((unsigned int)0x02054534));
       return;
     }

@@ -131,9 +131,9 @@ void func_020378f4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
            iVar1 != 0)) {
           piVar2[7] = piVar2[7] ^ uVar3;
         }
-        iVar5 = iVar5 + 1;
         uVar3 = uVar3 << 1;
-      } while (iVar5 < 2);
+        iVar5 = iVar5 + 1;
+      } while (iVar5 <= 1);
     }
   }
   func_0206414c();

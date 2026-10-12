@@ -101,7 +101,7 @@ undefined4 func_020501bc(undefined4 param_1,undefined4 param_2,undefined4 param_
   int local_18;
 
   local_18 = param_4;
-  iVar1 = func_02047988(param_1,1,&local_18);
+  iVar5 = func_02047988(param_1,1,&local_18);
   uVar2 = func_02047a64(param_1,2);
   iVar3 = func_020501a4(uVar2,local_18);
   uVar2 = func_02047aa8(param_1,3,0xffffffff);
@@ -112,14 +112,14 @@ undefined4 func_020501bc(undefined4 param_1,undefined4 param_2,undefined4 param_
   if (iVar4 > local_18) {
     iVar4 = local_18;
   }
-  if (iVar4 < iVar3) {
-    iVar5 = 0;
+  if (iVar3 > iVar4) {
+    iVar1 = 0;
     iVar4 = ((unsigned int)0x02050254);
   }
   else {
-    iVar5 = (iVar4 - iVar3) + 1;
-    iVar4 = iVar1 + iVar3 + -1;
+    iVar1 = (iVar4 - iVar3) + 1;
+    iVar4 = iVar5 + iVar3 + -1;
   }
-  func_02046898(param_1,iVar4,iVar5);
+  func_02046898(param_1,iVar4,iVar1);
   return 1;
 }

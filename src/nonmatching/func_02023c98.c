@@ -134,7 +134,7 @@ void func_02023c98(int param_1)
       iVar1 = param_1 + uVar5 * 4;
       iVar3 = *(int *)(iVar1 + 0x3c) + *(int *)(iVar1 + 0x44);
       *(int *)(iVar1 + 0x3c) = iVar3;
-      if (0xffff < iVar3) {
+      if (0x10000 <= iVar3) {
         *(undefined4 *)(iVar1 + 0x3c) = 0x10000;
         *(undefined2 *)(iVar2 + 0x34) = 0;
       }
@@ -155,7 +155,7 @@ switchD_02023ccc_default:
       func_020034c8(iVar2,*(int *)(param_1 + (uVar5 * 4 + 0x3c)) >> 0xc);
     }
     uVar5 = uVar5 + 1 & 0xffff;
-    if (1 < uVar5) {
+    if (2 <= uVar5) {
       return;
     }
   } while( true );

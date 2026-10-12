@@ -112,8 +112,8 @@ void func_0205765c(int *param_1)
     if (uVar4 != 0) {
       do {
         (*pcVar9)(iVar8,uVar6,6);
-        uVar3 = uVar10 + 1;
         uVar6 = uVar6 + 8 & 0xffff;
+        uVar3 = uVar10 + 1;
         iVar8 = iVar8 + 8;
         uVar10 = uVar3 & 0xffff;
       } while ((uVar3 & 0xffff) < uVar4);

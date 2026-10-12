@@ -113,7 +113,7 @@ undefined4 func_0202a8f0(undefined4 param_1,undefined4 param_2,undefined4 param_
   uStack_18 = param_4;
   uVar2 = func_020465d8(param_1,2);
   iVar3 = func_020465d8(param_1,1);
-  switch(iVar3 - ((unsigned int)0x0202ab18)) {
+  switch(iVar3 - ((unsigned int)0x00001f01)) {
   case 0:
     iVar3 = func_020465d8(param_1,3);
     iVar3 = iVar3 * 0x10;
@@ -121,7 +121,7 @@ undefined4 func_0202a8f0(undefined4 param_1,undefined4 param_2,undefined4 param_
       func_02040f28(uVar6);
     }
     uVar2 = func_020465d8(param_1,4);
-    func_02018ba4(auStack_38,((unsigned int)0x0202ab1c),uVar2);
+    func_02018ba4(auStack_38,((unsigned int)0x0202ab1c),uVar2,uVar2);
     iVar4 = iVar7 + 0x70;
     piVar5 = (int *)func_02040dbc(uVar6,(*(unsigned int *)0x0202ab20),1);
     *(int **)(iVar4 + iVar3) = piVar5;
@@ -151,7 +151,7 @@ undefined4 func_0202a8f0(undefined4 param_1,undefined4 param_2,undefined4 param_
   case 2:
     iVar3 = func_020465d8(param_1,3);
     iVar4 = func_020465d8(param_1,4);
-    if (iVar4 < 1) {
+    if (iVar4 <= 0) {
       iVar3 = *(int *)(iVar8 + iVar3 * 0x10 + 0x5c);
       *(uint *)(iVar3 + 0xc) = *(uint *)(iVar3 + 0xc) & 0xfffffffe;
     }

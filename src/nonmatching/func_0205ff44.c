@@ -118,7 +118,7 @@ void func_0205ff44(int *param_1,uint param_2,uint *param_3,int param_4)
         iVar5 = piVar2[1];
       }
       else {
-        iVar5 = (int)*(short *)(iVar9 + uVar10 * 4 + 2);
+        iVar5 = (int)*(short *)(iVar9 + (uVar10 * 4 + 2));
         iVar9 = (int)*(short *)(iVar9 + uVar10 * 4);
       }
       *param_1 = iVar9;
@@ -148,8 +148,8 @@ void func_0205ff44(int *param_1,uint param_2,uint *param_3,int param_4)
       if (uVar10 < uVar1) {
         uVar10 = uVar10 >> 1;
         iVar5 = uVar10 + 1;
-        param_2 = param_2 & ((unsigned int)0x020600b8) >> 0x10;
         iVar6 = 2;
+        param_2 = param_2 & ((unsigned int)0x020600b8) >> 0x10;
         iVar7 = 1;
         goto LAB_02060048;
       }
@@ -162,7 +162,7 @@ void func_0205ff44(int *param_1,uint param_2,uint *param_3,int param_4)
   iVar7 = 0;
 LAB_02060048:
   if ((uVar3 & 0x20000000) == 0) {
-    piVar2 = (int *)(iVar9 + uVar10 * 8);
+    piVar2 = (int *)(uVar10 + iVar9 * 8);
     iVar4 = *piVar2;
     iVar11 = piVar2[1];
     iVar8 = *(int *)(iVar9 + iVar5 * 8);

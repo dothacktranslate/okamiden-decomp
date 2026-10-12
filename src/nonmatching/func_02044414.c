@@ -27,30 +27,30 @@ void func_02044414(int param_1,int param_2)
   bool bVar3;
 
   iVar2 = *(int *)(param_1 + 0x3c);
-  if (*(short *)(param_1 + 0x12) != 4) {
+  if (*(short *)(0x12 + param_1) != 4) {
     *(unsigned short *)(iVar2 + 8) = 4;
-    func_0205a4e8(*(undefined4 *)(iVar2 + 4),param_1 + 0x14,*(undefined4 *)(param_2 + 0x2c),
+    func_0205a4e8(*(undefined4 *)(iVar2 + 4),param_1 + 0x14,*(unsigned short *)(param_2 + 0x2c),
                  *(undefined4 *)(param_2 + 0x30),*(undefined4 *)(param_2 + 0x34),0,0,0,0,
                  *(undefined4 *)(param_2 + 8),*(undefined4 *)(param_2 + 0x24),0);
     return;
   }
   iVar1 = (**(code **)(((unsigned int)0x0204452c) + (uint)*(ushort *)(param_2 + 4) * 4))();
-  if (((unsigned int)0x02044530) < iVar1) {
-    bVar3 = iVar1 == ((unsigned int)0x02044530) + 0x100000;
-    if (bVar3 || iVar1 < ((unsigned int)0x02044530) + 0x100000) {
+  if (((unsigned int)0x00100010) < iVar1) {
+    bVar3 = iVar1 == ((unsigned int)0x00100010) + 0x100000;
+    if (bVar3 || iVar1 < ((unsigned int)0x00100010) + 0x100000) {
       if (bVar3) {
         unaff_r5 = 2;
       }
     }
     else {
-      bVar3 = iVar1 == ((unsigned int)0x02044530) + 0x200000;
+      bVar3 = iVar1 == ((unsigned int)0x00100010) + 0x200000;
       if (bVar3) {
         unaff_r5 = 3;
       }
     }
   }
   else {
-    if (((unsigned int)0x02044530) <= iVar1) {
+    if (((unsigned int)0x00100010) <= iVar1) {
       unaff_r5 = 1;
       *(undefined4 *)(iVar2 + 8) = 1;
       goto LAB_02044490;

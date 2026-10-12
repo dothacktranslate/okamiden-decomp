@@ -94,18 +94,18 @@ uint func_020386d0(int param_1,undefined4 param_2)
   int *piVar3;
   uint uVar4;
 
-  piVar3 = *(int **)(param_1 + 0x10);
-  uVar4 = 0;
+  piVar3 = *(int **)(0x10 + param_1);
+  uVar2 = 0;
   while (piVar3 != (int *)(param_1 + 0x10)) {
-    uVar2 = 0;
+    uVar4 = 0;
     iVar1 = func_020383dc(piVar3 + -1,param_2);
     if (iVar1 != 0) {
-      uVar2 = (uint)*(ushort *)(piVar3 + 2);
+      uVar4 = (uint)*(ushort *)(piVar3 + 2);
     }
     piVar3 = (int *)*piVar3;
     if (iVar1 != 0) {
-      uVar4 = uVar4 | 1 << (uVar2 & 0xff);
+      uVar2 = 1 | uVar2 << (uVar4 & 0xff);
     }
   }
-  return uVar4;
+  return uVar2;
 }

@@ -96,7 +96,7 @@ char * func_0204e84c(undefined4 param_1,char *param_2)
   int iVar3;
 
   cVar1 = *param_2;
-  while (cVar1 == (*(unsigned int *)0x0204e8b8)) {
+  while (cVar1 == (*(signed char *)0x0204e8b8)) {
     param_2 = param_2 + 1;
     cVar1 = *param_2;
   }

@@ -104,15 +104,15 @@ void func_02039b04(int param_1)
 
   func_02039a2c();
   uVar4 = func_020060a4();
-  puVar1 = ((unsigned int)0x02039c38);
+  puVar1 = ((unsigned int)0x05000400);
   *(undefined4 *)(param_1 + 8) = uVar4;
   *(undefined2 *)(param_1 + 0x24) = *puVar1;
   *(undefined2 **)(param_1 + 0x20) = puVar1 + 0x1000000;
   func_02005ba0(8);
   *puVar1 = 0;
-  puVar2 = ((unsigned int)0x02039c3c);
+  puVar2 = ((unsigned int)0x04001000);
   if (*(char *)(param_1 + 0x30) != '\0') {
-    (*(unsigned int *)0x02039c3c) = (*(unsigned int *)0x02039c3c) & 0xffffe0ff;
+    (*(unsigned int *)0x04001000) = (*(unsigned int *)0x04001000) & 0xffffe0ff;
   }
   puVar5 = ((unsigned int)0x02039c40);
   *puVar2 = *puVar2 & 0xffffff9f | 0x20;

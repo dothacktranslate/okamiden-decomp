@@ -163,6 +163,6 @@ uint func_02002964(void)
 {
   do {
   } while (((*(unsigned short *)0x04000280) & 0x8000) != 0);
-  return (*(unsigned int *)0x02002994) + 0x80000 >> 0x14 |
-         (((unsigned int *)0x02002994)[1] + (uint)(0xfff7ffff < (*(unsigned int *)0x02002994))) * 0x1000;
+  return (*(unsigned int *)0x040002a0) + 0x80000 >> 0x14 |
+         (((unsigned int *)0x040002a0)[1] + (uint)(0xfff7ffff < (*(unsigned int *)0x040002a0))) * 0x1000;
 }

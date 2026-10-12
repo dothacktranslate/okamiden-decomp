@@ -105,7 +105,7 @@ undefined4 func_0202d6dc(int param_1,undefined4 param_2,undefined4 param_3,undef
 
   piVar1 = ((unsigned int)0x0202d834);
   local_18 = param_4;
-  iVar3 = func_02022ffc((*(unsigned int *)0x0202d834) + 0xf0,0xfc);
+  iVar3 = func_02022ffc((*(short *)0x0202d834) + 0xf0,0xfc);
   iVar5 = ((unsigned int)0x00000be8);
   if (iVar3 != 0) {
     return 0;

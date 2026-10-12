@@ -93,7 +93,7 @@ void func_02006bac(int param_1)
 
   iVar1 = *(int *)(((unsigned int)0x02006bf0) + 0x24);
   iVar3 = 0;
-  while ((iVar2 = iVar1, iVar2 != 0 && (param_1 != iVar2))) {
+  while ((iVar2 = iVar1, iVar2 != 0 && (iVar2 != param_1))) {
     iVar3 = iVar2;
     iVar1 = *(int *)(0x68 + iVar2);
   }

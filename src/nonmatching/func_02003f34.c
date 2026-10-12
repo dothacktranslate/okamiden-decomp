@@ -161,8 +161,8 @@ extern int LZCOUNT();
 int func_02003f34(void)
 
 {
-  if ((4 < ((*(unsigned int *)0x02003f70) & 7)) && (((ushort)((unsigned int *)0x02003f70)[3] & 0x80) != 0)) {
+  if ((4 < ((*(unsigned int *)0x04001000) & 7)) && (((ushort)((unsigned int *)0x04001000)[3] & 0x80) != 0)) {
     return 0;
   }
-  return (((ushort)((unsigned int *)0x02003f70)[3] & 0x3c) >> 2) * 0x4000 + 0x6200000;
+  return (((ushort)((unsigned int *)0x04001000)[3] & 0x3c) >> 2) * 0x4000 + 0x6200000;
 }

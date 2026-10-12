@@ -97,7 +97,7 @@ void func_02039cf0(int param_1)
 
   if (*(int *)(param_1 + 0x28) == 0) {
     if (*(char *)(param_1 + 0x30) != '\0') {
-      (*(unsigned int *)0x04001000) = (*(unsigned int *)0x04001000) & 0xffffe0ff | 0x1000;
+      (*(unsigned int *)0x04001000) = (*(unsigned short *)0x04001000) & 0xffffe0ff | 0x1000;
     }
     func_02039a58(param_1);
     iVar2 = *(int *)(param_1 + 0x2c) + 0x14;
@@ -109,8 +109,8 @@ void func_02039cf0(int param_1)
     func_02039c48(param_1);
     return;
   }
-  if ((int)((*(unsigned int *)0x02039dd8) & 0x8000) >> 0xf == 1) {
-    func_02039a58();
+  if ((int)((*(unsigned int *)0x04000304) & 0x8000) >> 0xf == 1) {
+    func_02039a58(param_1);
     *(int *)(param_1 + 0x2c) = *(int *)(param_1 + 0x2c) + -0x1e;
     func_02039c48(param_1);
     piVar1 = ((unsigned int)0x02039ddc);

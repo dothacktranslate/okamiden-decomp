@@ -100,11 +100,11 @@ void func_0205f5f8(uint *param_1)
   uint uVar9;
   uint uVar10;
 
-  uVar6 = (uint)*(byte *)(*(int *)(*(unsigned int *)0x0205f764) + 1);
+  uVar10 = (uint)*(byte *)(*(int *)(*(unsigned int *)0x0205f764) + 1);
   iVar7 = ((int *)(*(unsigned int *)0x0205f764))[0x35];
   if (iVar7 != 0) {
-    if (uVar6 < *(byte *)(iVar7 + 1)) {
-      piVar4 = (int *)(*(ushort *)(iVar7 + (uint)*(ushort *)(iVar7 + 6)) * uVar6 +
+    if (uVar10 < *(byte *)(1 + iVar7)) {
+      piVar4 = (int *)(*(ushort *)(iVar7 + (uint)*(ushort *)(iVar7 + 6)) * uVar10 +
                       iVar7 + (uint)*(ushort *)(iVar7 + 6) + 4);
     }
     else {
@@ -125,26 +125,26 @@ LAB_0205f65c:
   if ((uVar3 & 2) == 0) {
     if ((uVar3 & 8) != 0) {
       iVar7 = (int)(uVar3 & 0xf0) >> 4;
-      uVar10 = (uint)(short)*puVar5;
+      uVar6 = (uint)(short)*puVar5;
       uVar9 = (uint)(short)puVar5[1];
       func_02009f88(param_1 + 10);
-      uVar6 = 0x1000;
+      uVar10 = 0x1000;
       bVar1 = *(byte *)(((unsigned int)0x0205f768) + iVar7 * 4);
       bVar2 = *(byte *)(((unsigned int)0x0205f76c) + iVar7 * 4);
       if ((*puVar8 & 0x100) != 0) {
-        uVar6 = 0xfffff000;
+        uVar10 = 0xfffff000;
       }
-      param_1[iVar7 + 10] = uVar6;
-      param_1[bVar1 + 10] = uVar10;
+      param_1[iVar7 + 10] = uVar10;
+      param_1[bVar1 + 10] = uVar6;
       param_1[bVar2 + 10] = uVar9;
       if ((*puVar8 & 0x200) != 0) {
         uVar9 = -uVar9;
       }
       param_1[*(byte *)(((unsigned int)0x0205f770) + iVar7 * 4) + 10] = uVar9;
       if ((*puVar8 & 0x400) != 0) {
-        uVar10 = -uVar10;
+        uVar6 = -uVar6;
       }
-      param_1[*(byte *)(((unsigned int)0x0205f774) + iVar7 * 4) + 10] = uVar10;
+      param_1[*(byte *)(((unsigned int)0x0205f774) + iVar7 * 4) + 10] = uVar6;
       return;
     }
     param_1[10] = (int)(short)puVar8[1];

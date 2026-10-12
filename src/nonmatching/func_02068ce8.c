@@ -105,8 +105,8 @@ undefined4 func_02068ce8(int param_1,undefined4 param_2,undefined4 param_3,undef
   *(int **)(param_1 + 0x6c) = piVar4;
   if (piVar4 != (int *)0x0) {
     (**(code **)(*piVar4 + 0x84))(piVar4,param_1 + 0x88,(int)*(short *)(param_1 + 0xbe0));
-    iVar3 = ((unsigned int)0x02068d84);
-    uVar2 = ((unsigned int)0x02068d80);
+    iVar3 = ((unsigned int)0x00000d16);
+    uVar2 = ((unsigned int)0x00007fff);
     uVar1 = ((unsigned int)0x00001e66);
     iVar5 = 0;
     iVar7 = *(int *)(param_1 + 0x6c);
@@ -118,8 +118,8 @@ undefined4 func_02068ce8(int param_1,undefined4 param_2,undefined4 param_3,undef
         iVar5 = iVar5 + 1;
       } while (iVar5 < *(short *)(param_1 + 0xbe0));
     }
-    *(int *)(iVar7 + 0xd0) = param_1 + ((unsigned int)0x02068d88);
-    *(int *)(iVar7 + 0xdc) = param_1 + ((unsigned int)0x02068d84);
+    *(int *)(iVar7 + 0xd0) = param_1 + ((unsigned int)0x00000bf4);
+    *(int *)(iVar7 + 0xdc) = param_1 + ((unsigned int)0x00000d16);
     *(undefined2 *)(iVar7 + 0x10) = 0x1f;
     func_0203fdc0(iVar7,((unsigned int)0x02068d8c));
     func_0203fdd4(iVar7,((unsigned int)0x02068d90));

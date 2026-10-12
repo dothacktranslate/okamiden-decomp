@@ -99,11 +99,9 @@ int func_02049524(undefined4 param_1,undefined4 param_2,undefined4 param_3,undef
   undefined4 uVar1;
   undefined4 uVar2;
   int iVar3;
-  int iVar4;
-
-  iVar4 = ((unsigned int)0xffffd8ed);
-  uVar1 = func_020467a0(param_1,((unsigned int)0xffffd8ed),param_3,param_4,param_4);
+  int iVar4 = ((unsigned int)0xffffd8ed);
   uVar2 = func_020461e8(param_1);
+  uVar1 = func_020467a0(param_1,((unsigned int)0xffffd8ed),param_3,param_4,param_4);
   iVar3 = func_0204938c(param_1,uVar1,uVar2);
   if (iVar3 < 0) {
     iVar4 = func_020464e8(param_1,iVar4 >> 0xe);

@@ -150,7 +150,7 @@ LAB_020545c0:
     local_2c = *piVar5;
     param_2 = &local_2c;
     local_28 = piVar5[1];
-    if (99 < iVar3) {
+    if (100 <= iVar3) {
       func_0204b9e0(param_1,((unsigned int)0x020546ac));
       return;
     }

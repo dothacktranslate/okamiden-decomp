@@ -105,7 +105,7 @@ int func_02065f60(undefined4 param_1,undefined4 param_2)
   if (*puVar1 != 0) {
     do {
       iVar2 = uVar3 * 8;
-      switch((char)puVar1[uVar3 * 2 + 1]) {
+      switch((char)puVar1[uVar3 * 1 + 2]) {
       case '\0':
         iVar2 = func_0206605c(puVar1[uVar3 * 2 + 2],*(undefined1 *)((int)puVar1 + iVar2 + 5),param_2,
                              1,0);

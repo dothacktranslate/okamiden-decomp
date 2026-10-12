@@ -92,15 +92,15 @@ extern int func_0204cf68();
 int func_0204c760(int param_1,undefined4 param_2,undefined4 param_3,int param_4,undefined4 param_5)
 
 {
-  undefined1 uVar1;
   undefined2 uVar2;
+  undefined1 uVar1;
   int iVar3;
   int iVar4;
   int iVar5;
   undefined4 uVar6;
 
-  uVar6 = *(undefined4 *)(param_1 + 100);
   iVar5 = *(int *)(param_1 + 0x14) - *(int *)(param_1 + 0x28);
+  uVar6 = *(undefined4 *)(param_1 + 100);
   *(undefined4 *)(param_1 + 100) = param_5;
   uVar2 = *(undefined2 *)(param_1 + 0x34);
   uVar1 = *(undefined1 *)(param_1 + 0x39);

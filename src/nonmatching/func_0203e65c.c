@@ -136,7 +136,7 @@ void func_0203e65c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   func_0205e0c0(((unsigned int)0x00293130),local_84,3);
   local_88 = 0;
   local_84[0] = 0;
-  local_78[0] = *(int *)(param_1 + 0x30);
+  local_78[0] = *(signed char *)(param_1 + 0x30);
   local_68 = *(int *)(param_1 + 0x34);
   local_2c = *(int *)(param_1 + 0x60);
   local_78[1] = local_68 + local_2c;
@@ -169,7 +169,7 @@ void func_0203e65c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     func_0205e0c0(0x1c,param_1 + 0x24,3);
     iVar1 = iVar2 >> 0x1f;
     func_0205e0c0(0x1c,local_78 +
-                      (((uint)(iVar2 * 0x20000000 + iVar1) >> 0x1d | iVar1 << 3) - iVar1) * 3,3);
+                      (((uint)(iVar2 + iVar1 * 0x20000000) >> 0x1d | iVar1 << 3) - iVar1) * 3,3);
     func_0205e0c0(0x23,&local_88,2);
     local_94 = 1;
     func_0205e0c0(0x12,&local_94,1);

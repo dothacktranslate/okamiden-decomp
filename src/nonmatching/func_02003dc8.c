@@ -91,7 +91,7 @@ int func_02003dc8(void)
   int iVar2;
 
   uVar1 = (*(unsigned char *)((int)((unsigned int)0x04001000) + 0xe) & 0x1f00) >> 8;
-  switch((*(unsigned int *)0x04001000) & 7) {
+  switch((*(unsigned short *)0x04001000) & 7) {
   case 0:
     break;
   case 1:

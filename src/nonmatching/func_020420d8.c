@@ -101,9 +101,9 @@ void func_020420d8(int param_1)
   int iVar2;
 
   uVar1 = ((unsigned int)0x020421ec);
-  if ((((*(uint *)(param_1 + 0x124) & 0x1000) != 0) ||
-      (uVar1 = ((unsigned int)0x020421f0), (*(uint *)(param_1 + 0x124) & 0x2000) != 0)) ||
-     (uVar1 = ((unsigned int)0x020421f4), *(int *)(param_1 + 0x1cc) == 0xd)) {
+  if ((((*(uint *)(0x124 + param_1) & 0x1000) != 0) ||
+      (uVar1 = ((unsigned int)0x020421f0), (*(uint *)(0x124 + param_1) & 0x2000) != 0)) ||
+     (uVar1 = ((unsigned int)0x020421f4), *(unsigned short *)(param_1 + 0x1cc) == 0xd)) {
     *(undefined4 *)(param_1 + 0x3fc) = uVar1;
   }
   if (*(int *)(param_1 + 0x1cc) != 0) {
@@ -124,7 +124,7 @@ void func_020420d8(int param_1)
       else if (*(int *)(param_1 + 0xdc) == 4) {
         func_02039de4(param_1 + 0xc0);
         *(uint *)(param_1 + 0x124) = ((unsigned int)0xfffbffff) & *(uint *)(param_1 + 0x124);
-        func_02041680();
+        func_02041680(param_1);
       }
       else {
         func_02039cf0(param_1 + 0xc0);

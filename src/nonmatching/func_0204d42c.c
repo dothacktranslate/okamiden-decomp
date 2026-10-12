@@ -144,10 +144,10 @@ bool func_0204d42c(int param_1,int param_2)
         func_0204d1c4(piVar2);
       }
       else {
-        if (((!bVar4) && (3 < piVar2[3])) && ((*(byte *)(piVar2[2] + 5) & 3) != 0)) {
+        if (((!bVar4) && (4 <= piVar2[3])) && ((*(byte *)(piVar2[2] + 5) & 3) != 0)) {
           func_0204d1d8(param_1);
         }
-        if (((!bVar5) && (3 < piVar2[1])) && ((*(byte *)(*piVar2 + 5) & 3) != 0)) {
+        if (((!bVar5) && (4 <= piVar2[1])) && ((*(byte *)(*piVar2 + 5) & 3) != 0)) {
           func_0204d1d8(param_1);
         }
       }

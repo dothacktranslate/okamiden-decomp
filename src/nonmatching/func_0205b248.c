@@ -100,9 +100,9 @@ void func_0205b248(int param_1,ushort *param_2,int param_3,uint *param_4)
   int iVar9;
 
   uVar1 = *param_2;
-  uVar8 = 0;
+  uVar5 = 0;
   if ((*param_4 & 0x1c000000) == 0x14000000) {
-    uVar2 = *(uint *)(param_3 + 0x18);
+    uVar2 = *(uint *)(0x18 + param_3);
   }
   else {
     uVar2 = *(uint *)(param_3 + 8);
@@ -110,17 +110,17 @@ void func_0205b248(int param_1,ushort *param_2,int param_3,uint *param_4)
   if ((char)param_2[1] != '\0') {
     iVar7 = param_1 + 4;
     do {
-      uVar5 = (uint)*(byte *)(param_1 + (uint)uVar1 + uVar8);
+      uVar8 = (uint)*(byte *)(param_1 + (uint)uVar1 + uVar5);
       if (param_1 == 0) {
 LAB_0205b2e8:
         iVar9 = 0;
       }
       else {
-        if ((iVar7 == 0) || (*(byte *)(param_1 + 5) <= uVar5)) {
+        if ((iVar7 == 0) || (*(byte *)(param_1 + 5) <= uVar8)) {
           piVar4 = (int *)0x0;
         }
         else {
-          piVar4 = (int *)(*(ushort *)(iVar7 + (uint)*(ushort *)(param_1 + 10)) * uVar5 +
+          piVar4 = (int *)(*(ushort *)(iVar7 + (uint)*(ushort *)(param_1 + 10)) * uVar8 +
                           iVar7 + (uint)*(ushort *)(param_1 + 10) + 4);
         }
         if (piVar4 == (int *)0x0) goto LAB_0205b2e8;
@@ -128,7 +128,7 @@ LAB_0205b2e8:
       }
       *(uint *)(iVar9 + 0x14) = *(uint *)(iVar9 + 0x14) | *param_4 + (uVar2 & 0xffff);
       uVar6 = param_4[1] & ((unsigned int)0x000007ff);
-      uVar5 = (param_4[1] & ((unsigned int)0x000007ff) << 0xb) >> 0xb;
+      uVar8 = (param_4[1] & ((unsigned int)0x000007ff) << 0xb) >> 0xb;
       if (uVar6 == *(ushort *)(iVar9 + 0x20)) {
         uVar3 = 0x1000;
       }
@@ -136,15 +136,15 @@ LAB_0205b2e8:
         uVar3 = func_020028c0(uVar6 << 0xc,(uint)*(ushort *)(iVar9 + 0x20) << 0xc);
       }
       *(undefined4 *)(iVar9 + 0x24) = uVar3;
-      if (uVar5 == *(ushort *)(iVar9 + 0x22)) {
+      if (uVar8 == *(ushort *)(iVar9 + 0x22)) {
         uVar3 = 0x1000;
       }
       else {
-        uVar3 = func_020028c0(uVar5 << 0xc,(uint)*(ushort *)(iVar9 + 0x22) << 0xc);
+        uVar3 = func_020028c0(uVar8 << 0xc,(uint)*(ushort *)(iVar9 + 0x22) << 0xc);
       }
       *(undefined4 *)(iVar9 + 0x28) = uVar3;
-      uVar8 = uVar8 + 1;
-    } while (uVar8 < (byte)param_2[1]);
+      uVar5 = uVar5 + 1;
+    } while (uVar5 < (byte)param_2[1]);
   }
   *(byte *)((int)param_2 + 3) = *(byte *)((int)param_2 + 3) | 1;
   return;

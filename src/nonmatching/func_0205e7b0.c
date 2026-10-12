@@ -92,7 +92,7 @@ extern int func_0205c1a4();
 undefined4 func_0205e7b0(undefined4 param_1,int *param_2,int *param_3)
 
 {
-  int iVar1;
+  uint iVar1;
   int iVar2;
   longlong lVar3;
   int *piVar4;
@@ -116,22 +116,22 @@ undefined4 func_0205e7b0(undefined4 param_1,int *param_2,int *param_3)
   func_02002998(((uint)lVar3 >> 0xc | (int)((ulonglong)lVar3 >> 0x20) << 0x14) + piVar4[0xf]);
   lVar3 = (longlong)piVar4[8] * (longlong)local_20 +
           (longlong)*piVar4 * (longlong)local_28 + (longlong)local_24 * (longlong)piVar4[4];
-  uVar7 = ((uint)lVar3 >> 0xc | (int)((ulonglong)lVar3 >> 0x20) << 0x14) + piVar4[0xc];
+  iVar1 = ((uint)lVar3 >> 0xc | (int)((ulonglong)lVar3 >> 0x20) << 0x14) + piVar4[0xc];
   lVar3 = (longlong)piVar4[9] * (longlong)local_20 +
           (longlong)piVar4[1] * (longlong)local_28 + (longlong)local_24 * (longlong)piVar4[5];
   uVar8 = ((uint)lVar3 >> 0xc | (int)((ulonglong)lVar3 >> 0x20) << 0x14) + piVar4[0xd];
   uVar9 = func_02002940();
   iVar5 = (int)(uVar9 >> 0x20);
-  lVar3 = (ulonglong)uVar7 * (uVar9 & 0xffffffff);
-  iVar1 = (int)(iVar5 * uVar7 + (int)uVar9 * ((int)uVar7 >> 0x1f) + (int)((ulonglong)lVar3 >> 0x20)
+  lVar3 = (ulonglong)iVar1 * (0xffffffff & uVar9);
+  uVar7 = (int)(iVar5 * iVar1 + (int)uVar9 * ((int)iVar1 >> 0x1f) + (int)((ulonglong)lVar3 >> 0x20)
                 + (uint)(0x7fffffff < (uint)lVar3) + 0x1000) / 2;
   lVar3 = (ulonglong)uVar8 * (uVar9 & 0xffffffff);
   iVar5 = (int)(iVar5 * uVar8 + (int)uVar9 * ((int)uVar8 >> 0x1f) + (int)((ulonglong)lVar3 >> 0x20)
                 + (uint)(0x7fffffff < (uint)lVar3) + 0x1000) / 2;
   uVar6 = 0;
-  if (-1 < iVar1 && -1 < iVar5) {
-    iVar2 = iVar1;
-    if (iVar1 < 0x1001) {
+  if (-2 <= uVar7 && -2 <= iVar5) {
+    iVar2 = uVar7;
+    if (uVar7 <= 0x1000) {
       iVar2 = iVar5;
     }
     if (iVar2 <= 0x1000) goto LAB_0205e8d0;
@@ -139,7 +139,7 @@ undefined4 func_0205e7b0(undefined4 param_1,int *param_2,int *param_3)
   uVar6 = 0xffffffff;
 LAB_0205e8d0:
   func_0205c1a4(&local_2c,&local_30,&local_34,&local_38);
-  *param_2 = local_2c + (iVar1 * (local_34 - local_2c) + 0x800 >> 0xc);
+  *param_2 = local_2c + (uVar7 * (local_34 - local_2c) + 0x800 >> 0xc);
   *param_3 = (0xbf - local_30) - (iVar5 * (local_38 - local_30) + 0x800 >> 0xc);
   return uVar6;
 }

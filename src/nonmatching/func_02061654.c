@@ -130,8 +130,8 @@ void func_02061654(uint *param_1,uint *param_2,int param_3,uint param_4)
   }
   piVar4 = ((unsigned int)0x0206178c);
   if ((bVar1 & 1) != 0) {
-    uVar7 = *param_1;
     bVar1 = *(byte *)(param_3 + 2);
+    uVar7 = *param_1;
     *param_1 = uVar7 | 0x20;
     if ((*(uint *)(*piVar4 + (uint)(bVar1 >> 5) * 4 + 0xc4) & 1 << (bVar1 & 0x1f)) == 0) {
       puVar8 = (uint *)((uint)bVar1 * 0x18 + ((unsigned int)0x02061790));

@@ -128,7 +128,7 @@ void func_0206464c(void)
       sVar3 = *(short *)(iVar4 + (uint)*(byte *)(iVar6 + 0x40) * 2);
       iVar9 = (int)*(short *)(iVar4 + (iVar8 >> 8) * 2) + (int)sVar1 + (int)sVar3 + (int)sVar2;
       iVar8 = -0x8000;
-      if ((-0x8001 < iVar9) && (iVar8 = iVar9, ((unsigned int)0x00007fff) < iVar9)) {
+      if ((-0x8002 <= iVar9) && (iVar8 = iVar9, ((unsigned int)0x00007fff) < iVar9)) {
         iVar8 = ((unsigned int)0x00007fff);
       }
       if (iVar8 != *(short *)(iVar6 + 0x3e)) {

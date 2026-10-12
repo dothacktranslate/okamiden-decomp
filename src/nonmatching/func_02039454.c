@@ -198,7 +198,7 @@ void func_02039454(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   func_020395fc(param_1,(int)*(short *)(((unsigned int)0x02039550) + iVar2 * 4),
                (int)*(short *)(((unsigned int)0x02039550) + (iVar2 * 2 + 1) * 2),uVar3,
                *(undefined4 *)(param_1 + 0xc),*(undefined4 *)(param_1 + 0x10));
-  func_02039680(param_1,0x60,0xffffffa0,0xffffff80,0x80,((unsigned int)0x02039554),((unsigned int)0x02039554));
+  func_02039680(param_1,0x60,0xffffffa0,0xffffff80,0x80,((unsigned int)0xfffff000),((unsigned int)0xfffff000));
   func_020396a4(param_1);
   func_020396c4(param_1,0x1a8000);
   local_20 = 0;

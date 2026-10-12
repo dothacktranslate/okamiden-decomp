@@ -100,7 +100,7 @@ void func_0205b0b4(int param_1,int param_2,undefined4 param_3,undefined4 param_4
     func_02004db8();
   }
   if (*(ushort *)(param_1 + 0xc) != 0) {
-    func_02004e14(param_1 + *(int *)(param_1 + 0x14),(*(uint *)(param_1 + 8) & 0xffff) << 3,
+    func_02004e14(param_1 + *(unsigned short *)(param_1 + 0x14),(*(uint *)(param_1 + 8) & 0xffff) << 3,
                  (uint)*(ushort *)(param_1 + 0xc) << 3,*(int *)(param_1 + 0x14),param_4);
     *(ushort *)(param_1 + 0x10) = *(ushort *)(param_1 + 0x10) | 1;
   }

@@ -91,9 +91,9 @@ void func_02002998(undefined4 param_1)
 
   puVar1 = ((unsigned int)0x04000280);
   (*(unsigned short *)0x04000280) = 1;
-  *(undefined4 *)(8 + puVar1) = 0;
-  *(undefined4 *)(10 + puVar1) = 0x1000;
+  *(undefined4 *)(puVar1 + 8) = 0;
+  *(undefined4 *)(puVar1 + 10) = 0x1000;
   *(undefined4 *)(puVar1 + 0xc) = param_1;
-  *(unsigned short *)(puVar1 + 0xe) = 0;
+  *(signed char *)(puVar1 + 0xe) = 0;
   return;
 }

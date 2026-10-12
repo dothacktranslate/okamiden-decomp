@@ -97,7 +97,7 @@ undefined4 func_02058974(int *param_1,uint param_2)
   puVar1 = *(ushort **)(*param_1 + 0x10);
   while( true ) {
     if (puVar1 == (ushort *)0x0) {
-      return ((unsigned int)0x020589b8);
+      return ((unsigned int)0x0000ffff);
     }
     bVar4 = param_2 <= *puVar1;
     bVar3 = *puVar1 == param_2;

@@ -1,8 +1,17 @@
 {
   "arm9_total_code_bytes": 431680,
   "cumulative_selected_v2_gain_over_pre_a9": {
-    "equivalent_bytes": 4268.834025626613,
-    "percentage_points": 0.9888885344761427
+    "equivalent_bytes": 7298.234439767115,
+    "percentage_points": 1.6906584599163998
+  },
+  "expanded_v2": {
+    "exact_bytes": 15940,
+    "exact_functions": 535,
+    "fuzzy_equivalent_bytes": 195233.8034979654,
+    "note": "Previously zero-result baselines are measured separately from actual search improvement.",
+    "overall_equivalent_bytes": 211173.8034979654,
+    "overall_v2_percent": 48.91906122543675,
+    "zero_equivalent_bytes": 0
   },
   "full_corpus_v2": {
     "coverage_percent": 100.0,
@@ -14,6 +23,34 @@
     "fuzzy_source_targets": 2541,
     "overall_equivalent_bytes": 208144.4030838492,
     "overall_v2_percent": 48.21729130000213
+  },
+  "latest_deep_v2_pass": {
+    "candidate_errors_skipped": 0,
+    "compiler_workers": 8,
+    "engine_batch_failures": 0,
+    "exact_bytes": 15940,
+    "exact_functions": 535,
+    "expanded_overall_equivalent_bytes": 211173.8034979654,
+    "expanded_overall_v2_percent": 48.91906122543675,
+    "functions_improved": 507,
+    "fuzzy_equivalent_bytes": 195233.8034979654,
+    "fuzzy_targets": 2541,
+    "generations_requested": 4,
+    "improvement_events": 763,
+    "new_objects_discovered": 175874,
+    "new_objects_scored": 175874,
+    "pass_equivalent_byte_gain": 3029.4004141405026,
+    "pass_percentage_point_gain": 0.7017699254402573,
+    "profile_only_improvements": 45,
+    "provisional_exact_candidates": 0,
+    "recoverable_zero_targets": 0,
+    "scored_targets": 2541,
+    "scoring_workers": 8,
+    "source_files_improved": 462,
+    "total_targets": 2541,
+    "zero_baseline_equivalent_bytes": 0,
+    "zero_equivalent_bytes": 0,
+    "zero_v2_baselines_established": 0
   },
   "latest_full_corpus_pass": {
     "candidate_errors_skipped": 0,

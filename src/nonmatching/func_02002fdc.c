@@ -105,7 +105,7 @@ short func_02002fdc(int param_1,int param_2)
     iVar4 = -param_1;
     if (param_2 < 0) {
       iVar1 = -param_2;
-      if (param_1 == param_2 || iVar1 < iVar4) {
+      if (param_2 == param_1 || iVar1 < iVar4) {
         if (iVar4 <= iVar1) {
           return -0x6000;
         }
@@ -121,14 +121,14 @@ short func_02002fdc(int param_1,int param_2)
       }
     }
     else {
-      if (param_2 < 1) {
+      if (param_2 <= 0) {
         return -0x4000;
       }
       if (param_2 < iVar4) {
         sVar2 = -0x4000;
         param_1 = iVar4;
-        iVar4 = param_2;
         sVar3 = 1;
+        iVar4 = param_2;
       }
       else {
         if (param_2 <= iVar4) {
@@ -179,7 +179,7 @@ short func_02002fdc(int param_1,int param_2)
       return sVar2 - *(short *)(((unsigned int)0x02003168) + (iVar4 >> 5) * 2);
     }
     iVar4 = func_020028c0(iVar4);
-    return sVar2 + *(short *)(((unsigned int)0x02003168) + (iVar4 >> 5) * 2);
+    return sVar2 + *(signed char *)(((unsigned int)0x02003168) + (iVar4 >> 5) * 2);
   }
   return 0;
 }

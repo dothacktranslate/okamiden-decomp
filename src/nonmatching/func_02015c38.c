@@ -92,12 +92,12 @@ int func_02015c38(uint param_1)
   int iVar3;
   uint *puVar4;
 
-  iVar3 = 0;
   uVar2 = param_1;
+  iVar3 = 0;
   while( true ) {
     if ((uVar2 & 3) == 0) {
       for (puVar4 = (uint *)(param_1 + iVar3);
-          ((*puVar4 & ((unsigned int)0x02015cb8)) + ((unsigned int)0x02015cb8) | *puVar4 | ((unsigned int)0x02015cb8)) == 0xffffffff;
+          ((*puVar4 & ((unsigned int)0x7f7f7f7f)) + ((unsigned int)0x7f7f7f7f) | *puVar4 | ((unsigned int)0x7f7f7f7f)) == 0xffffffff;
           puVar4 = puVar4 + 1) {
         iVar3 = iVar3 + 4;
       }

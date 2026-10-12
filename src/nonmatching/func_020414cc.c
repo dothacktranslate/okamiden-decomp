@@ -96,10 +96,10 @@ extern int func_0204287c();
 undefined4 func_020414cc(undefined4 param_1,undefined4 param_2,undefined4 param_3)
 
 {
-  int iVar1;
+  uint iVar1;
   undefined4 uVar2;
 
-  if (*(int *)(((unsigned int)0x02041534) + 0x10) != 0) {
+  if (*(signed char *)(((unsigned int)0x02041534) + 0x10) != 0) {
     return 0;
   }
   iVar1 = func_02032bcc(((unsigned int)0x00000404),4,((unsigned int)0x02041538));

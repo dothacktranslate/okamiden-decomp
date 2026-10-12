@@ -91,7 +91,7 @@ void func_0205fd70(uint *param_1,int param_2,uint *param_3,int param_4)
   short sVar2;
   longlong lVar3;
   longlong lVar4;
-  uint uVar5;
+  int uVar5;
   uint *puVar6;
   int iVar7;
   uint uVar8;
@@ -106,7 +106,7 @@ void func_0205fd70(uint *param_1,int param_2,uint *param_3,int param_4)
   uVar9 = param_2 >> 0xc;
   param_4 = param_4 + param_3[1];
   if ((uVar8 & 0xc0000000) != 0) {
-    uVar5 = uVar8 & ((unsigned int)0x0205ff40);
+    uVar5 = uVar8 & ((unsigned int)0x1fff0000);
     if ((uVar8 & 0x40000000) == 0) {
       if ((uVar9 & 3) == 0) {
         uVar9 = uVar9 >> 2;
@@ -141,7 +141,7 @@ void func_0205fd70(uint *param_1,int param_2,uint *param_3,int param_4)
                           ((int)uVar11 >> 0x1f) + (uint)CARRY4(uVar10,uVar11)) * 0x40000000;
               return;
             }
-            sVar1 = *(short *)(param_4 + uVar5 * 4 + 2);
+            sVar1 = *(short *)(param_4 + (uVar5 * 4 + 2));
             sVar2 = *(short *)(param_4 + uVar9 * 4 + 2);
             *param_1 = (int)*(short *)(param_4 + uVar9 * 4) + *(short *)(param_4 + uVar5 * 4) * 3 >>
                        2;

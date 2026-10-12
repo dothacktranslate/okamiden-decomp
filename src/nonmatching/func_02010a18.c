@@ -88,17 +88,17 @@ undefined8 func_02010a18(int *param_1)
 
 {
   longlong lVar1;
+  int iVar4;
   uint iVar2;
   int iVar3;
-  int iVar4;
 
-  iVar2 = param_1[1] + -2;
   iVar4 = *param_1 + 2000;
+  iVar2 = param_1[1] + -2;
   if (iVar2 < 1) {
     iVar4 = *param_1 + 1999;
   }
-  iVar3 = -(iVar4 >> 0x1f) + (int)((longlong)((unsigned int)0x02010ac8) * (longlong)iVar4 >> 0x25);
-  iVar4 = iVar4 + (-(iVar4 >> 0x1f) + (int)((longlong)((unsigned int)0x02010ac8) * (longlong)iVar4 >> 0x25)) *
+  iVar3 = -(iVar4 >> 0x1f) + (int)((longlong)((unsigned int)0x51eb851f) * (longlong)iVar4 >> 0x25);
+  iVar4 = iVar4 + (-(iVar4 >> 0x1f) + (int)((longlong)((unsigned int)0x51eb851f) * (longlong)iVar4 >> 0x25)) *
                   -100;
   if (iVar2 < 1) {
     iVar2 = param_1[1] + 10;
@@ -109,7 +109,7 @@ undefined8 func_02010a18(int *param_1)
           ((int)(iVar4 + ((uint)(iVar4 >> 1) >> 0x1e)) >> 2) +
           ((int)(iVar3 + ((uint)(iVar3 >> 1) >> 0x1e)) >> 2) + iVar3 * 5;
   lVar1 = (longlong)
-          ((iVar2 + (int)((ulonglong)((longlong)((unsigned int)0x02010ad0) * (longlong)iVar2) >> 0x20) >> 2) -
+          ((iVar2 + (int)((ulonglong)((longlong)((unsigned int)0x92492493) * (longlong)iVar2) >> 0x20) >> 2) -
           (iVar2 >> 0x1f)) * 7;
   return CONCAT44((int)((ulonglong)lVar1 >> 0x20),iVar2 - (int)lVar1);
 }

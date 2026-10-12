@@ -206,8 +206,8 @@ undefined4 func_0204a3ec(int param_1)
   iVar5 = func_020461e8(param_1);
   iVar6 = local_80;
   if (iVar6 == iVar5) {
-    uVar8 = 0;
     puVar7 = ((unsigned int)0x0204a658);
+    uVar8 = 0;
   }
   else {
     iVar6 = func_020464e8(param_1,iVar6 + 1);
@@ -222,7 +222,7 @@ undefined4 func_0204a3ec(int param_1)
   iVar6 = func_0204a77c(iVar3,iVar4,auStack_7c);
   while (iVar6 != 0) {
     iVar5 = iVar4 + 1;
-    if ((iVar5 < 0xd) || (!bVar2)) {
+    if ((iVar5 <= 0xc) || (!bVar2)) {
       func_02046898(param_1,((unsigned int)0x0204a668),2);
       func_0204ac2c(iVar3,((unsigned int)0x0204a66c),auStack_7c);
       func_02046960(param_1,((unsigned int)0x0204a670),auStack_58);

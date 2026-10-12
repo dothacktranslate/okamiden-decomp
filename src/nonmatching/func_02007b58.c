@@ -89,7 +89,7 @@ extern int func_02007430();
 undefined4 func_02007b58(undefined4 param_1)
 
 {
-  uint uVar1;
+  int uVar1;
   undefined4 uVar2;
 
   switch(param_1) {
@@ -106,7 +106,7 @@ undefined4 func_02007b58(undefined4 param_1)
   case 5:
     return ((unsigned int)0x02007bf4);
   case 6:
-    return ((unsigned int)0x02007bf8);
+    return ((unsigned int)0x037f8000);
   default:
     return 0;
   }

@@ -96,9 +96,9 @@ void func_020137dc(uint param_1,undefined4 param_2,undefined4 param_3,undefined4
   uint uVar5;
   int iVar6;
 
-  iVar6 = (*(unsigned int *)0x02013b00);
+  iVar6 = (*(short *)0x02013b00);
   func_020099f0(iVar6 + 0x18,0,0x48,param_4,param_4);
-  uVar3 = ((unsigned int)0x02013b04);
+  uVar3 = ((unsigned int)0x0000203f);
   *(uint *)(iVar6 + 4) = param_1;
   *(undefined4 *)(iVar6 + 0x58) = uVar3;
   if (param_1 == 0) {
@@ -141,7 +141,7 @@ void func_020137dc(uint param_1,undefined4 param_2,undefined4 param_3,undefined4
         *(undefined4 *)(iVar6 + 0x30) = 0x17;
         *(undefined4 *)(iVar6 + 0x34) = 300;
         *(undefined4 *)(iVar6 + 0x40) = 500;
-        uVar3 = ((unsigned int)0x02013b0c);
+        uVar3 = ((unsigned int)0x00002710);
         *(undefined4 *)(iVar6 + 0x44) = 5000;
         uVar1 = ((unsigned int)0x02013b10);
         *(undefined4 *)(iVar6 + 0x38) = uVar3;

@@ -91,7 +91,7 @@ bool func_0201e21c(uint param_1,uint param_2,uint param_3,uint param_4)
   bool bVar2;
   byte in_Q;
 
-  if (((0xffdfffff < param_2 * 2) && ((param_2 * 2 != 0xffe00000 || (param_1 != 0)))) ||
+  if (((0xffe00000 <= param_2 * 2) && ((param_2 * 2 != 0xffe00000 || (param_1 != 0)))) ||
      ((0xffe00000 <= param_4 * 2 && (((param_4 & 0x7fffffff) != 0x7ff00000 || (param_3 != 0)))))) {
     return false;
   }
@@ -102,10 +102,10 @@ bool func_0201e21c(uint param_1,uint param_2,uint param_3,uint param_4)
     }
     return !bVar2;
   }
-  bVar2 = param_1 == 0;
   bVar1 = ((param_4 | param_2) & 0x7fffffff) == 0;
+  bVar2 = param_1 == 0;
   if (((bVar2 && bVar1) && param_3 == 0) &&
-     (param_1 = 0, (((byte)(((bVar2 && bVar1) && param_3 == 0) << 3 | in_Q) & 0x1f) >> 3 & 1) != 0))
+     (param_1 = 0, (((byte)(((bVar2 && bVar1) && param_3 == 0) << in_Q | 3) & 0x1f) >> 3 & 1) != 0))
   {
     return false;
   }

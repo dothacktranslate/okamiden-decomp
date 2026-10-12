@@ -102,7 +102,7 @@ int func_02002ea8(int *param_1,int *param_2)
   iVar7 = *param_2;
   iVar4 = param_1[2];
   iVar2 = param_2[2];
-  (*(unsigned int *)0x040002b0) = 1;
+  (*(unsigned short *)0x040002b0) = 1;
   *(longlong *)(puVar1 + 4) =
        ((longlong)(iVar4 - iVar2) * (longlong)(iVar4 - iVar2) +
        (longlong)(iVar6 - iVar7) * (longlong)(iVar6 - iVar7) +

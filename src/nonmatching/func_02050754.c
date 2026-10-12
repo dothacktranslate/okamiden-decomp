@@ -98,7 +98,7 @@ void func_02050754(int param_1,undefined4 param_2,int param_3,undefined4 param_4
       func_02047714(*(undefined4 *)(param_1 + 8),((unsigned int)0x02050794),param_3,iVar1,param_4);
       return;
     }
-    param_3 = *(int *)(param_1 + (iVar1 * 8 + 0x14));
+    param_3 = *(short *)(param_1 + (iVar1 * 8 + 0x14));
   } while (param_3 != -1);
   return;
 }

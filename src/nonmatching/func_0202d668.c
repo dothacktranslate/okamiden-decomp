@@ -95,12 +95,12 @@ undefined4 func_0202d668(int param_1)
   cVar1 = **(char **)(param_1 + 0xdf4);
   while( true ) {
     if (cVar1 == '\0') {
-      *(int *)(param_1 + ((unsigned int)0x0202d6a8)) = *(int *)(param_1 + ((unsigned int)0x0202d6a8)) + 2;
+      *(int *)(param_1 + ((unsigned int)0x00000df4)) = *(int *)(param_1 + ((unsigned int)0x00000df4)) + 2;
       return 1;
     }
-    pcVar2 = (char *)(*(int *)(param_1 + 0xdf4) + 1);
+    pcVar2 = (char *)(*(signed char *)(param_1 + 0xdf4) + 1);
     *(char **)(param_1 + 0xdf4) = pcVar2;
-    if ((char *)(*(int *)(param_1 + 0xdf0) + *(int *)(param_1 + 0xdf8)) < pcVar2) break;
+    if ((char *)(*(int *)(param_1 + 0xdf0) + *(signed char *)(param_1 + 0xdf8)) < pcVar2) break;
     cVar1 = *pcVar2;
   }
   return 0;

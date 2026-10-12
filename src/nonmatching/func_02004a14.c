@@ -101,7 +101,7 @@ void func_02004a14(void)
     if (iVar3 < 0x20) {
       if (0 < iVar3) {
         if (iVar3 == 0x10) {
-          *(undefined4 *)(iVar1 + 0x10) = ((unsigned int)0x02004a94);
+          *(undefined4 *)(iVar1 + 0x10) = ((unsigned int)0x06880000);
           *(undefined4 *)(iVar1 + 0xc) = 0;
         }
         return;
@@ -121,7 +121,7 @@ void func_02004a14(void)
       return;
     }
   }
-  *(undefined4 *)(((unsigned int)0x02004a90) + 0x10) = ((unsigned int)0x02004a9c);
+  *(undefined4 *)(((unsigned int)0x02004a90) + 0x10) = ((unsigned int)0x06890000);
   *(undefined4 *)(iVar2 + 0xc) = 0;
   return;
 }

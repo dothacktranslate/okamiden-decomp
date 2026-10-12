@@ -105,7 +105,7 @@ void func_0200d12c(int param_1)
   while( true ) {
     uVar7 = *(uint *)(param_1 + 4);
     uVar8 = uVar7 + *(int *)(param_1 + 8) + *(int *)(param_1 + 0xc);
-    func_02008b6c();
+    func_02008b6c(param_1);
     puVar3 = ((unsigned int)0x0200d218);
     puVar11 = (undefined4 *)(*(unsigned int *)0x0200d218);
     puVar5 = (undefined4 *)0x0;
@@ -115,7 +115,7 @@ void func_0200d12c(int param_1)
     while (puVar2 = puVar9, puVar1 = puVar4, puVar2 != (undefined4 *)0x0) {
       uVar10 = puVar2[2];
       puVar9 = (undefined4 *)*puVar2;
-      if ((((uVar10 == 0) && (uVar7 <= (uint)puVar2[1])) && ((uint)puVar2[1] < uVar8)) ||
+      if ((((uVar10 <= 0) && (uVar7 <= (uint)puVar2[1])) && ((uint)puVar2[1] < uVar8)) ||
          ((puVar4 = puVar2, uVar10 >= uVar7 && (uVar10 < uVar8)))) {
         puVar4 = puVar2;
         if (puVar6 != (undefined4 *)0x0) {

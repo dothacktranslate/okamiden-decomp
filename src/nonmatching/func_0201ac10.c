@@ -123,7 +123,7 @@ void func_0201ac10(undefined1 *param_1,int param_2,int param_3,undefined4 param_
       if (iVar4 < iVar11 + 1) {
         iVar10 = iVar4;
       }
-      pbVar2 = (byte *)(param_3 + 5 + iVar11);
+      pbVar2 = (byte *)(param_3 + (5 + iVar11));
       pbVar1 = (byte *)(param_2 + 5 + iVar6);
       for (; 0 < iVar10; iVar10 = iVar10 + -1) {
         uVar5 = (uint)*pbVar1 * (uint)*pbVar2 + uVar5;

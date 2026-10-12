@@ -110,7 +110,7 @@ void func_0205254c(undefined4 param_1,int param_2,int param_3,undefined4 param_4
       func_0204b9e0(param_1,((unsigned int)0x0205261c));
     }
     iVar1 = 1 << (uVar5 & 0xff);
-    if (((unsigned int)0x02052620) < iVar1 + 1U) {
+    if (((unsigned int)0x0ccccccc) < iVar1 + 1U) {
       uVar2 = func_0204e544(param_1);
     }
     else {

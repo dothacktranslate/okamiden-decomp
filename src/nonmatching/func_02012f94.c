@@ -93,8 +93,8 @@ extern int func_02013058();
 void func_02012f94(uint param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  undefined1 auStack_60 [12];
   undefined1 auStack_54 [40];
+  undefined1 auStack_60 [12];
   undefined4 local_2c;
   uint *local_28;
   undefined4 local_20;

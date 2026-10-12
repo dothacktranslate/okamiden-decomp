@@ -92,8 +92,8 @@ void func_02062d00(uint *param_1)
   uint uVar1;
   bool bVar2;
   undefined4 local_58;
-  undefined4 local_54;
   uint local_50;
+  undefined4 local_54;
   uint local_4c;
   undefined4 local_48;
   undefined4 local_44;
@@ -112,7 +112,7 @@ void func_02062d00(uint *param_1)
   undefined4 local_10;
 
   if ((*param_1 & 8) == 0) {
-    local_58 = ((unsigned int)0x02062e6c);
+    local_58 = ((unsigned int)0x00101810);
   }
   else {
     local_58 = ((unsigned int)0x02062e68);

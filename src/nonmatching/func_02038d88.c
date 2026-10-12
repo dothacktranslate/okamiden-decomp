@@ -166,8 +166,8 @@ void func_02038d88(int param_1,undefined4 param_2,int param_3)
   int iVar3;
   int *piVar4;
 
-  puVar1 = ((unsigned int)0x02038e28);
-  (*(unsigned short *)0x02038e28) = 0;
+  puVar1 = ((unsigned int)0x04000280);
+  (*(unsigned short *)0x04000280) = 0;
   *(int *)(puVar1 + 8) = param_3;
   puVar1[0xc] = 8;
   puVar1[0xd] = 0;
@@ -177,7 +177,7 @@ void func_02038d88(int param_1,undefined4 param_2,int param_3)
   do {
   } while ((*puVar1 & 0x8000) != 0);
   do {
-  } while (((*(unsigned int *)0x02038e28) & 0x8000) != 0);
+  } while (((*(signed char *)0x04000280) & 0x8000) != 0);
   iVar3 = (*(unsigned int *)0x02038e2c);
   piVar4 = ((unsigned int)0x02038e2c) + -2;
   ((unsigned int *)0x02038e2c)[-4] = param_3;
@@ -186,7 +186,7 @@ void func_02038d88(int param_1,undefined4 param_2,int param_3)
   do {
   } while ((*(ushort *)(piVar2 + -8) & 0x8000) != 0);
   do {
-  } while (((*(unsigned int *)0x02038e28) & 0x8000) != 0);
-  *(byte *)(param_1 + iVar3) = *(byte *)(param_1 + iVar3) & ~(byte)(1 << ((*(unsigned int *)0x02038e30) & 0xff));
+  } while (((*(unsigned short *)0x04000280) & 0x8000) != 0);
+  *(byte *)(param_1 + iVar3) = *(byte *)(param_1 + iVar3) & ~(byte)(1 << ((*(unsigned int *)0x040002a8) & 0xff));
   return;
 }

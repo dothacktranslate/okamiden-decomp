@@ -100,8 +100,8 @@ void func_02004db8(void)
   iVar4 = ((unsigned int)0x02004e10);
   iVar6 = iVar5 * 6;
   uVar1 = *(ushort *)(((unsigned int)0x02004e04) + iVar6);
-  uVar2 = *(ushort *)(((unsigned int)0x02004e08) + iVar6);
   uVar3 = *(ushort *)(((unsigned int)0x02004e0c) + iVar6);
+  uVar2 = *(ushort *)(((unsigned int)0x02004e08) + iVar6);
   *(int *)(((unsigned int)0x02004e10) + 0x14) = iVar5;
   *(uint *)(iVar4 + 4) = (uint)uVar1 << 0xc;
   *(uint *)(iVar4 + 0x18) = (uint)uVar2 << 0xc;

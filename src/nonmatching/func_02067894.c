@@ -107,12 +107,12 @@ void func_02067894(int param_1,int param_2,int param_3,undefined4 param_4,undefi
     for (iVar4 = func_02056370(((unsigned int)0x020679c4),0,param_3,param_4,param_4);
         (iVar4 != 0 && (*(int *)(iVar4 + 8) != param_6)); iVar4 = func_02056370(uVar3,iVar4)) {
     }
-    iVar5 = 0;
+    iVar1 = 0;
     if (0 < *(int *)(iVar4 + 0x10)) {
       do {
-        func_020099f0(*(undefined4 *)(iVar4 + iVar5 * 4 + 0x14),0,*(undefined4 *)(iVar4 + 0x2c));
-        iVar5 = iVar5 + 1;
-      } while (iVar5 < *(int *)(iVar4 + 0x10));
+        func_020099f0(*(undefined4 *)(iVar4 + iVar1 * 4 + 0x14),0,*(undefined4 *)(iVar4 + 0x2c));
+        iVar1 = iVar1 + 1;
+      } while (iVar1 < *(int *)(iVar4 + 0x10));
     }
     func_02056310(((unsigned int)0x020679c4),iVar4);
     *(int *)(param_6 + 0x124) = *(int *)(param_6 + 0x124) + -1;
@@ -122,14 +122,14 @@ void func_02067894(int param_1,int param_2,int param_3,undefined4 param_4,undefi
   *(int *)(iVar4 + 8) = param_6;
   *(int *)(iVar4 + 0xc) = param_1;
   *(int *)(iVar4 + 0x10) = param_2;
-  iVar5 = 0;
+  iVar1 = 0;
   if (0 < param_2) {
     do {
-      iVar2 = iVar5 * 4;
-      iVar1 = iVar5 * 4;
-      iVar5 = iVar5 + 1;
-      *(undefined4 *)(iVar4 + iVar1 + 0x14) = *(undefined4 *)(param_3 + iVar2);
-    } while (iVar5 < param_2);
+      iVar2 = iVar1 * 4;
+      iVar5 = iVar1 * 4;
+      iVar1 = iVar1 + 1;
+      *(undefined4 *)(iVar4 + iVar5 + 0x14) = *(undefined4 *)(param_3 + iVar2);
+    } while (iVar1 < param_2);
   }
   *(undefined4 *)(iVar4 + 0x2c) = param_4;
   iVar4 = ((unsigned int)0x020679c8);

@@ -101,7 +101,7 @@ void func_02038900(int param_1,undefined4 param_2,undefined4 param_3,int param_4
 
   uVar5 = func_02008384();
   uVar3 = ((unsigned int)0x020389a4);
-  uVar2 = ((unsigned int)0x020389a0);
+  uVar2 = ((unsigned int)0x000082ea);
   if ((*(uint *)(param_1 + 8) & 1) != 0) {
     do {
       uVar6 = func_02008384();

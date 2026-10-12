@@ -113,7 +113,7 @@ void func_020084cc(int param_1,undefined4 param_2,undefined4 param_3)
     lVar1 = *(longlong *)(param_1 + 0x24);
     bVar9 = uVar5 <= uVar8;
     if (uVar8 == uVar5) {
-      bVar9 = uVar4 <= uVar7;
+      bVar9 = uVar7 >= uVar4;
     }
     if (!bVar9) {
       lVar2 = *(longlong *)(param_1 + 0x1c);

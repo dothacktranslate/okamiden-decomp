@@ -23,7 +23,7 @@ extern int func_02058750();
 void func_02045428(int param_1)
 
 {
-  int iVar1;
+  uint iVar1;
   uint uVar2;
   uint uVar3;
   uint uVar4;
@@ -45,13 +45,13 @@ void func_02045428(int param_1)
   iVar1 = *(int *)(param_1 + 0x460);
   if (*(short *)(param_1 + 0x1c) != 0) {
     do {
-      iVar6 = *(int *)(iVar1 + local_4c * 4);
+      iVar6 = *(int *)(local_4c + iVar1 * 4);
       iVar5 = (uint)*(ushort *)(iVar6 + 0x32) * 0x24;
       uVar10 = *(undefined4 *)
                 ((uint)*(ushort *)(iVar6 + 0x32) * 0x14 + *(int *)(param_1 + 0x46c) + 8);
       iVar8 = *(int *)(param_1 + 0x468);
       uVar9 = *(undefined4 *)(iVar8 + iVar5);
-      (*(unsigned int *)0x020455fc) = ((unsigned int)0x020455f8) | (int)*(short *)(iVar6 + 0x26) << 0x10;
+      (*(unsigned int *)0x040004a4) = ((unsigned int)0x3f0000c0) | (int)*(short *)(iVar6 + 0x26) << 0x10;
       if ((*(uint *)(iVar6 + 0xc) & 0x10000) == 0) {
         puVar11 = (undefined1 *)0x0;
       }
@@ -66,7 +66,7 @@ void func_02045428(int param_1)
       if (uVar2 != 0) {
         do {
           uVar4 = *(uint *)(iVar7 + uVar12 * 8);
-          uVar3 = uVar4 & ((unsigned int)0x02045600);
+          uVar3 = uVar4 & ((unsigned int)0x01ff0000);
           (*(unsigned int *)0x02045604) = 0;
           uVar3 = (int)uVar3 >> 0x10;
           uVar4 = uVar4 & 0xff;

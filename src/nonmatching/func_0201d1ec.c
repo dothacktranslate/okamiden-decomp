@@ -91,22 +91,22 @@ ulonglong func_0201d1ec(int param_1,uint param_2,int *param_3,undefined4 param_4
 {
   int iVar1;
   uint uVar2;
-  uint uVar3;
+  int uVar3;
   undefined8 uVar4;
   undefined4 local_10;
 
-  iVar1 = ((unsigned int)0x0201d29c);
+  iVar1 = ((unsigned int)0x7ff00000);
   uVar4 = CONCAT44(param_2,param_1);
   uVar3 = param_2 & 0x7fffffff;
   *param_3 = 0;
   if (((int)uVar3 < iVar1) && (uVar3 != 0 || param_1 != 0)) {
     if (uVar3 < 0x100000) {
-      uVar4 = func_0201dbfc(param_1,param_2,0,((unsigned int)0x0201d2a0),param_4);
+      uVar4 = func_0201dbfc(param_1,param_2,0,((unsigned int)0x43500000),param_4);
       *param_3 = -0x36;
       uVar3 = (uint)((ulonglong)uVar4 >> 0x20) & 0x7fffffff;
     }
     local_10 = (undefined4)uVar4;
-    uVar2 = (uint)((ulonglong)uVar4 >> 0x20) & ((unsigned int)0x0201d2a4);
+    uVar2 = (uint)((ulonglong)uVar4 >> 0x20) & ((unsigned int)0x800fffff);
     *param_3 = *param_3 + ((unsigned int)0x0201d2a8) + ((int)uVar3 >> 0x14);
     return CONCAT44(uVar2,local_10) | 0x3fe0000000000000;
   }

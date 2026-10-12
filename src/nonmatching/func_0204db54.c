@@ -90,7 +90,7 @@ extern int func_0204dafc();
 void func_0204db54(int param_1)
 
 {
-  int iVar1;
+  uint iVar1;
   int iVar2;
   int iVar3;
 
@@ -100,7 +100,7 @@ void func_0204db54(int param_1)
       if ((*(byte *)(param_1 + 5) & 0x10) != 0) {
         while (iVar2 != 0) {
           iVar2 = iVar2 + -1;
-          iVar3 = *(int *)(param_1 + 0xc) + iVar2 * 8;
+          iVar3 = *(unsigned short *)(param_1 + 0xc) + iVar2 * 8;
           iVar1 = func_0204dafc(iVar3,0);
           if (iVar1 != 0) {
             *(undefined4 *)(iVar3 + 4) = 0;

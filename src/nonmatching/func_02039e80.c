@@ -115,8 +115,8 @@ void func_02039e80(int param_1,int param_2)
   int local_1c;
   int local_18;
 
-  iVar2 = ((unsigned int)0x02039fb8);
-  iVar7 = *(int *)(param_2 + param_1 * 4 + ((unsigned int)0x02039fb8));
+  iVar2 = ((unsigned int)0x00001f04);
+  iVar7 = *(int *)(param_2 + param_1 * 4 + ((unsigned int)0x00001f04));
   piVar4 = (int *)func_02041758(0x81,0,0x1000);
   plVar3 = ((unsigned int)0x02039fbc);
   local_30 = *piVar4;
@@ -126,7 +126,7 @@ void func_02039e80(int param_1,int param_2)
   iStack_20 = piVar4[4];
   local_1c = piVar4[5];
   local_18 = piVar4[6];
-  puVar5 = *(uint **)(param_1 + param_2 * 4 + iVar2);
+  puVar5 = *(uint **)(param_1 + (param_2 + iVar2 * 4));
   *puVar5 = *puVar5 | 0x10000;
   lVar9 = func_0201e9b4((int)plVar3[1],*(undefined4 *)((int)plVar3 + 0xc),(int)*plVar3,
                        *(undefined4 *)((int)plVar3 + 4));
@@ -138,17 +138,17 @@ void func_02039e80(int param_1,int param_2)
   *plVar3 = lVar10 + plVar3[2];
   local_4c = (uint)((ulonglong)(lVar9 + lVar1) >> 0x33) - 0x1000;
   func_02002c10(&local_4c,&local_4c);
-  iVar6 = local_30 / 2;
-  iVar8 = iVar6 >> 0x1f;
-  uVar11 = func_0201e9b4(local_4c,(int)local_4c >> 0x1f,iVar6,iVar8);
+  iVar8 = local_30 / 2;
+  iVar6 = iVar8 >> 0x1f;
+  uVar11 = func_0201e9b4(local_4c,(int)local_4c >> 0x1f,iVar8,iVar6);
   local_4c = (uint)uVar11 + 0x800 >> 0xc |
              ((int)((ulonglong)uVar11 >> 0x20) + ((unsigned int)0x02039fc0) + (uint)(0xfffff7ff < (uint)uVar11)) *
              0x100000;
-  uVar11 = func_0201e9b4(local_48,(int)local_48 >> 0x1f,iVar6,iVar8);
+  uVar11 = func_0201e9b4(local_48,(int)local_48 >> 0x1f,iVar8,iVar6);
   local_48 = (uint)uVar11 + 0x800 >> 0xc |
              ((int)((ulonglong)uVar11 >> 0x20) + ((unsigned int)0x02039fc0) + (uint)(0xfffff7ff < (uint)uVar11)) *
              0x100000;
-  func_0201e9b4(local_44,local_44 >> 0x1f,iVar6,iVar8);
+  func_0201e9b4(local_44,local_44 >> 0x1f,iVar8,iVar6);
   *(uint *)(iVar7 + iVar2 + -0x80) = local_4c;
   *(uint *)(iVar7 + iVar2 + -0x7c) = local_48;
   *(undefined4 *)(iVar7 + iVar2 + -0x88) = 0;

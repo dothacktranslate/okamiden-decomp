@@ -89,7 +89,7 @@ extern int func_020382c0();
 int func_020382fc(int param_1,undefined4 param_2,undefined4 param_3)
 
 {
-  int iVar1;
+  uint iVar1;
   int iVar2;
   int *piVar3;
   int iVar4;

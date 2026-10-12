@@ -114,7 +114,7 @@ undefined4 func_0200c480(int *param_1,undefined4 param_2,uint param_3,undefined4
     func_02015ad0(param_1,param_2,param_3 + 1,0,param_4);
   }
   else {
-    if (param_3 < 0x10) {
+    if (param_3 <= 0xf) {
       iVar5 = 0;
       do {
         if (iVar5 < 0x10) {
@@ -130,7 +130,7 @@ undefined4 func_0200c480(int *param_1,undefined4 param_2,uint param_3,undefined4
   }
   goto LAB_0200c554;
 code_r0x0200c52c:
-  iVar2 = iVar2 + iVar5 * 0x10;
+  iVar2 = iVar5 + iVar2 * 0x10;
   func_02015ad0(iVar2,param_2,param_3 + 1);
   *param_1 = iVar2;
 LAB_0200c554:

@@ -207,8 +207,8 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
   func_02010178(*(undefined4 *)(((unsigned int)0x0200fe28) + 0x10));
   uVar1 = (*(unsigned int *)0x04000208);
   (*(unsigned int *)0x04000208) = 0;
+  uVar5 = func_02008b6c();
   uVar10 = func_0200656c(((unsigned int)0x0200fe30));
-  uVar9 = func_02008b6c();
   iVar11 = func_0200830c();
   if (iVar11 == 0) {
     uVar12 = 0;
@@ -217,7 +217,7 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
     uVar12 = 8;
   }
   func_02006510(uVar12 | 0x40000);
-  func_02008b80(uVar9);
+  func_02008b80(uVar5);
   uVar2 = (*(unsigned int *)0x04000208);
   (*(unsigned int *)0x04000208) = 1;
   if (((param_1 & 8) != 0) && (sVar8 = func_02008c24(uVar2), (ushort)(sVar8 - 2U) < 2)) {
@@ -226,19 +226,19 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
   if (((param_1 & 0x10) != 0) && (iVar11 = func_02014674(), iVar11 == 0)) {
     param_1 = param_1 & 0xffef;
   }
-  uVar6 = _REG_B_DISPCNT;
   uVar12 = _REG_A_DISPCNT;
+  uVar6 = _REG_B_DISPCNT;
   iVar11 = func_02010078();
   iVar13 = func_0200fa30(&local_28,&local_2c);
-  uVar5 = ((unsigned int)0x0200fe34);
+  uVar9 = ((unsigned int)0x00051d23);
   while (iVar13 != 0) {
-    func_02008be8(uVar5);
+    func_02008be8(uVar9);
     iVar13 = func_0200fa30(&local_28,&local_2c);
   }
   iVar13 = func_0200f924(2,0);
-  uVar5 = ((unsigned int)0x0200fe34);
+  uVar9 = ((unsigned int)0x00051d23);
   while (iVar13 != 0) {
-    func_02008be8(uVar5);
+    func_02008be8(uVar9);
     iVar13 = func_0200f924(2,0);
   }
   func_0200f46c();
@@ -287,9 +287,9 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
     }
     else {
       iVar11 = func_0200f874(1);
-      uVar5 = ((unsigned int)0x0200fe34);
+      uVar9 = ((unsigned int)0x00051d23);
       while (iVar11 != 0) {
-        func_02008be8(uVar5);
+        func_02008be8(uVar9);
         iVar11 = func_0200f874(1);
       }
     }
@@ -300,7 +300,7 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
   puVar4 = ((unsigned int)0x04000208);
   (*(unsigned int *)0x04000208) = 0;
   func_02006510(uVar10);
-  func_02008b80(uVar9);
+  func_02008b80(uVar5);
   uVar2 = *puVar4;
   *puVar4 = uVar1;
   if (bVar3) {

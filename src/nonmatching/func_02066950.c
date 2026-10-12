@@ -84,7 +84,7 @@ extern int LZCOUNT();
      (((int)((uint)(a) - (uint)(b)) < 0) != \
       ((int)(a) < 0)))
 
-extern int func_02064334();
+extern int func_02064354();
 extern int func_02064354();
 extern int func_0206436c();
 extern int func_020656c8();
@@ -108,8 +108,8 @@ undefined4 func_02066950(uint param_1)
     if (pbVar2 != (byte *)0x0) {
       func_02064334(iVar5,*pbVar2);
       func_02064354(iVar5,*(undefined2 *)(pbVar2 + 2));
-      bVar6 = *(uint *)(pbVar2 + 4) != 0;
       uVar3 = 0;
+      bVar6 = *(uint *)(pbVar2 + 4) != 0;
       if (bVar6) {
         uVar3 = param_1;
       }

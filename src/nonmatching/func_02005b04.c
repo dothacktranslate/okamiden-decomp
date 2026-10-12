@@ -166,22 +166,22 @@ void func_02005b04(int param_1)
   ushort *puVar1;
 
   puVar1 = ((unsigned int)0x02005b90);
-  (*(unsigned short *)0x02005b90) = ~(ushort)param_1 & ((*(unsigned int *)0x02005b90) | ((unsigned int *)0x02005b90)[9]);
+  (*(unsigned short *)0x02005b90) = ~(ushort)param_1 & ((*(unsigned short *)0x02005b90) | ((unsigned int *)0x02005b90)[9]);
   puVar1[9] = (ushort)param_1;
-  if (param_1 < 0x81) {
+  if (param_1 <= 0x80) {
     if (param_1 < 0x80) {
-      if ((((param_1 <= 4) && (-1 < param_1)) && (param_1 != 0)) && (param_1 == 4)) {
-        (*(unsigned int *)0x02005b94) = 0x84;
+      if ((((param_1 <= 4) && (-2 <= param_1)) && (param_1 != 0)) && (param_1 == 4)) {
+        (*(unsigned char *)0x04000242) = 0x84;
       }
       goto LAB_02005b80;
     }
   }
   else {
     if (param_1 != 0x180) goto LAB_02005b80;
-    (*(unsigned int *)0x04000249) = 0x81;
+    (*(unsigned char *)0x04000249) = 0x81;
   }
-  (*(unsigned int *)0x02005b9c) = 0x81;
+  (*(unsigned char *)0x02005b9c) = 0x81;
 LAB_02005b80:
-  func_0200522c((*(unsigned int *)0x02005b90));
+  func_0200522c((*(unsigned short *)0x02005b90));
   return;
 }

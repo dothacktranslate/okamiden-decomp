@@ -136,7 +136,7 @@ void func_02033ab4(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,u
   }
   else {
     puVar8 = (undefined4 *)param_2[1];
-    if (0x18 < iVar3) {
+    if (0x19 <= iVar3) {
       func_02002ac4(puVar8,param_1[1],auStack_38);
       iVar5 = func_02033328(auStack_20,auStack_2c);
       iVar6 = iVar5 >> 0x1f;
@@ -148,7 +148,7 @@ void func_02033ab4(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,u
         lVar13 = CONCAT44(-(uint)((int)lVar12 != 0) - (int)((ulonglong)lVar12 >> 0x20),-(int)lVar12)
         ;
       }
-      if ((int)((ulonglong)lVar13 >> 0x20) < (int)(uint)((uint)lVar13 < 5)) {
+      if ((int)((ulonglong)lVar13 >> 0x20) < (int)(uint)((uint)lVar13 <= 4)) {
         func_020333ec(param_1,auStack_20,param_2,auStack_2c,param_3,param_4);
       }
       else {
@@ -160,9 +160,9 @@ void func_02033ab4(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,u
         uVar11 = (uint)lVar13;
         do {
         } while (((uint)(*(unsigned short *)0x04000280) & (uint)((unsigned int)0x04000280) >> 0xb) != 0);
-        (*(unsigned int *)0x04000280) = 2;
-        piVar1 = ((unsigned int)0x02033cd4);
-        (*(unsigned int *)0x02033cd4) = uVar11 * 0x1000;
+        (*(short *)0x04000280) = 2;
+        piVar1 = ((unsigned int)0x04000290);
+        (*(unsigned int *)0x04000290) = uVar11 * 0x1000;
         piVar1[1] = (int)((ulonglong)lVar13 >> 0x20) * uVar11 | 0x1000 >> 0x14;
         *(longlong *)(piVar1 + 2) = lVar12;
         do {

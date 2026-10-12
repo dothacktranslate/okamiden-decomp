@@ -164,8 +164,8 @@ int func_02003cd0(void)
   uint uVar1;
   int iVar2;
 
-  uVar1 = ((ushort)((unsigned int *)0x02003d40)[3] & 0x1f00) >> 8;
-  switch((*(unsigned short *)0x02003d40) & 7) {
+  uVar1 = ((ushort)((unsigned int *)0x04001000)[3] & 0x1f00) >> 8;
+  switch((*(unsigned short *)0x04001000) & 7) {
   case 0:
     break;
   case 1:
@@ -177,7 +177,7 @@ int func_02003cd0(void)
   case 4:
     break;
   case 5:
-    if (((ushort)((unsigned int *)0x02003d40)[3] & 0x80) == 0) {
+    if (((ushort)((unsigned int *)0x04001000)[3] & 0x80) == 0) {
       iVar2 = uVar1 << 0xb;
     }
     else {

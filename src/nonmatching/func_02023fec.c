@@ -90,9 +90,9 @@ void func_02023fec(undefined4 param_1,int param_2,undefined4 param_3,undefined4 
 
 {
   if (param_2 != 1) {
-    func_020034c8(((unsigned int)0x02024018),param_3,param_3,param_4,param_4);
+    func_020034c8(((unsigned int)0x0400006c),param_3,param_3,param_4,param_4);
     return;
   }
-  func_020034c8(((unsigned int)0x0202401c),param_3,param_3,param_4,param_4);
+  func_020034c8(((unsigned int)0x0400106c),param_3,param_3,param_4,param_4);
   return;
 }

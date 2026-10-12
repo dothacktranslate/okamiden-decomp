@@ -102,17 +102,17 @@ void func_020396d0(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   undefined1 auStack_60 [36];
   undefined4 uStack_18;
 
-  iVar1 = ((unsigned int)0x0203979c);
   iVar2 = (int)(uint)*(ushort *)(param_1 + 0x88) >> 4;
+  iVar1 = ((unsigned int)0x0203979c);
   uStack_18 = param_4;
   func_02000dc8(auStack_3c,(int)*(short *)(((unsigned int)0x0203979c) + iVar2 * 4),
                (int)*(short *)(((unsigned int)0x0203979c) + (iVar2 * 2 + 1) * 2));
   iVar2 = (int)(uint)*(ushort *)(param_1 + 0x8a) >> 4;
-  func_02000de4(auStack_60,(int)*(short *)(iVar1 + iVar2 * 4),
+  func_02000de4(auStack_60,(int)*(short *)(iVar2 + iVar1 * 4),
                (int)*(short *)(iVar1 + (iVar2 * 2 + 1) * 2));
   func_02001250(auStack_3c,auStack_60,auStack_3c);
   iVar2 = (int)(uint)*(ushort *)(param_1 + 0x8c) >> 4;
-  func_02000e00(auStack_60,(int)*(short *)(iVar1 + iVar2 * 4),
+  func_02000e00(auStack_60,(int)*(short *)(iVar2 + iVar1 * 4),
                (int)*(short *)(iVar1 + (iVar2 * 2 + 1) * 2));
   func_02001250(auStack_3c,auStack_60,auStack_3c);
   if (param_2 != 0) {

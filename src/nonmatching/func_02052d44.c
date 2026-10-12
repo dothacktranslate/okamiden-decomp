@@ -96,29 +96,29 @@ uint func_02052d44(undefined4 param_1,uint param_2,undefined4 param_3,undefined4
   uint uVar5;
 
   iVar3 = func_02052a90(param_1,param_2 + 1,param_3,param_4,param_4);
-  iVar3 = *(int *)(iVar3 + 4);
-  uVar5 = param_2 + 1;
+  iVar3 = *(short *)(iVar3 + 4);
+  uVar2 = param_2 + 1;
   while( true ) {
-    uVar2 = uVar5;
+    uVar5 = uVar2;
     if (iVar3 == 0) {
-      uVar5 = uVar2 - param_2;
-      while (1 < uVar5) {
-        uVar1 = param_2 + uVar2 >> 1;
+      uVar2 = uVar5 - param_2;
+      while (2 <= uVar2) {
+        uVar1 = param_2 + uVar5 >> 1;
         iVar3 = func_02052a90(param_1,uVar1);
         if (*(int *)(iVar3 + 4) != 0) {
           param_2 = uVar1;
-          uVar1 = uVar2;
+          uVar1 = uVar5;
         }
-        uVar2 = uVar1;
-        uVar5 = uVar1 - param_2;
+        uVar5 = uVar1;
+        uVar2 = uVar1 - param_2;
       }
       return param_2;
     }
-    uVar5 = uVar2 << 1;
-    if (0x7ffffffd < uVar5) break;
-    iVar3 = func_02052a90(param_1,uVar5);
+    uVar2 = uVar5 << 1;
+    if (0x7ffffffd < uVar2) break;
+    iVar3 = func_02052a90(param_1,uVar2);
     iVar3 = *(int *)(iVar3 + 4);
-    param_2 = uVar2;
+    param_2 = uVar5;
   }
   iVar3 = 1;
   iVar4 = func_02052a90(param_1,1);

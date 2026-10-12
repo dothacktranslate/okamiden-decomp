@@ -99,13 +99,13 @@ void func_020078ec(void)
   }
   (*(unsigned int *)0x02007a04) = 1;
   uVar1 = func_02007a78(0);
-  func_02007bfc(0,uVar1);
+  func_02007bfc(0,uVar1,uVar1);
   uVar1 = func_02007b58(0);
   func_02007c10(0,uVar1,uVar1);
   func_02007c10(2,0);
   func_02007bfc(2,0);
   uVar1 = func_02007a78(3);
-  func_02007bfc(3,uVar1);
+  func_02007bfc(3,uVar1,uVar1);
   uVar1 = func_02007b58(3);
   func_02007c10(3,uVar1);
   uVar1 = func_02007a78(4);

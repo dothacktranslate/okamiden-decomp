@@ -91,9 +91,9 @@ void func_0201b78c(int param_1,undefined4 param_2,undefined4 param_3,int param_4
 
 {
   byte bVar1;
-  uint uVar2;
   int iVar3;
   int iVar4;
+  uint uVar2;
 
   iVar4 = (int)*(short *)(param_1 + 2);
   func_0201b60c(param_4);

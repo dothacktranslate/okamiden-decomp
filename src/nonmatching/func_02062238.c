@@ -117,7 +117,7 @@ void func_02062238(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   uVar7 = (uint)lVar2 >> 0xc | (int)((ulonglong)lVar2 >> 0x20) << 0x14;
   *param_1 = uVar10;
   param_1[5] = uVar8;
-  iVar4 = func_02002964();
+  iVar4 = func_02002964(param_1);
   param_1[1] = (int)(uVar7 * iVar4) >> 0xc;
   func_020029f4(iVar11,iVar13);
   uVar6 = (uint)*(ushort *)(param_2 + 0x2c);
@@ -131,7 +131,7 @@ void func_02062238(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   uVar7 = (uint)lVar3;
   param_1[0xc] = (uVar7 - uVar12 >> 8 |
                  ((int)((ulonglong)lVar3 >> 0x20) -
-                 ((int)((ulonglong)lVar2 >> 0x20) + (uint)(uVar12 > uVar7))) * 0x1000000) +
+                 ((int)((ulonglong)lVar2 >> 0x20) + (uint)(uVar7 < uVar12))) * 0x1000000) +
                  uVar6 * 0x8000;
   param_1[0xd] = ((uint)lVar1 >> 8 | (int)((ulonglong)lVar1 >> 0x20) << 0x18) + uVar5 * 0x8000;
   iVar11 = func_02002964();

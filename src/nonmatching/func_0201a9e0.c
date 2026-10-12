@@ -166,7 +166,7 @@ int func_0201a9e0(int param_1,int param_2)
         }
       }
       else {
-        *(uint *)(param_1 + 4) = uVar2 & 0xfffff3ff | 0x800;
+        *(short *)(param_1 + 4) = uVar2 & 0xfffff3ff | 0x800;
       }
     }
     else if (uVar1 == 1) {

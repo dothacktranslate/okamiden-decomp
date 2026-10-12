@@ -90,7 +90,7 @@ void func_02003704(void)
   code *UNRECOVERED_JUMPTABLE;
 
   UNRECOVERED_JUMPTABLE = ((unsigned int)0x0200371c);
-  (*(unsigned int *)0x02003718) = 0x16;
+  (*(unsigned int *)0x04000400) = 0x16;
                     /* WARNING: Could not recover jumptable at 0x02003714. Too many branches */
                     /* WARNING: Treating indirect jump as call */
   (*UNRECOVERED_JUMPTABLE)();

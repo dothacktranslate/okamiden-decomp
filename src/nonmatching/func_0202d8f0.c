@@ -100,7 +100,7 @@ void func_0202d8f0(int param_1,int param_2)
   int *piVar4;
   int local_18;
 
-  *(uint *)(param_1 + ((unsigned int)0x0202d9a8)) = *(uint *)(param_1 + ((unsigned int)0x0202d9a8)) | 0x10;
+  *(uint *)(param_1 + ((unsigned int)0x00000be8)) = *(uint *)(param_1 + ((unsigned int)0x00000be8)) | 0x10;
   local_18 = param_2 + -0x1000;
   if (local_18 < 0) {
     local_18 = 0;
@@ -123,7 +123,7 @@ void func_0202d8f0(int param_1,int param_2)
         if (iVar1 == 0) {
           iVar2 = 0;
         }
-        func_0203aed4((int)(((unsigned int)0x0202d9b4) & *(uint *)(iVar2 + 8)) >> 0x10,1);
+        func_0203aed4((int)(((unsigned int)0xffff0000) & *(uint *)(iVar2 + 8)) >> 0x10,1);
         iVar2 = *(int *)(param_1 + ((unsigned int)0x00000e54)) + uVar3 * 0x18;
         if (*(int *)(param_1 + ((unsigned int)0x00000e54)) == 0) {
           iVar2 = 0;
@@ -135,7 +135,7 @@ void func_0202d8f0(int param_1,int param_2)
     func_0202db38(param_1,&local_18,1);
   }
   func_0202bd84(param_1);
-  *(uint *)(param_1 + ((unsigned int)0x0202d9a8)) = *(uint *)(param_1 + ((unsigned int)0x0202d9a8)) & 0xffffffef;
+  *(uint *)(param_1 + ((unsigned int)0x00000be8)) = *(uint *)(param_1 + ((unsigned int)0x00000be8)) & 0xffffffef;
   *(uint *)((*(unsigned int *)0x0202d9b8) + 0x124) = *(uint *)((*(unsigned int *)0x0202d9b8) + 0x124) | 0x80000000;
   return;
 }

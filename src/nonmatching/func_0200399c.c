@@ -106,7 +106,7 @@ void func_0200399c(void)
     func_02008fe4(*piVar1,iVar3 + 0x30,0,0x60,1);
   }
   iVar3 = 0;
-  puVar2 = ((unsigned int)0x02003a4c);
+  puVar2 = ((unsigned int)0x040004d0);
   do {
     iVar3 = iVar3 + 1;
     *puVar2 = 0;

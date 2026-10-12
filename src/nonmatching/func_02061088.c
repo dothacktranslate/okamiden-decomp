@@ -99,13 +99,13 @@ void func_02061088(int param_1,int param_2,int param_3)
   bVar4 = param_3 != 0;
   iVar2 = param_1;
   if (bVar4) {
-    iVar2 = *(int *)(param_3 + 8);
+    iVar2 = *(unsigned short *)(param_3 + 8);
   }
   if (bVar4 && iVar2 != 0) {
     unaff_r8 = param_3 + iVar2;
   }
   uVar3 = 0;
-  *(undefined4 *)(param_1 + 0xc) = (*(unsigned int *)0x02061150);
+  *(undefined4 *)(param_1 + 0xc) = (*(unsigned short *)0x02061150);
   bVar1 = *(byte *)(param_3 + 0x18);
   if (!bVar4 || iVar2 == 0) {
     unaff_r8 = 0;

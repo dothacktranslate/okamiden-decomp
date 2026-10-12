@@ -104,7 +104,7 @@ void func_02057858(int *param_1,undefined4 param_2,undefined4 param_3,undefined4
              (*param_1 * 0x540 + ((unsigned int)0x02057990) + 0x100 + (uint)*(ushort *)(param_1 + 1) * 8);
     uVar4 = ((uint)*(ushort *)((int)param_1 + 6) - (uint)*(ushort *)(param_1 + 1)) + 1 & 0xffff;
     uVar2 = 0;
-    if (uVar4 != 0) {
+    if (0 < uVar4) {
       do {
         uVar3 = uVar2 + 1;
         *puVar5 = 0xc0;
@@ -114,8 +114,8 @@ void func_02057858(int *param_1,undefined4 param_2,undefined4 param_3,undefined4
     }
   }
   else {
-    uVar4 = (uint)*(ushort *)((int)param_1 + 6);
     bVar1 = false;
+    uVar4 = (uint)*(ushort *)((int)param_1 + 6);
     if (((uint)*(ushort *)(param_1 + 2) <= uVar4 + 1) && (*(ushort *)(param_1 + 1) <= uVar4)) {
       bVar1 = true;
     }

@@ -91,13 +91,13 @@ extern int func_0200e758();
 undefined4 func_0200e6c4(int param_1)
 
 {
-  int iVar1;
-  int iVar2;
   undefined4 uVar3;
+  int iVar2;
+  int iVar1;
   int iVar4;
 
   uVar3 = 0;
-  if ((*(uint *)(param_1 + 0x14) & 2) != 0) {
+  if ((*(uint *)(0x14 + param_1) & 2) != 0) {
     iVar2 = *(int *)(param_1 + 0x20);
     iVar1 = func_0200c5d8(param_1);
     iVar4 = func_0200e758(param_1);

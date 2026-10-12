@@ -99,8 +99,8 @@ undefined4 func_02000f6c(uint *param_1,uint *param_2,undefined4 param_3,undefine
   longlong lVar4;
   longlong lVar5;
   uint uVar6;
-  uint uVar7;
   uint uVar8;
+  uint uVar7;
   uint uVar9;
   uint uVar10;
   uint uVar11;
@@ -129,8 +129,8 @@ undefined4 func_02000f6c(uint *param_1,uint *param_2,undefined4 param_3,undefine
   uVar9 = (uint)lVar3;
   uVar10 = uVar15 - uVar9;
   lVar4 = (longlong)(int)param_1[4] * (longlong)(int)param_1[8];
-  uVar16 = (uint)lVar4;
   lVar5 = (longlong)(int)param_1[5] * (longlong)(int)param_1[7];
+  uVar16 = (uint)lVar4;
   uVar11 = (uint)lVar5;
   uVar12 = uVar16 - uVar11;
   uVar13 = uVar10 + 0x800 >> 0xc |

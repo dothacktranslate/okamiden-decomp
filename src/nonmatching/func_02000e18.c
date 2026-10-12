@@ -103,8 +103,8 @@ void func_02000e18(int *param_1,int *param_2,int param_3,int param_4)
 
   iVar5 = *param_2;
   iVar10 = 0x1000 - param_4;
-  uVar8 = param_2[1];
   uVar1 = (longlong)iVar10 * (longlong)iVar5;
+  uVar8 = param_2[1];
   iVar13 = (int)(uVar1 >> 0x20);
   lVar2 = (uVar1 & 0xffffffff) * (ulonglong)uVar8;
   uVar7 = param_2[2];
@@ -115,7 +115,7 @@ void func_02000e18(int *param_1,int *param_2,int param_3,int param_4)
            (((int)uVar8 >> 0x1f) * (int)uVar1 + uVar8 * iVar13 + (int)((ulonglong)lVar2 >> 0x20)) *
            0x100;
   uVar4 = (uint)lVar3 >> 0x18 |
-          (((int)uVar7 >> 0x1f) * (int)uVar1 + uVar7 * iVar13 + (int)((ulonglong)lVar3 >> 0x20)) *
+          (((int)uVar7 >> 0x1f) * (int)uVar7 + iVar13 * uVar1 + (int)((ulonglong)lVar3 >> 0x20)) *
           0x100;
   lVar2 = (longlong)iVar5 * (longlong)iVar5 * (longlong)iVar10;
   *param_1 = ((uint)lVar2 >> 0x18 | (int)((ulonglong)lVar2 >> 0x20) * 0x100) + param_4;

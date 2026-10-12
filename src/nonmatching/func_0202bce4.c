@@ -97,7 +97,7 @@ void func_0202bce4(int param_1,undefined4 param_2,undefined4 param_3,int param_4
   int iVar2;
   int local_18;
 
-  *(uint *)(param_1 + ((unsigned int)0x0202bd6c)) = *(uint *)(param_1 + ((unsigned int)0x0202bd6c)) | 0x20;
+  *(uint *)(param_1 + ((unsigned int)0x00000be8)) = *(uint *)(param_1 + ((unsigned int)0x00000be8)) | 0x20;
   local_18 = *(int *)(param_1 + ((unsigned int)0x00000ac8));
   iVar2 = param_4;
   if (*(int *)(param_1 + ((unsigned int)0x00000ac8) + -4) < local_18) {

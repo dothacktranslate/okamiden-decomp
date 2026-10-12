@@ -100,13 +100,13 @@ extern int func_0204a774();
 undefined4 func_0204a230(undefined4 param_1)
 
 {
-  int iVar1;
+  uint iVar1;
   undefined4 uVar3;
   undefined4 uVar2;
   int iVar4;
   undefined8 uVar5;
-  undefined1 auStack_20 [8];
   undefined1 auStack_18 [4];
+  undefined1 auStack_20 [8];
 
   uVar2 = func_020499ac(param_1,auStack_18);
   uVar3 = func_0204a76c();

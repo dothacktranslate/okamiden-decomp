@@ -104,7 +104,7 @@ undefined4 func_0205c13c(void)
     uStack_18 = in_r3;
     uVar2 = func_0205bdf4();
     uVar3 = func_0205c030();
-    func_02001488(uVar2,auStack_58,uVar3);
+    func_02001488(uVar3,uVar2,auStack_58,uVar3);
     func_02001f6c(uVar3,auStack_58,((unsigned int)0x0205c1a0));
     *(uint *)(iVar1 + 0xfc) = *(uint *)(iVar1 + 0xfc) | 0x40;
   }

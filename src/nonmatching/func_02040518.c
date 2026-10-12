@@ -96,7 +96,7 @@ void func_02040518(int param_1,int param_2,int param_3,int param_4,int param_5)
 
 {
   int iVar1;
-  int iVar2;
+  uint iVar2;
   int iVar3;
   int local_ac;
   int local_a8;
@@ -160,7 +160,7 @@ void func_02040518(int param_1,int param_2,int param_3,int param_4,int param_5)
   *(undefined4 *)(param_1 + 0x74) = local_a0;
   *(undefined4 *)(param_1 + 0x78) = local_9c;
   *(undefined4 *)(param_1 + 0x7c) = local_98;
-  if ((-1 < param_4) && (-1 < param_5)) {
+  if ((-2 <= param_4) && (-2 <= param_5)) {
     *(int *)(param_1 + 0x70) = param_5;
     if ((*(int *)(param_1 + 0x6c) + 1 <= param_5 + -1) && (param_5 < *(int *)(param_1 + 0x68))) {
       func_02002ac4(*(int *)(param_1 + 100) + (param_5 + -1) * 0xc,

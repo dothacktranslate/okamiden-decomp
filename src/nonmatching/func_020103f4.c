@@ -111,7 +111,7 @@ void func_020103f4(undefined4 param_1,uint param_2,int param_3)
     if (*(int *)(((unsigned int)0x02010828) + 0x1c) != 0) {
       *(undefined4 *)(((unsigned int)0x02010828) + 0x1c) = 0;
     }
-    if (*(int *)(iVar2 + 4) != 0) {
+    if (*(int *)(4 + iVar2) != 0) {
       *(undefined4 *)(iVar2 + 4) = 0;
     }
     pcVar8 = *(code **)(iVar2 + 8);
@@ -160,8 +160,8 @@ void func_020103f4(undefined4 param_1,uint param_2,int param_3)
     puVar10[3] = uVar4;
     break;
   case 1:
-    puVar10 = *(undefined4 **)(((unsigned int)0x02010828) + 0xc);
     uVar4 = func_02010834((*(unsigned int *)0x02010830) & 0x3f);
+    puVar10 = *(undefined4 **)(((unsigned int)0x02010828) + 0xc);
     *puVar10 = uVar4;
     uVar4 = func_02010834((*puVar3 & 0x7fff) >> 8);
     puVar10[1] = uVar4;

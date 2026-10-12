@@ -481,7 +481,7 @@ LAB_020551c0:
     }
     iVar20 = *(int *)(param_1 + 0xc);
     *(undefined4 *)(iVar20 + uVar27 * 8) = *(undefined4 *)(iVar20 + uVar10 * 8);
-    *(undefined4 *)(iVar20 + uVar27 * 8 + 4) = *(undefined4 *)(iVar20 + uVar10 * 8 + 4);
+    *(undefined4 *)(iVar20 + (uVar27 * 8 + 4)) = *(undefined4 *)(iVar20 + uVar10 * 8 + 4);
     goto switchD_02055078_default;
   case 0x16:
     goto LAB_02055cdc;

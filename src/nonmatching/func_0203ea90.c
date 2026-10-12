@@ -219,7 +219,7 @@ void func_0203ea90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     func_02009930(param_1 + 0x58,&local_28,0xc);
     func_0205e0c0(local_28,&local_24,2);
     local_28 = ((unsigned int)0x00293130);
-    local_24 = ((unsigned int)0x0203ec0c);
+    local_24 = ((unsigned int)0x0000ffff);
     iVar1 = iVar3 >> 0x1f;
     local_1c = (((uint)(iVar3 * 0x8000000 + iVar1) >> 0x1b | iVar1 << 5) - iVar1) * 0x10000 |
                ((unsigned int)0x0203ec10);
@@ -240,7 +240,7 @@ void func_0203ea90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       local_7c = local_84;
       func_0205e0c0(0x1b,&local_84,3);
       func_0205e0c0(0x1c,local_78 + iVar2 * 3 + 8,3);
-      func_0205e0c0(((unsigned int)0x0203ec18),&local_28,2);
+      func_0205e0c0(((unsigned int)0x00002422),&local_28,2);
       local_94 = 1;
       func_0205e0c0(0x12,&local_94,1);
       iVar2 = iVar2 + 1;

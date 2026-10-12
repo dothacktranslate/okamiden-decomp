@@ -156,7 +156,7 @@ void func_0203c784(int param_1)
 {
   *(undefined4 *)(param_1 + 0x14) = (*(unsigned int *)0x01ffc4e8);
   *(undefined1 *)(param_1 + 0x8e) = 2;
-  *(undefined4 *)(param_1 + 0x24) = (*(unsigned int *)0x0203c7ac);
+  *(undefined4 *)(param_1 + 0x24) = (*(unsigned int *)0x01ffbf7c);
   *(undefined1 *)(param_1 + 0x92) = 3;
   *(undefined4 *)(param_1 + 0x1c) = (*(unsigned int *)0x0203c7b0);
   *(undefined1 *)(param_1 + 0x90) = 2;

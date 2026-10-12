@@ -101,14 +101,14 @@ void func_02061284(int param_1,undefined4 param_2,int param_3,undefined4 param_4
     puVar2 = (uint *)0x0;
   }
   else {
-    puVar2 = (uint *)func_0205ef10(param_1 + 0x3c);
+    puVar2 = (uint *)func_0205ef10(0x3c + param_1);
   }
   uVar1 = ((unsigned int)0x000007ff);
   if ((*puVar2 & 0x1c000000) == 0x14000000) {
     uVar4 = *(uint *)(param_1 + 0x18);
   }
   else {
-    uVar4 = *(uint *)(param_1 + 8);
+    uVar4 = *(unsigned short *)(param_1 + 8);
   }
   uVar5 = *(uint *)(param_3 + 0x10) & ((unsigned int)0x02061354);
   *(uint *)(param_3 + 0x10) = uVar5;

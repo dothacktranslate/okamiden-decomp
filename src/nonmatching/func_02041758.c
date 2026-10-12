@@ -169,7 +169,7 @@ undefined4 func_02041758(int param_1,int param_2,int param_3)
 {
   uint *puVar1;
   int *piVar2;
-  int *piVar3;
+  uint *piVar3;
   int iVar4;
   int iVar5;
   int iVar6;

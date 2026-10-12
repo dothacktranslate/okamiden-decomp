@@ -92,15 +92,15 @@ void func_02003774(void)
   ushort *puVar1;
   undefined4 *puVar2;
 
-  puVar1 = ((unsigned int)0x020037d4);
+  puVar1 = ((unsigned int)0x04000060);
   do {
-  } while (((*(unsigned int *)0x020037d0) & 0x8000000) != 0);
-  (*(unsigned char *)0x020037d0) = (*(unsigned int *)0x020037d0) | 0x8000;
+  } while (((*(unsigned char *)0x04000600) & 0x8000000) != 0);
+  (*(unsigned char *)0x04000600) = (*(unsigned int *)0x04000600) | 0x8000;
   *puVar1 = *puVar1 | 0x2000;
   *puVar1 = *puVar1 | 0x1000;
   func_02003804();
-  puVar2 = ((unsigned int)0x020037dc);
-  (*(unsigned int *)0x020037dc) = ((unsigned int)0x001f0080);
+  puVar2 = ((unsigned int)0x040004a4);
+  (*(unsigned int *)0x040004a4) = ((unsigned int)0x001f0080);
   puVar2[1] = 0;
   puVar2[2] = 0;
   return;

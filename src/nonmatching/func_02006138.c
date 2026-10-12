@@ -172,10 +172,10 @@ undefined4 * func_02006138(undefined4 *param_1,undefined4 *param_2)
   *param_2 = param_1[6];
   param_2[1] = uVar1;
   param_2[2] = uVar2;
-  uVar1 = param_1[10];
   uVar2 = param_1[0xb];
+  uVar1 = param_1[10];
   *param_2 = param_1[9];
   param_2[1] = uVar1;
   param_2[2] = uVar2;
-  return param_1 + 0xc;
+  return 0xc + param_1;
 }

@@ -143,7 +143,7 @@ void func_02068924(short *param_1,undefined4 param_2,undefined4 param_3,undefine
     param_1[2] = param_1[2] + 1;
     iVar5 = func_02068880(param_1[1]);
     iVar8 = func_02068868(param_1[1]);
-    if (iVar5 <= param_1[2]) {
+    if (param_1[2] >= iVar5) {
       param_1[3] = (short)iVar8;
       *param_1 = *param_1 + 1;
       goto LAB_02068b24;

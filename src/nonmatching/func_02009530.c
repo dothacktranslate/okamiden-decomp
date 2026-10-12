@@ -101,10 +101,10 @@ void func_02009530(int param_1,uint param_2,int param_3,int param_4)
   else if (param_4 == 0x800000) {
     param_2 = param_2 - param_3;
   }
-  if ((((uVar1 != 0x4000000) && (uVar1 < 0x8000000)) && ((param_2 & 0xff000000) != 0x4000000)) &&
+  if ((((uVar1 != 0x4000000) && (uVar1 < 0x8000000)) && ((0xff000000 & param_2) != 0x4000000)) &&
      ((param_2 & 0xff000000) < 0x8000000)) {
     return;
   }
-  func_02008e58();
+  func_02008e58(param_1);
   return;
 }

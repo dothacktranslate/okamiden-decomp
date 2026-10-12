@@ -97,8 +97,8 @@ int func_0200a140(undefined4 *param_1,byte *param_2,int param_3)
   byte bVar8;
   uint uVar10;
   uint uVar9;
-  uint uVar11;
   uint uVar12;
+  uint uVar11;
   uint uVar13;
 
   pbVar6 = (byte *)*param_1;

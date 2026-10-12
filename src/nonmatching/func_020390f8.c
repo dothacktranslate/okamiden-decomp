@@ -109,7 +109,7 @@ void func_020390f8(int param_1)
     while (piVar3 != (int *)(param_1 + 0x10)) {
       if (piVar3[2] < 4) {
         uVar5 = uVar5 + piVar3[5];
-        if (((unsigned int)0x020391f4) <= uVar5) break;
+        if (((unsigned int)0x0000ff28) <= uVar5) break;
         func_0200656c(1);
         iVar1 = func_02063740(piVar3[2],piVar3[3],piVar3[4],piVar3[5]);
         func_0200653c(1);
@@ -131,12 +131,12 @@ void func_020390f8(int param_1)
         }
         else {
           uVar5 = uVar5 + puVar4[5];
-          if (((unsigned int)0x020391f8) <= uVar5) {
+          if (((unsigned int)0x000313a8) <= uVar5) {
             return;
           }
           func_0200656c(1);
           iVar1 = func_02063740(puVar4[2],puVar4[3],puVar4[4],puVar4[5]);
-          func_0200653c(1);
+          func_0200653c(1,iVar1);
           if (iVar1 == 0) {
             return;
           }

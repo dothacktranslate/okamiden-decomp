@@ -163,15 +163,15 @@ extern int LZCOUNT();
 void func_02003444(ushort param_1,uint param_2,int param_3)
 
 {
-  short sVar1;
+  unsigned short sVar1;
 
-  sVar1 = (*(unsigned int *)0x020034a0);
+  sVar1 = (*(unsigned short *)0x020034a0);
   (*(unsigned int *)0x020034a4) = param_1;
   if (sVar1 == 0) {
     param_1 = 0;
   }
   _REG_A_DISPCNT = param_2 | _REG_A_DISPCNT & ((unsigned int)0x020034a8) | (uint)param_1 << 0x10 | param_3 << 3;
-  if ((*(unsigned int *)0x020034a4) == 0) {
+  if ((*(unsigned short *)0x020034a4) == 0) {
     (*(unsigned short *)0x020034a0) = 0;
   }
   return;

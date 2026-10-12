@@ -96,8 +96,8 @@ void func_02009fa0(uint *param_1,byte *param_2)
   uint *puVar7;
   uint uVar8;
   int iVar9;
-  int iVar10;
   uint uVar11;
+  int iVar10;
   int iVar12;
   byte bVar13;
 
@@ -108,7 +108,7 @@ void func_02009fa0(uint *param_1,byte *param_2)
     bVar4 = true;
   }
   do {
-    if ((int)uVar8 < 1) {
+    if ((int)uVar8 <= 0) {
       return;
     }
     bVar13 = (byte)*puVar6;
@@ -119,7 +119,7 @@ void func_02009fa0(uint *param_1,byte *param_2)
         puVar6 = (uint *)((int)puVar5 + 1);
         *param_2 = (byte)*puVar5;
         param_2 = param_2 + 1;
-        iVar3 = -1;
+        iVar9 = -1;
       }
       else {
         bVar2 = (byte)*puVar5;
@@ -146,16 +146,16 @@ void func_02009fa0(uint *param_1,byte *param_2)
         iVar12 = iVar12 + ((int)uVar11 >> 4);
         puVar6 = (uint *)((int)puVar7 + 2);
         bVar2 = *(byte *)((int)puVar7 + 1);
-        iVar3 = -iVar12;
+        iVar9 = -iVar12;
         do {
           *param_2 = param_2[-(((uint)bVar2 | (uVar11 & 0xf) << 8) + 1)];
           param_2 = param_2 + 1;
-          iVar9 = iVar12 + -1;
+          iVar3 = iVar12 + -1;
           bVar1 = 0 < iVar12;
-          iVar12 = iVar9;
-        } while (iVar9 != 0 && bVar1);
+          iVar12 = iVar3;
+        } while (iVar3 != 0 && bVar1);
       }
-      uVar8 = uVar8 + iVar3;
+      uVar8 = uVar8 + iVar9;
       if ((int)uVar8 < 1) break;
       bVar13 = bVar13 << 1;
       puVar5 = puVar6;

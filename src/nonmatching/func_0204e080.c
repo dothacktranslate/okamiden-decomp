@@ -102,7 +102,7 @@ void func_0204e080(int param_1)
   iVar3 = *(int *)(param_1 + 0x10);
   func_0204e01c(iVar3);
   func_0204dac4(iVar3);
-  *(undefined4 *)(iVar3 + 0x24) = *(undefined4 *)(iVar3 + 0x2c);
+  *(undefined4 *)(0x24 + iVar3) = *(undefined4 *)(iVar3 + 0x2c);
   *(undefined4 *)(iVar3 + 0x2c) = 0;
   if ((*(byte *)(param_1 + 5) & 3) != 0) {
     func_0204d1d8(iVar3,param_1);
@@ -115,7 +115,7 @@ void func_0204e080(int param_1)
   iVar1 = func_0204d340(param_1,0);
   func_0204d2f4(iVar1,iVar3);
   iVar2 = func_0204dac4(iVar3);
-  func_0204db54(*(undefined4 *)(iVar3 + 0x2c));
+  func_0204db54(iVar2,*(undefined4 *)(iVar3 + 0x2c));
   *(byte *)(iVar3 + 0x14) = *(byte *)(iVar3 + 0x14) ^ 3;
   *(undefined4 *)(iVar3 + 0x18) = 0;
   *(int *)(iVar3 + 0x20) = iVar3 + 0x1c;

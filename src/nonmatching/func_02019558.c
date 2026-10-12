@@ -514,14 +514,14 @@ LAB_02019810:
       if (iVar22 == 4) {
         for (; iVar25 < 0x20; iVar25 = iVar25 + 1) {
           if (uVar11 < 0x80) {
-            uVar8 = *(ushort *)(iVar14 + uVar11 * 2) & 8;
+            uVar8 = *(ushort *)(uVar11 + iVar14 * 2) & 8;
           }
           else {
             uVar8 = 0;
           }
           if (uVar8 == 0) {
             if (uVar11 < 0x80) {
-              uVar8 = *(ushort *)(iVar14 + uVar11 * 2) & 1;
+              uVar8 = *(ushort *)(uVar11 + iVar14 * 2) & 1;
             }
             else {
               uVar8 = 0;

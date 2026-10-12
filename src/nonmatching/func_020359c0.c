@@ -104,12 +104,12 @@ void func_020359c0(int *param_1,int *param_2,int *param_3)
   iVar10 = param_3[1];
   iVar11 = param_3[2];
   lVar1 = (longlong)param_2[9] * (longlong)iVar11 + 0x800;
-  lVar3 = (longlong)param_2[5] * (longlong)iVar10 + 0x800;
   lVar2 = (longlong)param_2[1] * (longlong)iVar12 + 0x800;
+  lVar3 = (longlong)param_2[5] * (longlong)iVar10 + 0x800;
   lVar4 = (longlong)param_2[10] * (longlong)iVar11 + 0x800;
   lVar6 = (longlong)param_2[2] * (longlong)iVar12 + 0x800;
-  lVar8 = (longlong)param_2[6] * (longlong)iVar10 + 0x800;
   lVar5 = (longlong)param_2[8] * (longlong)iVar11 + 0x800;
+  lVar8 = (longlong)param_2[6] * (longlong)iVar10 + 0x800;
   lVar7 = (longlong)*param_2 * (longlong)iVar12 + 0x800;
   lVar9 = (longlong)param_2[4] * (longlong)iVar10 + 0x800;
   iVar11 = param_2[0xd];

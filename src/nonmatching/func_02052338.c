@@ -89,8 +89,8 @@ int func_02052338(int param_1,int *param_2)
 {
   int iVar1;
   uint iVar2;
-  int iVar3;
   int iVar4;
+  int iVar3;
   int iVar5;
   int iVar6;
   int iVar7;
@@ -110,7 +110,7 @@ int func_02052338(int param_1,int *param_2)
       bVar10 = iVar2 == 0;
       bVar9 = false;
       if (0 < iVar2) {
-        iVar8 = iVar8 + iVar2;
+        iVar8 = iVar2 + iVar8;
         iVar1 = iVar7 / 2;
         bVar9 = SBORROW4(iVar8,iVar1);
         iVar2 = iVar8 - iVar1;

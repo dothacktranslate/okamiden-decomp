@@ -114,8 +114,8 @@ void func_02058508(int param_1,int param_2,uint param_3,uint *param_4,undefined4
     uVar7 = uVar8 & 0x30000300;
   }
   if (uVar7 == 0x300) {
-    iVar2 = (int)(uVar8 & ((unsigned int)0x02058734) & 0xc000) >> 0xe;
-    iVar1 = ((uVar8 & ((unsigned int)0x02058734)) >> 0x1e) * 2;
+    iVar2 = (int)(uVar8 & ((unsigned int)0xc000c000) & 0xc000) >> 0xe;
+    iVar1 = ((uVar8 & ((unsigned int)0xc000c000)) >> 0x1e) * 2;
     bVar9 = *(int *)(((unsigned int)0x0205873c) + 8) != 0;
     iVar6 = 0;
     if (bVar9) {

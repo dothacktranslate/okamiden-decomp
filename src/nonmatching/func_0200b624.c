@@ -174,7 +174,7 @@ void func_0200b624(void)
   uint local_28;
 
   iVar3 = ((unsigned int)0x0200b720);
-  puVar2 = ((unsigned int)0x0200b71c);
+  puVar2 = ((unsigned int)0x04000184);
   while( true ) {
     if ((*puVar2 & 0x4000) == 0) {
       func_02008b6c();
@@ -195,7 +195,7 @@ void func_0200b624(void)
     }
     if (iVar4 == -4) break;
     if ((iVar4 != -3) && (uVar1 = local_28 & 0x1f, uVar1 != 0)) {
-      pcVar5 = *(code **)(iVar3 + uVar1 * 4);
+      pcVar5 = *(code **)(uVar1 + iVar3 * 4);
       if (pcVar5 == (code *)0x0) {
         if (-1 < (int)(local_28 << 0x1a)) {
           local_28 = local_28 | 0x20;

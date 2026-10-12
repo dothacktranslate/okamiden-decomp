@@ -97,31 +97,31 @@ undefined4 func_02007128(int param_1,int param_2)
   int iVar3;
   int iVar4;
 
-  iVar3 = 0;
-  iVar2 = func_02008b6c();
-  for (iVar4 = *(int *)(((unsigned int)0x020071c8) + 0x24); (iVar4 != 0 && (iVar4 != param_1));
+  iVar2 = 0;
+  iVar3 = func_02008b6c();
+  for (iVar4 = *(int *)(((unsigned int)0x020071c8) + 0x24); (iVar4 != 0 && (param_1 != iVar4));
       iVar4 = *(int *)(iVar4 + 0x68)) {
-    iVar3 = iVar4;
+    iVar2 = iVar4;
   }
-  iVar1 = iVar2;
+  iVar1 = iVar3;
   if (iVar4 != 0) {
     iVar1 = ((unsigned int)0x020071cc);
   }
   if (iVar4 != 0 && iVar4 != iVar1) {
     if (*(int *)(iVar4 + 0x70) != param_2) {
-      if (iVar3 == 0) {
+      if (iVar2 == 0) {
         *(undefined4 *)(((unsigned int)0x020071c8) + 0x24) = *(undefined4 *)(param_1 + 0x68);
       }
       else {
-        *(undefined4 *)(iVar3 + 0x68) = *(undefined4 *)(param_1 + 0x68);
+        *(undefined4 *)(iVar2 + 0x68) = *(undefined4 *)(param_1 + 0x68);
       }
       *(int *)(param_1 + 0x70) = param_2;
       func_02006b50(param_1);
       func_02006bf4();
     }
-    func_02008b80(iVar2);
+    func_02008b80(iVar3);
     return 1;
   }
-  func_02008b80(iVar2);
+  func_02008b80(iVar3);
   return 0;
 }

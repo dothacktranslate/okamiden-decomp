@@ -103,8 +103,8 @@ void func_02068314(int param_1,undefined4 param_2)
   if (iVar4 != 0) {
     uVar5 = ((unsigned int)0x02068378);
     uVar1 = ((unsigned int)0x02068374);
-    uVar2 = ((unsigned int)0x02068370);
     uVar3 = ((unsigned int)0x0206836c);
+    uVar2 = ((unsigned int)0x02068370);
   }
   *(undefined4 *)(param_1 + 0x16c) = uVar3;
   *(undefined4 *)(param_1 + 0x170) = uVar2;

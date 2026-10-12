@@ -91,7 +91,7 @@ uint func_0201622c(int param_1)
 {
   int iVar1;
   byte *pbVar2;
-  uint uVar3;
+  int uVar3;
   uint uVar4;
 
   *(undefined4 *)(param_1 + 0x28) = 0;
@@ -101,16 +101,16 @@ uint func_0201622c(int param_1)
   uVar4 = *(uint *)(param_1 + 8);
   uVar3 = uVar4 & 7;
   if ((uVar3 != 1) && (((*(uint *)(param_1 + 4) & 0x1f) >> 2 & 1) != 0)) {
-    if (2 < uVar3) {
+    if (3 <= uVar3) {
       *(uint *)(param_1 + 8) = uVar4 & 0xfffffff8 | uVar3 - 1 & 7;
       if (uVar3 == 3) {
         *(undefined4 *)(param_1 + 0x28) = *(undefined4 *)(param_1 + 0x30);
       }
-      return (uint)*(byte *)(param_1 + uVar3 + 0xf);
+      return (uint)*(byte *)(uVar3 + param_1 + 0xf);
     }
     uVar3 = 0;
     *(uint *)(param_1 + 8) = uVar4 & 0xfffffff8 | 2;
-    iVar1 = func_0201611c();
+    iVar1 = func_0201611c(param_1);
     if (iVar1 == 0) {
       uVar3 = 0;
       if (*(int *)(param_1 + 0x28) != 0) {

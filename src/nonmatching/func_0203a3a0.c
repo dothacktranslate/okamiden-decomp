@@ -92,8 +92,8 @@ void func_0203a3a0(byte *param_1,uint param_2,int param_3,int param_4,ushort par
 
 {
   ushort uVar1;
-  uint uVar2;
   uint uVar3;
+  uint uVar2;
   uint uVar4;
   uint uVar5;
   uint uVar6;
@@ -133,7 +133,7 @@ void func_0203a3a0(byte *param_1,uint param_2,int param_3,int param_4,ushort par
                 uVar11 = uVar2;
                 do {
                   uVar1 = *(ushort *)
-                           (((unsigned int)0x0203a504) + (param_4 + uVar11) * 2 + (param_5 + uVar8) * 0x200);
+                           (((unsigned int)0x06860000) + (param_4 + uVar11) * 2 + (param_5 + uVar8) * 0x200);
                   if ((*(uint *)(*(unsigned int *)0x0203a500) & 0x80000000) == 0) {
                     if ((uVar1 & 0x4000) < 0x4000) {
                       uVar6 = 0;

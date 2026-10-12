@@ -88,7 +88,7 @@ void func_0205ae0c(int *param_1,int param_2)
 
 {
   int iVar1;
-  uint iVar2;
+  int iVar2;
   int iVar3;
   int iVar4;
 
@@ -97,7 +97,7 @@ void func_0205ae0c(int *param_1,int param_2)
     *param_1 = param_2;
     return;
   }
-  if (*(int *)(iVar4 + 0x10) == 0) {
+  if (*(int *)(0x10 + iVar4) == 0) {
     if (*(byte *)(iVar4 + 0x18) <= *(byte *)(param_2 + 0x18)) {
       *(int *)(iVar4 + 0x10) = param_2;
       return;
@@ -126,8 +126,8 @@ void func_0205ae0c(int *param_1,int param_2)
       *(int *)(iVar3 + 0x10) = iVar2;
       return;
     }
-    iVar3 = *(int *)(iVar2 + 0x10);
     iVar4 = iVar2;
+    iVar3 = *(int *)(iVar2 + 0x10);
   } while (*(int *)(iVar2 + 0x10) != 0);
   *(int *)(iVar2 + 0x10) = param_2;
   return;

@@ -93,7 +93,7 @@ void func_0203e414(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 {
   int iVar1;
   uint iVar2;
-  int iVar3;
+  uint iVar3;
   undefined4 local_a8;
   undefined4 local_a4;
   undefined4 local_a0;
@@ -126,7 +126,7 @@ void func_0203e414(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   local_48[0] = *(int *)(param_1 + 0x24);
   local_1c = *(int *)(param_1 + 0x30);
   local_60[0] = local_48[0] + local_1c;
-  local_60[1] = *(int *)(param_1 + 0x28);
+  local_60[1] = *(int *)(0x28 + param_1);
   local_60[2] = *(int *)(param_1 + 0x2c);
   local_60[3] = local_48[0] - local_1c;
   local_48[1] = local_60[1] + local_1c;
@@ -147,11 +147,11 @@ void func_0203e414(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   func_0205e0c0(0x11,0,0);
   local_98 = 2;
   func_0205e0c0(0x10,&local_98,1);
-  local_6c = ((unsigned int)0x0203e5d8);
+  local_6c = ((unsigned int)0x0000801f);
   local_64 = ((unsigned int)0x0203e5e0) | 0x15000000;
-  local_70 = ((unsigned int)0x0203e5dc);
+  local_70 = ((unsigned int)0x00293130);
   local_68 = 0;
-  func_0205e0c0(((unsigned int)0x0203e5dc),&local_6c,3);
+  func_0205e0c0(((unsigned int)0x00293130),&local_6c,3);
   local_70 = 0;
   local_9c = 0;
   func_0205e0c0(0x40,&local_9c,1);
@@ -168,9 +168,9 @@ void func_0203e414(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     iVar2 = iVar2 + 1;
   } while (iVar2 < 3);
   func_0205e0c0(0x41,0,0);
-  local_6c = ((unsigned int)0x0203e5e4);
-  local_70 = ((unsigned int)0x0203e5dc);
-  func_0205e0c0(((unsigned int)0x0203e5dc),&local_6c,3);
+  local_6c = ((unsigned int)0x000083e0);
+  local_70 = ((unsigned int)0x00293130);
+  func_0205e0c0(((unsigned int)0x00293130),&local_6c,3);
   local_a0 = 0;
   func_0205e0c0(0x40,&local_a0,1);
   local_70 = 0;
@@ -188,8 +188,8 @@ void func_0203e414(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   } while (iVar3 < 3);
   func_0205e0c0(0x41,0,0);
   local_6c = 0xfc00;
-  local_70 = ((unsigned int)0x0203e5dc);
-  func_0205e0c0(((unsigned int)0x0203e5dc),&local_6c,3);
+  local_70 = ((unsigned int)0x00293130);
+  func_0205e0c0(((unsigned int)0x00293130),&local_6c,3);
   local_a4 = 0;
   func_0205e0c0(0x40,&local_a4,1);
   local_70 = 0;

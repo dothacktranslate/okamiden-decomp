@@ -91,8 +91,8 @@ func_0200ee18(undefined2 *param_1,undefined4 param_2,undefined4 param_3,undefine
 
 {
   unsigned short sVar1;
-  short sVar2;
-  short sVar3;
+  unsigned short sVar2;
+  unsigned short sVar3;
   int iVar4;
   bool bVar5;
 

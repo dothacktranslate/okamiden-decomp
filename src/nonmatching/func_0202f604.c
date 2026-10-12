@@ -108,7 +108,7 @@ void func_0202f604(int param_1,uint *param_2,uint param_3,undefined4 param_4)
   if (param_2 != (uint *)0x0) {
     uVar4 = (*(unsigned int *)0x0202f6d0);
     uVar1 = func_02036bec(param_2[2]);
-    if (uVar1 <= param_3) {
+    if (param_3 >= uVar1) {
       uVar2 = func_02036bec(param_2[2]);
       func_0201ebe0(param_3,uVar2);
       param_3 = extraout_r1;
@@ -118,7 +118,7 @@ void func_0202f604(int param_1,uint *param_2,uint param_3,undefined4 param_4)
     *(int *)(param_1 + 0x48) = iVar3;
     *(uint *)(iVar3 + 0xc) = *(uint *)(iVar3 + 0xc) | 0x40000;
     *(uint *)(*(int *)(param_1 + 0x48) + 0xc) =
-         ((unsigned int)0x0202f6d8) & *(uint *)(*(int *)(param_1 + 0x48) + 0xc);
+         ((unsigned int)0xfff7ffff) & *(uint *)(*(int *)(param_1 + 0x48) + 0xc);
     *(uint *)(*(int *)(param_1 + 0x48) + 0xc) =
          *(uint *)(*(int *)(param_1 + 0x48) + 0xc) & 0xfffffffe;
     if ((*param_2 & 0x10) == 0) {

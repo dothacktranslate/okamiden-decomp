@@ -101,12 +101,12 @@ uint func_02007a78(undefined4 param_1)
   case 3:
     return 0x2000000;
   case 4:
-    if (((unsigned int)0x02007b44) != 0) {
-      if (((unsigned int)0x02007b44) < 0) {
-        uVar1 = ((unsigned int)0x02007b4c) - ((unsigned int)0x02007b44);
+    if (((unsigned int)0x00000000) != 0) {
+      if (((unsigned int)0x00000000) < 0) {
+        uVar1 = ((unsigned int)0x02007b4c) - ((unsigned int)0x00000000);
       }
       else {
-        uVar1 = ((((unsigned int)0x02007b40) + 0x3f80) - ((unsigned int)0x02007b48)) - ((unsigned int)0x02007b44);
+        uVar1 = ((((unsigned int)0x02007b40) + 0x3f80) - ((unsigned int)0x02007b48)) - ((unsigned int)0x00000000);
       }
       return uVar1;
     }
@@ -118,7 +118,7 @@ uint func_02007a78(undefined4 param_1)
   case 5:
     return ((unsigned int)0x02007b50);
   case 6:
-    return ((unsigned int)0x02007b54);
+    return ((unsigned int)0x037f8000);
   default:
     return 0;
   }

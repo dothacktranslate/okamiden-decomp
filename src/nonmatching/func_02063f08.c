@@ -91,11 +91,11 @@ void func_02063f08(undefined4 param_1,undefined4 param_2,undefined4 param_3,int 
 {
   int iVar1;
   undefined4 uVar2;
-  undefined4 *puVar3;
+  short *puVar3;
 
   iVar1 = ((unsigned int)0x02063f48);
   *(undefined4 *)(((unsigned int)0x02063f48) + 8) = param_1;
-  *(undefined4 *)(iVar1 + 0xc) = param_2;
+  *(signed char *)(iVar1 + 0xc) = param_2;
   *(undefined4 *)(iVar1 + 0x10) = param_3;
   func_02064074();
   puVar3 = ((unsigned int)0x02063f58);

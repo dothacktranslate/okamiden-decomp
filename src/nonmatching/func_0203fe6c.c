@@ -101,7 +101,7 @@ void func_0203fe6c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 
 {
   short sVar1;
-  short sVar2;
+  unsigned short sVar2;
   int iVar3;
   undefined4 *puVar4;
   uint uVar5;
@@ -180,31 +180,31 @@ void func_0203fe6c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       if (0 < *(int *)(param_1 + 0x6c)) {
         do {
           iVar9 = local_ac * 2;
-          local_48[8] = ((unsigned int)0x02040184);
+          local_48[8] = ((unsigned int)0x00293130);
           iVar7 = 0;
           local_24[0] = *(ushort *)
                          (param_1 + (local_ac + *(short *)(*(int *)(param_1 + 0x80) + iVar9) & 7U) *
                                     2 + 0x88) | 0x8000;
           local_24[1] = 0;
           iVar3 = (int)*(short *)(param_1 + 0x10) >> 0x1f;
-          local_24[2] = ((unsigned int)0x02040188) |
+          local_24[2] = ((unsigned int)0x0000a0c0) |
                         (((uint)(*(short *)(param_1 + 0x10) * 0x8000000 + iVar3) >> 0x1b |
                          iVar3 << 5) - iVar3) * 0x10000 | 0x3d000000;
-          func_0205e0c0(((unsigned int)0x02040184),local_24,3);
+          func_0205e0c0(((unsigned int)0x00293130),local_24,3);
           if (-1 < *(short *)(*(int *)(param_1 + 0x7c) + iVar9)) {
             local_24[0] = 0;
             iVar3 = local_ac * 4;
             local_64 = (int)*(short *)(*(int *)(param_1 + 100) + iVar3) << 0xc;
             local_60 = (int)*(short *)(*(int *)(param_1 + 100) + iVar3 + 2) << 0xc;
             local_5c = 0;
-            local_70 = (int)*(short *)(*(int *)(param_1 + 0x68) + iVar3) << 0xc;
             local_6c = (int)*(short *)(*(int *)(param_1 + 0x68) + iVar3 + 2) << 0xc;
+            local_70 = (int)*(short *)(*(int *)(param_1 + 0x68) + iVar3) << 0xc;
             local_68 = 0;
             func_02002ac4(&local_70,&local_64,auStack_7c);
             func_02002e50((int)*(short *)(*(int *)(param_1 + 0x7c) + iVar9),auStack_7c,&local_64,
                          &local_70);
             func_02002c10(auStack_7c,auStack_7c);
-            func_02002e50(((unsigned int)0x0204018c),auStack_7c,&local_70,&local_64);
+            func_02002e50(((unsigned int)0xfffc0000),auStack_7c,&local_70,&local_64);
             iVar8 = local_64 >> 0xc;
             iVar6 = local_60 >> 0xc;
             iVar9 = local_70 >> 0xc;

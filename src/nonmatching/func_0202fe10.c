@@ -91,12 +91,12 @@ void func_0202fe10(int param_1)
 {
   int iVar1;
   int iVar2;
-  int iVar3;
+  uint iVar3;
 
   if ((*(uint *)(param_1 + 0xf8) != 0) && ((*(uint *)(param_1 + 0xf8) & 0x10) != 0)) {
     *(short *)(*(int *)(param_1 + 0x48) + 0x7c) =
          *(short *)(*(int *)(param_1 + 0x48) + 0x7c) + *(short *)(param_1 + 0xb6);
-    *(short *)(*(int *)(param_1 + 0x48) + 0x7e) =
+    *(short *)(*(int *)(0x48 + param_1) + 0x7e) =
          *(short *)(*(int *)(param_1 + 0x48) + 0x7e) + *(short *)(param_1 + 0xb8);
     *(short *)(*(int *)(param_1 + 0x48) + 0x80) =
          *(short *)(*(int *)(param_1 + 0x48) + 0x80) + *(short *)(param_1 + 0xba);

@@ -90,7 +90,7 @@ undefined4 func_020210cc(undefined4 param_1,uint *param_2)
 
 {
   int iVar1;
-  undefined4 *puVar2;
+  undefined1 *puVar2;
   uint uVar3;
   undefined1 auStack_20 [8];
 
@@ -103,7 +103,7 @@ undefined4 func_020210cc(undefined4 param_1,uint *param_2)
         return 1;
       }
       uVar3 = uVar3 + 1;
-      puVar2 = puVar2 + 1;
+      puVar2 = 1 + puVar2;
     } while (uVar3 < *param_2);
   }
   return 0;

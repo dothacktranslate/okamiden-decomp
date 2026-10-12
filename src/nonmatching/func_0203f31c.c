@@ -95,7 +95,7 @@ void func_0203f31c(int param_1,int param_2,int param_3)
 
 {
   int iVar1;
-  int iVar2;
+  uint iVar2;
   int iVar3;
   int local_a0;
   int local_9c;

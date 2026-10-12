@@ -113,7 +113,7 @@ void func_0202d9bc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   undefined4 uStack_4;
 
   uVar10 = 1;
-  piVar12 = (int *)(param_1 + ((unsigned int)0x0202db28));
+  piVar12 = (int *)(param_1 + ((unsigned int)0x00000e54));
   uStack_c = param_2;
   uStack_8 = param_3;
   uStack_4 = param_4;
@@ -130,9 +130,9 @@ void func_0202d9bc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       if (iVar2 == 0) {
         iVar11 = 0;
       }
-      func_0203aed4((int)(((unsigned int)0x0202db2c) & *(uint *)(iVar11 + 8)) >> 0x10,1);
-      iVar11 = *(int *)(param_1 + ((unsigned int)0x0202db28)) + uVar10 * 0x18;
-      if (*(int *)(param_1 + ((unsigned int)0x0202db28)) == 0) {
+      func_0203aed4((int)(((unsigned int)0xffff0000) & *(uint *)(iVar11 + 8)) >> 0x10,1);
+      iVar11 = *(int *)(param_1 + ((unsigned int)0x00000e54)) + uVar10 * 0x18;
+      if (*(int *)(param_1 + ((unsigned int)0x00000e54)) == 0) {
         iVar11 = 0;
       }
       *(uint *)(iVar11 + 8) = *(uint *)(iVar11 + 8) & 0xffff;
@@ -141,13 +141,13 @@ void func_0202d9bc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   }
   *(undefined4 *)(param_1 + 0xdf4) = *(undefined4 *)(param_1 + 0xdf0);
   iVar11 = 0;
-  if (*(short *)(param_1 + ((unsigned int)0x0202db30)) != 0) {
-    iVar2 = ((unsigned int)0x0202db30) + 2;
-    iVar3 = ((unsigned int)0x0202db30) + 0x42;
-    iVar4 = ((unsigned int)0x0202db30) + 0x82;
-    puVar5 = (ushort *)(param_1 + ((unsigned int)0x0202db30));
-    iVar6 = ((unsigned int)0x0202db30) + 2;
-    iVar7 = ((unsigned int)0x0202db30) + 0x42;
+  if (*(short *)(param_1 + ((unsigned int)0x00000bec)) != 0) {
+    iVar2 = ((unsigned int)0x00000bec) + 2;
+    iVar3 = ((unsigned int)0x00000bec) + 0x42;
+    iVar4 = ((unsigned int)0x00000bec) + 0x82;
+    puVar5 = (ushort *)(param_1 + ((unsigned int)0x00000bec));
+    iVar6 = ((unsigned int)0x00000bec) + 2;
+    iVar7 = ((unsigned int)0x00000bec) + 0x42;
     do {
       iVar13 = param_1 + iVar11 * 2;
       iVar8 = func_0202c774(param_1,(uint)*(ushort *)(iVar13 + iVar6) +
@@ -163,7 +163,7 @@ void func_0202d9bc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       iVar8 = param_1 + iVar11 * 2;
       *(undefined2 *)(iVar8 + 0xdb0) = 0;
       *(undefined2 *)(iVar8 + iVar4) = 0;
-      puVar9 = *(undefined2 **)(param_1 + iVar11 * 4 + 0xd30);
+      puVar9 = *(undefined2 **)((param_1 + iVar11 * 4) + 0xd30);
       if (puVar9 != (undefined2 *)0x0) {
         func_0202cd5c(param_1,*(undefined2 *)(iVar13 + iVar2),*(undefined2 *)(iVar13 + iVar3),*puVar9
                     );
@@ -171,9 +171,9 @@ void func_0202d9bc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       iVar11 = iVar11 + 1;
     } while (iVar11 < (int)(uint)*puVar5);
   }
-  iVar11 = ((unsigned int)0x0202db34);
-  *(undefined4 *)(param_1 + ((unsigned int)0x0202db34)) = 0;
+  iVar11 = ((unsigned int)0x00000ac4);
+  *(undefined4 *)(param_1 + ((unsigned int)0x00000ac4)) = 0;
   func_0202db38(param_1,&uStack_c,1);
-  *(int *)(param_1 + iVar11 + 0xc) = *(int *)(param_1 + iVar11 + 4) + 0x1000;
+  *(int *)(param_1 + (iVar11 + 0xc)) = *(int *)(param_1 + (iVar11 + 4)) + 0x1000;
   return;
 }

@@ -100,7 +100,7 @@ void func_02033504(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
   uVar2 = param_8;
   uVar1 = param_7;
   if (((param_5 < 0) || (0x1000 < param_5)) && ((param_6 < 0 || (0x1000 < param_6)))) {
-    if (0xfff < param_5) {
+    if (0x1000 <= param_5) {
       param_5 = 0x1000;
     }
     if (param_5 <= 0) {
@@ -113,7 +113,7 @@ void func_02033504(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
       if (0xfff < param_6) {
         param_6 = 0x1000;
       }
-      if (param_6 < 1) {
+      if (param_6 <= 0) {
         param_6 = 0;
       }
       func_02002e50(param_6,param_4,param_3,uVar2);
@@ -127,7 +127,7 @@ void func_02033504(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
       if (0xfff < param_5) {
         param_5 = 0x1000;
       }
-      if (param_5 < 1) {
+      if (param_5 <= 0) {
         param_5 = 0;
       }
       func_02002e50(param_5,param_2,param_1,param_7);
@@ -138,7 +138,7 @@ void func_02033504(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
       if (0xfff < param_6) {
         param_6 = 0x1000;
       }
-      if (param_6 < 1) {
+      if (param_6 <= 0) {
         param_6 = 0;
       }
       func_02002e50(param_6,param_4,param_3,param_8);

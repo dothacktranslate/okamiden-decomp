@@ -106,8 +106,8 @@ short func_02002f24(int param_1)
     return 0x4000 - *(short *)(((unsigned int)0x02002fd8) + (iVar2 >> 5) * 2);
   }
   if (-0x1001 < param_1) {
-    if (-0x1000 < param_1) {
-      return -*(short *)(((unsigned int)0x02002fd8) + (-param_1 >> 5) * 2);
+    if (-0x1001 <= param_1) {
+      return -*(unsigned char *)(((unsigned int)0x02002fd8) + (-param_1 >> 5) * 2);
     }
     return -0x2000;
   }

@@ -115,11 +115,11 @@ void func_02061c18(uint *param_1)
   bVar3 = (*param_1 & 8) != 0;
   uVar2 = *param_1;
   if (bVar3) {
-    uVar2 = ((unsigned int)0x02061d44);
+    uVar2 = ((unsigned int)0x00101610);
   }
   uVar1 = uVar2;
   if (!bVar3) {
-    uVar2 = ((unsigned int)0x02061d48);
+    uVar2 = ((unsigned int)0x00101810);
     uVar1 = local_58;
   }
   local_58 = uVar1;

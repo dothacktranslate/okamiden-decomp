@@ -177,8 +177,8 @@ void func_0205a7dc(int param_1,int param_2,int param_3,undefined4 param_4,uint p
   local_1c = local_24;
   if ((param_5 & 0x10) == 0) {
     if ((param_5 & 0x20) != 0) {
-      param_2 = -local_28 * (int)(char)param_7 + param_2;
       param_3 = -local_28 * (int)(*(unsigned char *)((unsigned char *)&param_7 + 1)) + param_3;
+      param_2 = -local_28 * (int)(char)param_7 + param_2;
     }
   }
   else {
@@ -188,8 +188,8 @@ void func_0205a7dc(int param_1,int param_2,int param_3,undefined4 param_4,uint p
   }
   if ((param_5 & 2) == 0) {
     if ((param_5 & 4) != 0) {
-      param_2 = -local_24 * -(int)(*(unsigned char *)((unsigned char *)&param_7 + 1)) + param_2;
       param_3 = -local_24 * (int)(char)param_7 + param_3;
+      param_2 = -local_24 * -(int)(*(unsigned char *)((unsigned char *)&param_7 + 1)) + param_2;
     }
   }
   else {

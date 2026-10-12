@@ -98,40 +98,40 @@ uint func_0200e584(int param_1,int param_2,uint param_3)
   int iVar1;
   int iVar2;
   uint uVar4;
-  uint uVar3;
   int iVar5;
+  uint uVar3;
   undefined1 auStack_64 [72];
 
-  if ((param_2 != 0) && (iVar1 = func_0200e758(), iVar1 != 0)) {
+  if ((param_2 != 0) && (iVar5 = func_0200e758(), iVar5 != 0)) {
     func_0200e6c4(param_1);
   }
-  iVar1 = *(int *)(param_1 + 0x20);
-  uVar3 = *(int *)(iVar1 + 8) + *(int *)(iVar1 + 0x10) + 0x3fU & 0xffffffe0;
+  iVar5 = *(int *)(param_1 + 0x20);
+  uVar3 = *(int *)(iVar5 + 8) + *(int *)(iVar5 + 0x10) + 0x3fU & 0xffffffe0;
   if (uVar3 <= param_3) {
     uVar4 = param_2 + 0x1fU & 0xffffffe0;
     func_0200c8e0(auStack_64);
-    iVar2 = func_0200c9e0(auStack_64,param_1,*(int *)(iVar1 + 4),
-                         *(int *)(iVar1 + 4) + *(int *)(iVar1 + 8),0xffffffff);
+    iVar2 = func_0200c9e0(auStack_64,param_1,*(int *)(iVar5 + 4),
+                         *(int *)(iVar5 + 4) + *(int *)(iVar5 + 8),0xffffffff);
     if (iVar2 != 0) {
-      iVar2 = func_0200cbc0(auStack_64,uVar4,*(undefined4 *)(iVar1 + 8));
+      iVar2 = func_0200cbc0(auStack_64,uVar4,*(undefined4 *)(iVar5 + 8));
       if (iVar2 < 0) {
-        func_020099f0(uVar4,0,*(undefined4 *)(iVar1 + 8));
+        func_020099f0(uVar4,0,*(undefined4 *)(iVar5 + 8));
       }
       func_0200cafc(auStack_64);
     }
-    *(uint *)(iVar1 + 4) = uVar4;
-    iVar5 = uVar4 + *(int *)(iVar1 + 8);
-    iVar2 = func_0200c9e0(auStack_64,param_1,*(int *)(iVar1 + 0xc),
-                         *(int *)(iVar1 + 0xc) + *(int *)(iVar1 + 0x10),0xffffffff);
+    *(uint *)(iVar5 + 4) = uVar4;
+    iVar1 = uVar4 + *(int *)(iVar5 + 8);
+    iVar2 = func_0200c9e0(auStack_64,param_1,*(int *)(iVar5 + 0xc),
+                         *(int *)(iVar5 + 0xc) + *(int *)(iVar5 + 0x10),0xffffffff);
     if (iVar2 != 0) {
-      iVar2 = func_0200cbc0(auStack_64,iVar5,*(undefined4 *)(iVar1 + 0x10));
+      iVar2 = func_0200cbc0(auStack_64,iVar1,*(undefined4 *)(iVar5 + 0x10));
       if (iVar2 < 0) {
-        func_020099f0(iVar5,0,*(undefined4 *)(iVar1 + 0x10));
+        func_020099f0(iVar1,0,*(undefined4 *)(iVar5 + 0x10));
       }
       func_0200cafc(auStack_64);
     }
-    *(int *)(iVar1 + 0xc) = iVar5;
-    *(int *)(iVar1 + 0x1c) = param_2;
+    *(int *)(iVar5 + 0xc) = iVar1;
+    *(int *)(iVar5 + 0x1c) = param_2;
     *(uint *)(param_1 + 0x14) = *(uint *)(param_1 + 0x14) | 4;
   }
   return uVar3;

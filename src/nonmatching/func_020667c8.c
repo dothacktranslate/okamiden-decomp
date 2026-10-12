@@ -107,9 +107,9 @@ undefined4 func_020667c8(int param_1,uint param_2,undefined4 param_3,int param_4
   iVar1 = func_0200b3bc(param_1);
   uVar2 = iVar1 - 1;
   iVar1 = param_1 + (*(int *)(param_1 + 0x38) + param_2) * 4;
-  bVar5 = param_2 < uVar2;
+  bVar5 = uVar2 > param_2;
   if (bVar5) {
-    uVar2 = *(uint *)(iVar1 + 0x40);
+    uVar2 = *(unsigned short *)(iVar1 + 0x40);
   }
   iVar1 = *(int *)(iVar1 + 0x3c);
   if (!bVar5) {

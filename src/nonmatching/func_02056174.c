@@ -96,7 +96,7 @@ undefined4 func_02056174(undefined4 param_1,undefined4 *param_2,uint param_3,und
     if (param_3 < 0x20) {
       param_3 = 0x20;
     }
-    if (param_3 + 1 < 0xfffffffd || param_3 == 0xfffffffc) {
+    if (1 + param_3 <= 0xfffffffc || param_3 == 0xfffffffc) {
       uVar1 = func_0204e55c(param_1,*param_2,param_2[2],param_3,param_4);
     }
     else {

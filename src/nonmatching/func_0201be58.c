@@ -366,7 +366,7 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
     uVar25 = func_0201dbfc(0,uVar7,0,uVar7);
     uVar9 = (undefined4)((ulonglong)uVar25 >> 0x20);
     uVar27 = func_0201d518(0,((unsigned int)0x0201c3f4) + 0x180000,(int)uVar25,uVar9);
-    func_0201d518((int)uVar27,(int)((ulonglong)uVar27 >> 0x20),(int)uVar24,uVar5);
+    func_0201d518((int)uVar27,(int)((ulonglong)uVar27 >> 0x20),(int)uVar24,uVar5,uVar27);
     uVar27 = func_0201d848(0,extraout_r1_00,0,((unsigned int)0x0201c3f4) + 0x180000);
     uVar25 = func_0201d848((int)uVar27,(int)((ulonglong)uVar27 >> 0x20),(int)uVar25,uVar9);
     uVar24 = func_0201d848((int)uVar24,uVar5,(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));

@@ -98,69 +98,69 @@ void func_02053cc0(undefined4 *param_1,int param_2)
   int iVar3;
   int iVar4;
 
-  iVar1 = func_02053a00();
-  if (iVar1 + 1U < 0x3fffffff || iVar1 == 0x3ffffffe) {
-    uVar2 = func_0204e55c(*param_1,0,0,iVar1 << 2);
+  iVar4 = func_02053a00();
+  if (iVar4 + 1U < 0x3fffffff || iVar4 == 0x3ffffffe) {
+    uVar2 = func_0204e55c(*param_1,0,0,iVar4 << 2);
   }
   else {
     uVar2 = func_0204e544(*param_1);
   }
   *(undefined4 *)(param_2 + 0x14) = uVar2;
-  *(int *)(param_2 + 0x30) = iVar1;
-  func_020539bc(param_1,uVar2,iVar1 << 2);
-  iVar1 = func_02053a00(param_1);
-  if (((unsigned int)0x02053e70) < iVar1 + 1U) {
+  *(int *)(param_2 + 0x30) = iVar4;
+  func_020539bc(param_1,uVar2,iVar4 << 2);
+  iVar4 = func_02053a00(param_1);
+  if (((unsigned int)0x15555555) < iVar4 + 1U) {
     uVar2 = func_0204e544(*param_1);
   }
   else {
-    uVar2 = func_0204e55c(*param_1,0,0,iVar1 * 0xc);
+    uVar2 = func_0204e55c(*param_1,0,0,iVar4 * 0xc);
   }
   *(undefined4 *)(param_2 + 0x18) = uVar2;
-  *(int *)(param_2 + 0x38) = iVar1;
-  iVar4 = 0;
-  if (0 < iVar1) {
+  *(int *)(param_2 + 0x38) = iVar4;
+  iVar1 = 0;
+  if (0 < iVar4) {
     do {
-      iVar3 = iVar4 * 0xc;
-      iVar4 = iVar4 + 1;
+      iVar3 = iVar1 * 0xc;
+      iVar1 = iVar1 + 1;
       *(undefined4 *)(*(int *)(param_2 + 0x18) + iVar3) = 0;
-    } while (iVar4 < iVar1);
+    } while (iVar1 < iVar4);
   }
-  iVar4 = 0;
-  if (0 < iVar1) {
+  iVar1 = 0;
+  if (0 < iVar4) {
     do {
-      iVar3 = iVar4 * 0xc;
+      iVar3 = iVar1 * 0xc;
       uVar2 = func_02053a58(param_1);
       *(undefined4 *)(*(int *)(param_2 + 0x18) + iVar3) = uVar2;
       uVar2 = func_02053a00(param_1);
       *(undefined4 *)(*(int *)(param_2 + 0x18) + iVar3 + 4) = uVar2;
       uVar2 = func_02053a00(param_1);
-      iVar4 = iVar4 + 1;
+      iVar1 = iVar1 + 1;
       *(undefined4 *)(*(int *)(param_2 + 0x18) + iVar3 + 8) = uVar2;
-    } while (iVar4 < iVar1);
+    } while (iVar1 < iVar4);
   }
-  iVar1 = func_02053a00(param_1);
-  if (iVar1 + 1U < 0x3fffffff || iVar1 == 0x3ffffffe) {
-    uVar2 = func_0204e55c(*param_1,0,0,iVar1 << 2);
+  iVar4 = func_02053a00(param_1);
+  if (iVar4 + 1U < 0x3fffffff || iVar4 == 0x3ffffffe) {
+    uVar2 = func_0204e55c(*param_1,0,0,iVar4 << 2);
   }
   else {
     uVar2 = func_0204e544(*param_1);
   }
   *(undefined4 *)(param_2 + 0x1c) = uVar2;
-  *(int *)(param_2 + 0x24) = iVar1;
-  iVar4 = 0;
-  if (0 < iVar1) {
+  *(int *)(param_2 + 0x24) = iVar4;
+  iVar1 = 0;
+  if (0 < iVar4) {
     do {
-      *(undefined4 *)(*(int *)(param_2 + 0x1c) + iVar4 * 4) = 0;
-      iVar4 = iVar4 + 1;
-    } while (iVar4 < iVar1);
+      *(undefined4 *)(*(int *)(param_2 + 0x1c) + iVar1 * 4) = 0;
+      iVar1 = iVar1 + 1;
+    } while (iVar1 < iVar4);
   }
-  iVar4 = 0;
-  if (0 < iVar1) {
+  iVar1 = 0;
+  if (0 < iVar4) {
     do {
       uVar2 = func_02053a58(param_1);
-      *(undefined4 *)(*(int *)(param_2 + 0x1c) + iVar4 * 4) = uVar2;
-      iVar4 = iVar4 + 1;
-    } while (iVar4 < iVar1);
+      *(undefined4 *)(*(int *)(param_2 + 0x1c) + iVar1 * 4) = uVar2;
+      iVar1 = iVar1 + 1;
+    } while (iVar1 < iVar4);
     return;
   }
   return;

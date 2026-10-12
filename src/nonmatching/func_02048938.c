@@ -102,13 +102,13 @@ undefined4 func_02048938(undefined4 param_1)
 
   iVar1 = func_02047760(param_1,1,((unsigned int)0x02048a18),((unsigned int)0x02048a1c));
   uVar2 = func_02047aa8(param_1,2,0);
-  iVar1 = *(int *)(((unsigned int)0x02048a20) + iVar1 * 4);
+  iVar1 = *(short *)(((unsigned int)0x02048a20) + iVar1 * 4);
   uVar2 = func_020471a4(param_1,iVar1,uVar2);
   if (iVar1 == 3) {
-    uVar3 = func_020471a4(param_1,4,0);
     uVar2 = func_0201e6a0(uVar2);
+    uVar3 = func_020471a4(param_1,4,0);
     uVar3 = func_0201e6a0(uVar3);
-    uVar3 = func_0201f824(uVar3,((unsigned int)0x02048a24));
+    uVar3 = func_0201f824(uVar3,((unsigned int)0x44800000));
     uVar2 = func_0201f370(uVar2,uVar3);
     func_0204684c(param_1,uVar2);
     return 1;

@@ -107,10 +107,10 @@ void func_02051534(int param_1,undefined4 *param_2,int param_3,uint param_4)
     return;
   }
   do {
-    if (*(char *)(iVar3 + uVar5) == '%') {
+    if (*(char *)(uVar5 + iVar3) == '%') {
       uVar5 = uVar5 + 1;
       bVar1 = *(byte *)(iVar3 + uVar5);
-      if (bVar1 < 0x80) {
+      if (bVar1 <= 0x7f) {
         uVar2 = *(ushort *)(((unsigned int)0x0205164c) + (uint)bVar1 * 2) & 8;
       }
       else {

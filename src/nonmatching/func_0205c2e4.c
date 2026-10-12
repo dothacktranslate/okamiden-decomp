@@ -95,7 +95,7 @@ undefined4 func_0205c2e4(uint *param_1,int param_2,uint param_3,undefined4 param
 
 {
   ushort uVar1;
-  int iVar2;
+  uint iVar2;
   uint uVar3;
   int iVar4;
   int iVar5;
@@ -139,8 +139,8 @@ undefined4 func_0205c2e4(uint *param_1,int param_2,uint param_3,undefined4 param
     }
     return 0;
   }
-  iVar6 = 0;
   iVar5 = 0;
+  iVar6 = 0;
   iVar7 = 0;
   iVar2 = param_2;
   iVar4 = param_2;
@@ -148,7 +148,7 @@ undefined4 func_0205c2e4(uint *param_1,int param_2,uint param_3,undefined4 param
     if ((param_3 < *(byte *)(iVar4 + 0x19)) &&
        ((*(ushort *)(iVar4 + param_3 * 2 + 0x1a) & 0x300) == 0x100)) {
       iVar2 = *(int *)(iVar4 + 4);
-      if (iVar2 < 0x1001) {
+      if (iVar2 <= 0x1000) {
         if (0 < iVar2) {
           iVar6 = iVar6 + iVar2;
         }

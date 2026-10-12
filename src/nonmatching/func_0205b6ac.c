@@ -88,7 +88,7 @@ void func_0205b6ac(int param_1,ushort *param_2,int param_3,ushort *param_4)
 
 {
   ushort uVar1;
-  ushort uVar2;
+  short uVar2;
   int iVar3;
   uint uVar4;
   uint uVar5;

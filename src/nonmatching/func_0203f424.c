@@ -96,7 +96,7 @@ void func_0203f424(int param_1)
 
 {
   undefined4 uVar1;
-  int iVar2;
+  uint iVar2;
   uint uVar3;
   int iVar4;
   int iVar5;
@@ -214,7 +214,7 @@ void func_0203f424(int param_1)
                                (((unsigned int)0x0203f698) +
                                ((int)((((uint)(iVar4 * 0x20000000 + iVar5) >> 0x1d | iVar5 << 3) -
                                       iVar5) * 0x10000) >> 0xf));
-          local_4c[3] = ((unsigned int)0x0203f6a4);
+          local_4c[3] = ((unsigned int)0x0800f001);
           local_2c = ((unsigned int)0x0203f6a8);
           local_30 = local_4c[2];
           func_0205e0c0(local_4c[0],local_4c + 1,9);

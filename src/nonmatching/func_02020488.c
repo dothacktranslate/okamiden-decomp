@@ -100,8 +100,8 @@ byte func_02020488(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   byte *pbVar5;
   int iStack_b0;
   undefined1 auStack_ac [4];
-  undefined1 auStack_a8 [4];
   undefined1 auStack_a4 [4];
+  undefined1 auStack_a8 [4];
   undefined1 auStack_a0 [4];
   undefined1 auStack_9c [4];
   undefined1 auStack_98 [4];

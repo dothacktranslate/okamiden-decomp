@@ -95,7 +95,7 @@ int func_0204cd58(undefined4 param_1,int param_2,undefined4 param_3,undefined4 p
   iVar1 = func_0204e55c(param_1,0,0,(param_2 + -1) * 8 + 0x1c,param_4);
   func_0204e430(iVar1,param_1,iVar1,6);
   *(undefined1 *)(6 + iVar1) = 1;
-  *(unsigned short *)(0xc + iVar1) = param_3;
+  *(unsigned char *)(0xc + iVar1) = param_3;
   *(char *)(iVar1 + 7) = (char)param_2;
   return iVar1;
 }

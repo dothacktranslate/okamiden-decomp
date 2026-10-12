@@ -89,17 +89,17 @@ extern int func_02013cd8();
 undefined4 func_02013de4(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  uint *puVar1;
+  undefined1 *puVar1;
   uint *puVar2;
 
   puVar1 = ((unsigned int)0x02013e40);
   if (((*(unsigned int *)0x02013e40) & 0x20000000) != 0) {
     func_02013cd8(0xd6,0,param_3,param_4,param_4);
-    puVar2 = ((unsigned int)0x02013e44);
-    (*(unsigned int *)0x02013e44) = puVar1[-0x48] & 0xf8ffe000 | 0xa7000000;
+    puVar2 = ((unsigned int)0x040001a4);
+    (*(unsigned int *)0x040001a4) = puVar1[-0x48] & 0xf8ffe000 | 0xa7000000;
     do {
     } while ((*puVar2 & 0x800000) == 0);
-    return (*(unsigned int *)0x02013e48);
+    return (*(unsigned int *)0x04100010);
   }
   return 0x20;
 }

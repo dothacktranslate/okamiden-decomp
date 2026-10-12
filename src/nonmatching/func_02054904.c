@@ -110,7 +110,7 @@ uint func_02054904(undefined4 param_1,undefined4 *param_2,undefined4 *param_3,un
     iVar1 = func_02054894(*param_2,*param_3,param_3,param_3[1],param_4);
     return (uint)(iVar1 < 0);
   }
-  uVar2 = func_020547e0();
+  uVar2 = func_020547e0(param_1);
   if (uVar2 == 0xffffffff) {
     uVar2 = func_0204b864(param_1,param_2,param_3);
     return uVar2;

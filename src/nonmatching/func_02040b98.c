@@ -152,13 +152,13 @@ void func_02040b98(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     }
     local_24 = ((unsigned int)0x0000ffff);
     iVar2 = 0;
-    local_28 = ((unsigned int)0x02040d50);
+    local_28 = ((unsigned int)0x00293130);
     local_20 = 0;
     iVar1 = (int)*(short *)(param_1 + 0x10) >> 0x1f;
     local_1c = ((unsigned int)0x02040d54) |
                (((uint)(*(short *)(param_1 + 0x10) * 0x8000000 + iVar1) >> 0x1b | iVar1 << 5) -
                iVar1) * 0x10000;
-    func_0205e0c0(((unsigned int)0x02040d50),&local_24,3);
+    func_0205e0c0(((unsigned int)0x00293130),&local_24,3);
     local_84 = 1;
     func_0205e0c0(0x40,&local_84);
     func_0205e0c0(0x15,0,0);
@@ -184,7 +184,7 @@ void func_02040b98(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
         func_0205e0c0(0x1c,local_78 + iVar2 * 3 + 8,3);
         local_28 = (local_78[iVar2 * 2] << 8) >> 0x10 & 0xffffU |
                    ((local_78[iVar2 * 2 + 1] << 8) >> 0x10) << 0x10;
-        func_0205e0c0(((unsigned int)0x02040d5c),&local_28,3);
+        func_0205e0c0(((unsigned int)0x00002422),&local_28,3);
         local_88 = 1;
         func_0205e0c0(0x12,&local_88,1);
         iVar2 = iVar2 + 1;

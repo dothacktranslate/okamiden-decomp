@@ -115,7 +115,7 @@ void func_02062b34(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   lVar5 = (longlong)iVar6 * (longlong)(int)sVar4;
   uVar10 = (uint)lVar5 >> 0xc | (int)((ulonglong)lVar5 >> 0x20) << 0x14;
   param_1[5] = uVar8;
-  iVar6 = func_02002964();
+  iVar6 = func_02002964(param_1);
   lVar5 = (longlong)iVar9 * (longlong)(int)sVar4;
   param_1[1] = (int)(((uint)lVar5 >> 0xc | (int)((ulonglong)lVar5 >> 0x20) << 0x14) * iVar6) >> 0xc;
   func_020029f4(iVar7,iVar1);

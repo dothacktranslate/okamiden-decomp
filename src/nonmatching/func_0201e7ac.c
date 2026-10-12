@@ -241,7 +241,7 @@ ulonglong func_0201e7ac(uint param_1,uint param_2,uint param_3,uint param_4)
       ;
     }
 LAB_0201e8fc:
-    if ((int)uVar7 < 0x20) {
+    if ((int)uVar7 <= 0x1f) {
       uVar3 = uVar3 >> (uVar7 & 0xff) | uVar4 << (0x20 - uVar7 & 0xff);
       uVar4 = uVar4 >> (uVar7 & 0xff);
       if (-1 < (int)uVar6) {

@@ -119,7 +119,7 @@ undefined4 func_02053324(undefined4 param_1)
     func_020532b4(param_1,auStack_1024,iVar2);
     func_02048014(auStack_1024,uVar1,local_1028);
   }
-  if (iVar2 == iVar3) {
+  if (iVar3 == iVar2) {
     func_020532b4(param_1,auStack_1024,iVar2);
   }
   func_02048094(auStack_1024);

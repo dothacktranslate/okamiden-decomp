@@ -95,7 +95,7 @@ void func_02011548(int param_1)
 {
   undefined2 uVar1;
   short sVar2;
-  short sVar3;
+  unsigned short sVar3;
   int iVar4;
   int iVar5;
   short sVar6;
@@ -181,7 +181,7 @@ LAB_02011794:
           uVar1 = 0;
         }
         iVar5 = *(int *)(param_1 + 0x28);
-        *(short *)(iVar5 + iVar11 * 8) = local_2c;
+        *(short *)(iVar11 + iVar5 * 8) = local_2c;
         iVar5 = iVar5 + iVar11 * 8;
         *(short *)(iVar5 + 2) = local_2a;
         *(short *)(iVar5 + 4) = local_28;
@@ -221,7 +221,7 @@ LAB_02011794:
           }
           sVar6 = psVar9[1];
           iVar10 = (int)sVar6;
-          if (local_28 < iVar5) {
+          if (iVar5 > local_28) {
             local_28 = sVar3;
           }
           if (iVar10 < local_2a) {

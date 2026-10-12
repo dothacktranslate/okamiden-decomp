@@ -120,15 +120,15 @@ void func_020534e0(undefined4 param_1,int param_2,int param_3)
     iVar1 = (param_2 + local_28) / 2;
     func_02046b84(param_1,1,iVar1);
     func_02046b84(param_1,1,param_2);
-    iVar2 = func_02053450(param_1,0xfffffffe,0xffffffff);
     iVar3 = param_2;
+    iVar2 = func_02046204(param_1,0xfffffffe,0xffffffff);
     if (iVar2 == 0) {
       func_02046204(param_1,0xfffffffe);
       func_02046b84(param_1,1,local_28);
-      iVar2 = func_02053450(param_1,0xffffffff,0xfffffffe);
       iVar3 = local_28;
+      iVar2 = func_02053450(param_1,0xffffffff,0xfffffffe);
       if (iVar2 != 0) goto LAB_020535cc;
-      func_02046204(param_1,0xfffffffd);
+      func_02053450(param_1,0xfffffffd);
     }
     else {
 LAB_020535cc:
@@ -149,7 +149,7 @@ LAB_020535cc:
         func_02046b84(param_1,1,iVar4);
         iVar2 = func_02053450(param_1,0xffffffff,0xfffffffe);
         if (iVar2 == 0) break;
-        if (local_28 < iVar4) {
+        if (iVar4 > local_28) {
           func_02047714(param_1,((unsigned int)0x02053804));
         }
         func_02046204(param_1,0xfffffffe);

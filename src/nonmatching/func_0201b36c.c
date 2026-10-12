@@ -125,12 +125,12 @@ void func_0201b36c(undefined2 *param_1,undefined2 *param_2,int param_3)
     return;
   }
   uVar15 = (uint)*(byte *)(param_1 + 2);
-  uVar4 = uVar15;
+  iVar14 = uVar15;
   if (uVar15 < *(byte *)(param_3 + 4)) {
-    uVar4 = (uint)*(byte *)(param_3 + 4);
+    iVar14 = (uint)*(byte *)(param_3 + 4);
   }
-  iVar14 = (int)(short)param_1[1] - (int)*(short *)(param_3 + 2);
-  iVar10 = uVar4 + iVar14;
+  uVar4 = (int)(short)param_1[1] - (int)*(short *)(param_3 + 2);
+  iVar10 = iVar14 + uVar4;
   if (0x20 < iVar10) {
     iVar10 = 0x20;
   }
@@ -140,12 +140,12 @@ void func_0201b36c(undefined2 *param_1,undefined2 *param_2,int param_3)
     uVar15 = (uint)*(byte *)(param_1 + 2);
   }
   pbVar7 = (byte *)((int)param_1 + 5);
-  iVar9 = (uint)*(byte *)(param_3 + 4) + iVar14;
+  iVar9 = (uint)*(byte *)(param_3 + 4) + uVar4;
   if (iVar9 < iVar10) {
     iVar10 = iVar9;
   }
   pbVar5 = (byte *)(param_3 + 5);
-  pbVar18 = pbVar5 + (int)(pbVar7 + iVar10 + (-iVar14 - (int)pbVar7));
+  pbVar18 = pbVar5 + (int)(pbVar7 + iVar10 + (-uVar4 - (int)pbVar7));
   pbVar17 = pbVar7 + iVar10;
   pbVar19 = pbVar18;
   while ((pbVar7 < pbVar17 && (pbVar5 < pbVar19))) {
@@ -193,9 +193,9 @@ LAB_0201b50c:
       do {
         pbVar18 = pbVar18 + 1;
         if ((byte *)(param_3 + 5 + (uint)*(byte *)(param_3 + 4)) <= pbVar18) {
-          iVar14 = iVar14 + iVar10;
-          pbVar17 = pbVar7 + iVar14 + -1;
-          if ((pbVar7[iVar14 + -1] & 1) != 0) {
+          uVar4 = uVar4 + iVar10;
+          pbVar17 = pbVar7 + uVar4 + -1;
+          if ((pbVar7[uVar4 + -1] & 1) != 0) {
             bVar20 = true;
           }
           goto LAB_0201b50c;

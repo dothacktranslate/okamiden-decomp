@@ -158,7 +158,7 @@ void func_0203c754(int param_1)
   *(undefined1 *)(param_1 + 0x8e) = 2;
   *(undefined4 *)(param_1 + 0x24) = (*(unsigned int *)0x0203c77c);
   *(undefined1 *)(param_1 + 0x92) = 3;
-  *(undefined4 *)(param_1 + 0x1c) = (*(unsigned int *)0x0203c780);
+  *(undefined4 *)(param_1 + 0x1c) = (*(unsigned int *)0x01ffc308);
   *(undefined1 *)(param_1 + 0x90) = 2;
   return;
 }

@@ -92,7 +92,7 @@ void func_020302a0(int param_1,int param_2,undefined4 param_3,undefined4 param_4
 {
   short sVar1;
   short sVar2;
-  ushort uVar3;
+  short uVar3;
 
   func_02030250();
   sVar1 = *(short *)(param_2 + 8);
@@ -111,7 +111,7 @@ void func_020302a0(int param_1,int param_2,undefined4 param_3,undefined4 param_4
     return;
   }
   if (uVar3 == 1) {
-    *(undefined4 *)(param_1 + 0x1c) = 1;
+    *(unsigned short *)(param_1 + 0x1c) = 1;
     return;
   }
   if (uVar3 == 2) {

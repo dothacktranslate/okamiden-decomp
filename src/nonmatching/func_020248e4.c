@@ -158,10 +158,10 @@ undefined4 func_020248e4(int param_1)
   int iVar2;
   undefined4 uVar3;
 
-  iVar2 = *(int *)(param_1 + 0xc);
   uVar3 = 0;
-  if ((((iVar2 != 0) && (*(char *)(iVar2 + (*(unsigned int *)0x0202490c)) != '\0')) &&
-      (uVar1 = *(ushort *)(iVar2 + 0xab0), uVar1 != 0xe)) && ((7 < uVar1 && (uVar1 < 0x17)))) {
+  iVar2 = *(int *)(param_1 + 0xc);
+  if ((((iVar2 != 0) && (*(char *)(iVar2 + (*(unsigned char *)0x00000bde)) != '\0')) &&
+      (uVar1 = *(ushort *)(iVar2 + 0xab0), uVar1 != 0xe)) && ((8 <= uVar1 && (uVar1 < 0x17)))) {
     uVar3 = 1;
   }
   return uVar3;

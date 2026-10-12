@@ -175,12 +175,12 @@ void func_020056f0(int param_1)
     _REG_A_DISPCNT = _REG_A_DISPCNT & 0x7fffffff;
   }
   else {
-    puVar2 = ((unsigned int)0x02005784);
+    puVar2 = ((unsigned int)0x04000245);
     if ((param_1 == 0x20) || (puVar2 = ((unsigned int)0x02005788), param_1 == 0x40)) {
       _REG_A_DISPCNT = _REG_A_DISPCNT | 0x80000000;
       *puVar2 = 0x85;
     }
   }
-  func_0200522c((*(unsigned int *)0x02005780));
+  func_0200522c((*(unsigned short *)0x02005780));
   return;
 }

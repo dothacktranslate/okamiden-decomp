@@ -101,7 +101,7 @@ undefined4 func_02028de8(undefined4 param_1,undefined4 param_2,undefined4 param_
   iVar5 = (*(unsigned int *)0x02028e74);
   uVar3 = func_020465d8(param_1,2,param_3,param_4,param_4);
   iVar4 = func_020465d8(param_1,1);
-  if (iVar4 == ((unsigned int)0x02028e78)) {
+  if (iVar4 == ((unsigned int)0x00001301)) {
     if (uVar3 == 0) {
       uVar3 = 1;
     }
@@ -110,12 +110,12 @@ undefined4 func_02028de8(undefined4 param_1,undefined4 param_2,undefined4 param_
       uVar3 = 0xffffffff;
     }
   }
-  else if (iVar4 == ((unsigned int)0x02028e78) + 1) {
+  else if (iVar4 == ((unsigned int)0x00001301) + 1) {
     uVar2 = func_020465d8(param_1,3);
     uVar3 = (uint)((*(ushort *)(iVar5 + 0xc4) & uVar2) != 0);
   }
   else {
-    if (iVar4 != ((unsigned int)0x02028e78) + 2) {
+    if (iVar4 != ((unsigned int)0x00001301) + 2) {
       return 1;
     }
     uVar3 = 0xffffffff;

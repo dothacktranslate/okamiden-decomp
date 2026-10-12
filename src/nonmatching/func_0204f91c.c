@@ -108,7 +108,7 @@ void func_0204f91c(undefined1 *param_1,char *param_2,int param_3)
   if (*param_2 == '@') {
     param_2 = param_2 + 1;
     uVar3 = func_02018d9c(param_2);
-    *param_1 = (*(unsigned int *)0x0204fa1c);
+    *param_1 = (*(unsigned char *)0x0204fa1c);
     if (param_3 - 8U < uVar3) {
       param_2 = param_2 + (uVar3 - (param_3 - 8U));
       func_02018ed0(param_1,((unsigned int)0x0204fa20));

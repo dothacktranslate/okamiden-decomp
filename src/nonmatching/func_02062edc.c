@@ -94,7 +94,7 @@ void func_02062edc(uint param_1,int param_2)
   undefined4 uVar2;
   undefined4 uVar3;
 
-  if (param_1 < 3) {
+  if (param_1 <= 2) {
     uVar2 = 2;
     uVar3 = 0;
   }

@@ -93,9 +93,9 @@ void func_02053fc4(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
 
 {
   int iVar1;
-  undefined1 auStack_30 [12];
-  undefined1 auStack_24 [12];
   undefined4 uStack_18;
+  undefined1 auStack_24 [12];
+  undefined1 auStack_30 [12];
 
   uStack_18 = param_4;
   func_020540ac(auStack_24);

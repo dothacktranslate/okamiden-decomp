@@ -186,7 +186,7 @@ switchD_0202126c_default:
     case 0xb:
       break;
     case 0xc:
-      local_b8 = *(undefined4 *)(local_a4 + 1);
+      local_b8 = *(unsigned char *)(local_a4 + 1);
       uVar1 = func_0202027c(local_a4 + 5,auStack_b4);
       func_020201f8(uVar1,auStack_b0);
       iVar5 = func_020215c4(*param_1,local_b8,param_3);

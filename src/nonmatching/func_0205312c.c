@@ -101,24 +101,24 @@ undefined4 func_0205312c(undefined4 param_1,undefined4 param_2,undefined4 param_
   undefined4 uVar4;
 
   func_02047928(param_1,1,5,param_4,param_4);
-  iVar1 = func_020466e4(param_1,1);
-  iVar1 = iVar1 + 1;
+  iVar3 = func_020466e4(param_1,1);
+  iVar3 = iVar3 + 1;
   iVar2 = func_020461e8(param_1);
   if (iVar2 != 2) {
     if (iVar2 != 3) {
       uVar4 = func_02047714(param_1,((unsigned int)0x020531f4));
       return uVar4;
     }
-    iVar2 = iVar1;
-    iVar3 = func_02047a64(param_1,2);
-    if (iVar1 < iVar3) {
-      iVar2 = iVar3;
+    iVar2 = iVar3;
+    iVar1 = func_02047a64(param_1,2);
+    if (iVar1 > iVar3) {
+      iVar2 = iVar1;
     }
-    for (; iVar1 = iVar3, iVar3 < iVar2; iVar2 = iVar2 + -1) {
+    for (; iVar3 = iVar1, iVar2 > iVar1; iVar2 = iVar2 + -1) {
       func_02046b84(param_1,1,iVar2 + -1);
       func_02046e2c(param_1,1,iVar2);
     }
   }
-  func_02046e2c(param_1,1,iVar1);
+  func_02046e2c(param_1,1,iVar3);
   return 0;
 }

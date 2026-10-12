@@ -87,7 +87,7 @@ extern int LZCOUNT();
 extern int func_02019064();
 extern int func_02046130();
 extern int func_02046414();
-extern int func_02046444();
+extern int func_020465d8();
 extern int func_020464b0();
 extern int func_020465d8();
 extern int func_02046654();
@@ -110,8 +110,8 @@ undefined4 func_02049a40(undefined4 param_1,undefined4 param_2,undefined4 param_
   undefined4 uVar2;
   int iVar3;
   undefined4 uVar4;
-  int local_80;
   undefined1 auStack_7c [4];
+  int local_80;
   undefined4 local_78;
   undefined4 local_74;
   undefined4 local_70;

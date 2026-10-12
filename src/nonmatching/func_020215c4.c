@@ -91,7 +91,7 @@ undefined4 func_020215c4(char *param_1,char *param_2,int *param_3)
   char *pcVar2;
   byte *pbVar3;
   unsigned char cVar4;
-  char *pcVar5;
+  unsigned char *pcVar5;
   byte *pbVar6;
   int iVar7;
 

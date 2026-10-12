@@ -98,7 +98,7 @@ int func_02059aa8(int param_1,int *param_2,int param_3,int param_4,undefined4 pa
   int local_1c;
 
   uVar1 = func_02058974(param_2,param_6);
-  if (uVar1 == ((unsigned int)0x02059bc0)) {
+  if (uVar1 == ((unsigned int)0x0000ffff)) {
     uVar1 = (uint)*(ushort *)(*param_2 + 2);
   }
   local_20 = (char *)func_020589bc(param_2,uVar1);

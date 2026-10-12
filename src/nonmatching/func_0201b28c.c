@@ -91,8 +91,8 @@ bool func_0201b28c(int param_1,int param_2)
   byte bVar2;
   uint uVar3;
   int iVar5;
-  uint uVar4;
   uint uVar6;
+  uint uVar4;
 
   if (*(char *)(param_1 + 5) == '\0') {
     return *(char *)(param_2 + 5) != '\0';

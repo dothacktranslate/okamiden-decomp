@@ -95,7 +95,7 @@ undefined4 func_0200c590(int param_1,undefined4 param_2,undefined4 param_3,undef
   undefined4 uStack_10;
 
   *(undefined4 *)(0x20 + param_1) = param_2;
-  *(short *)(param_1 + 0x24) = param_3;
+  *(unsigned char *)(param_1 + 0x24) = param_3;
   uStack_10 = param_4;
   func_0200c8e0(auStack_58);
   local_50 = param_1;

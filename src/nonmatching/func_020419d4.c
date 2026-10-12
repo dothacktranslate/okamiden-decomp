@@ -102,7 +102,7 @@ void func_020419d4(int param_1,int param_2,int param_3,undefined4 param_4)
       *(undefined4 *)(iVar2 + param_1) = uVar1;
     }
     (**(code **)(**(int **)(param_1 + iVar2) + 0x70))
-              (*(int **)(param_1 + iVar2),((unsigned int)0x02041a48),*(undefined4 *)(((unsigned int)0x02041a40) + param_2 * 4),
+              (*(int **)(iVar2 + param_1),((unsigned int)0x02041a48),*(undefined4 *)(((unsigned int)0x02041a40) + param_2 * 4),
                *(undefined2 *)(((unsigned int)0x02041a44) + param_2 * 6),
                (uint)*(ushort *)(((unsigned int)0x02041a3c) + param_2 * 6) + param_3 * 0x18 & 0xffff,0x1000,
                param_4);

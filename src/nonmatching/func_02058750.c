@@ -109,7 +109,7 @@ void func_02058750(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint
     func_02056ea8(param_1,param_2);
   }
   if (*(int *)(((unsigned int)0x02058880) + 8) != 0) {
-    *(int *)(((unsigned int)0x02058880) + 4) = *(int *)(((unsigned int)0x02058880) + 4) + (*(unsigned int *)0x02058884);
+    *(int *)(((unsigned int)0x02058880) + 4) = *(unsigned char *)(((unsigned int)0x02058880) + 4) + (*(unsigned int *)0x02058884);
   }
   return;
 }

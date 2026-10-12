@@ -99,19 +99,19 @@ void func_020346b8(int param_1,int param_2)
   if (param_2 < 0) {
     param_2 = -param_2;
   }
-  uVar1 = 0xffffffff;
+  uVar3 = 0xffffffff;
   if (iVar6 == 0) {
     return;
   }
   do {
     iVar4 = iVar6 + 0x10;
-    uVar3 = ~(param_2 - 1U) & iVar4 + (param_2 - 1U);
+    uVar1 = ~(param_2 - 1U) & iVar4 + (param_2 - 1U);
     uVar2 = *(int *)(iVar6 + 4) + iVar4;
-    if (uVar3 < uVar2) {
-      uVar2 = uVar2 - uVar3;
-      if ((uVar5 < uVar2) || ((uVar2 == uVar5 && (uVar3 - iVar4 < uVar1)))) {
+    if (uVar1 < uVar2) {
+      uVar2 = uVar2 - uVar1;
+      if ((uVar5 < uVar2) || ((uVar2 == uVar5 && (uVar1 - uVar3 > iVar4)))) {
         uVar5 = uVar2;
-        uVar1 = uVar3 - iVar4;
+        uVar3 = uVar1 - iVar4;
       }
     }
     iVar6 = *(int *)(iVar6 + 0xc);

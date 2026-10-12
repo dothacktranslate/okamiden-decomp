@@ -115,5 +115,5 @@ uint func_02054894(int param_1,int param_2)
     param_2 = param_2 + iVar4;
     iVar2 = iVar2 - iVar4;
   }
-  return (uint)(iVar4 != iVar3);
+  return (uint)(iVar3 != iVar4);
 }

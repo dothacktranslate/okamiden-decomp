@@ -91,13 +91,13 @@ uint func_02060ac8(int param_1,uint param_2,uint param_3)
   bool bVar2;
 
   if ((param_2 & 0x20000000) != 0) {
-    return param_2 & 0xffff;
+    return 0xffff & param_2;
   }
   param_1 = param_1 + (param_2 & 0xffff);
   if ((param_2 & 0xc0000000) == 0) {
     return (uint)*(byte *)(param_1 + param_3);
   }
-  uVar1 = param_2 & ((unsigned int)0x02060bb0);
+  uVar1 = param_2 & ((unsigned int)0x1fff0000);
   if ((param_2 & 0x40000000) == 0) {
     if ((param_3 & 3) == 0) {
       return (uint)*(byte *)(param_1 + (param_3 >> 2));

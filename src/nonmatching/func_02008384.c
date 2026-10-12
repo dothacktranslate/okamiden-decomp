@@ -96,8 +96,8 @@ undefined8 func_02008384(void)
   uint local_10;
 
   func_02008b6c();
+  uVar1 = (*(unsigned short *)0x04000100);
   local_14 = *(uint *)(((unsigned int)0x02008420) + 8) & ((unsigned int)0x0200841c) - 0x10000;
-  uVar1 = (*(unsigned int *)0x04000100);
   local_10 = *(uint *)(((unsigned int)0x02008420) + 0xc) & ((unsigned int)0x0200841c);
   if (((*(uint *)(((unsigned int)0x04000100) + 0x8a) & 8) != 0) && ((uVar1 & 0x8000) == 0)) {
     bVar2 = 0xfffffffe < local_14;

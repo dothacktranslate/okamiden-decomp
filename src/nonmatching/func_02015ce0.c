@@ -87,9 +87,9 @@ extern int LZCOUNT();
 int func_02015ce0(uint param_1,uint param_2)
 
 {
+  uint uVar3;
   int iVar1;
   uint uVar2;
-  uint uVar3;
 
   uVar3 = param_1 & 3;
   iVar1 = 0;

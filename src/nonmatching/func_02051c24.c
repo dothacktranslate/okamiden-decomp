@@ -172,9 +172,9 @@ void func_02051c24(int param_1)
   puVar4 = (undefined1 *)(param_1 + iVar3);
   uVar2 = puVar4[-1];
   uVar1 = ((unsigned int *)0x02051c60)[1];
-  puVar4[-1] = (*(unsigned int *)0x02051c60);
+  puVar4[-1] = (*(unsigned char *)0x02051c60);
   *puVar4 = uVar1;
-  *(undefined1 *)(param_1 + iVar3) = uVar2;
+  *(undefined1 *)(iVar3 + param_1) = uVar2;
   puVar4[1] = 0;
   return;
 }

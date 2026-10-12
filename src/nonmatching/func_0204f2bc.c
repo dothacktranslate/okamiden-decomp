@@ -116,7 +116,7 @@ undefined4 func_0204f2bc(undefined4 param_1)
   iVar2 = *(int *)(((unsigned int)0x0204f464) + 4);
   while (iVar2 != 0) {
     func_020469a8(param_1,*(undefined4 *)(iVar3 + iVar1 * 4),0);
-    func_02046e2c(param_1,0xfffffffe,iVar3 + 1);
+    func_02046e2c(param_1,0xfffffffe,1 + iVar3);
     iVar3 = iVar3 + 1;
     iVar2 = *(int *)(iVar1 + iVar3 * 4);
   }
@@ -125,8 +125,8 @@ undefined4 func_0204f2bc(undefined4 param_1)
   func_0204f2b8(param_1,((unsigned int)0x0204f47c),((unsigned int)0x0204f480),((unsigned int)0x0204f484));
   func_02046898(param_1,((unsigned int)0x0204f488),9);
   func_02046d44(param_1,0xfffffffe,((unsigned int)0x0204f48c));
-  iVar3 = ((unsigned int)0x0204f490);
-  func_02047e18(param_1,((unsigned int)0x0204f490),((unsigned int)0x0204f494),2);
+  iVar3 = ((unsigned int)0xffffd8f0);
+  func_02047e18(param_1,((unsigned int)0xffffd8f0),((unsigned int)0x0204f494),2);
   func_02046d44(param_1,0xfffffffe,((unsigned int)0x0204f498));
   func_02046bc4(param_1,0,0);
   func_02046d44(param_1,0xfffffffe,((unsigned int)0x0204f49c));

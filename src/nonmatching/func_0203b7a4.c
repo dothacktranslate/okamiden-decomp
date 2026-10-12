@@ -118,13 +118,13 @@ void func_0203b7a4(uint *param_1,int param_2,uint *param_3,int param_4)
               uVar1 = uVar4 + 1;
             }
             if ((uVar3 & 0x20000000) != 0) {
-              *param_1 = *(short *)(param_4 + uVar1 * 2) * 3 + (int)*(short *)(param_4 + uVar4 * 2)
+              *param_1 = *(short *)(param_4 + uVar1 * 2) * 3 + (int)*(short *)(uVar4 + param_4 * 2)
                          >> 2;
               return;
             }
             iVar2 = *(int *)(param_4 + uVar1 * 4);
             lVar5 = func_0201e9b4(iVar2,iVar2 >> 0x1f,3,0);
-            lVar5 = lVar5 + *(int *)(param_4 + uVar4 * 4);
+            lVar5 = lVar5 + *(int *)(uVar4 + param_4 * 4);
             *param_1 = (uint)lVar5 >> 2 | (int)((ulonglong)lVar5 >> 0x20) * 0x40000000;
             return;
           }

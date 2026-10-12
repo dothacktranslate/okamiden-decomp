@@ -93,8 +93,8 @@ void func_0204be48(uint param_1,int param_2,undefined4 param_3)
   int iVar2;
   int iVar3;
   code *pcVar4;
-  int iVar5;
   int iVar6;
+  int iVar5;
   int aiStack_78 [5];
   undefined4 uStack_64;
   int iStack_18;

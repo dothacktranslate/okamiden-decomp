@@ -119,10 +119,10 @@ void func_02041540(int param_1)
   func_02041650(param_1,((unsigned int)0x02041638));
   func_02041930(param_1,((unsigned int)0x0204163c));
   puVar2 = ((unsigned int)0x04000060);
-  uVar1 = (ushort)((unsigned int)0x02041644);
+  uVar1 = (ushort)((unsigned int)0xffffcffd);
   (*(unsigned short *)0x04000060) = (*(unsigned short *)0x04000060) & uVar1;
   func_0200395c(((unsigned int)0x02041648));
-  *puVar2 = *puVar2 & uVar1 + 2 | 0x10;
+  *puVar2 = *puVar2 & uVar1 + 0x10 | 2;
   *puVar2 = uVar1 + 2 & *puVar2 | 8;
   *(undefined4 *)(param_1 + 0x194) = 1;
   *(undefined4 *)(param_1 + 0x198) = 1;

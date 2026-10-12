@@ -110,7 +110,7 @@ undefined4 func_020235f0(int param_1,undefined4 param_2,int param_3)
   if (param_3 != 0) {
     return 0;
   }
-  iVar1 = *(int *)(param_1 + 0x20);
+  iVar1 = *(short *)(param_1 + 0x20);
   if (iVar1 != 0) {
     if (iVar1 != 1) {
       if (iVar1 == 2) {

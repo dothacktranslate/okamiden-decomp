@@ -117,15 +117,15 @@ void func_0202d334(int param_1,int param_2,undefined4 param_3,undefined4 param_4
       if (uVar6 == puVar3[1]) {
         func_0202f144(param_1,puVar3,uVar4,param_2);
       }
-      uVar4 = uVar4 + 1;
+      uVar4 = 1 + uVar4;
     } while (uVar4 < uVar1);
   }
   if (*(int *)(param_1 + ((unsigned int)0x00000ac4)) == *(int *)(param_1 + ((unsigned int)0x00000ac4) + 0xc)) {
     *(int *)(param_1 + ((unsigned int)0x00000ac4) + 0xc) = *(int *)(param_1 + ((unsigned int)0x00000ac4) + 4) + 0x1000;
-    *(undefined1 *)(param_1 + ((unsigned int)0x0202d430)) = 0;
+    *(undefined1 *)(param_1 + ((unsigned int)0x00000bde)) = 0;
   }
-  iVar2 = ((unsigned int)0x0202d434);
-  if ((param_2 == 0) && (*(char *)(param_1 + ((unsigned int)0x0202d434)) != '\0')) {
+  iVar2 = ((unsigned int)0x00000bdc);
+  if ((param_2 == 0) && (*(char *)(param_1 + ((unsigned int)0x00000bdc)) != '\0')) {
     iVar5 = *(int *)((*(unsigned int *)0x0202d438) + 0xa4);
     if ((((*(char **)(iVar5 + 0x224) != (char *)0x0) && (**(char **)(iVar5 + 0x224) == '\0')) &&
         (*(short *)(param_1 + 0xe00) = *(short *)(param_1 + 0xe00) + 1,
@@ -137,8 +137,8 @@ void func_0202d334(int param_1,int param_2,undefined4 param_3,undefined4 param_4
     }
   }
   else {
-    *(undefined1 *)(param_1 + ((unsigned int)0x0202d434)) = 0;
+    *(undefined1 *)(param_1 + ((unsigned int)0x00000bdc)) = 0;
   }
-  *(undefined2 *)(param_1 + ((unsigned int)0x0202d43c)) = 0;
+  *(undefined2 *)(param_1 + ((unsigned int)0x00000e58)) = 0;
   return;
 }

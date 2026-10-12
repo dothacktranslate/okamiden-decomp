@@ -98,8 +98,8 @@ void func_0200f640(undefined4 param_1,undefined4 param_2)
   undefined4 uVar2;
   int iVar3;
 
-  uVar2 = ((unsigned int)0x0200f700);
   uVar1 = ((unsigned int)0x00051d23);
+  uVar2 = ((unsigned int)0x0200f700);
   iVar3 = func_0200f5bc(param_1,param_2,0,((unsigned int)0x0200f700));
   while (iVar3 != 0) {
     func_02008be8(uVar1);

@@ -175,39 +175,39 @@ void func_02002d24(short *param_1,undefined2 *param_2)
   sVar1 = param_1[2];
   uVar9 = (int)param_1[1] * (int)param_1[1];
   uVar6 = (int)*param_1 * (int)*param_1;
-  (*(unsigned int *)0x02002e44) = 2;
+  (*(short *)0x02002e44) = 2;
   *(undefined4 *)(puVar3 + 8) = 0;
-  uVar8 = (int)sVar1 * (int)sVar1;
-  uVar7 = uVar9 + (uVar6 + uVar8);
+  uVar7 = (int)sVar1 * (int)sVar1;
+  uVar8 = uVar9 + (uVar6 + uVar7);
   *(undefined4 *)(puVar3 + 10) = 0x1000000;
   iVar4 = ((int)uVar9 >> 0x1f) + ((int)uVar6 >> 0x1f) + (uint)CARRY4(uVar6,uVar9) +
-          ((int)uVar8 >> 0x1f) + (uint)CARRY4(uVar6 + uVar9,uVar8);
-  *(uint *)(puVar3 + 0xc) = uVar7;
+          ((int)uVar7 >> 0x1f) + (uint)CARRY4(uVar6 + uVar9,uVar7);
+  *(uint *)(puVar3 + 0xc) = uVar8;
   *(int *)(puVar3 + 0xe) = iVar4;
   puVar3[0x18] = 1;
-  *(uint *)(puVar3 + 0x1c) = uVar7 * 4;
-  *(uint *)(puVar3 + 0x1e) = iVar4 * 4 | uVar7 >> 0x1e;
+  *(uint *)(puVar3 + 0x1c) = uVar8 * 4;
+  *(uint *)(puVar3 + 0x1e) = iVar4 * 4 | uVar8 >> 0x1e;
   do {
   } while ((puVar3[0x18] & 0x8000) != 0);
-  uVar9 = (*(unsigned int *)0x02002e48);
+  uVar9 = (*(unsigned int *)0x040002b4);
   do {
-  } while ((((unsigned int *)0x02002e48)[-0xd] & 0x8000) != 0);
-  uVar8 = (uint)*param_1;
+  } while ((((unsigned int *)0x040002b4)[-0xd] & 0x8000) != 0);
+  uVar7 = (uint)*param_1;
   uVar6 = (uint)param_1[1];
-  uVar2 = (ulonglong)uVar9 * (ulonglong)(*(unsigned int *)0x02002e4c);
+  uVar2 = (ulonglong)uVar9 * (ulonglong)(*(unsigned int *)0x040002a0);
   iVar5 = (int)uVar2;
-  uVar7 = (uint)param_1[2];
-  iVar4 = ((unsigned int *)0x02002e4c)[1] * uVar9 + (*(unsigned int *)0x02002e4c) * ((int)uVar9 >> 0x1f) + (int)(uVar2 >> 0x20);
-  *param_2 = (short)((int)(iVar4 * uVar8 +
-                           iVar5 * ((int)uVar8 >> 0x1f) +
-                           (int)((ulonglong)uVar8 * (uVar2 & 0xffffffff) >> 0x20) + 0x1000) >> 0xd);
+  uVar8 = (uint)param_1[2];
+  iVar4 = ((unsigned int *)0x040002a0)[1] * uVar9 + (*(unsigned int *)0x040002a0) * ((int)uVar9 >> 0x1f) + (int)(uVar2 >> 0x20);
+  *param_2 = (short)((int)(iVar4 * uVar7 +
+                           iVar5 * ((int)uVar7 >> 0x1f) +
+                           (int)((ulonglong)uVar7 * (uVar2 & 0xffffffff) >> 0x20) + 0x1000) >> 0xd);
   param_2[1] = (short)((int)(iVar4 * uVar6 +
                              iVar5 * ((int)uVar6 >> 0x1f) +
                              (int)((ulonglong)uVar6 * (uVar2 & 0xffffffff) >> 0x20) + 0x1000) >> 0xd
                       );
-  param_2[2] = (short)((int)(iVar4 * uVar7 +
-                             iVar5 * ((int)uVar7 >> 0x1f) +
-                             (int)((ulonglong)uVar7 * (uVar2 & 0xffffffff) >> 0x20) + 0x1000) >> 0xd
+  param_2[2] = (short)((int)(iVar4 * uVar8 +
+                             iVar5 * ((int)uVar8 >> 0x1f) +
+                             (int)((ulonglong)uVar8 * (uVar2 & 0xffffffff) >> 0x20) + 0x1000) >> 0xd
                       );
   return;
 }

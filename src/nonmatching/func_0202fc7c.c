@@ -101,8 +101,8 @@ void func_0202fc7c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     if ((uVar1 & 1) == 0) {
       if ((uVar1 & 2) == 0) {
         if ((uVar1 & 4) != 0) {
-          iVar2 = (*(unsigned int *)0x0202fe0c);
           iVar4 = *(int *)(*(int *)(*(int *)(*(unsigned int *)0x0202fe08) + 0x5c) + 0x50);
+          iVar2 = (*(unsigned int *)0x0202fe0c);
           piVar3 = (int *)(iVar2 + 0x68);
           *(uint *)(iVar4 + 0x14) = *(uint *)(iVar4 + 0x14) | 0x80000000;
           if ((*(uint *)(param_1 + 0xf8) & 0x400) == 0) {
@@ -134,8 +134,8 @@ void func_0202fc7c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
         }
       }
       else {
-        iVar2 = (*(unsigned int *)0x0202fe0c);
         iVar4 = *(int *)(*(int *)(*(int *)(*(unsigned int *)0x0202fe08) + 0x5c) + 0x50);
+        iVar2 = (*(unsigned int *)0x0202fe0c);
         *(uint *)(iVar4 + 0x14) = *(uint *)(iVar4 + 0x14) | 0x80000000;
         if ((*(uint *)(param_1 + 0xf8) & 0x400) != 0) {
           *(int *)(*(int *)(param_1 + 0x48) + 100) =

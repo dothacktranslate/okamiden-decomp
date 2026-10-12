@@ -98,21 +98,21 @@ int func_02048f24(undefined4 param_1)
   int iVar2;
   char *pcVar3;
 
-  iVar1 = func_020461e8();
-  iVar2 = func_02046444(param_1,1);
-  if ((iVar2 == 4) && (pcVar3 = (char *)func_02046654(param_1,1,0), *pcVar3 == '#')) {
-    func_02046868(param_1,iVar1 + -1);
+  iVar2 = func_020461e8();
+  iVar1 = func_02046444(param_1,1);
+  if ((iVar1 == 4) && (pcVar3 = (char *)func_02046654(param_1,1,0), *pcVar3 == '#')) {
+    func_02046868(param_1,iVar2 + -1);
     return 1;
   }
-  iVar2 = func_02047a64(param_1,1);
-  if (iVar2 < 0) {
-    iVar2 = iVar2 + iVar1;
+  iVar1 = func_02047a64(param_1,1);
+  if (iVar1 < 0) {
+    iVar1 = iVar1 + iVar2;
   }
-  else if (iVar1 < iVar2) {
-    iVar2 = iVar1;
+  else if (iVar1 > iVar2) {
+    iVar1 = iVar2;
   }
-  if (iVar2 < 1) {
+  if (iVar1 < 1) {
     func_02047550(param_1,1,((unsigned int)0x02048fbc));
   }
-  return iVar1 - iVar2;
+  return iVar2 - iVar1;
 }

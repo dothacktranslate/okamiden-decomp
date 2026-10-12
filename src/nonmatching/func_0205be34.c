@@ -131,7 +131,7 @@ undefined4 func_0205be34(undefined4 param_1,int param_2,undefined4 param_3,undef
       iVar2 = 0;
       iVar4 = param_2 + iVar5 * 0x10;
       do {
-        uVar3 = local_68[iVar9 * 4 + iVar2];
+        uVar3 = local_68[iVar9 + iVar2 * 4];
         local_68[iVar9 * 4 + iVar2] = local_68[iVar5 * 4 + iVar2];
         local_68[iVar5 * 4 + iVar2] = uVar3;
         uVar7 = *(undefined4 *)(iVar8 + iVar2 * 4);

@@ -95,7 +95,7 @@ undefined4 func_0205c208(undefined4 param_1,int param_2,uint param_3,undefined4 
   if (param_2 != 0) {
     do {
       if (((param_3 < *(byte *)(param_2 + 0x19)) &&
-          (uVar1 = *(ushort *)(param_2 + param_3 * 2 + 0x1a), (uVar1 & 0x300) == 0x100)) &&
+          (uVar1 = *(ushort *)(param_3 + param_2 * 2 + 0x1a), (uVar1 & 0x300) == 0x100)) &&
          (pcVar3 = *(code **)(param_2 + 0xc), pcVar3 != (code *)0x0)) {
         (*pcVar3)(param_1,param_2,uVar1 & 0xff,pcVar3,param_4);
         uVar2 = 1;

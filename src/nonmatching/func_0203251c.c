@@ -101,13 +101,13 @@ void func_0203251c(int param_1,int param_2,undefined4 param_3)
 
 {
   int *piVar1;
-  int iVar2;
+  uint iVar2;
   int iVar3;
   undefined4 uVar4;
   int iVar5;
   int local_20;
 
-  (*(unsigned short *)0x020326ec) = 2;
+  (*(unsigned short *)0x04000280) = 2;
   func_02032490();
   iVar2 = func_020324ec(param_2,((unsigned int)0x020326f0),4);
   if (iVar2 == 0) {

@@ -91,8 +91,8 @@ void func_0201ad90(undefined1 *param_1,byte *param_2,undefined2 param_3,int para
 {
   byte *pbVar1;
   byte bVar2;
-  int iVar3;
   int iVar4;
+  int iVar3;
 
   *(undefined2 *)(param_1 + 2) = param_3;
   *param_1 = 0;
@@ -111,12 +111,12 @@ void func_0201ad90(undefined1 *param_1,byte *param_2,undefined2 param_3,int para
   if (bVar2 < 5) {
     return;
   }
-  if (bVar2 < 6) {
-    pbVar1 = param_2 + 1;
+  if (bVar2 <= 5) {
     bVar2 = param_2[1];
+    pbVar1 = param_2 + 1;
     while (bVar2 != 0) {
       if (bVar2 != 0x30) goto LAB_0201ae20;
-      pbVar1 = pbVar1 + 1;
+      pbVar1++;
       bVar2 = *pbVar1;
     }
     if ((param_1[iVar4 + 4] & 1) == 0) {

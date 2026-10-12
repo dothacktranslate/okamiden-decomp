@@ -102,13 +102,13 @@ void func_02067080(void)
   int iVar6;
   int iVar7;
 
-  iVar3 = ((unsigned int)0x02067188);
-  iVar5 = ((unsigned int)0x02067184);
+  iVar3 = ((unsigned int)0x02067184);
+  iVar5 = ((unsigned int)0x02067188);
   iVar7 = 0;
   do {
-    iVar6 = iVar7 * 0x17c + iVar3;
-    if (*(int *)(iVar6 + 0x118) << 0x1f < 0) {
-      if (*(int *)(iVar6 + 0x11c) == 0) {
+    iVar6 = iVar7 * 0x17c + iVar5;
+    if (*(int *)(0x118 + iVar6) << 0x1f < 0) {
+      if (*(int *)(0x11c + iVar6) == 0) {
 LAB_0206716c:
         func_02067508(iVar6);
       }
@@ -125,9 +125,9 @@ LAB_0206716c:
         if (*(int *)(iVar6 + 0x118) << 0x1e < 0) {
           func_02068620(iVar6 + 0xf0);
           iVar2 = func_020685ec(iVar6 + 0xf0);
-          sVar1 = *(short *)(iVar5 + *(int *)(iVar6 + 0x15c) * 2);
-          iVar2 = (int)*(short *)(iVar5 + *(int *)(iVar6 + 0x160) * 2) +
-                  (int)*(short *)(iVar5 + (iVar2 >> 8) * 2) + (int)sVar1;
+          sVar1 = *(short *)(iVar3 + *(int *)(iVar6 + 0x15c) * 2);
+          iVar2 = (int)*(short *)(iVar3 + *(int *)(iVar6 + 0x160) * 2) +
+                  (int)*(short *)(iVar3 + (iVar2 >> 8) * 2) + (int)sVar1;
           if (iVar2 != *(int *)(iVar6 + 0x164)) {
             func_02064f40(iVar6,iVar2);
             *(int *)(iVar6 + 0x164) = iVar2;

@@ -133,7 +133,7 @@ void func_02058dc0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4
   if (8 <= iVar15) {
     iVar15 = 8;
   }
-  if (7 < iVar4) {
+  if (8 <= iVar4) {
     iVar4 = 8;
   }
   if (0 < iVar5) {

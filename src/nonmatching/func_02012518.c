@@ -104,10 +104,10 @@ bool func_02012518(int param_1,int *param_2,int param_3,int param_4,undefined4 *
   short local_28;
   short local_26;
 
-  iVar10 = 0;
   iVar5 = 0;
-  psVar7 = (short *)*param_5;
+  iVar10 = 0;
   iVar8 = param_5[1];
+  psVar7 = (short *)*param_5;
   iVar6 = 0;
   bVar11 = true;
   do {
@@ -116,12 +116,12 @@ bool func_02012518(int param_1,int *param_2,int param_3,int param_4,undefined4 *
     if (*psVar7 == -1) {
       if (!bVar11) {
         if (iVar6 - 1U != (uint)*(ushort *)(param_1 + iVar10 * 2 + -2)) {
-          *(short *)(param_1 + iVar10 * 2) = (short)(iVar6 - 1U);
+          *(short *)(iVar10 + param_1 * 2) = (short)(iVar6 - 1U);
           iVar10 = iVar10 + 1;
           if (param_3 <= iVar10) goto LAB_0201263c;
         }
         iVar5 = iVar5 + 1;
-        *(undefined2 *)(param_1 + iVar10 * 2) = uVar1;
+        *(undefined2 *)(iVar10 + param_1 * 2) = uVar1;
         iVar10 = iVar10 + 1;
         bVar11 = true;
         if (param_4 <= iVar5) {

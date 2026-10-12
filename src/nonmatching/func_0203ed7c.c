@@ -97,8 +97,8 @@ void func_0203ed7c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   undefined4 *puVar1;
   int iVar2;
   int iVar3;
-  undefined4 local_78;
   undefined4 local_74;
+  undefined4 local_78;
   undefined4 local_70;
   undefined4 local_6c;
   undefined4 local_68;
@@ -112,7 +112,7 @@ void func_0203ed7c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   uint local_1c;
   undefined4 uStack_18;
 
-  if (((((*(uint *)(*(unsigned int *)0x0203ef58) & 1) == 0) || ((*(uint *)(param_1 + 0xc) & 0x20000000) != 0)) &&
+  if (((((*(short *)(*(unsigned int *)0x0203ef58) & 1) == 0) || ((*(uint *)(param_1 + 0xc) & 0x20000000) != 0)) &&
       ((*(uint *)((*(unsigned int *)0x0203ef5c) + 0x124) & 0x40000) == 0)) &&
      (uStack_18 = param_4, func_0205bc9c(), 0 < *(short *)(param_1 + 0x10))) {
     iVar3 = 0;
@@ -142,7 +142,7 @@ void func_0203ed7c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     func_0205e0c0(local_48[8],&local_24,2);
     local_48[8] = ((unsigned int)0x00293130);
     local_20 = 0;
-    local_24 = ((unsigned int)0x0203ef68);
+    local_24 = ((unsigned int)0x0000ffff);
     iVar2 = (int)*(short *)(param_1 + 0x10) >> 0x1f;
     local_1c = ((unsigned int)0x0203ef64) |
                (((uint)(*(short *)(param_1 + 0x10) * 0x8000000 + iVar2) >> 0x1b | iVar2 << 5) -
@@ -172,7 +172,7 @@ void func_0203ed7c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
                     ((local_48[iVar3 * 2 + 1] << 8) >> 0x10) << 0x10;
       func_0205e0c0(0x11,0,0);
       func_0205e0c0(0x1c,&local_64,3);
-      func_0205e0c0(((unsigned int)0x0203ef6c),local_48 + 8,2);
+      func_0205e0c0(((unsigned int)0x00002422),local_48 + 8,2);
       local_74 = 1;
       func_0205e0c0(0x12,&local_74,1);
       iVar3 = iVar3 + 1;
