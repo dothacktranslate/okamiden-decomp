@@ -87,13 +87,13 @@ extern int LZCOUNT();
 void func_0204fbc8(int param_1,undefined4 param_2)
 
 {
-  *(undefined4 *)(param_1 + 0x10) = param_2;
+  *(undefined4 *)(0x10 + param_1) = param_2;
   *(undefined4 *)(param_1 + 0x20) = 0;
   *(undefined4 *)(param_1 + 0x2c) = 0;
   *(undefined4 *)(param_1 + 0x60) = 0;
   *(undefined4 *)(param_1 + 0x44) = 0;
   *(undefined1 *)(param_1 + 0x38) = 0;
-  *(undefined4 *)(param_1 + 0x3c) = 0;
+  *(signed char *)(param_1 + 0x3c) = 0;
   *(undefined1 *)(param_1 + 0x39) = 1;
   *(undefined4 *)(param_1 + 0x40) = 0;
   *(undefined4 *)(param_1 + 0x58) = 0;

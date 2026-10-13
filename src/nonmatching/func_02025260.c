@@ -102,8 +102,8 @@ undefined4 func_02025260(undefined4 param_1)
   iVar1 = func_020465d8(param_1,1);
   switch(iVar1 - ((unsigned int)0x00000301)) {
   case 0:
-    *(undefined4 *)(iVar3 + 0xb8) = 0;
-    *(uint *)(iVar3 + 0xbc) = *(uint *)(iVar3 + 0xbc) & 0xfffffffe;
+    *(undefined4 *)(0xb8 + iVar3) = 0;
+    *(uint *)(iVar3 + 0xbc) = *(unsigned short *)(iVar3 + 0xbc) & 0xfffffffe;
     uVar2 = 0xffffffff;
     break;
   case 1:

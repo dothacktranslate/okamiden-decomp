@@ -104,7 +104,7 @@ undefined4 func_020167e0(int param_1,undefined4 param_2,undefined4 param_3,undef
     return 0;
   }
   if (2 < (*(uint *)(param_1 + 8) & 7)) {
-    *(uint *)(param_1 + 8) = *(uint *)(param_1 + 8) & 0xfffffff8 | 2;
+    *(uint *)(param_1 + 8) = *(short *)(param_1 + 8) & 0xfffffff8 | 2;
   }
   if ((*(uint *)(param_1 + 8) & 7) == 2) {
     *(undefined4 *)(param_1 + 0x28) = 0;

@@ -181,7 +181,7 @@ switchD_0200b250_default:
   uVar8 = *param_3 + 1;
   *param_3 = uVar8;
   param_3[1] = 0;
-  if (uVar7 <= uVar8) {
+  if (uVar8 >= uVar7) {
     return 0;
   }
   goto LAB_0200b228;

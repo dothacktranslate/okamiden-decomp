@@ -123,7 +123,7 @@ void func_0204d814(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   bVar6 = SBORROW4(iVar4,iVar3);
   iVar2 = iVar4 + iVar2 * -4;
   bVar5 = iVar4 == iVar3;
-  if (iVar3 < iVar4) {
+  if (iVar4 > iVar3) {
     bVar6 = SBORROW4(iVar4,0xaa);
     iVar2 = iVar4 + -0xaa;
     bVar5 = iVar4 == 0xaa;

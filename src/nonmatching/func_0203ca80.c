@@ -94,9 +94,9 @@ uint func_0203ca80(int param_1,undefined4 param_2,int param_3,undefined4 param_4
 {
   uint uVar1;
   int iVar2;
+  int local_8;
   int local_20;
   undefined4 uStack_1c;
-  int local_8;
   undefined4 uStack_4;
 
   iVar2 = *(unsigned char *)(param_1 + 0x14) + *(int *)(*(unsigned char *)(0x14 + param_1) + 4);

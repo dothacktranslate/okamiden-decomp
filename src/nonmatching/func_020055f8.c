@@ -175,7 +175,7 @@ void func_020055f8(int param_1)
     if (param_1 < 0x20) {
       if (param_1 <= 0) {
         if (param_1 == 0) {
-          _REG_A_DISPCNT = 0xbfffffff & _REG_A_DISPCNT;
+          _REG_A_DISPCNT = _REG_A_DISPCNT & 0xbfffffff;
         }
       }
       else if (param_1 == 0x10) {
@@ -186,7 +186,7 @@ void func_020055f8(int param_1)
     }
   }
   else {
-    if (param_1 < 0x41) {
+    if (param_1 <= 0x40) {
       if (param_1 == 0x40) {
         _REG_A_DISPCNT = _REG_A_DISPCNT | 0x40000000;
         (*(unsigned char *)0x04000246) = 0x8c;

@@ -126,7 +126,7 @@ void func_02059894(undefined2 *param_1,int param_2,int param_3,short param_4,sho
   if (0 < param_3) {
     do {
       if (param_8 == 0x300) {
-        uVar8 = *(uint *)(param_2 + iVar10 * 8);
+        uVar8 = *(short *)(param_2 + iVar10 * 8);
         iVar3 = (int)(uVar8 & uVar7 & 0xc000) >> 0xe;
         iVar1 = ((uVar8 & uVar7) >> 0x1e) * 2;
         iVar2 = ((uVar8 & 0xff) - *(ushort *)(iVar1 + (iVar5 + iVar3) * 8) / 2) * 0x10000;
@@ -141,7 +141,7 @@ void func_02059894(undefined2 *param_1,int param_2,int param_3,short param_4,sho
           uVar9 = (uint)(short)((uint)iVar2 >> 0x10);
         }
         *(uint *)(param_2 + iVar10 * 8) =
-             *(uint *)(param_2 + iVar10 * 8) & ((unsigned int)0x02059aa4) | uVar9 & 0xff | (uVar8 & 0x1ff) << 0x10
+             *(uint *)(param_2 + iVar10 * 8) & ((unsigned int)0xfe00ff00) | uVar9 & 0xff | (uVar8 & 0x1ff) << 0x10
         ;
       }
       iVar10 = iVar10 + 1;

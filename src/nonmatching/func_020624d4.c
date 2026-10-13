@@ -96,12 +96,12 @@ void func_020624d4(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   longlong lVar4;
   int iVar5;
   int iVar6;
-  uint uVar7;
   uint uVar8;
-  uint uVar9;
+  int uVar7;
   uint uVar10;
+  uint uVar9;
 
-  iVar6 = (uint)*(ushort *)(param_2 + 0x2c) << 0xc;
+  iVar6 = (uint)*(ushort *)(0x2c + param_2) << 0xc;
   iVar1 = (uint)*(ushort *)(param_2 + 0x2e) << 0xc;
   func_020029f4(iVar1,iVar6,(uint)*(ushort *)(param_2 + 0x2c),param_4,param_4);
   lVar3 = (longlong)*(int *)(param_2 + 0x18) * (longlong)(int)*(short *)(param_2 + 0x22);

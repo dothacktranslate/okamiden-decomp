@@ -141,7 +141,7 @@ undefined4 func_0203b894(uint *param_1,int param_2)
           iVar7 = 0;
         }
         else {
-          iVar7 = (*(code *)(*(unsigned int *)0x0203ba10))(iVar8,1,0);
+          iVar7 = (*(code *)(*(unsigned short *)0x0203ba10))(iVar8,1,0);
           if (iVar7 == 0) {
             bVar2 = false;
           }

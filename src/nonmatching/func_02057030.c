@@ -107,7 +107,7 @@ undefined4 func_02057030(uint *param_1,int param_2)
 LAB_0205718c:
   do {
     do {
-      if ((param_1[3] == 0) || ((int)param_1[4] < (int)((uint)*(ushort *)(*param_1 + 4) * 0x1000)))
+      if ((param_1[3] == 0) || ((int)param_1[4] < (int)((uint)*(unsigned char *)(*param_1 + 4) * 0x1000)))
       {
         bVar6 = false;
       }
@@ -156,7 +156,7 @@ LAB_0205718c:
   } while (param_1[8] != 3);
   goto LAB_02057180;
 LAB_02057170:
-  if ((*param_1 - *(int *)(param_1[7] + 0xc) & 0x7ffff) >> 3 == (uint)(ushort)param_1[0xb]) {
+  if ((*param_1 - *(signed char *)(param_1[7] + 0xc) & 0x7ffff) >> 3 == (uint)(ushort)param_1[0xb]) {
 LAB_02057180:
     (*(code *)param_1[10])(param_1[9]);
   }

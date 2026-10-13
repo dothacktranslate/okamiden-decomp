@@ -180,7 +180,7 @@ void func_02005b04(int param_1)
     if (param_1 != 0x180) goto LAB_02005b80;
     (*(unsigned char *)0x04000249) = 0x81;
   }
-  (*(unsigned char *)0x02005b9c) = 0x81;
+  (*(unsigned char *)0x04000248) = 0x81;
 LAB_02005b80:
   func_0200522c((*(unsigned short *)0x02005b90));
   return;

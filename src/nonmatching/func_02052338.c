@@ -100,13 +100,13 @@ int func_02052338(int param_1,int *param_2)
 
   iVar6 = *param_2;
   iVar8 = 0;
-  iVar4 = 0;
   iVar5 = 0;
+  iVar4 = 0;
   iVar3 = 0;
   iVar7 = 1;
   if (0 < iVar6) {
     do {
-      iVar2 = *(int *)(param_1 + iVar3 * 4);
+      iVar2 = *(int *)(iVar3 + param_1 * 4);
       bVar10 = iVar2 == 0;
       bVar9 = false;
       if (0 < iVar2) {
@@ -117,14 +117,14 @@ int func_02052338(int param_1,int *param_2)
         bVar10 = iVar8 == iVar1;
       }
       if (!bVar10 && iVar2 < 0 == bVar9) {
-        iVar4 = iVar8;
-        iVar5 = iVar7;
+        iVar5 = iVar8;
+        iVar4 = iVar7;
       }
       if (iVar6 == iVar8) break;
       iVar7 = iVar7 * 2;
-      iVar3 = iVar3 + 1;
+      iVar3 = 1 + iVar3;
     } while (iVar7 / 2 < iVar6);
   }
-  *param_2 = iVar5;
-  return iVar4;
+  *param_2 = iVar4;
+  return iVar5;
 }

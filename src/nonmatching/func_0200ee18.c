@@ -99,14 +99,14 @@ func_0200ee18(undefined2 *param_1,undefined4 param_2,undefined4 param_3,undefine
   sVar1 = *(short *)(((unsigned int)0x0200eea8) + 0x58);
   sVar2 = *(short *)(((unsigned int)0x0200eea8) + 0x5a);
   sVar3 = *(short *)(((unsigned int)0x0200eea8) + 0x5e);
-  bVar5 = (sVar1 == 0 && sVar3 == 0) && sVar2 == 0;
-  if ((sVar1 == 0 && sVar3 == 0) && sVar2 == 0) {
+  bVar5 = (!(sVar1 > 0U) && sVar3 == 0) && sVar2 == 0;
+  if ((sVar1 <= 0U && sVar3 == 0) && sVar2 == 0) {
     bVar5 = *(unsigned char *)(((unsigned int)0x0200eea8) + 0x60) == 0;
   }
   if ((!bVar5) &&
      (iVar4 = func_0200f0a4(param_1,sVar1,sVar2,*(undefined1 *)(((unsigned int)0x0200eea8) + 0x5c),
                            *(undefined1 *)(((unsigned int)0x0200eea8) + 0x5d),sVar3,
-                           *(short *)(((unsigned int)0x0200eea8) + 0x60),*(undefined1 *)(((unsigned int)0x0200eea8) + 0x62),
+                           *(unsigned char *)(((unsigned int)0x0200eea8) + 0x60),*(undefined1 *)(((unsigned int)0x0200eea8) + 0x62),
                            *(undefined1 *)(((unsigned int)0x0200eea8) + 99),param_4), iVar4 == 0)) {
     return 1;
   }

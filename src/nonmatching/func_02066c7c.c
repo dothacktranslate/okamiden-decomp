@@ -171,15 +171,15 @@ void func_02066c7c(undefined4 param_1,undefined4 param_2)
 {
   undefined4 uVar1;
   int iVar2;
-  int iVar4;
   int iVar3;
+  int iVar4;
 
   uVar1 = ((unsigned int)0x02066d68);
   if ((*(unsigned int *)0x02066d64) != 0) {
     func_02066d80(param_2);
     return;
   }
-  (*(unsigned int *)0x02066d64) = 1;
+  (*(unsigned short *)0x02066d64) = 1;
   func_020561c4(uVar1,0);
   iVar2 = ((unsigned int)0x02066d6c);
   for (iVar3 = 0; iVar3 < 8; iVar3 = iVar3 + 1) {
@@ -190,7 +190,7 @@ void func_02066c7c(undefined4 param_1,undefined4 param_2)
   ((unsigned int *)0x02066d64)[2] = ((unsigned int)0x02066d74);
   for (iVar3 = 0; iVar3 < 4; iVar3 = iVar3 + 1) {
     iVar4 = iVar3 * 0x17c + iVar2;
-    *(uint *)(iVar4 + 0x118) = *(uint *)(iVar4 + 0x118) & 0xfffffffe;
+    *(unsigned short *)(iVar4 + 0x118) = *(uint *)(iVar4 + 0x118) & 0xfffffffe;
     func_0200c8e0(iVar4 + 100);
     func_02064c38(iVar4);
     *(int *)(iVar4 + 0x150) = iVar3;

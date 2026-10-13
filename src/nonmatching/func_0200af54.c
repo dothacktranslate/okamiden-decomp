@@ -100,9 +100,9 @@ void func_0200af54(undefined4 *param_1,undefined4 param_2,undefined4 param_3,und
   *param_1 = 0;
   do {
     iVar2 = 0;
-    param_1[iVar3 * 9 + 0x10] = 0;
+    param_1[iVar3 * 0x10 + 9] = 0;
     do {
-      iVar1 = iVar2 * 2;
+      iVar1 = 2 * iVar2;
       iVar2 = iVar2 + 1;
       *(undefined2 *)((int)param_1 + iVar1 + iVar3 * 0x24 + 0x20) = 0xffff;
     } while (iVar2 < 0x10);

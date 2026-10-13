@@ -109,8 +109,8 @@ void func_02020744(int param_1,int param_2,byte *param_3)
   byte *pbVar10;
   code *pcVar11;
   int iVar12;
-  undefined1 auStack_c4 [4];
   int local_c0;
+  undefined1 auStack_c4 [4];
   int local_bc;
   int local_b8;
   int local_b4;
@@ -264,7 +264,7 @@ switchD_020207ac_default:
   case 9:
     uVar4 = func_020201f8(pbVar10 + 1,&local_70);
     uVar4 = func_020201f8(uVar4,&local_6c);
-    uVar4 = func_0202027c(uVar4,&local_68);
+    uVar4 = func_020201f8(uVar4,&local_68);
     puVar9 = (undefined4 *)func_0202027c(uVar4,&local_64);
     pcVar11 = (code *)*puVar9;
     if ((bVar1 & 0x20) == 0) {

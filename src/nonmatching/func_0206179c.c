@@ -97,8 +97,8 @@ void func_0206179c(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   uint uVar6;
   int iVar5;
   uint uVar8;
-  uint uVar7;
   uint uVar9;
+  uint uVar7;
 
   iVar5 = (uint)*(ushort *)(param_2 + 0x2c) << 0xc;
   iVar1 = (uint)*(ushort *)(param_2 + 0x2e) << 0xc;

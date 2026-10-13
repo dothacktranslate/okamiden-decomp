@@ -97,7 +97,7 @@ void func_02062834(uint *param_1,int param_2)
   longlong lVar5;
   ulonglong uVar6;
   int iVar7;
-  int iVar8;
+  uint iVar8;
   uint uVar9;
   uint uVar10;
   uint uVar11;
@@ -111,36 +111,36 @@ void func_02062834(uint *param_1,int param_2)
   func_020029f4(iVar1,iVar8);
   sVar3 = *(short *)(param_2 + 0x22);
   iVar7 = *(int *)(param_2 + 0x18);
-  uVar12 = *(uint *)(param_2 + 0x1c);
+  uVar9 = *(uint *)(param_2 + 0x1c);
   lVar4 = (longlong)iVar7 * (longlong)(int)sVar3;
   *param_1 = (uint)lVar4 >> 0xc | (int)((ulonglong)lVar4 >> 0x20) << 0x14;
-  lVar4 = (longlong)(int)uVar12 * (longlong)(int)sVar3;
+  lVar4 = (longlong)(int)uVar9 * (longlong)(int)sVar3;
   uVar10 = (uint)lVar4 >> 0xc | (int)((ulonglong)lVar4 >> 0x20) << 0x14;
   iVar14 = (int)*(short *)(param_2 + 0x20);
   param_1[5] = uVar10;
   lVar4 = (longlong)iVar7 * (longlong)iVar14;
   uVar11 = (uint)lVar4 >> 0xc | (int)((ulonglong)lVar4 >> 0x20) << 0x14;
   iVar7 = func_02002964();
-  param_1[1] = (int)(((uint)((longlong)(int)uVar12 * (longlong)iVar14) >> 0xc |
-                     (int)((ulonglong)((longlong)(int)uVar12 * (longlong)iVar14) >> 0x20) << 0x14) *
+  param_1[1] = (int)(((uint)((longlong)(int)uVar9 * (longlong)iVar14) >> 0xc |
+                     (int)((ulonglong)((longlong)(int)uVar9 * (longlong)iVar14) >> 0x20) << 0x14) *
                     iVar7) >> 0xc;
   func_020029f4(iVar8,iVar1);
   uVar2 = *(ushort *)(param_2 + 0x2c);
   lVar4 = (longlong)*(int *)(param_2 + 0x24) * (longlong)iVar14;
-  uVar9 = (uint)lVar4;
+  uVar12 = (uint)lVar4;
   uVar13 = *(uint *)(param_2 + 0x18);
   lVar5 = (longlong)*(int *)(param_2 + 0x28) * (longlong)(int)*(short *)(param_2 + 0x22);
   uVar15 = (uint)lVar5;
   iVar8 = (int)((ulonglong)lVar4 >> 0x20) -
-          ((int)((ulonglong)lVar5 >> 0x20) + (uint)(uVar9 < uVar15));
-  uVar9 = uVar9 - uVar15 >> 0xc | iVar8 * 0x100000;
+          ((int)((ulonglong)lVar5 >> 0x20) + (uint)(uVar12 < uVar15));
+  uVar12 = uVar12 - uVar15 >> 0xc | iVar8 * 0x100000;
   uVar6 = (longlong)(int)*(short *)(param_2 + 0x22) * (longlong)*(int *)(param_2 + 0x24) +
           (longlong)*(int *)(param_2 + 0x28) * (longlong)iVar14 >> 0xc;
-  lVar4 = (ulonglong)uVar12 * (ulonglong)uVar9;
+  lVar4 = (ulonglong)uVar9 * (ulonglong)uVar12;
   param_1[0xd] = -(uint)*(ushort *)(param_2 + 0x2e) *
                  (uVar10 + ((uint)lVar4 >> 0xc |
-                           ((iVar8 >> 0xc) * uVar12 +
-                           uVar9 * ((int)uVar12 >> 0x1f) + (int)((ulonglong)lVar4 >> 0x20)) *
+                           ((iVar8 >> 0xc) * uVar9 +
+                           uVar12 * ((int)uVar9 >> 0x1f) + (int)((ulonglong)lVar4 >> 0x20)) *
                            0x100000) + -0x1000) * 0x10;
   lVar4 = (ulonglong)uVar13 * (uVar6 & 0xffffffff);
   param_1[0xc] = (uint)uVar2 *

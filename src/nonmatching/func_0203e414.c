@@ -159,7 +159,7 @@ void func_0203e414(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   do {
     func_0205e0c0(0x15,0,0);
     iVar1 = iVar2 >> 0x1f;
-    iVar1 = ((uint)(iVar2 * -0x80000000 + iVar1) >> 0x1f | iVar1 << 1) - iVar1;
+    iVar1 = ((uint)(iVar2 * -iVar1 + 0x80000000) >> 0x1f | iVar1 << 1) - iVar1;
     local_7c = local_60[iVar1 * 3];
     local_78 = local_60[iVar1 * 3 + 1];
     local_74 = local_60[iVar1 * 3 + 2];

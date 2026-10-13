@@ -169,7 +169,7 @@ void func_0200a75c(void)
 {
   int *piVar1;
   undefined4 uVar2;
-  undefined4 *puVar3;
+  undefined2 *puVar3;
   int iVar4;
   int iVar5;
 
@@ -178,8 +178,8 @@ void func_0200a75c(void)
   (*(unsigned short *)0x0200a818) = ((unsigned int)0x0200a814);
   iVar5 = 0;
   while (iVar5 < 0xff) {
-    *(unsigned short *)(iVar5 + iVar4 * 0x18) = (1 + iVar5) * iVar4 + 0x18;
-    iVar5 = iVar5 + 1;
+    *(unsigned short *)(iVar5 + iVar4 * 0x18) = (iVar5 + 1) * iVar4 + 0x18;
+    iVar5 = 1 + iVar5;
   }
   *(undefined4 *)(((unsigned int)0x0200a81c) + 0x7e8) = 0;
   piVar1 = ((unsigned int)0x0200a818);

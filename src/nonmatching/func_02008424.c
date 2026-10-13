@@ -104,7 +104,7 @@ void func_02008424(int param_1)
           ((int)((ulonglong)uVar5 >> 0x20) + (uint)(*(uint *)(param_1 + 0xc) < (uint)uVar5));
   func_020064cc(1,((unsigned int)0x020084a0),0);
   puVar1 = ((unsigned int)0x04000104);
-  uVar2 = ((unsigned int)0x020084a4);
+  uVar2 = ((unsigned int)0x0000fffe);
   if ((-2 <= iVar3) && (uVar2 = 0, iVar3 < (int)(uint)(uVar4 < 0x10000))) {
     uVar2 = ~uVar4 & 0xffff;
   }

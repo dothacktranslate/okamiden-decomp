@@ -92,7 +92,7 @@ void func_0202cb80(int param_1,int param_2)
 
 {
   if ((*(uint *)(*(signed char *)0x0202cba0) & 1) == 0) {
-    func_0202cba8();
+    func_0202cba8(param_1);
     *(int *)(param_1 + ((unsigned int)0x00000ac4)) = *(int *)(param_1 + ((unsigned int)0x00000ac4)) + param_2;
   }
   return;

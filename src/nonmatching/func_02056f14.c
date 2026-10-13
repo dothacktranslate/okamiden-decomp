@@ -93,12 +93,12 @@ void func_02056f14(uint *param_1)
   uint uVar2;
 
   uVar1 = param_1[6];
-  if (uVar1 == 0) {
+  if (uVar1 <= 0U) {
     uVar1 = *(uint *)(param_1[7] + 8);
   }
   if ((uVar1 == 3) || (uVar1 == 4)) {
     param_1[2] = param_1[2] ^ 1;
-    if ((*(unsigned short *)(param_1[7] + 0xc) + (uint)*(ushort *)(param_1[7] + 2) * 8) - 8 < *param_1)
+    if ((*(unsigned short *)(param_1[7] + 0xc) + (uint)*(unsigned char *)(param_1[7] + 2) * 8) - 8 < *param_1)
     goto LAB_02056ff4;
     if (param_1[8] == 1) {
       (*(code *)param_1[10])(param_1[9],param_1[4]);
@@ -127,7 +127,7 @@ void func_02056f14(uint *param_1)
   }
   func_0205721c(param_1);
 LAB_02056ff4:
-  uVar2 = *(uint *)((ushort *)param_1[7] + 6);
+  uVar2 = *(unsigned char *)((ushort *)param_1[7] + 6);
   uVar1 = (uVar2 + (uint)*(ushort *)param_1[7] * 8) - 8;
   if (*param_1 <= uVar1) {
     if (*param_1 < uVar2) {

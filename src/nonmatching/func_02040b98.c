@@ -118,8 +118,8 @@ void func_02040b98(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   uint local_1c;
   undefined4 uStack_18;
 
-  local_50 = 0;
   uStack_44 = 0;
+  local_50 = 0;
   local_38 = 0;
   uStack_2c = 0;
   local_40 = *(int *)(param_1 + 100);
@@ -169,7 +169,7 @@ void func_02040b98(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       local_28 = 0;
       do {
         func_0205e0c0(0x11,0,0);
-        func_0205e0c0(0x1c,local_78 + iVar2 * 3 + 8,3);
+        func_0205e0c0(0x1c,local_78 + iVar2 + 8 * 3,3);
         func_0205e0c0(0x24,&local_28,1);
         local_8c = 1;
         func_0205e0c0(0x12,&local_8c,1);

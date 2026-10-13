@@ -171,11 +171,11 @@ void func_02002d24(short *param_1,undefined2 *param_2)
   uint uVar8;
   uint uVar9;
 
-  puVar3 = ((unsigned int)0x02002e44);
+  puVar3 = ((unsigned int)0x04000280);
   sVar1 = param_1[2];
   uVar9 = (int)param_1[1] * (int)param_1[1];
   uVar6 = (int)*param_1 * (int)*param_1;
-  (*(short *)0x02002e44) = 2;
+  (*(short *)0x04000280) = 2;
   *(undefined4 *)(puVar3 + 8) = 0;
   uVar7 = (int)sVar1 * (int)sVar1;
   uVar8 = uVar9 + (uVar6 + uVar7);

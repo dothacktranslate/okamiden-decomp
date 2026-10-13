@@ -101,7 +101,7 @@ void func_0205bb5c(void)
   (*(unsigned int *)0x0205bc60) = ((unsigned int)0x17101610);
   puVar1[1] = 0;
   puVar1[0x12] = 2;
-  uVar2 = ((unsigned int)0x0205bc68);
+  uVar2 = ((unsigned int)0x60293130);
   puVar1[0x1f] = ((unsigned int)0x32323232);
   puVar1[0x24] = uVar2;
   uVar2 = ((unsigned int)0x002a1b19);
@@ -110,7 +110,7 @@ void func_0205bb5c(void)
   puVar1[0x2e] = uVar2;
   func_02001460(uVar3);
   func_02001c28(((unsigned int)0x0205bc78));
-  iVar4 = ((unsigned int)0x0205bc80);
+  iVar4 = ((unsigned int)0x40000200);
   puVar1[0x20] = ((unsigned int)0x2d8b62d8);
   iVar5 = ((unsigned int)0xc0080000);
   puVar1[0x21] = iVar4;
@@ -119,7 +119,7 @@ void func_0205bb5c(void)
   puVar1[0x23] = iVar5;
   puVar1[0x25] = uVar2;
   puVar1[0x26] = uVar2;
-  puVar1[0x27] = ((unsigned int)0x0205bc8c);
+  puVar1[0x27] = ((unsigned int)0x001f008f);
   puVar1[0x28] = iVar5 + -0x90000;
   puVar1[0x2a] = ((unsigned int)0x00007fff);
   uVar2 = ((unsigned int)0x800003e0);

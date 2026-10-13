@@ -122,7 +122,7 @@ void func_020307f8(undefined4 *param_1,int param_2,int param_3,undefined4 param_
               (longlong)*(int *)(param_3 + uVar6 * 4) * (longlong)*(int *)(param_2 + uVar5 * 0x10) +
               (longlong)*(int *)(iVar4 + 4) * (longlong)*(int *)(iVar3 + 0x10);
       uVar2 = func_02030454((int)lVar1,(int)((ulonglong)lVar1 >> 0x20),0xc);
-      local_68[uVar5 * 4 + uVar6] = uVar2;
+      local_68[uVar5 + uVar6 * 4] = uVar2;
       uVar6 = uVar6 + 1;
     } while (uVar6 < 4);
     uVar5 = uVar5 + 1;

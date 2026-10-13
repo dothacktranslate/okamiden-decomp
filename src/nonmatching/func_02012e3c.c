@@ -88,11 +88,11 @@ extern int func_02006e04();
 extern int func_020070b8();
 extern int func_02008c24();
 extern int func_02009b68();
-extern int func_02012f58();
+extern int func_020143e8();
 extern int func_020131a4();
 extern int func_020131cc();
 extern int func_020143e8();
-extern int func_0201446c();
+extern int func_02008c24();
 
 void func_02012e3c(void)
 
@@ -111,8 +111,8 @@ void func_02012e3c(void)
     puVar1 = ((unsigned int)0x02012f28);
     *(undefined4 *)(iVar3 + 0x4fc) = 0;
     *(undefined4 *)(iVar3 + 0x500) = 0;
-    *(undefined4 *)(iVar3 + 0x504) = 0;
-    *(undefined4 *)(iVar3 + 0x508) = 0xffffffff;
+    *(short *)(iVar3 + 0x504) = 0;
+    *(unsigned short *)(iVar3 + 0x508) = 0xffffffff;
     *(undefined4 *)(iVar3 + 0x50c) = 0;
     *(undefined4 *)(iVar3 + 0xc) = 0x400;
     *(undefined4 *)(iVar3 + 0x10) = 0x2400;
@@ -131,7 +131,7 @@ void func_02012e3c(void)
     if (iVar3 == 1) {
       func_02012f58(1);
     }
-    func_0201446c();
+    func_02008c24();
     return;
   }
   return;

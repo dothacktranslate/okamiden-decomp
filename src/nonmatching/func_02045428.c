@@ -91,6 +91,6 @@ void func_02045428(int param_1)
       local_4c = uVar12 & 0xffff;
     } while ((uVar12 & 0xffff) < (uint)*(ushort *)(param_1 + 0x1c));
   }
-  (*(unsigned int *)0x02045608) = 1;
+  (*(unsigned int *)0x04000448) = 1;
   return;
 }

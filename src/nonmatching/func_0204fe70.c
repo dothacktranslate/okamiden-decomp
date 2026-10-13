@@ -102,10 +102,10 @@ void func_0204fe70(int param_1,int param_2)
       iVar2 = func_0204e55c(param_1,0,0,param_2 << 2);
     }
     else {
-      iVar2 = func_0204e544();
+      iVar2 = func_0204e544(param_1);
     }
-    piVar5 = *(int **)(param_1 + 0x10);
     iVar3 = 0;
+    piVar5 = *(int **)(param_1 + 0x10);
     if (0 < param_2) {
       do {
         *(undefined4 *)(iVar2 + iVar3 * 4) = 0;

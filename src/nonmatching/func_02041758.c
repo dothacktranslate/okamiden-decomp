@@ -170,7 +170,7 @@ undefined4 func_02041758(int param_1,int param_2,int param_3)
   uint *puVar1;
   int *piVar2;
   uint *piVar3;
-  int iVar4;
+  uint iVar4;
   int iVar5;
   int iVar6;
   int iVar7;
@@ -182,7 +182,7 @@ undefined4 func_02041758(int param_1,int param_2,int param_3)
   if ((((unsigned int *)0x020418e4)[1] & 1U) == 0) {
     ((unsigned int *)0x020418e4)[1] = ((unsigned int *)0x020418e4)[1] | 1;
   }
-  piVar3 = (int *)func_0205c030();
+  piVar3 = (int *)func_0205c030(param_1);
   piVar2 = ((unsigned int)0x020418e4);
   param_3 = param_3 + 0x1000;
   puVar1 = (uint *)(((unsigned int)0x020418e4) + 2);
@@ -209,8 +209,8 @@ undefined4 func_02041758(int param_1,int param_2,int param_3)
        ((uint)(lVar9 + 0x800) >> 0xc | (int)((ulonglong)(lVar9 + 0x800) >> 0x20) * 0x100000) +
        ((uint)(lVar10 + 0x800) >> 0xc | (int)((ulonglong)(lVar10 + 0x800) >> 0x20) * 0x100000) +
        ((uint)(lVar11 + 0x800) >> 0xc | (int)((ulonglong)(lVar11 + 0x800) >> 0x20) * 0x100000);
-  lVar9 = func_0201e9b4(param_3,iVar6,piVar3[9],piVar3[9] >> 0x1f);
   lVar10 = func_0201e9b4(iVar5,iVar7,piVar3[5],piVar3[5] >> 0x1f);
+  lVar9 = func_0201e9b4(param_3,iVar6,piVar3[9],piVar3[9] >> 0x1f);
   lVar11 = func_0201e9b4(iVar4,iVar8,piVar3[1],piVar3[1] >> 0x1f);
   ((unsigned int *)0x020418e4)[7] =
        piVar3[0xd] +

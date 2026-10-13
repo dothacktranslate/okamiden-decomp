@@ -120,14 +120,14 @@ undefined8 func_0201d2ac(int param_1,uint param_2,int param_3)
     uVar8 = func_0201dbfc(param_1,param_2,0,((unsigned int)0x0201d4e4));
     iVar6 = ((int)((uint)((ulonglong)uVar8 >> 0x20) & uVar1) >> 0x14) + -0x36;
     if (param_3 < ((unsigned int)0x0201d4e8)) {
-      uVar8 = func_0201dbfc(((unsigned int)0x0201d4ec),((unsigned int)0x0201d4f0));
+      uVar8 = func_0201dbfc(((unsigned int)0xc2f8f359),((unsigned int)0x01a56e1f));
       return uVar8;
     }
   }
   uVar5 = ((unsigned int)0x0201d4fc);
-  uVar4 = ((unsigned int)0x0201d4f8);
-  uVar3 = ((unsigned int)0x0201d4f0);
-  uVar2 = ((unsigned int)0x0201d4ec);
+  uVar4 = ((unsigned int)0x8800759c);
+  uVar3 = ((unsigned int)0x01a56e1f);
+  uVar2 = ((unsigned int)0xc2f8f359);
   local_c = (uint)((ulonglong)uVar8 >> 0x20);
   local_10 = (undefined4)uVar8;
   if (iVar6 == ((unsigned int)0x0201d4f4)) {
@@ -137,22 +137,22 @@ undefined8 func_0201d2ac(int param_1,uint param_2,int param_3)
   iVar6 = iVar6 + param_3;
   if (iVar6 <= ((unsigned int)0x0201d4f4) + -1) {
     if (0 < iVar6) {
-      return CONCAT44(local_c & ((unsigned int)0x0201d500) | iVar6 * 0x100000,local_10);
+      return CONCAT44(local_c & ((unsigned int)0x800fffff) | iVar6 * 0x100000,local_10);
     }
     if (-0x36 < iVar6) {
       uVar8 = func_0201dbfc(0,((unsigned int)0x0201d508),local_10);
       return uVar8;
     }
     if (param_3 <= ((unsigned int)0x0201d504)) {
-      uVar8 = func_0201cfe0(((unsigned int)0x0201d4ec),((unsigned int)0x0201d4f0),local_10,local_c);
+      uVar8 = func_0201cfe0(((unsigned int)0xc2f8f359),((unsigned int)0x01a56e1f),local_10,local_c);
       uVar8 = func_0201dbfc(uVar2,uVar3,(int)uVar8,(int)((ulonglong)uVar8 >> 0x20));
       return uVar8;
     }
-    uVar8 = func_0201cfe0(((unsigned int)0x0201d4f8),((unsigned int)0x0201d4fc),local_10,local_c);
+    uVar8 = func_0201cfe0(((unsigned int)0x8800759c),((unsigned int)0x0201d4fc),local_10,local_c);
     uVar8 = func_0201dbfc(uVar4,uVar5,(int)uVar8,(int)((ulonglong)uVar8 >> 0x20));
     return uVar8;
   }
-  uVar8 = func_0201cfe0(((unsigned int)0x0201d4f8),((unsigned int)0x0201d4fc),local_10,local_c);
+  uVar8 = func_0201cfe0(((unsigned int)0x8800759c),((unsigned int)0x0201d4fc),local_10,local_c);
   uVar8 = func_0201dbfc(uVar4,uVar5,(int)uVar8,(int)((ulonglong)uVar8 >> 0x20));
   return uVar8;
 }

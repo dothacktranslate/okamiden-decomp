@@ -110,7 +110,7 @@ void func_020368e0(undefined4 param_1,int param_2,uint param_3,int param_4,undef
   uVar1 = ((unsigned int)0x02036a04);
   iVar4 = 0;
   func_020098a0(0,((unsigned int)0x02036a04),0x24);
-  iVar2 = *(int *)(iVar2 + 0xc);
+  iVar2 = *(short *)(iVar2 + 0xc);
   iVar3 = 0;
   param_3 = param_3 | 0x10000;
   if (iVar2 == 0) {
@@ -119,7 +119,7 @@ void func_020368e0(undefined4 param_1,int param_2,uint param_3,int param_4,undef
   do {
     uVar5 = 0;
     do {
-      if (*(int *)(iVar2 + 4) == aiStack_3c[uVar5]) {
+      if (*(short *)(iVar2 + 4) == aiStack_3c[uVar5]) {
         (**(code **)(((unsigned int)0x02036a00) + uVar5 * 0x20 + 8))(iVar2 + 0x10,uVar1);
         if (uVar5 == 0) {
           func_02044c54(param_1,uVar1,param_4 + iVar3,param_3);

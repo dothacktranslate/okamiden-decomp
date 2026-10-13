@@ -98,7 +98,7 @@ void func_02061654(uint *param_1,uint *param_2,int param_3,uint param_4)
   uint uVar9;
 
   bVar1 = *(byte *)(param_3 + 3);
-  if ((param_4 & 4) == 0) {
+  if ((4 & param_4) == 0) {
     uVar7 = param_2[2];
     uVar9 = param_2[1];
     param_1[1] = *param_2;
@@ -109,7 +109,7 @@ void func_02061654(uint *param_1,uint *param_2,int param_3,uint param_4)
       bVar2 = *(byte *)(param_3 + 1);
       iVar3 = (short)(ushort)bVar2 * 0x18;
       uVar7 = param_2[3];
-      *(uint *)((*(unsigned int *)0x0206178c) + 0xc4 + (uint)(bVar2 >> 5) * 4) =
+      *(uint *)((*(unsigned char *)0x0206178c) + 0xc4 + (uint)(bVar2 >> 5) * 4) =
            *(uint *)((*(unsigned int *)0x0206178c) + 0xc4 + (uint)(bVar2 >> 5) * 4) & ~(1 << (bVar2 & 0x1f));
       iVar6 = ((unsigned int)0x02061794);
       uVar9 = param_2[4];

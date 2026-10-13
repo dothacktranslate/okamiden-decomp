@@ -223,7 +223,7 @@ func_02011034(short *param_1,int *param_2,undefined4 param_3,undefined4 param_4,
               if (0 < iVar9) {
                 do {
                   sVar5 = sVar5 + -1;
-                  iVar4 = iVar4 + 1;
+                  iVar4 += 1;
                   psVar3 = psVar3 + -2;
                 } while (iVar4 < iVar9);
               }
@@ -272,7 +272,7 @@ func_02011034(short *param_1,int *param_2,undefined4 param_3,undefined4 param_4,
       if (0 < iVar11) {
         do {
           sVar10 = sVar1;
-          uVar17 = (uint)*(ushort *)(iVar12 + iVar14 * 2);
+          uVar17 = (uint)*(ushort *)(iVar14 + iVar12 * 2);
           psVar6 = (short *)(iVar7 + uVar17 * 4);
           if ((uVar17 == ((unsigned int)0x0000ffff)) || ((int)*psVar6 == ((unsigned int)0x0000ffff) - 0x10000)) {
             if (iVar9 < 2) {

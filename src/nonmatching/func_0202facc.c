@@ -96,9 +96,9 @@ void func_0202facc(int param_1,undefined4 param_2)
   int extraout_r1;
   int iVar2;
   int iVar3;
-  int iVar4;
-  int iVar5;
+  uint iVar4;
   undefined4 local_1c;
+  int iVar5;
 
   *(undefined4 *)(param_1 + 0x110) = param_2;
   local_1c = 0;
@@ -107,17 +107,17 @@ void func_0202facc(int param_1,undefined4 param_2)
   }
   iVar4 = 0;
   do {
-    iVar5 = *(int *)(param_1 + iVar4 * 4 + 0x6c);
+    iVar5 = *(int *)(param_1 + (iVar4 * 4 + 0x6c));
     if (iVar5 != 0) {
       iVar3 = (uint)*(ushort *)(*(int *)(iVar5 + 0x1c) + 4) * 0x1000;
-      iVar1 = *(int *)(param_1 + 0x110);
-      func_0201e9d4(iVar1,iVar3);
-      iVar2 = extraout_r1;
+      iVar2 = *(int *)(param_1 + 0x110);
+      func_0201e9d4(iVar2,iVar3);
+      iVar1 = extraout_r1;
       if ((((*(uint *)(param_1 + 0xfc) & 4) == 0) || ((*(uint *)(param_1 + 0xfc) & 0x10) != 0)) &&
-         (iVar3 - iVar1 == 0 || iVar3 < iVar1)) {
-        iVar2 = iVar3 + -0x1000;
+         (iVar3 - iVar2 == 0 || iVar3 < iVar2)) {
+        iVar1 = iVar3 + -0x1000;
       }
-      func_0203b220(iVar5,iVar2);
+      func_0203b220(iVar5,iVar1);
     }
     iVar4 = iVar4 + 1;
   } while (iVar4 <= local_1c);

@@ -110,7 +110,7 @@ void func_02067894(int param_1,int param_2,int param_3,undefined4 param_4,undefi
     iVar1 = 0;
     if (0 < *(int *)(iVar4 + 0x10)) {
       do {
-        func_020099f0(*(undefined4 *)(iVar4 + iVar1 * 4 + 0x14),0,*(undefined4 *)(iVar4 + 0x2c));
+        func_020099f0(*(undefined4 *)(iVar4 + 0x14 + iVar1 * 4),0,*(undefined4 *)(iVar4 + 0x2c));
         iVar1 = iVar1 + 1;
       } while (iVar1 < *(int *)(iVar4 + 0x10));
     }

@@ -165,14 +165,14 @@ extern int func_02041758();
 void func_0203a104(int param_1,short param_2,short param_3,int param_4)
 
 {
-  uint iVar1;
+  int iVar1;
   undefined4 *puVar2;
   int iVar3;
-  int iVar5;
+  uint iVar5;
   int iVar4;
 
-  iVar5 = *(int *)(param_1 + param_4 * 4 + ((unsigned int)0x0203a21c));
-  iVar4 = *(int *)(8 + iVar5);
+  iVar5 = *(int *)(param_4 + param_1 * 4 + ((unsigned int)0x00001f04));
+  iVar4 = *(short *)(8 + iVar5);
   if (iVar4 == 0) {
 LAB_0203a12a:
     if (0x180 <= iVar4) goto LAB_0203a1d4;
@@ -187,7 +187,7 @@ LAB_0203a12a:
     if (iVar3 == -1) goto LAB_0203a12a;
     iVar3 = iVar3 - param_2;
     iVar1 = (int)*(short *)(*(int *)(iVar5 + 4) + iVar1 + 2) - (int)param_3;
-    if ((iVar3 * iVar3 + iVar1 * iVar1 < *(int *)(iVar5 + ((unsigned int)0x0203a21c) + -0x9c)) || (0x180 <= iVar4))
+    if ((iVar3 * iVar3 + iVar1 * iVar1 < *(int *)(iVar5 + ((unsigned int)0x00001f04) + -0x9c)) || (0x180 <= iVar4))
     goto LAB_0203a1d4;
     iVar4 = *(int *)(iVar5 + 8) * 0xc;
     puVar2 = (undefined4 *)func_02041758((int)param_2,(int)param_3,0x1000);

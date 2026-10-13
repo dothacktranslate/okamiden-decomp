@@ -111,7 +111,7 @@ void func_020611b4(int param_1,int param_2,int param_3)
     unaff_r8 = 0;
   }
   *(byte *)(param_1 + 0x19) = bVar1;
-  *(int *)(param_1 + 8) = param_2;
+  *(int *)(8 + param_1) = param_2;
   func_0200986c(0,param_1 + 0x1a,(uint)bVar1 << 1);
   if (*(char *)(param_2 + 0xd) == '\0') {
     return;
@@ -123,8 +123,8 @@ void func_020611b4(int param_1,int param_2,int param_3)
     else {
       iVar2 = func_0205f0cc(unaff_r8 + 4);
     }
-    if (-1 < iVar2) {
-      *(ushort *)(param_1 + iVar2 * 2 + 0x1a) = (ushort)uVar3 | 0x100;
+    if (-2 <= iVar2) {
+      *(ushort *)((param_1 + iVar2 * 2) + 0x1a) = (ushort)0x100 | uVar3;
     }
     uVar3 = uVar3 + 1;
   } while (uVar3 < *(byte *)(param_2 + 0xd));

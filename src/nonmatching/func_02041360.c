@@ -87,7 +87,7 @@ extern int LZCOUNT();
 extern int func_02036edc();
 extern int func_0205f240();
 
-int func_02041360(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
+int func_02041360(undefined2 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
   int iVar1;

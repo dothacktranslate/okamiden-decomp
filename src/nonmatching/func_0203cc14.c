@@ -93,38 +93,38 @@ void func_0203cc14(int param_1,int param_2)
   int iVar3;
   int uVar2;
   int iVar4;
-  int iVar5;
+  uint iVar5;
 
-  iVar5 = *(unsigned char *)(param_1 + 0x14);
+  iVar3 = *(unsigned char *)(param_1 + 0x14);
   uVar2 = 0;
-  if (*(char *)(iVar5 + 0x17) != '\0') {
+  if (*(char *)(iVar3 + 0x17) != '\0') {
     do {
-      iVar3 = iVar5 + 0x40;
-      if (((iVar3 == 0) || (iVar3 == 0)) || (*(byte *)(iVar5 + 0x41) <= uVar2)) {
-        iVar3 = 0;
+      iVar5 = iVar3 + 0x40;
+      if (((iVar5 == 0) || (iVar5 == 0)) || (*(byte *)(iVar3 + 0x41) <= uVar2)) {
+        iVar5 = 0;
       }
       else {
-        iVar3 = iVar3 + (uint)*(ushort *)(iVar5 + 0x46);
-        iVar3 = iVar3 + (uint)*(ushort *)(iVar3 + 2) + uVar2 * 0x10;
+        iVar5 = iVar5 + (uint)*(ushort *)(iVar3 + 0x46);
+        iVar5 = iVar5 + (uint)*(ushort *)(iVar5 + 2) + uVar2 * 0x10;
       }
-      if (iVar3 != 0) {
+      if (iVar5 != 0) {
         bVar1 = true;
         iVar4 = 0;
         while( true ) {
-          if ((*(char *)(param_2 + iVar4) == '\0') || (*(char *)(iVar3 + iVar4) == '\0'))
+          if ((*(char *)(param_2 + iVar4) == '\0') || (*(char *)(iVar5 + iVar4) == '\0'))
           goto LAB_0203cc72;
-          if (*(char *)(param_2 + iVar4) != *(char *)(iVar3 + iVar4)) break;
+          if (*(char *)(param_2 + iVar4) != *(char *)(iVar5 + iVar4)) break;
           iVar4 = iVar4 + 1;
         }
         bVar1 = false;
 LAB_0203cc72:
         if (bVar1) {
-          *(uint *)(*(int *)(param_1 + 0xa8) + uVar2 * 0x48) =
+          *(uint *)(*(unsigned char *)(param_1 + 0xa8) + uVar2 * 0x48) =
                *(uint *)(*(int *)(param_1 + 0xa8) + uVar2 * 0x48) | 0x400;
         }
       }
       uVar2 = uVar2 + 1 & 0xffff;
-    } while (uVar2 < *(byte *)(iVar5 + 0x17));
+    } while (uVar2 < *(byte *)(iVar3 + 0x17));
   }
   return;
 }

@@ -104,7 +104,7 @@ void func_0202fec0(int param_1,int *param_2,int *param_3)
   }
   if (iVar2 < 0x10) {
     iVar2 = -iVar4;
-    if (-1 < iVar4) {
+    if (-2 <= iVar4) {
       iVar2 = iVar4;
     }
     if (iVar2 < 0x10) {

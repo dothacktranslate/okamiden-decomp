@@ -104,8 +104,8 @@ int func_02038f34(undefined4 param_1,uint param_2,int param_3,undefined4 param_4
   int iVar2;
   int iVar3;
   int iVar4;
-  int iVar5;
   int iVar6;
+  int iVar5;
   int iVar7;
   undefined4 uVar8;
   int iVar9;
@@ -131,10 +131,10 @@ int func_02038f34(undefined4 param_1,uint param_2,int param_3,undefined4 param_4
     iVar3 = func_02063f00(param_4);
     iVar10 = param_3 * 0x28 + 0x38;
     iVar4 = iVar10 + param_3 * 8;
-    iVar9 = iVar4 + 0x800;
+    iVar9 = 0x800 + iVar4;
     iVar5 = iVar9 + iVar1;
     iVar6 = iVar5 + iVar2;
-    iVar7 = func_02032bcc(iVar6 + iVar3,4,((unsigned int)0x02039060));
+    iVar7 = func_02032bcc(iVar3 + iVar6,4,((unsigned int)0x02039060));
     if (iVar7 != 0) {
       uVar8 = func_02038b2c((*(unsigned int *)0x02039064),iVar9 + iVar7,iVar1,0x1c,4,0);
       iVar1 = 0;

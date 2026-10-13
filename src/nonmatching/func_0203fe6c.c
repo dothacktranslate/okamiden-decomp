@@ -228,7 +228,7 @@ void func_0203fe6c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
                             ((local_48[iVar7 * 2 + 1] << 8) >> 0x10) << 0x10;
               func_0205e0c0(0x11,0,0);
               func_0205e0c0(0x1c,&local_88,3);
-              func_0205e0c0(((unsigned int)0x02040190),local_48 + 8,2);
+              func_0205e0c0(((unsigned int)0x00002422),local_48 + 8,2);
               local_98 = 1;
               func_0205e0c0(0x12,&local_98,1);
               iVar7 = iVar7 + 1;

@@ -143,20 +143,20 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
   uVar18 = param_4 & 0x7fffffff;
   uVar14 = param_2 & 0x7fffffff;
   if (uVar18 == 0 && param_3 == 0) {
-    return (ulonglong)((unsigned int)0x0201c3f4) << 0x20;
+    return (ulonglong)((unsigned int)0x3ff00000) << 0x20;
   }
-  if (((int)((unsigned int)0x0201c3f8) < (int)uVar14) ||
-     ((((uVar14 == ((unsigned int)0x0201c3f8) && (param_1 != 0)) || ((int)((unsigned int)0x0201c3f8) < (int)uVar18)) ||
-      ((uVar18 == ((unsigned int)0x0201c3f8) && (param_3 != 0)))))) {
+  if (((int)((unsigned int)0x7ff00000) < (int)uVar14) ||
+     ((((uVar14 == ((unsigned int)0x7ff00000) && (param_1 != 0)) || ((int)((unsigned int)0x7ff00000) < (int)uVar18)) ||
+      ((uVar18 == ((unsigned int)0x7ff00000) && (param_3 != 0)))))) {
     lVar22 = func_0201d518(param_1,param_2,param_3,param_4);
     return lVar22;
   }
   iVar15 = 0;
   uVar12 = param_3;
   if ((int)param_2 < 0) {
-    if ((int)uVar18 < ((unsigned int)0x0201c3fc)) {
-      if (((unsigned int)0x0201c3fc) + -0x3500000 <= (int)uVar18) {
-        uVar3 = ((unsigned int)0x0201c400) + ((int)uVar18 >> 0x14);
+    if ((int)uVar18 < ((unsigned int)0x43400000)) {
+      if (((unsigned int)0x43400000) + -0x3500000 <= (int)uVar18) {
+        uVar3 = ((unsigned int)0xfffffc01) + ((int)uVar18 >> 0x14);
         if ((int)uVar3 < 0x15) {
           bVar19 = false;
           if (param_3 == 0) {
@@ -180,12 +180,12 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
     }
   }
   if (param_3 == 0) {
-    if (uVar18 == ((unsigned int)0x0201c3f8)) {
+    if (uVar18 == ((unsigned int)0x7ff00000)) {
       if (uVar14 == 0x3ff00000 && param_1 == 0) {
         lVar22 = func_0201d848(0,param_4,0,param_4);
         return lVar22;
       }
-      if ((int)uVar14 < (int)(((unsigned int)0x0201c3f8) + 0xc0000000)) {
+      if ((int)uVar14 < (int)(((unsigned int)0x7ff00000) + 0xc0000000)) {
         if ((int)param_4 < 0) {
           lVar22 = func_0201d848(0,0,0,param_4);
           return lVar22;
@@ -197,9 +197,9 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
       }
       return (ulonglong)param_4 << 0x20;
     }
-    if (uVar18 == ((unsigned int)0x0201c3f8) + 0xc0000000) {
+    if (uVar18 == ((unsigned int)0x7ff00000) + 0xc0000000) {
       if ((int)param_4 < 0) {
-        lVar22 = func_0201fbf4(0,((unsigned int)0x0201c3f8) + 0xc0000000,param_1,param_2);
+        lVar22 = func_0201fbf4(0,((unsigned int)0x7ff00000) + 0xc0000000,param_1,param_2);
         return lVar22;
       }
       return CONCAT44(param_2,param_1);
@@ -208,7 +208,7 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
       lVar22 = func_0201dbfc(param_1,param_2,param_1,param_2);
       return lVar22;
     }
-    if ((param_4 == ((unsigned int)0x0201c404)) && (-1 < (int)param_2)) {
+    if ((param_4 == ((unsigned int)0x3fe00000)) && (-1 < (int)param_2)) {
       lVar22 = func_0201ef10(param_1,param_2);
       return lVar22;
     }
@@ -216,9 +216,9 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
   lVar22 = func_0201d008(param_1,param_2,uVar12,param_4);
   uVar26 = CONCAT44(param_2,(int)lVar22) & 0x7fffffffffffffff;
   if ((param_1 == 0) &&
-     ((uVar14 == ((unsigned int)0x0201c3f8) || uVar14 == 0 || (uVar14 == ((unsigned int)0x0201c3f8) + 0xc0000000)))) {
+     ((uVar14 == ((unsigned int)0x7ff00000) || uVar14 == 0 || (uVar14 == ((unsigned int)0x7ff00000) + 0xc0000000)))) {
     if ((int)param_4 < 0) {
-      lVar22 = func_0201fbf4(0,((unsigned int)0x0201c3f4));
+      lVar22 = func_0201fbf4(0,((unsigned int)0x3ff00000));
     }
     uStack_3c = (undefined4)((ulonglong)lVar22 >> 0x20);
     uStack_40 = (undefined4)lVar22;
@@ -236,7 +236,7 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
     return lVar22;
   }
   if ((int)param_2 < 0 && iVar15 == 0) {
-    uVar1 = (*(unsigned int *)0x0201c408);
+    uVar1 = (*(unsigned char *)0x0201c408);
     (*(unsigned int *)0x0201c40c) = 0x21;
     lVar22 = func_0201e61c(uVar1);
     return lVar22;
@@ -305,8 +305,8 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
     iVar13 = ((unsigned int)0x0201c438);
     uVar18 = (uint)(uVar26 >> 0x20);
     uStack_48 = (undefined4)uVar26;
-    uVar14 = uVar18 & ((unsigned int)0x0201c400) >> 0xc;
-    iVar16 = iVar16 + ((unsigned int)0x0201c400) + ((int)uVar18 >> 0x14);
+    uVar14 = uVar18 & ((unsigned int)0xfffffc01) >> 0xc;
+    iVar16 = iVar16 + ((unsigned int)0xfffffc01) + ((int)uVar18 >> 0x14);
     uVar18 = uVar14 | 0x3ff00000;
     if (((unsigned int)0x0201c430) < (int)uVar14) {
       if ((int)uVar14 < ((unsigned int)0x0201c434)) {
@@ -325,8 +325,8 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
     uVar23 = func_0201d848(uStack_48,uVar18,*puVar4,puVar4[1]);
     uVar5 = (undefined4)((ulonglong)uVar23 >> 0x20);
     uVar24 = func_0201d518(uStack_48,uVar18,*(undefined4 *)(iVar13 + iVar17 * 8),
-                          *(undefined4 *)(iVar13 + iVar17 * 8 + 4));
-    uVar24 = func_0201fbf4(0,((unsigned int)0x0201c3f4),(int)uVar24,(int)((ulonglong)uVar24 >> 0x20));
+                          *(undefined4 *)(iVar17 + iVar13 * 8 + 4));
+    uVar24 = func_0201fbf4(0,((unsigned int)0x3ff00000),(int)uVar24,(int)((ulonglong)uVar24 >> 0x20));
     uVar6 = (undefined4)((ulonglong)uVar24 >> 0x20);
     uVar25 = func_0201dbfc((int)uVar23,uVar5,(int)uVar24,uVar6);
     uVar7 = (undefined4)((ulonglong)uVar25 >> 0x20);
@@ -365,9 +365,9 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
     uVar5 = (undefined4)((ulonglong)uVar24 >> 0x20);
     uVar25 = func_0201dbfc(0,uVar7,0,uVar7);
     uVar9 = (undefined4)((ulonglong)uVar25 >> 0x20);
-    uVar27 = func_0201d518(0,((unsigned int)0x0201c3f4) + 0x180000,(int)uVar25,uVar9);
+    uVar27 = func_0201d518(0,((unsigned int)0x3ff00000) + 0x180000,(int)uVar25,uVar9);
     func_0201d518((int)uVar27,(int)((ulonglong)uVar27 >> 0x20),(int)uVar24,uVar5,uVar27);
-    uVar27 = func_0201d848(0,extraout_r1_00,0,((unsigned int)0x0201c3f4) + 0x180000);
+    uVar27 = func_0201d848(0,extraout_r1_00,0,((unsigned int)0x3ff00000) + 0x180000);
     uVar25 = func_0201d848((int)uVar27,(int)((ulonglong)uVar27 >> 0x20),(int)uVar25,uVar9);
     uVar24 = func_0201d848((int)uVar24,uVar5,(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
     uVar25 = func_0201dbfc(0,uVar7,0,extraout_r1_00);
@@ -404,9 +404,9 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
   }
   uVar23 = func_0201d848((int)uVar23,(int)((ulonglong)uVar23 >> 0x20),(int)uVar24,
                         (int)((ulonglong)uVar24 >> 0x20));
-  uVar14 = ((unsigned int)0x0201c3f4);
+  uVar14 = ((unsigned int)0x3ff00000);
   if ((int)param_2 < 0 && iVar15 == 1) {
-    uVar14 = ((unsigned int)0x0201c3f4) + 0x80000000;
+    uVar14 = ((unsigned int)0x3ff00000) + 0x80000000;
   }
   uVar24 = func_0201d848(param_3,param_4,0,param_4);
   uVar24 = func_0201dbfc(0,uStack_5c,(int)uVar24,(int)((ulonglong)uVar24 >> 0x20));
@@ -467,10 +467,10 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
     }
   }
   iVar15 = 0;
-  if ((int)((unsigned int)0x0201c404) < (int)(uVar18 & 0x7fffffff)) {
-    uVar18 = uVar18 + (0x100000 >> (((unsigned int)0x0201c400) + ((int)(uVar18 & 0x7fffffff) >> 0x14) + 1 & 0xff))
+  if ((int)((unsigned int)0x3fe00000) < (int)(uVar18 & 0x7fffffff)) {
+    uVar18 = uVar18 + (0x100000 >> (((unsigned int)0xfffffc01) + ((int)(uVar18 & 0x7fffffff) >> 0x14) + 1 & 0xff))
     ;
-    uVar12 = ((unsigned int)0x0201c400) + ((int)(uVar18 & 0x7fffffff) >> 0x14);
+    uVar12 = ((unsigned int)0xfffffc01) + ((int)(uVar18 & 0x7fffffff) >> 0x14);
     iVar15 = (int)(uVar18 & 0xfffff | 0x100000) >> (0x14 - uVar12 & 0xff);
     if (lVar22 < 0) {
       iVar15 = -iVar15;

@@ -112,7 +112,7 @@ void func_0203251c(int param_1,int param_2,undefined4 param_3)
   iVar2 = func_020324ec(param_2,((unsigned int)0x020326f0),4);
   if (iVar2 == 0) {
     local_20 = *(int *)(param_2 + 4) + -8;
-    iVar2 = param_2 + 8;
+    iVar2 = 8 + param_2;
     if (0 < local_20) {
       do {
         iVar3 = func_020324ec(iVar2,((unsigned int)0x020326f4),4);
@@ -156,8 +156,8 @@ void func_0203251c(int param_1,int param_2,undefined4 param_3)
       do {
         iVar5 = func_020324ec(iVar2,((unsigned int)0x0203270c),4);
         if (iVar5 == 0) {
-          iVar5 = func_02032aac(0xd8);
           uVar4 = 0;
+          iVar5 = func_02032aac(0xd8);
           if (iVar5 != 0) {
             uVar4 = func_02031ee0(iVar5,iVar2);
           }

@@ -102,7 +102,7 @@ void func_0205ae0c(int *param_1,int param_2)
       *(int *)(iVar4 + 0x10) = param_2;
       return;
     }
-    iVar2 = *(int *)(param_2 + 0x10);
+    iVar2 = *(unsigned short *)(param_2 + 0x10);
     iVar3 = param_2;
     while (iVar2 != 0) {
       iVar3 = *(int *)(iVar3 + 0x10);

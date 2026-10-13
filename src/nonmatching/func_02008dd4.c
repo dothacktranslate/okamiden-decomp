@@ -91,7 +91,7 @@ extern int func_02008d98();
 void func_02008dd4(uint param_1,uint param_2)
 
 {
-  uint *puVar1;
+  int *puVar1;
   int iVar2;
   undefined4 uVar3;
   int iVar4;
@@ -104,21 +104,21 @@ void func_02008dd4(uint param_1,uint param_2)
   uVar3 = func_02008b6c();
   iVar2 = ((unsigned int)0x02008e54);
   puVar1 = ((unsigned int)0x02008e4c);
-  uVar8 = param_1 & (*(unsigned int *)0x02008e4c) & ((unsigned int)0x000001ff);
+  uVar6 = param_1 & (*(unsigned int *)0x02008e4c) & ((unsigned int)0x000001ff);
   while( true ) {
-    iVar4 = func_02008d98(uVar8);
-    uVar6 = 0x1f - iVar4;
-    if ((int)uVar6 < 0) break;
-    uVar5 = (uint)*(ushort *)(iVar2 + uVar6 * 2);
-    uVar7 = ~(1 << (uVar6 & 0xff));
+    iVar4 = func_02008d98(uVar6);
+    uVar8 = 0x1f - iVar4;
+    if ((int)uVar8 < 0) break;
+    uVar5 = (uint)*(ushort *)(iVar2 + uVar8 * 2);
+    uVar7 = ~(1 << (uVar8 & 0xff));
     bVar9 = param_2 == uVar5;
     if (bVar9) {
       uVar5 = *puVar1;
     }
-    uVar8 = uVar8 & uVar7;
+    uVar6 = uVar6 & uVar7;
     if (bVar9) {
-      *(undefined2 *)(uVar6 + iVar2 * 2) = 0;
-      *puVar1 = uVar5 & uVar7;
+      *(undefined2 *)(uVar8 + iVar2 * 2) = 0;
+      *puVar1 = uVar7 & uVar5;
     }
   }
   func_02008b80(uVar3);

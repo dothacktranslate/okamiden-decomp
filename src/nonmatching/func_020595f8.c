@@ -121,7 +121,7 @@ void func_020595f8(short *param_1,undefined4 param_2,uint param_3,uint param_4,i
     return;
   }
   do {
-    iVar3 = iVar1;
+    iVar6 = iVar1;
     uVar4 = uVar8;
     if ((int)local_30 < (int)param_4) {
       iVar14 = param_4 - local_30;
@@ -129,8 +129,8 @@ void func_020595f8(short *param_1,undefined4 param_2,uint param_3,uint param_4,i
     else {
       iVar14 = 0;
     }
-    for (; (int)uVar4 < (int)(param_3 + param_5 + 7 & 0xfffffff8); uVar4 = uVar4 + 8) {
-      iVar6 = func_02058b8c(iVar3,iVar13,iVar10,iVar11);
+    for (; (int)uVar4 < (int)(param_3 + (param_5 + 7) & 0xfffffff8); uVar4 = uVar4 + 8) {
+      iVar3 = func_02058b8c(iVar6,iVar13,iVar10,iVar11);
       iVar7 = param_3 - uVar4;
       iVar12 = (param_3 + param_5) - uVar4;
       if ((int)param_3 <= (int)uVar4) {
@@ -139,8 +139,8 @@ void func_020595f8(short *param_1,undefined4 param_2,uint param_3,uint param_4,i
       if (8 < iVar12) {
         iVar12 = 8;
       }
-      func_02058c90(((int)((uint)bVar2 * 0x40) >> 3) * iVar6 + iVar5,iVar7,iVar14,iVar12 - iVar7);
-      iVar3 = iVar3 + 1;
+      func_02058c90(((int)((uint)bVar2 * 0x40) >> 3) * iVar3 + iVar5,iVar7,iVar14,iVar12 - iVar7);
+      iVar6 = iVar6 + 1;
     }
     iVar13 = iVar13 + 1;
     local_30 = local_30 + 8;

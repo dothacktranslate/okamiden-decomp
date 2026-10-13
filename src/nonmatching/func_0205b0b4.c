@@ -92,9 +92,9 @@ void func_0205b0b4(int param_1,int param_2,undefined4 param_3,undefined4 param_4
 
 {
   uint uVar1;
-  uint uVar2;
   uint uVar3;
   int iVar4;
+  uint uVar2;
 
   if (param_2 != 0) {
     func_02004db8();

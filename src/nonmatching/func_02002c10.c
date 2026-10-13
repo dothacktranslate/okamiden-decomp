@@ -168,8 +168,8 @@ void func_02002c10(uint *param_1,int *param_2)
   int iVar5;
   uint uVar6;
   int uVar7;
-  uint uVar8;
-  uint uVar9;
+  int uVar8;
+  int uVar9;
 
   puVar3 = ((unsigned int)0x04000280);
   lVar1 = (longlong)(int)param_1[2] * (longlong)(int)param_1[2] +
@@ -192,8 +192,7 @@ void func_02002c10(uint *param_1,int *param_2)
   uVar2 = (ulonglong)uVar8 * (ulonglong)(*(unsigned int *)0x040002a0);
   iVar5 = (int)uVar2;
   iVar4 = ((unsigned int *)0x040002a0)[1] * uVar8 + (*(unsigned int *)0x040002a0) * ((int)uVar8 >> 0x1f) + (int)(uVar2 >> 0x20);
-  *param_2 = (int)(iVar4 * uVar7 +
-                   iVar5 * ((int)uVar7 >> 0x1f) +
+  *param_2 = (int)(iVar4 * iVar5 + uVar7 * ((int)uVar7 >> 0x1f) +
                    (int)((ulonglong)uVar7 * (uVar2 & 0xffffffff) >> 0x20) + 0x1000) >> 0xd;
   param_2[1] = (int)(iVar4 * uVar6 +
                      iVar5 * ((int)uVar6 >> 0x1f) +

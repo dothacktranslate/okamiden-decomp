@@ -102,15 +102,15 @@ void func_0205b248(int param_1,ushort *param_2,int param_3,uint *param_4)
   uVar1 = *param_2;
   uVar5 = 0;
   if ((*param_4 & 0x1c000000) == 0x14000000) {
-    uVar2 = *(uint *)(0x18 + param_3);
+    uVar2 = *(uint *)(param_3 + 0x18);
   }
   else {
-    uVar2 = *(uint *)(param_3 + 8);
+    uVar2 = *(uint *)(8 + param_3);
   }
   if ((char)param_2[1] != '\0') {
     iVar7 = param_1 + 4;
     do {
-      uVar8 = (uint)*(byte *)(param_1 + (uint)uVar1 + uVar5);
+      uVar8 = (uint)*(byte *)(param_1 + (uint)uVar5 + uVar1);
       if (param_1 == 0) {
 LAB_0205b2e8:
         iVar9 = 0;

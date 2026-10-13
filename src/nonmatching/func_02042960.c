@@ -97,12 +97,12 @@ void func_02042960(undefined4 param_1,int param_2)
   undefined4 uVar2;
 
   *(undefined4 *)(param_2 + 8) = 0;
-  if (*(signed char *)(param_2 + 0x74) != 0) {
+  if (*(signed char *)(0x74 + param_2) != 0) {
     func_02043a14((*(unsigned int *)0x020429a8));
     *(undefined4 *)(param_2 + 0x74) = 0;
   }
   uVar2 = (*(unsigned int *)0x020429ac);
-  iVar1 = func_0203c3bc(uVar2,*(undefined4 *)(param_2 + 0x78));
+  iVar1 = func_0203c3bc(uVar2,*(short *)(param_2 + 0x78));
   if (iVar1 != 0) {
     func_0203c214(uVar2);
   }

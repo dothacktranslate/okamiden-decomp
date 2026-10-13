@@ -103,7 +103,7 @@ void func_0205826c(uint *param_1,uint *param_2,uint param_3,int param_4,int *par
   uVar1 = *(ushort *)(uVar7 * 2 + ((unsigned int)0x020584a4) + iVar5 * 8);
   param_5[4] = (uint)*(ushort *)(uVar7 * 2 + ((unsigned int)0x020584a0) + iVar5 * 8);
   param_5[5] = (uint)uVar1;
-  if (uVar8 == 0) {
+  if (0U >= uVar8) {
     uVar7 = param_2[2];
     if (uVar7 == 4) {
       uVar4 = uVar4 << 0xf;
@@ -115,8 +115,8 @@ void func_0205826c(uint *param_1,uint *param_2,uint param_3,int param_4,int *par
     if (uVar7 == 4) {
       uVar4 = uVar4 >> 0x10;
     }
-    *param_5 = (uVar4 & *(int *)(((unsigned int)0x020584ac) + uVar8 * 4) - 1U) << 0xf;
-    param_5[1] = ((int)uVar4 >> (uVar8 & 0xff)) << 0xf;
+    *param_5 = (uVar4 & *(unsigned short *)(((unsigned int)0x020584ac) + uVar8 * 4) - 1U) << 0xf;
+    param_5[1] = ((int)uVar4 >> (0xff & uVar8)) << 0xf;
   }
   else {
     (*(unsigned int *)0x040004a8) =

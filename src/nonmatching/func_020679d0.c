@@ -98,18 +98,18 @@ void func_020679d0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   longlong lVar3;
   int iVar4;
   undefined4 *puVar5;
+  undefined4 local_20;
   undefined4 local_28;
   uint local_24;
-  undefined4 local_20;
   undefined4 local_1c;
   undefined4 uStack_18;
 
   local_20 = *(undefined4 *)(param_1 + 0x150);
-  local_28 = *(undefined4 *)(param_1 + 0x14c);
+  local_28 = *(undefined4 *)(0x14c + param_1);
   local_24 = 0;
   local_1c = local_28;
   uStack_18 = param_4;
-  iVar4 = (**(code **)(param_1 + 0x144))(0,&local_20,&local_28,*(undefined4 *)(param_1 + 0x148));
+  iVar4 = (**(code **)(param_1 + 0x144))(0,&local_20,&local_28,*(unsigned short *)(param_1 + 0x148));
   if (iVar4 == 0) {
     return;
   }

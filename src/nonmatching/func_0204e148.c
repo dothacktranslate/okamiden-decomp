@@ -100,7 +100,7 @@ undefined4 func_0204e148(int param_1)
   int iVar4;
   int iVar5;
 
-  piVar3 = *(int **)(param_1 + 0x10);
+  piVar3 = *(int **)(0x10 + param_1);
   switch(*(undefined1 *)((int)piVar3 + 0x15)) {
   case 0:
     func_0204df84();
@@ -129,7 +129,7 @@ undefined4 func_0204e148(int param_1)
     return 400;
   case 4:
     if (piVar3[0xc] != 0) {
-      func_0204ddf8();
+      func_0204ddf8(param_1);
       if (100 < (uint)piVar3[0x12]) {
         piVar3[0x12] = piVar3[0x12] - 100;
       }

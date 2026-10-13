@@ -91,7 +91,7 @@ void func_0205fd70(uint *param_1,int param_2,uint *param_3,int param_4)
   short sVar2;
   longlong lVar3;
   longlong lVar4;
-  int uVar5;
+  uint uVar5;
   uint *puVar6;
   int iVar7;
   uint uVar8;
@@ -102,93 +102,93 @@ void func_0205fd70(uint *param_1,int param_2,uint *param_3,int param_4)
   int *piVar13;
   uint uVar14;
 
-  uVar8 = *param_3;
-  uVar9 = param_2 >> 0xc;
+  uVar11 = *param_3;
+  uVar5 = param_2 >> 0xc;
   param_4 = param_4 + param_3[1];
-  if ((uVar8 & 0xc0000000) != 0) {
-    uVar5 = uVar8 & ((unsigned int)0x1fff0000);
-    if ((uVar8 & 0x40000000) == 0) {
-      if ((uVar9 & 3) == 0) {
-        uVar9 = uVar9 >> 2;
+  if ((uVar11 & 0xc0000000) != 0) {
+    uVar9 = uVar11 & ((unsigned int)0x1fff0000);
+    if ((uVar11 & 0x40000000) == 0) {
+      if ((uVar5 & 3) == 0) {
+        uVar5 = uVar5 >> 2;
       }
       else {
-        if (uVar9 <= uVar5 >> 0x10) {
-          if ((uVar9 & 1) != 0) {
-            if ((uVar9 & 2) == 0) {
-              uVar5 = uVar9 >> 2;
-              uVar9 = uVar5 + 1;
-            }
-            else {
-              uVar9 = uVar9 >> 2;
+        if (uVar5 <= uVar9 >> 0x10) {
+          if ((uVar5 & 1) != 0) {
+            if ((uVar5 & 2) == 0) {
+              uVar9 = uVar5 >> 2;
               uVar5 = uVar9 + 1;
             }
-            if ((uVar8 & 0x20000000) == 0) {
-              puVar6 = (uint *)(param_4 + uVar5 * 8);
-              uVar8 = *puVar6;
-              uVar14 = puVar6[1];
+            else {
+              uVar5 = uVar5 >> 2;
+              uVar9 = uVar5 + 1;
+            }
+            if ((uVar11 & 0x20000000) == 0) {
               puVar6 = (uint *)(param_4 + uVar9 * 8);
-              lVar3 = (ulonglong)uVar8 * 3;
-              uVar10 = (uint)lVar3;
               uVar11 = *puVar6;
+              uVar14 = puVar6[1];
+              puVar6 = (uint *)(uVar5 + param_4 * 8);
+              lVar3 = (ulonglong)uVar11 * 3;
+              uVar10 = (uint)lVar3;
+              uVar8 = *puVar6;
               lVar4 = (ulonglong)uVar14 * 3;
-              uVar5 = (uint)lVar4;
-              uVar9 = puVar6[1];
-              param_1[1] = uVar5 + uVar9 >> 2 |
+              uVar9 = (uint)lVar4;
+              uVar5 = puVar6[1];
+              param_1[1] = uVar9 + uVar5 >> 2 |
                            (((int)uVar14 >> 0x1f) * 3 + (int)((ulonglong)lVar4 >> 0x20) +
-                            ((int)uVar9 >> 0x1f) + (uint)CARRY4(uVar5,uVar9)) * 0x40000000;
-              *param_1 = uVar10 + uVar11 >> 2 |
-                         (((int)uVar8 >> 0x1f) * 3 + (int)((ulonglong)lVar3 >> 0x20) +
-                          ((int)uVar11 >> 0x1f) + (uint)CARRY4(uVar10,uVar11)) * 0x40000000;
+                            ((int)uVar5 >> 0x1f) + (uint)CARRY4(uVar9,uVar5)) * 0x40000000;
+              *param_1 = uVar10 + uVar8 >> 2 |
+                         (((int)uVar11 >> 0x1f) * 3 + (int)((ulonglong)lVar3 >> 0x20) +
+                          ((int)uVar8 >> 0x1f) + (uint)CARRY4(uVar10,uVar8)) * 0x40000000;
               return;
             }
-            sVar1 = *(short *)(param_4 + (uVar5 * 4 + 2));
-            sVar2 = *(short *)(param_4 + uVar9 * 4 + 2);
-            *param_1 = (int)*(short *)(param_4 + uVar9 * 4) + *(short *)(param_4 + uVar5 * 4) * 3 >>
+            sVar1 = *(short *)(param_4 + (uVar9 * 4 + 2));
+            sVar2 = *(short *)(param_4 + (uVar5 * 4 + 2));
+            *param_1 = (int)*(short *)(uVar5 + param_4 * 4) + *(short *)(uVar9 + param_4 * 4) * 3 >>
                        2;
             param_1[1] = (int)sVar2 + sVar1 * 3 >> 2;
             return;
           }
-          uVar9 = uVar9 >> 2;
+          uVar5 = uVar5 >> 2;
           goto LAB_0205fed8;
         }
-        uVar9 = (uVar9 & 3) + (uVar5 >> 0x12);
+        uVar5 = (uVar5 & 3) + (uVar9 >> 0x12);
       }
     }
-    else if ((uVar9 & 1) == 0) {
-      uVar9 = uVar9 >> 1;
+    else if ((uVar5 & 1) == 0) {
+      uVar5 = uVar5 >> 1;
     }
     else {
-      if (uVar9 <= uVar5 >> 0x10) {
-        uVar9 = uVar9 >> 1;
+      if (uVar5 <= uVar9 >> 0x10) {
+        uVar5 = uVar5 >> 1;
 LAB_0205fed8:
-        if ((uVar8 & 0x20000000) == 0) {
-          piVar13 = (int *)(param_4 + uVar9 * 8);
+        if ((uVar11 & 0x20000000) == 0) {
+          piVar13 = (int *)(param_4 + uVar5 * 8);
           iVar12 = piVar13[3];
           iVar7 = piVar13[1];
           *param_1 = *piVar13 + piVar13[2] >> 1;
           param_1[1] = iVar7 + iVar12 >> 1;
           return;
         }
-        iVar12 = param_4 + uVar9 * 4;
+        iVar12 = param_4 + uVar5 * 4;
         sVar1 = *(short *)(iVar12 + 2);
         sVar2 = *(short *)(iVar12 + 6);
-        *param_1 = (int)*(short *)(param_4 + uVar9 * 4) + (int)*(short *)(iVar12 + 4) >> 1;
+        *param_1 = (int)*(short *)(param_4 + uVar5 * 4) + (int)*(short *)(iVar12 + 4) >> 1;
         param_1[1] = (int)sVar1 + (int)sVar2 >> 1;
         return;
       }
-      uVar9 = (uVar5 >> 0x11) + 1;
+      uVar5 = (uVar9 >> 0x11) + 1;
     }
   }
-  if ((uVar8 & 0x20000000) == 0) {
-    puVar6 = (uint *)(param_4 + uVar9 * 8);
-    uVar8 = *puVar6;
-    uVar9 = puVar6[1];
+  if ((uVar11 & 0x20000000) == 0) {
+    puVar6 = (uint *)(param_4 + uVar5 * 8);
+    uVar11 = *puVar6;
+    uVar5 = puVar6[1];
   }
   else {
-    uVar8 = (uint)*(short *)(param_4 + uVar9 * 4);
-    uVar9 = (uint)*(short *)(param_4 + uVar9 * 4 + 2);
+    uVar11 = (uint)*(short *)(param_4 + uVar5 * 4);
+    uVar5 = (uint)*(short *)(param_4 + uVar5 * 4 + 2);
   }
-  *param_1 = uVar8;
-  param_1[1] = uVar9;
+  *param_1 = uVar11;
+  param_1[1] = uVar5;
   return;
 }

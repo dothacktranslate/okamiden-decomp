@@ -89,10 +89,10 @@ extern int func_02009784();
 extern int func_0205df8c();
 extern int func_0205e0c0();
 
-void func_0205e008(undefined4 *param_1,uint param_2,undefined4 param_3,undefined4 param_4)
+void func_0205e008(undefined2 *param_1,uint param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  uint *puVar1;
+  sbyte *puVar1;
   int iVar2;
   uint uVar3;
 

@@ -157,13 +157,13 @@ void func_0203f2c4(int param_1,undefined4 *param_2,undefined4 param_3)
 
 {
   *(undefined4 *)(param_1 + 0x68) = param_3;
-  *(undefined4 **)(param_1 + 100) = param_2;
+  *(undefined4 **)(100 + param_1) = param_2;
   *(undefined4 *)(param_1 + 0x70) = 0;
   *(undefined4 *)(param_1 + 0x74) = *param_2;
   *(undefined4 *)(param_1 + 0x78) = param_2[1];
   *(undefined4 *)(param_1 + 0x7c) = param_2[2];
   func_02001c28(param_1 + 0x80);
-  func_0204278c(param_1 + 0x30,(*(unsigned int *)0x0203f314),(*(unsigned int *)0x0203f318));
+  func_0204278c(param_1 + 0x30,(*(short *)0x0203f314),(*(unsigned int *)0x0203f318));
   func_02042650(param_1 + 0x58,*(undefined4 *)(param_1 + 0x34),*(undefined4 *)(param_1 + 0x38),
                *(undefined4 *)(param_1 + 0x3c));
   *(uint *)(param_1 + 0x5c) = *(uint *)(param_1 + 0x5c) | 0x70000;

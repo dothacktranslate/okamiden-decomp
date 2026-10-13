@@ -95,11 +95,11 @@ void func_020333ec(undefined4 *param_1,undefined4 param_2,undefined4 *param_3,un
 
 {
   undefined4 *puVar1;
-  undefined4 local_30;
-  int local_2c;
   int local_28;
-  undefined1 auStack_24 [12];
+  int local_2c;
+  undefined4 local_30;
   undefined4 uStack_18;
+  undefined1 auStack_24 [12];
 
   uStack_18 = param_4;
   func_0203337c(param_1[1],param_2,param_3[1],param_5,1,&local_2c);
@@ -122,7 +122,7 @@ void func_020333ec(undefined4 *param_1,undefined4 param_2,undefined4 *param_3,un
     param_6[2] = puVar1[2];
     return;
   }
-  if ((0x1000 < local_2c) && (0x1000 < local_28)) {
+  if ((0x1000 < local_2c) && (0x1001 <= local_28)) {
     param_1 = (undefined4 *)*param_1;
     *param_5 = *param_1;
     param_5[1] = param_1[1];
@@ -140,13 +140,13 @@ void func_020333ec(undefined4 *param_1,undefined4 param_2,undefined4 *param_3,un
     param_6[2] = param_3[2];
     return;
   }
-  if (0xfff < local_28) {
+  if (0x1000 <= local_28) {
     local_28 = 0x1000;
   }
   if (local_28 <= 0) {
     local_28 = 0;
   }
-  if (0xfff < local_2c) {
+  if (0x1000 <= local_2c) {
     local_2c = 0x1000;
   }
   if (local_2c <= 0) {

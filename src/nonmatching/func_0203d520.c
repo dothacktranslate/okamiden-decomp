@@ -93,7 +93,7 @@ undefined4 func_0203d520(int param_1)
 {
   int iVar1;
 
-  if (*(int *)(0x14 + param_1) != 0) {
+  if (*(int *)(param_1 + 0x14) != 0) {
     if ((*(uint *)(param_1 + 0x30) & 4) == 0) {
       return 1;
     }
@@ -103,6 +103,6 @@ undefined4 func_0203d520(int param_1)
       return 0;
     }
   }
-  *(short *)(param_1 + 0x30) = *(uint *)(param_1 + 0x30) & 0xfffffffb;
+  *(short *)(param_1 + 0x30) = *(unsigned short *)(param_1 + 0x30) & 0xfffffffb;
   return 1;
 }

@@ -113,7 +113,7 @@ int func_02050028(int param_1,int param_2,uint param_3,undefined4 param_4)
     break;
     piVar5 = (int *)*piVar5;
   }
-  if ((*(byte *)((int)piVar5 + 5) & (*(byte *)(piVar6 + 5) ^ 3) & 3) != 0) {
+  if ((*(byte *)((int)5 + piVar5) & (*(byte *)(piVar6 + 5) ^ 3) & 3) != 0) {
     *(byte *)((int)piVar5 + 5) = *(byte *)((int)piVar5 + 5) ^ 3;
   }
   return (int)piVar5;

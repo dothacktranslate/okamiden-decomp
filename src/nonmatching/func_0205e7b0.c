@@ -98,7 +98,7 @@ undefined4 func_0205e7b0(undefined4 param_1,int *param_2,int *param_3)
   int *piVar4;
   int iVar5;
   undefined4 uVar6;
-  uint uVar7;
+  int uVar7;
   uint uVar8;
   ulonglong uVar9;
   int local_38;

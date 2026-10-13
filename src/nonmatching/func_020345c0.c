@@ -104,10 +104,10 @@ undefined4 func_020345c0(undefined4 *param_1,int param_2,int param_3,undefined4 
   do {
     iVar2 = param_2 + iVar1 * 0xc;
     iVar4 = *(int *)(iVar2 + 8);
-    iVar2 = *(int *)(iVar2 + 4);
+    iVar2 = *(int *)(4 + iVar2);
     iVar3 = iVar1 + 1;
     local_50[iVar1 * 3] = *(int *)(param_2 + iVar1 * 0xc);
-    local_50[iVar1 * 3 + 1] = param_3 + iVar2;
+    local_50[iVar1 * 1 + 3] = param_3 + iVar2;
     local_50[iVar1 * 3 + 2] = iVar4;
     iVar1 = iVar3;
   } while (iVar3 < 4);

@@ -120,40 +120,40 @@ undefined4 func_0202c488(int param_1)
     local_34[iVar1] = 0;
     iVar1 = iVar1 + 1;
   } while (iVar1 < 0x20);
-  iVar1 = *(int *)(param_1 + ((unsigned int)0x0202c58c));
-  uVar2 = *(uint *)(iVar1 + 0x14);
-  if (uVar2 != 0) {
+  iVar1 = *(int *)(param_1 + ((unsigned int)0x00000e54));
+  uVar7 = *(uint *)(iVar1 + 0x14);
+  if (uVar7 != 0) {
     do {
-      iVar10 = iVar1 + local_48 * 0x18;
+      iVar10 = local_48 + iVar1 * 0x18;
       if (*(short *)(iVar10 + 6) == 0x1e) {
-        uVar7 = (uint)*(ushort *)(param_1 + ((unsigned int)0x0202c590) + -2);
+        uVar2 = (uint)*(ushort *)(param_1 + ((unsigned int)0x00000bee) + -2);
         iVar3 = 0;
-        if (uVar7 != 0) {
+        if (uVar2 != 0) {
           uVar11 = *(uint *)(iVar10 + 8);
           do {
-            if ((uint)*(ushort *)(param_1 + iVar3 * 2 + ((unsigned int)0x0202c590)) == (uVar11 & 0xffff)) {
+            if ((uint)*(ushort *)(param_1 + iVar3 * 2 + ((unsigned int)0x00000bee)) == (uVar11 & 0xffff)) {
               local_34[iVar3] = 1;
             }
             iVar3 = iVar3 + 1;
-          } while (iVar3 < (int)uVar7);
+          } while (iVar3 < (int)uVar2);
         }
       }
       local_48 = local_48 + 1;
-    } while (local_48 < uVar2);
+    } while (local_48 < uVar7);
   }
   iVar1 = 0;
-  if (*(short *)(param_1 + ((unsigned int)0x0202c594)) != 0) {
-    iVar10 = ((unsigned int)0x0202c594) + 0x42;
-    puVar4 = (ushort *)(param_1 + ((unsigned int)0x0202c594));
-    iVar3 = ((unsigned int)0x0202c594) + 2;
-    iVar5 = ((unsigned int)0x0202c594) + 0x42;
-    iVar14 = ((unsigned int)0x0202c594) + 2;
+  if (*(short *)(param_1 + ((unsigned int)0x00000bec)) != 0) {
+    iVar10 = ((unsigned int)0x00000bec) + 0x42;
+    puVar4 = (ushort *)(param_1 + ((unsigned int)0x00000bec));
+    iVar3 = ((unsigned int)0x00000bec) + 2;
+    iVar5 = ((unsigned int)0x00000bec) + 0x42;
+    iVar14 = ((unsigned int)0x00000bec) + 2;
     do {
       iVar13 = param_1 + iVar1 * 2;
       func_0202d100(param_1,*(undefined2 *)(iVar13 + iVar3),*(undefined2 *)(iVar13 + iVar5),
                    local_34[iVar1]);
       sVar6 = *(short *)(iVar13 + iVar14);
-      if ((sVar6 == 0) && (*(char *)(param_1 + ((unsigned int)0x0202c598)) == '\0')) {
+      if ((sVar6 == 0) && (*(char *)(param_1 + ((unsigned int)0x00000ad8)) == '\0')) {
         sVar6 = 0;
         uVar8 = 0;
         uVar9 = 0;

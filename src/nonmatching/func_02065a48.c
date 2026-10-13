@@ -90,12 +90,12 @@ extern int func_0200cbc0();
 int func_02065a48(uint param_1,int param_2,uint param_3,int param_4)
 
 {
-  uint uVar1;
   int iVar2;
+  uint uVar1;
   int iVar3;
   uint uVar4;
-  uint uVar5;
   int iVar6;
+  uint uVar5;
   int *piVar7;
 
   iVar6 = (*(unsigned int *)0x02065b0c);

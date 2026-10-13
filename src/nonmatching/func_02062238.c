@@ -96,7 +96,7 @@ void func_02062238(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   int iVar4;
   uint uVar5;
   uint uVar6;
-  uint uVar7;
+  int uVar7;
   uint uVar8;
   uint uVar9;
   uint uVar10;

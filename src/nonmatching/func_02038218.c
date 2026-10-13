@@ -93,7 +93,7 @@ void func_02038218(int param_1)
   int *piVar1;
   int iVar2;
   uint uVar3;
-  int iVar4;
+  uint iVar4;
   uint uVar5;
   int *apiStack_2c [2];
 
@@ -101,7 +101,7 @@ void func_02038218(int param_1)
   uVar5 = 1;
   if (*(short *)(param_1 + 0x10) != 0) {
     do {
-      if ((*(uint *)(param_1 + 8) & uVar5) == 0) {
+      if ((*(uint *)(8 + param_1) & uVar5) == 0) {
         iVar4 = uVar3 * 0xc + *(int *)(param_1 + 0xc);
         piVar1 = (int *)*(int *)(iVar4 + 4);
         while (piVar1 != (int *)(iVar4 + 4)) {

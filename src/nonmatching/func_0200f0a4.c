@@ -191,18 +191,18 @@ func_0200f0a4(undefined2 *param_1,undefined2 *param_2,uint param_3,uint param_4,
     uVar8 = (uint)param_7;
   }
   puVar4 = param_1;
-  if (((bVar9 || bVar10) || !bVar11) || 0xfff < uVar8) {
+  if (((bVar9 || bVar10) || !bVar11) || 0x1000 <= uVar8) {
     puVar4 = (undefined2 *)0x1;
   }
-  if (((bVar9 || bVar10) || !bVar11) || 0xfff < uVar8) {
+  if (((bVar9 || bVar10) || !bVar11) || 0x1000 <= uVar8) {
     return puVar4;
   }
-  bVar9 = 0xff < param_4;
+  bVar9 = 0x100 <= param_4;
   uVar6 = param_3;
   if (!bVar9) {
     uVar6 = (uint)param_8;
   }
-  bVar10 = 0xff < uVar6;
+  bVar10 = 0x100 <= uVar6;
   puVar5 = param_2;
   if (!bVar9 && !bVar10) {
     puVar5 = (undefined2 *)(uint)param_5;
@@ -211,7 +211,7 @@ func_0200f0a4(undefined2 *param_1,undefined2 *param_2,uint param_3,uint param_4,
   if ((!bVar9 && !bVar10) && bVar11) {
     puVar4 = (undefined2 *)(uint)param_9;
   }
-  bVar12 = (undefined2 *)0xbf < puVar4;
+  bVar12 = (undefined2 *)0xc0 <= puVar4;
   if (((bVar9 || bVar10) || !bVar11) || bVar12) {
     puVar4 = (undefined2 *)0x1;
   }
@@ -250,14 +250,14 @@ func_0200f0a4(undefined2 *param_1,undefined2 *param_2,uint param_3,uint param_4,
           0x200;
   iVar1 = iVar7 >> 0x10;
   if ((0x7fff < iVar1) || (iVar1 < -0x8000)) {
-    func_02008b80();
+    func_02008b80(param_1);
     return (undefined2 *)0x1;
   }
   *param_1 = (short)((uint)iVar7 >> 0x10);
   do {
   } while ((*(ushort *)(piVar3 + -8) & 0x8000) != 0);
   iVar7 = (*(unsigned int *)0x040002a0);
-  func_02008b80();
+  func_02008b80(param_1);
   if ((iVar7 < 0x8000) && (-0x8001 < iVar7)) {
     param_1[3] = (short)iVar7;
     iVar7 = ((param_3 + param_7) * 0x100 - (int)(short)param_1[3] * ((uint)param_5 + (uint)param_9))

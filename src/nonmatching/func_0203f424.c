@@ -98,7 +98,7 @@ void func_0203f424(int param_1)
   undefined4 uVar1;
   uint iVar2;
   uint uVar3;
-  int iVar4;
+  uint iVar4;
   int iVar5;
   uint uVar6;
   int iVar7;
@@ -130,16 +130,16 @@ void func_0203f424(int param_1)
     }
     iVar2 = *(int *)(param_1 + 0x6c) >> 0xc;
     puVar8 = local_4c;
-    iVar7 = 7;
     puVar9 = ((unsigned int)0x0203f688);
+    iVar7 = 7;
     do {
       uVar3 = *puVar9;
       uVar6 = puVar9[1];
       puVar9 = puVar9 + 2;
       *puVar8 = uVar3;
       puVar8[1] = uVar6;
-      puVar8 = puVar8 + 2;
       iVar7 = iVar7 + -1;
+      puVar8 = puVar8 + 2;
     } while (iVar7 != 0);
     local_50 = 3;
     func_0205e0c0(0x10,&local_50,1);
@@ -177,7 +177,7 @@ void func_0203f424(int param_1)
           local_34 = local_4c[1] | 0x1f0;
           iVar4 = iVar7 + iVar2;
           iVar5 = iVar4 >> 0x1f;
-          iVar5 = (int)((((uint)(iVar4 * 0x20000000 + iVar5) >> 0x1d | iVar5 << 3) - iVar5) *
+          iVar5 = (int)((((uint)(iVar4 + iVar5 * 0x20000000) >> 0x1d | iVar5 << 3) - iVar5) *
                        0x10000) >> 0x10;
           local_4c[2] = (uint)*(ushort *)(((unsigned int)0x0203f698) + iVar5 * 2);
           if (iVar7 == *(int *)(param_1 + 0x70)) {
@@ -212,7 +212,7 @@ void func_0203f424(int param_1)
           iVar5 = iVar4 >> 0x1f;
           local_4c[2] = (uint)*(ushort *)
                                (((unsigned int)0x0203f698) +
-                               ((int)((((uint)(iVar4 * 0x20000000 + iVar5) >> 0x1d | iVar5 << 3) -
+                               ((int)((((uint)(iVar4 + iVar5 * 0x20000000) >> 0x1d | iVar5 << 3) -
                                       iVar5) * 0x10000) >> 0xf));
           local_4c[3] = ((unsigned int)0x0800f001);
           local_2c = ((unsigned int)0x0203f6a8);

@@ -91,7 +91,7 @@ extern int func_02047714();
 void func_020510d8(int *param_1,int param_2,int param_3,int param_4)
 
 {
-  int iVar1;
+  uint iVar1;
 
   if (param_2 >= param_1[3]) {
     if (param_2 == 0) {
@@ -101,12 +101,12 @@ void func_020510d8(int *param_1,int param_2,int param_3,int param_4)
     func_02047714(param_1[2],((unsigned int)0x02051174));
     return;
   }
-  iVar1 = param_1[param_2 * 2 + 5];
+  iVar1 = param_1[5 * 2 + param_2];
   if (iVar1 == -1) {
     func_02047714(param_1[2],((unsigned int)0x02051178));
   }
   if (iVar1 == -2) {
-    func_02046868(param_1[2],(param_1[param_2 * 2 + 4] - *param_1) + 1);
+    func_02046868(param_1[2],(param_1[2 * 4 + param_2] - *param_1) + 1);
     return;
   }
   func_02046898(param_1[2],param_1[param_2 * 2 + 4],iVar1);

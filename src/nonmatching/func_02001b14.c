@@ -99,8 +99,8 @@ void func_02001b14(int *param_1,undefined4 param_2,int *param_3,undefined4 *para
   undefined4 local_30;
   undefined4 local_2c;
   int local_28;
-  int local_24;
   int local_20;
+  int local_24;
 
   local_24 = param_1[1] - param_3[1];
   local_28 = *param_1 - *param_3;

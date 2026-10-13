@@ -87,17 +87,17 @@ extern int LZCOUNT();
 void func_0200522c(uint param_1)
 
 {
-  if ((1 & param_1) != 0) {
+  if ((param_1 & 1) != 0) {
     (*(unsigned char *)0x04000240) = 0x80;
   }
-  if ((param_1 & 2) != 0) {
-    (*(signed char *)0x020052a4) = 0x80;
+  if ((2 & param_1) != 0) {
+    (*(signed char *)0x04000241) = 0x80;
   }
-  if ((param_1 & 4) != 0) {
-    (*(signed char *)0x020052a8) = 0x80;
+  if ((4 & param_1) != 0) {
+    (*(signed char *)0x04000242) = 0x80;
   }
   if ((param_1 & 8) != 0) {
-    (*(unsigned char *)0x020052ac) = 0x80;
+    (*(unsigned char *)0x04000243) = 0x80;
   }
   if ((param_1 & 0x10) != 0) {
     (*(signed char *)0x020052b0) = 0x80;
@@ -109,10 +109,10 @@ void func_0200522c(uint param_1)
     (*(signed char *)0x020052b8) = 0x80;
   }
   if ((param_1 & 0x80) != 0) {
-    (*(unsigned int *)0x020052bc) = 0x80;
+    (*(unsigned char *)0x020052bc) = 0x80;
   }
   if ((param_1 & 0x100) != 0) {
-    (*(unsigned int *)0x020052c0) = 0x80;
+    (*(unsigned char *)0x04000249) = 0x80;
   }
   return;
 }

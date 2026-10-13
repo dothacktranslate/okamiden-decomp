@@ -1,8 +1,8 @@
 {
   "arm9_total_code_bytes": 431680,
   "cumulative_selected_v2_gain_over_pre_a9": {
-    "equivalent_bytes": 7298.234439767115,
-    "percentage_points": 1.6906584599163998
+    "equivalent_bytes": 8043.442018338106,
+    "percentage_points": 1.8632880880138312
   },
   "expanded_v2": {
     "exact_bytes": 15940,
@@ -17,12 +17,13 @@
     "coverage_percent": 100.0,
     "exact_bytes": 15940,
     "exact_functions": 535,
-    "fuzzy_equivalent_bytes": 192204.4030838492,
+    "fuzzy_equivalent_bytes": 195979.0110765168,
     "fuzzy_functions_scored": 2541,
     "fuzzy_functions_unscored": 0,
     "fuzzy_source_targets": 2541,
-    "overall_equivalent_bytes": 208144.4030838492,
-    "overall_v2_percent": 48.21729130000213
+    "overall_equivalent_bytes": 211919.0110765168,
+    "overall_v2_percent": 49.091690853529656,
+    "zero_equivalent_bytes": 0.0
   },
   "latest_deep_v2_pass": {
     "candidate_errors_skipped": 0,
@@ -83,6 +84,22 @@
     "profile_only_improvements": 0,
     "source_changes": 172,
     "targets": 300
+  },
+  "latest_maxgain_pass": {
+    "candidate_errors_skipped": 0,
+    "candidate_objects_scored": 302067,
+    "compiler_workers": 8,
+    "engine_batch_failures": 34,
+    "functions_improved": 126,
+    "generations_requested": 6,
+    "overall_v2_equivalent_bytes": 211919.0110765168,
+    "overall_v2_percent": 49.091690853529656,
+    "pass_equivalent_byte_gain": 745.2075785709912,
+    "pass_percentage_point_gain": 0.17262962809743124,
+    "profile_only_improvements": 1,
+    "provisional_exact_candidates": 0,
+    "scoring_workers": 8,
+    "source_files_improved": 125
   },
   "latest_profile_sweep": {
     "equivalent_byte_gain": 143.0666188458152,

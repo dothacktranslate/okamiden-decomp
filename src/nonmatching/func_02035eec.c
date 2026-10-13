@@ -97,10 +97,10 @@ undefined4 func_02035eec(int param_1,int param_2,int param_3,int param_4)
   undefined1 *puVar2;
   undefined4 uVar3;
   undefined1 *puVar4;
-  int iVar5;
   int iVar6;
-  undefined1 auStack_3c [12];
+  int iVar5;
   undefined1 auStack_30 [12];
+  undefined1 auStack_3c [12];
 
   if (2 < param_2) {
     if (param_4 == 1) {
@@ -108,7 +108,7 @@ undefined4 func_02035eec(int param_1,int param_2,int param_3,int param_4)
       iVar5 = param_2 * 0x10000 >> 0x10;
       if (0 < iVar5) {
         do {
-          if ((*(uint *)(param_1 + iVar5 * 0x20) & 1) == 0) {
+          if ((*(uint *)(iVar5 + param_1 * 0x20) & 1) == 0) {
             iVar6 = param_1 + iVar5 * 0x20;
             iVar1 = param_1 + (iVar5 + -1) * 0x20;
             if (param_3 == 1) {

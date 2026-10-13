@@ -101,7 +101,7 @@ void func_0200831c(void)
   *(uint *)(((unsigned int)0x02008378) + 8) = uVar4 + 1;
   *(uint *)(iVar2 + 0xc) = *piVar1 + (uint)(0xfffffffe < uVar4);
   puVar3 = ((unsigned int)0x04000102);
-  if (*(short *)(iVar2 + 4) != 0) {
+  if (*(unsigned char *)(iVar2 + 4) != 0) {
     (*(unsigned short *)0x04000102) = 0;
     puVar3[-1] = 0;
     *puVar3 = 0xc1;

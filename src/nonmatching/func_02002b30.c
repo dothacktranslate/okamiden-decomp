@@ -98,8 +98,8 @@ void func_02002b30(int *param_1,int *param_2,uint *param_3)
   uint uVar8;
   uint uVar11;
   uint uVar9;
-  uint uVar12;
   uint uVar13;
+  uint uVar12;
   uint uVar14;
   uint uVar15;
 
@@ -118,14 +118,14 @@ void func_02002b30(int *param_1,int *param_2,uint *param_3)
   lVar6 = (longlong)param_1[1] * (longlong)*param_2;
   uVar7 = (uint)lVar6;
   uVar10 = uVar15 - uVar7;
-  *param_3 = uVar8 + 0x800 >> 0xc |
+  *param_3 = 0x800 + uVar8 >> 0xc |
              (((int)((ulonglong)lVar1 >> 0x20) -
               ((int)((ulonglong)lVar2 >> 0x20) + (uint)(uVar13 < uVar9))) +
              (uint)(0xfffff7ff < uVar8)) * 0x100000;
   param_3[1] = uVar12 + 0x800 >> 0xc |
                (((int)((ulonglong)lVar3 >> 0x20) -
                 ((int)((ulonglong)lVar4 >> 0x20) + (uint)(uVar14 < uVar11))) +
-               (uint)(0xfffff800 <= uVar12)) * 0x100000;
+               (uint)(0xfffff7ff < uVar12)) * 0x100000;
   param_3[2] = uVar10 + 0x800 >> 0xc |
                (((int)((ulonglong)lVar5 >> 0x20) -
                 ((int)((ulonglong)lVar6 >> 0x20) + (uint)(uVar15 < uVar7))) +

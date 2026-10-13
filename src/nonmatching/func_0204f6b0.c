@@ -96,10 +96,10 @@ int func_0204f6b0(int param_1,int param_2,int *param_3,undefined4 param_4)
 
 {
   char cVar1;
-  uint iVar2;
+  int iVar2;
   undefined4 uVar3;
   int iVar4;
-  int iVar5;
+  uint iVar5;
   undefined1 *puVar6;
   int iVar7;
   undefined4 *puVar8;
@@ -116,16 +116,16 @@ int func_0204f6b0(int param_1,int param_2,int *param_3,undefined4 param_4)
   uStack_28 = param_4;
   func_0204f64c(param_1,((unsigned int)0x0204f8e4));
   do {
-    iVar2 = func_02019064(param_2,0x25);
-    if (iVar2 == 0) {
+    iVar5 = func_02019064(param_2,0x25);
+    if (iVar5 == 0) {
       func_0204f64c(param_1,param_2);
-      iVar2 = *(unsigned char *)(8 + param_1) - *(int *)(param_1 + 0xc);
-      func_02054bd0(param_1,iVar4 + 1,((int)(iVar2 + ((uint)(iVar2 >> 2) >> 0x1d)) >> 3) + -1);
+      iVar5 = *(unsigned char *)(8 + param_1) - *(unsigned char *)(param_1 + 0xc);
+      func_02054bd0(param_1,iVar4 + 1,((int)(iVar5 + ((uint)(iVar5 >> 2) >> 0x1d)) >> 3) + -1);
       iVar4 = *(int *)(param_1 + 8) + iVar4 * -8;
       *(int *)(param_1 + 8) = iVar4;
       return *(int *)(iVar4 + -8) + 0x10;
     }
-    uVar3 = func_02050028(param_1,param_2,iVar2 - param_2);
+    uVar3 = func_02050028(param_1,param_2,iVar5 - param_2);
     puVar8 = *(undefined4 **)(param_1 + 8);
     *puVar8 = uVar3;
     puVar8[1] = 4;
@@ -135,7 +135,7 @@ int func_0204f6b0(int param_1,int param_2,int *param_3,undefined4 param_4)
     iVar7 = *(int *)(param_1 + 8);
     piVar9 = (int *)(iVar7 + 8);
     *(int **)(param_1 + 8) = piVar9;
-    cVar1 = *(char *)(iVar2 + 1);
+    cVar1 = *(char *)(iVar5 + 1);
     if (cVar1 < 'g') {
       if (cVar1 < 'c') {
         puVar6 = ((unsigned int)0x0204f8f0);
@@ -150,8 +150,8 @@ int func_0204f6b0(int param_1,int param_2,int *param_3,undefined4 param_4)
         goto LAB_0204f884;
       }
       if (cVar1 == 'd') {
-        iVar5 = func_0201e6a0(*param_3);
-        *piVar9 = iVar5;
+        iVar2 = func_0201e6a0(*param_3);
+        *piVar9 = iVar2;
         *(undefined4 *)(iVar7 + 0xc) = 3;
         if (*(int *)(param_1 + 0x1c) - *(int *)(param_1 + 8) < 9) {
           func_0204bdc4(param_1,1);
@@ -178,7 +178,7 @@ int func_0204f6b0(int param_1,int param_2,int *param_3,undefined4 param_4)
         else {
 LAB_0204f864:
           local_46 = 0x25;
-          local_45 = *(undefined1 *)(iVar2 + 1);
+          local_45 = *(undefined1 *)(iVar5 + 1);
           local_44 = 0;
           puVar6 = &local_46;
         }
@@ -195,7 +195,7 @@ LAB_0204f864:
 LAB_0204f884:
       func_0204f64c(param_1,puVar6);
     }
-    param_2 = iVar2 + 2;
+    param_2 = iVar5 + 2;
     iVar4 = iVar4 + 2;
   } while( true );
 }

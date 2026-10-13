@@ -125,7 +125,7 @@ LAB_0201a804:
       *param_5 = 0;
     }
     else {
-      *param_5 = iVar3 + -1 + local_28;
+      *param_5 = iVar3 + -local_28 + 1;
     }
     (*param_3)(param_4,unaff_r6,1);
     return uVar5;
@@ -244,7 +244,7 @@ LAB_0201a78c:
     }
   }
   uVar4 = 0x10;
-  if (local_2c < uVar5) {
+  if (uVar5 > local_2c) {
     *param_7 = 1;
   }
   if (-(uVar5 * param_1) - 1 < uVar2) {

@@ -92,8 +92,8 @@ void func_0201ac10(undefined1 *param_1,int param_2,int param_3,undefined4 param_
   byte *pbVar1;
   byte *pbVar2;
   short sVar3;
-  int iVar4;
   uint uVar5;
+  int iVar4;
   int iVar6;
   int iVar7;
   byte *pbVar8;
@@ -118,14 +118,14 @@ void func_0201ac10(undefined1 *param_1,int param_2,int param_3,undefined4 param_
         iVar6 = 0;
         iVar11 = iVar7 + -1;
       }
-      iVar4 = (uint)*(byte *)(param_2 + 4) - iVar6;
-      iVar10 = iVar11 + 1;
-      if (iVar4 < iVar11 + 1) {
-        iVar10 = iVar4;
+      iVar10 = (uint)*(byte *)(param_2 + 4) - iVar6;
+      iVar4 = iVar11 + 1;
+      if (iVar10 < iVar11 + 1) {
+        iVar4 = iVar10;
       }
       pbVar2 = (byte *)(param_3 + (5 + iVar11));
       pbVar1 = (byte *)(param_2 + 5 + iVar6);
-      for (; 0 < iVar10; iVar10 = iVar10 + -1) {
+      for (; 0 < iVar4; iVar4 = iVar4 + -1) {
         uVar5 = (uint)*pbVar1 * (uint)*pbVar2 + uVar5;
         pbVar2 = pbVar2 + -1;
         pbVar1 = pbVar1 + 1;
@@ -153,7 +153,7 @@ void func_0201ac10(undefined1 *param_1,int param_2,int param_3,undefined4 param_
     iVar6 = iVar6 + 1;
   }
   param_1[4] = (char)iVar6;
-  if (pbVar8 <= pbVar9) {
+  if (pbVar9 >= pbVar8) {
     return;
   }
   if (*pbVar9 < 5) {

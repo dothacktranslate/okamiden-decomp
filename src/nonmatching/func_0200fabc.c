@@ -96,13 +96,13 @@ void func_0200fabc(void)
   uint uVar4;
   uint uVar5;
 
-  iVar2 = ((unsigned int)0x0200fb4c);
   puVar1 = ((unsigned int)0x040001a4);
+  iVar2 = ((unsigned int)0x0200fb4c);
   uVar5 = 0;
   do {
     iVar3 = uVar5 * 0xc;
-    *(undefined4 *)(uVar5 + iVar2 * 4) = *(undefined4 *)(iVar3 + 0x40000b8);
-    uVar4 = *(uint *)(iVar3 + 0x40000b8) & 0x38000000;
+    *(undefined4 *)(iVar2 + uVar5 * 4) = *(undefined4 *)(0x40000b8 + iVar3);
+    uVar4 = *(short *)(0x40000b8 + iVar3) & 0x38000000;
     if (uVar4 == 0x18000000 || uVar4 == 0x20000000) {
 LAB_0200fb18:
       func_020093b8(uVar5);

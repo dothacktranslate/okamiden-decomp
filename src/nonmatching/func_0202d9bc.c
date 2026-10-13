@@ -124,13 +124,13 @@ void func_0202d9bc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       iVar11 = iVar2;
     }
     if (*(unsigned short *)(iVar11 + 0x14) <= uVar10) break;
-    iVar11 = iVar2 + uVar10 * 0x18;
+    iVar11 = uVar10 + iVar2 * 0x18;
     sVar1 = *(short *)(iVar11 + 6);
     if ((((sVar1 == 8) || (sVar1 == 9)) || (sVar1 == 10)) || (sVar1 == 0x22)) {
       if (iVar2 == 0) {
         iVar11 = 0;
       }
-      func_0203aed4((int)(((unsigned int)0xffff0000) & *(uint *)(iVar11 + 8)) >> 0x10,1);
+      func_0203aed4((int)(((unsigned int)0xffff0000) & *(uint *)(8 + iVar11)) >> 0x10,1);
       iVar11 = *(int *)(param_1 + ((unsigned int)0x00000e54)) + uVar10 * 0x18;
       if (*(int *)(param_1 + ((unsigned int)0x00000e54)) == 0) {
         iVar11 = 0;

@@ -92,10 +92,10 @@ uint func_020575a0(int *param_1,int *param_2)
   int iVar3;
   int iVar4;
   int iVar5;
-  uint uVar6;
+  int uVar6;
   int iVar7;
 
-  uVar6 = (uint)*(ushort *)(param_1 + 3);
+  uVar6 = (uint)*(ushort *)(3 + param_1);
   bVar2 = false;
   if (((uint)*(ushort *)((int)param_1 + 0xe) <= uVar6 + 1) &&
      (*(ushort *)((int)param_1 + 10) <= uVar6)) {
@@ -114,7 +114,7 @@ uint func_020575a0(int *param_1,int *param_2)
   iVar7 = param_2[1];
   iVar4 = param_2[2];
   iVar3 = param_2[3];
-  iVar5 = *param_1 * 0x540 + ((unsigned int)0x02057658) + 0x100 + (uint)uVar1 * 0x20;
+  iVar5 = *param_1 * 0x540 + ((unsigned int)0x02057658) + 0x100 + (uint)0x20 * uVar1;
   *(short *)(iVar5 + 6) = (short)(*param_2 >> 4);
   *(short *)(iVar5 + 0xe) = (short)(iVar7 >> 4);
   *(short *)(iVar5 + 0x16) = (short)(iVar4 >> 4);

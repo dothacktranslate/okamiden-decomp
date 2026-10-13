@@ -172,18 +172,18 @@ void func_020059e0(undefined4 param_1)
   puVar1 = ((unsigned int)0x04000240);
   switch(param_1) {
   case 0:
-    (*(unsigned short *)0x04000060) = (*(unsigned int *)0x04000060) & (ushort)((unsigned int)0x02005adc);
+    (*(unsigned short *)0x04000060) = (*(unsigned short *)0x04000060) & (ushort)((unsigned int)0x02005adc);
     break;
   case 1:
     (*(unsigned char *)0x04000240) = 0x9b;
     puVar2 = (ushort *)(puVar1 + -0x1e0);
     goto LAB_02005aa8;
   case 2:
-    puVar1 = ((unsigned int)0x02005acc);
+    puVar1 = ((unsigned int)0x04000241);
     goto LAB_02005a9c;
   case 3:
     (*(unsigned int *)0x04000240) = 0x93;
-    puVar1 = ((unsigned int)0x02005acc);
+    puVar1 = ((unsigned int)0x04000241);
     goto LAB_02005a9c;
   case 4:
     puVar1 = ((unsigned int)0x02005ad0);

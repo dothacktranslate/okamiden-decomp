@@ -153,7 +153,7 @@ void func_020137dc(uint param_1,undefined4 param_2,undefined4 param_3,undefined4
         *(undefined4 *)(iVar6 + 0x40) = 600;
         *(undefined4 *)(iVar6 + 0x44) = 3000;
         *(undefined4 *)(iVar6 + 0x48) = 0x46;
-        uVar3 = ((unsigned int)0x02013b14);
+        uVar3 = ((unsigned int)0x000059d8);
         *(undefined4 *)(iVar6 + 0x4c) = 0x96;
         uVar1 = ((unsigned int)0x02013b18);
         *(undefined4 *)(iVar6 + 0x38) = uVar3;
@@ -167,7 +167,7 @@ void func_020137dc(uint param_1,undefined4 param_2,undefined4 param_3,undefined4
       if (uVar4 != 0x800000) goto LAB_02013ae0;
       if (uVar2 == 0) {
         *(undefined4 *)(iVar6 + 0x40) = 1000;
-        uVar3 = ((unsigned int)0x02013b1c);
+        uVar3 = ((unsigned int)0x000109a0);
         *(undefined4 *)(iVar6 + 0x44) = 3000;
         uVar1 = ((unsigned int)0x02013b20);
         *(undefined4 *)(iVar6 + 0x38) = uVar3;
@@ -177,7 +177,7 @@ void func_020137dc(uint param_1,undefined4 param_2,undefined4 param_3,undefined4
       else {
         if (uVar2 != 1) goto LAB_02013a70;
         *(undefined4 *)(iVar6 + 0x40) = 1000;
-        uVar3 = ((unsigned int)0x02013b1c);
+        uVar3 = ((unsigned int)0x000109a0);
         *(undefined4 *)(iVar6 + 0x44) = 3000;
         uVar1 = ((unsigned int)0x02013b20);
         *(undefined4 *)(iVar6 + 0x38) = uVar3;
@@ -195,7 +195,7 @@ LAB_02013a70:
     *(uint *)(iVar6 + 0x58) = *(uint *)(iVar6 + 0x58) | 0xb40;
     return;
   }
-  if (uVar4 < 0x2001) {
+  if (uVar4 <= 0x2000) {
     if (uVar4 < 0x2000) {
       if (uVar4 != 0x200) goto LAB_02013ae0;
       *(undefined4 *)(iVar6 + 0x24) = 0x10;

@@ -164,13 +164,13 @@ LAB_0200d5e0:
           if (uVar13 == uStack_b0) {
             uVar5 = uStack_ac;
           }
-        } while (uVar13 != uStack_b0 || uVar2 != uVar5);
+        } while (uStack_b0 != uVar13 || uVar5 != uVar2);
         iVar4 = 0;
         uVar5 = 0;
         if (uVar2 != 0) {
           do {
-            uVar8 = (int)pcVar12[uVar5] - 0x41U & 0xff;
             uVar7 = (int)acStack_a8[uVar5] - 0x41U & 0xff;
+            uVar8 = (int)pcVar12[uVar5] - 0x41U & 0xff;
             if (uVar8 <= 0x19) {
               uVar8 = uVar8 + 0x20;
             }
@@ -203,8 +203,8 @@ LAB_0200d5e0:
     uVar6 = 0xb;
   }
   else {
-    puVar11 = *(undefined4 **)(param_1 + 0x44);
     uVar6 = *(undefined4 *)(param_1 + 0x24);
+    puVar11 = *(undefined4 **)(param_1 + 0x44);
     uVar9 = *(undefined4 *)(param_1 + 0x28);
     *puVar11 = *(undefined4 *)(param_1 + 0x20);
     puVar11[1] = uVar6;

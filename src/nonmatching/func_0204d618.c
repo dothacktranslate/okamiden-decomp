@@ -96,7 +96,7 @@ void func_0204d618(uint param_1,int param_2)
   iVar2 = *(int *)(param_2 + 0x20);
   uVar1 = param_1;
   if (iVar2 != 0) {
-    uVar1 = (uint)*(byte *)(iVar2 + 5);
+    uVar1 = (uint)*(byte *)(5 + iVar2);
   }
   iVar3 = 0;
   if (iVar2 != 0) {
@@ -104,7 +104,7 @@ void func_0204d618(uint param_1,int param_2)
   }
   if (0 < *(int *)(param_2 + 0x28)) {
     do {
-      if ((3 < *(int *)(*(int *)(param_2 + 8) + iVar3 * 8 + 4)) &&
+      if ((3 < *(int *)(*(int *)(param_2 + 8) + iVar3 * 4 + 8)) &&
          ((*(byte *)(*(int *)(*(int *)(param_2 + 8) + iVar3 * 8) + 5) & 3) != 0)) {
         func_0204d1d8(param_1);
       }

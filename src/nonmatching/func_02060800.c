@@ -146,8 +146,8 @@ undefined4 func_02060800(int *param_1,int param_2,int param_3,uint param_4)
   sVar5 = *(short *)(iVar11 + 8);
   uVar8 = (uint)*(short *)(param_3 + (param_4 & ((unsigned int)0x00007fff)) * 10);
   sVar6 = *(short *)(iVar11 + 2);
-  sVar7 = *(short *)(iVar11 + 4);
   uVar3 = *(ushort *)(iVar11 + 6);
+  sVar7 = *(short *)(iVar11 + 4);
   param_1[4] = (int)sVar5 >> 3;
   *param_1 = (int)uVar8 >> 3;
   param_1[1] = (int)sVar6 >> 3;
