@@ -198,7 +198,7 @@ switchD_02055078_default:
   uVar29 = ((unsigned int)0xfffe0001);
   uVar27 = uVar23 >> 6 & 0xff;
   uVar10 = uVar23 & 0x3f;
-  puVar21 = (uint *)(iVar20 + uVar27 * 8);
+  puVar21 = (uint *)(iVar20 + 8 * uVar27);
   uVar32 = 0x24 < uVar10;
   uVar30 = uVar10 == 0x25;
   switch(uVar10) {
@@ -222,7 +222,7 @@ switchD_02055078_default:
     do {
       puVar13[1] = 0;
       puVar13 = puVar13 + -2;
-    } while (puVar21 <= puVar13);
+    } while (puVar13 >= puVar21);
     goto switchD_02055078_default;
   case 4:
     puVar13 = *(uint **)(*(int *)(iVar1 + ((uVar23 & 0xff800000) >> 0x15) + 0x14) + 8);
@@ -231,12 +231,6 @@ LAB_020551b8:
     *puVar21 = uVar23;
     uVar23 = puVar13[1];
     goto LAB_020551c0;
-  case 5:
-    uStack_30 = *(undefined4 *)(iVar1 + 0xc);
-    uStack_2c = 5;
-    *(uint **)(param_1 + 0x18) = puVar14;
-    puVar17 = &uStack_30;
-    goto LAB_020553c8;
   case 6:
     *(uint **)(param_1 + 0x18) = puVar14;
     puVar17 = (undefined4 *)(iVar20 + ((uVar23 & 0xff800000) >> 0x14));
@@ -247,6 +241,12 @@ LAB_020551b8:
     *(uint **)(param_1 + 0x18) = puVar14;
     puVar21 = &uStack_38;
     goto LAB_02055314;
+  case 5:
+    uStack_30 = *(undefined4 *)(iVar1 + 0xc);
+    uStack_2c = 5;
+    *(uint **)(param_1 + 0x18) = puVar14;
+    puVar17 = &uStack_30;
+    goto LAB_020553c8;
   case 8:
     iVar9 = *(int *)(iVar1 + ((uVar23 & 0xff800000) >> 0x15) + 0x14);
     puVar13 = *(uint **)(iVar9 + 8);
@@ -481,7 +481,7 @@ LAB_020551c0:
     }
     iVar20 = *(int *)(param_1 + 0xc);
     *(undefined4 *)(iVar20 + uVar27 * 8) = *(undefined4 *)(iVar20 + uVar10 * 8);
-    *(undefined4 *)(iVar20 + (uVar27 * 8 + 4)) = *(undefined4 *)(iVar20 + uVar10 * 8 + 4);
+    *(undefined4 *)(iVar20 + (uVar27 * 8 + 4)) = *(undefined4 *)((iVar20 + uVar10 * 8) + 4);
     goto switchD_02055078_default;
   case 0x16:
     goto LAB_02055cdc;
@@ -631,7 +631,7 @@ LAB_02055920:
       if (uVar12 < *(uint *)(param_1 + 8)) {
         do {
           *(undefined4 *)(iVar1 + iVar20 * 8) = *(undefined4 *)(uVar12 + iVar20 * 8);
-          *(undefined4 *)(iVar1 + iVar20 * 8 + 4) = *(undefined4 *)(uVar12 + iVar20 * 8 + 4);
+          *(undefined4 *)((iVar1 + iVar20 * 8) + 4) = *(undefined4 *)(4 + uVar12 + iVar20 * 8);
           iVar20 = iVar20 + 1;
         } while (uVar12 + iVar20 * 8 < *(uint *)(param_1 + 8));
       }
