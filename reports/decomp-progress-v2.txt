@@ -4,12 +4,12 @@ OKAMIDEN DECOMPILATION PROGRESS
 Primary Stable V2 progress
 --------------------------
 Fuzzy-equivalent code:
-  211921.460520 / 431680
-  49.092258%
+  213285.186726 / 431680
+  49.408170%
 
 Fuzzy-equivalent functions:
-  2016.175394 / 3223
-  62.555861%
+  2016.527232 / 3223
+  62.566777%
 
 Strict exact progress
 ---------------------
@@ -32,5 +32,5 @@ Non-exact V2 scores of 100 are exported as 99.999999 only in
 the decomp.dev report so they remain fuzzy until authoritative
 exact validation promotes them.
 
-V2 fuzzy rows          : 2541
+V2 fuzzy rows          : 2542
 V2 100% rows clamped   : 2

@@ -108,6 +108,25 @@
     "source_changes": 172,
     "targets": 300
   },
+  "latest_longbranch_recovery_pass": {
+    "after_equivalent_bytes": 213285.186726,
+    "after_exact_bytes": 15940,
+    "after_exact_functions": 535,
+    "after_v2_percent": 49.40817,
+    "before_equivalent_bytes": 211921.46052,
+    "before_exact_bytes": 15940,
+    "before_exact_functions": 535,
+    "before_v2_percent": 49.092258,
+    "candidate_errors_skipped": 0,
+    "engine_batch_failures": 1,
+    "equivalent_byte_gain": 1363.7262060000212,
+    "functions_improved": 0,
+    "new_objects_scored": 6,
+    "percentage_point_gain": 0.3159119999999973,
+    "provisional_exact_candidates": 0,
+    "source_files_improved": 0,
+    "target_v2": 35.183854646
+  },
   "latest_maxgain_pass": {
     "candidate_errors_skipped": 0,
     "candidate_objects_scored": 302067,

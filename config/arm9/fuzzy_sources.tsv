@@ -2540,3 +2540,4 @@ src/nonmatching/func_0206954c.c	-O1 -interworking	49.245700	32	structural-v1
 src/nonmatching/func_02069574.c	-O2 -interworking	36.444400	32	structural-v1
 src/nonmatching/func_0206959c.c	-O2 -interworking	47.306000	36	structural-v1
 src/nonmatching/func_020695cc.c	-O1,p -interworking	57.636500	116	structural-v1
+src/nonmatching/func_0202e220.c	-O3 -interworking
