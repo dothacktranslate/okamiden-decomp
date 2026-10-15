@@ -53,6 +53,26 @@
     "zero_equivalent_bytes": 0,
     "zero_v2_baselines_established": 0
   },
+  "latest_e220_deep_refinement_pass": {
+    "after_equivalent_bytes": 213285.186726,
+    "after_exact_bytes": 15940,
+    "after_exact_functions": 535,
+    "after_v2_percent": 49.40817,
+    "before_equivalent_bytes": 213285.186726,
+    "before_exact_bytes": 15940,
+    "before_exact_functions": 535,
+    "before_v2_percent": 49.40817,
+    "candidate_errors_skipped": 0,
+    "engine_batch_failures": 1,
+    "equivalent_byte_gain": 0.0,
+    "functions_improved": 0,
+    "new_objects_scored": 6,
+    "percentage_point_gain": 0.0,
+    "provisional_exact_candidates": 0,
+    "search_generations_requested": 3,
+    "source_files_improved": 0,
+    "target_v2": 35.183854646
+  },
   "latest_full_corpus_pass": {
     "candidate_errors_skipped": 0,
     "candidate_objects_scored": 94739,
