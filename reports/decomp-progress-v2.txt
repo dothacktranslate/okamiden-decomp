@@ -4,12 +4,12 @@ OKAMIDEN DECOMPILATION PROGRESS
 Primary Stable V2 progress
 --------------------------
 Fuzzy-equivalent code:
-  213285.186726 / 431680
-  49.408170%
+  213438.448532 / 431680
+  49.443673%
 
 Fuzzy-equivalent functions:
-  2016.527232 / 3223
-  62.566777%
+  2016.591490 / 3223
+  62.568771%
 
 Strict exact progress
 ---------------------

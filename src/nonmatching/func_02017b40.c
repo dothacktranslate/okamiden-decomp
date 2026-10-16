@@ -179,9 +179,9 @@ byte * func_02017b40(undefined4 param_1,undefined4 param_2,int param_3,uint para
   int iVar11;
   byte bVar12;
   bool bVar13;
-  undefined1 auStack_60 [2];
-  undefined2 uStack_5e;
   char acStack_5c [2];
+  undefined2 uStack_5e;
+  undefined1 auStack_60 [2];
   short sStack_5a;
   byte bStack_58;
   byte abStack_57 [35];
@@ -202,14 +202,14 @@ byte * func_02017b40(undefined4 param_1,undefined4 param_2,int param_3,uint para
   pbVar9 = ((unsigned int)0x0201823c);
   pbVar5 = abStack_57 + bStack_58;
   while ((1 < bStack_58 && (pbVar5 = pbVar5 + -1, *pbVar5 == 0x30))) {
-    bStack_58 = bStack_58 - 1;
     sStack_5a = sStack_5a + 1;
+    bStack_58 = bStack_58 - 1;
   }
   if (abStack_57[0] == 0x30) {
     sStack_5a = 0;
   }
   else {
-    bVar13 = 0x48 < abStack_57[0];
+    bVar13 = 0x49 <= abStack_57[0];
     if (abStack_57[0] == 0x49) {
       func_0201e21c(param_1,param_2,0,0);
       pbVar2 = ((unsigned int)0x02018238);
@@ -226,7 +226,7 @@ byte * func_02017b40(undefined4 param_1,undefined4 param_2,int param_3,uint para
         pbVar9 = (byte *)(param_3 + -4);
         if (uVar4 != 0) {
           bVar12 = ((unsigned int *)0x02018234)[1];
-          *pbVar9 = (*(unsigned int *)0x02018234);
+          *pbVar9 = (*(signed char *)0x02018234);
           *(byte *)(param_3 + -3) = bVar12;
           bVar12 = pbVar1[3];
           *(byte *)(param_3 + -2) = pbVar1[2];
@@ -234,7 +234,7 @@ byte * func_02017b40(undefined4 param_1,undefined4 param_2,int param_3,uint para
           return pbVar9;
         }
         bVar12 = ((unsigned int *)0x02018238)[1];
-        *pbVar9 = (*(unsigned int *)0x02018238);
+        *pbVar9 = (*(unsigned char *)0x02018238);
         *(byte *)(param_3 + -3) = bVar12;
         bVar12 = pbVar2[3];
         *(byte *)(param_3 + -2) = pbVar2[2];
@@ -259,7 +259,7 @@ byte * func_02017b40(undefined4 param_1,undefined4 param_2,int param_3,uint para
         return pbVar1;
       }
       bVar12 = ((unsigned int *)0x02018230)[1];
-      *pbVar1 = (*(unsigned int *)0x02018230);
+      *pbVar1 = (*(unsigned char *)0x02018230);
       *(byte *)(param_3 + -4) = bVar12;
       bVar12 = pbVar10[3];
       *(byte *)(param_3 + -3) = pbVar10[2];
@@ -278,7 +278,7 @@ byte * func_02017b40(undefined4 param_1,undefined4 param_2,int param_3,uint para
         pbVar9 = (byte *)(param_3 + -4);
         if (uVar4 != 0) {
           bVar12 = ((unsigned int *)0x02018244)[1];
-          *pbVar9 = (*(unsigned int *)0x02018244);
+          *pbVar9 = (*(unsigned char *)0x02018244);
           *(byte *)(param_3 + -3) = bVar12;
           bVar12 = pbVar1[3];
           *(byte *)(param_3 + -2) = pbVar1[2];
@@ -286,15 +286,15 @@ byte * func_02017b40(undefined4 param_1,undefined4 param_2,int param_3,uint para
           return pbVar9;
         }
         bVar12 = ((unsigned int *)0x02018248)[1];
-        *pbVar9 = (*(unsigned int *)0x02018248);
+        *pbVar9 = (*(unsigned char *)0x02018248);
         *(byte *)(param_3 + -3) = bVar12;
         bVar12 = pbVar2[3];
         *(byte *)(param_3 + -2) = pbVar2[2];
         *(byte *)(param_3 + -1) = bVar12;
         return pbVar9;
       }
-      if (uVar8 < 0x80) {
-        uVar4 = *(ushort *)(((unsigned int)0x02018228) + uVar8 * 2) & 0x200;
+      if (uVar8 <= 0x7f) {
+        uVar4 = *(unsigned char *)(((unsigned int)0x02018228) + uVar8 * 2) & 0x200;
       }
       else {
         uVar4 = 0;
@@ -302,7 +302,7 @@ byte * func_02017b40(undefined4 param_1,undefined4 param_2,int param_3,uint para
       pbVar1 = (byte *)(param_3 + -5);
       if (uVar4 != 0) {
         bVar12 = ((unsigned int *)0x0201823c)[1];
-        *pbVar1 = (*(unsigned int *)0x0201823c);
+        *pbVar1 = (*(unsigned char *)0x0201823c);
         *(byte *)(param_3 + -4) = bVar12;
         bVar12 = pbVar9[3];
         *(byte *)(param_3 + -3) = pbVar9[2];
@@ -311,7 +311,7 @@ byte * func_02017b40(undefined4 param_1,undefined4 param_2,int param_3,uint para
         return pbVar1;
       }
       bVar12 = ((unsigned int *)0x02018240)[1];
-      *pbVar1 = (*(unsigned int *)0x02018240);
+      *pbVar1 = (*(unsigned char *)0x02018240);
       *(byte *)(param_3 + -4) = bVar12;
       bVar12 = pbVar10[3];
       *(byte *)(param_3 + -3) = pbVar10[2];
@@ -323,8 +323,8 @@ byte * func_02017b40(undefined4 param_1,undefined4 param_2,int param_3,uint para
   pbVar9 = (byte *)(param_3 + -1);
   sStack_5a = sStack_5a + (bStack_58 - 1);
   *pbVar9 = 0;
-  if (uVar8 < 0x66) {
-    if (uVar8 < 0x65) {
+  if (uVar8 <= 0x65) {
+    if (uVar8 <= 0x64) {
       if (0x47 < uVar8) {
         return pbVar9;
       }
@@ -345,7 +345,7 @@ LAB_02017f68:
     if ((int)(param_7 + 1) < (int)(uint)bStack_58) {
       func_02017a2c(acStack_5c);
     }
-    iVar6 = ((unsigned int)0x0201824c);
+    iVar6 = ((unsigned int)0x66666667);
     iVar3 = (int)sStack_5a;
     bVar12 = 0x2b;
     iVar11 = 0;
@@ -353,7 +353,7 @@ LAB_02017f68:
       iVar3 = -iVar3;
       bVar12 = 0x2d;
     }
-    for (; (iVar3 != 0 || (iVar11 < 2)); iVar11 = iVar11 + 1) {
+    for (; (iVar3 != 0 || (iVar11 <= 1)); iVar11 = iVar11 + 1) {
       pbVar9 = pbVar9 + -1;
       *pbVar9 = (char)iVar3 +
                 ((char)(int)((longlong)iVar6 * (longlong)iVar3 >> 0x22) - (char)(iVar3 >> 0x1f)) *
@@ -409,7 +409,7 @@ LAB_02017ef8:
         func_02017a2c(acStack_5c,param_7);
       }
       iVar3 = (int)sStack_5a;
-      if ((iVar3 < -4) || ((int)param_7 <= iVar3)) {
+      if ((iVar3 < -4) || ((int)iVar3 >= param_7)) {
         if (local_1 == '\0') {
           param_7 = (uint)bStack_58;
         }

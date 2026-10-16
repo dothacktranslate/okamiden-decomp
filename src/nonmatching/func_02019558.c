@@ -183,14 +183,14 @@ undefined8 func_02019558(int param_1,code *param_2,undefined4 param_3,int *param
   byte bVar7;
   ushort uVar8;
   short sVar9;
-  int iVar10;
+  uint iVar10;
   uint uVar11;
   byte *pbVar12;
   undefined4 uVar13;
   int iVar14;
   byte *pbVar15;
   byte bVar16;
-  char *pcVar17;
+  unsigned char *pcVar17;
   undefined4 uVar18;
   uint uVar19;
   uint uVar20;
@@ -224,8 +224,8 @@ undefined8 func_02019558(int param_1,code *param_2,undefined4 param_3,int *param
   short local_4a [17];
   int *piStack_28;
 
-  uVar19 = 0;
   local_a4 = 0;
+  uVar19 = 0;
   uVar21 = 1;
   iVar10 = 4;
   psVar6 = local_50;
@@ -236,24 +236,24 @@ undefined8 func_02019558(int param_1,code *param_2,undefined4 param_3,int *param
     psVar23[1] = 0;
     psVar23[2] = 0;
     psVar23[3] = 0;
-    iVar10 = iVar10 + -1;
     psVar6 = psVar23 + 4;
+    iVar10 = iVar10 + -1;
   } while (iVar10 != 0);
   bVar3 = false;
   psVar23[4] = 0;
   psVar23[5] = 0;
   psVar23[6] = 0;
   *param_5 = 0;
-  bVar4 = false;
   local_b0 = 0;
+  bVar4 = false;
   sVar9 = 0;
   local_b8 = 0;
   local_c0 = 0;
   bVar31 = false;
   local_c8 = 0;
   iVar10 = 1;
-  uVar11 = (*param_2)(param_3);
   iVar24 = 4;
+  uVar11 = (*param_2)(param_3);
   pbVar15 = local_8b + 8;
   pbVar27 = ((unsigned int)0x0201a448);
   do {
@@ -269,7 +269,7 @@ undefined8 func_02019558(int param_1,code *param_2,undefined4 param_3,int *param
   *pbVar12 = *pbVar27;
   uVar32 = ((unsigned int *)0x0201a44c)[1];
   uVar28 = ((unsigned int *)0x0201a44c)[2];
-  uVar29 = (*(unsigned int *)0x0201a44c);
+  uVar29 = (*(unsigned char *)0x0201a44c);
   uVar1 = ((unsigned int *)0x0201a44c)[3];
   uVar2 = ((unsigned int *)0x0201a44c)[4];
 LAB_02019fec:
@@ -277,8 +277,8 @@ LAB_02019fec:
   if (((param_1 < iVar10) || (uVar11 == 0xffffffff)) || ((uVar21 & 0x1800) != 0)) goto LAB_0201a008;
   if (uVar21 <= 0x100) {
     if (uVar21 < 0x100) {
-      if (uVar21 < 0x21) {
-        if (uVar21 < 0x20) {
+      if (uVar21 <= 0x20) {
+        if (uVar21 <= 0x1f) {
           switch(uVar21) {
           case 0:
             goto LAB_02019fec;
@@ -291,7 +291,7 @@ LAB_02019fec:
             }
             if (uVar8 == 0) {
               uVar20 = uVar11;
-              if (uVar11 < 0x80) {
+              if (uVar11 <= 0x7f) {
                 uVar20 = (uint)*(byte *)(((unsigned int)0x0201a454) + uVar11);
               }
               if ((int)uVar20 < 0x4a) {
@@ -301,7 +301,7 @@ LAB_02019fec:
                   uVar21 = 0x4000;
                   goto LAB_02019fec;
                 }
-                if (((int)uVar20 < 0x2e) && (0x2a < (int)uVar20)) {
+                if (((int)uVar20 <= 0x2d) && (0x2a < (int)uVar20)) {
                   if (uVar20 != 0x2b) {
                     if (uVar20 != 0x2d) goto LAB_02019810;
                     bVar3 = true;
@@ -506,7 +506,7 @@ LAB_02019810:
         if (uVar11 < 0x80) {
           uVar21 = (uint)*(byte *)(iVar24 + uVar11);
         }
-        if (local_98[iVar22 + 8] != uVar21) break;
+        if (uVar21 != local_98[iVar22 + 8]) break;
         iVar10 = iVar10 + 1;
         uVar11 = (*param_2)(param_3);
       }
@@ -546,7 +546,7 @@ LAB_02019810:
       else {
         uVar34 = func_02016008();
       }
-      *param_4 = local_b8 + iVar25 + local_a4 + iVar22;
+      *param_4 = (local_b8 + iVar25) + local_a4 + iVar22;
       return uVar34;
     }
     if (0x200 < uVar21) {
@@ -706,9 +706,9 @@ LAB_02019e48:
           }
           if (uVar8 != 0) {
             local_c0 = local_c0 * 10 + (uVar11 - 0x30);
-            bVar33 = SBORROW4(local_b0,((unsigned int)0x0201a45c));
-            iVar24 = local_b0 - ((unsigned int)0x0201a45c);
-            bVar30 = local_b0 == ((unsigned int)0x0201a45c);
+            bVar33 = SBORROW4(local_b0,((unsigned int)0x00007fff));
+            iVar24 = local_b0 - ((unsigned int)0x00007fff);
+            bVar30 = local_b0 == ((unsigned int)0x00007fff);
             goto LAB_02019fc8;
           }
           uVar21 = 0x800;
@@ -765,7 +765,7 @@ code_r0x02019704:
       if (uVar11 < 0x80) {
         uVar21 = (uint)*(byte *)(iVar24 + uVar11);
       }
-      if (local_7a[iVar22 + 0x20] != uVar21) break;
+      if (uVar21 != local_7a[iVar22 + 0x20]) break;
       iVar10 = iVar10 + 1;
       uVar11 = (*param_2)(param_3);
     }
@@ -777,7 +777,7 @@ code_r0x02019704:
         uVar13 = (*(unsigned int *)0x0201a458);
       }
       uVar34 = func_0201e61c(uVar13);
-      *param_4 = local_b8 + local_a4 + iVar22;
+      *param_4 = (local_b8 + local_a4) + iVar22;
       return uVar34;
     }
 LAB_020198f0:
@@ -820,7 +820,7 @@ LAB_0201a008:
     uVar19 = uVar19 + 1;
     if (uVar19 != 0) {
       uVar11 = 0;
-      if (local_8b <= local_8b + 7) {
+      if (local_8b >= local_8b + 7) {
         uVar21 = 8 - uVar19;
         local_bc = local_8b + 7;
         do {
@@ -829,7 +829,7 @@ LAB_0201a008:
           pbVar15 = local_bc + -1;
           *local_bc = bVar7 | *local_bc << (uVar19 & 0xff);
           local_bc = pbVar15;
-        } while (local_8b <= pbVar15);
+        } while (pbVar15 >= local_8b);
       }
     }
     uVar19 = 0;
@@ -913,7 +913,7 @@ LAB_0201a008:
     }
     *param_5 = 1;
   }
-  uVar32 = *param_5 == 0;
+  uVar32 = *param_5 <= 0U;
   uVar28 = 1;
   local_50[1] = (short)local_b0 + sVar9;
   if (!(bool)uVar32) {
@@ -939,7 +939,7 @@ LAB_0201a008:
       goto LAB_0201a21c;
     }
   }
-  func_0201e0e0(uVar13,uVar18,0xffffffff,((unsigned int)0x0201a46c));
+  func_0201e0e0(uVar13,uVar18,0xffffffff,((unsigned int)0x7fefffff));
   puVar5 = ((unsigned int)0x0201a468);
   if ((bool)uVar29 && !(bool)uVar32) {
     *param_5 = 1;

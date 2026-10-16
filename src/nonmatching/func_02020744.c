@@ -115,9 +115,9 @@ void func_02020744(int param_1,int param_2,byte *param_3)
   int local_b8;
   int local_b4;
   int local_b0;
-  int local_ac;
   int local_a8;
   int local_a4;
+  int local_ac;
   int local_a0;
   int local_9c [2];
   int iStack_94;
@@ -166,19 +166,19 @@ LAB_020207a0:
   bVar1 = *pbVar10;
   switch(bVar1 & 0x1f) {
   case 0:
-  default:
-switchD_020207ac_default:
-    func_0202158c();
-    goto LAB_02020f60;
   case 1:
     func_020201f8(pbVar10 + 1,&local_28);
     puVar9 = (undefined4 *)(*(int *)(param_2 + 8) + local_28);
     goto LAB_0202081c;
   case 2:
     puVar9 = (undefined4 *)func_020201f8(pbVar10 + 1,&local_2c);
-    (*(code *)*puVar9)(*(int *)(param_1 + 0x18) + local_2c,0xffffffff);
+    (*(code *)*puVar9)(*(unsigned char *)(param_1 + 0x18) + local_2c,0xffffffff);
     puVar9 = puVar9 + 1;
     goto LAB_0202081c;
+  default:
+switchD_020207ac_default:
+    func_0202158c();
+    goto LAB_02020f60;
   case 3:
     uVar4 = func_020201f8(pbVar10 + 1,&local_34);
     puVar5 = (undefined4 *)func_020201f8(uVar4,&local_30);
@@ -216,18 +216,6 @@ switchD_020207ac_default:
       (*pcVar11)(iVar12,0xffffffff);
     }
     goto LAB_020209bc;
-  case 6:
-    uVar4 = func_020201f8(pbVar10 + 1,&local_4c);
-    puVar5 = (undefined4 *)func_020201f8(uVar4,&local_48);
-    puVar9 = puVar5 + 1;
-    if ((bVar1 & 0x20) == 0) {
-      iVar12 = *(int *)(*(int *)(param_1 + 0x18) + local_4c);
-    }
-    else {
-      iVar12 = *(int *)(param_1 + local_4c * 4 + 0x1c);
-    }
-    (*(code *)*puVar5)(iVar12 + local_48,0);
-    break;
   case 7:
     uVar4 = func_020201f8(pbVar10 + 1,&local_54);
     puVar5 = (undefined4 *)func_020201f8(uVar4,&local_50);
@@ -239,6 +227,18 @@ switchD_020207ac_default:
       iVar12 = *(int *)(param_1 + local_54 * 4 + 0x1c);
     }
     (*(code *)*puVar5)(iVar12 + local_50,0xffffffff);
+    break;
+  case 6:
+    uVar4 = func_020201f8(pbVar10 + 1,&local_4c);
+    puVar5 = (undefined4 *)func_020201f8(uVar4,&local_48);
+    puVar9 = puVar5 + 1;
+    if ((bVar1 & 0x20) == 0) {
+      iVar12 = *(int *)(*(int *)(param_1 + 0x18) + local_4c);
+    }
+    else {
+      iVar12 = *(int *)(param_1 + local_4c * 4 + 0x1c);
+    }
+    (*(code *)*puVar5)(iVar12 + local_48,0);
     break;
   case 8:
     uVar4 = func_020201f8(pbVar10 + 1,&local_60);

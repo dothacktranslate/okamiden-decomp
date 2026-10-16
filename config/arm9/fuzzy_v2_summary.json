@@ -117,6 +117,141 @@
       "func_02054f40": 36.260153555
     }
   },
+  "latest_high_leverage_pass": {
+    "after_equivalent_bytes": 213438.448532,
+    "after_equivalent_functions": 2016.59149,
+    "after_exact_bytes": 15940,
+    "after_exact_functions": 535,
+    "after_v2_percent": 49.443673,
+    "before_equivalent_bytes": 213285.186726,
+    "before_equivalent_functions": 2016.527232,
+    "before_exact_bytes": 15940,
+    "before_exact_functions": 535,
+    "before_v2_percent": 49.40817,
+    "candidate_errors_skipped": 0,
+    "engine_batch_failures": 11,
+    "equivalent_byte_gain": 153.26180599999498,
+    "equivalent_function_gain": 0.06425800000010895,
+    "functions_improved": 6,
+    "new_objects_scored": 48832,
+    "percentage_point_gain": 0.03550299999999851,
+    "profile_only_improvements": 0,
+    "provisional_exact_candidates": 0,
+    "search_generations_requested": 4,
+    "selected_targets": [
+      {
+        "function": "func_0201be58",
+        "kind": "fuzzy",
+        "profile": "O3_iw",
+        "rank": "1",
+        "remaining_eq_gap": "3754.569121",
+        "selection_priority": "4877.936202",
+        "size": "4488",
+        "source_path": "src/nonmatching/func_0201be58.c",
+        "v2_score": "16.342042760"
+      },
+      {
+        "function": "func_02019558",
+        "kind": "fuzzy",
+        "profile": "O2_iw",
+        "rank": "2",
+        "remaining_eq_gap": "2835.905454",
+        "selection_priority": "3684.408366",
+        "size": "3864",
+        "source_path": "src/nonmatching/func_02019558.c",
+        "v2_score": "26.607001696"
+      },
+      {
+        "function": "func_02027220",
+        "kind": "fuzzy",
+        "profile": "O1_iw",
+        "rank": "3",
+        "remaining_eq_gap": "3178.738421",
+        "selection_priority": "2876.122523",
+        "size": "3256",
+        "source_path": "src/nonmatching/func_02027220.c",
+        "v2_score": "2.372898633"
+      },
+      {
+        "function": "func_02018250",
+        "kind": "fuzzy",
+        "profile": "O3_iw",
+        "rank": "4",
+        "remaining_eq_gap": "1724.775692",
+        "selection_priority": "2124.923652",
+        "size": "2220",
+        "source_path": "src/nonmatching/func_02018250.c",
+        "v2_score": "22.307401283"
+      },
+      {
+        "function": "func_02067b0c",
+        "kind": "fuzzy",
+        "profile": "O3_iw",
+        "rank": "5",
+        "remaining_eq_gap": "1500.706806",
+        "selection_priority": "1848.870785",
+        "size": "2056",
+        "source_path": "src/nonmatching/func_02067b0c.c",
+        "v2_score": "27.008423819"
+      },
+      {
+        "function": "func_02011bbc",
+        "kind": "fuzzy",
+        "profile": "O2p_iw",
+        "rank": "6",
+        "remaining_eq_gap": "1438.735854",
+        "selection_priority": "1772.522573",
+        "size": "2080",
+        "source_path": "src/nonmatching/func_02011bbc.c",
+        "v2_score": "30.830007004"
+      },
+      {
+        "function": "func_02017b40",
+        "kind": "fuzzy",
+        "profile": "O2p_iw",
+        "rank": "7",
+        "remaining_eq_gap": "1361.457828",
+        "selection_priority": "1677.316044",
+        "size": "1808",
+        "source_path": "src/nonmatching/func_02017b40.c",
+        "v2_score": "24.698128978"
+      },
+      {
+        "function": "func_02020744",
+        "kind": "fuzzy",
+        "profile": "O2_iw",
+        "rank": "8",
+        "remaining_eq_gap": "1308.151037",
+        "selection_priority": "1611.642078",
+        "size": "2092",
+        "source_path": "src/nonmatching/func_02020744.c",
+        "v2_score": "37.468879668"
+      },
+      {
+        "function": "func_0201b838",
+        "kind": "fuzzy",
+        "profile": "O3_iw",
+        "rank": "9",
+        "remaining_eq_gap": "1060.153837",
+        "selection_priority": "1246.740912",
+        "size": "1524",
+        "source_path": "src/nonmatching/func_0201b838.c",
+        "v2_score": "30.436099942"
+      },
+      {
+        "function": "func_0202db38",
+        "kind": "fuzzy",
+        "profile": "O2p_iw",
+        "rank": "10",
+        "remaining_eq_gap": "1030.739368",
+        "selection_priority": "1212.149497",
+        "size": "1484",
+        "source_path": "src/nonmatching/func_0202db38.c",
+        "v2_score": "30.543169252"
+      }
+    ],
+    "source_files_improved": 6
+  },
   "latest_high_return_pass": {
     "candidate_errors": 0,
     "candidate_objects_scored": 14213,

@@ -106,7 +106,7 @@ undefined4 func_0201b838(char *param_1)
 
 {
   uint uVar1;
-  char cVar2;
+  unsigned char cVar2;
   undefined2 uVar3;
   undefined4 uVar4;
   ulonglong uVar5;
@@ -115,7 +115,7 @@ undefined4 func_0201b838(char *param_1)
   int iVar8;
   byte *pbVar9;
   undefined4 uVar10;
-  int iVar11;
+  uint iVar11;
   int iVar12;
   char *pcVar13;
   char *pcVar14;
@@ -212,15 +212,15 @@ undefined4 func_0201b838(char *param_1)
   while( true ) {
     uVar4 = (undefined4)((ulonglong)uVar25 >> 0x20);
     uVar7 = (undefined4)uVar25;
-    if (pbVar20 <= pbVar9) break;
+    if (pbVar9 >= pbVar20) break;
     iVar8 = (int)pbVar20 - (int)pbVar9 >> 0x1f;
     iVar8 = ((uint)(((int)pbVar20 - (int)pbVar9) * 0x20000000 + iVar8) >> 0x1d | iVar8 << 3) - iVar8
     ;
     if (iVar8 == 0) {
       iVar8 = 8;
     }
-    iVar22 = 0;
     iVar12 = 0;
+    iVar22 = 0;
     pbVar23 = pbVar9;
     if (0 < iVar8) {
       do {
@@ -243,18 +243,18 @@ undefined4 func_0201b838(char *param_1)
   }
   if (iVar11 < 0) {
     uVar25 = func_0201e064(-iVar11);
-    uVar25 = func_0201be58(0,((unsigned int)0x0201be24),(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
+    uVar25 = func_0201be58(0,((unsigned int)0x40140000),(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
     uVar25 = func_0201fbf4(uVar7,uVar4,(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
   }
   else {
     uVar25 = func_0201e064(iVar11);
-    uVar25 = func_0201be58(0,((unsigned int)0x0201be24),(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
+    uVar25 = func_0201be58(0,((unsigned int)0x40140000),(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
     uVar25 = func_0201dbfc(uVar7,uVar4,(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
   }
   uVar27 = func_0201d2ac((int)uVar25,(int)((ulonglong)uVar25 >> 0x20),iVar11);
   iVar11 = func_02016974();
   if (iVar11 == 2) {
-    uVar27 = CONCAT44(((unsigned int)0x0201be28),0xffffffff);
+    uVar27 = CONCAT44(((unsigned int)0x7fefffff),0xffffffff);
   }
   local_114 = (int)(uVar27 >> 0x20);
   local_118 = (uint)uVar27;

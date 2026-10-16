@@ -677,7 +677,7 @@ src/nonmatching/func_0201705c.c	-O2 -interworking	37.372000	592	structural-v1
 src/nonmatching/func_020172ac.c	-O2 -interworking	20.121000	724	structural-v1
 src/nonmatching/func_02017580.c	-O2 -interworking	18.750000	1196	structural-v1
 src/nonmatching/func_02017a2c.c	-O2 -interworking	30.948900	276	structural-v1
-src/nonmatching/func_02017b40.c	-O2 -interworking	20.574100	1808	structural-v1
+src/nonmatching/func_02017b40.c	-O2,p -interworking	20.574100	1808	structural-v1
 src/nonmatching/func_02018250.c	-O2 -interworking	17.320700	2220	structural-v1
 src/nonmatching/func_02018afc.c	-O2 -interworking	70.833300	68	structural-v1
 src/nonmatching/func_02018b40.c	-O2 -interworking	35.841800	100	structural-v1
@@ -714,9 +714,9 @@ src/nonmatching/func_0201b28c.c	-O2 -interworking	62.522500	224	structural-v1
 src/nonmatching/func_0201b36c.c	-O2 -interworking	28.289100	672	structural-v1
 src/nonmatching/func_0201b60c.c	-O2 -interworking	28.636400	384	structural-v1
 src/nonmatching/func_0201b78c.c	-O2 -interworking	52.470600	172	structural-v1
-src/nonmatching/func_0201b838.c	-O2 -interworking	21.668100	1524	structural-v1
+src/nonmatching/func_0201b838.c	-O3 -interworking	21.668100	1524	structural-v1
 src/nonmatching/func_0201be2c.c	-O2 -interworking	73.636400	44	structural-v1
-src/nonmatching/func_0201be58.c	-O2 -interworking	10.109900	4488	structural-v1
+src/nonmatching/func_0201be58.c	-O3 -interworking	10.109900	4488	structural-v1
 src/nonmatching/func_0201cfe0.c	-O2 -interworking	18.181800	40	structural-v1
 src/nonmatching/func_0201d008.c	-O2 -interworking	22.222200	32	structural-v1
 src/nonmatching/func_0201d028.c	-O2 -interworking	20.573900	452	structural-v1
@@ -2498,7 +2498,7 @@ src/nonmatching/func_020677d0.c	-O2 -interworking	76.450200	44	structural-v1
 src/nonmatching/func_020677fc.c	-O2 -interworking	56.843300	152	structural-v1
 src/nonmatching/func_02067894.c	-O2 -interworking	47.341800	316	structural-v1
 src/nonmatching/func_020679d0.c	-O2 -interworking	55.333300	316	structural-v1
-src/nonmatching/func_02067b0c.c	-O2 -interworking	20.765300	2056	structural-v1
+src/nonmatching/func_02067b0c.c	-O3 -interworking	20.765300	2056	structural-v1
 src/nonmatching/func_02068314.c	-O1 -interworking	40.685600	104	structural-v1
 src/nonmatching/func_0206837c.c	-O2 -interworking	35.982900	248	structural-v1
 src/nonmatching/func_02068518.c	-O2 -interworking	60.476200	84	structural-v1
