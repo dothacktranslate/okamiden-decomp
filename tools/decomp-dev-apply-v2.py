@@ -214,10 +214,6 @@ def function_units(report: dict) -> dict[str, dict]:
             )
         ).lower()
 
-        if not name.startswith(
-            "func_"
-        ):
-            continue
 
         if name in result:
             raise RuntimeError(

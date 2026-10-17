@@ -21,7 +21,7 @@ TOTAL_FUNCTIONS = 3223
 MATCHED_CODE = 0  # Derived from current exact manifest in main().
 MATCHED_FUNCTIONS = 0  # Derived from current exact manifest in main().
 FUNC_RE = re.compile(
-    r"^(func_[0-9A-Fa-f]+)\b"
+    r"^([A-Za-z_][A-Za-z0-9_]*)\b"
 )
 
 ADDR_RE = re.compile(
@@ -137,6 +137,7 @@ def read_text_bounds():
 
 def read_functions():
     result = []
+    exact_names = read_matched()
 
     for line_number, raw in enumerate(
         SYMBOLS.read_text().splitlines(),
@@ -148,6 +149,14 @@ def read_functions():
 
         if name_match is None:
             continue
+
+        symbol_name = name_match.group(1)
+        if not symbol_name.startswith("func_"):
+            if (
+                symbol_name not in exact_names
+                or "kind:function(" not in line
+            ):
+                continue
 
         addr_match = ADDR_RE.search(line)
         size_match = SIZE_RE.search(line)
@@ -204,7 +213,6 @@ def read_matched():
         if (
             not raw.strip()
             or raw.lstrip().startswith("#")
-            or "\t" not in raw
         ):
             continue
 
@@ -350,6 +358,10 @@ def main():
         )
 
     functions = read_functions()
+    globals()["TOTAL_FUNCTIONS"] += sum(
+        not function["name"].startswith("func_")
+        for function in functions
+    )
 
     if len(functions) != TOTAL_FUNCTIONS:
         raise RuntimeError(
