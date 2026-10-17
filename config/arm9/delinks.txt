@@ -2145,3 +2145,7 @@ src/main/func_02013030.c:
 src/main/func_02034b58.c:
     complete
     .text       start:0x02034b58 end:0x02034b96
+
+src/main/__FindExceptionTable.s:
+    complete
+    .text       start:0x02021b58 end:0x02021b78

@@ -99,7 +99,8 @@ while IFS=$'\t' read -r SRC PER_FILE_FLAGS || [ -n "${SRC:-}" ]; do
         exit 1
     fi
 
-    OBJ="build/${SRC%.c}.o"
+    REL="${SRC%.*}"
+    OBJ="build/${REL}.o"
 
     mkdir -p "$ROOT/$(dirname "$OBJ")"
 
@@ -112,12 +113,27 @@ while IFS=$'\t' read -r SRC PER_FILE_FLAGS || [ -n "${SRC:-}" ]; do
     echo "flags: ${EXTRA_FLAGS[*]}"
     echo "------------------------------------------------------------"
 
-    wine "$MWCCARM" \
-        -c \
-        "${EXTRA_FLAGS[@]}" \
-        "${COMMON_FLAGS[@]}" \
-        "$ROOT/$SRC" \
-        -o "$ROOT/$OBJ"
+    case "$SRC" in
+        *.c)
+            wine "$MWCCARM" \
+                -c \
+                "${EXTRA_FLAGS[@]}" \
+                "${COMMON_FLAGS[@]}" \
+                "$ROOT/$SRC" \
+                -o "$ROOT/$OBJ"
+            ;;
+        *.s)
+            if [ -n "${PER_FILE_FLAGS:-}" ]; then
+                echo "ERROR: unexpected assembler flags in $MANIFEST: $SRC" >&2
+                exit 1
+            fi
+            arm-none-eabi-as -mcpu=arm946e-s -o "$ROOT/$OBJ" "$ROOT/$SRC"
+            ;;
+        *)
+            echo "ERROR: unsupported source extension: $SRC" >&2
+            exit 1
+            ;;
+    esac
 
     SOURCE_COUNT=$((SOURCE_COUNT + 1))
 
@@ -218,7 +234,7 @@ while IFS=$'\t' read -r SOURCE FLAGS; do
             ;;
     esac
 
-    REL="${SOURCE%.c}"
+    REL="${SOURCE%.*}"
 
     REF_OBJ="$ROOT/build/delinks/${REL}.o"
     SRC_OBJ="$ROOT/build/${REL}.o"
