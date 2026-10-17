@@ -97,7 +97,7 @@ void func_0203cac0(int param_1,uint param_2,uint param_3,int param_4)
     iVar2 = *(unsigned char *)(param_1 + 0xa8);
     iVar1 = param_2 * 0x48;
     *(uint *)(iVar2 + iVar1) = *(uint *)(iVar2 + iVar1) | 1;
-    if (param_4 == 0) {
+    if (!param_4) {
       uVar3 = *(uint *)(iVar2 + iVar1) & 0xfffffffd;
     }
     else {
