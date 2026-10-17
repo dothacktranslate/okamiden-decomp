@@ -97,10 +97,10 @@ void func_02022ffc(undefined4 param_1,uint param_2,undefined4 param_3,undefined4
   undefined4 uStack_c;
 
   uStack_c = param_4;
-  if (((unsigned int)0x02023084) < param_2) {
+  if (0x00004e20U < param_2) {
     func_0x020aecfc(*(undefined4 *)(*(int *)(*(int *)(*(unsigned int *)0x0202308c) + 0x5c) + 0x44),
-                    param_2 - (((unsigned int)0x02023084) >> 1) *
-                              ((int)((longlong)((unsigned int)0x02023088) * (longlong)(int)param_2 >> 0x2c) -
+                    param_2 - (0x00004e20U >> 1) *
+                              ((int)((longlong)0x68db8badU * (longlong)(int)param_2 >> 0x2c) -
                               ((int)param_2 >> 0x1f)));
     return;
   }

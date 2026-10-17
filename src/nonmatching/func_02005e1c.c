@@ -90,8 +90,8 @@ void func_02005e1c(void)
   undefined4 uVar1;
   code *UNRECOVERED_JUMPTABLE;
 
-  UNRECOVERED_JUMPTABLE = ((unsigned int)0x02005e40);
-  uVar1 = ((unsigned int)0x02005e3c);
+  UNRECOVERED_JUMPTABLE = 0x02005d10U;
+  uVar1 = 0x020754f6U;
   (*(signed char *)0x02005e38) = (*(unsigned int *)0x02005e38) & 0xbfffffff;
                     /* WARNING: Could not recover jumptable at 0xe12fff1c. Too many branches */
                     /* WARNING: Treating indirect jump as call */

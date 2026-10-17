@@ -93,7 +93,7 @@ int func_020303ac(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
   int iVar2;
   int iVar3;
 
-  uVar1 = param_1 + ((param_1 + (int)((ulonglong)((longlong)((unsigned int)0x0203043c) * (longlong)param_1) >>
+  uVar1 = param_1 + ((param_1 + (int)((ulonglong)((longlong)0xb60b60b7U * (longlong)param_1) >>
                                      0x20) >> 0x14) - (param_1 >> 0x1f)) * -0x168000;
   if ((int)uVar1 < 0) {
     uVar1 = uVar1 + 0x168000;
@@ -106,9 +106,9 @@ int func_020303ac(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
   }
   if (0xfff < iVar2) {
     if (0x1000 < iVar2) {
-      return iVar3 * *(short *)(((unsigned int)0x02030440) + (0x2000 - iVar2) * 2);
+      return iVar3 * *(short *)(0x0206e184U + (0x2000 - iVar2) * 2);
     }
     return iVar3 << 0xc;
   }
-  return iVar3 * *(short *)(((unsigned int)0x02030440) + iVar2 * 2);
+  return iVar3 * *(short *)(0x0206e184U + iVar2 * 2);
 }
