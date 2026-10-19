@@ -1,0 +1,40 @@
+/* Locally recovered Ghidra pseudocode; not behaviorally verified. */
+typedef unsigned char byte;
+typedef signed char sbyte;
+typedef unsigned char uchar;
+typedef unsigned short ushort;
+typedef unsigned int uint;
+typedef unsigned long ulong;
+typedef unsigned long long ulonglong;
+typedef long long longlong;
+typedef unsigned char undefined;
+typedef unsigned char undefined1;
+typedef unsigned short undefined2;
+typedef unsigned int undefined4;
+typedef unsigned long long undefined8;
+typedef unsigned int code();
+typedef unsigned int size_t;
+typedef int bool;
+#ifndef true
+#define true 1
+#define false 0
+#endif
+extern unsigned int func_02032c20();
+#define DAT_0203a0fc ((volatile unsigned int *)0x0203a0fcU)
+#define DAT_0203a100 ((volatile unsigned int *)0x0203a100U)
+
+
+void func_0203a0d8(int param_1)
+
+{
+  int iVar1;
+
+  iVar1 = DAT_0203a0fc;
+  if (*(int *)(param_1 + DAT_0203a0fc) != 0) {
+    if ((*(uint *)*DAT_0203a100 & 2) == 0) {
+      func_02032c20();
+    }
+    *(undefined4 *)(param_1 + iVar1) = 0;
+  }
+  return;
+}
