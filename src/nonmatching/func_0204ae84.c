@@ -93,20 +93,20 @@ extern int func_0204ae0c();
 undefined4 func_0204ae84(int param_1,int param_2,uint param_3)
 
 {
-  uint uVar1;
-  byte bVar2;
-  int iVar3;
-  uint uVar4;
-  uint uVar5;
-  int iVar6;
-  int iVar7;
-  uint uVar8;
-  uint uVar9;
-  uint uVar10;
-  uint uVar11;
-  uint uVar12;
-  bool bVar13;
   int local_28;
+  bool bVar13;
+  uint uVar12;
+  uint uVar11;
+  uint uVar10;
+  uint uVar9;
+  uint uVar8;
+  int iVar7;
+  int iVar6;
+  uint uVar5;
+  uint uVar4;
+  int iVar3;
+  byte bVar2;
+  uint uVar1;
 
   local_28 = *(int *)(param_1 + 0x2c) + -1;
   iVar3 = func_0204ad20();

@@ -91,8 +91,6 @@ extern int func_02010a18();
 void func_020103f4(undefined4 param_1,uint param_2,int param_3)
 
 {
-  ushort *puVar1;
-  int iVar2;
   uint *puVar3;
   undefined4 uVar4;
   uint uVar5;
@@ -102,6 +100,8 @@ void func_020103f4(undefined4 param_1,uint param_2,int param_3)
   undefined4 uVar9;
   undefined4 *puVar10;
   uint *puVar11;
+  ushort *puVar1;
+  int iVar2;
 
   puVar3 = ((unsigned int)0x02010830);
   puVar11 = ((unsigned int)0x0201082c);

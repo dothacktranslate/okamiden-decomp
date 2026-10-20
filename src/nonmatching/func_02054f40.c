@@ -128,25 +128,6 @@ extern int func_02054d84();
 void func_02054f40(int param_1,int param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  int iVar1;
-  uint uVar2;
-  uint uVar3;
-  uint uVar4;
-  uint uVar5;
-  uint uVar6;
-  uint uVar7;
-  uint uVar8;
-  int iVar9;
-  uint uVar10;
-  undefined4 uVar11;
-  uint uVar12;
-  uint *puVar13;
-  uint *puVar14;
-  undefined4 uVar15;
-  int iVar16;
-  undefined4 *puVar17;
-  int iVar18;
-  undefined4 *puVar19;
   int iVar20;
   uint *puVar21;
   int *piVar22;
@@ -166,6 +147,25 @@ void func_02054f40(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   undefined4 uStack_30;
   undefined4 uStack_2c;
   undefined4 uStack_28;
+  int iVar1;
+  uint uVar2;
+  uint uVar3;
+  uint uVar4;
+  uint uVar5;
+  uint uVar6;
+  uint uVar7;
+  uint uVar8;
+  int iVar9;
+  uint uVar10;
+  undefined4 uVar11;
+  uint uVar12;
+  uint *puVar13;
+  uint *puVar14;
+  undefined4 uVar15;
+  int iVar16;
+  undefined4 *puVar17;
+  int iVar18;
+  undefined4 *puVar19;
 
   uStack_28 = param_4;
   local_7c = param_2;

@@ -96,17 +96,6 @@ extern int func_02015c38();
 undefined4 func_0200d734(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  uint uVar1;
-  int iVar2;
-  undefined4 uVar3;
-  int iVar4;
-  int iVar5;
-  int iVar6;
-  uint uVar7;
-  uint uVar8;
-  uint uVar9;
-  short sVar10;
-  uint uVar11;
   undefined1 auStack_104 [8];
   undefined4 local_fc;
   ushort local_e0;
@@ -119,6 +108,17 @@ undefined4 func_0200d734(int param_1,undefined4 param_2,undefined4 param_3,undef
   int iStack_ac;
   undefined1 auStack_a8 [128];
   undefined4 uStack_28;
+  uint uVar1;
+  int iVar2;
+  undefined4 uVar3;
+  int iVar4;
+  int iVar5;
+  int iVar6;
+  uint uVar7;
+  uint uVar8;
+  uint uVar9;
+  short sVar10;
+  uint uVar11;
 
   uVar3 = *(undefined4 *)(param_1 + 8);
   uStack_28 = param_4;
