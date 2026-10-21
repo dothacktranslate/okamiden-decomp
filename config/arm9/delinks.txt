@@ -2237,3 +2237,11 @@ src/main/func_02045920.c:
 src/main/func_02068638.c:
     complete
     .text       start:0x02068638 end:0x02068650
+
+src/main/func_0203c938.c:
+    complete
+    .text       start:0x0203c938 end:0x0203c94e
+
+src/main/func_020467a0.c:
+    complete
+    .text       start:0x020467a0 end:0x020467bc
