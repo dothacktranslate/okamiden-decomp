@@ -2149,3 +2149,35 @@ src/main/func_02034b58.c:
 src/main/__FindExceptionTable.s:
     complete
     .text       start:0x02021b58 end:0x02021b78
+
+src/main/func_0203218c.c:
+    complete
+    .text       start:0x0203218c end:0x020321d0
+
+src/main/func_02003774.c:
+    complete
+    .text       start:0x02003774 end:0x020037e0
+
+src/main/func_0204d1c4.c:
+    complete
+    .text       start:0x0204d1c4 end:0x0204d1d8
+
+src/main/func_02014618.c:
+    complete
+    .text       start:0x02014618 end:0x0201463c
+
+src/main/func_0202b294.c:
+    complete
+    .text       start:0x0202b294 end:0x0202b2b8
+
+src/main/func_02034b98.c:
+    complete
+    .text       start:0x02034b98 end:0x02034c08
+
+src/main/func_0205c7c0.c:
+    complete
+    .text       start:0x0205c7c0 end:0x0205c7e8
+
+src/main/func_0205c7e8.c:
+    complete
+    .text       start:0x0205c7e8 end:0x0205c810

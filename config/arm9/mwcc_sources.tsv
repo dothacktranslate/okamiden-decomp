@@ -539,3 +539,11 @@ src/main/func_02068b80.c	-O1 -interworking
 src/main/func_02013030.c	-O1 -interworking
 src/main/func_02034b58.c	-O1 -interworking
 src/main/__FindExceptionTable.s
+src/main/func_0203218c.c	-O2 -interworking
+src/main/func_02003774.c	-O2 -interworking
+src/main/func_0204d1c4.c	-O2 -interworking
+src/main/func_02014618.c	-O2 -interworking
+src/main/func_0202b294.c	-O1 -interworking
+src/main/func_02034b98.c	-O2 -interworking
+src/main/func_0205c7c0.c	-O2,p -interworking
+src/main/func_0205c7e8.c	-O1 -interworking
