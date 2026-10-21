@@ -2181,3 +2181,39 @@ src/main/func_0205c7c0.c:
 src/main/func_0205c7e8.c:
     complete
     .text       start:0x0205c7e8 end:0x0205c810
+
+src/main/func_0205ad80.c:
+    complete
+    .text       start:0x0205ad80 end:0x0205adb8
+
+src/main/func_0206414c.c:
+    complete
+    .text       start:0x0206414c end:0x0206417c
+
+src/main/func_020688c4.c:
+    complete
+    .text       start:0x020688c4 end:0x020688f8
+
+src/main/func_02035354.c:
+    complete
+    .text       start:0x02035354 end:0x02035380
+
+src/main/func_02050c18.c:
+    complete
+    .text       start:0x02050c18 end:0x02050c74
+
+src/main/func_0204323c.c:
+    complete
+    .text       start:0x0204323c end:0x02043262
+
+src/main/func_02046924.c:
+    complete
+    .text       start:0x02046924 end:0x02046960
+
+src/main/func_02046898.c:
+    complete
+    .text       start:0x02046898 end:0x020468f0
+
+src/main/func_02046bc4.c:
+    complete
+    .text       start:0x02046bc4 end:0x02046c1c
