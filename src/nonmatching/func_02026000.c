@@ -204,13 +204,12 @@ LAB_02026406:
     break;
   case 2:
     iVar3 = func_020465d8(param_1,3);
-    if (iVar3 == 0) {
-      func_02039564(iVar13 + 0x10,0x3c000);
-      uVar9 = 4;
-    }
-    else {
+    if (!(iVar3 == 0)) {
       func_02039564(iVar13 + 0x10,0x25800);
       uVar9 = 0x10;
+    } else {
+      func_02039564(iVar13 + 0x10,0x3c000);
+      uVar9 = 4;
     }
     *(undefined4 *)(*(int *)((*(unsigned int *)0x02026348) + ((unsigned int)0x0202634c)) + ((unsigned int)0x0202634c) + -0x9c) = uVar9;
     goto LAB_0202643e;
@@ -313,11 +312,10 @@ joined_r0x02026134:
       func_0x02095770(*(undefined4 *)(iVar12 + 0x50),0);
     }
     piVar11[0x32] = 0;
-    if ((*(uint *)(*(int *)(iVar12 + 0x50) + 0x14) & 0x3000000) == 0) {
-      uVar10 = 0xffffffff;
-    }
-    else {
+    if (!((*(uint *)(*(int *)(iVar12 + 0x50) + 0x14) & 0x3000000) == 0)) {
       uVar10 = func_020465d8(param_1,2);
+    } else {
+      uVar10 = 0xffffffff;
     }
     break;
   case 6:
@@ -327,15 +325,14 @@ joined_r0x02026134:
         piVar11[0x32] = 0;
       }
       iVar3 = *(int *)(iVar12 + 0x50);
-      if ((*(uint *)(iVar3 + 0x14) & 0x1000000) == 0) {
-        if ((*(uint *)(iVar3 + 0x14) & 0x2000000) != 0) {
-          func_0x02095830(iVar3);
-        }
-      }
-      else {
+      if (!((*(uint *)(iVar3 + 0x14) & 0x1000000) == 0)) {
         iVar13 = func_0x020ae730(*(undefined4 *)(iVar12 + 0x44));
         if (iVar13 != 0) {
           func_0x02095770(iVar3,0x1800);
+        }
+      } else {
+        if ((*(uint *)(iVar3 + 0x14) & 0x2000000) != 0) {
+          func_0x02095830(iVar3);
         }
       }
       if (*(short *)((int)piVar11 + 0x62) != 0) {
@@ -353,11 +350,10 @@ joined_r0x02026134:
     break;
   case 7:
     iVar3 = func_020465d8(param_1,3);
-    if (iVar3 == 0) {
-      uVar10 = ((unsigned int)0x02026530) & *(uint *)(iVar12 + 0x1c);
-    }
-    else {
+    if (!(iVar3 == 0)) {
       uVar10 = *(uint *)(iVar12 + 0x1c) | 0x200000;
+    } else {
+      uVar10 = ((unsigned int)0x02026530) & *(uint *)(iVar12 + 0x1c);
     }
     *(uint *)(iVar12 + 0x1c) = uVar10;
     goto LAB_0202643e;
@@ -369,15 +365,14 @@ LAB_02026450:
     break;
   case 9:
     iVar3 = func_020465d8(param_1,3);
-    if (iVar3 == 0) {
-      *(undefined2 *)(*(int *)(iVar12 + 0x50) + 0x148) = 1;
-    }
-    else {
+    if (!(iVar3 == 0)) {
       uVar1 = *(ushort *)(*(int *)(iVar12 + 0x50) + 0x148);
       iVar3 = iVar3 - (uint)uVar1;
       if (0 < iVar3) {
         *(ushort *)(*(int *)(iVar12 + 0x50) + 0x148) = uVar1 + (short)iVar3;
       }
+    } else {
+      *(undefined2 *)(*(int *)(iVar12 + 0x50) + 0x148) = 1;
     }
 LAB_0202643e:
     uVar10 = 0xffffffff;

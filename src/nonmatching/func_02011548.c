@@ -124,13 +124,12 @@ void func_02011548(int param_1)
   *(undefined2 *)(param_1 + 0x30) = 0xfe00;
   *(undefined2 *)(param_1 + 0x32) = 0xfe00;
   psVar9 = *(short **)(param_1 + 4);
-  if ((uVar8 < 2) || (psVar9[2] == -1)) {
-    local_30 = *psVar9;
-    local_2e = psVar9[1];
-  }
-  else {
+  if (!((uVar8 < 2) || (psVar9[2] == -1))) {
     local_30 = *psVar9 * 2 - psVar9[2];
     local_2e = psVar9[1] * 2 - psVar9[3];
+  } else {
+    local_30 = *psVar9;
+    local_2e = psVar9[1];
   }
   iVar11 = 0;
   iVar7 = 0;

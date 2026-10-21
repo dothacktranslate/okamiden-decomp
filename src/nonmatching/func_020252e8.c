@@ -193,17 +193,15 @@ undefined4 func_020252e8(undefined4 param_1)
       }
       sVar3 = func_020465d8(param_1,3);
       sVar2 = func_020465d8(param_1,4);
-      if (sVar3 < 1) {
+      if (!(sVar3 < 1)) {
+        func_02037500(iVar9,(int)sVar3,(int)sVar2,0xffffffff,0x7f,0,piVar8);
+      } else {
         func_02037478(iVar9,(int)sVar2,0xffffffff,0x7f,0,piVar8);
       }
-      else {
-        func_02037500(iVar9,(int)sVar3,(int)sVar2,0xffffffff,0x7f,0,piVar8);
-      }
-      if (piVar8 == (int *)0x0) {
-        iVar4 = -1;
-      }
-      else {
+      if (!(piVar8 == (int *)0x0)) {
         iVar4 = 1;
+      } else {
+        iVar4 = -1;
       }
     }
     else if ((iVar4 == 1) && (iVar5 = func_02037d90(iVar9,piVar8[0x12]), iVar5 == 0)) {
@@ -214,11 +212,10 @@ undefined4 func_020252e8(undefined4 param_1)
     sVar3 = func_020465d8(param_1,3);
     sVar2 = func_020465d8(param_1,4);
     sVar1 = func_020465d8(param_1,5);
-    if (sVar3 < 1) {
-      func_02037478(iVar9,(int)sVar2,0xffffffff,(int)sVar1,0,0);
-    }
-    else {
+    if (!(sVar3 < 1)) {
       func_02037500(iVar9,(int)sVar3,(int)sVar2,0xffffffff,(int)sVar1,0,0);
+    } else {
+      func_02037478(iVar9,(int)sVar2,0xffffffff,(int)sVar1,0,0);
     }
     goto LAB_02025574;
   case 7:
@@ -264,11 +261,10 @@ LAB_02025374:
     sVar3 = func_020465d8(param_1,4);
     sVar2 = func_020465d8(param_1,5);
     if ((0 < iVar4) && (iVar4 < 3)) {
-      if (sVar3 < 1) {
-        func_02037478(iVar9,(int)sVar2,0xffffffff,0x7f,0,piVar8 + iVar4 + 0x13);
-      }
-      else {
+      if (!(sVar3 < 1)) {
         func_02037500(iVar9,(int)sVar3,(int)sVar2,0xffffffff,0x7f,0,piVar8 + iVar4 + 0x13);
+      } else {
+        func_02037478(iVar9,(int)sVar2,0xffffffff,0x7f,0,piVar8 + iVar4 + 0x13);
       }
     }
     goto LAB_02025574;

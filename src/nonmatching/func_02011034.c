@@ -209,63 +209,7 @@ func_02011034(short *param_1,int *param_2,undefined4 param_3,undefined4 param_4,
     iVar7 = *param_2;
     iVar9 = 0;
     psVar3 = *(short **)(param_1 + 2);
-    if (local_3c < 1) {
-      iVar11 = 0;
-      sVar1 = 0;
-      if (0 < local_28) {
-        do {
-          sVar10 = sVar1;
-          uVar17 = (uint)*(ushort *)(iVar12 + iVar11 * 2);
-          psVar6 = (short *)(iVar7 + uVar17 * 4);
-          if ((uVar17 == ((unsigned int)0x0000ffff)) || ((int)*psVar6 == ((unsigned int)0x0000ffff) - 0x10000)) {
-            if (iVar9 < 2) {
-              iVar4 = 0;
-              if (0 < iVar9) {
-                do {
-                  sVar5 = sVar5 + -1;
-                  iVar4 += 1;
-                  psVar3 = psVar3 + -2;
-                } while (iVar4 < iVar9);
-              }
-            }
-            else {
-              local_2a = -1;
-              sVar5 = sVar5 + 1;
-              sVar10 = sVar10 + 1;
-              *psVar3 = -1;
-              psVar3[1] = -1;
-              local_2c = -1;
-              psVar3 = psVar3 + 2;
-            }
-            iVar9 = 0;
-            psVar13 = psVar3;
-          }
-          else {
-            sVar1 = *psVar6;
-            bVar18 = local_2c == sVar1;
-            sVar2 = local_2c;
-            if (bVar18) {
-              sVar1 = psVar6[1];
-              sVar2 = local_2a;
-            }
-            psVar13 = psVar3;
-            if (!bVar18 || sVar2 != sVar1) {
-              local_2c = *psVar6;
-              local_2a = psVar6[1];
-              sVar5 = sVar5 + 1;
-              psVar3[1] = local_2a;
-              psVar13 = psVar3 + 2;
-              *psVar3 = local_2c;
-              iVar9 = iVar9 + 1;
-            }
-          }
-          iVar11 = iVar11 + 1;
-          psVar3 = psVar13;
-          sVar1 = sVar10;
-        } while (iVar11 < local_28);
-      }
-    }
-    else {
+    if (!(local_3c < 1)) {
       iVar4 = func_0201ebe0(local_3c << 0x10,local_38 + 1);
       iVar14 = 0;
       sVar1 = 0;
@@ -319,6 +263,61 @@ func_02011034(short *param_1,int *param_2,undefined4 param_3,undefined4 param_4,
           iVar14 = iVar14 + 1;
           sVar1 = sVar10;
         } while (iVar14 < local_28);
+      }
+    } else {
+      iVar11 = 0;
+      sVar1 = 0;
+      if (0 < local_28) {
+        do {
+          sVar10 = sVar1;
+          uVar17 = (uint)*(ushort *)(iVar12 + iVar11 * 2);
+          psVar6 = (short *)(iVar7 + uVar17 * 4);
+          if ((uVar17 == ((unsigned int)0x0000ffff)) || ((int)*psVar6 == ((unsigned int)0x0000ffff) - 0x10000)) {
+            if (iVar9 < 2) {
+              iVar4 = 0;
+              if (0 < iVar9) {
+                do {
+                  sVar5 = sVar5 + -1;
+                  iVar4 += 1;
+                  psVar3 = psVar3 + -2;
+                } while (iVar4 < iVar9);
+              }
+            }
+            else {
+              local_2a = -1;
+              sVar5 = sVar5 + 1;
+              sVar10 = sVar10 + 1;
+              *psVar3 = -1;
+              psVar3[1] = -1;
+              local_2c = -1;
+              psVar3 = psVar3 + 2;
+            }
+            iVar9 = 0;
+            psVar13 = psVar3;
+          }
+          else {
+            sVar1 = *psVar6;
+            bVar18 = local_2c == sVar1;
+            sVar2 = local_2c;
+            if (bVar18) {
+              sVar1 = psVar6[1];
+              sVar2 = local_2a;
+            }
+            psVar13 = psVar3;
+            if (!bVar18 || sVar2 != sVar1) {
+              local_2c = *psVar6;
+              local_2a = psVar6[1];
+              sVar5 = sVar5 + 1;
+              psVar3[1] = local_2a;
+              psVar13 = psVar3 + 2;
+              *psVar3 = local_2c;
+              iVar9 = iVar9 + 1;
+            }
+          }
+          iVar11 = iVar11 + 1;
+          psVar3 = psVar13;
+          sVar1 = sVar10;
+        } while (iVar11 < local_28);
       }
     }
   }

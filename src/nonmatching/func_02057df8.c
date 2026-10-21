@@ -143,11 +143,10 @@ uint func_02057df8(int param_1,uint param_2,ushort *param_3,int *param_4,int *pa
                   (longlong)param_4[2] * (longlong)local_2c + 0x1000;
           lVar3 = (longlong)local_30 * (longlong)param_4[1] +
                   (longlong)param_4[3] * (longlong)local_2c + 0x1000;
-          if (uVar4 == 0x100 || uVar4 == 0x300) {
-            uVar7 = *puVar5 & ((unsigned int)0xc1fffcff) | uVar4 | (uint)param_6 << 0x19;
-          }
-          else {
+          if (!(uVar4 == 0x100 || uVar4 == 0x300)) {
             uVar7 = *puVar5 & ((unsigned int)0xc1fffcff) | uVar4;
+          } else {
+            uVar7 = *puVar5 & ((unsigned int)0xc1fffcff) | uVar4 | (uint)param_6 << 0x19;
           }
           *puVar5 = uVar7;
           iVar1 = (int)(*puVar5 & ((unsigned int)0xc000c000) & 0xc000) >> 0xe;
