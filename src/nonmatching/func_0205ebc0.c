@@ -125,7 +125,7 @@ LAB_0205ec40:
       if (piVar4 == (int *)0x0) goto LAB_0205ec40;
       iVar5 = param_1 + *piVar4;
     }
-    if (!param_2) {
+    if (param_2 == 0) {
       uVar3 = *(uint *)(iVar5 + 0x10) & ~param_3;
     }
     else {

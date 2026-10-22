@@ -98,16 +98,6 @@ extern int func_02060800();
 void func_0205f778(int param_1,int param_2,uint param_3,uint *param_4)
 
 {
-  uint *puStack_28;
-  uint local_2c;
-  uint local_30;
-  uint local_34;
-  uint local_38;
-  uint local_3c;
-  uint local_40;
-  uint local_44;
-  uint local_48;
-  uint local_4c;
   uint local_50;
   uint local_54;
   uint local_58;
@@ -118,6 +108,16 @@ void func_0205f778(int param_1,int param_2,uint param_3,uint *param_4)
   uint iVar3;
   uint uVar2;
   bool bVar1;
+  uint *puStack_28;
+  uint local_2c;
+  uint local_30;
+  uint local_34;
+  uint local_38;
+  uint local_3c;
+  uint local_40;
+  uint local_44;
+  uint local_48;
+  uint local_4c;
 
   uVar2 = (uint)*(ushort *)(param_1 + param_2 * 2 + 0x14);
   uVar4 = *(uint *)(param_1 + uVar2);
@@ -147,7 +147,10 @@ void func_0205f778(int param_1,int param_2,uint param_3,uint *param_4)
         puVar6 = (uint *)(iVar3 + 8);
         param_4[0x13] = *puVar5;
       }
-      if ((uVar4 & 0x10) == 0) {
+      if (!((uVar4 & 0x10) == 0)) {
+        puVar7 = puVar6 + 1;
+        param_4[0x14] = *puVar6;
+      } else {
         if (bVar1) {
           func_0205fc1c();
         }
@@ -155,10 +158,6 @@ void func_0205f778(int param_1,int param_2,uint param_3,uint *param_4)
           func_0205facc(param_4 + 0x14,param_3,puVar6,param_1);
         }
         puVar7 = puVar6 + 2;
-      }
-      else {
-        puVar7 = puVar6 + 1;
-        param_4[0x14] = *puVar6;
       }
       if ((uVar4 & 0x20) == 0) {
         if (bVar1) {

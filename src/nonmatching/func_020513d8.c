@@ -99,12 +99,12 @@ undefined4 func_020513d8(undefined4 param_1,undefined4 param_2,undefined4 param_
   int iVar3;
   uint uVar4;
   uint uVar5;
-  int local_138;
-  int local_134;
-  uint local_130;
-  undefined4 local_12c;
-  undefined4 local_128;
   undefined4 uStack_24;
+  undefined4 local_128;
+  undefined4 local_12c;
+  uint local_130;
+  int local_134;
+  int local_138;
 
   iVar3 = ((unsigned int)0xffffd8ed);
   uStack_24 = param_4;

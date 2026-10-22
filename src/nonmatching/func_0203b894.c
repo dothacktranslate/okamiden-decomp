@@ -147,23 +147,21 @@ undefined4 func_0203b894(uint *param_1,int param_2)
         } else {
           local_1c = 0;
         }
-        if (iVar8 == 0) {
-          iVar7 = 0;
-        }
-        else {
+        if (!(iVar8 == 0)) {
           iVar7 = (*(code *)(*(unsigned short *)0x0203ba10))(iVar8,1,0);
           if (iVar7 == 0) {
             bVar2 = false;
           }
+        } else {
+          iVar7 = 0;
         }
-        if (iVar9 == 0) {
-          iVar8 = 0;
-        }
-        else {
+        if (!(iVar9 == 0)) {
           iVar8 = (*(code *)(*(unsigned int *)0x0203ba14))(iVar9,*(ushort *)(iVar6 + 0x20) & 0x8000,0);
           if (iVar8 == 0) {
             bVar3 = false;
           }
+        } else {
+          iVar8 = 0;
         }
         if (((!bVar1) || (!bVar2)) || (!bVar3)) {
           if (iVar8 != 0) {

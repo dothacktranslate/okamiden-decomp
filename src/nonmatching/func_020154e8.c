@@ -163,7 +163,6 @@ extern int LZCOUNT();
 void func_020154e8(int param_1,int param_2,uint param_3,code *param_4,int *param_5)
 
 {
-  undefined4 *puVar7;
   int *piVar9;
   int *piVar10;
   undefined4 *puVar11;
@@ -177,6 +176,7 @@ void func_020154e8(int param_1,int param_2,uint param_3,code *param_4,int *param
   undefined4 *puVar5;
   undefined4 *puVar6;
   undefined4 *puVar8;
+  undefined4 *puVar7;
 
   piVar13 = (int *)&stack0xffffffdc;
   if (1 < param_2) {
@@ -199,17 +199,7 @@ void func_020154e8(int param_1,int param_2,uint param_3,code *param_4,int *param
         piVar9 = piVar10;
         if (0 < iVar4) {
           uVar3 = param_3;
-          if ((param_3 & 3) == 0) {
-            do {
-              uVar3 = uVar3 - 4;
-              uVar1 = *puVar12;
-              *puVar12 = *puVar11;
-              puVar12 = puVar12 + 1;
-              *puVar11 = uVar1;
-              puVar11 = puVar11 + 1;
-            } while (uVar3 != 0);
-          }
-          else {
+          if (!((param_3 & 3) == 0)) {
             do {
               uVar3 = uVar3 - 1;
               uVar2 = *(undefined1 *)puVar12;
@@ -217,6 +207,15 @@ void func_020154e8(int param_1,int param_2,uint param_3,code *param_4,int *param
               puVar12 = (undefined4 *)((int)puVar12 + 1);
               *(undefined1 *)puVar11 = uVar2;
               puVar11 = (undefined4 *)((int)puVar11 + 1);
+            } while (uVar3 != 0);
+          } else {
+            do {
+              uVar3 = uVar3 - 4;
+              uVar1 = *puVar12;
+              *puVar12 = *puVar11;
+              puVar12 = puVar12 + 1;
+              *puVar11 = uVar1;
+              puVar11 = puVar11 + 1;
             } while (uVar3 != 0);
           }
         }

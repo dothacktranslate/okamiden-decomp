@@ -65,7 +65,6 @@ extern unsigned int func_0201ad90();
 void func_0201ae2c(undefined2 *param_1,uint param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  undefined2 *puVar5;
   undefined4 uVar4;
   int iVar3;
   undefined4 uVar2;
@@ -75,6 +74,7 @@ void func_0201ae2c(undefined2 *param_1,uint param_2,undefined4 param_3,undefined
   undefined2 auStack_60 [19];
   undefined2 *puVar7;
   undefined2 *puVar6;
+  undefined2 *puVar5;
 
   uStack_14 = param_4;
   if ((int)param_2 < -0x34) {

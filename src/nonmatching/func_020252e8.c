@@ -245,12 +245,10 @@ LAB_02025374:
     iVar4 = -1;
     break;
   case 0xd:
-    if (iVar4 == 0) {
-      if (*(int *)(iVar9 + ((unsigned int)0x02025704)) == 0) {
+    if ((iVar4 == 0) && (*(int *)(iVar9 + ((unsigned int)0x02025704)) == 0)) {
         func_0x0209d488(*(undefined4 *)(iVar7 + 0x30));
         iVar4 = 1;
       }
-    }
     else if ((iVar4 == 1) && (*(int *)(iVar9 + ((unsigned int)0x02025704)) == 0)) {
       iVar4 = -1;
     }

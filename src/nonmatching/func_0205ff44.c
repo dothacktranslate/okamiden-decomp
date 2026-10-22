@@ -92,12 +92,12 @@ void func_0205ff44(int *param_1,uint param_2,uint *param_3,int param_4)
   int iVar5;
   int iVar7;
   int iVar9;
-  int iVar11;
-  int *piVar2;
-  int iVar4;
-  int iVar6;
-  int iVar8;
   uint uVar10;
+  int iVar8;
+  int iVar6;
+  int iVar4;
+  int *piVar2;
+  int iVar11;
 
   uVar10 = (int)param_2 >> 0xc;
   iVar9 = param_4 + param_3[1];
@@ -159,18 +159,17 @@ void func_0205ff44(int *param_1,uint param_2,uint *param_3,int param_4)
   param_2 = param_2 & ((unsigned int)0x020600c0);
   iVar7 = 0;
 LAB_02060048:
-  if ((uVar3 & 0x20000000) == 0) {
+  if (!((uVar3 & 0x20000000) == 0)) {
+    iVar11 = (int)*(short *)(iVar9 + uVar10 * 4 + 2);
+    iVar4 = (int)*(short *)(iVar9 + uVar10 * 4);
+    iVar8 = (int)*(short *)(iVar9 + iVar5 * 4);
+    iVar9 = (int)*(short *)(iVar9 + iVar5 * 4 + 2);
+  } else {
     piVar2 = (int *)(uVar10 + iVar9 * 8);
     iVar4 = *piVar2;
     iVar11 = piVar2[1];
     iVar8 = *(int *)(iVar9 + iVar5 * 8);
     iVar9 = *(int *)(iVar9 + iVar5 * 8 + 4);
-  }
-  else {
-    iVar11 = (int)*(short *)(iVar9 + uVar10 * 4 + 2);
-    iVar4 = (int)*(short *)(iVar9 + uVar10 * 4);
-    iVar8 = (int)*(short *)(iVar9 + iVar5 * 4);
-    iVar9 = (int)*(short *)(iVar9 + iVar5 * 4 + 2);
   }
   *param_1 = iVar4 * iVar6 + ((int)(param_2 * (iVar8 - iVar4)) >> 0xc) >> iVar7;
   param_1[1] = iVar11 * iVar6 + ((int)(param_2 * (iVar9 - iVar11)) >> 0xc) >> iVar7;

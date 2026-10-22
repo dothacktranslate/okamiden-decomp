@@ -89,14 +89,14 @@ void func_02010d04(int *param_1,int *param_2,int *param_3,uint *param_4,uint *pa
 
 {
   int iVar8;
-  uint uVar7;
   uint uVar6;
+  uint uVar7;
   int *piVar5;
-  uint uVar4;
-  uint uVar3;
-  int iVar2;
-  int iVar1;
   int iVar9;
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  uint uVar4;
 
   iVar2 = 0;
   iVar1 = 0;

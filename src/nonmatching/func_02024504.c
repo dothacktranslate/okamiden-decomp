@@ -109,14 +109,14 @@ func_02024504(int param_1,undefined4 param_2,undefined4 param_3,uint param_4,cha
             )
 
 {
-  bool bVar1;
   int *piVar2;
-  int iVar3;
   undefined4 uVar4;
-  undefined1 uVar5;
   undefined2 extraout_r1;
-  uint uVar6;
   int iVar7;
+  bool bVar1;
+  int iVar3;
+  undefined1 uVar5;
+  uint uVar6;
   undefined1 auStack_34 [32];
 
   piVar2 = ((unsigned int)0x020247cc);

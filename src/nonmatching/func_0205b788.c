@@ -100,10 +100,10 @@ undefined4 func_0205b788(int param_1,int param_2)
   if (param_1 != 0) {
     iVar2 = *(int *)(param_1 + 8);
   }
-  if (!(param_1 != 0 && iVar2 != 0)) {
-    param_1 = 0;
-  } else {
+  if (!(!(param_1 != 0 && iVar2 != 0))) {
     param_1 = param_1 + iVar2;
+  } else {
+    param_1 = 0;
   }
   uVar5 = 1;
   uVar4 = 0;

@@ -93,16 +93,16 @@ extern int func_0201a9d4();
 undefined1 * func_02016344(undefined1 *param_1,int param_2,int param_3)
 
 {
-  int iVar2;
-  int iVar4;
-  byte *pbVar6;
-  undefined1 *puVar8;
-  int iVar10;
-  uint iVar1;
-  int iVar3;
-  uint uVar5;
-  int iVar7;
   undefined1 *puVar9;
+  int iVar7;
+  uint uVar5;
+  int iVar3;
+  uint iVar1;
+  int iVar10;
+  undefined1 *puVar8;
+  byte *pbVar6;
+  int iVar4;
+  int iVar2;
 
   iVar1 = ((unsigned int)0x02016510);
   iVar4 = ((unsigned int)0x02016504);
@@ -129,21 +129,22 @@ undefined1 * func_02016344(undefined1 *param_1,int param_2,int param_3)
     *(undefined4 *)(((unsigned int)0x02016518) + iVar10 * 4) = *(undefined4 *)(*(int *)(((unsigned int)0x02016514) + 4) + 0x6c);
     *(undefined4 *)(iVar4 + iVar10 * 4) = 1;
   }
-  else if (*(int *)(((unsigned int)0x02016518) + iVar10 * 4) == *(int *)(*(int *)(((unsigned int)0x02016514) + 4) + 0x6c)) {
-    *(int *)(((unsigned int)0x02016504) + iVar10 * 4) = *(int *)(((unsigned int)0x02016504) + iVar10 * 4) + 1;
-  }
-  else {
+  else if (!(*(int *)(((unsigned int)0x02016518) + iVar10 * 4) == *(int *)(*(int *)(((unsigned int)0x02016514) + 4) + 0x6c))) {
     func_02007558(iVar1 + iVar7);
     iVar4 = ((unsigned int)0x02016504);
     *(undefined4 *)(iVar2 + iVar10 * 4) = *(undefined4 *)(*(int *)(((unsigned int)0x02016514) + 4) + 0x6c);
     *(undefined4 *)(iVar4 + iVar10 * 4) = 1;
+  } else {
+    *(int *)(((unsigned int)0x02016504) + iVar10 * 4) = *(int *)(((unsigned int)0x02016504) + iVar10 * 4) + 1;
   }
   puVar9 = param_1;
   puVar8 = param_1;
   if (param_2 != 0) {
     while( true ) {
       iVar4 = func_0201a9d4(param_3,0xffffffff);
-      if (iVar4 < 0) {
+      if (!(iVar4 < 0)) {
+        uVar5 = 0xffffffff;
+      } else {
         iVar4 = *(int *)(param_3 + 0x28);
         *(int *)(param_3 + 0x28) = iVar4 + -1;
         if (!(iVar4 == 0)) {
@@ -153,9 +154,6 @@ undefined1 * func_02016344(undefined1 *param_1,int param_2,int param_3)
         } else {
           uVar5 = func_0201622c(param_3);
         }
-      }
-      else {
-        uVar5 = 0xffffffff;
       }
       if (uVar5 == 0xffffffff) break;
       puVar9 = puVar8 + 1;

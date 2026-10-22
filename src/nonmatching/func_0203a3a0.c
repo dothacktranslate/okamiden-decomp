@@ -153,7 +153,7 @@ void func_0203a3a0(byte *param_1,uint param_2,int param_3,int param_4,ushort par
           }
           if ((*(uint *)(*(unsigned int *)0x0203a500) & 0x80000000) != 0) {
             iVar9 = func_0201ebe0(iVar9 + (uVar10 >> 1),uVar10);
-            if (iVar9 == 0) {
+            if (!iVar9) {
               bVar7 = *local_50 & ~(byte)local_24;
             }
             else {

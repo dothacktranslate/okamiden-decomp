@@ -188,11 +188,9 @@ undefined8 func_0201ef10(uint param_1,uint param_2)
     return CONCAT44((uVar4 >> 1) + (uint)CARRY4(uVar5,(uint)bVar12) + 0x1ff00000 + iVar10 * 0x100000
                     ,uVar5 + bVar12);
   }
-  if ((param_2 & 0x80000000) == 0) {
-    if (param_1 == 0 && (param_2 & 0xfffff) == 0) {
+  if (((param_2 & 0x80000000) == 0) && (param_1 == 0 && (param_2 & 0xfffff) == 0)) {
       return CONCAT44(param_2,param_1);
     }
-  }
   else if ((param_2 & 0x7fffffff) == 0 && param_1 == 0) {
     return CONCAT44(param_2,param_1);
   }

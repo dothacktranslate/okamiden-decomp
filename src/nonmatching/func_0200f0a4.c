@@ -191,7 +191,9 @@ func_0200f0a4(undefined2 *param_1,undefined2 *param_2,uint param_3,uint param_4,
     uVar8 = (uint)param_7;
   }
   puVar4 = param_1;
-  if (((bVar9 || bVar10) || !bVar11) || 0x1000 <= uVar8) {
+  if (((bVar9 || bVar10) || !bVar11)) {
+    puVar4 = (undefined2 *)0x1;
+  } else if (0x1000 <= uVar8) {
     puVar4 = (undefined2 *)0x1;
   }
   if (((bVar9 || bVar10) || !bVar11) || 0x1000 <= uVar8) {

@@ -101,12 +101,10 @@ bool func_02068ba4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 
   sVar1 = *(short *)(param_1 + 0x14);
   bVar5 = true;
-  if (sVar1 == 0) {
-    if (4 < *(short *)(param_1 + 0x16)) {
+  if ((sVar1 == 0) && (4 < *(short *)(param_1 + 0x16))) {
       func_0x020d2260();
       *(undefined2 *)(param_1 + 0x14) = 1;
     }
-  }
   else if (!(sVar1 == 1)) {
     bVar5 = sVar1 != 2;
   } else {

@@ -122,12 +122,11 @@ undefined4 func_0205b430(int param_1,int param_2)
         iVar2 = 0;
       }
       if (!(iVar2 == 0)) {
-        if ((iVar1 == 0) || (*(byte *)(iVar1 + 1) <= uVar3)) {
-          iVar2 = 0;
-        }
-        else {
+        if (!((iVar1 == 0) || (*(byte *)(iVar1 + 1) <= uVar3))) {
           iVar2 = *(ushort *)(iVar1 + (uint)*(ushort *)(iVar1 + 6)) * uVar3 +
                   iVar1 + (uint)*(ushort *)(iVar1 + 6) + 4;
+        } else {
+          iVar2 = 0;
         }
         if ((*(byte *)(iVar2 + 3) & 1) == 0) {
           func_0205b248(puVar5,iVar2,param_2);

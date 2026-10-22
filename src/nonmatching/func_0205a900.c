@@ -105,11 +105,10 @@ undefined4 func_0205a900(int *param_1,int *param_2)
     if (!(bVar2)) {
       bVar2 = false;
     } else {
-      if ((param_1 == (int *)0x0) || (*(ushort *)((int)param_1 + 6) < ((unsigned int)0x00000102))) {
-        bVar2 = false;
-      }
-      else {
+      if (!((param_1 == (int *)0x0) || (*(ushort *)((int)param_1 + 6) < ((unsigned int)0x00000102)))) {
         bVar2 = true;
+      } else {
+        bVar2 = false;
       }
     }
   } else {

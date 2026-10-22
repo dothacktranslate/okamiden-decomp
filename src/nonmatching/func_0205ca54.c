@@ -139,11 +139,10 @@ void func_0205ca54(int param_1,int param_2,int param_3,uint param_4)
   if ((iVar10 == 0) || ((*(uint *)(param_1 + 8) & 0x80) != 0)) {
     if (((param_2 == 0x20) || (param_2 == 0x40)) &&
        ((*(uint *)(param_1 + (param_4 >> 5) * 4 + 0xbc) & 1 << (param_4 & 0x1f)) != 0)) {
-      if (iVar10 == 0) {
-        puVar11 = (uint *)(param_4 * 0x38 + ((unsigned int)0x0205ceb4));
-      }
-      else {
+      if (!(iVar10 == 0)) {
         puVar11 = (uint *)(param_4 * 0x38 + iVar10);
+      } else {
+        puVar11 = (uint *)(param_4 * 0x38 + ((unsigned int)0x0205ceb4));
       }
     }
     else {

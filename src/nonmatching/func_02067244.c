@@ -146,7 +146,9 @@ func_02067244(undefined4 param_1,undefined4 *param_2,undefined4 param_3,undefine
     if (cVar2 == '\0') {
       unaff_r6 = 0;
     }
-    else if (cVar2 == '\x01' || cVar2 == '\x02') {
+    else if (cVar2 == '\x01') {
+      unaff_r6 = 1;
+    } else if (cVar2 == '\x02') {
       unaff_r6 = 1;
     }
     uVar7 = (uint)*(byte *)(iVar4 + 0xca);

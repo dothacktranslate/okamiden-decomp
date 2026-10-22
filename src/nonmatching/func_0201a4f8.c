@@ -92,6 +92,7 @@ uint func_0201a4f8(int param_1,int param_2,code *param_3,undefined4 param_4,int 
                  undefined4 *param_6,undefined4 *param_7)
 
 {
+  int local_28;
   ushort uVar1;
   uint uVar2;
   int iVar3;
@@ -99,7 +100,6 @@ uint func_0201a4f8(int param_1,int param_2,code *param_3,undefined4 param_4,int 
   uint uVar4;
   uint uVar5;
   uint local_2c;
-  int local_28;
 
   *param_7 = 0;
   local_2c = 0;

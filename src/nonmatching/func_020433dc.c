@@ -6,10 +6,10 @@ Func020433Node *func_020433dc(
 )
 {
     Func020433Node *node;
-    u8 key[24];
     Func020433Node *previous;
-    Func020433Input *input;
     s32 i;
+    u8 key[24];
+    Func020433Input *input;
     Func020433Node *child;
 
     input = *cursor;

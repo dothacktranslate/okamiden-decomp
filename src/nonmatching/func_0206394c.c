@@ -87,14 +87,14 @@ extern int LZCOUNT();
 undefined4 func_0206394c(uint *param_1,uint *param_2,uint *param_3,uint param_4,uint param_5)
 
 {
-  uint *puVar1;
-  uint *puVar2;
   uint uVar3;
-  uint unaff_r4;
+  uint *puVar2;
+  uint *puVar1;
   uint uVar4;
   uint unaff_r5;
   uint *puVar5;
   uint in_lr;
+  uint unaff_r4;
 
   puVar5 = (uint *)0x0;
   if ((uint *)*param_1 != (uint *)0x0) {

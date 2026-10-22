@@ -92,12 +92,12 @@ void func_02057858(int *param_1,undefined4 param_2,undefined4 param_3,undefined4
 
 {
   bool bVar1;
-  uint uVar2;
   uint uVar3;
-  uint uVar4;
   undefined2 *puVar5;
-  int iVar6;
   int iVar7;
+  uint uVar2;
+  uint uVar4;
+  int iVar6;
 
   if (!(param_1[5] == 0)) {
     bVar1 = false;

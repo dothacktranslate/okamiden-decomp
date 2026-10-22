@@ -93,11 +93,11 @@ int func_0200d358(int param_1)
   uint uVar2;
   int iVar3;
   bool bVar4;
-  int local_20;
-  int local_1c;
-  int local_18;
-  undefined2 local_14;
   ushort local_12;
+  undefined2 local_14;
+  int local_18;
+  int local_1c;
+  int local_20;
 
   local_20 = *(int *)(param_1 + 8);
   iVar3 = *(int *)(local_20 + 0x20);

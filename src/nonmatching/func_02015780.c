@@ -87,8 +87,8 @@ extern int LZCOUNT();
 void func_02015780(uint *param_1)
 
 {
-  uint uVar2;
   uint uVar5;
+  uint uVar2;
   int iVar10;
   uint *puVar1;
   uint uVar6;
