@@ -151,11 +151,7 @@ undefined4 func_0202a8f0(undefined4 param_1,undefined4 param_2,undefined4 param_
   case 2:
     iVar3 = func_020465d8(param_1,3);
     iVar4 = func_020465d8(param_1,4);
-    if (iVar4 <= 0) {
-      iVar3 = *(int *)(iVar8 + iVar3 * 0x10 + 0x5c);
-      *(uint *)(iVar3 + 0xc) = *(uint *)(iVar3 + 0xc) & 0xfffffffe;
-    }
-    else {
+    if (!(iVar4 <= 0)) {
       iVar3 = iVar3 * 0x10;
       iVar7 = iVar7 + 0x70;
       if (*(int *)(*(int *)(iVar7 + iVar3) + 0x38) == 0) {
@@ -165,6 +161,9 @@ undefined4 func_0202a8f0(undefined4 param_1,undefined4 param_2,undefined4 param_
                    *(undefined2 *)(iVar8 + iVar3 + 0x62),0x64000);
       }
       *(uint *)(*(int *)(iVar7 + iVar3) + 0xc) = *(uint *)(*(int *)(iVar7 + iVar3) + 0xc) | 1;
+    } else {
+      iVar3 = *(int *)(iVar8 + iVar3 * 0x10 + 0x5c);
+      *(uint *)(iVar3 + 0xc) = *(uint *)(iVar3 + 0xc) & 0xfffffffe;
     }
     goto LAB_0202aa58;
   case 3:

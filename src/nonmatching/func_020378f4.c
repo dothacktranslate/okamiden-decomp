@@ -97,16 +97,16 @@ extern int func_0206705c();
 void func_020378f4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  int iVar1;
-  int *piVar2;
-  uint uVar3;
-  undefined4 *puVar4;
-  int iVar5;
-  undefined4 uVar6;
-  int local_48 [2];
-  undefined4 *puStack_40;
-  undefined4 *apuStack_3c [5];
   undefined4 uStack_28;
+  undefined4 *apuStack_3c [5];
+  undefined4 *puStack_40;
+  int local_48 [2];
+  undefined4 uVar6;
+  int iVar5;
+  undefined4 *puVar4;
+  uint uVar3;
+  int *piVar2;
+  int iVar1;
 
   uStack_28 = param_4;
   for (piVar2 = *(int **)(param_1 + 0x10); piVar2 != (int *)(param_1 + 0x10);

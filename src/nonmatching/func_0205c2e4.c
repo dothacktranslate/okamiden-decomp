@@ -148,13 +148,12 @@ undefined4 func_0205c2e4(uint *param_1,int param_2,uint param_3,undefined4 param
     if ((param_3 < *(byte *)(iVar7 + 0x19)) &&
        ((*(ushort *)((iVar7 + param_3 * 2) + 0x1a) & 0x300) == 0x100)) {
       iVar6 = *(int *)(iVar7 + 4);
-      if (iVar6 <= 0x1000) {
+      if (!(iVar6 <= 0x1000)) {
+        iVar2 = iVar2 + 0x1000;
+      } else {
         if (0 < iVar6) {
           iVar2 = iVar2 + iVar6;
         }
-      }
-      else {
-        iVar2 = iVar2 + 0x1000;
       }
       iVar6 = iVar7;
       iVar5 = iVar5 + 1;

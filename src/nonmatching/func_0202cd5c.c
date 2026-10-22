@@ -114,15 +114,14 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
                   uVar2 = ((unsigned int)0x0202d0fc);
                   uVar3 = ((unsigned int)0x00000ad8);
                   if (*(char *)(param_1 + ((unsigned int)0x00000ad8)) != '\0') {
-                    if (param_4 <= 999) {
-                      uVar3 = (uint)*(ushort *)(param_1 + (((unsigned int)0x00000ad8) - 0x24));
-                      uVar2 = ((unsigned int)0x0202d0f4);
-                      uVar4 = ((unsigned int)0x0202d0f8);
-                    }
-                    else {
+                    if (!(param_4 <= 999)) {
                       uVar4 = 0;
                       uVar2 = ((unsigned int)0x0202d0e8);
                       uVar3 = ((unsigned int)0x0202d0ec);
+                    } else {
+                      uVar3 = (uint)*(ushort *)(param_1 + (((unsigned int)0x00000ad8) - 0x24));
+                      uVar2 = ((unsigned int)0x0202d0f4);
+                      uVar4 = ((unsigned int)0x0202d0f8);
                     }
                   }
                 }

@@ -101,15 +101,14 @@ undefined4 func_0206394c(uint *param_1,uint *param_2,uint *param_3,uint param_4,
     puVar2 = (uint *)*param_1;
     do {
       puVar5 = puVar2;
-      if (param_5 <= 1) {
-        in_lr = *puVar5;
-        unaff_r5 = 0;
-        unaff_r4 = param_4;
-      }
-      else {
+      if (!(param_5 <= 1)) {
         in_lr = ~(param_5 - 1) & *puVar5 + (param_5 - 1);
         unaff_r5 = in_lr - *puVar5;
         unaff_r4 = param_4 + unaff_r5;
+      } else {
+        in_lr = *puVar5;
+        unaff_r5 = 0;
+        unaff_r4 = param_4;
       }
     } while ((puVar5[1] < unaff_r4) &&
             (puVar1 = puVar5 + 3, puVar5 = (uint *)0x0, puVar2 = (uint *)*puVar1,

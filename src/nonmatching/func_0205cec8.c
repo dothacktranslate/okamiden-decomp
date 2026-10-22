@@ -105,12 +105,11 @@ LAB_0205cf4c:
   }
   else {
     iVar5 = iVar6 + 4;
-    if ((iVar5 == 0) || (*(byte *)(iVar6 + 5) <= uVar4)) {
-      piVar2 = (int *)0x0;
-    }
-    else {
+    if (!((iVar5 == 0) || (*(byte *)(iVar6 + 5) <= uVar4))) {
       piVar2 = (int *)(*(ushort *)(iVar5 + (uint)*(ushort *)(iVar6 + 10)) * uVar4 +
                       iVar5 + (uint)*(ushort *)(iVar6 + 10) + 4);
+    } else {
+      piVar2 = (int *)0x0;
     }
     if (piVar2 == (int *)0x0) goto LAB_0205cf4c;
     puVar3 = (ushort *)(iVar6 + *piVar2);

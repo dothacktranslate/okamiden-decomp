@@ -122,7 +122,15 @@ undefined4 func_02024cc4(undefined4 param_1)
   switch(uVar5) {
   case 0x101:
     if (iVar4 == 0) {
-      if ((*(uint *)(iVar7 + 0xbc) & 0x800) == 0) {
+      if (!((*(uint *)(iVar7 + 0xbc) & 0x800) == 0)) {
+        uVar2 = func_020465d8(param_1,3);
+        func_0x020e15ec(iVar8,uVar2);
+        uVar5 = func_02046654(param_1,4,0);
+        func_0x020dfdfc(iVar8,uVar5,1);
+        *(undefined1 *)(iVar8 + 0x288) = 1;
+        *(undefined1 *)(iVar8 + 0x289) = 0;
+        iVar4 = -1;
+      } else {
         if ((*(int *)(iVar8 + 0x218) != 3) && (*(int *)(iVar8 + 0x218) != 1)) {
           bVar1 = false;
         }
@@ -133,15 +141,6 @@ undefined4 func_02024cc4(undefined4 param_1)
           func_0x020dfdfc(iVar8,uVar5,0);
           iVar4 = 1;
         }
-      }
-      else {
-        uVar2 = func_020465d8(param_1,3);
-        func_0x020e15ec(iVar8,uVar2);
-        uVar5 = func_02046654(param_1,4,0);
-        func_0x020dfdfc(iVar8,uVar5,1);
-        *(undefined1 *)(iVar8 + 0x288) = 1;
-        *(undefined1 *)(iVar8 + 0x289) = 0;
-        iVar4 = -1;
       }
     }
     else if (iVar4 != 1) goto switchD_02024d02_default;

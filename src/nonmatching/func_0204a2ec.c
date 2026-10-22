@@ -170,13 +170,13 @@ extern int func_0204819c();
 undefined4 func_0204a2ec(undefined4 param_1)
 
 {
-  undefined *puVar1;
-  undefined *puVar2;
-  undefined *puVar3;
-  undefined *puVar4;
-  int iVar5;
-  undefined4 uVar6;
   undefined1 auStack_120 [252];
+  undefined4 uVar6;
+  int iVar5;
+  undefined *puVar4;
+  undefined *puVar3;
+  undefined *puVar2;
+  undefined *puVar1;
 
   puVar4 = ((unsigned int)0x0204a3e0);
   puVar3 = ((unsigned char *)0x0204a3dc);

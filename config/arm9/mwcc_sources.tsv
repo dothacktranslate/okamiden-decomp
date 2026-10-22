@@ -566,3 +566,12 @@ src/main/func_020467a0.c	-O2 -interworking
 src/main/func_0202d8a0.c	-O2,p -interworking
 src/main/func_02015440.c	-O2 -interworking
 src/main/func_02014540.c	-O1 -interworking
+src/main/func_02006a98.c	-O2 -interworking
+src/main/func_02006b20.c	-O2 -interworking
+src/main/func_02034e0c.c	-O1 -interworking
+src/main/func_02035334.c	-O2 -interworking
+src/main/func_0205abfc.c	-O2 -interworking
+src/main/func_0206605c.c	-O2 -interworking
+src/main/func_020660e0.c	-O2 -interworking
+src/main/func_02068868.c	-O2 -interworking
+src/main/func_02068880.c	-O2 -interworking

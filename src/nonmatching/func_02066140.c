@@ -107,14 +107,13 @@ int func_02066140(undefined4 param_1,uint param_2,int param_3,undefined4 param_4
   if (puVar1 == (undefined4 *)0x0) {
     return 4;
   }
-  if ((param_2 & 2) == 0) {
-    iStack_2c = func_02065b30(*puVar1);
-  }
-  else {
+  if (!((param_2 & 2) == 0)) {
     iStack_2c = func_02066480(*puVar1,param_3,param_4);
     if (iStack_2c == 0) {
       return 8;
     }
+  } else {
+    iStack_2c = func_02065b30(*puVar1);
   }
   iVar6 = 0;
   do {

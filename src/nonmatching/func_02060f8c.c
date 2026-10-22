@@ -98,13 +98,12 @@ void func_02060f8c(int param_1,uint param_2,undefined4 param_3,uint *param_4)
   uint *puVar6;
 
   iVar3 = param_1 + 8;
-  if ((iVar3 == 0) || (*(byte *)(param_1 + 9) <= param_2)) {
-    puVar4 = (undefined4 *)0x0;
-  }
-  else {
+  if (!((iVar3 == 0) || (*(byte *)(param_1 + 9) <= param_2))) {
     puVar4 = (undefined4 *)
              (*(ushort *)(iVar3 + (uint)*(ushort *)(param_1 + 0xe)) * param_2 +
              iVar3 + (uint)*(ushort *)(param_1 + 0xe) + 4);
+  } else {
+    puVar4 = (undefined4 *)0x0;
   }
   uVar1 = *param_4;
   puVar6 = param_4;

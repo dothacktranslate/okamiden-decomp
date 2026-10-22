@@ -87,11 +87,11 @@ extern int LZCOUNT();
 byte * func_020194ec(byte *param_1,byte *param_2,uint param_3)
 
 {
-  byte bVar1;
-  byte bVar2;
-  byte *pbVar3;
-  byte *pbVar4;
   byte *pbVar5;
+  byte *pbVar4;
+  byte *pbVar3;
+  byte bVar2;
+  byte bVar1;
 
   if (param_2 != (byte *)0x0) {
     param_3 = (uint)*param_2;

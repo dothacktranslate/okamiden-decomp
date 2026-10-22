@@ -107,12 +107,11 @@ void func_0203b234(int param_1,int param_2)
   *(int *)(param_1 + 0x14) = iVar2;
   if (-1 < (int)uVar3 || -1 < iVar2) {
     if ((int)(uVar4 * 0x1000) <= *(int *)(param_1 + 0x14)) {
-      if ((*(uint *)(param_1 + 0xc) & 2) == 0) {
+      if (!((*(uint *)(param_1 + 0xc) & 2) == 0)) {
+        *(uint *)(param_1 + 0x14) = *(int *)(param_1 + 0x14) + uVar4 * -0x1000;
+      } else {
         *(uint *)(param_1 + 0x14) = uVar4 * 0x1000 - uVar3;
         *(uint *)(param_1 + 0xc) = *(uint *)(param_1 + 0xc) | 4;
-      }
-      else {
-        *(uint *)(param_1 + 0x14) = *(int *)(param_1 + 0x14) + uVar4 * -0x1000;
       }
       return;
     }

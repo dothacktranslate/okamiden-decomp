@@ -153,7 +153,12 @@ void func_0203ed7c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     func_0205e0c0(0x40,&local_70,1);
     func_0205e0c0(0x15,0,0);
     do {
-      if (*(char *)(param_1 + 0x9c) == '\0') {
+      if (!(*(char *)(param_1 + 0x9c) == '\0')) {
+        iVar2 = param_1 + iVar3 * 0xc;
+        local_64 = *(undefined4 *)(iVar2 + 0x6c);
+        local_60 = *(undefined4 *)(iVar2 + 0x70);
+        local_5c = *(undefined4 *)(iVar2 + 0x74);
+      } else {
         puVar1 = (undefined4 *)
                  func_02041758((int)local_58[iVar3 * 2],
                               (int)*(short *)((int)local_48 + iVar3 * 4 + -0xe),
@@ -161,12 +166,6 @@ void func_0203ed7c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
         local_64 = *puVar1;
         local_60 = puVar1[1];
         local_5c = puVar1[2];
-      }
-      else {
-        iVar2 = param_1 + iVar3 * 0xc;
-        local_64 = *(undefined4 *)(iVar2 + 0x6c);
-        local_60 = *(undefined4 *)(iVar2 + 0x70);
-        local_5c = *(undefined4 *)(iVar2 + 0x74);
       }
       local_48[8] = (local_48[iVar3 * 2] << 8) >> 0x10 & 0xffffU |
                     ((local_48[iVar3 * 2 + 1] << 8) >> 0x10) << 0x10;

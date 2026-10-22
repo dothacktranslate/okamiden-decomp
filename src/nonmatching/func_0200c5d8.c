@@ -100,10 +100,7 @@ bool func_0200c5d8(int param_1)
   bVar4 = (*(uint *)(param_1 + 0x14) & 8) == 0;
   if (bVar4) {
     uVar2 = *(uint *)(param_1 + 0x14);
-    if ((uVar2 & 0x10) == 0) {
-      *(uint *)(param_1 + 0x14) = uVar2 | 8;
-    }
-    else {
+    if (!((uVar2 & 0x10) == 0)) {
       *(uint *)(param_1 + 0x14) = uVar2 | 0x40;
       uVar3 = func_02008b6c();
       uVar2 = *(uint *)(param_1 + 0x14);
@@ -112,6 +109,8 @@ bool func_0200c5d8(int param_1)
         uVar2 = *(uint *)(param_1 + 0x14);
       }
       func_02008b80(uVar3);
+    } else {
+      *(uint *)(param_1 + 0x14) = uVar2 | 8;
     }
   }
   func_02008b80(uVar1);

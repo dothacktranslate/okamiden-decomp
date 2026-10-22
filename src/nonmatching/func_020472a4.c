@@ -95,7 +95,7 @@ void func_020472a4(int param_1)
 
   puVar1 = (undefined4 *)func_02045fac();
   iVar2 = func_02052258(param_1,*puVar1,*(int *)(param_1 + 8) + -8);
-  if (iVar2 == 0) {
+  if (!iVar2) {
     iVar2 = *(int *)(param_1 + 8) + -8;
   }
   else {

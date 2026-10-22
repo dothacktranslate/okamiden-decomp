@@ -87,20 +87,20 @@ extern int LZCOUNT();
 undefined4 func_02060800(int *param_1,int param_2,int param_3,uint param_4)
 
 {
-  byte bVar1;
-  byte bVar2;
-  short uVar3;
-  short uVar4;
-  short sVar5;
-  short sVar6;
-  short sVar7;
-  uint uVar8;
-  int iVar9;
-  int iVar10;
-  int iVar11;
-  int unaff_r6;
-  ushort *puVar12;
   bool bVar13;
+  ushort *puVar12;
+  int unaff_r6;
+  int iVar11;
+  int iVar10;
+  int iVar9;
+  uint uVar8;
+  short sVar7;
+  short sVar6;
+  short sVar5;
+  short uVar4;
+  short uVar3;
+  byte bVar2;
+  byte bVar1;
 
   if ((0x8000 & param_4) != 0) {
     uVar8 = (uint)*(short *)(param_2 + (param_4 & ((unsigned int)0x00007fff)) * 6);

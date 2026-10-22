@@ -101,16 +101,15 @@ undefined4 * func_0204dcd0(int param_1,undefined4 *param_2,int param_3)
     if (*(char *)(puVar2 + 1) == '\b') {
       func_0204dcd0(param_1,puVar2 + 0x16,0xfffffffd);
     }
-    if ((byte)((*(byte *)((int)puVar2 + 5) ^ 3) & (bVar1 ^ 3)) == 0) {
+    if (!((byte)((*(byte *)((int)puVar2 + 5) ^ 3) & (bVar1 ^ 3)) == 0)) {
+      *(byte *)((int)puVar2 + 5) = *(byte *)((int)puVar2 + 5) & 0xf8 | *(byte *)(iVar3 + 0x14) & 3;
+      param_2 = puVar2;
+    } else {
       *param_2 = *puVar2;
       if (puVar2 == *(undefined4 **)(iVar3 + 0x1c)) {
         *(undefined4 *)(iVar3 + 0x1c) = *puVar2;
       }
       func_0204dc30(param_1,puVar2);
-    }
-    else {
-      *(byte *)((int)puVar2 + 5) = *(byte *)((int)puVar2 + 5) & 0xf8 | *(byte *)(iVar3 + 0x14) & 3;
-      param_2 = puVar2;
     }
   }
   return param_2;

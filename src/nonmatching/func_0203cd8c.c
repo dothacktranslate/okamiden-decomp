@@ -104,11 +104,10 @@ void func_0203cd8c(int param_1,int param_2)
           if (param_2 == 0) {
             uVar2 = 2;
           }
-          else if ((*(uint *)(param_1 + 0xc) & 0x1000000) == 0) {
-            uVar2 = 1;
-          }
-          else {
+          else if (!((*(uint *)(param_1 + 0xc) & 0x1000000) == 0)) {
             uVar2 = 0;
+          } else {
+            uVar2 = 1;
           }
           func_0205ece0(iVar4,uVar3,uVar2);
           break;

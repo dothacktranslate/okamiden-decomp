@@ -104,13 +104,12 @@ bool func_0203d930(undefined4 param_1,int param_2,int param_3)
   }
   else {
     iVar2 = func_0205f240(*(undefined4 *)(param_3 + 0x10));
-    if ((((iVar2 == 0) || (*(ushort *)(iVar2 + 0x34) == 0)) ||
+    if (!((((iVar2 == 0) || (*(ushort *)(iVar2 + 0x34) == 0)) ||
         (iVar2 = iVar2 + (uint)*(ushort *)(iVar2 + 0x34), iVar2 == 0)) ||
-       (*(char *)(iVar2 + 1) == '\0')) {
-      iVar2 = 0;
-    }
-    else {
+       (*(char *)(iVar2 + 1) == '\0'))) {
       iVar2 = iVar2 + (uint)*(ushort *)(iVar2 + 6) + 4;
+    } else {
+      iVar2 = 0;
     }
     if (iVar2 == 0) goto LAB_0203d996;
     uVar3 = func_0203d8b4(param_1,iVar2,*(undefined4 *)(iVar1 + 0x14));

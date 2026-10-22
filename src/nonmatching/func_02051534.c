@@ -93,12 +93,12 @@ extern int func_020510d8();
 void func_02051534(int param_1,undefined4 *param_2,int param_3,uint param_4)
 
 {
-  byte bVar1;
-  ushort uVar2;
-  int iVar3;
-  undefined1 *puVar4;
-  uint uVar5;
   uint local_28;
+  uint uVar5;
+  undefined1 *puVar4;
+  int iVar3;
+  ushort uVar2;
+  byte bVar1;
 
   local_28 = param_4;
   iVar3 = func_02046654(*(undefined4 *)(param_1 + 8),3,&local_28);

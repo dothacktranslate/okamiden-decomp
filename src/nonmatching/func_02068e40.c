@@ -91,16 +91,16 @@ extern int func_0x020c8e30();
 void func_02068e40(int param_1,undefined4 *param_2)
 
 {
-  short sVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  int iVar4;
-  int iVar5;
   undefined4 *puVar6;
   undefined4 *puVar7;
   int iVar8;
   int iVar9;
   int local_18;
+  short sVar1;
+  undefined4 uVar2;
+  undefined4 uVar3;
+  int iVar4;
+  int iVar5;
 
   sVar1 = *(short *)(param_2 + 0x50);
   iVar5 = 0x28;

@@ -113,26 +113,7 @@ undefined4 func_0202d6dc(int param_1,undefined4 param_2,undefined4 param_3,undef
   if (((*(uint *)(param_1 + ((unsigned int)0x00000be8)) & 1) == 0) &&
      ((*(uint *)(param_1 + ((unsigned int)0x00000be8)) & 2) == 0)) {
     uVar4 = *(undefined4 *)*piVar1;
-    if (*(char *)(*piVar1 + 0x14f) == '\0') {
-      iVar3 = func_0202404c(uVar4,0);
-      if ((((iVar3 != 0) && (*(char *)(param_1 + iVar5 + -10) != '\0')) &&
-          (*(short *)(param_1 + 0xab0) != 0xe)) &&
-         ((*(ushort *)(*(int *)((*(unsigned int *)0x0202d83c) + 0xc) + 2) & 4) != 0)) {
-        if (*(int *)(param_1 + 0xad0) == *(int *)(param_1 + 0xac8) + 0x1000) {
-          func_0202d844(param_1);
-          uVar2 = 0xb;
-        }
-        else {
-          *(uint *)(param_1 + ((unsigned int)0x00000be8)) = *(uint *)(param_1 + ((unsigned int)0x00000be8)) | 0x30;
-          func_02023f04(*(undefined4 *)(*(unsigned int *)0x0202d834),0,4,4);
-          uVar2 = 7;
-        }
-        *(undefined2 *)(param_1 + 0xab0) = uVar2;
-        *(undefined1 *)((*(unsigned int *)0x0202d834) + 0x90) = 1;
-        return 1;
-      }
-    }
-    else {
+    if (!(*(char *)(*piVar1 + 0x14f) == '\0')) {
       iVar3 = func_0202404c(uVar4,0);
       if (((iVar3 != 0) && (*(char *)(param_1 + iVar5 + -10) != '\0')) &&
          (*(short *)(param_1 + 0xab0) != 0xe)) {
@@ -153,6 +134,24 @@ undefined4 func_0202d6dc(int param_1,undefined4 param_2,undefined4 param_3,undef
           *(undefined1 *)(*piVar1 + 0x90) = 1;
           return 1;
         }
+      }
+    } else {
+      iVar3 = func_0202404c(uVar4,0);
+      if ((((iVar3 != 0) && (*(char *)(param_1 + iVar5 + -10) != '\0')) &&
+          (*(short *)(param_1 + 0xab0) != 0xe)) &&
+         ((*(ushort *)(*(int *)((*(unsigned int *)0x0202d83c) + 0xc) + 2) & 4) != 0)) {
+        if (*(int *)(param_1 + 0xad0) == *(int *)(param_1 + 0xac8) + 0x1000) {
+          func_0202d844(param_1);
+          uVar2 = 0xb;
+        }
+        else {
+          *(uint *)(param_1 + ((unsigned int)0x00000be8)) = *(uint *)(param_1 + ((unsigned int)0x00000be8)) | 0x30;
+          func_02023f04(*(undefined4 *)(*(unsigned int *)0x0202d834),0,4,4);
+          uVar2 = 7;
+        }
+        *(undefined2 *)(param_1 + 0xab0) = uVar2;
+        *(undefined1 *)((*(unsigned int *)0x0202d834) + 0x90) = 1;
+        return 1;
       }
     }
   }

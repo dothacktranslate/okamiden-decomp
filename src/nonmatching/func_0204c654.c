@@ -115,13 +115,12 @@ uint func_0204c654(int param_1,uint param_2,undefined4 param_3,undefined4 param_
     *(undefined2 *)(param_1 + 0x36) = *(undefined2 *)(param_1 + 0x34);
     uVar2 = func_0204bb90(param_1,uVar1,*(int *)(param_1 + 8) + param_2 * -8,
                          *(undefined2 *)(param_1 + 0x34),param_4);
-    if (uVar2 == 0) {
-      uVar2 = (uint)*(byte *)(param_1 + 6);
-    }
-    else {
+    if (!(uVar2 == 0)) {
       *(char *)(param_1 + 6) = (char)uVar2;
       func_0204ba20(param_1,uVar2,*(undefined4 *)(param_1 + 8));
       *(undefined4 *)(*(int *)(param_1 + 0x14) + 8) = *(undefined4 *)(param_1 + 8);
+    } else {
+      uVar2 = (uint)*(byte *)(param_1 + 6);
     }
     *(short *)(param_1 + 0x34) = *(short *)(param_1 + 0x34) + -1;
     return uVar2;

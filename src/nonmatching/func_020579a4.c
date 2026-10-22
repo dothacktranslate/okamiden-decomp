@@ -113,23 +113,21 @@ void func_020579a4(undefined4 *param_1,undefined4 param_2,int param_3,undefined4
     func_02005048();
   }
   else if (param_3 == 1) {
-    if (param_1[1] == 0) {
-      func_020040d4(uVar1,param_2,uVar2);
-    }
-    else {
+    if (!(param_1[1] == 0)) {
       func_02004b54();
       func_02004b9c(uVar1,param_2,uVar2);
       func_02004c0c();
+    } else {
+      func_020040d4(uVar1,param_2,uVar2);
     }
   }
   else if (param_3 == 2) {
-    if (param_1[1] == 0) {
-      func_02004130(uVar1,param_2,uVar2);
-    }
-    else {
+    if (!(param_1[1] == 0)) {
       func_02004d00();
       func_02004d18(uVar1,param_2,uVar2);
       func_02004d80();
+    } else {
+      func_02004130(uVar1,param_2,uVar2);
     }
   }
   uVar1 = param_1[1];

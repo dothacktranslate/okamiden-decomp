@@ -175,20 +175,20 @@ extern int func_0204ac2c();
 undefined4 func_0204a3ec(int param_1)
 
 {
-  char cVar1;
-  bool bVar2;
-  int iVar4;
-  int iVar3;
-  int iVar5;
-  int iVar6;
-  undefined *puVar7;
-  undefined4 uVar8;
-  int local_80;
-  undefined1 auStack_7c [8];
-  char *local_74;
-  char *local_70;
-  int local_68;
   undefined1 auStack_58 [64];
+  int local_68;
+  char *local_70;
+  char *local_74;
+  undefined1 auStack_7c [8];
+  int local_80;
+  undefined4 uVar8;
+  undefined *puVar7;
+  int iVar6;
+  int iVar5;
+  int iVar3;
+  int iVar4;
+  bool bVar2;
+  char cVar1;
 
   bVar2 = true;
   iVar3 = func_020499ac(param_1,&local_80);

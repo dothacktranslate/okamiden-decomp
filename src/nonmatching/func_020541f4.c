@@ -110,14 +110,14 @@ void func_020541f4(int param_1,uint param_2,undefined4 param_3,undefined4 param_
   iVar5 = *(int *)(iVar2 + 0xc);
   iVar2 = *(int *)(iVar2 + 0x14);
   iVar3 = ((int)((param_2 - iVar5) + ((uint)((int)(param_2 - iVar5) >> 1) >> 0x1e)) >> 2) + -1;
-  if (iVar2 == 0) {
+  if (!iVar2) {
     iVar4 = 0;
   }
   else {
     iVar4 = *(int *)(iVar2 + iVar3 * 4);
   }
   if ((iVar3 != 0) && (param_2 > uVar6)) {
-    if (iVar2 == 0) {
+    if (!iVar2) {
       iVar2 = 0;
     }
     else {

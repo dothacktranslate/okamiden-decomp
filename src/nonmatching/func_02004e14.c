@@ -106,11 +106,10 @@ void func_02004e14(int param_1,uint param_2,int param_3,undefined4 param_4)
     else {
       if (param_2 < uVar1) {
         uVar1 = uVar1 - param_2;
-        if (((*(unsigned int *)0x02004f5c) == -1) || (uVar1 <= 0x30)) {
-          func_020098b4(param_1,*(int *)(((unsigned int)0x02004f58) + 4) + param_2,uVar1);
-        }
-        else {
+        if (!(((*(unsigned int *)0x02004f5c) == -1) || (uVar1 <= 0x30))) {
           func_02009068((*(unsigned int *)0x02004f5c),param_1,*(int *)(((unsigned int)0x02004f58) + 4) + param_2,uVar1,1);
+        } else {
+          func_020098b4(param_1,*(int *)(((unsigned int)0x02004f58) + 4) + param_2,uVar1);
         }
         if ((*(unsigned int *)0x02004f5c) == -1) {
           func_020098b4(param_1 + uVar1,iVar2,param_3 - uVar1);

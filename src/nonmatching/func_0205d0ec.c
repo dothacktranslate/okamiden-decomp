@@ -98,27 +98,27 @@ extern int func_0205e0c0();
 void func_0205d0ec(int *param_1,int param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  byte bVar1;
-  undefined4 *puVar2;
-  undefined4 *puVar3;
-  undefined4 *puVar4;
-  int iVar5;
-  undefined4 uVar6;
-  uint uVar7;
-  int iVar8;
-  char cVar9;
-  undefined1 *puVar10;
-  uint local_f0;
-  uint local_ec;
-  undefined1 auStack_e8 [64];
-  undefined1 auStack_a8 [64];
-  undefined1 auStack_68 [16];
-  undefined1 auStack_58 [16];
-  undefined1 auStack_48 [16];
-  undefined4 local_38;
-  undefined4 local_34;
-  undefined4 local_30;
   undefined4 uStack_28;
+  undefined4 local_30;
+  undefined4 local_34;
+  undefined4 local_38;
+  undefined1 auStack_48 [16];
+  undefined1 auStack_58 [16];
+  undefined1 auStack_68 [16];
+  undefined1 auStack_a8 [64];
+  undefined1 auStack_e8 [64];
+  uint local_ec;
+  uint local_f0;
+  undefined1 *puVar10;
+  char cVar9;
+  int iVar8;
+  uint uVar7;
+  undefined4 uVar6;
+  int iVar5;
+  undefined4 *puVar4;
+  undefined4 *puVar3;
+  undefined4 *puVar2;
+  byte bVar1;
 
   puVar3 = ((unsigned int)0x0205d3b0);
   puVar2 = ((unsigned int)0x0205d3ac);

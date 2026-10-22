@@ -127,12 +127,11 @@ void func_0202f82c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
         func_0203b44c(uVar1,*(undefined4 *)(iVar3 + 0x6c));
         *(undefined4 *)(iVar3 + 0x6c) = 0;
       }
-      if ((iVar5 == 0) || (iVar5 == 3)) {
+      if (!((iVar5 == 0) || (iVar5 == 3))) {
+        iVar3 = func_02036bbc(*(undefined4 *)(iVar6 + *(int *)(param_1 + 0x114) * 4 + 0x4c),0);
+      } else {
         iVar3 = func_02036bd4(*(undefined4 *)(iVar6 + *(int *)(param_1 + 0x114) * 4 + 0x4c),
                              auStack_28);
-      }
-      else {
-        iVar3 = func_02036bbc(*(undefined4 *)(iVar6 + *(int *)(param_1 + 0x114) * 4 + 0x4c),0);
       }
       if (iVar3 != 0) {
         if (iVar5 == 3) {

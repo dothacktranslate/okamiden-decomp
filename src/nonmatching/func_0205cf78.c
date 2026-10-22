@@ -185,11 +185,10 @@ void func_0205cf78(int param_1,undefined4 param_2,int param_3)
   if (cVar2 == '\x02') {
     *(uint *)(param_1 + 8) = *(uint *)(param_1 + 8) & 0xffffffbf;
     (**(code **)(param_1 + 0x20))(param_1);
-    if (*(int *)(param_1 + 0x20) == 0) {
-      cVar2 = '\0';
-    }
-    else {
+    if (!(*(int *)(param_1 + 0x20) == 0)) {
       cVar2 = *(char *)(param_1 + 0x91);
+    } else {
+      cVar2 = '\0';
     }
   }
   if (cVar2 == '\x03') {

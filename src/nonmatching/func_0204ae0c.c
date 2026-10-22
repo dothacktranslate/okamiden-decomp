@@ -103,12 +103,11 @@ undefined4 func_0204ae0c(int param_1,uint param_2,undefined4 param_3)
     }
     break;
   case 3:
-    if ((0x100 & param_2) == 0) {
-      uVar1 = (uint)*(byte *)(param_1 + 0x4b);
-    }
-    else {
+    if (!((0x100 & param_2) == 0)) {
       param_2 = param_2 & 0xfffffeff;
       uVar1 = *(unsigned char *)(param_1 + 0x28);
+    } else {
+      uVar1 = (uint)*(byte *)(param_1 + 0x4b);
     }
     if ((int)uVar1 <= (int)param_2) {
       return 0;

@@ -103,12 +103,11 @@ undefined4 func_020123dc(int param_1,int *param_2,int param_3,int *param_4)
         *(undefined2 *)(param_1 + iVar3 * 2) = 0xffff;
         iVar3 = iVar3 + 1;
       }
-      else if ((iVar3 < 3) ||
-              (*(short *)(iVar2 + (uint)*(ushort *)(param_1 + (iVar3 + -3) * 2) * 4) == -1)) {
-        iVar3 = iVar3 + -2;
-      }
-      else {
+      else if (!((iVar3 < 3) ||
+              (*(short *)(iVar2 + (uint)*(ushort *)(param_1 + (iVar3 + -3) * 2) * 4) == -1))) {
         *(undefined2 *)(param_1 + iVar1) = 0xffff;
+      } else {
+        iVar3 = iVar3 + -2;
       }
     }
     *param_2 = iVar3;

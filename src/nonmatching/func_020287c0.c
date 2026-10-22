@@ -107,21 +107,20 @@ undefined4 func_020287c0(undefined4 param_1,undefined4 param_2,undefined4 param_
   iVar1 = func_020465d8(param_1,1,param_3,param_4,param_4);
   switch(iVar1 - ((unsigned int)0x02028914)) {
   case 0:
-    if (*(int *)(iVar4 + 0x54) == 0) {
+    if (!(*(int *)(iVar4 + 0x54) == 0)) {
+      iVar1 = *(int *)(*(int *)(iVar4 + 0x54) + 0x310);
+      iVar2 = func_020465d8(param_1,3);
+      iVar2 = iVar2 + iVar1;
+      iVar1 = *(int *)(*(int *)(iVar4 + 0x54) + 0x314);
+      if ((iVar2 <= iVar1) && (iVar1 = iVar2, iVar2 < 0)) {
+        iVar1 = 0;
+      }
+    } else {
       uVar3 = *(undefined4 *)(iVar4 + 0x34);
       iVar2 = func_020465d8(param_1,3);
       iVar1 = func_0x02090dac(uVar3);
       iVar2 = iVar2 + iVar1;
       iVar1 = func_0x02090dcc(*(undefined4 *)(iVar4 + 0x34));
-      if ((iVar2 <= iVar1) && (iVar1 = iVar2, iVar2 < 0)) {
-        iVar1 = 0;
-      }
-    }
-    else {
-      iVar1 = *(int *)(*(int *)(iVar4 + 0x54) + 0x310);
-      iVar2 = func_020465d8(param_1,3);
-      iVar2 = iVar2 + iVar1;
-      iVar1 = *(int *)(*(int *)(iVar4 + 0x54) + 0x314);
       if ((iVar2 <= iVar1) && (iVar1 = iVar2, iVar2 < 0)) {
         iVar1 = 0;
       }

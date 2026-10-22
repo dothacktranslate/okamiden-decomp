@@ -103,13 +103,12 @@ void func_0203a508(byte *param_1,int param_2,uint param_3)
   uint uVar10;
   uint local_20;
 
-  if (((param_2 == 0) || (iVar2 = param_2 + 0x3c, iVar2 == 0)) ||
-     (*(byte *)(param_2 + 0x3d) <= param_3)) {
-    puVar3 = (uint *)0x0;
-  }
-  else {
+  if (!(((param_2 == 0) || (iVar2 = param_2 + 0x3c, iVar2 == 0)) ||
+     (*(byte *)(param_2 + 0x3d) <= param_3))) {
     puVar3 = (uint *)(iVar2 + (uint)*(ushort *)(param_2 + 0x42) + 4 +
                      param_3 * *(ushort *)(iVar2 + (uint)*(ushort *)(param_2 + 0x42)));
+  } else {
+    puVar3 = (uint *)0x0;
   }
   if (puVar3 != (uint *)0x0) {
     iVar2 = (*puVar3 & 0xffff) * 8;

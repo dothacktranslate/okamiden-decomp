@@ -109,15 +109,14 @@ void func_020420d8(int param_1)
   if (*(int *)(param_1 + 0x1cc) != 0) {
     if (*(short *)(param_1 + 0x1cc) == 0xb) {
       if (*(unsigned short *)(param_1 + 0xdc) == 0) {
-        if (*(char *)(param_1 + 0x1d0) == '\0') {
-          *(undefined4 *)(param_1 + 0xe8) = 0;
-          *(undefined4 *)(param_1 + 0xdc) = 0;
-        }
-        else {
+        if (!(*(char *)(param_1 + 0x1d0) == '\0')) {
           *(uint *)(param_1 + 0x124) = *(uint *)(param_1 + 0x124) | 0x2000;
           *(undefined4 *)(param_1 + 0xe8) = 1;
           *(undefined4 *)(param_1 + 0xdc) = 0;
           func_0203a3a0(param_1 + 0x1fc,0x40,0xc0,0x20,0);
+        } else {
+          *(undefined4 *)(param_1 + 0xe8) = 0;
+          *(undefined4 *)(param_1 + 0xdc) = 0;
         }
         func_02039b04(param_1 + 0xc0);
       }

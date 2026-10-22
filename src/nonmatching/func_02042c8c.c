@@ -168,11 +168,10 @@ LAB_02042d94:
         }
         break;
       case 3:
-        if (*(char *)(param_2 + 7) == '\0') {
-          *(uint *)(iVar3 + 0x84) = *(uint *)(iVar3 + 0x84) | 2;
-        }
-        else {
+        if (!(*(char *)(param_2 + 7) == '\0')) {
           *(uint *)(iVar3 + 0x84) = *(uint *)(iVar3 + 0x84) & 0xfffffffd;
+        } else {
+          *(uint *)(iVar3 + 0x84) = *(uint *)(iVar3 + 0x84) | 2;
         }
         break;
       case 4:

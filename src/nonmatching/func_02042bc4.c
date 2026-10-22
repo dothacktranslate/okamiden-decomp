@@ -129,17 +129,16 @@ undefined4 func_02042bc4(int param_1,int param_2,undefined4 param_3,undefined4 p
     }
     piVar3 = (int *)func_020433d4(*(undefined4 *)(*(int *)(param_1 + 4) + param_2 + 0x74));
     uVar6 = 4;
-    if ((*(uint *)(*piVar3 + 0x24) & 4) == 0) {
+    if (!((*(uint *)(*piVar3 + 0x24) & 4) == 0)) {
+      uVar4 = 8;
+      iVar1 = *(int *)(param_1 + 4) + 0x84;
+      uVar6 = *(uint *)(iVar1 + param_2);
+    } else {
       if ((*(uint *)(*piVar3 + 0x24) & 8) == 0) {
         return 1;
       }
       iVar1 = *(int *)(param_1 + 4) + 0x84;
       uVar4 = *(uint *)(iVar1 + param_2);
-    }
-    else {
-      uVar4 = 8;
-      iVar1 = *(int *)(param_1 + 4) + 0x84;
-      uVar6 = *(uint *)(iVar1 + param_2);
     }
     *(uint *)(iVar1 + param_2) = uVar4 | uVar6;
     return 1;

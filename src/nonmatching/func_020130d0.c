@@ -98,7 +98,9 @@ void func_020130d0(int param_1,int param_2)
 
   iVar1 = ((unsigned int)0x0201314c);
   uVar2 = func_02008b6c();
-  if ((*(unsigned short *)(iVar1 + 0x14) == param_1) && (*(int *)(iVar1 + 0x18) != 0)) {
+  if (!((*(unsigned short *)(iVar1 + 0x14) == param_1) && (*(int *)(iVar1 + 0x18) != 0))) {
+    func_02008e58();
+  } else {
     if (*(int *)(iVar1 + 0x24) != param_2) {
       func_02008e58();
     }
@@ -109,9 +111,6 @@ void func_020130d0(int param_1,int param_2)
       *(undefined4 *)(iVar1 + 0x24) = 0;
       func_02007050(iVar1 + 0x1c);
     }
-  }
-  else {
-    func_02008e58();
   }
   func_02008b80(uVar2);
   return;

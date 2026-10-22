@@ -27,12 +27,11 @@ undefined4 func_02003aa8(uint *param_1)
 {
   undefined4 uVar1;
 
-  if ((*DAT_02003acc & 1) == 0) {
+  if (!((*DAT_02003acc & 1) == 0)) {
+    uVar1 = 0xffffffff;
+  } else {
     *param_1 = *DAT_02003acc & 2;
     uVar1 = 0;
-  }
-  else {
-    uVar1 = 0xffffffff;
   }
   return uVar1;
 }

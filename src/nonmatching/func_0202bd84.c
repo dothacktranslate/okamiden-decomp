@@ -173,7 +173,7 @@ LAB_0202be42:
       psVar12 = (short *)(param_1 + 0x28 + local_38 * 0x10);
       iVar9 = (int)*(short *)(param_1 + 0x28 + local_38 * 0x10);
       iVar6 = *piVar5;
-      if (iVar6 == 0) {
+      if (!iVar6) {
         iVar8 = 0;
       }
       else {
@@ -184,7 +184,7 @@ LAB_0202be42:
         iVar14 = 0x7f;
       }
       if (psVar12[1] != 0) {
-        if (iVar6 == 0) {
+        if (!iVar6) {
           puVar10 = (ushort *)0x0;
         }
         else {
@@ -206,7 +206,7 @@ LAB_0202be42:
           else {
             iVar9 = func_02037c48(iVar13,iVar9 + 1);
           }
-          if (iVar9 != 0) {
+          if (iVar9) {
             *(int *)(iVar9 + 0x18) = iVar14;
           }
         }
@@ -219,7 +219,7 @@ LAB_0202be42:
         puVar10 = (ushort *)(*(int *)(param_1 + ((unsigned int)0x0202c090)) + iVar9 * 0x18);
       }
       local_30 = 0;
-      if (iVar9 != 0) {
+      if (iVar9) {
         if (puVar10[1] != 0) {
           local_34 = (int)(*piVar4 + ((uint)(*piVar4 >> 0xb) >> 0x14)) >> 0xc;
           local_30 = local_34 - puVar10[1];
@@ -228,7 +228,7 @@ LAB_0202be42:
           if (*puVar10 < puVar10[1]) {
             if ((*(uint *)(psVar12 + 4) & ((unsigned int)0x0202c0a0)) == ((unsigned int)0x0202c0a0)) {
               iVar9 = func_02037ca4(iVar13);
-              if (iVar9 == 0) {
+              if (!iVar9) {
                 if ((local_34 == *puVar10) && (local_30 < 0)) {
                   func_02037590(iVar13,*(undefined4 *)(puVar10 + 4),iVar14,0x7f,0,0);
                 }
@@ -242,7 +242,7 @@ LAB_0202be42:
             }
             else if (puVar10[2] == 0) {
               iVar9 = func_02037c48(iVar13,iVar9 + 1);
-              if (iVar9 == 0) {
+              if (!iVar9) {
                 if (((local_34 == *puVar10) && (local_30 < 0)) &&
                    (iVar9 = func_02037500(iVar13,*(undefined4 *)(puVar10 + 4),
                                          *(undefined4 *)(puVar10 + 6),iVar14,0x7f,0,0), iVar9 != 0))
@@ -261,7 +261,7 @@ LAB_0202be42:
               sVar1 = psVar12[2];
               psVar12[2] = psVar12[2] + 1;
               func_0201e9d4((int)sVar1,puVar10[2]);
-              if (extraout_r1 == 0) {
+              if (!extraout_r1) {
                 iVar9 = *(int *)(puVar10 + 8);
                 if (0 < local_30) {
                   iVar6 = func_0201ebe0(iVar9 * local_30,*(undefined4 *)(puVar10 + 10));

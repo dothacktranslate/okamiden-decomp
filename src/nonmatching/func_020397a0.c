@@ -235,12 +235,11 @@ void func_020397a0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,und
     *(uint *)(iVar5 + 0x7c) = *(uint *)(iVar5 + 0x7c) & 0xffffff17;
     goto LAB_0203995e;
   }
-  if ((param_1[0x11] & 1) == 0) {
-    func_02002560(*param_1,param_1[1],param_1[2],param_1[3],param_1[4],0x1000,((unsigned int)0x020399e8));
-  }
-  else {
+  if (!((param_1[0x11] & 1) == 0)) {
     func_02002328(param_1[5],param_1[6],param_1[7],param_1[8],param_1[9],param_1[10],0x1000,
                  ((unsigned int)0x020399e8));
+  } else {
+    func_02002560(*param_1,param_1[1],param_1[2],param_1[3],param_1[4],0x1000,((unsigned int)0x020399e8));
   }
   *(uint *)(((unsigned int)0x020399ec) + 0x7c) = *(uint *)(((unsigned int)0x020399ec) + 0x7c) & 0xffffffaf;
   switch(param_1[0x12]) {

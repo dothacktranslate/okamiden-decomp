@@ -92,14 +92,14 @@ extern int func_02021b78();
 void func_02020364(int param_1,int *param_2)
 
 {
-  int iVar1;
-  int *piVar2;
-  undefined4 uVar3;
-  int *piVar4;
-  uint uVar5;
-  int iStack_28;
-  int iStack_24;
   int iStack_20;
+  int iStack_24;
+  int iStack_28;
+  uint uVar5;
+  int *piVar4;
+  undefined4 uVar3;
+  int *piVar2;
+  int iVar1;
 
   param_2[1] = 0;
   param_2[2] = 0;

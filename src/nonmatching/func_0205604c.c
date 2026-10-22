@@ -99,13 +99,12 @@ uint func_0205604c(int *param_1)
   if (pbVar2 != (byte *)0x0) {
     iVar1 = local_10;
   }
-  if (pbVar2 != (byte *)0x0 && iVar1 != 0) {
+  if (!(pbVar2 != (byte *)0x0 && iVar1 != 0)) {
+    uVar3 = 0xffffffff;
+  } else {
     *param_1 = iVar1 + -1;
     param_1[1] = (int)(pbVar2 + 1);
     uVar3 = (uint)*pbVar2;
-  }
-  else {
-    uVar3 = 0xffffffff;
   }
   return uVar3;
 }

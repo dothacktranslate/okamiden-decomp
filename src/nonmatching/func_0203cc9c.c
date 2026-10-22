@@ -103,11 +103,10 @@ void func_0203cc9c(int param_1,int param_2)
   uVar5 = 0;
   if (*(char *)(iVar2 + 0x18) != '\0') {
     do {
-      if ((iVar2 == 0) || (*(int *)(iVar2 + 8) == 0)) {
-        iVar4 = 0;
-      }
-      else {
+      if (!((iVar2 == 0) || (*(int *)(iVar2 + 8) == 0))) {
         iVar4 = iVar2 + *(int *)(iVar2 + 8);
+      } else {
+        iVar4 = 0;
       }
       if (((iVar4 == 0) || (iVar4 + 4 == 0)) || (*(byte *)(iVar4 + 5) <= uVar5)) {
         iVar4 = 0;

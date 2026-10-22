@@ -96,12 +96,11 @@ void func_02042518(undefined4 *param_1,int param_2,uint param_3)
   if (param_2 == 0 || param_1 == (undefined4 *)0x0) {
     return;
   }
-  if ((param_2 + 0x3c == 0) || (*(byte *)(param_2 + 0x3d) <= param_3)) {
-    puVar1 = (undefined4 *)0x0;
-  }
-  else {
+  if (!((param_2 + 0x3c == 0) || (*(byte *)(param_2 + 0x3d) <= param_3))) {
     iVar2 = param_2 + 0x3c + (uint)*(ushort *)(param_2 + 0x42);
     puVar1 = (undefined4 *)(iVar2 + (uint)*(ushort *)(iVar2 + 2) + param_3 * 0x10);
+  } else {
+    puVar1 = (undefined4 *)0x0;
   }
   uVar4 = puVar1[2];
   uVar3 = puVar1[1];

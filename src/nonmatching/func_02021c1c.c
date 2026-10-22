@@ -93,11 +93,11 @@ extern int func_020688f8();
 int func_02021c1c(void)
 
 {
-  undefined4 uVar1;
-  int iVar2;
-  int iVar3;
-  undefined4 in_r3;
   undefined4 *puVar4;
+  undefined4 in_r3;
+  int iVar3;
+  int iVar2;
+  undefined4 uVar1;
 
   if (((*(unsigned int *)0x02021cbc) == 0) && (iVar2 = func_02032bcc(0x1b4,4,((unsigned int)0x02021cc0),in_r3,in_r3), iVar2 != 0))
   {

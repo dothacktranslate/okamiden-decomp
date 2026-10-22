@@ -91,15 +91,15 @@ extern int func_02008d98();
 void func_02008dd4(uint param_1,uint param_2)
 
 {
-  int *puVar1;
-  int iVar2;
-  undefined4 uVar3;
-  int iVar4;
-  uint uVar5;
-  uint uVar6;
-  uint uVar7;
-  uint uVar8;
   bool bVar9;
+  uint uVar8;
+  uint uVar7;
+  uint uVar6;
+  uint uVar5;
+  int iVar4;
+  undefined4 uVar3;
+  int iVar2;
+  int *puVar1;
 
   uVar3 = func_02008b6c();
   iVar2 = ((unsigned int)0x02008e54);

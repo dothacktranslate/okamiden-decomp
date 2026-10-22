@@ -163,15 +163,14 @@ switchD_02029556_caseD_2:
           piVar9[0x32] = 0;
         }
         iVar10 = *(int *)(iVar6 + 0x50);
-        if ((*(uint *)(iVar10 + 0x14) & 0x1000000) == 0) {
-          if ((*(uint *)(iVar10 + 0x14) & 0x2000000) != 0) {
-            func_0x02095830(iVar10);
-          }
-        }
-        else {
+        if (!((*(uint *)(iVar10 + 0x14) & 0x1000000) == 0)) {
           iVar5 = func_0x020ae730(*(undefined4 *)(iVar6 + 0x44));
           if (iVar5 != 0) {
             func_0x02095770(iVar10,0x1800);
+          }
+        } else {
+          if ((*(uint *)(iVar10 + 0x14) & 0x2000000) != 0) {
+            func_0x02095830(iVar10);
           }
         }
         if (*(short *)((int)piVar9 + 0x62) != 0) {

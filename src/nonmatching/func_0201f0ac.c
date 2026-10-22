@@ -96,15 +96,14 @@ uint func_0201f0ac(uint param_1)
 
   if (param_1 < 0x7f800000) {
     uVar6 = param_1 >> 0x17;
-    if (uVar6 == 0) {
+    if (!(uVar6 == 0)) {
+      uVar1 = param_1 & 0x807fffff | 0x800000;
+    } else {
       if (param_1 == 0) {
         return 0;
       }
       uVar6 = 9 - LZCOUNT(param_1);
       uVar1 = (param_1 << LZCOUNT(param_1)) >> 8;
-    }
-    else {
-      uVar1 = param_1 & 0x807fffff | 0x800000;
     }
     iVar5 = (int)uVar6 >> 1;
     if (!(bool)((byte)uVar6 & 1)) {

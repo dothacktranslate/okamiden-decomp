@@ -101,11 +101,10 @@ void func_0205fc1c(int *param_1,uint param_2,uint *param_3,int param_4)
   uVar3 = *param_3;
   if (*(ushort *)(4 + param_4) - 1 == uVar8) {
     if ((uVar3 & 0xc0000000) != 0) {
-      if ((uVar3 & 0x40000000) == 0) {
-        uVar8 = (uVar8 & 3) + (uVar8 >> 2);
-      }
-      else {
+      if (!((uVar3 & 0x40000000) == 0)) {
         uVar8 = (uVar8 & 1) + (uVar8 >> 1);
+      } else {
+        uVar8 = (uVar8 & 3) + (uVar8 >> 2);
       }
     }
     if ((*(uint *)(param_4 + 8) & 2) == 0) {

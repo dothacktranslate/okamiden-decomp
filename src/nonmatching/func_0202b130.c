@@ -95,12 +95,11 @@ void func_0202b130(int param_1,int param_2,undefined4 param_3,undefined4 param_4
 
   if (param_1 != 0) {
     uVar1 = *(uint *)(param_1 + 0xc);
-    if (param_2 == 0) {
+    if (!(param_2 == 0)) {
+      *(unsigned char *)(param_1 + 0xc) = uVar1 | 1;
+    } else {
       uVar1 = uVar1 & 0xfffffffe;
       *(uint *)(param_1 + 0xc) = uVar1;
-    }
-    else {
-      *(unsigned char *)(param_1 + 0xc) = uVar1 | 1;
     }
     func_0202b110(param_1,param_3,param_3,uVar1,param_4);
   }

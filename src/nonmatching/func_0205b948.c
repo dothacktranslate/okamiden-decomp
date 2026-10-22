@@ -103,12 +103,11 @@ void func_0205b948(int param_1,int param_2)
   param_1 = param_1 + (uint)*(ushort *)(param_1 + 2);
   if (*(char *)(param_1 + 1) != '\0') {
     do {
-      if ((param_1 == 0) || (*(byte *)(param_1 + 1) <= uVar2)) {
-        iVar1 = 0;
-      }
-      else {
+      if (!((param_1 == 0) || (*(byte *)(param_1 + 1) <= uVar2))) {
         iVar1 = *(ushort *)(param_1 + (uint)*(ushort *)(param_1 + 6)) * uVar2 +
                 param_1 + (uint)*(ushort *)(param_1 + 6) + 4;
+      } else {
+        iVar1 = 0;
       }
       uVar2 = uVar2 + 1;
       if ((*(byte *)(iVar1 + 3) & 1) != 0) {

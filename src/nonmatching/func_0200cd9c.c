@@ -117,7 +117,17 @@ bool func_0200cd9c(int param_1,int param_2,int param_3,undefined4 param_4)
   }
   uVar1 = param_3 * 0x20;
   uStack_20 = param_4;
-  if (*piVar5 == 0) {
+  if (!(*piVar5 == 0)) {
+    if ((uint)piVar5[1] <= uVar1) {
+      return false;
+    }
+    puVar4 = auStack_68;
+    func_0200c8e0(puVar4);
+    func_02009b68(*piVar5 + uVar1,param_1,0x20);
+    *(int *)(param_1 + 0x20) = param_2;
+    func_0200cd70(&local_b8,param_1);
+    iVar2 = func_0200ca20(puVar4,local_b8,uStack_b4);
+  } else {
     if (param_2 == 0) {
       iVar2 = func_02012f88();
       piVar5 = (int *)(iVar2 + 0x50);
@@ -144,17 +154,6 @@ bool func_0200cd9c(int param_1,int param_2,int param_3,undefined4 param_4)
     *(unsigned char *)(param_1 + 0x20) = param_2;
     func_0200cd70(&local_c0,param_1);
     iVar2 = func_0200ca20(puVar4,local_c0,uStack_bc);
-  }
-  else {
-    if ((uint)piVar5[1] <= uVar1) {
-      return false;
-    }
-    puVar4 = auStack_68;
-    func_0200c8e0(puVar4);
-    func_02009b68(*piVar5 + uVar1,param_1,0x20);
-    *(int *)(param_1 + 0x20) = param_2;
-    func_0200cd70(&local_b8,param_1);
-    iVar2 = func_0200ca20(puVar4,local_b8,uStack_b4);
   }
   if (iVar2 != 0) {
     uVar3 = func_0200e76c(puVar4);

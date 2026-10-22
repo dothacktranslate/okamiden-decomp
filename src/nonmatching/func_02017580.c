@@ -322,7 +322,7 @@ char * func_02017580(uint param_1,undefined4 param_2,int param_3,undefined4 para
     *(undefined1 *)((int)&local_c + iVar2 + 3) = uVar17;
   } while (iVar12 < 4);
   uVar11 = ((unsigned int)0x02017a28) & ((local_10 >> 8 & 0xff) << 0x11 | local_10 << 0x19) >> 0x15;
-  if (uVar11 == 0) {
+  if (!uVar11) {
     iVar12 = 0;
   }
   else {

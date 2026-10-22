@@ -102,15 +102,14 @@ void func_0204cf68(int param_1,uint param_2)
     }
     if ((uint)puVar1[2] < param_2) break;
     *(undefined4 *)(param_1 + 0x58) = *puVar1;
-    if ((*(byte *)((int)puVar1 + 5) & (*(byte *)(iVar2 + 0x14) ^ 3) & 3) == 0) {
+    if (!((*(byte *)((int)puVar1 + 5) & (*(byte *)(iVar2 + 0x14) ^ 3) & 3) == 0)) {
+      func_0204cf2c(param_1,puVar1);
+    } else {
       func_0204cf10(puVar1);
       puVar1[3] = *(undefined4 *)puVar1[2];
       puVar1[4] = ((undefined4 *)puVar1[2])[1];
       puVar1[2] = puVar1 + 3;
       func_0204e454(param_1,puVar1);
-    }
-    else {
-      func_0204cf2c(param_1,puVar1);
     }
   }
   return;

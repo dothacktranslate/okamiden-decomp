@@ -104,13 +104,12 @@ void func_0205facc(uint *param_1,int param_2,uint *param_3,int param_4)
       else {
         if (uVar3 <= uVar2 >> 0x10) {
           if ((uVar3 & 1) != 0) {
-            if ((uVar3 & 2) == 0) {
-              uVar2 = uVar3 >> 2;
-              uVar3 = uVar2 + 1;
-            }
-            else {
+            if (!((uVar3 & 2) == 0)) {
               uVar3 = uVar3 >> 2;
               uVar2 = uVar3 + 1;
+            } else {
+              uVar2 = uVar3 >> 2;
+              uVar3 = uVar2 + 1;
             }
             if ((uVar4 & 0x20000000) == 0) {
               uVar4 = *(uint *)(param_4 + uVar2 * 4);

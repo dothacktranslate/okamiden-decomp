@@ -121,13 +121,12 @@ int func_02011974(int param_1,int param_2,int param_3,undefined4 param_4,ushort 
   if ((int)param_6[0xe] < *(int *)(param_5 + 0x1a)) {
     iVar3 = *(int *)(param_5 + 0x1a);
   }
-  if (param_8 == (int *)0x0) {
-    local_3c = 3;
-    local_38 = iVar3;
-  }
-  else {
+  if (!(param_8 == (int *)0x0)) {
     local_38 = *param_8;
     local_3c = param_8[1];
+  } else {
+    local_3c = 3;
+    local_38 = iVar3;
   }
   local_34 = 0;
   local_40 = 0;

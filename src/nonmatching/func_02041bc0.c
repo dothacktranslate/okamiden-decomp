@@ -121,31 +121,7 @@ void func_02041bc0(uint *param_1)
     if ((param_1[0x49] & 0x80000000) == 0) {
       func_020397a0(param_1 + 4);
       iVar3 = func_020423ac(param_1);
-      if (iVar3 == 0) {
-        (*(unsigned int *)0x02041dd0) = (*(unsigned int *)0x02041dd0) & (ushort)((unsigned int)0x02041de4) | 0x10;
-        func_02003974((short)param_1[0x60],param_1[0x61],param_1[0x62],param_1[99],param_1[100]);
-        *(uint *)(((unsigned int)0x02041de0) + 0x20) =
-             param_1[3] * 0x1000000 | *param_1 | param_1[1] << 8 | param_1[2] << 0x10;
-        func_02003894((param_1[0x49] & 8) != 0,param_1[0x4c],param_1[0x4d],param_1[0x4e]);
-        if ((param_1[0x49] & 8) != 0) {
-          (*(unsigned int *)0x02041de8) = (ushort)param_1[0x4a] | 0x1f0000;
-          func_02003948(param_1 + 0x4f);
-        }
-        uVar4 = 0;
-        do {
-          if ((1 << (uVar4 & 0xff) & param_1[0x57]) == 0) {
-            func_0205bde0(uVar4,0);
-          }
-          else {
-            func_0205bde0(uVar4,(short)param_1[uVar4 * 2 + 0x58]);
-            func_0205bda4(uVar4,(int)*(short *)((int)param_1 + uVar4 * 8 + 0x162),
-                         (int)(short)param_1[uVar4 * 2 + 0x59],
-                         (int)*(short *)((int)param_1 + uVar4 * 8 + 0x166));
-          }
-          uVar4 = uVar4 + 1;
-        } while ((int)uVar4 < 4);
-      }
-      else {
+      if (!(iVar3 == 0)) {
         func_0203d2e8((*(unsigned int *)0x02041dcc),1);
         puVar2 = ((unsigned int)0x02041dd0);
         (*(unsigned int *)0x02041dd0) = (ushort)((unsigned int)0x02041dd4) & (*(unsigned int *)0x02041dd0);
@@ -168,6 +144,29 @@ void func_02041bc0(uint *param_1)
           func_0205bde0(iVar3,0);
           iVar3 = iVar3 + 1;
         } while (iVar3 < 4);
+      } else {
+        (*(unsigned int *)0x02041dd0) = (*(unsigned int *)0x02041dd0) & (ushort)((unsigned int)0x02041de4) | 0x10;
+        func_02003974((short)param_1[0x60],param_1[0x61],param_1[0x62],param_1[99],param_1[100]);
+        *(uint *)(((unsigned int)0x02041de0) + 0x20) =
+             param_1[3] * 0x1000000 | *param_1 | param_1[1] << 8 | param_1[2] << 0x10;
+        func_02003894((param_1[0x49] & 8) != 0,param_1[0x4c],param_1[0x4d],param_1[0x4e]);
+        if ((param_1[0x49] & 8) != 0) {
+          (*(unsigned int *)0x02041de8) = (ushort)param_1[0x4a] | 0x1f0000;
+          func_02003948(param_1 + 0x4f);
+        }
+        uVar4 = 0;
+        do {
+          if ((1 << (uVar4 & 0xff) & param_1[0x57]) == 0) {
+            func_0205bde0(uVar4,0);
+          }
+          else {
+            func_0205bde0(uVar4,(short)param_1[uVar4 * 2 + 0x58]);
+            func_0205bda4(uVar4,(int)*(short *)((int)param_1 + uVar4 * 8 + 0x162),
+                         (int)(short)param_1[uVar4 * 2 + 0x59],
+                         (int)*(short *)((int)param_1 + uVar4 * 8 + 0x166));
+          }
+          uVar4 = uVar4 + 1;
+        } while ((int)uVar4 < 4);
       }
       func_0205bc9c();
       if ((param_1[0x49] & 0x20) == 0) {

@@ -178,18 +178,6 @@ extern int func_02019064();
 int func_02018250(code *param_1,undefined4 param_2,char *param_3,uint *param_4,int param_5)
 
 {
-  char cVar1;
-  byte bVar2;
-  int iVar3;
-  int iVar4;
-  uint *puVar5;
-  uint uVar6;
-  int *piVar7;
-  int iVar8;
-  undefined1 *puVar9;
-  undefined1 *puVar10;
-  byte *pbVar11;
-  byte *pbVar12;
   uint unaff_r10;
   code *UNRECOVERED_JUMPTABLE;
   uint uStack_250;
@@ -203,6 +191,18 @@ int func_02018250(code *param_1,undefined4 param_2,char *param_3,uint *param_4,i
   byte abStack_234 [511];
   undefined1 uStack_35;
   uint *puStack_4;
+  char cVar1;
+  byte bVar2;
+  int iVar3;
+  int iVar4;
+  uint *puVar5;
+  uint uVar6;
+  int *piVar7;
+  int iVar8;
+  undefined1 *puVar9;
+  undefined1 *puVar10;
+  byte *pbVar11;
+  byte *pbVar12;
 
   local_247[0] = ' ';
   cVar1 = *param_3;

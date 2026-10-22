@@ -113,11 +113,10 @@ undefined4 func_02016974(uint param_1,uint param_2)
   if (bVar3) {
     uVar1 = param_1;
   }
-  if (bVar3 && uVar1 == 0) {
-    uVar2 = 2;
-  }
-  else {
+  if (!(bVar3 && uVar1 == 0)) {
     uVar2 = 1;
+  } else {
+    uVar2 = 2;
   }
   return uVar2;
 }

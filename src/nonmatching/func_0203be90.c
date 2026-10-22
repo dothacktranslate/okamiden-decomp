@@ -143,7 +143,9 @@ bool func_0203be90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     do {
       iVar6 = *(int *)(iVar3 + 0x24);
       if (iVar6 != 0) {
-        if ((*(uint *)(iVar6 + 0xc) & 0x80000000) == 0) {
+        if (!((*(uint *)(iVar6 + 0xc) & 0x80000000) == 0)) {
+          func_02036eb8(*puVar2);
+        } else {
           bVar8 = *(int *)(iVar6 + 0x1c) != 0;
           iVar5 = 0;
           if (bVar8) {
@@ -152,9 +154,6 @@ bool func_0203be90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
           if (!bVar8 || iVar5 == 0) {
             bVar1 = false;
           }
-        }
-        else {
-          func_02036eb8(*puVar2);
         }
       }
       uVar7 = uVar7 + 1;

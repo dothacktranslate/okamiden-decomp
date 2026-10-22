@@ -98,7 +98,14 @@ undefined4 * func_02037328(int param_1,uint param_2)
   puVar2 = (undefined4 *)(**(code **)(**(int **)(param_1 + 4) + 8))(*(int **)(param_1 + 4),0x30,4,0)
   ;
   if (puVar2 != (undefined4 *)0x0) {
-    if (puVar2 == (undefined4 *)0x0) {
+    if (!(puVar2 == (undefined4 *)0x0)) {
+      puVar2[1] = 0;
+      uVar1 = ((unsigned int)0x0203741c);
+      puVar2[2] = 0;
+      *puVar2 = uVar1;
+      func_0203717c(puVar2,param_2);
+      func_02035834(auStack_50,param_1 + 0xc,param_1 + 0x10,puVar2 + 1);
+    } else {
       for (piVar3 = *(int **)(param_1 + 0x10); piVar3 != (int *)(param_1 + 0x10);
           piVar3 = (int *)*piVar3) {
         if (((piVar3[2] & 0x11U) == 0) && ((uint)piVar3[4] < param_2)) {
@@ -109,14 +116,6 @@ undefined4 * func_02037328(int param_1,uint param_2)
       if (puVar2 == (undefined4 *)0x0) {
         (**(code **)(**(int **)(param_1 + 4) + 0xc))(*(int **)(param_1 + 4),0);
       }
-    }
-    else {
-      puVar2[1] = 0;
-      uVar1 = ((unsigned int)0x0203741c);
-      puVar2[2] = 0;
-      *puVar2 = uVar1;
-      func_0203717c(puVar2,param_2);
-      func_02035834(auStack_50,param_1 + 0xc,param_1 + 0x10,puVar2 + 1);
     }
     return puVar2;
   }

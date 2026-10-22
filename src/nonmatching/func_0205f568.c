@@ -87,12 +87,12 @@ extern int LZCOUNT();
 void func_0205f568(undefined4 param_1)
 
 {
-  ushort uVar1;
-  ushort *puVar2;
-  ushort *puVar3;
-  int *piVar4;
-  int iVar5;
   int *piVar6;
+  int iVar5;
+  int *piVar4;
+  ushort *puVar3;
+  ushort *puVar2;
+  ushort uVar1;
 
   piVar6 = (int *)(*(unsigned int *)0x0205f5f4);
   iVar5 = piVar6[0x35];

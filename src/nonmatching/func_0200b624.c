@@ -179,14 +179,13 @@ void func_0200b624(void)
     if ((*puVar2 & 0x4000) == 0) {
       func_02008b6c();
       uVar1 = _IPCFIFORECV;
-      if ((*puVar2 & 0x100) == 0) {
+      if (!((*puVar2 & 0x100) == 0)) {
+        func_02008b80();
+        iVar4 = -4;
+      } else {
         func_02008b80();
         iVar4 = 0;
         local_28 = uVar1;
-      }
-      else {
-        func_02008b80();
-        iVar4 = -4;
       }
     }
     else {

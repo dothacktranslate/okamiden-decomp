@@ -106,12 +106,11 @@ LAB_0205bb34:
       iVar4 = 0;
     }
     else {
-      if ((iVar2 == 0) || (*(byte *)(param_1 + 9) <= uVar3)) {
-        piVar1 = (int *)0x0;
-      }
-      else {
+      if (!((iVar2 == 0) || (*(byte *)(param_1 + 9) <= uVar3))) {
         piVar1 = (int *)(*(ushort *)(iVar2 + (uint)*(ushort *)(param_1 + 0xe)) * uVar3 +
                         iVar2 + (uint)*(ushort *)(param_1 + 0xe) + 4);
+      } else {
+        piVar1 = (int *)0x0;
       }
       if (piVar1 == (int *)0x0) goto LAB_0205bb34;
       iVar4 = param_1 + *piVar1;

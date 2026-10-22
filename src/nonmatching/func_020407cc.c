@@ -103,32 +103,6 @@ extern int func_0205e0c0();
 void func_020407cc(int param_1)
 
 {
-  ushort uVar1;
-  short sVar2;
-  int iVar3;
-  uint uVar4;
-  int iVar5;
-  undefined4 *puVar6;
-  int extraout_r1;
-  uint uVar7;
-  uint *puVar8;
-  int iVar9;
-  uint *puVar10;
-  undefined4 *puVar11;
-  int local_14c;
-  undefined4 local_138;
-  undefined4 local_134;
-  undefined4 local_130;
-  undefined4 local_12c;
-  undefined4 auStack_128 [3];
-  undefined4 auStack_11c [3];
-  int local_110;
-  int local_10c;
-  int local_108;
-  int local_104;
-  int local_100;
-  int local_fc;
-  undefined1 auStack_f8 [12];
   undefined4 local_ec;
   undefined4 local_e8;
   undefined4 local_e4;
@@ -155,6 +129,32 @@ void func_020407cc(int param_1)
   undefined4 local_24;
   undefined1 auStack_20 [8];
   uint local_18;
+  ushort uVar1;
+  short sVar2;
+  int iVar3;
+  uint uVar4;
+  int iVar5;
+  undefined4 *puVar6;
+  int extraout_r1;
+  uint uVar7;
+  uint *puVar8;
+  int iVar9;
+  uint *puVar10;
+  undefined4 *puVar11;
+  int local_14c;
+  undefined4 local_138;
+  undefined4 local_134;
+  undefined4 local_130;
+  undefined4 local_12c;
+  undefined4 auStack_128 [3];
+  undefined4 auStack_11c [3];
+  int local_110;
+  int local_10c;
+  int local_108;
+  int local_104;
+  int local_100;
+  int local_fc;
+  undefined1 auStack_f8 [12];
 
   if (2 < *(int *)(param_1 + 0x68)) {
     iVar9 = (*(unsigned int *)0x02040ac4);

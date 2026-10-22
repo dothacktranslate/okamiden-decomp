@@ -132,13 +132,12 @@ void func_020600c4(int *param_1,int param_2,uint *param_3,int param_4)
       else {
         if (uVar3 <= uVar1 >> 0x10) {
           if ((uVar3 & 1) != 0) {
-            if ((uVar3 & 2) == 0) {
-              uVar7 = uVar3 >> 2;
-              uVar3 = uVar7 + 1;
-            }
-            else {
+            if (!((uVar3 & 2) == 0)) {
               uVar3 = uVar3 >> 2;
               uVar7 = uVar3 + 1;
+            } else {
+              uVar7 = uVar3 >> 2;
+              uVar3 = uVar7 + 1;
             }
             iVar4 = func_02060800(param_1,param_4 + iVar5,param_4 + iVar2,
                                  *(undefined2 *)(iVar6 + uVar7 * 2));

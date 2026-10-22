@@ -113,17 +113,16 @@ void func_020148c4(int param_1)
       uVar3 = 0x5000;
     }
     func_02007f84(0xf000,uVar3);
-    if (param_1 == 0) {
-      func_02007f44(8);
-      func_02007f64(8);
-      func_02007f98(8);
-    }
-    else {
+    if (!(param_1 == 0)) {
       func_020077b4();
       func_02007844();
       func_02007f54(8);
       func_02007f74(8);
       func_02007fa8(8);
+    } else {
+      func_02007f44(8);
+      func_02007f64(8);
+      func_02007f98(8);
     }
   }
   func_02008b80(uVar1);

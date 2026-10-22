@@ -108,11 +108,10 @@ void func_020534e0(undefined4 param_1,int param_2,int param_3)
     func_02046b84(param_1,1,param_2);
     func_02046b84(param_1,1,local_28);
     iVar1 = func_02053450(param_1,0xffffffff,0xfffffffe);
-    if (iVar1 == 0) {
-      func_02046204(param_1,0xfffffffd);
-    }
-    else {
+    if (!(iVar1 == 0)) {
       func_0205341c(param_1,param_2,local_28);
+    } else {
+      func_02046204(param_1,0xfffffffd);
     }
     if (local_28 - param_2 == 1) {
       return;

@@ -100,12 +100,11 @@ void func_0203cc14(int param_1,int param_2)
   if (*(char *)(iVar3 + 0x17) != '\0') {
     do {
       iVar5 = iVar3 + 0x40;
-      if (((iVar5 == 0) || (iVar5 == 0)) || (*(byte *)(iVar3 + 0x41) <= uVar2)) {
-        iVar5 = 0;
-      }
-      else {
+      if (!(((iVar5 == 0) || (iVar5 == 0)) || (*(byte *)(iVar3 + 0x41) <= uVar2))) {
         iVar5 = iVar5 + (uint)*(ushort *)(iVar3 + 0x46);
         iVar5 = iVar5 + (uint)*(ushort *)(iVar5 + 2) + uVar2 * 0x10;
+      } else {
+        iVar5 = 0;
       }
       if (iVar5 != 0) {
         bVar1 = true;

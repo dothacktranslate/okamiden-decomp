@@ -100,14 +100,7 @@ int * func_0200a82c(uint param_1)
 
   puVar1 = ((unsigned int)0x0200a924);
   uVar2 = func_02008b6c();
-  if ((param_1 & 1) == 0) {
-    iVar3 = func_0200af30();
-    if (puVar1[1] == iVar3) {
-      func_02008b80(uVar2);
-      return (int *)0x0;
-    }
-  }
-  else {
+  if (!((param_1 & 1) == 0)) {
     iVar3 = func_0200af30();
     if (puVar1[1] == iVar3) {
       do {
@@ -116,6 +109,12 @@ int * func_0200a82c(uint param_1)
         uVar2 = func_02008b6c();
         iVar3 = func_0200af30();
       } while (puVar1[1] == iVar3);
+    }
+  } else {
+    iVar3 = func_0200af30();
+    if (puVar1[1] == iVar3) {
+      func_02008b80(uVar2);
+      return (int *)0x0;
     }
   }
   iVar3 = puVar1[5] + 1;

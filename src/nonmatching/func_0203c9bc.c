@@ -98,11 +98,10 @@ undefined2 func_0203c9bc(int param_1)
 
   iVar2 = *(int *)(param_1 + 0x14);
   func_0x01ffbee4(auStack_18);
-  if (iVar2 == 0) {
-    iVar2 = 0;
-  }
-  else {
+  if (!(iVar2 == 0)) {
     iVar2 = iVar2 + 0x40;
+  } else {
+    iVar2 = 0;
   }
   if (iVar2 == 0) {
     uVar1 = 0xffff;

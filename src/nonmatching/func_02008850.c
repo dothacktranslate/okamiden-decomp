@@ -93,17 +93,15 @@ void func_02008850(int param_1)
   if (param_1 != 0) {
     iVar2 = *(int *)(param_1 + 0x18);
     iVar1 = *(int *)(param_1 + 0x14);
-    if (iVar2 == 0) {
+    if (!(iVar2 == 0)) {
+      *(int *)(iVar2 + 0x14) = iVar1;
+    } else {
       *(int *)(((unsigned int)0x02008884) + 0x10) = iVar1;
     }
-    else {
-      *(int *)(iVar2 + 0x14) = iVar1;
-    }
-    if (iVar1 == 0) {
-      *(int *)(((unsigned int)0x02008884) + 0xc) = iVar2;
-    }
-    else {
+    if (!(iVar1 == 0)) {
       *(int *)(iVar1 + 0x18) = iVar2;
+    } else {
+      *(int *)(((unsigned int)0x02008884) + 0xc) = iVar2;
     }
     return;
   }

@@ -106,7 +106,9 @@ undefined4 * func_0204e5ec(undefined4 param_1,undefined4 param_2)
   iVar1 = ((unsigned int)0xffffd8f0);
   func_02046ac0(param_1,((unsigned int)0xffffd8f0));
   iVar2 = func_02046444(param_1,iVar1 >> 0xe);
-  if (iVar2 == 0) {
+  if (!(iVar2 == 0)) {
+    puVar3 = (undefined4 *)func_02046770(param_1,iVar1 >> 0xe);
+  } else {
     iVar2 = iVar1 >> 0xd;
     func_02046204(param_1,iVar2);
     puVar3 = (undefined4 *)func_0204737c(param_1,4);
@@ -116,9 +118,6 @@ undefined4 * func_0204e5ec(undefined4 param_1,undefined4 param_2)
     func_02046960(param_1,((unsigned int)0x0204e6cc),((unsigned int)0x0204e6d0),param_2);
     func_02046414(param_1,iVar2);
     func_02046d10(param_1,iVar1);
-  }
-  else {
-    puVar3 = (undefined4 *)func_02046770(param_1,iVar1 >> 0xe);
   }
   return puVar3;
 }

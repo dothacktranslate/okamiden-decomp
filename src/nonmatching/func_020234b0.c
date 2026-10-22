@@ -171,22 +171,20 @@ void func_020234b0(int param_1,int param_2)
   uVar1 = *(uint *)(param_1 + 0x24);
   if ((-1 < (int)uVar1) && ((int)uVar1 <= 3)) {
     uVar2 = (_REG_A_DISPCNT & 0x1f00) >> 8;
-    if (param_2 == 0) {
-      uVar2 = uVar2 & ~(1 << (uVar1 & 0xff));
-    }
-    else {
+    if (!(param_2 == 0)) {
       uVar2 = uVar2 | 1 << (uVar1 & 0xff);
+    } else {
+      uVar2 = uVar2 & ~(1 << (uVar1 & 0xff));
     }
     _REG_A_DISPCNT = uVar2 << 8 | _REG_A_DISPCNT & ((unsigned int)0xffffe0ff);
     return;
   }
   if ((3 < (int)uVar1) && ((int)uVar1 <= 7)) {
     uVar2 = ((*(unsigned int *)0x04001000) & 0x1f00) >> 8;
-    if (param_2 == 0) {
-      uVar2 = uVar2 & ~(1 << (uVar1 - 4 & 0xff));
-    }
-    else {
+    if (!(param_2 == 0)) {
       uVar2 = 1 | uVar2 << (uVar1 - 4 & 0xff);
+    } else {
+      uVar2 = uVar2 & ~(1 << (uVar1 - 4 & 0xff));
     }
     (*(unsigned int *)0x04001000) = uVar2 << 8 | (*(unsigned int *)0x04001000) & ((unsigned int)0xffffe0ff);
   }

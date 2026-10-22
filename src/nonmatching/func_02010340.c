@@ -107,12 +107,11 @@ undefined4 func_02010340(undefined4 param_1,undefined4 param_2,undefined4 param_
     *(undefined4 *)(iVar1 + 8) = param_3;
     *(undefined4 *)(iVar1 + 0x14) = param_4;
     iVar2 = func_020108c4();
-    if (iVar2 == 0) {
+    if (!(iVar2 == 0)) {
+      uVar3 = 0;
+    } else {
       *(undefined4 *)(iVar1 + 4) = 0;
       uVar3 = 3;
-    }
-    else {
-      uVar3 = 0;
     }
     return uVar3;
   }

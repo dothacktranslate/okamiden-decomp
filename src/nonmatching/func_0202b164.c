@@ -94,11 +94,11 @@ extern int func_0202b1f8();
 void func_0202b164(undefined4 *param_1,int param_2,int param_3,uint param_4)
 
 {
-  bool bVar1;
-  undefined4 uVar2;
-  undefined4 extraout_r1;
-  int iVar3;
   int iVar4;
+  int iVar3;
+  undefined4 extraout_r1;
+  undefined4 uVar2;
+  bool bVar1;
 
   iVar4 = 0;
   func_0202b1f8(param_1,param_3,0);

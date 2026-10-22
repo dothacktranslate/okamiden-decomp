@@ -31,11 +31,10 @@ void func_0204409c(uint *param_1,int param_2,short param_3,int param_4,short par
       iVar2 = iVar2 + 1;
       *param_1 = *param_1 & 0xfffff3ff | param_4 << 10;
       *(ushort *)(param_1 + 1) = (ushort)param_1[1] & param_5 | 0xfff << 0xc;
-      if (param_6 == 0x100 || param_6 == 0x300) {
-        *param_1 = *param_1 & uVar1 | param_6 | param_7 << 0x19;
-      }
-      else {
+      if (!(param_6 == 0x100 || param_6 == 0x300)) {
         *param_1 = *param_1 & uVar1 | param_6;
+      } else {
+        *param_1 = *param_1 & uVar1 | param_6 | param_7 << 0x19;
       }
       if (param_8 == 0) {
         uVar3 = *param_1 & 0xffffefff;

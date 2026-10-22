@@ -127,11 +127,10 @@ void func_020604c8(int *param_1,uint param_2,uint *param_3,int param_4)
   iStack_28 = param_4;
   if (*(ushort *)(param_4 + 4) - 1 == uVar2) {
     if ((uVar4 & 0xc0000000) != 0) {
-      if ((uVar4 & 0x40000000) == 0) {
-        uVar2 = (uVar2 & 3) + (uVar2 >> 2);
-      }
-      else {
+      if (!((uVar4 & 0x40000000) == 0)) {
         uVar2 = (uVar2 & 1) + (uVar2 >> 1);
+      } else {
+        uVar2 = (uVar2 & 3) + (uVar2 >> 2);
       }
     }
     if ((*(uint *)(param_4 + 8) & 2) == 0) {

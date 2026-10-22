@@ -23,13 +23,6 @@ extern int func_02058750();
 void func_02045428(int param_1)
 
 {
-  uint iVar1;
-  uint uVar2;
-  uint uVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
   int iVar8;
   undefined4 uVar9;
   undefined4 uVar10;
@@ -38,6 +31,13 @@ void func_02045428(int param_1)
   uint local_4c;
   undefined1 auStack_44 [16];
   undefined1 auStack_34 [16];
+  uint iVar1;
+  uint uVar2;
+  uint uVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  int iVar7;
 
   local_4c = 0;
   (*(unsigned int *)0x04000444) = 0;

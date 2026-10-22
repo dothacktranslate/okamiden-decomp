@@ -100,13 +100,12 @@ void func_020613bc(undefined4 param_1,uint *param_2,undefined2 param_3,undefined
 
   uVar4 = param_2[2];
   uVar3 = *param_2;
-  if ((int)uVar3 < (int)((uint)*(ushort *)(uVar4 + 4) * 0x1000)) {
+  if (!((int)uVar3 < (int)((uint)*(ushort *)(uVar4 + 4) * 0x1000))) {
+    uVar3 = (uint)*(ushort *)(uVar4 + 4) * 0x1000 - 1;
+  } else {
     if ((int)uVar3 < 0) {
       uVar3 = 0;
     }
-  }
-  else {
-    uVar3 = (uint)*(ushort *)(uVar4 + 4) * 0x1000 - 1;
   }
   iVar1 = func_0205f364(uVar4,param_3,(uVar3 & 0xfffffff) >> 0xc,uVar3,param_4);
   uVar2 = func_0205f314(uVar4,*(undefined1 *)(iVar1 + 2));

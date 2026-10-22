@@ -98,26 +98,26 @@ extern int func_02060800();
 void func_0205f778(int param_1,int param_2,uint param_3,uint *param_4)
 
 {
-  bool bVar1;
-  uint uVar2;
-  uint iVar3;
-  uint uVar4;
-  uint *puVar5;
-  uint *puVar6;
-  uint *puVar7;
-  uint local_58;
-  uint local_54;
-  uint local_50;
-  uint local_4c;
-  uint local_48;
-  uint local_44;
-  uint local_40;
-  uint local_3c;
-  uint local_38;
-  uint local_34;
-  uint local_30;
-  uint local_2c;
   uint *puStack_28;
+  uint local_2c;
+  uint local_30;
+  uint local_34;
+  uint local_38;
+  uint local_3c;
+  uint local_40;
+  uint local_44;
+  uint local_48;
+  uint local_4c;
+  uint local_50;
+  uint local_54;
+  uint local_58;
+  uint *puVar7;
+  uint *puVar6;
+  uint *puVar5;
+  uint uVar4;
+  uint iVar3;
+  uint uVar2;
+  bool bVar1;
 
   uVar2 = (uint)*(ushort *)(param_1 + param_2 * 2 + 0x14);
   uVar4 = *(uint *)(param_1 + uVar2);

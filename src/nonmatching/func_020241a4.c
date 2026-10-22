@@ -107,13 +107,7 @@ undefined4 func_020241a4(int param_1,undefined4 param_2,int param_3)
     return 0;
   }
   iVar3 = *(int *)(param_1 + 0x1c);
-  if (iVar3 == 0) {
-    if (*(int *)(*(int *)(param_1 + 0x30) + 0x10) == 0) {
-      return 1;
-    }
-    uVar4 = 1;
-  }
-  else {
+  if (!(iVar3 == 0)) {
     if (iVar3 != 1) {
       if (iVar3 != 2) {
         return 1;
@@ -149,6 +143,11 @@ undefined4 func_020241a4(int param_1,undefined4 param_2,int param_3)
                  *(undefined4 *)(param_1 + 0x28),*(undefined4 *)(param_1 + 0x2c),iVar3,
                  param_1 + 0x34);
     uVar4 = 2;
+  } else {
+    if (*(int *)(*(int *)(param_1 + 0x30) + 0x10) == 0) {
+      return 1;
+    }
+    uVar4 = 1;
   }
   *(undefined4 *)(param_1 + 0x1c) = uVar4;
   return 1;

@@ -105,7 +105,7 @@ undefined4 func_020466e4(undefined4 param_1)
     break;
   case 3:
     iVar3 = func_02054180(param_1,piVar1);
-    if (iVar3 == 0) {
+    if (!iVar3) {
       uVar2 = 0;
     }
     else {

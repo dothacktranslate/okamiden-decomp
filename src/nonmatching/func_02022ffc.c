@@ -91,10 +91,10 @@ extern int func_0x020aecfc();
 void func_02022ffc(undefined4 param_1,uint param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  undefined2 local_14;
-  undefined2 local_12;
-  undefined4 local_10;
   undefined4 uStack_c;
+  undefined4 local_10;
+  undefined2 local_12;
+  undefined2 local_14;
 
   uStack_c = param_4;
   if (0x00004e20U < param_2) {

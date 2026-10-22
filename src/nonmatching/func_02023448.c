@@ -92,7 +92,9 @@ extern int func_02044ae8();
 void func_02023448(int param_1,int param_2)
 
 {
-  if ((*(uint *)(param_2 + 0x18) & 2) == 0) {
+  if (!((*(uint *)(param_2 + 0x18) & 2) == 0)) {
+    func_020367c8(param_1 + 0x34);
+  } else {
     func_02044ae8(param_2 + 0x34,0x1000);
     if (*(short *)(param_1 + 0x2c) != 0) {
       func_02044ae8(param_2 + 0x74,0x100);
@@ -100,9 +102,6 @@ void func_02023448(int param_1,int param_2)
     if (*(int *)(param_1 + 0x30) != 0) {
       func_02044ae8(param_2 + 0xb4,0x800);
     }
-  }
-  else {
-    func_020367c8(param_1 + 0x34);
   }
   *(undefined4 *)(param_2 + 0x30) = 0;
   *(undefined4 *)(param_2 + 0x2c) = 0;

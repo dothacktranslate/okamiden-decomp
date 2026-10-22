@@ -115,11 +115,10 @@ LAB_020471e4:
     uVar2 = *(uint *)(iVar3 + 0x44) & ((unsigned int)0x000003ff);
     break;
   case 5:
-    if (*(uint *)(iVar3 + 0x44) < (uint)(param_3 << 10)) {
-      *(undefined4 *)(iVar3 + 0x40) = 0;
-    }
-    else {
+    if (!(*(uint *)(iVar3 + 0x44) < (uint)(param_3 << 10))) {
       *(uint *)(iVar3 + 0x40) = *(uint *)(iVar3 + 0x44) + param_3 * -0x400;
+    } else {
+      *(undefined4 *)(iVar3 + 0x40) = 0;
     }
     if (*(uint *)(iVar3 + 0x40) <= *(uint *)(iVar3 + 0x44)) {
       do {

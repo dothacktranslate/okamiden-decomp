@@ -105,13 +105,12 @@ int func_02060d8c(int param_1,uint param_2,int param_3,uint param_4)
       else {
         if (param_4 <= uVar4) {
           if ((param_4 & 1) != 0) {
-            if ((param_4 & 2) == 0) {
-              uVar4 = param_4 >> 2;
-              param_4 = uVar4 + 1;
-            }
-            else {
+            if (!((param_4 & 2) == 0)) {
               param_4 = param_4 >> 2;
               uVar4 = param_4 + 1;
+            } else {
+              uVar4 = param_4 >> 2;
+              param_4 = uVar4 + 1;
             }
             if ((param_2 & 0x10000000) == 0) {
               iVar1 = *(int *)(param_1 + uVar4 * 4);

@@ -108,10 +108,7 @@ void func_0200a92c(uint param_1)
     return;
   }
   iVar1 = func_0200ace8(0);
-  if (iVar1 <= 0) {
-    func_0200a9ec(1);
-  }
-  else {
+  if (!(iVar1 <= 0)) {
     do {
       iVar1 = func_0200a82c(0);
     } while (iVar1 != 0);
@@ -119,6 +116,8 @@ void func_0200a92c(uint param_1)
     if (iVar1 != 0) {
       return;
     }
+  } else {
+    func_0200a9ec(1);
   }
   func_0200ad8c();
   do {

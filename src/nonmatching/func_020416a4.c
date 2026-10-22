@@ -96,10 +96,7 @@ void func_020416a4(int param_1,uint param_2,undefined2 *param_3,undefined4 param
   int iVar3;
   int iVar4;
 
-  if (param_3 == (undefined2 *)0x0) {
-    *(uint *)(param_1 + 0x15c) = ~(1 << (param_2 & 0xff)) & *(uint *)(param_1 + 0x15c);
-  }
-  else {
+  if (!(param_3 == (undefined2 *)0x0)) {
     iVar3 = param_2 * 8;
     *(undefined2 *)(param_1 + (iVar3 + 0x160)) = *param_3;
     iVar4 = param_1 + 0x162;
@@ -131,6 +128,8 @@ void func_020416a4(int param_1,uint param_2,undefined2 *param_3,undefined4 param
       *psVar2 = (short)((unsigned int)0x02041750);
       return;
     }
+  } else {
+    *(uint *)(param_1 + 0x15c) = ~(1 << (param_2 & 0xff)) & *(uint *)(param_1 + 0x15c);
   }
   return;
 }

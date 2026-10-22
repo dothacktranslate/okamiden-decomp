@@ -98,15 +98,15 @@ extern int func_02068638();
 void func_0206464c(void)
 
 {
-  short sVar1;
-  short sVar2;
-  short sVar3;
-  int iVar4;
   uint uVar5;
   int iVar6;
   int iVar7;
   int iVar8;
   int iVar9;
+  short sVar1;
+  short sVar2;
+  short sVar3;
+  int iVar4;
 
   uVar5 = func_0200af08();
   iVar6 = func_02056370(((unsigned int)0x020647a4),0);

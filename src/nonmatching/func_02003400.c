@@ -167,11 +167,10 @@ void func_02003400(void)
 
   uVar1 = (*(signed char *)0x0200343c);
   (*(unsigned short *)0x02003440) = 1;
-  if (uVar1 == 0) {
-    _REG_A_DISPCNT = _REG_A_DISPCNT | 0x10000;
-  }
-  else {
+  if (!(uVar1 == 0)) {
     _REG_A_DISPCNT = _REG_A_DISPCNT & 0xfffcffff | (uint)uVar1 << 0x10;
+  } else {
+    _REG_A_DISPCNT = _REG_A_DISPCNT | 0x10000;
   }
   return;
 }

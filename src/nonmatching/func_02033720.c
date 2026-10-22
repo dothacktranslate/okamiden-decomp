@@ -95,13 +95,13 @@ undefined4
 func_02033720(undefined4 *param_1,undefined4 *param_2,undefined4 param_3,int param_4,int param_5)
 
 {
-  int iVar1;
-  int iVar2;
-  undefined4 uVar3;
-  undefined1 auStack_48 [4];
-  undefined1 auStack_44 [24];
-  undefined1 auStack_2c [12];
   undefined1 auStack_20 [12];
+  undefined1 auStack_2c [12];
+  undefined1 auStack_44 [24];
+  undefined1 auStack_48 [4];
+  undefined4 uVar3;
+  int iVar2;
+  int iVar1;
 
   uVar3 = (*(unsigned int *)0x0203379c);
   func_0x01ff99b4(auStack_20);

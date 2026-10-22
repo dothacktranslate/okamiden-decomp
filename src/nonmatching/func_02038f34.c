@@ -100,16 +100,16 @@ extern int func_02063f00();
 int func_02038f34(undefined4 param_1,uint param_2,int param_3,undefined4 param_4)
 
 {
-  int iVar1;
-  int iVar2;
-  int iVar3;
-  int iVar4;
-  int iVar6;
   int iVar5;
   int iVar7;
   undefined4 uVar8;
   int iVar9;
   int iVar10;
+  int iVar1;
+  int iVar2;
+  int iVar3;
+  int iVar4;
+  int iVar6;
 
   if ((*(unsigned int *)0x02039050) == 0) {
     func_02005ae0(((unsigned int)0x000001ff));

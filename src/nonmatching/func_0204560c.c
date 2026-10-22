@@ -31,7 +31,9 @@ undefined4 * func_0204560c(int param_1,int param_2,int param_3,undefined4 param_
   undefined4 *puVar5;
   undefined1 auStack_28 [20];
 
-  if (param_2 == 0) {
+  if (!(param_2 == 0)) {
+    iVar4 = 0x5c;
+  } else {
     if (param_3 == 0) {
       iVar4 = 0;
     }
@@ -39,9 +41,6 @@ undefined4 * func_0204560c(int param_1,int param_2,int param_3,undefined4 param_
       iVar4 = func_020581b0(param_3,param_4);
       iVar4 = 0x18 + iVar4;
     }
-  }
-  else {
-    iVar4 = 0x5c;
   }
   puVar2 = (undefined4 *)
            (**(code **)(**(int **)(param_1 + 4) + 8))(*(int **)(param_1 + 4),iVar4 + 0x38,4,param_5)

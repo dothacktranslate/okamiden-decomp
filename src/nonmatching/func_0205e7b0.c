@@ -92,22 +92,22 @@ extern int func_0205c1a4();
 undefined4 func_0205e7b0(undefined4 param_1,int *param_2,int *param_3)
 
 {
-  uint iVar1;
-  int iVar2;
-  longlong lVar3;
-  int *piVar4;
-  int iVar5;
-  undefined4 uVar6;
-  int uVar7;
-  uint uVar8;
-  ulonglong uVar9;
-  int local_38;
-  int local_34;
-  int local_30;
-  int local_2c;
-  int local_28;
-  int local_24;
   int local_20;
+  int local_24;
+  int local_28;
+  int local_2c;
+  int local_30;
+  int local_34;
+  int local_38;
+  ulonglong uVar9;
+  uint uVar8;
+  int uVar7;
+  undefined4 uVar6;
+  int iVar5;
+  int *piVar4;
+  longlong lVar3;
+  int iVar2;
+  uint iVar1;
 
   piVar4 = ((unsigned int)0x0205e930);
   func_02001a7c(param_1,((unsigned int)0x0205e934),&local_28);

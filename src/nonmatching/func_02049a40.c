@@ -106,14 +106,6 @@ extern int func_0204ac2c();
 undefined4 func_02049a40(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  undefined4 uVar1;
-  undefined4 uVar2;
-  int iVar3;
-  undefined4 uVar4;
-  undefined1 auStack_7c [4];
-  int local_80;
-  undefined4 local_78;
-  undefined4 local_74;
   undefined4 local_70;
   undefined4 local_6c;
   undefined4 local_68;
@@ -122,6 +114,14 @@ undefined4 func_02049a40(undefined4 param_1,undefined4 param_2,undefined4 param_
   undefined4 local_5c;
   undefined1 auStack_58 [64];
   undefined4 uStack_18;
+  undefined4 uVar1;
+  undefined4 uVar2;
+  int iVar3;
+  undefined4 uVar4;
+  undefined1 auStack_7c [4];
+  int local_80;
+  undefined4 local_78;
+  undefined4 local_74;
 
   uStack_18 = param_4;
   uVar1 = func_020499ac(param_1,&local_80);

@@ -155,7 +155,7 @@ undefined4 func_02027ed8(undefined4 param_1)
   case 0:
     iVar3 = func_020465d8(param_1,3);
     iVar9 = func_0x0209eb78(iVar7);
-    if (iVar9 != 0) {
+    if (iVar9) {
       func_0x020a0db4(iVar7 + 0x88,0x20);
       func_0x0209ecd4(iVar7);
     }
@@ -165,7 +165,7 @@ undefined4 func_02027ed8(undefined4 param_1)
   case 1:
     uVar6 = func_020465d8(param_1,3);
     iVar3 = func_0x0209eb78(iVar7);
-    if (iVar3 != 0) {
+    if (iVar3) {
       func_0x020a0db4(iVar7 + 0x88,0x20);
       func_0x0209ecd4(iVar7);
     }
@@ -207,7 +207,7 @@ switchD_02027fba_caseD_5:
     uVar6 = func_020465d8(param_1,3);
     uVar4 = func_020465d8(param_1,4);
     iVar3 = func_0x0209eb78(iVar7);
-    if (iVar3 != 0) {
+    if (iVar3) {
       func_0x020a0db4(iVar7 + 0x88,0x20);
       func_0x0209ecd4(iVar7);
     }
@@ -290,13 +290,13 @@ LAB_02028118:
     break;
   case 4:
     iVar3 = func_0x0209eb78(iVar7);
-    if (iVar3 == 0) {
+    if (!iVar3) {
       iVar9 = -1;
     }
     break;
   case 5:
     iVar3 = func_020465d8(param_1,3);
-    if (iVar3 != 0) {
+    if (iVar3) {
       if (iVar3 == 1) {
         local_4c = func_0x020d37c8(*(undefined4 *)(iVar7 + 0x5c),0x10);
         goto LAB_02028186;
@@ -325,14 +325,14 @@ LAB_02028186:
   case 6:
     func_0x020d3638(*(undefined4 *)(iVar7 + 0x5c));
     iVar3 = func_0x0209eb78(iVar7);
-    if (iVar3 != 0) {
+    if (iVar3) {
       func_0x020a0db4(iVar7 + 0x88,0x20);
       func_0x0209ecd4(iVar7);
     }
     goto switchD_02028068_default;
   case 7:
     iVar3 = func_020465d8(param_1,3);
-    if (iVar3 == 0) {
+    if (!iVar3) {
       func_0204201c(iVar10);
     }
     else {
@@ -354,7 +354,7 @@ LAB_02028186:
   case 10:
     iVar3 = func_020465d8(param_1,3);
     iVar3 = func_0x0209edc0(iVar7,0 < iVar3);
-    if (iVar3 == 0) {
+    if (!iVar3) {
       iVar9 = 1;
     }
     else {
@@ -383,7 +383,7 @@ LAB_02028186:
     break;
   case 0xf:
     iVar3 = func_0x020d6fe8(*(undefined4 *)(iVar7 + 0x5c),0);
-    if (iVar3 == 0) {
+    if (!iVar3) {
       iVar9 = -1;
     }
     break;
@@ -400,7 +400,7 @@ LAB_02028186:
     break;
   case 0x12:
     iVar3 = func_020465d8(param_1,3);
-    if (iVar3 == 0) {
+    if (!iVar3) {
       uVar5 = ((unsigned int)0x02028458) & *(uint *)(iVar10 + 0x124);
     }
     else {
@@ -420,7 +420,7 @@ LAB_0202832e:
     iVar9 = func_020465d8(param_1,4);
     iVar10 = func_020465d8(param_1,5);
     local_3c = func_020465d8(param_1,6);
-    if (iVar3 == 0) {
+    if (!iVar3) {
       local_38 = 0;
       local_34 = 0;
       local_30 = 0x1000;

@@ -96,14 +96,14 @@ extern int func_02032e4c();
 undefined4 func_02022244(int param_1)
 
 {
-  int iVar1;
-  int iVar2;
-  int iVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  char local_42c [24];
   undefined1 auStack_414 [1024];
+  char local_42c [24];
+  int iVar6;
+  int iVar5;
+  uint uVar4;
+  int iVar3;
+  int iVar2;
+  int iVar1;
 
   iVar1 = ((unsigned int)0x020223a0);
   iVar2 = func_02032e4c((*(unsigned int *)0x02022398),((unsigned int)0x00001e60),local_42c,0x18,1);

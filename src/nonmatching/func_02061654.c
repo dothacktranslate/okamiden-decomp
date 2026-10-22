@@ -98,7 +98,14 @@ void func_02061654(uint *param_1,uint *param_2,int param_3,uint param_4)
   uint uVar9;
 
   bVar1 = *(byte *)(param_3 + 3);
-  if ((4 & param_4) == 0) {
+  if (!((4 & param_4) == 0)) {
+    *param_1 = *param_1 | 1;
+    if ((bVar1 & 2) != 0) {
+      uVar7 = (uint)(*(byte *)(param_3 + 1) >> 5);
+      *(uint *)((*(unsigned int *)0x0206178c) + 0xc4 + uVar7 * 4) =
+           *(uint *)((*(unsigned int *)0x0206178c) + 0xc4 + uVar7 * 4) | 1 << (*(byte *)(param_3 + 1) & 0x1f);
+    }
+  } else {
     uVar7 = param_2[2];
     uVar9 = param_2[1];
     param_1[1] = *param_2;
@@ -118,14 +125,6 @@ void func_02061654(uint *param_1,uint *param_2,int param_3,uint param_4)
       uVar7 = param_2[5];
       *(uint *)(iVar6 + iVar3) = uVar9;
       *(uint *)(iVar5 + iVar3) = uVar7;
-    }
-  }
-  else {
-    *param_1 = *param_1 | 1;
-    if ((bVar1 & 2) != 0) {
-      uVar7 = (uint)(*(byte *)(param_3 + 1) >> 5);
-      *(uint *)((*(unsigned int *)0x0206178c) + 0xc4 + uVar7 * 4) =
-           *(uint *)((*(unsigned int *)0x0206178c) + 0xc4 + uVar7 * 4) | 1 << (*(byte *)(param_3 + 1) & 0x1f);
     }
   }
   piVar4 = ((unsigned int)0x0206178c);

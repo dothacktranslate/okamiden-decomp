@@ -90,13 +90,13 @@ extern int func_02053918();
 void func_0204ddf8(int param_1)
 
 {
-  undefined1 uVar1;
-  int iVar2;
-  undefined4 *puVar3;
   int iVar4;
   undefined4 *puVar5;
   undefined4 uVar6;
   undefined4 *puVar7;
+  undefined1 uVar1;
+  int iVar2;
+  undefined4 *puVar3;
 
   iVar4 = *(int *)(param_1 + 0x10);
   puVar3 = *(undefined4 **)(iVar4 + 0x30);

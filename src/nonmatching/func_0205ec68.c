@@ -101,12 +101,11 @@ void func_0205ec68(int param_1,uint param_2,uint param_3,int param_4)
   }
   if (param_1 != 0) {
     iVar2 = param_1 + 4;
-    if ((iVar2 == 0) || (*(byte *)(param_1 + 5) <= param_2)) {
-      piVar1 = (int *)0x0;
-    }
-    else {
+    if (!((iVar2 == 0) || (*(byte *)(param_1 + 5) <= param_2))) {
       piVar1 = (int *)(*(ushort *)(iVar2 + (uint)*(ushort *)(param_1 + 10)) * param_2 +
                       iVar2 + (uint)*(ushort *)(param_1 + 10) + 4);
+    } else {
+      piVar1 = (int *)0x0;
     }
     if (piVar1 != (int *)0x0) {
       param_1 = param_1 + *piVar1;

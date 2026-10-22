@@ -94,11 +94,11 @@ int func_020316cc(int param_1,undefined4 param_2,undefined4 param_3,undefined4 p
                 undefined4 param_5,int param_6,int param_7,int param_8,int param_9)
 
 {
-  int iVar1;
-  int iVar2;
-  int iVar3;
-  int iVar4;
   int iVar5;
+  int iVar4;
+  int iVar3;
+  int iVar2;
+  int iVar1;
 
   func_02031524();
   iVar5 = 0;

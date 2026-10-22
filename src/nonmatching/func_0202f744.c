@@ -192,16 +192,15 @@ void func_0202f744(int param_1,undefined4 param_2)
       uVar2 = func_0x0209113c(*(undefined4 *)(*(int *)(*(int *)(*(unsigned int *)0x0202f81c) + 0x5c) + 0x34));
       func_02018ba4(auStack_94,((unsigned int)0x0202f820),uVar2);
     }
-    else if ((iVar6 == 0) || (iVar6 == 3)) {
-      func_02015a9c(auStack_94,param_2);
-    }
-    else {
+    else if (!((iVar6 == 0) || (iVar6 == 3))) {
       func_02015a9c(auStack_94,
                    *(undefined4 *)(*(int *)(*(int *)(*(int *)(param_1 + 0x44) + 8) + 0x1c) + 0x20));
       puVar3 = (undefined1 *)func_02015bd4(auStack_94,((unsigned int)0x0202f824));
       if (puVar3 != (undefined1 *)0x0) {
         *puVar3 = 0;
       }
+    } else {
+      func_02015a9c(auStack_94,param_2);
     }
     uVar2 = func_02015cbc(auStack_94,local_a4[iVar6]);
     iVar4 = func_02035038((*(unsigned int *)0x0202f828),uVar2);

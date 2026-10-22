@@ -42,15 +42,14 @@ void func_02045238(int param_1,int param_2,int *param_3)
     param_3 = *(int **)(param_2 + 0x2c);
     iVar1 = *param_3;
   }
-  if (bVar3 || iVar1 == 0) {
+  if (!(bVar3 || iVar1 == 0)) {
+    iVar2 = param_3[0xd];
+    func_02057db8(param_3 + 1,0x1000);
+  } else {
     if ((((*(uint *)(param_2 + 0xc) & 0x200) == 0) || (*(int *)(*(int *)(param_2 + 0x2c) + 4) == 0))
        && (*(int *)(param_2 + 0x28) != 0)) {
       iVar2 = func_0205694c(*(int *)(param_2 + 0x28),*(undefined2 *)(param_2 + 0x10));
     }
-  }
-  else {
-    iVar2 = param_3[0xd];
-    func_02057db8(param_3 + 1,0x1000);
   }
   if (iVar2 == 0) {
     return;

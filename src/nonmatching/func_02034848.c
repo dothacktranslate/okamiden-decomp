@@ -105,11 +105,10 @@ int func_02034848(undefined4 param_1,uint param_2)
 
   if ((*(unsigned int *)0x020348d4) == 0) {
     iVar1 = func_0200eaa4();
-    if (iVar1 == 1) {
-      func_0200e9d8(param_1);
-    }
-    else {
+    if (!(iVar1 == 1)) {
       func_0200ea78(param_1);
+    } else {
+      func_0200e9d8(param_1);
     }
     if (param_2 < 0x20000) {
       param_2 = 0x20000;

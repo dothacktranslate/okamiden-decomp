@@ -111,12 +111,11 @@ undefined4 func_02032e4c(uint *param_1,int param_2,undefined4 param_3,int param_
       func_02013020((short)param_1[3]);
       if (param_5 != '\x01') {
         cVar1 = func_02013c70();
-        if (((cVar1 == '\x01') || (cVar1 = func_02013c70(), cVar1 == '\x02')) ||
-           (cVar1 = func_02013c70(), cVar1 == '\x03')) {
-          func_02013bc4(uVar4,param_3,param_4,((unsigned int)0x02033024),param_1,1,6,1,0);
-        }
-        else {
+        if (!(((cVar1 == '\x01') || (cVar1 = func_02013c70(), cVar1 == '\x02')) ||
+           (cVar1 = func_02013c70(), cVar1 == '\x03'))) {
           *param_1 = *param_1 | 2;
+        } else {
+          func_02013bc4(uVar4,param_3,param_4,((unsigned int)0x02033024),param_1,1,6,1,0);
         }
         return 1;
       }

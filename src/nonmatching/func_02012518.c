@@ -89,13 +89,6 @@ extern int func_020123dc();
 bool func_02012518(int param_1,int *param_2,int param_3,int param_4,undefined4 *param_5,int param_6)
 
 {
-  undefined2 uVar1;
-  int iVar2;
-  uint uVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  short *psVar7;
   int unaff_r8;
   int iVar8;
   int iVar9;
@@ -103,6 +96,13 @@ bool func_02012518(int param_1,int *param_2,int param_3,int param_4,undefined4 *
   bool bVar11;
   short local_28;
   short local_26;
+  undefined2 uVar1;
+  int iVar2;
+  uint uVar3;
+  uint uVar4;
+  int iVar5;
+  int iVar6;
+  short *psVar7;
 
   iVar5 = 0;
   iVar10 = 0;

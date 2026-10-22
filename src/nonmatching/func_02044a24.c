@@ -27,14 +27,13 @@ void func_02044a24(undefined4 param_1,uint param_2,undefined4 param_3,undefined4
   undefined1 auStack_a8 [128];
   undefined4 uStack_28;
 
-  if ((param_2 & 0x100) == 0) {
+  if (!((param_2 & 0x100) == 0)) {
+    iVar2 = 0x10000;
+  } else {
     iVar2 = ((unsigned int)0x00010001);
     if ((param_2 & 0x8000) == 0) {
       iVar2 = 0;
     }
-  }
-  else {
-    iVar2 = 0x10000;
   }
   uStack_28 = param_4;
   if (iVar2 != 0) {

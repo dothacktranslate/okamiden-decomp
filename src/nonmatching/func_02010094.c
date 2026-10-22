@@ -169,17 +169,15 @@ void func_02010094(int *param_1,int param_2,int param_3,int param_4)
       iVar3 = *(int *)(iVar1 + 0xc);
       iVar2 = iVar1;
     }
-    if (iVar1 == 0) {
+    if (!(iVar1 == 0)) {
+      *(int *)(param_2 + 0xc) = iVar1;
+    } else {
       *(undefined4 *)(param_2 + 0xc) = 0;
     }
-    else {
-      *(int *)(param_2 + 0xc) = iVar1;
-    }
-    if (iVar2 == 0) {
-      *param_1 = param_2;
-    }
-    else {
+    if (!(iVar2 == 0)) {
       *(int *)(iVar2 + 0xc) = param_2;
+    } else {
+      *param_1 = param_2;
     }
     func_02008b80();
     return;

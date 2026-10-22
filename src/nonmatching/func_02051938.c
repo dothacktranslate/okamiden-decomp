@@ -91,18 +91,18 @@ extern int func_02048014();
 void func_02051938(undefined4 param_1,undefined4 *param_2,undefined4 param_3,int param_4)
 
 {
-  char cVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  char *pcVar4;
-  int iVar5;
-  undefined4 uVar6;
-  char *pcVar7;
-  undefined1 *puVar8;
-  undefined4 uVar9;
-  undefined4 *puVar10;
-  bool bVar11;
   int local_28;
+  bool bVar11;
+  undefined4 *puVar10;
+  undefined4 uVar9;
+  undefined1 *puVar8;
+  char *pcVar7;
+  undefined4 uVar6;
+  int iVar5;
+  char *pcVar4;
+  undefined4 uVar3;
+  undefined4 uVar2;
+  char cVar1;
 
   local_28 = param_4;
   pcVar4 = (char *)func_02047988(param_1,param_3,&local_28);

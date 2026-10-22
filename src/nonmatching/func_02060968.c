@@ -99,7 +99,15 @@ uint func_02060968(int param_1,uint param_2,uint param_3)
     return (uint)*(ushort *)(param_1 + param_3 * 2);
   }
   uVar1 = (param_2 & ((unsigned int)0x1fff0000)) >> 0x10;
-  if ((param_2 & 0x40000000) == 0) {
+  if (!((param_2 & 0x40000000) == 0)) {
+    if ((param_3 & 1) == 0) {
+      return (uint)*(ushort *)(param_1 + (param_3 & 0xfffffffe));
+    }
+    if (param_3 > uVar1) {
+      return (uint)*(ushort *)(param_1 + (uVar1 & 0xfffffffe) + 2);
+    }
+    param_3 = param_3 >> 1;
+  } else {
     if ((param_3 & 3) == 0) {
       return (uint)*(unsigned char *)(param_1 + (param_3 >> 2) * 2);
     }
@@ -125,15 +133,6 @@ uint func_02060968(int param_1,uint param_2,uint param_3)
              (uVar2 & 0x3e0) * 3 + (uVar1 & 0x3e0) >> 2 & 0x3e0;
     }
     param_3 = param_3 >> 2;
-  }
-  else {
-    if ((param_3 & 1) == 0) {
-      return (uint)*(ushort *)(param_1 + (param_3 & 0xfffffffe));
-    }
-    if (param_3 > uVar1) {
-      return (uint)*(ushort *)(param_1 + (uVar1 & 0xfffffffe) + 2);
-    }
-    param_3 = param_3 >> 1;
   }
   uVar1 = (uint)*(ushort *)(param_1 + param_3 * 2);
   uVar2 = (uint)*(ushort *)(param_1 + param_3 * 2 + 2);

@@ -115,12 +115,11 @@ undefined4 func_0205b884(int param_1,int param_2,uint param_3,uint param_4)
   else {
     iVar2 = 0;
   }
-  if ((iVar1 == 0) || (*(byte *)(iVar1 + 1) <= param_3)) {
-    iVar1 = 0;
-  }
-  else {
+  if (!((iVar1 == 0) || (*(byte *)(iVar1 + 1) <= param_3))) {
     iVar1 = *(ushort *)(iVar1 + (uint)*(ushort *)(iVar1 + 6)) * param_3 +
             iVar1 + (uint)*(ushort *)(iVar1 + 6) + 4;
+  } else {
+    iVar1 = 0;
   }
   if ((iVar1 != 0) && ((*(byte *)(iVar1 + 3) & 1) == 0)) {
     func_0205b6ac(param_1,iVar1,param_2,iVar2,param_4);

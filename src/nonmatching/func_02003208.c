@@ -195,15 +195,14 @@ void func_02003208(void)
   (*(unsigned int *)0x04000004) = 0;
   iVar2 = ((unsigned int)0x02003344);
   _REG_A_DISPCNT = 0;
-  if (*(int *)(((unsigned int)0x02003344) + 4) == -1) {
-    func_020098a0(0,&_D_ENGINE_A,0x60);
-    _REG_A_MASTER_BRIGHT = 0;
-    func_020098a0(0,&REG_B_DISPCNT,0x70);
-  }
-  else {
+  if (!(*(int *)(((unsigned int)0x02003344) + 4) == -1)) {
     func_02008fe4(*(int *)(((unsigned int)0x02003344) + 4),&_D_ENGINE_A,0,0x60,1);
     _REG_A_MASTER_BRIGHT = 0;
     func_02008fe4(*(undefined4 *)(iVar2 + 4),&REG_B_DISPCNT,0,0x70,1);
+  } else {
+    func_020098a0(0,&_D_ENGINE_A,0x60);
+    _REG_A_MASTER_BRIGHT = 0;
+    func_020098a0(0,&REG_B_DISPCNT,0x70);
   }
   puVar4 = ((unsigned int)0x02003348);
   (*(unsigned int *)0x02003348) = 0x100;

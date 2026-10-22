@@ -94,12 +94,7 @@ uint func_0201df60(uint param_1,uint param_2)
 
   uVar2 = param_2 & 0x80000000;
   uVar3 = param_2 >> 0x14 & 0xfffff7ff;
-  if (uVar3 == 0) {
-    if (param_1 == 0 && (param_2 & 0xfffff) == 0) {
-      return uVar2;
-    }
-  }
-  else {
+  if (!(uVar3 == 0)) {
     if (0xffdfffff < (param_2 >> 0x14) << 0x15) {
       if (param_1 == 0 && (param_2 & 0xfffff) == 0) {
         return uVar2 | 0x7f800000;
@@ -146,6 +141,10 @@ uint func_0201df60(uint param_1,uint param_2)
       if ((uVar3 & 0x7fffffff) != 0 || (uVar1 & 1) != 0) {
         uVar2 = uVar2 + 1;
       }
+      return uVar2;
+    }
+  } else {
+    if (param_1 == 0 && (param_2 & 0xfffff) == 0) {
       return uVar2;
     }
   }

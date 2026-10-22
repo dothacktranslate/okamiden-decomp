@@ -94,11 +94,11 @@ extern int func_020542c0();
 void func_02054408(int param_1,int *param_2,undefined4 param_3,undefined4 *param_4)
 
 {
-  undefined4 *puVar1;
-  int iVar3;
   int iVar2;
   int *piVar4;
   undefined4 *puVar5;
+  undefined4 *puVar1;
+  int iVar3;
 
   iVar2 = 0;
   puVar5 = param_4;

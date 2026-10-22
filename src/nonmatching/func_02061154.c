@@ -94,13 +94,12 @@ void func_02061154(uint *param_1,int *param_2,undefined2 param_3)
 
   iVar2 = *param_2;
   uVar1 = (uint)*(ushort *)(param_2[2] + 4);
-  if (iVar2 < (int)(uVar1 * 0x1000)) {
+  if (!(iVar2 < (int)(uVar1 * 0x1000))) {
+    iVar2 = uVar1 * 0x1000 + -1;
+  } else {
     if (iVar2 < 0) {
       iVar2 = 0;
     }
-  }
-  else {
-    iVar2 = uVar1 * 0x1000 + -1;
   }
   func_02060f8c(param_2[2],param_3,iVar2 >> 0xc,param_1);
   param_1[4] = param_1[4] & 0x3fffffff | 0x40000000;

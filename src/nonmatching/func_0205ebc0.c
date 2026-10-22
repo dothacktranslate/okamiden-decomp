@@ -95,7 +95,7 @@ void func_0205ebc0(int param_1,int param_2,uint param_3)
   int iVar5;
   uint uVar6;
 
-  if (param_1 != 0) {
+  if (param_1) {
     unaff_r4 = *(int *)(param_1 + 8);
   }
   bVar1 = *(byte *)(param_1 + 0x18);
@@ -106,12 +106,12 @@ void func_0205ebc0(int param_1,int param_2,uint param_3)
     param_1 = 0;
   }
   uVar6 = 0;
-  if (bVar1 == 0) {
+  if (!bVar1) {
     return;
   }
   iVar2 = param_1 + 4;
   do {
-    if (param_1 == 0) {
+    if (!param_1) {
 LAB_0205ec40:
       iVar5 = 0;
     }
@@ -126,7 +126,7 @@ LAB_0205ec40:
       if (piVar4 == (int *)0x0) goto LAB_0205ec40;
       iVar5 = param_1 + *piVar4;
     }
-    if (param_2 == 0) {
+    if (!param_2) {
       uVar3 = *(uint *)(iVar5 + 0x10) & ~param_3;
     }
     else {

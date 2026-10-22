@@ -92,22 +92,22 @@ extern int func_0205e19c();
 void func_0205d868(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  ushort uVar1;
-  uint uVar2;
-  int *piVar3;
-  undefined4 uVar4;
-  int iVar5;
-  int iVar6;
-  uint uVar7;
-  char cVar8;
-  undefined4 local_60;
-  undefined4 local_5c;
-  undefined4 local_58;
-  uint local_54 [3];
-  int local_48;
-  undefined4 local_44;
-  undefined1 auStack_40 [36];
   undefined4 uStack_1c;
+  undefined1 auStack_40 [36];
+  undefined4 local_44;
+  int local_48;
+  uint local_54 [3];
+  undefined4 local_58;
+  undefined4 local_5c;
+  undefined4 local_60;
+  char cVar8;
+  uint uVar7;
+  int iVar6;
+  int iVar5;
+  undefined4 uVar4;
+  int *piVar3;
+  uint uVar2;
+  ushort uVar1;
 
   if (((param_1[2] & 0x200U) != 0) || ((param_1[2] & 1U) == 0)) goto LAB_0205db90;
   uVar2 = *(uint *)(param_1[0x2c] + 0x10);

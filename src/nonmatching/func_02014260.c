@@ -193,11 +193,10 @@ void func_02014260(uint param_1,int param_2,int param_3,int param_4,undefined4 p
   func_02013348(iVar1,1,param_5,param_6,iVar4);
   iVar4 = func_0201340c(param_1);
   *(int *)(iVar1 + 0x50c) = iVar4;
-  if (iVar4 == 0) {
-    param_1 = 0xffffffff;
-  }
-  else {
+  if (!(iVar4 == 0)) {
     param_1 = param_1 & 3;
+  } else {
+    param_1 = 0xffffffff;
   }
   *(uint *)(iVar1 + 0x508) = param_1;
   if (param_1 <= 3) {

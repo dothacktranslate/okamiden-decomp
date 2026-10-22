@@ -126,7 +126,9 @@ bool func_0200be7c(undefined4 *param_1,int param_2,int param_3)
     param_1[3] = uVar5;
   }
   uVar6 = func_02008b6c();
-  if ((*(uint *)(iVar7 + 0x14) & 0x80) == 0) {
+  if (!((*(uint *)(iVar7 + 0x14) & 0x80) == 0)) {
+    func_0200b74c(param_1,3);
+  } else {
     puVar3 = *(undefined4 **)(iVar7 + 8);
     puVar2 = (undefined4 *)(iVar7 + 8);
     while (puVar1 = puVar3, puVar1 != (undefined4 *)0x0) {
@@ -134,9 +136,6 @@ bool func_0200be7c(undefined4 *param_1,int param_2,int param_3)
       puVar3 = (undefined4 *)*puVar1;
     }
     *puVar2 = param_1;
-  }
-  else {
-    func_0200b74c(param_1,3);
   }
   uVar8 = 0;
   if ((*(undefined4 **)(iVar7 + 8) == param_1) && ((*(uint *)(iVar7 + 0x14) & 0x10) == 0)) {

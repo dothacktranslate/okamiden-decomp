@@ -49,11 +49,7 @@ undefined4 * func_02052968(undefined4 param_1,int param_2,int *param_3)
       return puVar3;
     }
     puVar5 = (undefined4 *)func_02052064(param_2,puVar3 + 2);
-    if (puVar5 == puVar3) {
-      puVar4[4] = puVar3[4];
-      puVar3[4] = puVar4;
-    }
-    else {
+    if (!(puVar5 == puVar3)) {
       puVar2 = (undefined4 *)puVar5[4];
       while (puVar1 = puVar2, puVar1 != puVar3) {
         puVar5 = puVar1;
@@ -71,6 +67,9 @@ undefined4 * func_02052968(undefined4 param_1,int param_2,int *param_3)
       puVar3[4] = 0;
       puVar3[1] = 0;
       puVar4 = puVar3;
+    } else {
+      puVar4[4] = puVar3[4];
+      puVar3[4] = puVar4;
     }
   }
   iVar8 = *param_3;

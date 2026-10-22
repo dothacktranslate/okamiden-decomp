@@ -94,13 +94,12 @@ undefined4 func_0200d2cc(int *param_1,undefined4 param_2,int param_3)
   int iVar2;
 
   iVar2 = *param_1;
-  if (*(int *)(*(int *)(0x20 + iVar2) + 0x1c) == 0) {
-    uVar1 = (**(code **)(*(int *)(0x20 + iVar2) + 0x20))(iVar2,param_2,param_1[1],param_3);
-    uVar1 = func_0200b7f0(*(unsigned char *)(iVar2 + 8),uVar1);
-  }
-  else {
+  if (!(*(int *)(*(int *)(0x20 + iVar2) + 0x1c) == 0)) {
     func_02009b68(param_1[1]);
     uVar1 = 0;
+  } else {
+    uVar1 = (**(code **)(*(int *)(0x20 + iVar2) + 0x20))(iVar2,param_2,param_1[1],param_3);
+    uVar1 = func_0200b7f0(*(unsigned char *)(iVar2 + 8),uVar1);
   }
   param_1[1] = param_1[1] + param_3;
   return uVar1;

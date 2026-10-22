@@ -89,15 +89,15 @@ extern int func_02035af4();
 void func_020361cc(int param_1,undefined4 param_2,undefined4 param_3,int param_4)
 
 {
-  longlong lVar1;
-  int iVar2;
-  int iVar3;
-  uint local_30;
-  uint local_2c;
-  uint local_28;
-  uint local_24;
-  uint local_20;
   uint local_1c;
+  uint local_20;
+  uint local_24;
+  uint local_28;
+  uint local_2c;
+  uint local_30;
+  int iVar3;
+  int iVar2;
+  longlong lVar1;
 
   iVar2 = param_1 + (uint)(param_4 == 1) * 0x20;
   iVar3 = *(int *)(iVar2 + 0x1c);

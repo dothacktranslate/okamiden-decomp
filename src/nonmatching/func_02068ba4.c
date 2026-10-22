@@ -107,7 +107,9 @@ bool func_02068ba4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       *(undefined2 *)(param_1 + 0x14) = 1;
     }
   }
-  else if (sVar1 == 1) {
+  else if (!(sVar1 == 1)) {
+    bVar5 = sVar1 != 2;
+  } else {
     if (((*(int *)(param_1 + 0x6c) != 0) &&
         (iVar2 = func_0x02085dd0(param_1 + 0xbe8,param_1 + 0x88,(int)*(short *)(param_1 + 0xbe0),
                                  0x2000,param_1 + 0xf80,0,param_4), iVar2 != 0)) &&
@@ -134,9 +136,6 @@ bool func_02068ba4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     else {
       *(undefined2 *)(param_1 + 0x14) = 2;
     }
-  }
-  else {
-    bVar5 = sVar1 != 2;
   }
   return bVar5;
 }

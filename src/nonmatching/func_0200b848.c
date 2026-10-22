@@ -91,15 +91,15 @@ extern int func_0200b7f0();
 int func_0200b848(int param_1,uint param_2)
 
 {
-  int iVar1;
-  int iVar2;
-  undefined4 *puVar3;
-  int *piVar4;
   int iVar5;
   undefined4 uVar6;
   int *piVar7;
   undefined4 *puVar8;
   code *pcVar9;
+  int iVar1;
+  int iVar2;
+  undefined4 *puVar3;
+  int *piVar4;
 
   iVar1 = *(int *)(param_1 + 8);
   puVar8 = *(undefined4 **)(iVar1 + 0x24);

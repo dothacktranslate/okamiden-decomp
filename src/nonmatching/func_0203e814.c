@@ -173,30 +173,30 @@ extern int func_0205e0c0();
 void func_0203e814(int param_1)
 
 {
-  short sVar1;
-  uint iVar2;
-  int iVar3;
-  int iVar4;
-  int *piVar5;
-  int *piVar6;
-  undefined4 local_d0;
-  undefined4 local_cc;
-  undefined4 local_c8;
-  undefined4 local_c4;
-  undefined4 local_c0;
-  undefined4 local_bc;
-  undefined4 local_b8;
-  undefined4 local_b4;
-  int local_b0 [20];
-  uint local_60;
-  undefined4 local_5c;
-  undefined4 local_58;
-  uint local_54;
-  undefined1 auStack_50 [12];
-  undefined4 local_44;
-  undefined4 local_40;
-  undefined4 local_3c;
   undefined1 auStack_38 [36];
+  undefined4 local_3c;
+  undefined4 local_40;
+  undefined4 local_44;
+  undefined1 auStack_50 [12];
+  uint local_54;
+  undefined4 local_58;
+  undefined4 local_5c;
+  uint local_60;
+  int local_b0 [20];
+  undefined4 local_b4;
+  undefined4 local_b8;
+  undefined4 local_bc;
+  undefined4 local_c0;
+  undefined4 local_c4;
+  undefined4 local_c8;
+  undefined4 local_cc;
+  undefined4 local_d0;
+  int *piVar6;
+  int *piVar5;
+  int iVar4;
+  int iVar3;
+  uint iVar2;
+  short sVar1;
 
   func_02000c60(auStack_38);
   if (*(int *)(param_1 + 100) + *(int *)(param_1 + 0x6c) != 0) {

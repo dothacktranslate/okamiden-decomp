@@ -161,15 +161,6 @@ int func_02030f00(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,in
                  undefined4 *param_5,undefined4 param_6)
 
 {
-  int iVar1;
-  undefined4 *puVar2;
-  undefined1 auStack_58 [4];
-  undefined4 local_54;
-  undefined4 local_50;
-  undefined4 local_4c;
-  undefined4 local_48;
-  undefined4 local_44;
-  undefined4 local_40;
   undefined4 local_3c;
   undefined4 local_38;
   undefined4 local_34;
@@ -180,6 +171,15 @@ int func_02030f00(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,in
   undefined4 local_20;
   undefined4 local_1c;
   int iStack_18;
+  int iVar1;
+  undefined4 *puVar2;
+  undefined1 auStack_58 [4];
+  undefined4 local_54;
+  undefined4 local_50;
+  undefined4 local_4c;
+  undefined4 local_48;
+  undefined4 local_44;
+  undefined4 local_40;
 
   local_1c = param_5[2];
   local_20 = param_5[1];

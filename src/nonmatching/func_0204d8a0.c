@@ -90,10 +90,10 @@ extern int func_0204d814();
 void func_0204d8a0(undefined4 param_1,int param_2)
 
 {
-  uint *puVar1;
-  int *piVar2;
-  uint uVar3;
   int *piVar4;
+  uint uVar3;
+  int *piVar2;
+  uint *puVar1;
 
   if ((3 < *(int *)(param_2 + 0x4c)) && ((*(byte *)(*(int *)(param_2 + 0x48) + 5) & 3) != 0)) {
     func_0204d1d8(param_1);

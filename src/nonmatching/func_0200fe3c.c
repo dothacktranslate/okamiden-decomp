@@ -114,18 +114,17 @@ undefined4 func_0200fe3c(int param_1,int param_2,int param_3,int param_4)
     (*(unsigned int *)0x02010034) = (*(unsigned int *)0x02010034) & (ushort)((unsigned int)0x02010038);
     *(int *)(iVar3 + 4) = *piVar2;
     if (param_2 != 0) {
-      if (param_4 == 0) {
-        iVar3 = func_0200f810(param_2,0,0);
-        while (iVar3 != 0) {
-          func_02008be8(uVar1);
-          iVar3 = func_0200f810(param_2,0,0);
-        }
-      }
-      else {
+      if (!(param_4 == 0)) {
         iVar3 = func_0200f874(param_2);
         while (iVar3 != 0) {
           func_02008be8(uVar1);
           iVar3 = func_0200f874(param_2);
+        }
+      } else {
+        iVar3 = func_0200f810(param_2,0,0);
+        while (iVar3 != 0) {
+          func_02008be8(uVar1);
+          iVar3 = func_0200f810(param_2,0,0);
         }
       }
     }

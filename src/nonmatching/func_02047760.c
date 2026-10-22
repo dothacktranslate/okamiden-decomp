@@ -97,7 +97,7 @@ int func_02047760(undefined4 param_1,undefined4 param_2,int param_3,int *param_4
   int iVar2;
   int iVar3;
 
-  if (param_3 == 0) {
+  if (!param_3) {
     uVar1 = func_02047988(param_1,param_2,0);
   }
   else {
@@ -106,13 +106,13 @@ int func_02047760(undefined4 param_1,undefined4 param_2,int param_3,int *param_4
   iVar2 = *param_4;
   iVar3 = 0;
   while( true ) {
-    if (iVar2 == 0) {
+    if (!iVar2) {
       uVar1 = func_02046960(param_1,((unsigned int)0x020477ec),uVar1);
       iVar3 = func_02047550(param_1,param_2,uVar1);
       return iVar3;
     }
     iVar2 = func_02018f50(param_4[iVar3],uVar1);
-    if (iVar2 == 0) break;
+    if (!iVar2) break;
     iVar3 = iVar3 + 1;
     iVar2 = param_4[iVar3];
   }

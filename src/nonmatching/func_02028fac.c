@@ -126,7 +126,7 @@ undefined4 func_02028fac(undefined4 param_1)
     if ((iVar9 != 0) && (iVar12 = 0, 0 < iVar9)) {
       do {
         puVar10 = (uint *)local_114[iVar12];
-        if (iVar3 == 0) {
+        if (!iVar3) {
           uVar8 = *puVar10 & 0xfffffffd | 1;
         }
         else {

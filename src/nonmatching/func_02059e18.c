@@ -90,16 +90,16 @@ int func_02059e18(uint *param_1,uint param_2,uint param_3,int param_4,int param_
                 int param_7,uint param_8)
 
 {
-  uint uVar1;
-  int iVar2;
-  uint uVar3;
-  uint uVar4;
-  uint uVar5;
-  uint uVar6;
-  uint uVar7;
-  int iVar8;
-  int local_48;
   int local_3c;
+  int local_48;
+  int iVar8;
+  uint uVar7;
+  uint uVar6;
+  uint uVar5;
+  uint uVar4;
+  uint uVar3;
+  int iVar2;
+  uint uVar1;
 
   if ((int)param_2 < 8) {
     iVar8 = 0x1f - LZCOUNT(param_2);

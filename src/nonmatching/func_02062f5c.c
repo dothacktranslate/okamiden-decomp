@@ -99,13 +99,12 @@ void func_02062f5c(void)
     uVar4 = uVar4 + 1;
   }
   do {
-    if (iVar2 < (int)uVar4) {
-      puVar3 = (undefined4 *)(iVar2 * 0x18 + iVar1);
-      puVar3[2] = 1;
-    }
-    else {
+    if (!(iVar2 < (int)uVar4)) {
       puVar3 = (undefined4 *)(iVar2 * 0x18 + iVar1);
       puVar3[2] = 0;
+    } else {
+      puVar3 = (undefined4 *)(iVar2 * 0x18 + iVar1);
+      puVar3[2] = 1;
     }
     iVar2 = iVar2 + 1;
     if (puVar3[3] == 0) {

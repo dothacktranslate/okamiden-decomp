@@ -165,15 +165,15 @@ extern int func_0200d2cc();
 void func_0200d3f4(int param_1)
 
 {
-  undefined4 uVar1;
-  int iVar2;
-  uint uVar3;
-  undefined4 *puVar4;
   byte *pbVar5;
   bool bVar6;
   byte abStack_20 [4];
   undefined4 local_1c;
   undefined4 local_18;
+  undefined4 uVar1;
+  int iVar2;
+  uint uVar3;
+  undefined4 *puVar4;
 
   pbVar5 = abStack_20;
   puVar4 = *(undefined4 **)(param_1 + 0x30);

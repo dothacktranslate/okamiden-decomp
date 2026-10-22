@@ -184,14 +184,13 @@ void func_02015eec(void)
     (*(unsigned int *)0x02015ff8) = *(int *)(*(int *)(((unsigned int)0x02015ff4) + 4) + 0x6c);
     *piVar3 = 1;
   }
-  else if ((*(unsigned int *)0x02015ff8) == *(int *)(*(int *)(((unsigned int)0x02015ff4) + 4) + 0x6c)) {
-    (*(unsigned int *)0x02015ffc) = (*(unsigned int *)0x02015ffc) + 1;
-  }
-  else {
+  else if (!((*(unsigned int *)0x02015ff8) == *(int *)(*(int *)(((unsigned int)0x02015ff4) + 4) + 0x6c))) {
     func_02007558(uVar1);
     piVar3 = ((unsigned int)0x02015ffc);
     *piVar2 = *(int *)(*(int *)(iVar7 + 4) + 0x6c);
     *piVar3 = 1;
+  } else {
+    (*(unsigned int *)0x02015ffc) = (*(unsigned int *)0x02015ffc) + 1;
   }
   puVar4 = ((unsigned int)0x02016000);
   iVar7 = ((unsigned int)0x02016004);

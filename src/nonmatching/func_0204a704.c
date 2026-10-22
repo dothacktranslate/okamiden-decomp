@@ -96,7 +96,7 @@ undefined4 func_0204a704(undefined4 param_1,int param_2)
   iVar1 = func_0204a6a8();
   if (-1 < iVar1) {
     iVar3 = *(int *)(*(int *)(**(int **)(param_2 + 4) + 0x10) + 0x14);
-    if (iVar3 == 0) {
+    if (!iVar3) {
       uVar2 = 0;
     }
     else {

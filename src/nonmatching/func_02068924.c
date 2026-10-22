@@ -98,18 +98,18 @@ extern int func_020688c4();
 void func_02068924(short *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  bool bVar1;
-  undefined4 uVar2;
-  short sVar3;
-  short sVar4;
-  int iVar5;
-  uint uVar6;
   uint uVar7;
   int iVar8;
   int iVar9;
   undefined4 uVar10;
   uint local_20;
   undefined4 uStack_1c;
+  bool bVar1;
+  undefined4 uVar2;
+  short sVar3;
+  short sVar4;
+  int iVar5;
+  uint uVar6;
 
   uVar10 = (*(unsigned int *)0x02068b48);
   uStack_1c = param_4;

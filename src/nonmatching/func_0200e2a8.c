@@ -92,13 +92,13 @@ extern int func_0200e774();
 undefined4 func_0200e2a8(int param_1,undefined4 param_2,undefined4 param_3,uint *param_4)
 
 {
-  int iVar1;
-  undefined4 uVar2;
-  int local_34;
   int local_30;
   int local_2c;
   int local_28;
   uint local_24;
+  int iVar1;
+  undefined4 uVar2;
+  int local_34;
 
   local_24 = 0;
   uVar2 = 5;

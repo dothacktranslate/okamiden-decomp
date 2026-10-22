@@ -204,7 +204,7 @@ void func_0202db38(int param_1,int *param_2,undefined4 param_3)
   iVar7 = (local_20 + -0x1000) * 0x10;
   bVar1 = false;
   uVar15 = 0;
-  if (uVar14 != 0) {
+  if (uVar14) {
     do {
       if (iVar7 >> 0x10 == (int)local_2c[uVar15]) {
         bVar1 = true;
@@ -247,14 +247,14 @@ void func_0202db38(int param_1,int *param_2,undefined4 param_3)
     if (1 < uVar2) {
       do {
         iVar9 = *(int *)(param_1 + iVar7);
-        if (iVar9 == 0) {
+        if (!iVar9) {
           psVar12 = (short *)0x0;
         }
         else {
           psVar12 = (short *)(iVar9 + iVar6 * 0x18);
         }
         if (iVar13 == *psVar12) {
-          if (iVar9 == 0) {
+          if (!iVar9) {
             iVar9 = 0;
           }
           else {
@@ -328,8 +328,8 @@ LAB_0202ded8:
             uVar2 = (uint)*(ushort *)(iVar7 + 0xdb0);
             iVar11 = func_0202c774(param_1,(uint)*(ushort *)(iVar7 + 0x00000beeU) +
                                           (uint)*(ushort *)(iVar7 + 0x00000beeU + 0x40) * 0x10000);
-            if (iVar11 != 0) {
-              if (uVar2 != 0) {
+            if (iVar11) {
+              if (uVar2) {
                 func_0202ca98(param_1,iVar11);
                 iVar13 = 1;
                 *(uint *)(iVar11 + 0x114) = *(uint *)(iVar11 + 0x114) ^ 1;
@@ -340,7 +340,7 @@ LAB_0202ded8:
                   do {
                     iVar6 = iVar11 + iVar13 * 4;
                     iVar3 = *(int *)(iVar6 + 0x6c);
-                    if (iVar3 != 0) {
+                    if (iVar3) {
                       *(uint *)(iVar3 + 0xc) = *(uint *)(iVar3 + 0xc) & 0xfffffffd;
                       iVar3 = *(int *)(iVar6 + 0x6c);
                       *(uint *)(iVar3 + 0xc) = *(uint *)(iVar3 + 0xc) | 1;
@@ -363,7 +363,7 @@ LAB_0202ded8:
                   do {
                     iVar10 = iVar11 + iVar13 * 4;
                     iVar3 = *(int *)(iVar10 + 0x6c);
-                    if (iVar3 != 0) {
+                    if (iVar3) {
                       *(uint *)(iVar3 + 0xc) = *(uint *)(iVar3 + 0xc) & 0xfffffffd;
                       iVar3 = *(int *)(iVar10 + 0x6c);
                       *(uint *)(iVar3 + 0xc) = *(uint *)(iVar3 + 0xc) | 1;

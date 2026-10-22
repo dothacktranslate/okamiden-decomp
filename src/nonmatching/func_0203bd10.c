@@ -128,10 +128,7 @@ void func_0203bd10(int param_1,int param_2,undefined4 param_3,undefined4 param_4
       }
       if (pcVar3 != (char *)0x0 && uVar5 != 0) {
         iVar4 = func_02015ce0(pcVar3,((unsigned int)0x0203be78));
-        if (iVar4 == 0) {
-          func_02018ba4(local_60,((unsigned int)0x0203be84));
-        }
-        else {
+        if (!(iVar4 == 0)) {
           pcVar3 = *(char **)(iVar9 + 0x54);
           iVar4 = 0;
           cVar2 = *pcVar3;
@@ -147,6 +144,8 @@ void func_0203bd10(int param_1,int param_2,undefined4 param_3,undefined4 param_4
           }
           func_02018ba4(local_60,((unsigned int)0x0203be7c),((unsigned int)0x0203be80),pcVar3 + iVar8);
           func_02018db8(*(undefined4 *)(iVar9 + 0x54),local_60);
+        } else {
+          func_02018ba4(local_60,((unsigned int)0x0203be84));
         }
         uVar10 = func_02035038((*(unsigned int *)0x0203be88),local_60);
         uVar5 = (uint)((ulonglong)uVar10 >> 0x20);

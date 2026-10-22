@@ -102,7 +102,9 @@ undefined8 func_0201ef10(uint param_1,uint param_2)
 
   if (param_2 < ((unsigned int)0x0201f0a0)) {
     uVar5 = param_2 >> 0x14;
-    if (uVar5 == 0) {
+    if (!(uVar5 == 0)) {
+      uVar2 = param_2 & ~((unsigned int)0x0201f0a0) | 0x100000;
+    } else {
       if (param_2 == 0) {
         if (param_1 == 0) {
           return 0;
@@ -119,9 +121,6 @@ undefined8 func_0201ef10(uint param_1,uint param_2)
         param_1 = param_1 << (uVar5 & 0xff);
         uVar5 = 1 - uVar5;
       }
-    }
-    else {
-      uVar2 = param_2 & ~((unsigned int)0x0201f0a0) | 0x100000;
     }
     iVar10 = (int)uVar5 >> 1;
     if (!(bool)((byte)uVar5 & 1)) {

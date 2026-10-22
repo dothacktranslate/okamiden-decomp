@@ -107,7 +107,7 @@ void func_02048618(undefined4 param_1,int param_2,undefined4 param_3,undefined4 
     func_02046414(param_1,1);
     return;
   }
-  if (param_2 == 0) {
+  if (!param_2) {
     iVar1 = func_02047a64(param_1,1);
   }
   else {
@@ -117,12 +117,12 @@ void func_02048618(undefined4 param_1,int param_2,undefined4 param_3,undefined4 
     func_02047550(param_1,1,((unsigned int)0x020486f0));
   }
   iVar2 = func_0204a77c(param_1,iVar1,auStack_78);
-  if (iVar2 == 0) {
+  if (!iVar2) {
     func_02047550(param_1,1,((unsigned int)0x020486f4));
   }
   func_0204ac2c(param_1,((unsigned int)0x020486f8),auStack_78);
   iVar2 = func_02046444(param_1,0xffffffff);
-  if (iVar2 == 0) {
+  if (!iVar2) {
     func_02047714(param_1,((unsigned int)0x020486fc),iVar1);
     return;
   }

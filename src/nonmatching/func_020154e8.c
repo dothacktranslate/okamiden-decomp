@@ -163,13 +163,6 @@ extern int LZCOUNT();
 void func_020154e8(int param_1,int param_2,uint param_3,code *param_4,int *param_5)
 
 {
-  undefined4 uVar1;
-  undefined1 uVar2;
-  uint uVar3;
-  int iVar4;
-  undefined4 *puVar5;
-  undefined4 *puVar6;
-  undefined4 *puVar7;
   undefined4 *puVar8;
   int *piVar9;
   int *piVar10;
@@ -177,6 +170,13 @@ void func_020154e8(int param_1,int param_2,uint param_3,code *param_4,int *param
   undefined4 *puVar12;
   int *piVar13;
   int local_28;
+  undefined4 uVar1;
+  undefined1 uVar2;
+  uint uVar3;
+  int iVar4;
+  undefined4 *puVar5;
+  undefined4 *puVar6;
+  undefined4 *puVar7;
 
   piVar13 = (int *)&stack0xffffffdc;
   if (1 < param_2) {

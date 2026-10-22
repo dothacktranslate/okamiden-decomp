@@ -89,10 +89,10 @@ extern int func_020215c4();
 undefined4 func_020210cc(undefined4 param_1,uint *param_2)
 
 {
-  int iVar1;
-  undefined1 *puVar2;
-  uint uVar3;
   undefined1 auStack_20 [8];
+  uint uVar3;
+  undefined1 *puVar2;
+  int iVar1;
 
   puVar2 = (undefined4 *)param_2[3];
   uVar3 = 0;

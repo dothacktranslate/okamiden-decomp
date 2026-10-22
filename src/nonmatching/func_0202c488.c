@@ -93,14 +93,6 @@ extern int func_02035064();
 undefined4 func_0202c488(int param_1)
 
 {
-  int iVar1;
-  uint uVar2;
-  int iVar3;
-  ushort *puVar4;
-  int iVar5;
-  short sVar6;
-  uint uVar7;
-  undefined2 uVar8;
   undefined2 uVar9;
   int iVar10;
   uint uVar11;
@@ -109,6 +101,14 @@ undefined4 func_0202c488(int param_1)
   int iVar14;
   uint local_48;
   undefined1 local_34 [32];
+  int iVar1;
+  uint uVar2;
+  int iVar3;
+  ushort *puVar4;
+  int iVar5;
+  short sVar6;
+  uint uVar7;
+  undefined2 uVar8;
 
   iVar1 = func_02035064((*(unsigned int *)0x0202c588));
   if (iVar1 == 0) {

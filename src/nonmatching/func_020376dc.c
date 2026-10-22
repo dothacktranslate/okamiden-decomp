@@ -95,13 +95,12 @@ undefined4 func_020376dc(undefined4 param_1,int param_2,undefined4 param_3,int p
 
   aiStack_8[0] = param_4;
   if ((*(uint *)(param_2 + 0xc) & 1) != 0) {
-    if ((*(uint *)(param_2 + 0xc) & 0x100) == 0) {
+    if (!((*(uint *)(param_2 + 0xc) & 0x100) == 0)) {
+      func_02037420(aiStack_8,param_1,param_2);
+    } else {
       if (param_4 == 0) {
         func_02066fc8(param_2 + 0x2c,param_3);
       }
-    }
-    else {
-      func_02037420(aiStack_8,param_1,param_2);
     }
     return 1;
   }

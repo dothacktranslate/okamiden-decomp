@@ -118,14 +118,13 @@ int func_02042a28(uint *param_1,int *param_2,int param_3)
   }
   iVar4 = func_020429b0(param_1,param_3);
   if (iVar4 != -1) {
-    if (param_3 == 0) {
-      func_0201ebe0(iVar4,param_1[2]);
-      iVar6 = extraout_r1_00;
-    }
-    else {
+    if (!(param_3 == 0)) {
       uVar5 = param_1[2];
       func_0201ebe0(iVar4,uVar5);
       iVar6 = uVar5 + extraout_r1;
+    } else {
+      func_0201ebe0(iVar4,param_1[2]);
+      iVar6 = extraout_r1_00;
     }
     if (iVar6 < 0) {
       return -1;

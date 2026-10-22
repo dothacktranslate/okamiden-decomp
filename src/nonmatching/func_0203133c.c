@@ -95,15 +95,15 @@ extern int func_0x01ff9dcc();
 void func_0203133c(short *param_1,int param_2)
 
 {
-  int iVar1;
-  int iVar2;
-  int iVar3;
-  int iVar4;
-  int iVar5;
-  bool bVar6;
-  undefined8 uVar7;
-  int local_24;
   undefined1 auStack_20 [12];
+  int local_24;
+  undefined8 uVar7;
+  bool bVar6;
+  int iVar5;
+  int iVar4;
+  int iVar3;
+  int iVar2;
+  int iVar1;
 
   if (*(int *)(param_1 + 8) != 0) {
     local_24 = 0;

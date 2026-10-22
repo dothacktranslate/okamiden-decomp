@@ -166,25 +166,25 @@ extern int func_0205e0c0();
 void func_0203ea90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  int iVar1;
-  int iVar2;
-  int iVar3;
-  int *piVar4;
-  int *piVar5;
-  undefined4 local_98;
-  undefined4 local_94;
-  undefined4 local_90;
-  undefined4 local_8c;
-  undefined4 local_88;
-  undefined4 local_84;
-  undefined4 local_80;
-  undefined4 local_7c;
-  int local_78 [20];
-  uint local_28;
-  undefined4 local_24;
-  undefined4 local_20;
-  uint local_1c;
   undefined4 uStack_18;
+  uint local_1c;
+  undefined4 local_20;
+  undefined4 local_24;
+  uint local_28;
+  int local_78 [20];
+  undefined4 local_7c;
+  undefined4 local_80;
+  undefined4 local_84;
+  undefined4 local_88;
+  undefined4 local_8c;
+  undefined4 local_90;
+  undefined4 local_94;
+  undefined4 local_98;
+  int *piVar5;
+  int *piVar4;
+  int iVar3;
+  int iVar2;
+  int iVar1;
 
   piVar4 = local_78 + 8;
   iVar3 = 6;

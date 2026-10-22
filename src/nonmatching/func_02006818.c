@@ -96,20 +96,20 @@ int func_02006818(undefined4 param_1,int param_2,code *param_3,int param_4)
   undefined4 uVar1;
   int iVar2;
 
-  if (param_4 == 0) {
+  if (!param_4) {
     uVar1 = func_02008b6c();
   }
   else {
     uVar1 = func_02008b98();
   }
   iVar2 = func_02009f98(param_1,param_2);
-  if (iVar2 == 0) {
+  if (!iVar2) {
     if (param_3 != (code *)0x0) {
       (*param_3)();
     }
     *(short *)(param_2 + 4) = (short)param_1;
   }
-  if (param_4 == 0) {
+  if (!param_4) {
     func_02008bac(uVar1);
   }
   else {

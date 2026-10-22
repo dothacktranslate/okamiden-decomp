@@ -5,12 +5,12 @@ Func020433Node *func_020433dc(
     s32 value
 )
 {
-    u8 key[24];
-    Func020433Input *input;
-    Func020433Node *node;
-    Func020433Node *child;
-    Func020433Node *previous;
     s32 i;
+    Func020433Node *previous;
+    Func020433Node *child;
+    Func020433Node *node;
+    Func020433Input *input;
+    u8 key[24];
 
     input = *cursor;
 

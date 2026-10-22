@@ -33,21 +33,19 @@ void func_02045ae0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   *(short *)(param_1 + 0x18) = param_8;
   *(undefined4 *)(param_1 + 0x1c) = param_9;
   *(undefined4 *)(param_1 + 0x24) = 0;
-  if (param_10 == 0) {
+  if (!(param_10 == 0)) {
+    func_02015ad0(param_1 + 0x28,param_10,0x20,param_4,param_4);
+  } else {
     *(undefined1 *)(param_1 + 0x28) = 0;
   }
-  else {
-    func_02015ad0(param_1 + 0x28,param_10,0x20,param_4,param_4);
-  }
-  if ((*(uint *)(param_1 + 0xc) & 1) == 0) {
-    *(undefined4 *)(param_1 + 0x20) = 0;
-    *(undefined4 *)(param_1 + 0x10) = 0;
-  }
-  else {
+  if (!((*(uint *)(param_1 + 0xc) & 1) == 0)) {
     uVar1 = func_020461e8(param_2);
     *(undefined4 *)(param_1 + 0x20) = uVar1;
     param_2 = func_020461a4(param_2);
     *(undefined4 *)(param_1 + 0x10) = param_2;
+  } else {
+    *(undefined4 *)(param_1 + 0x20) = 0;
+    *(undefined4 *)(param_1 + 0x10) = 0;
   }
   func_0204819c(param_2,param_3,param_4,param_5);
   func_02047028(param_2,0,0);

@@ -114,13 +114,12 @@ void func_0205fd70(uint *param_1,int param_2,uint *param_3,int param_4)
       else {
         if (uVar5 <= uVar9 >> 0x10) {
           if ((uVar5 & 1) != 0) {
-            if ((uVar5 & 2) == 0) {
-              uVar9 = uVar5 >> 2;
-              uVar5 = uVar9 + 1;
-            }
-            else {
+            if (!((uVar5 & 2) == 0)) {
               uVar5 = uVar5 >> 2;
               uVar9 = uVar5 + 1;
+            } else {
+              uVar9 = uVar5 >> 2;
+              uVar5 = uVar9 + 1;
             }
             if ((uVar11 & 0x20000000) == 0) {
               puVar6 = (uint *)(param_4 + uVar9 * 8);

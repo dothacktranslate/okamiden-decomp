@@ -111,14 +111,13 @@ undefined4 func_0205e318(uint *param_1)
 
   uVar7 = *param_1;
   if (((unsigned int)0x30415642) < uVar7) {
-    if (((unsigned int)0x0205e540) < uVar7) {
-      uVar1 = ((unsigned int)0x0205e540) + 0x80000;
-    }
-    else {
+    if (!(((unsigned int)0x0205e540) < uVar7)) {
       uVar1 = ((unsigned int)0x0205e544);
       if (((unsigned int)0x0205e540) <= uVar7) {
         return 1;
       }
+    } else {
+      uVar1 = ((unsigned int)0x0205e540) + 0x80000;
     }
     if (uVar7 != uVar1) {
       return 0;

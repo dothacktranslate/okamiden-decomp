@@ -102,12 +102,11 @@ void func_0205edd4(int param_1,uint param_2,int param_3,int param_4)
   }
   if (param_1 != 0) {
     iVar3 = param_1 + 4;
-    if ((iVar3 == 0) || (*(byte *)(param_1 + 5) <= param_2)) {
-      piVar2 = (int *)0x0;
-    }
-    else {
+    if (!((iVar3 == 0) || (*(byte *)(param_1 + 5) <= param_2))) {
       piVar2 = (int *)(*(ushort *)(iVar3 + (uint)*(ushort *)(param_1 + 10)) * param_2 +
                       iVar3 + (uint)*(ushort *)(param_1 + 10) + 4);
+    } else {
+      piVar2 = (int *)0x0;
     }
     if (piVar2 != (int *)0x0) {
       param_1 = param_1 + *piVar2;

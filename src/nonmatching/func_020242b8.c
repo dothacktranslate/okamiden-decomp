@@ -109,11 +109,10 @@ func_020242b8(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefine
   param_1[10] = param_5;
   param_1[9] = param_4;
   param_1[0xb] = param_6;
-  if (param_7 == 0) {
-    *(undefined1 *)(param_1 + 0xd) = 0;
-  }
-  else {
+  if (!(param_7 == 0)) {
     func_02015ad0(param_1 + 0xd,param_7,0x20);
+  } else {
+    *(undefined1 *)(param_1 + 0xd) = 0;
   }
   uVar1 = func_02034c68((*(unsigned int *)0x02024334),param_3,4,0,0);
   param_1[0xc] = uVar1;

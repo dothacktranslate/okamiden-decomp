@@ -226,7 +226,18 @@ LAB_0200c2b8:
       do {
         pcVar4 = param_1 + iVar7;
         bVar1 = param_1[iVar7];
-        if ((bVar1 == 0) || (bVar1 == 0x2f || bVar1 == 0x5c)) {
+        if (!((bVar1 == 0) || (bVar1 == 0x2f || bVar1 == 0x5c))) {
+          bVar8 = false;
+          if ((((bVar1 ^ 0x20) - 0xa1 < 0x3c) && (pcVar4[1] != 0x7f)) &&
+             (((int)pcVar4[1] - 0x40U & 0xff) < 0xbd)) {
+            bVar8 = true;
+          }
+          iVar5 = 2;
+          if (!bVar8) {
+            iVar5 = 1;
+          }
+          iVar7 = iVar7 + iVar5;
+        } else {
           if ((iVar7 != 0) &&
              ((iVar7 != 1 || (pcVar4 = (char *)(int)*param_1, pcVar4 != (char *)0x2e)))) {
             bVar8 = iVar7 == 2;
@@ -256,18 +267,6 @@ LAB_0200c2b8:
           if (bVar1 == 0) break;
           param_1 = param_1 + iVar7 + 1;
           iVar7 = 0;
-        }
-        else {
-          bVar8 = false;
-          if ((((bVar1 ^ 0x20) - 0xa1 < 0x3c) && (pcVar4[1] != 0x7f)) &&
-             (((int)pcVar4[1] - 0x40U & 0xff) < 0xbd)) {
-            bVar8 = true;
-          }
-          iVar5 = 2;
-          if (!bVar8) {
-            iVar5 = 1;
-          }
-          iVar7 = iVar7 + iVar5;
         }
       } while (local_28 == 0);
     }

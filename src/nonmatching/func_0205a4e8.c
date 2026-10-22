@@ -170,11 +170,11 @@ void func_0205a4e8(undefined4 param_1,int param_2,int param_3,int param_4,undefi
                  int param_11,int param_12)
 
 {
-  uint uVar1;
-  uint uVar2;
   uint uVar3;
   undefined1 *puVar4;
   int aiStack_38 [5];
+  uint uVar1;
+  uint uVar2;
 
   uVar1 = *(uint *)(param_2 + 8) & 0xffff;
   uVar2 = *(uint *)(param_2 + 4) & 0xffff;

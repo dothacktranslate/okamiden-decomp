@@ -62,19 +62,19 @@ undefined4
 func_02051c64(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  char cVar1;
-  char *pcVar2;
-  char *pcVar3;
-  undefined4 uVar4;
-  int iVar5;
-  int iVar6;
-  char *pcVar7;
-  uint local_1250;
-  int local_124c;
-  undefined1 auStack_1248 [18];
-  undefined1 auStack_1236 [514];
-  char *local_1034 [1027];
   undefined4 uStack_28;
+  char *local_1034 [1027];
+  undefined1 auStack_1236 [514];
+  undefined1 auStack_1248 [18];
+  int local_124c;
+  uint local_1250;
+  char *pcVar7;
+  int iVar6;
+  int iVar5;
+  undefined4 uVar4;
+  char *pcVar3;
+  char *pcVar2;
+  char cVar1;
 
   iVar6 = 1;
   uStack_28 = param_4;

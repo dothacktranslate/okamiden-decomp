@@ -160,7 +160,7 @@ undefined4 func_02006794(uint param_1,undefined4 *param_2,code *param_3,int para
   undefined4 uVar1;
 
   if (param_1 == *(ushort *)(param_2 + 1)) {
-    if (param_4 == 0) {
+    if (!param_4) {
       uVar1 = func_02008b6c(param_1);
     }
     else {
@@ -171,7 +171,7 @@ undefined4 func_02006794(uint param_1,undefined4 *param_2,code *param_3,int para
       (*param_3)();
     }
     *param_2 = 0;
-    if (param_4 == 0) {
+    if (!param_4) {
       func_02008b80(uVar1);
     }
     else {

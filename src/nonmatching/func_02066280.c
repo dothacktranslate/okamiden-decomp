@@ -102,10 +102,7 @@ func_02066280(undefined4 param_1,uint param_2,undefined4 param_3,undefined4 para
     return 5;
   }
   uVar2 = *puVar1;
-  if ((param_2 & 4) == 0) {
-    iVar3 = func_02065b30(uVar2 & 0xffffff);
-  }
-  else {
+  if (!((param_2 & 4) == 0)) {
     if ((uVar2 >> 0x18 & 1) == 0) {
       iVar3 = func_020664ec(uVar2 & 0xffffff,param_3,param_4);
     }
@@ -115,6 +112,8 @@ func_02066280(undefined4 param_1,uint param_2,undefined4 param_3,undefined4 para
     if (iVar3 == 0) {
       return 9;
     }
+  } else {
+    iVar3 = func_02065b30(uVar2 & 0xffffff);
   }
   if (param_5 != (int *)0x0) {
     *param_5 = iVar3;

@@ -123,12 +123,11 @@ undefined4 func_0204f0f4(undefined4 param_1,undefined4 param_2,undefined4 param_
   }
   func_02046ae8(param_1,0xffffffff,((unsigned int)0x0204f22c));
   iVar4 = func_02046444(param_1,0xffffffff);
-  if (iVar4 == 0) {
+  if (!(iVar4 == 0)) {
+    func_02046204(param_1,0xfffffffe);
+  } else {
     func_02046204(param_1,0xfffffffe);
     func_0204f064(param_1,uVar1);
-  }
-  else {
-    func_02046204(param_1,0xfffffffe);
   }
   func_02046414(param_1,0xffffffff);
   func_0204ef70(param_1);

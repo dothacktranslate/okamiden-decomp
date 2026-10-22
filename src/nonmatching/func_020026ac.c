@@ -92,17 +92,17 @@ void func_020026ac(int param_1,int param_2,int param_3,int param_4,int param_5,i
                  uint param_7,int *param_8)
 
 {
-  int iVar1;
-  longlong lVar2;
-  longlong lVar3;
-  longlong lVar4;
-  uint uVar5;
-  uint uVar6;
-  undefined4 *puVar7;
-  uint uVar8;
-  ulonglong uVar9;
-  ulonglong uVar10;
   ulonglong uVar11;
+  ulonglong uVar10;
+  ulonglong uVar9;
+  uint uVar8;
+  undefined4 *puVar7;
+  uint uVar6;
+  uint uVar5;
+  longlong lVar4;
+  longlong lVar3;
+  longlong lVar2;
+  int iVar1;
 
   func_02002998(param_4 - param_3);
   param_8[1] = 0;

@@ -102,11 +102,10 @@ void func_02058750(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint
   if (uVar1 != 0x100 && uVar1 != 0x300) {
     uVar1 = *param_4 & 0x30000300;
   }
-  if (uVar1 == 0x100) {
-    func_02056e3c(param_1,param_2);
-  }
-  else {
+  if (!(uVar1 == 0x100)) {
     func_02056ea8(param_1,param_2);
+  } else {
+    func_02056e3c(param_1,param_2);
   }
   if (*(int *)(((unsigned int)0x02058880) + 8) != 0) {
     *(int *)(((unsigned int)0x02058880) + 4) = *(unsigned char *)(((unsigned int)0x02058880) + 4) + (*(unsigned int *)0x02058884);

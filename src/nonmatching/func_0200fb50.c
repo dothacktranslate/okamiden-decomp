@@ -210,7 +210,7 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
   uVar5 = func_02008b6c();
   uVar10 = func_0200656c(((unsigned int)0x0200fe30));
   iVar11 = func_0200830c();
-  if (iVar11 == 0) {
+  if (!iVar11) {
     uVar12 = 0;
   }
   else {
@@ -231,13 +231,13 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
   iVar11 = func_02010078();
   iVar13 = func_0200fa30(&local_28,&local_2c);
   uVar9 = ((unsigned int)0x00051d23);
-  while (iVar13 != 0) {
+  while (iVar13) {
     func_02008be8(uVar9);
     iVar13 = func_0200fa30(&local_28,&local_2c);
   }
   iVar13 = func_0200f924(2,0);
   uVar9 = ((unsigned int)0x00051d23);
-  while (iVar13 != 0) {
+  while (iVar13) {
     func_02008be8(uVar9);
     iVar13 = func_0200f924(2,0);
   }
@@ -249,23 +249,23 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
   func_0200fabc();
   uVar16 = 0;
   *(undefined4 *)(((unsigned int)0x0200fe28) + 0xc) = 0;
-  if (local_2c != 0) {
+  if (local_2c) {
     uVar16 = 0x80;
   }
   uVar17 = 0x40;
-  if (local_28 == 0) {
+  if (!local_28) {
     uVar17 = 0;
   }
   func_02006510(0x40000);
   func_0200f704(param_1 | uVar17 | uVar16,param_2 | param_3);
   iVar13 = ((unsigned int)0x0200fe28);
   iVar14 = *(int *)(((unsigned int)0x0200fe28) + 0xc);
-  while (iVar14 == 0) {
+  while (!iVar14) {
     func_02008e98();
     iVar14 = *(int *)(iVar13 + 0xc);
   }
   iVar13 = func_0200830c();
-  if (iVar13 == 0) {
+  if (!iVar13) {
     uVar15 = 0;
   }
   else {
@@ -288,7 +288,7 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
     else {
       iVar11 = func_0200f874(1);
       uVar9 = ((unsigned int)0x00051d23);
-      while (iVar11 != 0) {
+      while (iVar11) {
         func_02008be8(uVar9);
         iVar11 = func_0200f874(1);
       }

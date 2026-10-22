@@ -98,22 +98,22 @@ extern int func_0x020ae848();
 undefined4 func_0202c1c0(int param_1)
 
 {
-  ushort uVar1;
-  short sVar2;
-  undefined4 *puVar3;
-  int iVar4;
-  int iVar5;
-  uint uVar6;
-  undefined4 uVar7;
-  int iVar8;
-  uint uVar9;
-  uint uVar10;
-  int iVar11;
-  int iVar12;
-  int iVar13;
-  uint uVar14;
-  uint uVar15;
   int iVar16;
+  uint uVar15;
+  uint uVar14;
+  int iVar13;
+  int iVar12;
+  int iVar11;
+  uint uVar10;
+  uint uVar9;
+  int iVar8;
+  undefined4 uVar7;
+  uint uVar6;
+  int iVar5;
+  int iVar4;
+  undefined4 *puVar3;
+  short sVar2;
+  ushort uVar1;
 
   iVar4 = func_02035064((*(unsigned int *)0x0202c430));
   if (iVar4 == 0) {

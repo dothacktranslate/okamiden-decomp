@@ -97,11 +97,10 @@ void func_0202ca4c(int param_1,int param_2)
   for (piVar1 = *(int **)(param_1 + 0x20); piVar1 != (int *)(param_1 + 0x20);
       piVar1 = (int *)*piVar1) {
   }
-  if (param_2 == 0) {
-    func_0203accc(0);
-  }
-  else {
+  if (!(param_2 == 0)) {
     func_0203ac7c(0);
+  } else {
+    func_0203accc(0);
   }
   *(char *)(param_1 + ((unsigned int)0x00000abc)) = (char)param_2;
   return;

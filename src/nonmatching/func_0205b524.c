@@ -112,12 +112,11 @@ undefined4 func_0205b524(int param_1,int param_2,uint param_3,uint param_4)
     iVar3 = *(ushort *)(iVar3 + (uint)*(ushort *)(param_2 + 0x42)) * param_4 +
             iVar3 + (uint)*(ushort *)(param_2 + 0x42) + 4;
   }
-  if ((iVar2 == 0) || (*(byte *)(iVar2 + 1) <= param_3)) {
-    iVar2 = 0;
-  }
-  else {
+  if (!((iVar2 == 0) || (*(byte *)(iVar2 + 1) <= param_3))) {
     iVar2 = *(ushort *)(iVar2 + (uint)*(ushort *)(iVar2 + 6)) * param_3 +
             iVar2 + (uint)*(ushort *)(iVar2 + 6) + 4;
+  } else {
+    iVar2 = 0;
   }
   if (iVar2 == 0) {
     return 0;

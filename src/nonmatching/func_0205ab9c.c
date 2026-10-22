@@ -94,17 +94,16 @@ uint func_0205ab9c(undefined4 *param_1,int param_2)
 
   iVar4 = (int)*(char *)(param_1 + 1);
   bVar1 = *(byte *)((int)param_1 + 5);
-  if (iVar4 < param_2) {
+  if (!(iVar4 < param_2)) {
+    uVar2 = (uint)(bVar1 >> (iVar4 - param_2 & 0xffU));
+    *(char *)(param_1 + 1) = (char)(iVar4 - param_2);
+  } else {
     puVar3 = (undefined1 *)*param_1;
     *param_1 = puVar3 + 1;
     *(undefined1 *)((int)param_1 + 5) = *puVar3;
     *(undefined1 *)(param_1 + 1) = 8;
     uVar2 = func_0205ab9c(param_1,param_2 - iVar4);
     uVar2 = uVar2 | (uint)bVar1 << (param_2 - iVar4 & 0xffU);
-  }
-  else {
-    uVar2 = (uint)(bVar1 >> (iVar4 - param_2 & 0xffU));
-    *(char *)(param_1 + 1) = (char)(iVar4 - param_2);
   }
   return uVar2 & 0xff >> (8U - param_2 & 0xff);
 }

@@ -94,7 +94,9 @@ undefined4 func_02023560(int param_1)
 {
   undefined4 uVar1;
 
-  if ((*(uint *)(param_1 + 0x18) & 2) == 0) {
+  if (!((*(uint *)(param_1 + 0x18) & 2) == 0)) {
+    func_0203664c(param_1 + 0x34);
+  } else {
     if ((*(uint *)(param_1 + 0x18) & 1) == 0) {
       uVar1 = 0x1000;
     }
@@ -116,9 +118,6 @@ undefined4 func_02023560(int param_1)
       uVar1 = 0x40000;
     }
     func_02044a24(param_1 + 0xb4,uVar1);
-  }
-  else {
-    func_0203664c(param_1 + 0x34);
   }
   *(undefined4 *)(param_1 + 0x20) = 0;
   return 1;

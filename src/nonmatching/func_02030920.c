@@ -136,8 +136,28 @@ ulonglong func_02030920(undefined4 param_1,undefined4 param_2,undefined4 param_3
   lVar8 = func_0x01ff9bc4(auStack_24,auStack_48);
   uVar4 = (uint)((ulonglong)lVar8 >> 0x20);
   uVar2 = (uint)lVar8;
-  if ((int)(-(uint)(uVar2 != 0) - uVar4) < 0 ==
-      (SBORROW4(0,uVar4) != SBORROW4(-uVar4,(uint)(uVar2 != 0)))) {
+  if (!((int)(-(uint)(uVar2 != 0) - uVar4) < 0 ==
+      (SBORROW4(0,uVar4) != SBORROW4(-uVar4,(uint)(uVar2 != 0))))) {
+    func_0x01ff9d2c(auStack_84,param_4,param_1);
+    func_0x01ff9c94(auStack_3c,auStack_84);
+    lVar9 = func_0x01ff9bc4(auStack_3c,auStack_48);
+    uVar5 = (uint)((ulonglong)lVar9 >> 0x20);
+    if ((lVar9 < 0) ||
+       (bVar7 = uVar2 < (uint)lVar9,
+       (int)((uVar4 - uVar5) - (uint)bVar7) < 0 !=
+       (SBORROW4(uVar4,uVar5) != SBORROW4(uVar4 - uVar5,(uint)bVar7)))) {
+      return (ulonglong)uVar5 << 0x20;
+    }
+    func_0x01ff9bf0(auStack_90,auStack_3c,auStack_24);
+    func_0x01ff9c94(auStack_54,auStack_90);
+    uVar10 = func_0x01ff9bc4(param_5,auStack_54);
+    if (((longlong)uVar10 < 0) ||
+       (iVar6 = (int)(lVar9 + uVar10 >> 0x20), bVar7 = uVar2 < (uint)(lVar9 + uVar10),
+       (int)((uVar4 - iVar6) - (uint)bVar7) < 0 !=
+       (SBORROW4(uVar4,iVar6) != SBORROW4(uVar4 - iVar6,(uint)bVar7)))) {
+      return uVar10 & 0xffffffff00000000;
+    }
+  } else {
     if (-1 < lVar8) {
       return (ulonglong)uVar4 << 0x20;
     }
@@ -163,27 +183,6 @@ ulonglong func_02030920(undefined4 param_1,undefined4 param_2,undefined4 param_3
        (int)((iVar6 - uVar4) - (uint)bVar7) < 0 !=
        (SBORROW4(iVar6,uVar4) != SBORROW4(iVar6 - uVar4,(uint)bVar7)))) {
       return (ulonglong)uVar5 << 0x20;
-    }
-  }
-  else {
-    func_0x01ff9d2c(auStack_84,param_4,param_1);
-    func_0x01ff9c94(auStack_3c,auStack_84);
-    lVar9 = func_0x01ff9bc4(auStack_3c,auStack_48);
-    uVar5 = (uint)((ulonglong)lVar9 >> 0x20);
-    if ((lVar9 < 0) ||
-       (bVar7 = uVar2 < (uint)lVar9,
-       (int)((uVar4 - uVar5) - (uint)bVar7) < 0 !=
-       (SBORROW4(uVar4,uVar5) != SBORROW4(uVar4 - uVar5,(uint)bVar7)))) {
-      return (ulonglong)uVar5 << 0x20;
-    }
-    func_0x01ff9bf0(auStack_90,auStack_3c,auStack_24);
-    func_0x01ff9c94(auStack_54,auStack_90);
-    uVar10 = func_0x01ff9bc4(param_5,auStack_54);
-    if (((longlong)uVar10 < 0) ||
-       (iVar6 = (int)(lVar9 + uVar10 >> 0x20), bVar7 = uVar2 < (uint)(lVar9 + uVar10),
-       (int)((uVar4 - iVar6) - (uint)bVar7) < 0 !=
-       (SBORROW4(uVar4,iVar6) != SBORROW4(uVar4 - iVar6,(uint)bVar7)))) {
-      return uVar10 & 0xffffffff00000000;
     }
   }
   lVar9 = func_0x01ff9bc4(auStack_30,auStack_54);

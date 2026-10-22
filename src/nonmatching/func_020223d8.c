@@ -291,7 +291,7 @@ int func_020223d8(undefined4 param_1,int param_2)
   *(undefined4 *)(((unsigned int)0x0202277c) + 0x14) = *(undefined4 *)(((unsigned int)0x0202276c) + 0xe14);
   do {
     iVar2 = func_02022f48((*(unsigned int *)0x0202275c) + 0xf0,1,0,uVar61 & 0xffff);
-    if (iVar2 != 0) {
+    if (iVar2) {
       func_02022ed0(auStack_64,1,0,uVar61 & 0xffff);
     }
     uVar61 = uVar61 + 1;
@@ -303,11 +303,11 @@ int func_020223d8(undefined4 param_1,int param_2)
   uVar61 = ((unsigned int)0x02022780);
   do {
     iVar2 = func_02022ffc((*(unsigned int *)0x0202275c) + 0xf0,uVar61);
-    if (iVar2 != 0) {
+    if (iVar2) {
       func_02022f84(auStack_64,uVar61);
     }
     iVar2 = func_02022ffc((*(unsigned int *)0x02022908) + 0xf0,uVar61 + 0x100 & 0xffff);
-    if (iVar2 != 0) {
+    if (iVar2) {
       func_02022f84(auStack_64,uVar61 + 0x100 & 0xffff);
     }
     uVar61 = uVar61 + 1 & 0xffff;
@@ -316,18 +316,18 @@ int func_020223d8(undefined4 param_1,int param_2)
   uVar61 = ((unsigned int)0x0202290c);
   do {
     iVar2 = func_02022ffc((*(unsigned int *)0x02022908) + 0xf0,uVar61);
-    if (iVar2 != 0) {
+    if (iVar2) {
       func_02022f84(auStack_64,uVar61);
     }
     iVar2 = func_02022ffc((*(unsigned int *)0x02022908) + 0xf0,uVar61 + 0x21 & 0xffff);
-    if (iVar2 != 0) {
+    if (iVar2) {
       func_02022f84(auStack_64,uVar61 + 0x21 & 0xffff);
     }
     uVar51 = ((unsigned int)0x02022910);
     uVar61 = uVar61 + 1 & 0xffff;
   } while (uVar61 <= uVar65);
   iVar2 = func_02022ffc((*(unsigned int *)0x02022908) + 0xf0,((unsigned int)0x02022910));
-  if (iVar2 != 0) {
+  if (iVar2) {
     func_02022f84(auStack_64,uVar51);
   }
   iVar2 = ((unsigned int)0x02022914);
@@ -335,13 +335,13 @@ int func_020223d8(undefined4 param_1,int param_2)
   do {
     uVar65 = uVar61 + iVar2 & 0xffff;
     iVar3 = func_02022ffc((*(unsigned int *)0x02022908) + 0xf0,uVar61);
-    if (iVar3 != 0) {
+    if (iVar3) {
       func_02022f84(auStack_64,uVar61);
       func_02022f84(auStack_64,uVar65);
     }
     uVar65 = uVar65 + 0x100 & 0xffff;
     iVar3 = func_02022ffc((*(unsigned int *)0x02022908) + 0xf0,uVar65);
-    if (iVar3 != 0) {
+    if (iVar3) {
       func_02022f84(auStack_64,uVar65);
     }
     uVar61 = uVar61 + 1 & 0xffff;
@@ -350,21 +350,21 @@ int func_020223d8(undefined4 param_1,int param_2)
   uVar61 = ((unsigned int)0x02022918);
   do {
     iVar2 = func_02022ffc((*(unsigned int *)0x02022908) + 0xf0,uVar61);
-    if (iVar2 != 0) {
+    if (iVar2) {
       func_02022f84(auStack_64,uVar61);
     }
     uVar61 = uVar61 + 1 & 0xffff;
   } while (uVar61 <= uVar65);
-  if (param_2 != 0) {
+  if (param_2) {
     func_02022ed0(auStack_64,0,0,5);
   }
   func_02022ed0(auStack_64,0,0,3);
   iVar2 = func_0202207c(param_1,((unsigned int)0x0202291c),((unsigned int)0x02022920),0);
-  if (iVar2 == 0) {
+  if (!iVar2) {
     iVar2 = func_02033028((*(unsigned int *)0x02022924),((unsigned int)0x02022928),((unsigned int)0x0202292c),0x10,1);
-    if (iVar2 == 0) {
+    if (!iVar2) {
       iVar2 = func_02021f80(param_1);
-      if (iVar2 == 0) {
+      if (!iVar2) {
         return 9;
       }
       return 4;

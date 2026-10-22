@@ -197,7 +197,7 @@ LAB_0202a372:
     goto LAB_0202a5a4;
   case 7:
     iVar7 = func_02037dd0((*(unsigned int *)0x0202a610));
-    if (iVar7 != 0) goto LAB_0202a482;
+    if (iVar7) goto LAB_0202a482;
     iVar7 = func_020465d8(param_1,3);
     iVar3 = func_020465d8(param_1,4);
     iVar6 = func_020465d8(param_1,5);
@@ -211,11 +211,11 @@ LAB_0202a372:
   case 8:
     iVar3 = *(int *)(iVar12 + 100);
     iVar7 = func_0x020dc488(iVar3,*(undefined2 *)(iVar3 + 0x3a),0x20);
-    if (iVar7 != 0) {
+    if (iVar7) {
       return 1;
     }
     iVar7 = func_0x020dc488(iVar3,*(undefined2 *)(iVar3 + 0x3c),0x20);
-    if (iVar7 != 0) {
+    if (iVar7) {
       return 1;
     }
     uVar2 = func_020465d8(param_1,3);
@@ -226,7 +226,7 @@ LAB_0202a372:
     goto LAB_0202a336;
   case 10:
     sVar1 = func_020465d8(param_1,3);
-    if (sVar1 == 0) {
+    if (!sVar1) {
       if (*(int *)(iVar12 + 0x980) != 0) {
         *(uint *)(iVar12 + 0x1c) = ((unsigned int)0x0202a614) & *(uint *)(iVar12 + 0x1c);
         *(undefined4 *)(iVar12 + 0x980) = 0;
@@ -276,7 +276,7 @@ LAB_0202a5a4:
   case 0xe:
     iVar7 = func_020465d8(param_1,3);
     iVar3 = *(int *)(iVar12 + 0x30);
-    if (iVar7 == 0) {
+    if (!iVar7) {
       uVar8 = ((unsigned int)0x0202a76c) & *(uint *)(iVar3 + 0x14);
     }
     else {
@@ -311,7 +311,7 @@ LAB_0202a482:
     break;
   case 0x14:
     iVar7 = func_020465d8(param_1,3);
-    if (iVar7 == 0) {
+    if (!iVar7) {
       puVar10 = (uint *)(*(unsigned int *)0x0202a778);
       uVar8 = ((unsigned int)0x0202a77c) & *puVar10;
     }
@@ -324,7 +324,7 @@ LAB_0202a482:
     goto LAB_0202a75c;
   case 0x15:
     iVar7 = func_020465d8(param_1,3);
-    if (iVar7 == 0) {
+    if (!iVar7) {
       iVar7 = *(int *)(*(int *)(*(int *)(*(unsigned int *)0x0202a770) + 0x5c) + 100);
       uVar8 = ((unsigned int)0x0202a780) & *(uint *)(iVar7 + 0x1c);
     }
@@ -337,7 +337,7 @@ LAB_0202a482:
     goto LAB_0202a75c;
   case 0x16:
     iVar7 = func_020465d8(param_1,3);
-    if (iVar7 == 0) {
+    if (!iVar7) {
       iVar7 = *(int *)(*(int *)(*(int *)(*(unsigned int *)0x0202a770) + 0x5c) + 100);
       uVar8 = ((unsigned int)0x0202a784) & *(uint *)(iVar7 + 0x1c);
     }

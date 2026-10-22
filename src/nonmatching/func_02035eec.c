@@ -111,17 +111,16 @@ undefined4 func_02035eec(int param_1,int param_2,int param_3,int param_4)
           if ((*(uint *)(iVar5 + param_1 * 0x20) & 1) == 0) {
             iVar6 = param_1 + iVar5 * 0x20;
             iVar1 = param_1 + (iVar5 + -1) * 0x20;
-            if (param_3 == 1) {
-              puVar4 = (undefined1 *)(iVar6 + 4);
-              puVar2 = (undefined1 *)(iVar1 + 4);
-            }
-            else {
+            if (!(param_3 == 1)) {
               func_02002ac4(iVar1 + 4,iVar6 + 4,auStack_30);
               func_02002c10(auStack_30,auStack_30);
               func_02002ac4(param_1 + (iVar5 + 1) * 0x20 + 4,iVar6 + 4,auStack_3c);
               func_02002c10(auStack_3c,auStack_3c);
               puVar2 = auStack_30;
               puVar4 = auStack_3c;
+            } else {
+              puVar4 = (undefined1 *)(iVar6 + 4);
+              puVar2 = (undefined1 *)(iVar1 + 4);
             }
             func_02002ac4(puVar2,puVar4,iVar6 + 0x10);
             func_02002c10(iVar6 + 0x10,iVar6 + 0x10);

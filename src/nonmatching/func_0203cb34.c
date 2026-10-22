@@ -97,11 +97,10 @@ undefined4 func_0203cb34(int param_1)
   ushort *puVar3;
   undefined1 auStack_20 [16];
 
-  if ((param_1 == 0) || (*(int *)(param_1 + 8) == 0)) {
-    puVar3 = (ushort *)0x0;
-  }
-  else {
+  if (!((param_1 == 0) || (*(int *)(param_1 + 8) == 0))) {
     puVar3 = (ushort *)(param_1 + *(int *)(param_1 + 8));
+  } else {
+    puVar3 = (ushort *)0x0;
   }
   if (puVar3 == (ushort *)0x0) {
     return 0xffffffff;

@@ -98,12 +98,11 @@ void func_02037fcc(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   piVar3 = *(int **)(param_1 + 4);
   uStack_28 = param_4;
   while( true ) {
-    if (piVar3 == (int *)(param_1 + 4)) {
-      bVar1 = true;
-    }
-    else {
+    if (!(piVar3 == (int *)(param_1 + 4))) {
       iVar2 = (**(code **)piVar3[-1])(piVar3 + -1,param_2);
       bVar1 = 0 < iVar2;
+    } else {
+      bVar1 = true;
     }
     if (bVar1) break;
     piVar3 = (int *)*piVar3;

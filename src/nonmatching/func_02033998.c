@@ -110,13 +110,12 @@ undefined4 func_02033998(int param_1,int param_2,int param_3)
       func_02002e50(0x800,param_3 + 0x18,param_3,param_3 + 0x18);
     }
     else if (iVar1 != 0) {
-      if (iVar1 == 2) {
-        iVar3 = param_3 + 0xc;
-        iVar1 = param_3;
-      }
-      else {
+      if (!(iVar1 == 2)) {
         iVar1 = param_3 + 0xc;
         iVar3 = param_3;
+      } else {
+        iVar3 = param_3 + 0xc;
+        iVar1 = param_3;
       }
       func_02002ac4(iVar1,iVar3,param_3 + 0x18);
       iVar1 = func_02002bb0(param_3 + 0x18);

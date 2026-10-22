@@ -95,12 +95,12 @@ undefined4
 func_0203179c(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint param_4,int param_5)
 
 {
-  int iVar1;
-  bool bVar2;
-  undefined8 uVar3;
-  undefined1 auStack_40 [12];
-  undefined1 auStack_34 [12];
   undefined1 auStack_28 [20];
+  undefined1 auStack_34 [12];
+  undefined1 auStack_40 [12];
+  undefined8 uVar3;
+  bool bVar2;
+  int iVar1;
 
   func_0x01ff9d2c(auStack_34,param_3,param_1);
   func_020300ac(auStack_28,auStack_34);

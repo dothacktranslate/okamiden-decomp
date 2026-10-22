@@ -115,19 +115,18 @@ ulonglong func_0201fbf4(uint param_1,uint param_2,uint param_3,uint param_4)
     else {
       if (uVar9 != ((unsigned int)0x02020134)) {
         iVar10 = param_2 << 0xc;
-        if (iVar10 == 0) {
-          iVar10 = LZCOUNT(param_1);
-          param_1 = param_1 << iVar10;
-          param_2 = param_1 >> 0xb;
-          param_1 = param_1 << 0x15;
-          uVar9 = (-0x14 - iVar10) * 2 | uVar5 >> 0x1f;
-        }
-        else {
+        if (!(iVar10 == 0)) {
           iVar12 = uVar9 - LZCOUNT(iVar10);
           uVar9 = iVar12 + 0x1f;
           param_2 = (uint)(iVar10 << LZCOUNT(iVar10)) >> 0xb | param_1 >> (uVar9 & 0xff);
           param_1 = param_1 << (0x20 - uVar9 & 0xff);
           uVar9 = iVar12 * 2 | uVar5 >> 0x1f;
+        } else {
+          iVar10 = LZCOUNT(param_1);
+          param_1 = param_1 << iVar10;
+          param_2 = param_1 >> 0xb;
+          param_1 = param_1 << 0x15;
+          uVar9 = (-0x14 - iVar10) * 2 | uVar5 >> 0x1f;
         }
         goto LAB_0201fc18;
       }

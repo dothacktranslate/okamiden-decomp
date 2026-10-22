@@ -109,13 +109,12 @@ void func_0203b7a4(uint *param_1,int param_2,uint *param_3,int param_4)
       else {
         if (uVar4 <= uVar1 >> 0x10) {
           if ((uVar4 & 1) != 0) {
-            if ((uVar4 & 2) == 0) {
-              uVar1 = uVar4 >> 2;
-              uVar4 = uVar1 + 1;
-            }
-            else {
+            if (!((uVar4 & 2) == 0)) {
               uVar4 = uVar4 >> 2;
               uVar1 = uVar4 + 1;
+            } else {
+              uVar1 = uVar4 >> 2;
+              uVar4 = uVar1 + 1;
             }
             if ((uVar3 & 0x20000000) != 0) {
               *param_1 = *(short *)(param_4 + uVar1 * 2) * 3 + (int)*(short *)(uVar4 + param_4 * 2)

@@ -121,11 +121,10 @@ func_02067244(undefined4 param_1,undefined4 *param_2,undefined4 param_3,undefine
     lVar3 = (ulonglong)param_6 * (ulonglong)*(ushort *)(iVar4 + 0xcc);
     iVar5 = func_0201e96c((int)lVar3,(int)((ulonglong)lVar3 >> 0x20),1000,0);
     *(int *)(iVar4 + 0x168) = iVar5;
-    if ((iVar5 == 0) || (*(char *)(iVar4 + 200) != '\x02')) {
-      *(uint *)(iVar4 + 0x118) = *(uint *)(iVar4 + 0x118) & 0xffffffef;
-    }
-    else {
+    if (!((iVar5 == 0) || (*(char *)(iVar4 + 200) != '\x02'))) {
       *(uint *)(iVar4 + 0x118) = *(uint *)(iVar4 + 0x118) | 0x10;
+    } else {
+      *(uint *)(iVar4 + 0x118) = *(uint *)(iVar4 + 0x118) & 0xffffffef;
     }
     *(undefined4 *)(iVar4 + 0x11c) = 4;
     *(uint *)(iVar4 + 0x118) = *(uint *)(iVar4 + 0x118) & 0xffffffdd;

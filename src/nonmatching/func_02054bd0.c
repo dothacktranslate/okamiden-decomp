@@ -107,8 +107,13 @@ void func_02054bd0(int param_1,int param_2,int param_3,undefined4 param_4)
   do {
     iVar3 = 2;
     piVar2 = (int *)(*(int *)(param_1 + 0xc) + param_3 * 8);
-    if ((piVar2[-1] - 3U < 2) &&
-       ((piVar2[1] == 4 || (iVar6 = func_02054180(param_1,piVar2), iVar6 != 0)))) {
+    if (!((piVar2[-1] - 3U < 2) &&
+       ((piVar2[1] == 4 || (iVar6 = func_02054180(param_1,piVar2), iVar6 != 0))))) {
+      iVar6 = func_020546b0(param_1,piVar2 + -2,piVar2,piVar2 + -2,0xf,param_3,param_4);
+      if (iVar6 == 0) {
+        func_0204b7fc(param_1,piVar2 + -2,piVar2);
+      }
+    } else {
       uVar1 = ((unsigned int)0x02054d80);
       iVar6 = *(int *)(*piVar2 + 0xc);
       if (iVar6 == 0) {
@@ -138,12 +143,6 @@ void func_02054bd0(int param_1,int param_2,int param_3,undefined4 param_4)
         iVar6 = func_02050028(param_1,iVar5,iVar6);
         piVar2[iVar3 * -2 + 2] = iVar6;
         (piVar2 + iVar3 * -2 + 2)[1] = 4;
-      }
-    }
-    else {
-      iVar6 = func_020546b0(param_1,piVar2 + -2,piVar2,piVar2 + -2,0xf,param_3,param_4);
-      if (iVar6 == 0) {
-        func_0204b7fc(param_1,piVar2 + -2,piVar2);
       }
     }
     param_2 = param_2 - (iVar3 + -1);

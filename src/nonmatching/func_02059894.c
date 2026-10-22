@@ -90,21 +90,21 @@ void func_02059894(undefined2 *param_1,int param_2,int param_3,short param_4,sho
                  int param_6,int param_7,uint param_8,int param_9)
 
 {
-  uint iVar1;
-  uint iVar2;
-  int iVar3;
-  uint uVar4;
-  int iVar5;
-  int iVar6;
-  uint uVar7;
-  uint uVar8;
-  uint uVar9;
-  int iVar10;
-  undefined2 *puVar11;
-  bool bVar12;
-  bool bVar13;
-  bool bVar14;
   ushort local_28;
+  bool bVar14;
+  bool bVar13;
+  bool bVar12;
+  undefined2 *puVar11;
+  int iVar10;
+  uint uVar9;
+  uint uVar8;
+  uint uVar7;
+  int iVar6;
+  int iVar5;
+  uint uVar4;
+  int iVar3;
+  uint iVar2;
+  uint iVar1;
 
   local_28 = 0;
   if (param_9 == 0) {

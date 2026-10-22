@@ -171,15 +171,14 @@ void func_020056f0(int param_1)
   puVar1 = ((unsigned int)0x02005780);
   (*(unsigned short *)0x02005780) = ~(ushort)param_1 & ((*(unsigned short *)0x02005780) | ((unsigned int *)0x02005780)[8]);
   puVar1[8] = (ushort)param_1;
-  if (param_1 == 0) {
-    _REG_A_DISPCNT = _REG_A_DISPCNT & 0x7fffffff;
-  }
-  else {
+  if (!(param_1 == 0)) {
     puVar2 = ((unsigned int)0x04000245);
     if ((param_1 == 0x20) || (puVar2 = ((unsigned int)0x02005788), param_1 == 0x40)) {
       _REG_A_DISPCNT = _REG_A_DISPCNT | 0x80000000;
       *puVar2 = 0x85;
     }
+  } else {
+    _REG_A_DISPCNT = _REG_A_DISPCNT & 0x7fffffff;
   }
   func_0200522c((*(unsigned short *)0x02005780));
   return;

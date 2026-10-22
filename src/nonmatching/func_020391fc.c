@@ -136,13 +136,12 @@ undefined4 func_020391fc(int param_1,int param_2,undefined4 param_3)
     case 0xf:
       iVar1 = 4;
     }
-    if (param_2 == 0) {
-      func_02062edc(iVar1,1);
-    }
-    else {
+    if (!(param_2 == 0)) {
       func_02063ba0(iVar1 << 0x11,param_3,*(undefined4 *)(param_1 + 0x28),
                    *(undefined4 *)(param_1 + 0x2c),1);
       *(uint *)(param_1 + 8) = *(uint *)(param_1 + 8) | 0x100;
+    } else {
+      func_02062edc(iVar1,1);
     }
     uVar3 = func_020392d0(param_1,iVar2);
     if (param_2 == 0) {

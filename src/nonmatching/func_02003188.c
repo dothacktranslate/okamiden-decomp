@@ -93,13 +93,12 @@ uint func_02003188(int param_1)
   uint uVar4;
   int in_r12;
 
-  if (param_1 < 0) {
-    uVar3 = 0x400;
-    uVar4 = 0x800;
-  }
-  else {
+  if (!(param_1 < 0)) {
     uVar3 = 0;
     uVar4 = 0x400;
+  } else {
+    uVar3 = 0x400;
+    uVar4 = 0x800;
   }
   if (uVar3 <= uVar4) {
     do {

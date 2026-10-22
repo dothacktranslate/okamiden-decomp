@@ -96,11 +96,11 @@ extern int func_02009670();
 void func_02009584(int param_1,int param_2,int param_3,code *param_4,int param_5)
 
 {
-  int *piVar1;
-  uint *puVar2;
-  undefined4 uVar3;
-  undefined4 uVar4;
   int iVar5;
+  undefined4 uVar4;
+  undefined4 uVar3;
+  uint *puVar2;
+  int *piVar1;
 
   puVar2 = ((unsigned int)0x04000600);
   piVar1 = ((unsigned int)0x02009664);

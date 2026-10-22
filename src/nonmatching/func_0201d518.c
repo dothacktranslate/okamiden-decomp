@@ -87,16 +87,16 @@ extern int LZCOUNT();
 longlong func_0201d518(uint param_1,uint param_2,uint param_3,uint param_4)
 
 {
-  byte bVar1;
-  uint uVar2;
-  uint uVar3;
-  uint uVar4;
-  uint uVar5;
-  uint uVar6;
-  uint uVar7;
-  uint uVar8;
-  int iVar9;
   bool bVar10;
+  int iVar9;
+  uint uVar8;
+  uint uVar7;
+  uint uVar6;
+  uint uVar5;
+  uint uVar4;
+  uint uVar3;
+  uint uVar2;
+  byte bVar1;
 
   if ((int)(param_2 ^ param_4) < 0) {
     param_4 = param_4 ^ 0x80000000;

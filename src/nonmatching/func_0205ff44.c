@@ -112,14 +112,13 @@ void func_0205ff44(int *param_1,uint param_2,uint *param_3,int param_4)
       }
     }
     if ((*(uint *)(param_4 + 8) & 2) == 0) {
-      if ((uVar3 & 0x20000000) == 0) {
+      if (!((uVar3 & 0x20000000) == 0)) {
+        iVar5 = (int)*(short *)(iVar9 + (uVar10 * 4 + 2));
+        iVar9 = (int)*(short *)(iVar9 + uVar10 * 4);
+      } else {
         piVar2 = (int *)(iVar9 + uVar10 * 8);
         iVar9 = *piVar2;
         iVar5 = piVar2[1];
-      }
-      else {
-        iVar5 = (int)*(short *)(iVar9 + (uVar10 * 4 + 2));
-        iVar9 = (int)*(short *)(iVar9 + uVar10 * 4);
       }
       *param_1 = iVar9;
       param_1[1] = iVar5;

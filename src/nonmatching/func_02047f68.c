@@ -90,10 +90,10 @@ extern int func_020472dc();
 void func_02047f68(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  uint uVar1;
-  uint uVar2;
-  int iVar4;
   undefined4 uVar3;
+  int iVar4;
+  uint uVar2;
+  uint uVar1;
 
   if (*(int *)(param_1 + 4) < 2) {
     return;

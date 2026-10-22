@@ -190,12 +190,14 @@ func_02033e6c(undefined4 *param_1,int param_2,undefined4 *param_3,undefined4 *pa
     func_02002e50(param_1[2],auStack_110,param_1[1],auStack_14c);
   }
   local_150 = -1;
-  if (param_5 == '\0') {
+  if (!(param_5 == '\0')) {
     iVar3 = 0;
     iVar2 = ((unsigned int)0x7fffffff);
     do {
       iVar1 = func_02033e40(auStack_134,auStack_128,auStack_104 + iVar3 * 0x3c,&local_11c);
-      if ((iVar1 != 0) && (iVar1 = func_02002ea8(auStack_134,&local_11c), iVar1 < iVar2)) {
+      if (((iVar1 != 0) ||
+          (iVar1 = func_02033e40(auStack_140,auStack_14c,auStack_104 + iVar3 * 0x3c,&local_11c),
+          iVar1 != 0)) && (iVar1 = func_02002ea8(auStack_134,&local_11c), iVar1 < iVar2)) {
         *param_3 = local_11c;
         param_3[1] = local_118;
         param_3[2] = local_114;
@@ -204,15 +206,12 @@ func_02033e6c(undefined4 *param_1,int param_2,undefined4 *param_3,undefined4 *pa
       }
       iVar3 = iVar3 + 1;
     } while (iVar3 < 4);
-  }
-  else {
+  } else {
     iVar3 = 0;
     iVar2 = ((unsigned int)0x7fffffff);
     do {
       iVar1 = func_02033e40(auStack_134,auStack_128,auStack_104 + iVar3 * 0x3c,&local_11c);
-      if (((iVar1 != 0) ||
-          (iVar1 = func_02033e40(auStack_140,auStack_14c,auStack_104 + iVar3 * 0x3c,&local_11c),
-          iVar1 != 0)) && (iVar1 = func_02002ea8(auStack_134,&local_11c), iVar1 < iVar2)) {
+      if ((iVar1 != 0) && (iVar1 = func_02002ea8(auStack_134,&local_11c), iVar1 < iVar2)) {
         *param_3 = local_11c;
         param_3[1] = local_118;
         param_3[2] = local_114;

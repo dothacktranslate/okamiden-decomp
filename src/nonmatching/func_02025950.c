@@ -132,14 +132,13 @@ undefined4 func_02025950(undefined4 param_1,undefined4 param_2,undefined4 param_
   case 0:
   case 3:
   case 6:
-    if (uVar6 < 6) {
+    if (!(uVar6 < 6)) {
+      uVar2 = func_020465d8(param_1,3);
+      func_02022f84((*(unsigned int *)0x02025b20) + 0xf0,uVar2);
+    } else {
       uVar2 = func_020465d8(param_1,3);
       uVar7 = func_020465d8(param_1,4);
       func_02022ed0(iVar8 + 0xf0,uVar6,uVar2,uVar7);
-    }
-    else {
-      uVar2 = func_020465d8(param_1,3);
-      func_02022f84((*(unsigned int *)0x02025b20) + 0xf0,uVar2);
     }
     goto LAB_02025a00;
   case 1:

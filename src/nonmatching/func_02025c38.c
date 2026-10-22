@@ -154,11 +154,10 @@ undefined4 func_02025c38(undefined4 param_1)
     if (iVar5 == 0) {
       iVar5 = *(int *)(iVar10 + iVar7 + 199);
     }
-    if (*(int *)(iVar10 + ((unsigned int)0x02025f3c)) < iVar5) {
-      iVar4 = 1;
-    }
-    else {
+    if (!(*(int *)(iVar10 + ((unsigned int)0x02025f3c)) < iVar5)) {
       iVar4 = -1;
+    } else {
+      iVar4 = 1;
     }
     goto LAB_02025ff0;
   case 2:

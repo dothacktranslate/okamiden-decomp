@@ -191,11 +191,11 @@ LAB_02068250:
     }
     local_40 = uVar16;
     if ((int)(*(uint *)(uVar6 + 0x118) << 0x1b) < 0) {
-      if (!(uVar16 == 0)) {
+      if (!(!(uVar16 == 0))) {
+        *(uint *)(uVar6 + 0x118) = *(uint *)(uVar6 + 0x118) & 0xffffffef;
+      } else {
         local_40 = 0;
         local_48 = uVar16;
-      } else {
-        *(uint *)(uVar6 + 0x118) = *(uint *)(uVar6 + 0x118) & 0xffffffef;
       }
     }
     bVar20 = false;

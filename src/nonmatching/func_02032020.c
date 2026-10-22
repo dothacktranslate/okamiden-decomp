@@ -93,13 +93,13 @@ extern int func_020307f8();
 void func_02032020(int param_1)
 
 {
-  undefined4 uVar1;
-  undefined4 uVar2;
-  undefined1 auStack_150 [64];
-  undefined1 auStack_d0 [64];
-  undefined1 auStack_110 [64];
-  undefined1 auStack_90 [64];
   undefined1 auStack_50 [64];
+  undefined1 auStack_90 [64];
+  undefined1 auStack_110 [64];
+  undefined1 auStack_d0 [64];
+  undefined1 auStack_150 [64];
+  undefined4 uVar2;
+  undefined4 uVar1;
 
   uVar1 = func_02030560(auStack_50,param_1 + 0x30);
   uVar2 = func_020306b8(auStack_90,param_1 + 0x3c);

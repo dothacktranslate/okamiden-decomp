@@ -92,17 +92,17 @@ extern int func_0200e774();
 int func_0200dd74(int param_1,int param_2,int param_3)
 
 {
-  int iVar1;
-  int iVar2;
-  int local_b8;
-  int local_b4;
-  int local_b0;
   int local_ac;
   undefined1 auStack_a8 [4];
   int local_a4;
   int local_9c;
   undefined4 local_98;
   undefined1 auStack_94 [128];
+  int iVar1;
+  int iVar2;
+  int local_b8;
+  int local_b4;
+  int local_b0;
 
   *(undefined1 **)(param_2 + 0x30) = auStack_a8;
   *(undefined4 *)(param_2 + 0x34) = 0;

@@ -91,11 +91,11 @@ extern int func_020471a4();
 void func_02045e34(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  bool bVar1;
-  int iVar2;
-  undefined4 *puVar3;
-  undefined4 *local_2c [2];
   undefined4 uStack_24;
+  undefined4 *local_2c [2];
+  undefined4 *puVar3;
+  int iVar2;
+  bool bVar1;
 
   bVar1 = false;
   puVar3 = *(undefined4 **)(param_1 + 0x10);

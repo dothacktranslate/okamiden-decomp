@@ -92,20 +92,20 @@ extern int func_02015ad0();
 undefined4 func_0200c040(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  int iVar1;
-  undefined4 uVar2;
-  int iVar3;
-  undefined4 uVar4;
-  undefined4 local_180;
-  undefined4 local_17c;
-  undefined1 *local_178;
-  undefined2 local_174;
-  undefined4 local_170;
-  undefined1 auStack_16c [8];
-  int local_164;
-  undefined4 *local_15c;
-  undefined1 auStack_124 [260];
   undefined4 uStack_20;
+  undefined1 auStack_124 [260];
+  undefined4 *local_15c;
+  int local_164;
+  undefined1 auStack_16c [8];
+  undefined4 local_170;
+  undefined2 local_174;
+  undefined1 *local_178;
+  undefined4 local_17c;
+  undefined4 local_180;
+  undefined4 uVar4;
+  int iVar3;
+  undefined4 uVar2;
+  int iVar1;
 
   uVar4 = 0;
   local_180 = 0;

@@ -97,18 +97,7 @@ int func_02058b8c(uint param_1,uint param_2,uint param_3,uint param_4,uint param
   do {
     uVar5 = param_4 & -1 << (param_6 & 0xff);
     uVar1 = param_3 & -1 << (param_5 & 0xff);
-    if (param_2 < uVar5) {
-      if (param_1 < uVar1) {
-        return uVar1 * (param_2 & -1 << (param_6 & 0xff)) + iVar3 +
-               ((param_1 & -1 << (param_5 & 0xff)) << (param_6 & 0xff)) +
-               ((param_2 & ~(-1 << (param_6 & 0xff))) << (param_5 & 0xff)) +
-               (param_1 & ~(-1 << (param_5 & 0xff)));
-      }
-      iVar3 = uVar1 * uVar5 + iVar3;
-      param_1 = param_1 - uVar1;
-      uVar1 = param_3 - uVar1;
-    }
-    else {
+    if (!(param_2 < uVar5)) {
       iVar3 = param_3 * uVar5 + iVar3;
       if (param_1 < uVar1) {
         param_2 = param_2 - uVar5;
@@ -121,6 +110,16 @@ int func_02058b8c(uint param_1,uint param_2,uint param_3,uint param_4,uint param
         uVar1 = param_3 - uVar1;
         uVar5 = param_4 - uVar5;
       }
+    } else {
+      if (param_1 < uVar1) {
+        return uVar1 * (param_2 & -1 << (param_6 & 0xff)) + iVar3 +
+               ((param_1 & -1 << (param_5 & 0xff)) << (param_6 & 0xff)) +
+               ((param_2 & ~(-1 << (param_6 & 0xff))) << (param_5 & 0xff)) +
+               (param_1 & ~(-1 << (param_5 & 0xff)));
+      }
+      iVar3 = uVar1 * uVar5 + iVar3;
+      param_1 = param_1 - uVar1;
+      uVar1 = param_3 - uVar1;
     }
     if ((int)uVar1 < 8) {
       iVar4 = 0x1f - LZCOUNT(uVar1);

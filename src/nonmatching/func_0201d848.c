@@ -161,11 +161,10 @@ longlong func_0201d848(uint param_1,uint param_2,uint param_3,uint param_4)
       uVar4 = param_4 << 0xb | 0x80000000 | param_3 >> 0x15;
       if ((uVar5 & 0x7ff) == 0) {
 LAB_0201dac4:
-        if (uVar5 < 0x800) {
-          uVar7 = 0;
-        }
-        else {
+        if (!(uVar5 < 0x800)) {
           uVar7 = 0x80000000;
+        } else {
+          uVar7 = 0;
         }
         uVar9 = uVar9 & 0xfffff7ff;
         if ((uVar5 & 0xfffff7ff) != 0) {

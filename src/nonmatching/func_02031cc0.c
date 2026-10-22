@@ -160,14 +160,14 @@ func_02031cc0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 *para
              undefined4 param_5,undefined4 param_6)
 
 {
-  undefined2 uVar1;
-  int iVar2;
-  undefined4 local_3c;
-  undefined4 local_38;
-  undefined4 local_34;
-  undefined1 auStack_30 [12];
-  undefined1 auStack_24 [12];
   undefined4 *puStack_18;
+  undefined1 auStack_24 [12];
+  undefined1 auStack_30 [12];
+  undefined4 local_34;
+  undefined4 local_38;
+  undefined4 local_3c;
+  int iVar2;
+  undefined2 uVar1;
 
   puStack_18 = param_4;
   func_02031524();

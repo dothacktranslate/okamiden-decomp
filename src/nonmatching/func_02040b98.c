@@ -164,19 +164,7 @@ void func_02040b98(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     func_0205e0c0(0x15,0,0);
     func_0205e0c0(0x1c,param_1 + 0x24,3);
     func_0205e0c0(0x18,((unsigned int)0x02040d58),0x10);
-    if (*(int *)(param_1 + 0x38) == 0) {
-      local_24 = 0;
-      local_28 = 0;
-      do {
-        func_0205e0c0(0x11,0,0);
-        func_0205e0c0(0x1c,local_78 + iVar2 + 8 * 3,3);
-        func_0205e0c0(0x24,&local_28,1);
-        local_8c = 1;
-        func_0205e0c0(0x12,&local_8c,1);
-        iVar2 = iVar2 + 1;
-      } while (iVar2 < 4);
-    }
-    else {
+    if (!(*(int *)(param_1 + 0x38) == 0)) {
       local_20 = 0;
       local_24 = 0;
       do {
@@ -187,6 +175,17 @@ void func_02040b98(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
         func_0205e0c0(((unsigned int)0x00002422),&local_28,3);
         local_88 = 1;
         func_0205e0c0(0x12,&local_88,1);
+        iVar2 = iVar2 + 1;
+      } while (iVar2 < 4);
+    } else {
+      local_24 = 0;
+      local_28 = 0;
+      do {
+        func_0205e0c0(0x11,0,0);
+        func_0205e0c0(0x1c,local_78 + iVar2 + 8 * 3,3);
+        func_0205e0c0(0x24,&local_28,1);
+        local_8c = 1;
+        func_0205e0c0(0x12,&local_8c,1);
         iVar2 = iVar2 + 1;
       } while (iVar2 < 4);
     }

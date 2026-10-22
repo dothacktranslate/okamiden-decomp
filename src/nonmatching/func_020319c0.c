@@ -99,15 +99,15 @@ extern int func_0x01ff9dcc();
 void func_020319c0(int param_1,int param_2,undefined4 param_3,undefined4 param_4,undefined4 param_5)
 
 {
-  undefined4 uVar1;
-  undefined4 uVar2;
-  int iVar3;
-  int iVar4;
-  int iVar5;
-  bool bVar6;
-  undefined8 uVar7;
-  undefined1 auStack_24 [12];
   undefined4 uStack_18;
+  undefined1 auStack_24 [12];
+  undefined8 uVar7;
+  bool bVar6;
+  int iVar5;
+  int iVar4;
+  int iVar3;
+  undefined4 uVar2;
+  undefined4 uVar1;
 
   uStack_18 = param_4;
   func_020314f0();

@@ -138,13 +138,12 @@ undefined4 * func_0203d5e4(int param_1,int param_2,undefined4 param_3,uint param
       puVar3[10] = iVar2;
       puVar3[0xb] = param_2;
       puVar3[3] = *(undefined4 *)(iVar5 + 0x2c);
-      if (uVar7 == 0) {
-        puVar3[6] = puVar3 + 0xd;
-        func_02009884(iVar8,puVar3 + 0xd,iVar2);
-      }
-      else {
+      if (!(uVar7 == 0)) {
         puVar3[0xc] = puVar3[0xc] | uVar7;
         puVar3[6] = iVar8;
+      } else {
+        puVar3[6] = puVar3 + 0xd;
+        func_02009884(iVar8,puVar3 + 0xd,iVar2);
       }
       if ((param_4 & 2) != 0) {
         uVar6 = func_0203d9a0(param_1,iVar2,((unsigned int)0x0203d76c));

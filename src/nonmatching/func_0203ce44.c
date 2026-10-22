@@ -189,11 +189,7 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
       *(undefined4 *)(puVar1[0x2a] + iVar4 + 0x44) = 0;
     } while (iVar6 < (int)(uint)*(byte *)(param_2 + 0x17));
   }
-  if (param_3 == 0) {
-    puVar1[0x2b] = 0;
-    puVar1[0x2c] = 0;
-  }
-  else {
+  if (!(param_3 == 0)) {
     puVar1[0x2c] = param_3;
     iVar6 = 0;
     if (0 < param_3) {
@@ -205,6 +201,9 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
         *(undefined4 *)(puVar1[0x2b] + iVar5 + 8) = 0;
       } while (iVar6 < param_3);
     }
+  } else {
+    puVar1[0x2b] = 0;
+    puVar1[0x2c] = 0;
   }
   iVar7 = *(int *)(param_2 + 0x38);
   iVar8 = iVar7 >> 0x1f;

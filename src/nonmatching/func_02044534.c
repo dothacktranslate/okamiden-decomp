@@ -40,12 +40,7 @@ undefined4 * func_02044534(undefined4 *param_1,int param_2,undefined4 param_3,un
   *(undefined2 *)((int)param_1 + 0x12) = *(undefined2 *)(param_2 + 6);
   *(int *)(param_2 + 0xc) = *(int *)(param_2 + 0xc) >> 3;
   *(int *)(param_2 + 0x10) = *(int *)(param_2 + 0x10) >> 3;
-  if (*(ushort *)((int)param_1 + 0x12) < 4) {
-    func_020441ac();
-    *(undefined2 *)(param_1 + 0x10) = 0;
-    *(undefined2 *)((int)param_1 + 0x42) = 0;
-  }
-  else {
+  if (!(*(ushort *)((int)param_1 + 0x12) < 4)) {
     if (*(ushort *)((int)param_1 + 0x12) == 4) {
       uVar1 = func_02044264();
     }
@@ -62,6 +57,10 @@ undefined4 * func_02044534(undefined4 *param_1,int param_2,undefined4 param_3,un
     if (iVar2 != 0) {
       func_02044414(param_1,param_2);
     }
+  } else {
+    func_020441ac();
+    *(undefined2 *)(param_1 + 0x10) = 0;
+    *(undefined2 *)((int)param_1 + 0x42) = 0;
   }
   uVar3 = *(undefined4 *)(param_2 + 0x20);
   uVar1 = *(undefined4 *)(param_2 + 0x1c);

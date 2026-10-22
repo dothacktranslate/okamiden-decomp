@@ -171,11 +171,10 @@ undefined4 func_02029c94(undefined4 param_1)
     }
     if (uVar6 != 0) {
       uVar7 = *(uint *)(iVar10 + 0x14);
-      if (iVar5 == 0) {
-        uVar6 = ~uVar6 & uVar7;
-      }
-      else {
+      if (!(iVar5 == 0)) {
         uVar6 = uVar6 | uVar7;
+      } else {
+        uVar6 = ~uVar6 & uVar7;
       }
       *(uint *)(iVar10 + 0x14) = uVar6;
     }

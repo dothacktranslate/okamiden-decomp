@@ -91,15 +91,15 @@ extern int func_0205ef10();
 void func_0204128c(int param_1,int param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  uint uVar1;
-  undefined4 uVar2;
-  uint *puVar3;
-  undefined4 *puVar4;
-  undefined4 local_28;
-  undefined4 local_24;
-  undefined4 local_20;
-  undefined4 local_1c;
   undefined4 uStack_18;
+  undefined4 local_1c;
+  undefined4 local_20;
+  undefined4 local_24;
+  undefined4 local_28;
+  undefined4 *puVar4;
+  uint *puVar3;
+  undefined4 uVar2;
+  uint uVar1;
 
   puVar3 = (uint *)0x0;
   local_1c = 0;

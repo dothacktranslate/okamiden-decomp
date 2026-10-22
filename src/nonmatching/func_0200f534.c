@@ -96,11 +96,10 @@ void func_0200f534(undefined4 param_1,uint param_2,int param_3)
   uVar2 = param_2 & 0xff;
   uVar1 = (param_2 & 0x7f00) >> 8;
   if (param_3 != 0) {
-    if (uVar1 == 0x61 || uVar1 == 0x62) {
-      uVar3 = 1;
-    }
-    else {
+    if (!(uVar1 == 0x61 || uVar1 == 0x62)) {
       uVar3 = 2;
+    } else {
+      uVar3 = 1;
     }
     func_0200f43c(uVar3);
     return;

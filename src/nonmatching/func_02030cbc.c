@@ -99,22 +99,22 @@ extern int func_0x01ff9d74();
 undefined4 func_02030cbc(undefined4 *param_1,undefined4 param_2,undefined4 param_3,int param_4)
 
 {
-  longlong lVar1;
-  int *piVar2;
-  int iVar3;
-  int iVar4;
-  undefined4 *puVar5;
-  undefined8 uVar6;
-  longlong lVar7;
-  undefined1 auStack_80 [12];
-  undefined1 auStack_74 [12];
-  undefined1 auStack_68 [12];
-  undefined1 auStack_5c [12];
-  undefined1 auStack_50 [12];
-  undefined1 auStack_44 [12];
-  undefined1 auStack_38 [12];
-  undefined1 auStack_2c [12];
   undefined1 auStack_20 [12];
+  undefined1 auStack_2c [12];
+  undefined1 auStack_38 [12];
+  undefined1 auStack_44 [12];
+  undefined1 auStack_50 [12];
+  undefined1 auStack_5c [12];
+  undefined1 auStack_68 [12];
+  undefined1 auStack_74 [12];
+  undefined1 auStack_80 [12];
+  longlong lVar7;
+  undefined8 uVar6;
+  undefined4 *puVar5;
+  int iVar4;
+  int iVar3;
+  int *piVar2;
+  longlong lVar1;
 
   puVar5 = (undefined4 *)param_1[1];
   func_0x01ff99c8(auStack_20,*puVar5,puVar5[1],puVar5[2]);

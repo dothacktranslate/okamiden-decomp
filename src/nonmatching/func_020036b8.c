@@ -90,10 +90,10 @@ extern int func_02003720();
 void func_020036b8(void)
 
 {
-  int in_r3;
-  undefined1 *in_stack_00000000;
-  undefined1 auStack_40 [48];
   int iStack_10;
+  undefined1 auStack_40 [48];
+  undefined1 *in_stack_00000000;
+  int in_r3;
 
   if (in_stack_00000000 == (undefined1 *)0x0) {
     in_stack_00000000 = auStack_40;
