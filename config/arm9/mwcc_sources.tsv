@@ -565,3 +565,4 @@ src/main/func_0203c938.c	-O2 -interworking
 src/main/func_020467a0.c	-O2 -interworking
 src/main/func_0202d8a0.c	-O2,p -interworking
 src/main/func_02015440.c	-O2 -interworking
+src/main/func_02014540.c	-O1 -interworking
