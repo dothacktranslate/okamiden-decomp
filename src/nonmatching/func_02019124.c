@@ -92,22 +92,22 @@ extern int func_02018e80();
 undefined4 func_02019124(int param_1,byte *param_2,undefined4 param_3)
 
 {
-  ushort uVar1;
   int iVar2;
-  int iVar3;
   byte *pbVar4;
-  byte *pbVar5;
   byte *pbVar6;
-  undefined4 uVar7;
   byte *pbVar8;
-  uint uVar9;
   int iVar10;
-  uint uVar11;
   byte *pbVar12;
-  byte *pbVar13;
   byte *pbVar14;
-  byte *pbVar15;
   byte *pbVar16;
+  ushort uVar1;
+  int iVar3;
+  byte *pbVar5;
+  undefined4 uVar7;
+  uint uVar9;
+  uint uVar11;
+  byte *pbVar13;
+  byte *pbVar15;
   byte *pbVar17;
 
   iVar2 = func_02018d9c(param_2);
@@ -163,15 +163,14 @@ undefined4 func_02019124(int param_1,byte *param_2,undefined4 param_3)
   }
   pbVar12 = pbVar5;
   pbVar13 = pbVar6;
-  if (*(short *)(*(int *)(((unsigned int)0x02019324) + 4) + 8) == 0) {
-    for (; pbVar12 < pbVar15; pbVar12 = pbVar12 + 1) {
-      *pbVar8 = *pbVar12;
-      pbVar8 = pbVar8 + 1;
-    }
-  }
-  else {
+  if (!(*(short *)(*(int *)(((unsigned int)0x02019324) + 4) + 8) == 0)) {
     while (pbVar15 = pbVar15 + -1, pbVar5 <= pbVar15) {
       *pbVar8 = *pbVar15;
+      pbVar8 = pbVar8 + 1;
+    }
+  } else {
+    for (; pbVar12 < pbVar15; pbVar12 = pbVar12 + 1) {
+      *pbVar8 = *pbVar12;
       pbVar8 = pbVar8 + 1;
     }
   }

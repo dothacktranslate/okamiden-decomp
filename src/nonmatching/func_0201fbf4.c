@@ -167,19 +167,18 @@ LAB_0201fc18:
       goto LAB_0202010c;
     }
     iVar10 = param_4 << 0xc;
-    if (iVar10 == 0) {
-      iVar10 = LZCOUNT(param_3);
-      param_3 = param_3 << iVar10;
-      uVar4 = param_3 >> 0xb;
-      param_3 = param_3 << 0x15;
-      uVar5 = (-0x14 - iVar10) * 2;
-    }
-    else {
+    if (!(iVar10 == 0)) {
       iVar12 = uVar5 - LZCOUNT(iVar10);
       uVar5 = iVar12 + 0x1f;
       uVar4 = (uint)(iVar10 << LZCOUNT(iVar10)) >> 0xb | param_3 >> (uVar5 & 0xff);
       param_3 = param_3 << (0x20 - uVar5 & 0xff);
       uVar5 = iVar12 * 2;
+    } else {
+      iVar10 = LZCOUNT(param_3);
+      param_3 = param_3 << iVar10;
+      uVar4 = param_3 >> 0xb;
+      param_3 = param_3 << 0x15;
+      uVar5 = (-0x14 - iVar10) * 2;
     }
   }
   else {

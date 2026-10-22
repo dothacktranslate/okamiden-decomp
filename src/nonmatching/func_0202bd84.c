@@ -193,10 +193,7 @@ LAB_0202be42:
         uVar3 = (uint)puVar10[1];
         iVar6 = uVar3 - *puVar10;
         uVar7 = *(int *)(param_1 + ((unsigned int)0x0202c094)) >> 0xc;
-        if ((uVar3 < uVar7) || (iVar6 == 0)) {
-          psVar12[1] = 0;
-        }
-        else {
+        if (!((uVar3 < uVar7) || (iVar6 == 0))) {
           iVar6 = func_0201ebe0((uVar3 - uVar7) * *(int *)(psVar12 + 6) +
                                *(int *)(puVar10 + 8) * (uVar7 - *puVar10),iVar6);
           iVar14 = func_0201ebe0(iVar14 * iVar6,0x7f);
@@ -209,6 +206,8 @@ LAB_0202be42:
           if (iVar9) {
             *(int *)(iVar9 + 0x18) = iVar14;
           }
+        } else {
+          psVar12[1] = 0;
         }
       }
       iVar9 = (int)*psVar12;

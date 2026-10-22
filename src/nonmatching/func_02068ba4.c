@@ -116,7 +116,9 @@ bool func_02068ba4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
        (-1 < *(int *)(param_1 + 0xbe4))) {
       func_0203b014(*(int *)(param_1 + 0xbe4),param_1 + 0xf80);
     }
-    if (*(short *)(param_1 + 0x16) < 300) {
+    if (!(*(short *)(param_1 + 0x16) < 300)) {
+      *(undefined2 *)(param_1 + 0x14) = 2;
+    } else {
       if (*(short *)(param_1 + 0xf7c) == 0) {
         *(undefined2 *)(param_1 + 0x14) = 2;
       }
@@ -132,9 +134,6 @@ bool func_02068ba4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
           } while (iVar4 < *(short *)(param_1 + 0xf7c));
         }
       }
-    }
-    else {
-      *(undefined2 *)(param_1 + 0x14) = 2;
     }
   }
   return bVar5;

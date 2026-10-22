@@ -312,10 +312,10 @@ joined_r0x02026134:
       func_0x02095770(*(undefined4 *)(iVar12 + 0x50),0);
     }
     piVar11[0x32] = 0;
-    if (!((*(uint *)(*(int *)(iVar12 + 0x50) + 0x14) & 0x3000000) == 0)) {
-      uVar10 = func_020465d8(param_1,2);
-    } else {
+    if (!(!((*(uint *)(*(int *)(iVar12 + 0x50) + 0x14) & 0x3000000) == 0))) {
       uVar10 = 0xffffffff;
+    } else {
+      uVar10 = func_020465d8(param_1,2);
     }
     break;
   case 6:

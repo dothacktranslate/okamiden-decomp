@@ -97,28 +97,28 @@ ulonglong func_02030920(undefined4 param_1,undefined4 param_2,undefined4 param_3
 
 {
   longlong *plVar1;
-  uint uVar2;
   undefined4 uVar3;
-  uint uVar4;
   uint uVar5;
-  int iVar6;
   bool bVar7;
-  longlong lVar8;
   longlong lVar9;
-  ulonglong uVar10;
   longlong lVar11;
-  undefined1 auStack_a8 [12];
   undefined1 auStack_9c [12];
-  undefined1 auStack_90 [12];
   undefined1 auStack_84 [12];
-  undefined1 auStack_78 [12];
   undefined1 auStack_6c [12];
-  undefined1 auStack_60 [12];
   undefined1 auStack_54 [12];
-  undefined1 auStack_48 [12];
   undefined1 auStack_3c [12];
-  undefined1 auStack_30 [12];
   undefined1 auStack_24 [12];
+  uint uVar2;
+  uint uVar4;
+  int iVar6;
+  longlong lVar8;
+  ulonglong uVar10;
+  undefined1 auStack_a8 [12];
+  undefined1 auStack_90 [12];
+  undefined1 auStack_78 [12];
+  undefined1 auStack_60 [12];
+  undefined1 auStack_48 [12];
+  undefined1 auStack_30 [12];
   undefined4 uStack_18;
 
   uStack_18 = param_4;

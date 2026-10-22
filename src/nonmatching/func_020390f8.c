@@ -126,10 +126,7 @@ void func_020390f8(int param_1)
     puVar4 = *(undefined4 **)(param_1 + 0x10);
     if (puVar4 != (undefined4 *)(param_1 + 0x10)) {
       do {
-        if ((int)puVar4[2] <= 3) {
-          puVar4 = (undefined4 *)*puVar4;
-        }
-        else {
+        if (!((int)puVar4[2] <= 3)) {
           uVar5 = uVar5 + puVar4[5];
           if (((unsigned int)0x000313a8) <= uVar5) {
             return;
@@ -142,6 +139,8 @@ void func_020390f8(int param_1)
           }
           func_02039068(local_2c,param_1,puVar4 + -1);
           puVar4 = local_2c[0];
+        } else {
+          puVar4 = (undefined4 *)*puVar4;
         }
         if (puVar4 == (undefined4 *)(param_1 + 0x10)) {
           return;

@@ -90,12 +90,12 @@ extern int func_02060e80();
 void func_02060f8c(int param_1,uint param_2,undefined4 param_3,uint *param_4)
 
 {
-  uint uVar1;
   uint uVar2;
-  int iVar3;
   undefined4 *puVar4;
-  uint uVar5;
   uint *puVar6;
+  uint uVar1;
+  int iVar3;
+  uint uVar5;
 
   iVar3 = param_1 + 8;
   if (!((iVar3 == 0) || (*(byte *)(param_1 + 9) <= param_2))) {

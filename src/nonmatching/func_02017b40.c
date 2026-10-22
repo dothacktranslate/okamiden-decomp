@@ -422,14 +422,13 @@ LAB_02017ef8:
         }
         goto LAB_02017f68;
       }
-      if (local_1 == '\0') {
+      if (!(local_1 == '\0')) {
+        param_7 = param_7 - (iVar3 + 1);
+      } else {
         param_7 = (uint)bStack_58 - (iVar3 + 1);
         if ((int)param_7 < 0) {
           param_7 = 0;
         }
-      }
-      else {
-        param_7 = param_7 - (iVar3 + 1);
       }
     }
 LAB_020180a4:

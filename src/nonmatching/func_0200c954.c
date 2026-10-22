@@ -92,16 +92,16 @@ bool func_0200c954(int *param_1,undefined4 param_2)
 
 {
   int iVar1;
-  int iVar2;
   bool bVar3;
-  undefined4 local_190;
   undefined4 local_18c;
-  undefined1 *local_188;
   int local_184;
-  undefined4 local_180;
   undefined1 auStack_17c [8];
-  int local_174;
   undefined4 *local_16c;
+  int iVar2;
+  undefined4 local_190;
+  undefined1 *local_188;
+  undefined4 local_180;
+  int local_174;
   undefined1 auStack_134 [280];
 
   bVar3 = false;

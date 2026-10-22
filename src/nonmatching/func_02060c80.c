@@ -98,13 +98,12 @@ void func_02060c80(int param_1,int *param_2,ushort param_3)
 
   iVar2 = param_2[2];
   iVar4 = *param_2;
-  if (iVar4 < (int)((uint)*(ushort *)(iVar2 + 4) * 0x1000)) {
+  if (!(iVar4 < (int)((uint)*(ushort *)(iVar2 + 4) * 0x1000))) {
+    iVar4 = (uint)*(ushort *)(iVar2 + 4) * 0x1000 + -1;
+  } else {
     if (iVar4 < 0) {
       iVar4 = 0;
     }
-  }
-  else {
-    iVar4 = (uint)*(ushort *)(iVar2 + 4) * 0x1000 + -1;
   }
   iVar4 = iVar4 >> 0xc;
   iVar3 = iVar2 + 8;

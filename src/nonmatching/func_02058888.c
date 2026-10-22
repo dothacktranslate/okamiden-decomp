@@ -109,14 +109,13 @@ uint func_02058888(ushort *param_1,uint param_2)
         do {
           iVar1 = ((int)(((int)puVar5 - (int)puVar4) +
                         ((uint)((int)puVar5 - (int)puVar4 >> 1) >> 0x1e)) >> 2) / 2;
-          if (puVar4[iVar1 * 2] < param_2) {
-            puVar4 = puVar4 + iVar1 * 2 + 2;
-          }
-          else {
+          if (!(puVar4[iVar1 * 2] < param_2)) {
             if (param_2 >= puVar4[iVar1 * 2]) {
               return (uint)puVar4[iVar1 * 1 + 2];
             }
             puVar5 = puVar4 + iVar1 * 2 + -2;
+          } else {
+            puVar4 = puVar4 + iVar1 * 2 + 2;
           }
         } while (puVar4 <= puVar5);
       }

@@ -100,6 +100,7 @@ void func_02054d84(undefined4 param_1,undefined4 *param_2,undefined4 param_3,und
                  undefined4 param_5)
 
 {
+  undefined1 auStack_24 [8];
   undefined4 *puVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
@@ -109,7 +110,6 @@ void func_02054d84(undefined4 param_1,undefined4 *param_2,undefined4 param_3,und
   undefined8 uVar7;
   undefined8 uVar8;
   undefined1 auStack_2c [8];
-  undefined1 auStack_24 [8];
 
   puVar1 = (undefined4 *)func_0205411c(param_3,auStack_24);
   if ((puVar1 == (undefined4 *)0x0) ||

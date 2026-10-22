@@ -129,11 +129,10 @@ int * func_0200a82c(uint param_1)
     piVar4 = (int *)*piVar4;
     iVar3 = *piVar4;
   }
-  if ((undefined4 *)puVar1[4] == (undefined4 *)0x0) {
-    *puVar1 = piVar5;
-  }
-  else {
+  if (!((undefined4 *)puVar1[4] == (undefined4 *)0x0)) {
     *(undefined4 *)puVar1[4] = piVar5;
+  } else {
+    *puVar1 = piVar5;
   }
   puVar1[4] = piVar4;
   puVar1[7] = puVar1[7] + -1;

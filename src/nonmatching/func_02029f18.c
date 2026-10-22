@@ -270,13 +270,12 @@ LAB_0202a116:
       break;
     case 0xae:
       iVar5 = (int)*(short *)(iVar4 + 0x8a) + (int)-sVar2;
-      if (iVar5 < 10) {
+      if (!(iVar5 < 10)) {
+        iVar5 = 9;
+      } else {
         if (iVar5 < 0) {
           iVar5 = 0;
         }
-      }
-      else {
-        iVar5 = 9;
       }
       *(short *)(iVar4 + 0x8a) = (short)iVar5;
     }

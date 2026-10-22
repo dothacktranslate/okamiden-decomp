@@ -92,21 +92,21 @@ extern int func_02058c90();
 void func_020595f8(short *param_1,undefined4 param_2,uint param_3,uint param_4,int param_5,int param_6)
 
 {
-  int iVar1;
   byte bVar2;
   int iVar3;
   uint uVar4;
   int iVar5;
   int iVar6;
   int iVar7;
-  uint uVar8;
-  uint uVar9;
-  int iVar10;
-  int iVar11;
-  int iVar12;
-  int iVar13;
-  int iVar14;
   uint local_30;
+  int iVar14;
+  int iVar13;
+  int iVar12;
+  int iVar11;
+  int iVar10;
+  uint uVar9;
+  uint uVar8;
+  int iVar1;
 
   bVar2 = *(byte *)(param_1 + 3);
   uVar8 = param_3 & 0xfffffff8;

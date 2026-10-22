@@ -140,7 +140,10 @@ LAB_0201a804:
     else {
       uVar1 = 0;
     }
-    if (uVar1 == 0) {
+    if (!(uVar1 == 0)) {
+      unaff_r6 = (*param_3)(param_4,0,0);
+      local_28 = local_28 + 1;
+    } else {
       if (unaff_r6 == 0x2b) {
         iVar3 = iVar3 + 1;
         unaff_r6 = (*param_3)(param_4,0,0);
@@ -151,10 +154,6 @@ LAB_0201a804:
         *param_6 = 1;
       }
       uVar4 = 2;
-    }
-    else {
-      unaff_r6 = (*param_3)(param_4,0,0);
-      local_28 = local_28 + 1;
     }
     goto LAB_0201a804;
   case 2:

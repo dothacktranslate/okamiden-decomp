@@ -87,18 +87,18 @@ extern int LZCOUNT();
 undefined8 func_0201ef10(uint param_1,uint param_2)
 
 {
-  int iVar1;
   uint uVar2;
-  uint uVar3;
   uint uVar4;
-  uint uVar5;
   uint uVar6;
-  uint uVar7;
   int iVar8;
-  uint uVar9;
   int iVar10;
-  bool bVar11;
   byte bVar12;
+  int iVar1;
+  uint uVar3;
+  uint uVar5;
+  uint uVar7;
+  uint uVar9;
+  bool bVar11;
 
   if (param_2 < ((unsigned int)0x0201f0a0)) {
     uVar5 = param_2 >> 0x14;

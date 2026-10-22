@@ -183,7 +183,6 @@ extern int func_02014674();
 void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
 
 {
-  undefined2 uVar1;
   undefined2 uVar2;
   bool bVar3;
   undefined2 *puVar4;
@@ -202,6 +201,7 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
   ushort uVar17;
   int local_2c;
   int local_28;
+  undefined2 uVar1;
 
   bVar3 = false;
   func_02010178(*(undefined4 *)(((unsigned int)0x0200fe28) + 0x10));

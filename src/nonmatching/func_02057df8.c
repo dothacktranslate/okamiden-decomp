@@ -89,16 +89,16 @@ uint func_02057df8(int param_1,uint param_2,ushort *param_3,int *param_4,int *pa
 
 {
   int iVar1;
-  longlong lVar2;
   longlong lVar3;
-  uint uVar4;
   uint *puVar5;
-  int iVar6;
   uint uVar7;
-  int iVar8;
   uint local_48;
-  int local_30;
   int local_2c;
+  longlong lVar2;
+  uint uVar4;
+  int iVar6;
+  int iVar8;
+  int local_30;
 
   if (*param_3 <= param_2) {
     param_2 = (uint)*param_3;

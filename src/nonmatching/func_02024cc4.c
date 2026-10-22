@@ -253,12 +253,11 @@ LAB_02024fa6:
   case 0x105:
     iVar7 = *(int *)(iVar7 + 0xac);
     iVar4 = func_0x020dc488(iVar7,*(undefined2 *)(iVar7 + 0x3c),4);
-    if ((iVar4 == 0) && (iVar4 = func_0x020dc488(iVar7,*(undefined2 *)(iVar7 + 0x3a),4), iVar4 == 0)
-       ) {
-      iVar4 = -1;
-    }
-    else {
+    if (!((iVar4 == 0) && (iVar4 = func_0x020dc488(iVar7,*(undefined2 *)(iVar7 + 0x3a),4), iVar4 == 0)
+       )) {
       iVar4 = 0;
+    } else {
+      iVar4 = -1;
     }
     goto switchD_02024d02_default;
   case 0x106:
@@ -273,11 +272,10 @@ LAB_02024fa6:
     break;
   case 0x107:
     iVar4 = func_020465d8(param_1,3);
-    if (iVar4 < 1) {
-      *(uint *)(iVar7 + 0xbc) = *(uint *)(iVar7 + 0xbc) | 0x10;
-    }
-    else {
+    if (!(iVar4 < 1)) {
       *(uint *)(iVar7 + 0xbc) = *(uint *)(iVar7 + 0xbc) & 0xffffffef;
+    } else {
+      *(uint *)(iVar7 + 0xbc) = *(uint *)(iVar7 + 0xbc) | 0x10;
     }
     break;
   case 0x108:

@@ -98,13 +98,13 @@ extern int func_02047aa8();
 undefined4 func_02048378(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  byte bVar1;
   int iVar2;
   undefined4 uVar3;
   byte *pbVar4;
   ushort uVar5;
   byte *local_18;
   undefined4 uStack_14;
+  byte bVar1;
 
   uStack_14 = param_4;
   iVar2 = func_02047aa8(param_1,2,10);

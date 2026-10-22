@@ -622,10 +622,7 @@ LAB_0202e4dc:
     *(undefined4 *)(iVar11 + 200) = *(undefined4 *)(param_2 + 6);
     *(undefined4 *)(iVar11 + 0xcc) = *(undefined4 *)(param_2 + 8);
     *(undefined4 *)(iVar11 + 0xd0) = *(undefined4 *)(param_2 + 10);
-    if (param_2[2] < 1000) {
-      uVar14 = *(uint *)(iVar11 + 0xf8) | 0x100;
-    }
-    else {
+    if (!(param_2[2] < 1000)) {
       iVar17 = *_DAT_0202ec20;
       iVar23 = *(int *)(iVar11 + 0xcc);
       iVar19 = *(int *)(iVar17 + 0x6c);
@@ -639,6 +636,8 @@ LAB_0202e4dc:
       uVar18 = func_0201e9d4(iVar13 - iVar21,iVar25 + 1);
       *(undefined4 *)(iVar11 + 0xf4) = uVar18;
       uVar14 = *(uint *)(iVar11 + 0xf8) | 0x400;
+    } else {
+      uVar14 = *(uint *)(iVar11 + 0xf8) | 0x100;
     }
     *(uint *)(iVar11 + 0xf8) = uVar14;
     uVar20 = *(uint *)(iVar11 + 0xf8);

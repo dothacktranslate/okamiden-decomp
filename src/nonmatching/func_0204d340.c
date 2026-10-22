@@ -105,11 +105,10 @@ int func_0204d340(int param_1,int param_2)
       if (iVar4 == 0) {
         iVar4 = 0;
       }
-      else if ((*(byte *)(iVar4 + 6) & 4) == 0) {
-        iVar4 = func_02053918(iVar4,2,*(undefined4 *)(*(int *)(param_1 + 0x10) + 0xa8));
-      }
-      else {
+      else if (!((*(byte *)(iVar4 + 6) & 4) == 0)) {
         iVar4 = 0;
+      } else {
+        iVar4 = func_02053918(iVar4,2,*(undefined4 *)(*(int *)(param_1 + 0x10) + 0xa8));
       }
       if (iVar4 == 0) {
         *(byte *)((int)piVar5 + 5) = *(byte *)((int)piVar5 + 5) | 8;

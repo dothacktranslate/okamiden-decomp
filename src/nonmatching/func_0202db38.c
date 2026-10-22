@@ -254,11 +254,10 @@ void func_0202db38(int param_1,int *param_2,undefined4 param_3)
           psVar12 = (short *)(iVar9 + iVar6 * 0x18);
         }
         if (iVar13 == *psVar12) {
-          if (!iVar9) {
-            iVar9 = 0;
-          }
-          else {
+          if (!(!iVar9)) {
             iVar9 = iVar9 + iVar6 * 0x18;
+          } else {
+            iVar9 = 0;
           }
           iVar4 = iVar11 * 4;
           iVar11 = iVar11 + 1;
@@ -270,14 +269,13 @@ void func_0202db38(int param_1,int *param_2,undefined4 param_3)
     iVar7 = 0;
     if (0 < iVar11) {
       do {
-        if (iVar13 < *(short *)(*(int *)(iVar10 + iVar7 * 4) + 2)) {
-          iVar7 = iVar7 + 1;
-        }
-        else {
+        if (!(iVar13 < *(short *)(*(int *)(iVar10 + iVar7 * 4) + 2))) {
           for (iVar6 = iVar7; iVar6 < iVar11 + -1; iVar6 = iVar6 + 1) {
             *(undefined4 *)(iVar10 + iVar6 * 4) = *(undefined4 *)(iVar10 + iVar6 * 4 + 4);
           }
           iVar11 = iVar11 + -1;
+        } else {
+          iVar7 = iVar7 + 1;
         }
       } while (iVar7 < iVar11);
     }

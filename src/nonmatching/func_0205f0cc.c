@@ -107,12 +107,11 @@ uint func_0205f0cc(int param_1,int *param_2)
     uVar2 = 0;
     if (uVar3 != 0) {
       do {
-        if ((param_1 == 0) || (*(byte *)(param_1 + 1) <= uVar2)) {
-          piVar8 = (int *)0x0;
-        }
-        else {
+        if (!((param_1 == 0) || (*(byte *)(param_1 + 1) <= uVar2))) {
           iVar7 = param_1 + (uint)*(ushort *)(param_1 + 6);
           piVar8 = (int *)(iVar7 + (uint)*(ushort *)(iVar7 + 2) + uVar2 * 0x10);
+        } else {
+          piVar8 = (int *)0x0;
         }
         iVar7 = *piVar8;
         bVar10 = iVar7 == *param_2;
@@ -150,12 +149,11 @@ uint func_0205f0cc(int param_1,int *param_2)
         } while (uVar9 < bVar1);
       }
       uVar2 = (uint)pbVar6[3];
-      if ((param_1 == 0) || (uVar3 <= uVar2)) {
-        piVar8 = (int *)0x0;
-      }
-      else {
+      if (!((param_1 == 0) || (uVar3 <= uVar2))) {
         param_1 = param_1 + (uint)*(ushort *)(param_1 + 6);
         piVar8 = (int *)(param_1 + (uint)*(ushort *)(param_1 + 2) + uVar2 * 0x10);
+      } else {
+        piVar8 = (int *)0x0;
       }
       iVar4 = *piVar8;
       iVar7 = *param_2;

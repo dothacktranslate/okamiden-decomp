@@ -96,14 +96,14 @@ extern int func_02065d1c();
 int func_02066558(undefined4 param_1,int param_2,int param_3,undefined4 param_4)
 
 {
-  int iVar1;
   int iVar2;
-  int iVar3;
   int iVar4;
-  undefined4 uVar5;
   undefined4 *puVar6;
-  undefined1 auStack_28 [4];
   undefined4 uStack_24;
+  int iVar1;
+  int iVar3;
+  undefined4 uVar5;
+  undefined1 auStack_28 [4];
 
   puVar6 = (undefined4 *)auStack_28;
   uStack_24 = param_4;

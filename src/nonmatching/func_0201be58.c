@@ -157,18 +157,17 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
     if ((int)uVar18 < ((unsigned int)0x43400000)) {
       if (((unsigned int)0x43400000) + -0x3500000 <= (int)uVar18) {
         uVar3 = ((unsigned int)0xfffffc01) + ((int)uVar18 >> 0x14);
-        if ((int)uVar3 < 0x15) {
+        if (!((int)uVar3 < 0x15)) {
+          uVar12 = 0x34 - uVar3;
+          uVar3 = param_3 >> (uVar12 & 0xff);
+          bVar19 = param_3 == uVar3 << (uVar12 & 0xff);
+        } else {
           bVar19 = false;
           if (param_3 == 0) {
             uVar12 = 0x14 - uVar3;
             uVar3 = (int)uVar18 >> (uVar12 & 0xff);
             bVar19 = uVar18 == uVar3 << (uVar12 & 0xff);
           }
-        }
-        else {
-          uVar12 = 0x34 - uVar3;
-          uVar3 = param_3 >> (uVar12 & 0xff);
-          bVar19 = param_3 == uVar3 << (uVar12 & 0xff);
         }
         if (bVar19) {
           iVar15 = 2 - (uVar3 & 1);
@@ -241,61 +240,7 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
     lVar22 = func_0201e61c(uVar1);
     return lVar22;
   }
-  if (((unsigned int)0x41e00000) < (int)uVar18) {
-    if (((unsigned int)0x41e00000) + 0x2100000 < (int)uVar18) {
-      if ((int)uVar14 <= ((unsigned int)0x3fefffff)) {
-        uVar14 = ((unsigned int)0x3fefffff) + 0x40000001;
-        if (-1 < (int)param_4) {
-          uVar14 = 0;
-        }
-        return (ulonglong)uVar14 << 0x20;
-      }
-      if (((unsigned int)0x3fefffff) + 1 <= (int)uVar14) {
-        uVar14 = ((unsigned int)0x3fefffff) + 0x40000001;
-        if ((int)param_4 < 1) {
-          uVar14 = 0;
-        }
-        return (ulonglong)uVar14 << 0x20;
-      }
-    }
-    if ((int)uVar14 < ((unsigned int)0x3fefffff)) {
-      uVar14 = ((unsigned int)0x3fefffff) + 0x40000001;
-      if (-1 < (int)param_4) {
-        uVar14 = 0;
-      }
-      return (ulonglong)uVar14 << 0x20;
-    }
-    if (((unsigned int)0x3fefffff) + 1 < (int)uVar14) {
-      uVar14 = ((unsigned int)0x3fefffff) + 0x40000001;
-      if ((int)param_4 < 1) {
-        uVar14 = 0;
-      }
-      return (ulonglong)uVar14 << 0x20;
-    }
-    uVar23 = func_0201d848(param_1,param_2,0,((unsigned int)0x3fefffff) + 1);
-    uVar6 = (undefined4)((ulonglong)uVar23 >> 0x20);
-    uVar5 = (undefined4)uVar23;
-    uVar23 = func_0201dbfc(uVar5,uVar6,uVar5,uVar6);
-    iVar16 = ((unsigned int)0x3fd00000);
-    uVar24 = func_0201dbfc(0,((unsigned int)0x3fd00000),uVar5,uVar6);
-    uVar24 = func_0201d848(((unsigned int)0x55555555),((unsigned int)0x55555555) + -0x15800000,(int)uVar24,
-                          (int)((ulonglong)uVar24 >> 0x20));
-    uVar24 = func_0201dbfc(uVar5,uVar6,(int)uVar24,(int)((ulonglong)uVar24 >> 0x20));
-    uVar24 = func_0201d848(0,iVar16 + 0x100000,(int)uVar24,(int)((ulonglong)uVar24 >> 0x20));
-    uVar23 = func_0201dbfc((int)uVar23,(int)((ulonglong)uVar23 >> 0x20),(int)uVar24,
-                          (int)((ulonglong)uVar24 >> 0x20));
-    uVar1 = ((unsigned int)0x0201c420);
-    uVar24 = func_0201dbfc(0x60000000,((unsigned int)0x0201c420),uVar5,uVar6);
-    uVar7 = (undefined4)((ulonglong)uVar24 >> 0x20);
-    uVar25 = func_0201dbfc(((unsigned int)0x0201c424),((unsigned int)0x0201c428),uVar5,uVar6);
-    uVar23 = func_0201dbfc(((unsigned int)0x0201c42c),uVar1,(int)uVar23,(int)((ulonglong)uVar23 >> 0x20));
-    uVar23 = func_0201d848((int)uVar25,(int)((ulonglong)uVar25 >> 0x20),(int)uVar23,
-                          (int)((ulonglong)uVar23 >> 0x20));
-    func_0201d518((int)uVar24,uVar7,(int)uVar23,(int)((ulonglong)uVar23 >> 0x20));
-    uVar24 = func_0201d848(0,extraout_r1,(int)uVar24,uVar7);
-    uStack_5c = extraout_r1;
-  }
-  else {
+  if (!(((unsigned int)0x41e00000) < (int)uVar18)) {
     iVar16 = 0;
     if (uVar14 < 0x100000) {
       uVar26 = func_0201dbfc((int)lVar22,(int)((ulonglong)lVar22 >> 0x20),0,((unsigned int)0x41e00000) + 0x1600000)
@@ -401,6 +346,59 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
     uVar25 = func_0201d848((int)uVar25,(int)((ulonglong)uVar25 >> 0x20),*puVar4,puVar4[1]);
     uVar24 = func_0201d848((int)uVar25,(int)((ulonglong)uVar25 >> 0x20),(int)uVar24,uVar1);
     uStack_5c = extraout_r1_02;
+  } else {
+    if (((unsigned int)0x41e00000) + 0x2100000 < (int)uVar18) {
+      if ((int)uVar14 <= ((unsigned int)0x3fefffff)) {
+        uVar14 = ((unsigned int)0x3fefffff) + 0x40000001;
+        if (-1 < (int)param_4) {
+          uVar14 = 0;
+        }
+        return (ulonglong)uVar14 << 0x20;
+      }
+      if (((unsigned int)0x3fefffff) + 1 <= (int)uVar14) {
+        uVar14 = ((unsigned int)0x3fefffff) + 0x40000001;
+        if ((int)param_4 < 1) {
+          uVar14 = 0;
+        }
+        return (ulonglong)uVar14 << 0x20;
+      }
+    }
+    if ((int)uVar14 < ((unsigned int)0x3fefffff)) {
+      uVar14 = ((unsigned int)0x3fefffff) + 0x40000001;
+      if (-1 < (int)param_4) {
+        uVar14 = 0;
+      }
+      return (ulonglong)uVar14 << 0x20;
+    }
+    if (((unsigned int)0x3fefffff) + 1 < (int)uVar14) {
+      uVar14 = ((unsigned int)0x3fefffff) + 0x40000001;
+      if ((int)param_4 < 1) {
+        uVar14 = 0;
+      }
+      return (ulonglong)uVar14 << 0x20;
+    }
+    uVar23 = func_0201d848(param_1,param_2,0,((unsigned int)0x3fefffff) + 1);
+    uVar6 = (undefined4)((ulonglong)uVar23 >> 0x20);
+    uVar5 = (undefined4)uVar23;
+    uVar23 = func_0201dbfc(uVar5,uVar6,uVar5,uVar6);
+    iVar16 = ((unsigned int)0x3fd00000);
+    uVar24 = func_0201dbfc(0,((unsigned int)0x3fd00000),uVar5,uVar6);
+    uVar24 = func_0201d848(((unsigned int)0x55555555),((unsigned int)0x55555555) + -0x15800000,(int)uVar24,
+                          (int)((ulonglong)uVar24 >> 0x20));
+    uVar24 = func_0201dbfc(uVar5,uVar6,(int)uVar24,(int)((ulonglong)uVar24 >> 0x20));
+    uVar24 = func_0201d848(0,iVar16 + 0x100000,(int)uVar24,(int)((ulonglong)uVar24 >> 0x20));
+    uVar23 = func_0201dbfc((int)uVar23,(int)((ulonglong)uVar23 >> 0x20),(int)uVar24,
+                          (int)((ulonglong)uVar24 >> 0x20));
+    uVar1 = ((unsigned int)0x0201c420);
+    uVar24 = func_0201dbfc(0x60000000,((unsigned int)0x0201c420),uVar5,uVar6);
+    uVar7 = (undefined4)((ulonglong)uVar24 >> 0x20);
+    uVar25 = func_0201dbfc(((unsigned int)0x0201c424),((unsigned int)0x0201c428),uVar5,uVar6);
+    uVar23 = func_0201dbfc(((unsigned int)0x0201c42c),uVar1,(int)uVar23,(int)((ulonglong)uVar23 >> 0x20));
+    uVar23 = func_0201d848((int)uVar25,(int)((ulonglong)uVar25 >> 0x20),(int)uVar23,
+                          (int)((ulonglong)uVar23 >> 0x20));
+    func_0201d518((int)uVar24,uVar7,(int)uVar23,(int)((ulonglong)uVar23 >> 0x20));
+    uVar24 = func_0201d848(0,extraout_r1,(int)uVar24,uVar7);
+    uStack_5c = extraout_r1;
   }
   uVar23 = func_0201d848((int)uVar23,(int)((ulonglong)uVar23 >> 0x20),(int)uVar24,
                         (int)((ulonglong)uVar24 >> 0x20));

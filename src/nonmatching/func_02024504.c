@@ -198,12 +198,11 @@ LAB_020246de:
     func_0x020a0d94(iVar7 + 0x88,1);
     *(undefined1 *)(param_1 + 0x44) = 1;
   }
-  if (*(int *)(param_1 + 0x28) == 0) {
-    uVar4 = 0;
-  }
-  else {
+  if (!(*(int *)(param_1 + 0x28) == 0)) {
     func_0x020a0d5c(iVar7 + 0x88);
     uVar4 = *(undefined4 *)(param_1 + 0x28);
+  } else {
+    uVar4 = 0;
   }
   *(undefined4 *)(param_1 + 0x48) = uVar4;
   *(uint *)(iVar7 + 0x1c) = *(uint *)(iVar7 + 0x1c) | 0x200000;

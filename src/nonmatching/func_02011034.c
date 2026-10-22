@@ -219,7 +219,15 @@ func_02011034(short *param_1,int *param_2,undefined4 param_3,undefined4 param_4,
           uVar17 = (uint)*(ushort *)(iVar14 + iVar12 * 2);
           psVar6 = (short *)(iVar7 + uVar17 * 4);
           if ((uVar17 == ((unsigned int)0x0000ffff)) || ((int)*psVar6 == ((unsigned int)0x0000ffff) - 0x10000)) {
-            if (iVar9 < 2) {
+            if (!(iVar9 < 2)) {
+              local_2a = -1;
+              sVar5 = sVar5 + 1;
+              local_2c = -1;
+              *psVar3 = -1;
+              sVar10 = sVar10 + 1;
+              psVar3[1] = -1;
+              psVar3 = psVar3 + 2;
+            } else {
               iVar11 = 0;
               if (0 < iVar9) {
                 do {
@@ -228,15 +236,6 @@ func_02011034(short *param_1,int *param_2,undefined4 param_3,undefined4 param_4,
                   iVar11 = iVar11 + 1;
                 } while (iVar11 < iVar9);
               }
-            }
-            else {
-              local_2a = -1;
-              sVar5 = sVar5 + 1;
-              local_2c = -1;
-              *psVar3 = -1;
-              sVar10 = sVar10 + 1;
-              psVar3[1] = -1;
-              psVar3 = psVar3 + 2;
             }
             iVar9 = 0;
           }

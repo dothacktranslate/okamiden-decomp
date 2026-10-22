@@ -112,13 +112,12 @@ int func_02060d8c(int param_1,uint param_2,int param_3,uint param_4)
               uVar4 = param_4 >> 2;
               param_4 = uVar4 + 1;
             }
-            if ((param_2 & 0x10000000) == 0) {
-              iVar1 = *(int *)(param_1 + uVar4 * 4);
-              iVar2 = *(int *)(param_1 + param_4 * 4);
-            }
-            else {
+            if (!((param_2 & 0x10000000) == 0)) {
               iVar1 = (int)*(short *)(param_1 + uVar4 * 2);
               iVar2 = (int)*(short *)(param_1 + param_4 * 2);
+            } else {
+              iVar1 = *(int *)(param_1 + uVar4 * 4);
+              iVar2 = *(int *)(param_1 + param_4 * 4);
             }
             return iVar1 * 3 + iVar2 >> 2;
           }
@@ -135,14 +134,13 @@ int func_02060d8c(int param_1,uint param_2,int param_3,uint param_4)
       if (param_4 <= uVar4) {
         param_4 = param_4 >> 1;
 LAB_02060e58:
-        if ((param_2 & 0x10000000) == 0) {
+        if (!((param_2 & 0x10000000) == 0)) {
+          iVar1 = (int)*(short *)(param_1 + param_4 * 2);
+          iVar2 = (int)*(short *)(param_1 + param_4 * 2 + 2);
+        } else {
           piVar3 = (int *)(param_1 + param_4 * 4);
           iVar1 = *piVar3;
           iVar2 = piVar3[1];
-        }
-        else {
-          iVar1 = (int)*(short *)(param_1 + param_4 * 2);
-          iVar2 = (int)*(short *)(param_1 + param_4 * 2 + 2);
         }
         return iVar1 + iVar2 >> 1;
       }

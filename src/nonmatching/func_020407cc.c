@@ -227,12 +227,11 @@ void func_020407cc(int param_1)
             func_0205e0c0(0x15,0,0);
             func_0205e0c0(0x1c,puVar11,3);
             func_0205e0c0(0x18,auStack_8c,0x10);
-            if (*(int *)(param_1 + 0x11c) == 0) {
-              iVar5 = 0x1f000;
-            }
-            else {
+            if (!(*(int *)(param_1 + 0x11c) == 0)) {
               iVar5 = func_02003170(*(undefined4 *)(*(int *)(param_1 + 0x11c) + iVar3 * 4),
                                    *(undefined4 *)(param_1 + 0x118));
+            } else {
+              iVar5 = 0x1f000;
             }
             iVar9 = iVar9 + iVar5;
             func_02002ac4(&local_a4,puVar11,auStack_c8);

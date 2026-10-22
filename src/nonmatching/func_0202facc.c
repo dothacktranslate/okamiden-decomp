@@ -92,12 +92,12 @@ extern int func_0203b220();
 void func_0202facc(int param_1,undefined4 param_2)
 
 {
-  int iVar1;
   int extraout_r1;
-  int iVar2;
   int iVar3;
-  uint iVar4;
   undefined4 local_1c;
+  int iVar1;
+  int iVar2;
+  uint iVar4;
   int iVar5;
 
   *(undefined4 *)(param_1 + 0x110) = param_2;

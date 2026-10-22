@@ -93,10 +93,10 @@ int func_0204c760(int param_1,undefined4 param_2,undefined4 param_3,int param_4,
 
 {
   undefined2 uVar2;
-  undefined1 uVar1;
   int iVar3;
-  int iVar4;
   int iVar5;
+  undefined1 uVar1;
+  int iVar4;
   undefined4 uVar6;
 
   iVar5 = *(int *)(param_1 + 0x14) - *(int *)(param_1 + 0x28);

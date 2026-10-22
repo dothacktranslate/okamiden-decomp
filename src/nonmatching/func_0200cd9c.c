@@ -98,7 +98,6 @@ extern int func_02012f88();
 bool func_0200cd9c(int param_1,int param_2,int param_3,undefined4 param_4)
 
 {
-  uint uVar1;
   int iVar2;
   undefined4 uVar3;
   undefined1 *puVar4;
@@ -110,6 +109,7 @@ bool func_0200cd9c(int param_1,int param_2,int param_3,undefined4 param_4)
   undefined1 auStack_b0 [72];
   undefined1 auStack_68 [72];
   undefined4 uStack_20;
+  uint uVar1;
 
   piVar5 = ((unsigned int)0x0200cef4);
   if (param_2 != 0) {

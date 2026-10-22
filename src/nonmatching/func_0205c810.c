@@ -141,11 +141,10 @@ void func_0205c810(int *param_1)
       uVar2 = 0;
     }
     if (uVar2 == 0) {
-      if (*(int *)param_1[0x2e] == 0) {
-        param_1[2] = param_1[2] & 0xfffffffe;
-      }
-      else {
+      if (!(*(int *)param_1[0x2e] == 0)) {
         param_1[2] = param_1[2] | 1;
+      } else {
+        param_1[2] = param_1[2] & 0xfffffffe;
       }
     }
     if (unaff_r5 == 3) {

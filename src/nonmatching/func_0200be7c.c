@@ -144,15 +144,14 @@ bool func_0200be7c(undefined4 *param_1,int param_2,int param_3)
   func_02008b80(uVar6);
   if (param_1[5] != 3) {
     iVar7 = func_0200bbc8(iVar7,uVar8);
-    if (param_3 == 0) {
+    if (!(param_3 == 0)) {
+      func_0200bdf8(param_1);
+      bVar9 = param_1[5] == 0;
+    } else {
       if (iVar7 != 0) {
         func_0200bd74();
       }
       bVar9 = true;
-    }
-    else {
-      func_0200bdf8(param_1);
-      bVar9 = param_1[5] == 0;
     }
   }
   return bVar9;

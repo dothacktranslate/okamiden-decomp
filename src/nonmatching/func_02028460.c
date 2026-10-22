@@ -218,20 +218,18 @@ undefined4 func_02028460(undefined4 param_1)
     break;
   case 1:
     iVar6 = func_020465d8(param_1,3);
-    if (iVar6 == 0) {
-      func_02041ab4(uVar10);
-    }
-    else {
+    if (!(iVar6 == 0)) {
       func_02041a98(uVar10);
+    } else {
+      func_02041ab4(uVar10);
     }
     break;
   case 2:
     iVar6 = func_020465d8(param_1,3);
-    if (iVar6 == 0) {
-      func_02041b00(uVar10);
-    }
-    else {
+    if (!(iVar6 == 0)) {
       func_02041acc(uVar10);
+    } else {
+      func_02041b00(uVar10);
     }
     break;
   case 3:

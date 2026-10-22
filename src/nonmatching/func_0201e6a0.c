@@ -87,8 +87,8 @@ extern int LZCOUNT();
 uint func_0201e6a0(uint param_1)
 
 {
-  uint uVar1;
   uint uVar2;
+  uint uVar1;
   uint uVar3;
 
   uVar3 = param_1 & 0x80000000;
@@ -107,7 +107,9 @@ uint func_0201e6a0(uint param_1)
   if ((uVar2 & 0x80) == 0) {
     return uVar3;
   }
-  if ((uVar2 & 0x7f) != 0 || (uVar1 & 1) != 0) {
+  if ((uVar2 & 0x7f) != 0) {
+    uVar3 = uVar3 + 1;
+  } else if ((uVar1 & 1) != 0) {
     uVar3 = uVar3 + 1;
   }
   return uVar3;

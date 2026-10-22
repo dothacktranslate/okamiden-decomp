@@ -161,24 +161,24 @@ int func_02030f00(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,in
                  undefined4 *param_5,undefined4 param_6)
 
 {
-  undefined4 local_3c;
   undefined4 local_38;
-  undefined4 local_34;
   undefined4 local_30;
-  undefined4 local_2c;
   undefined4 local_28;
-  undefined4 local_24;
   undefined4 local_20;
-  undefined4 local_1c;
   int iStack_18;
-  int iVar1;
   undefined4 *puVar2;
-  undefined1 auStack_58 [4];
   undefined4 local_54;
-  undefined4 local_50;
   undefined4 local_4c;
-  undefined4 local_48;
   undefined4 local_44;
+  undefined4 local_3c;
+  undefined4 local_34;
+  undefined4 local_2c;
+  undefined4 local_24;
+  undefined4 local_1c;
+  int iVar1;
+  undefined1 auStack_58 [4];
+  undefined4 local_50;
+  undefined4 local_48;
   undefined4 local_40;
 
   local_1c = param_5[2];
@@ -206,21 +206,20 @@ int func_02030f00(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,in
       local_50 = param_2[1];
       local_54 = *param_2;
     }
-    else if (iVar1 == 2) {
-      local_48 = *param_2;
-      local_40 = param_2[2];
-      local_44 = param_2[1];
-      local_4c = param_3[2];
-      local_50 = param_3[1];
-      local_54 = *param_3;
-    }
-    else {
+    else if (!(iVar1 == 2)) {
       local_40 = param_3[2];
       local_44 = param_3[1];
       local_48 = *param_3;
       local_4c = param_1[2];
       local_50 = param_1[1];
       local_54 = *param_1;
+    } else {
+      local_48 = *param_2;
+      local_40 = param_2[2];
+      local_44 = param_2[1];
+      local_4c = param_3[2];
+      local_50 = param_3[1];
+      local_54 = *param_3;
     }
     func_02002ac4(&local_54,&local_48,&local_54);
     func_02002c10(&local_54,&local_54);

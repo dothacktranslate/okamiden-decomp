@@ -145,11 +145,10 @@ undefined4 func_0204ecf8(undefined4 param_1,undefined4 param_2,undefined4 param_
     iVar3 = func_02046444(param_1,0xffffffff);
     if (iVar3 == 6) break;
     iVar3 = func_020464e8(param_1,0xffffffff);
-    if (iVar3 == 0) {
-      func_02046204(param_1,0xfffffffe);
-    }
-    else {
+    if (!(iVar3 == 0)) {
       func_020472dc(param_1,2);
+    } else {
+      func_02046204(param_1,0xfffffffe);
     }
     iVar4 = iVar4 + 1;
   }

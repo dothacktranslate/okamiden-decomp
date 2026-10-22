@@ -91,13 +91,6 @@ extern int func_0201ebe0();
 void func_0203a3a0(byte *param_1,uint param_2,int param_3,int param_4,ushort param_5)
 
 {
-  ushort uVar1;
-  uint uVar3;
-  uint uVar2;
-  uint uVar4;
-  uint uVar5;
-  uint uVar6;
-  byte bVar7;
   uint uVar8;
   int iVar9;
   uint uVar10;
@@ -106,6 +99,13 @@ void func_0203a3a0(byte *param_1,uint param_2,int param_3,int param_4,ushort par
   uint local_2c;
   uint local_28;
   uint local_24;
+  ushort uVar1;
+  uint uVar3;
+  uint uVar2;
+  uint uVar4;
+  uint uVar5;
+  uint uVar6;
+  byte bVar7;
 
   local_24 = 1;
   local_28 = 0;
@@ -137,11 +137,10 @@ void func_0203a3a0(byte *param_1,uint param_2,int param_3,int param_4,ushort par
                   if (!((*(uint *)(*(unsigned int *)0x0203a500) & 0x80000000) == 0)) {
                     uVar6 = (uint)((uVar1 & 0x4000) < 0x4000);
                   } else {
-                    if ((uVar1 & 0x4000) < 0x4000) {
-                      uVar6 = 0;
-                    }
-                    else {
+                    if (!((uVar1 & 0x4000) < 0x4000)) {
                       uVar6 = 3;
+                    } else {
+                      uVar6 = 0;
                     }
                   }
                   iVar9 = iVar9 + uVar6;

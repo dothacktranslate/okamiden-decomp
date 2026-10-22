@@ -127,7 +127,14 @@ undefined4 func_02049a40(undefined4 param_1,undefined4 param_2,undefined4 param_
   uVar1 = func_020499ac(param_1,&local_80);
   iVar3 = func_020464b0(param_1,local_80 + 1);
   uVar2 = func_020479b8(param_1,local_80 + 2,((unsigned int)0x02049cc0),0);
-  if (iVar3 == 0) {
+  if (!(iVar3 == 0)) {
+    uVar4 = func_020465d8(param_1,local_80 + 1);
+    iVar3 = func_0204a77c(uVar1,uVar4,auStack_7c);
+    if (iVar3 == 0) {
+      func_02046830(param_1);
+      return 1;
+    }
+  } else {
     iVar3 = func_02046444(param_1,local_80 + 1);
     if (iVar3 != 6) {
       uVar1 = func_02047550(param_1,local_80 + 1,((unsigned int)0x02049cc8));
@@ -137,14 +144,6 @@ undefined4 func_02049a40(undefined4 param_1,undefined4 param_2,undefined4 param_
     uVar2 = func_02046654(param_1,0xffffffff,0);
     func_02046414(param_1,local_80 + 1);
     func_02046130(param_1,uVar1,1);
-  }
-  else {
-    uVar4 = func_020465d8(param_1,local_80 + 1);
-    iVar3 = func_0204a77c(uVar1,uVar4,auStack_7c);
-    if (iVar3 == 0) {
-      func_02046830(param_1);
-      return 1;
-    }
   }
   iVar3 = func_0204ac2c(uVar1,uVar2,auStack_7c);
   if (iVar3 == 0) {

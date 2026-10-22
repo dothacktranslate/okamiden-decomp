@@ -148,16 +148,15 @@ void func_0205826c(uint *param_1,uint *param_2,uint param_3,int param_4,int *par
   }
   uVar4 = (param_1[1] & 0xffff) >> 0xc;
   iVar5 = *(int *)(((unsigned int)0x020584bc) + ((int)(*param_1 << 0x12) >> 0x1f) * -4);
-  if (param_2[3] == 0) {
+  if (!(param_2[3] == 0)) {
+    iVar3 = uVar4 << 9;
+  } else {
     if (iVar5 == 4) {
       iVar3 = 0;
     }
     else {
       iVar3 = uVar4 << 5;
     }
-  }
-  else {
-    iVar3 = uVar4 << 9;
   }
   (*(unsigned int *)0x040004ac) = (uint)(param_4 + iVar3) >> (4 - (iVar5 == 2) & 0xff);
   return;

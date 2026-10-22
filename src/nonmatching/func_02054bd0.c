@@ -96,12 +96,12 @@ void func_02054bd0(int param_1,int param_2,int param_3,undefined4 param_4)
 
 {
   undefined4 uVar1;
-  int *piVar2;
   int iVar3;
-  int iVar4;
   int iVar5;
-  int iVar6;
   int iVar7;
+  int *piVar2;
+  int iVar4;
+  int iVar6;
   uint uVar8;
 
   do {

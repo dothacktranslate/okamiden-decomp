@@ -100,12 +100,7 @@ void func_0200eeac(short *param_1)
     func_02008b6c();
     puVar2 = ((unsigned int)0x04000280);
     iVar4 = (int)param_1[2];
-    if (iVar4 == 0) {
-      *(unsigned short *)(iVar3 + 0x1c) = 0;
-      *(undefined4 *)(iVar3 + 0x20) = 0;
-      *(unsigned short *)(iVar3 + 0x24) = 0;
-    }
-    else {
+    if (!(iVar4 == 0)) {
       (*(unsigned int *)0x04000280) = 0;
       puVar2[8] = 0;
       puVar2[9] = 0x1000;
@@ -118,15 +113,14 @@ void func_0200eeac(short *param_1)
       do {
       } while ((*puVar2 & 0x8000) != 0);
       *(undefined4 *)(iVar3 + 0x24) = (*(unsigned int *)0x040002a0);
+    } else {
+      *(unsigned short *)(iVar3 + 0x1c) = 0;
+      *(undefined4 *)(iVar3 + 0x20) = 0;
+      *(unsigned short *)(iVar3 + 0x24) = 0;
     }
     puVar2 = ((unsigned int)0x04000280);
     iVar4 = (int)param_1[3];
-    if (iVar4 == 0) {
-      *(undefined4 *)(iVar3 + 0x28) = 0;
-      *(undefined4 *)(iVar3 + 0x2c) = 0;
-      *(undefined4 *)(iVar3 + 0x30) = 0;
-    }
-    else {
+    if (!(iVar4 == 0)) {
       (*(unsigned int *)0x04000280) = 0;
       puVar2[8] = 0;
       puVar2[9] = 0x1000;
@@ -139,6 +133,10 @@ void func_0200eeac(short *param_1)
       do {
       } while ((*puVar2 & 0x8000) != 0);
       *(undefined4 *)(iVar3 + 0x30) = (*(unsigned int *)0x040002a0);
+    } else {
+      *(undefined4 *)(iVar3 + 0x28) = 0;
+      *(undefined4 *)(iVar3 + 0x2c) = 0;
+      *(undefined4 *)(iVar3 + 0x30) = 0;
     }
     func_02008b80();
     *(undefined2 *)(iVar3 + 0x34) = 1;

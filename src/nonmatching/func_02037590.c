@@ -120,12 +120,11 @@ int func_02037590(int param_1,int param_2,int param_3,undefined4 param_4,int par
   if (iVar3 != 0) {
     if (*(int *)(param_1 + 0x5f4) == 0) {
       func_0206705c(iVar3 + 0x2c);
-      if (param_5 == 0) {
-        func_02066f44(iVar3 + 0x2c,param_2,0);
-      }
-      else {
+      if (!(param_5 == 0)) {
         func_02066f6c(iVar3 + 0x2c,0xffffffff,0xffffffff,param_2,0,0,0,((unsigned int)0x020376d8),0);
         *(uint *)(iVar3 + 0xc) = *(uint *)(iVar3 + 0xc) | 0x10;
+      } else {
+        func_02066f44(iVar3 + 0x2c,param_2,0);
       }
       if (-2 <= param_3) {
         func_02067028(iVar3 + 0x2c,param_3,4);

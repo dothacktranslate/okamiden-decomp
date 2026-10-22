@@ -123,13 +123,14 @@ void func_0205f778(int param_1,int param_2,uint param_3,uint *param_4)
   uVar4 = *(uint *)(param_1 + uVar2);
   iVar3 = param_1 + uVar2;
   puStack_28 = param_4;
-  if ((uVar4 & 1) == 0) {
+  if (!((uVar4 & 1) == 0)) {
+    *param_4 = 7;
+  } else {
     puVar5 = (uint *)(iVar3 + 4);
-    if (((param_3 & ((unsigned int)0x00000fff)) == 0) || ((*(uint *)(param_1 + 8) & 1) == 0)) {
-      bVar1 = false;
-    }
-    else {
+    if (!(((param_3 & ((unsigned int)0x00000fff)) == 0) || ((*(uint *)(param_1 + 8) & 1) == 0))) {
       bVar1 = true;
+    } else {
+      bVar1 = false;
     }
     *param_4 = 0;
     if ((uVar4 & 6) == 0) {
@@ -259,9 +260,6 @@ void func_0205f778(int param_1,int param_2,uint param_3,uint *param_4)
       }
       *param_4 = *param_4 | 1;
     }
-  }
-  else {
-    *param_4 = 7;
   }
   (*(code *)((undefined4 *)(*(unsigned int *)0x0205fac8))[0x3a])(param_4,&local_40,*(undefined4 *)(*(unsigned int *)0x0205fac8));
   return;

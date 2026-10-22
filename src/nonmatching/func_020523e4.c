@@ -87,13 +87,13 @@ extern int LZCOUNT();
 int func_020523e4(int param_1,int param_2)
 
 {
+  int iVar6;
+  int iVar7;
   int iVar1;
   int iVar2;
   int iVar3;
   int iVar4;
   int iVar5;
-  int iVar6;
-  int iVar7;
 
   iVar2 = 0;
   iVar3 = 1;

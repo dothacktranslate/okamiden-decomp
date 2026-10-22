@@ -107,16 +107,15 @@ void func_02059894(undefined2 *param_1,int param_2,int param_3,short param_4,sho
   uint iVar1;
 
   local_28 = 0;
-  if (param_9 == 0) {
-    puVar11 = param_1 + 4;
-  }
-  else {
+  if (!(param_9 == 0)) {
     param_1[6] = -param_4;
     param_1[4] = (short)param_6 - param_4;
     param_1[7] = -param_5;
     param_1[5] = (short)param_7 - param_5;
     puVar11 = param_1 + 8;
     local_28 = 0x800;
+  } else {
+    puVar11 = param_1 + 4;
   }
   uVar4 = ((unsigned int)0x01ff0000);
   uVar7 = ((unsigned int)0xc000c000);

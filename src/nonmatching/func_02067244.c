@@ -103,12 +103,12 @@ func_02067244(undefined4 param_1,undefined4 *param_2,undefined4 param_3,undefine
 
 {
   byte bVar1;
-  unsigned char cVar2;
   longlong lVar3;
-  int iVar4;
   int iVar5;
-  undefined4 uVar6;
   uint uVar7;
+  unsigned char cVar2;
+  int iVar4;
+  undefined4 uVar6;
   undefined4 unaff_r6;
 
   iVar4 = func_0206718c(param_1,param_3,param_4);

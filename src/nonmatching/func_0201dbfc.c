@@ -87,20 +87,20 @@ extern int LZCOUNT();
 ulonglong func_0201dbfc(uint param_1,uint param_2,uint param_3,uint param_4)
 
 {
-  uint uVar8;
-  uint uVar9;
-  int iVar10;
-  int iVar11;
-  uint uVar12;
-  uint uVar13;
-  bool bVar14;
-  longlong lVar1;
-  longlong lVar2;
-  longlong lVar3;
-  uint uVar4;
-  uint uVar5;
-  uint uVar6;
   uint uVar7;
+  uint uVar6;
+  uint uVar5;
+  uint uVar4;
+  longlong lVar3;
+  longlong lVar2;
+  longlong lVar1;
+  bool bVar14;
+  uint uVar13;
+  uint uVar12;
+  int iVar11;
+  int iVar10;
+  uint uVar9;
+  uint uVar8;
 
   uVar12 = param_2 ^ param_4;
   uVar13 = uVar12 & 0x80000000;

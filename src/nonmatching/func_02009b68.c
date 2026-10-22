@@ -88,12 +88,12 @@ void func_02009b68(ushort *param_1,ushort *param_2,uint param_3)
 
 {
   ushort uVar1;
-  ushort uVar2;
   ushort *puVar3;
-  ushort *puVar4;
   ushort *puVar5;
-  ushort *puVar6;
   ushort *puVar7;
+  ushort uVar2;
+  ushort *puVar4;
+  ushort *puVar6;
 
   if (param_3 == 0) {
     return;

@@ -100,11 +100,10 @@ undefined4 func_0205b788(int param_1,int param_2)
   if (param_1 != 0) {
     iVar2 = *(int *)(param_1 + 8);
   }
-  if (param_1 != 0 && iVar2 != 0) {
-    param_1 = param_1 + iVar2;
-  }
-  else {
+  if (!(param_1 != 0 && iVar2 != 0)) {
     param_1 = 0;
+  } else {
+    param_1 = param_1 + iVar2;
   }
   uVar5 = 1;
   uVar4 = 0;
@@ -112,37 +111,33 @@ undefined4 func_0205b788(int param_1,int param_2)
   uVar1 = (uint)*(byte *)(iVar2 + 1);
   if (uVar1 != 0) {
     do {
-      if ((iVar2 == 0) || (uVar1 = (uint)*(byte *)(iVar2 + 1), uVar4 >= uVar1)) {
-        iVar3 = 0;
-      }
-      else {
+      if (!((iVar2 == 0) || (uVar1 = (uint)*(byte *)(iVar2 + 1), uVar4 >= uVar1))) {
         iVar3 = iVar2 + (uint)*(ushort *)(iVar2 + 6);
         uVar1 = iVar3 + (uint)*(ushort *)(iVar3 + 2);
         iVar3 = uVar1 + uVar4 * 0x10;
+      } else {
+        iVar3 = 0;
       }
       if (param_2 != 0) {
         uVar1 = (uint)*(ushort *)(param_2 + 0x34);
       }
-      if (param_2 != 0 && uVar1 != 0) {
+      if (!(param_2 != 0 && uVar1 != 0)) {
+        iVar3 = 0;
+      } else {
         iVar3 = func_0205ef10(param_2 + uVar1,iVar3);
       }
-      else {
-        iVar3 = 0;
-      }
-      if (iVar3 == 0) {
-        uVar5 = 0;
-      }
-      else {
-        if ((iVar2 == 0) || (*(byte *)(iVar2 + 1) <= uVar4)) {
-          iVar3 = 0;
-        }
-        else {
+      if (!(iVar3 == 0)) {
+        if (!((iVar2 == 0) || (*(byte *)(iVar2 + 1) <= uVar4))) {
           iVar3 = *(ushort *)(iVar2 + (uint)*(ushort *)(iVar2 + 6)) * uVar4 +
                   iVar2 + (uint)*(ushort *)(iVar2 + 6) + 4;
+        } else {
+          iVar3 = 0;
         }
         if ((*(byte *)(iVar3 + 3) & 1) == 0) {
           func_0205b6ac(param_1,iVar3,param_2);
         }
+      } else {
+        uVar5 = 0;
       }
       uVar1 = (uint)*(byte *)(iVar2 + 1);
       uVar4 = uVar4 + 1;

@@ -169,11 +169,10 @@ void func_020378f4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       else if (*(int *)(param_1 + 0x5f4) == 0) {
         uVar6 = puVar4[10];
         func_0206705c(puVar4 + 10);
-        if ((puVar4[2] & 0x10) == 0) {
-          func_02066f44(puVar4 + 10,uVar6,0);
-        }
-        else {
+        if (!((puVar4[2] & 0x10) == 0)) {
           func_02066f6c(puVar4 + 10,0xffffffff,0xffffffff,uVar6);
+        } else {
+          func_02066f44(puVar4 + 10,uVar6,0);
         }
         if (-1 < (int)puVar4[5]) {
           func_02067028(puVar4 + 10,puVar4[5],4);

@@ -36,7 +36,7 @@ void func_0204409c(uint *param_1,int param_2,short param_3,int param_4,short par
       } else {
         *param_1 = *param_1 & uVar1 | param_6 | param_7 << 0x19;
       }
-      if (param_8 == 0) {
+      if (!param_8) {
         uVar3 = *param_1 & 0xffffefff;
       }
       else {

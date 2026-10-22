@@ -155,13 +155,12 @@ void func_0205fc1c(int *param_1,uint param_2,uint *param_3,int param_4)
   param_2 = param_2 & ((unsigned int)0x0205fd64);
   iVar2 = 0;
 LAB_0205fd28:
-  if ((uVar3 & 0x20000000) == 0) {
-    iVar7 = piVar6[uVar8];
-    iVar4 = (piVar6 + uVar8)[1];
-  }
-  else {
+  if (!((uVar3 & 0x20000000) == 0)) {
     iVar7 = (int)*(short *)((int)piVar6 + uVar8 * 2);
     iVar4 = (int)*(short *)((int)piVar6 + (uVar8 * 2 + 2));
+  } else {
+    iVar7 = piVar6[uVar8];
+    iVar4 = (piVar6 + uVar8)[1];
   }
   *param_1 = iVar7 * iVar5 + ((int)(param_2 * (iVar4 - iVar7)) >> 0xc) >> iVar2;
   return;

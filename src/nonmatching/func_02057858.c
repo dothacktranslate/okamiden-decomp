@@ -117,11 +117,10 @@ void func_02057858(int *param_1,undefined4 param_2,undefined4 param_3,undefined4
     if (3 < uVar4) {
       uVar4 = 0xffffffff;
     }
-    if (uVar4 == 0xffffffff) {
-      func_020098a0(0xc0,iVar7,iVar6);
-    }
-    else {
+    if (!(uVar4 == 0xffffffff)) {
       func_02008fe4(uVar4,iVar7,0xc0,iVar6,1,param_4);
+    } else {
+      func_020098a0(0xc0,iVar7,iVar6);
     }
   } else {
     puVar5 = (undefined2 *)

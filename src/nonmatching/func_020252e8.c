@@ -198,10 +198,10 @@ undefined4 func_020252e8(undefined4 param_1)
       } else {
         func_02037478(iVar9,(int)sVar2,0xffffffff,0x7f,0,piVar8);
       }
-      if (!(piVar8 == (int *)0x0)) {
-        iVar4 = 1;
-      } else {
+      if (!(!(piVar8 == (int *)0x0))) {
         iVar4 = -1;
+      } else {
+        iVar4 = 1;
       }
     }
     else if ((iVar4 == 1) && (iVar5 = func_02037d90(iVar9,piVar8[0x12]), iVar5 == 0)) {

@@ -201,10 +201,10 @@ LAB_02068250:
     bVar20 = false;
     if ((local_40 >= uVar10 + local_48) &&
        (local_48 = uVar10 - local_40, *(int *)(uVar6 + 0xdc) - 1U <= uVar9)) {
-      if (!(!(*(char *)(uVar6 + 0xc9) == '\0'))) {
-        *(uint *)(uVar6 + 0x118) = *(uint *)(uVar6 + 0x118) | 0x20;
-      } else {
+      if (!(!(!(*(char *)(uVar6 + 0xc9) == '\0')))) {
         bVar20 = true;
+      } else {
+        *(uint *)(uVar6 + 0x118) = *(uint *)(uVar6 + 0x118) | 0x20;
       }
     }
     iVar5 = ((unsigned int)0x02068308);
@@ -406,10 +406,10 @@ LAB_02068250:
             func_020075a8(((unsigned int)0x0206830c));
           }
         }
-        else if (!(*(int *)(uVar6 + 0x118) << 0x19 < 0)) {
-          func_02009b68(*(int *)(param_1 + 0x14) + local_34);
-        } else {
+        else if (!(!(*(int *)(uVar6 + 0x118) << 0x19 < 0))) {
           func_020099f0(psVar11,0);
+        } else {
+          func_02009b68(*(int *)(param_1 + 0x14) + local_34);
         }
         local_5c = local_5c + 1;
       } while (local_5c < *(int *)(param_1 + 0x10));

@@ -93,6 +93,7 @@ extern int func_0205c1a4();
 undefined4 func_0205e938(int param_1,int param_2,int *param_3,int *param_4)
 
 {
+  int local_28;
   longlong lVar1;
   longlong lVar2;
   int iVar3;
@@ -113,7 +114,6 @@ undefined4 func_0205e938(int param_1,int param_2,int *param_3,int *param_4)
   int local_34;
   int local_30;
   int local_2c;
-  int local_28;
 
   func_0205c1a4(&local_28,&local_2c,&local_30,&local_34);
   iVar3 = func_020028c0((param_1 - local_28) * 0x1000,(local_30 - local_28) * 0x1000);

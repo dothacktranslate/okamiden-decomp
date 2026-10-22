@@ -92,9 +92,9 @@ extern int func_0x020aebfc();
 undefined4 func_02023090(undefined4 param_1,uint param_2)
 
 {
-  undefined2 local_14;
-  undefined2 local_12;
   undefined4 local_10;
+  undefined2 local_12;
+  undefined2 local_14;
 
   if (param_2 < ((unsigned int)0x0202313c)) {
     func_02022d84(param_1,param_2,&local_12,&local_14,&local_10);

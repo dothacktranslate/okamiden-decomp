@@ -91,23 +91,23 @@ int func_02011974(int param_1,int param_2,int param_3,undefined4 param_4,ushort 
                 undefined4 *param_6,uint param_7,int *param_8)
 
 {
-  longlong lVar1;
-  int iVar2;
-  int iVar3;
-  undefined4 *puVar4;
-  int iVar5;
-  undefined4 uVar6;
-  ushort *puVar7;
-  int iVar8;
-  int iVar9;
-  int iVar10;
-  int local_40;
-  int local_3c;
-  int local_38;
-  int local_34;
-  int local_30;
-  int local_2c;
   undefined4 uStack_28;
+  int local_2c;
+  int local_30;
+  int local_34;
+  int local_38;
+  int local_3c;
+  int local_40;
+  int iVar10;
+  int iVar9;
+  int iVar8;
+  ushort *puVar7;
+  undefined4 uVar6;
+  int iVar5;
+  undefined4 *puVar4;
+  int iVar3;
+  int iVar2;
+  longlong lVar1;
 
   iVar3 = 0;
   if (0 < param_3) {

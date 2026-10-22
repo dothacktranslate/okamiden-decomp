@@ -193,23 +193,21 @@ undefined4 func_0204a3ec(int param_1)
   bVar2 = true;
   iVar3 = func_020499ac(param_1,&local_80);
   iVar4 = func_020464b0(param_1,local_80 + 2);
-  if (iVar4 == 0) {
+  if (!(iVar4 == 0)) {
+    iVar4 = func_020465d8(param_1,local_80 + 2);
+    func_02046204(param_1,0xfffffffe);
+  } else {
     iVar4 = 1;
     if (param_1 != iVar3) {
       iVar4 = 0;
     }
   }
-  else {
-    iVar4 = func_020465d8(param_1,local_80 + 2);
-    func_02046204(param_1,0xfffffffe);
-  }
   iVar5 = func_020461e8(param_1);
   iVar6 = local_80;
-  if (iVar6 == iVar5) {
+  if (!(!(iVar6 == iVar5))) {
     puVar7 = ((unsigned int)0x0204a658);
     uVar8 = 0;
-  }
-  else {
+  } else {
     iVar6 = func_020464e8(param_1,iVar6 + 1);
     if (iVar6 == 0) {
       return 1;
@@ -222,7 +220,20 @@ undefined4 func_0204a3ec(int param_1)
   iVar6 = func_0204a77c(iVar3,iVar4,auStack_7c);
   while (iVar6 != 0) {
     iVar5 = iVar4 + 1;
-    if ((iVar5 <= 0xc) || (!bVar2)) {
+    if (!((iVar5 <= 0xc) || (!bVar2))) {
+      iVar6 = func_0204a77c(iVar3,iVar4 + 0xb,auStack_7c);
+      if (iVar6 != 0) {
+        func_02046898(param_1,((unsigned int)0x0204a664),5);
+        iVar6 = func_0204a77c(iVar3,iVar4 + 0xb,auStack_7c);
+        iVar4 = iVar5;
+        while (iVar6 != 0) {
+          iVar6 = func_0204a77c(iVar3,iVar4 + 0xb,auStack_7c);
+          iVar4 = iVar4 + 1;
+        }
+      }
+      bVar2 = false;
+      iVar5 = iVar4;
+    } else {
       func_02046898(param_1,((unsigned int)0x0204a668),2);
       func_0204ac2c(iVar3,((unsigned int)0x0204a66c),auStack_7c);
       func_02046960(param_1,((unsigned int)0x0204a670),auStack_58);
@@ -240,20 +251,6 @@ undefined4 func_0204a3ec(int param_1)
       }
       iVar4 = func_020461e8(param_1);
       func_020472dc(param_1,iVar4 - local_80);
-    }
-    else {
-      iVar6 = func_0204a77c(iVar3,iVar4 + 0xb,auStack_7c);
-      if (iVar6 != 0) {
-        func_02046898(param_1,((unsigned int)0x0204a664),5);
-        iVar6 = func_0204a77c(iVar3,iVar4 + 0xb,auStack_7c);
-        iVar4 = iVar5;
-        while (iVar6 != 0) {
-          iVar6 = func_0204a77c(iVar3,iVar4 + 0xb,auStack_7c);
-          iVar4 = iVar4 + 1;
-        }
-      }
-      bVar2 = false;
-      iVar5 = iVar4;
     }
     iVar6 = func_0204a77c(iVar3,iVar5,auStack_7c);
     iVar4 = iVar5;

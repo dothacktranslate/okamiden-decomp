@@ -88,7 +88,6 @@ void func_02010d04(int *param_1,int *param_2,int *param_3,uint *param_4,uint *pa
                  uint param_7,int param_8)
 
 {
-  int iVar9;
   int iVar8;
   uint uVar7;
   uint uVar6;
@@ -97,6 +96,7 @@ void func_02010d04(int *param_1,int *param_2,int *param_3,uint *param_4,uint *pa
   uint uVar3;
   int iVar2;
   int iVar1;
+  int iVar9;
 
   iVar2 = 0;
   iVar1 = 0;

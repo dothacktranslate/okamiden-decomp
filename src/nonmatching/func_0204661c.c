@@ -89,9 +89,9 @@ extern int func_02045fac();
 bool func_0204661c(void)
 
 {
-  bool bVar1;
-  int *piVar2;
   uint iVar3;
+  int *piVar2;
+  bool bVar1;
 
   piVar2 = (int *)func_02045fac();
   iVar3 = piVar2[1];

@@ -91,11 +91,11 @@ extern int func_0201e9b4();
 uint func_02033328(int *param_1,int *param_2,undefined4 param_3,undefined4 param_4)
 
 {
+  uint uVar5;
   undefined8 uVar2;
   undefined8 uVar3;
   uint uVar1;
   longlong lVar4;
-  uint uVar5;
 
   uVar2 = func_0201e9b4(*param_1,*param_1 >> 0x1f,*param_2,*param_2 >> 0x1f);
   uVar1 = (uint)uVar2;

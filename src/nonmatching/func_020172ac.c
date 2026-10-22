@@ -167,22 +167,22 @@ char * func_020172ac(int param_1,int param_2,int param_3,uint param_4,undefined4
                    int param_7)
 
 {
-  char cVar1;
   uint uVar2;
-  uint uVar3;
   char cVar4;
-  int unaff_r5;
   int unaff_r6;
-  char *pcVar5;
   char *pcVar6;
-  int iVar7;
   int iVar8;
-  undefined4 uVar9;
   bool bVar10;
-  longlong lVar11;
   uint local_44;
-  int local_40;
   uint local_3c;
+  char cVar1;
+  uint uVar3;
+  int unaff_r5;
+  char *pcVar5;
+  int iVar7;
+  undefined4 uVar9;
+  longlong lVar11;
+  int local_40;
   char local_4;
 
   lVar11 = CONCAT44(param_2,param_1);
@@ -259,14 +259,13 @@ LAB_020173ec:
     iVar7 = func_0201e978((int)lVar11,uVar9,unaff_r6,unaff_r5);
     lVar11 = func_0201e96c((int)lVar11,uVar9,unaff_r6,unaff_r5);
     cVar1 = (char)iVar7;
-    if (iVar7 < 10) {
-      cVar4 = cVar1 + '0';
-    }
-    else {
+    if (!(iVar7 < 10)) {
       cVar4 = cVar1 + 'W';
       if ((*(unsigned char *)((unsigned char *)&param_5 + 1)) != 0x78) {
         cVar4 = cVar1 + '7';
       }
+    } else {
+      cVar4 = cVar1 + '0';
     }
     pcVar5 = pcVar6 + -1;
     *pcVar5 = cVar4;
@@ -309,7 +308,10 @@ LAB_020173ec:
     pcVar5 = pcVar5 + -2;
     *pcVar5 = '0';
   }
-  if (local_3c == 0) {
+  if (!(local_3c == 0)) {
+    pcVar5 = pcVar5 + -1;
+    *pcVar5 = '-';
+  } else {
     if (local_44 == 1) {
       pcVar5 = pcVar5 + -1;
       *pcVar5 = '+';
@@ -318,10 +320,6 @@ LAB_020173ec:
       pcVar5 = pcVar5 + -1;
       *pcVar5 = ' ';
     }
-  }
-  else {
-    pcVar5 = pcVar5 + -1;
-    *pcVar5 = '-';
   }
   return pcVar5;
 }

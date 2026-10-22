@@ -154,12 +154,11 @@ int func_0205ef10(int param_1,int *param_2)
         } while (uVar8 < bVar1);
       }
       uVar2 = (uint)pbVar5[3];
-      if ((param_1 == 0) || (uVar3 <= uVar2)) {
-        piVar7 = (int *)0x0;
-      }
-      else {
+      if (!((param_1 == 0) || (uVar3 <= uVar2))) {
         iVar6 = param_1 + (uint)*(ushort *)(param_1 + 6);
         piVar7 = (int *)(iVar6 + (uint)*(ushort *)(iVar6 + 2) + uVar2 * 0x10);
+      } else {
+        piVar7 = (int *)0x0;
       }
       iVar9 = *piVar7;
       iVar6 = *param_2;

@@ -176,11 +176,10 @@ undefined4 func_02029178(undefined4 param_1,undefined4 param_2,undefined4 param_
   case 5:
     sVar2 = func_020465d8(param_1,3);
     sVar1 = func_020465d8(param_1,4);
-    if ((sVar2 == 0) && (sVar1 == 0)) {
-      local_34 = 0xffffffff;
-    }
-    else {
+    if (!((sVar2 == 0) && (sVar1 == 0))) {
       func_0x020aefa8(*(undefined4 *)(iVar9 + 0x44),&local_34,sVar2);
+    } else {
+      local_34 = 0xffffffff;
     }
     break;
   case 6:

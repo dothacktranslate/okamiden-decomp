@@ -34,13 +34,13 @@ extern unsigned int func_0205f240();
 uint * func_0205e558(uint *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  undefined4 uVar1;
-  int iVar2;
-  int iVar3;
-  uint *puVar4;
-  int iStack_18;
-  int iStack_14;
   undefined4 uStack_10;
+  int iStack_14;
+  int iStack_18;
+  uint *puVar4;
+  int iVar3;
+  int iVar2;
+  undefined4 uVar1;
 
   puVar4 = (uint *)*param_1;
   if (puVar4 <= DAT_0205e668) {

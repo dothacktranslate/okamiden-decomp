@@ -90,14 +90,14 @@ void func_02058c90(int param_1,int param_2,int param_3,int param_4,int param_5,u
                  int param_7)
 
 {
-  uint uVar1;
   int iVar2;
-  uint *puVar3;
   uint *puVar4;
-  int unaff_r4;
   uint uVar6;
-  uint uVar5;
   uint *puVar7;
+  uint uVar1;
+  uint *puVar3;
+  int unaff_r4;
+  uint uVar5;
   uint uVar8;
 
   if (param_4 == 8) {

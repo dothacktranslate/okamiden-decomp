@@ -97,12 +97,6 @@ func_02030b74(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined
             undefined4 param_5)
 
 {
-  int extraout_r1;
-  int extraout_r1_00;
-  int extraout_r1_01;
-  undefined1 auStack_98 [12];
-  undefined1 auStack_8c [12];
-  undefined1 auStack_80 [12];
   undefined1 auStack_74 [12];
   undefined1 auStack_68 [12];
   undefined1 auStack_5c [12];
@@ -111,6 +105,12 @@ func_02030b74(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined
   undefined1 auStack_38 [12];
   undefined1 auStack_2c [12];
   undefined1 auStack_20 [12];
+  int extraout_r1;
+  int extraout_r1_00;
+  int extraout_r1_01;
+  undefined1 auStack_98 [12];
+  undefined1 auStack_8c [12];
+  undefined1 auStack_80 [12];
 
   func_0x01ff99b4(auStack_20);
   func_0x01ff99b4(auStack_2c);

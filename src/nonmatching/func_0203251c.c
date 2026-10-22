@@ -121,7 +121,9 @@ void func_0203251c(int param_1,int param_2,undefined4 param_3)
         }
         else {
           iVar3 = func_020324ec(iVar2,((unsigned int)0x020326f8),4);
-          if ((iVar3 == 0) || (iVar3 = func_020324ec(iVar2,((unsigned int)0x020326fc),4), iVar3 == 0)) {
+          if ((iVar3 == 0)) {
+            *(int *)(param_1 + 0xe0) = *(int *)(param_1 + 0xe0) + 1;
+          } else if ((iVar3 = func_020324ec(iVar2,((unsigned int)0x020326fc),4), iVar3 == 0)) {
             *(int *)(param_1 + 0xe0) = *(int *)(param_1 + 0xe0) + 1;
           }
         }

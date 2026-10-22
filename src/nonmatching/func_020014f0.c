@@ -94,30 +94,30 @@ undefined4 func_020014f0(uint *param_1,uint *param_2,undefined4 param_3,undefine
 
 {
   int iVar1;
-  longlong lVar2;
   longlong lVar3;
-  longlong lVar4;
   longlong lVar5;
-  uint uVar6;
   uint uVar7;
-  uint uVar8;
   uint uVar9;
-  uint uVar10;
   uint uVar11;
-  uint uVar12;
   uint uVar13;
-  uint *puVar14;
   uint uVar15;
-  uint uVar16;
   uint uVar17;
-  uint uVar18;
   uint uVar19;
-  uint uStack_7c;
   int iStack_78;
-  uint uStack_74;
   int iStack_70;
-  uint auStack_58 [12];
   undefined4 uStack_28;
+  longlong lVar2;
+  longlong lVar4;
+  uint uVar6;
+  uint uVar8;
+  uint uVar10;
+  uint uVar12;
+  uint *puVar14;
+  uint uVar16;
+  uint uVar18;
+  uint uStack_7c;
+  uint uStack_74;
+  uint auStack_58 [12];
 
   puVar14 = auStack_58;
   if (param_1 != param_2) {

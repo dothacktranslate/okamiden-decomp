@@ -174,12 +174,11 @@ LAB_0205da54:
     }
     else {
       iVar5 = iVar6 + 4;
-      if ((iVar5 == 0) || ((uint)*(byte *)(iVar6 + 5) <= (uint)*(byte *)(*param_1 + 1))) {
-        piVar3 = (int *)0x0;
-      }
-      else {
+      if (!((iVar5 == 0) || ((uint)*(byte *)(iVar6 + 5) <= (uint)*(byte *)(*param_1 + 1)))) {
         piVar3 = (int *)((uint)*(ushort *)(iVar5 + (uint)*(ushort *)(iVar6 + 10)) *
                          (uint)*(byte *)(*param_1 + 1) + iVar5 + (uint)*(ushort *)(iVar6 + 10) + 4);
+      } else {
+        piVar3 = (int *)0x0;
       }
       if (piVar3 == (int *)0x0) goto LAB_0205da54;
       iVar6 = iVar6 + *piVar3;

@@ -117,11 +117,10 @@ LAB_0205f5c8:
     puVar3 = puVar2 + 8;
   }
   if ((uVar1 & 2) == 0) {
-    if ((uVar1 & 8) == 0) {
-      puVar3 = puVar3 + 8;
-    }
-    else {
+    if (!((uVar1 & 8) == 0)) {
       puVar3 = puVar3 + 2;
+    } else {
+      puVar3 = puVar3 + 8;
     }
   }
   (*(code *)piVar6[0x3a])(param_1,puVar3);

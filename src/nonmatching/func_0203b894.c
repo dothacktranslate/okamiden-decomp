@@ -101,6 +101,7 @@ extern int func_0205f240();
 undefined4 func_0203b894(uint *param_1,int param_2)
 
 {
+  int local_1c;
   bool bVar1;
   bool bVar2;
   bool bVar3;
@@ -111,7 +112,6 @@ undefined4 func_0203b894(uint *param_1,int param_2)
   int iVar8;
   int iVar9;
   undefined4 uVar10;
-  int local_1c;
 
   uVar5 = *param_1;
   if (!(((unsigned int)0x30415642) < uVar5)) {
@@ -139,14 +139,13 @@ undefined4 func_0203b894(uint *param_1,int param_2)
         iVar7 = func_0205b078();
         iVar8 = func_0205b08c(iVar6);
         iVar9 = func_0205b1bc(iVar6);
-        if (iVar7 == 0) {
-          local_1c = 0;
-        }
-        else {
+        if (!(iVar7 == 0)) {
           local_1c = (*(code *)(*(unsigned int *)0x0203ba10))(iVar7,0,0);
           if (local_1c == 0) {
             bVar1 = false;
           }
+        } else {
+          local_1c = 0;
         }
         if (iVar8 == 0) {
           iVar7 = 0;

@@ -88,24 +88,24 @@ void func_0201b36c(undefined2 *param_1,undefined2 *param_2,int param_3)
 
 {
   byte bVar1;
-  undefined2 uVar2;
   undefined2 *puVar3;
-  int uVar4;
   byte *pbVar5;
-  char *pcVar6;
   byte *pbVar7;
-  char *pcVar8;
   int iVar9;
-  int iVar10;
   byte *pbVar11;
-  undefined2 *puVar12;
   undefined2 *puVar13;
-  int iVar14;
   uint uVar15;
-  byte *pbVar16;
   byte *pbVar17;
-  byte *pbVar18;
   byte *pbVar19;
+  undefined2 uVar2;
+  int uVar4;
+  char *pcVar6;
+  char *pcVar8;
+  int iVar10;
+  undefined2 *puVar12;
+  int iVar14;
+  byte *pbVar16;
+  byte *pbVar18;
   bool bVar20;
 
   iVar10 = 9;

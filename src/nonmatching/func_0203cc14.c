@@ -89,11 +89,11 @@ extern int LZCOUNT();
 void func_0203cc14(int param_1,int param_2)
 
 {
-  bool bVar1;
+  uint iVar5;
   int iVar3;
   int uVar2;
   int iVar4;
-  uint iVar5;
+  bool bVar1;
 
   iVar3 = *(unsigned char *)(param_1 + 0x14);
   uVar2 = 0;

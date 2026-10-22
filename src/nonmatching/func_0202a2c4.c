@@ -162,13 +162,12 @@ LAB_0202a372:
     break;
   case 3:
     iVar7 = func_020465d8(param_1,3);
-    if (iVar7 < 1) {
-      iVar7 = (*(unsigned int *)0x0202a608);
-      uVar8 = ((unsigned int)0x0202a60c) & *(uint *)(iVar7 + 0x124);
-    }
-    else {
+    if (!(iVar7 < 1)) {
       iVar7 = (*(unsigned int *)0x0202a608);
       uVar8 = *(uint *)(iVar7 + 0x124) | 0x10000;
+    } else {
+      iVar7 = (*(unsigned int *)0x0202a608);
+      uVar8 = ((unsigned int)0x0202a60c) & *(uint *)(iVar7 + 0x124);
     }
     *(uint *)(iVar7 + 0x124) = uVar8;
     goto LAB_0202a75c;

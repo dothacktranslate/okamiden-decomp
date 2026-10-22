@@ -87,11 +87,11 @@ extern int LZCOUNT();
 undefined4 func_020637a8(int *param_1,int *param_2,int *param_3)
 
 {
+  undefined4 uVar5;
   int *piVar1;
   int iVar2;
   int iVar3;
   int *piVar4;
-  undefined4 uVar5;
 
   uVar5 = 0;
   piVar4 = (int *)*param_1;
@@ -121,11 +121,10 @@ undefined4 func_020637a8(int *param_1,int *param_2,int *param_3)
       *param_3 = *piVar1;
       iVar3 = piVar1[2];
       iVar2 = piVar1[3];
-      if (iVar3 == 0) {
-        *param_1 = iVar2;
-      }
-      else {
+      if (!(iVar3 == 0)) {
         *(int *)(iVar3 + 0xc) = iVar2;
+      } else {
+        *param_1 = iVar2;
       }
       if (iVar2 != 0) {
         *(int *)(iVar2 + 8) = iVar3;

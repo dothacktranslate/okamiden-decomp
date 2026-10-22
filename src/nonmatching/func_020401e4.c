@@ -101,30 +101,30 @@ void func_020401e4(int param_1)
 
 {
   short uVar1;
-  undefined4 uVar2;
   int iVar3;
-  int iVar4;
   uint uVar5;
-  undefined4 *puVar6;
   uint uVar7;
-  uint *puVar8;
   uint *puVar9;
-  short *psVar10;
   int local_74;
-  uint local_6c;
   undefined4 local_68;
-  undefined4 local_64;
   undefined4 local_60;
-  undefined4 local_5c;
   undefined4 local_58;
-  undefined4 local_54;
   undefined4 local_50;
-  uint local_4c [6];
   uint local_34;
-  uint local_30;
   uint local_2c;
-  undefined4 local_24;
   undefined1 auStack_20 [8];
+  undefined4 uVar2;
+  int iVar4;
+  undefined4 *puVar6;
+  uint *puVar8;
+  short *psVar10;
+  uint local_6c;
+  undefined4 local_64;
+  undefined4 local_5c;
+  undefined4 local_54;
+  uint local_4c [6];
+  uint local_30;
+  undefined4 local_24;
   uint local_18;
 
   if ((1 < *(short *)(param_1 + 0x68)) && (1 < *(short *)(param_1 + 0x6c))) {

@@ -108,12 +108,11 @@ void func_0203cc9c(int param_1,int param_2)
       } else {
         iVar4 = 0;
       }
-      if (((iVar4 == 0) || (iVar4 + 4 == 0)) || (*(byte *)(iVar4 + 5) <= uVar5)) {
-        iVar4 = 0;
-      }
-      else {
+      if (!(((iVar4 == 0) || (iVar4 + 4 == 0)) || (*(byte *)(iVar4 + 5) <= uVar5))) {
         iVar4 = iVar4 + 4 + (uint)*(ushort *)(iVar4 + 10);
         iVar4 = iVar4 + (uint)*(ushort *)(iVar4 + 2) + uVar5 * 0x10;
+      } else {
+        iVar4 = 0;
       }
       if (iVar4 != 0) {
         bVar1 = true;

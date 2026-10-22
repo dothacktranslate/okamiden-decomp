@@ -98,14 +98,14 @@ extern int func_02021ba0();
 void func_020213e4(int *param_1)
 
 {
-  int iVar1;
   undefined4 uVar2;
-  undefined4 local_38;
-  undefined4 local_34;
-  int local_30;
   undefined4 local_2c;
-  int local_28;
+  int iVar1;
+  int local_30;
+  undefined4 local_34;
   int local_24;
+  undefined4 local_38;
+  int local_28;
 
   func_02020364(param_1[4],&local_28);
   if (local_24 == 0) {

@@ -96,13 +96,13 @@ void func_02062238(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   uint uVar10;
   int iVar11;
   uint uVar12;
-  int iVar13;
-  longlong lVar1;
-  longlong lVar2;
-  longlong lVar3;
-  int iVar4;
-  uint uVar5;
   uint uVar6;
+  uint uVar5;
+  int iVar4;
+  longlong lVar3;
+  longlong lVar2;
+  longlong lVar1;
+  int iVar13;
 
   iVar11 = (uint)*(ushort *)(param_2 + 0x2c) << 0xc;
   iVar13 = (uint)*(ushort *)(param_2 + 0x2e) << 0xc;

@@ -94,30 +94,30 @@ undefined4 func_02000f6c(uint *param_1,uint *param_2,undefined4 param_3,undefine
 
 {
   int iVar1;
-  longlong lVar2;
-  longlong lVar3;
-  longlong lVar4;
   longlong lVar5;
-  uint uVar6;
-  uint uVar8;
-  uint uVar7;
   uint uVar9;
-  uint uVar10;
-  uint uVar11;
-  uint uVar12;
   uint uVar13;
-  uint *puVar14;
-  uint uVar15;
-  uint uVar16;
   uint uVar17;
-  uint uVar18;
-  uint uVar19;
-  uint uStack_64;
   int iStack_60;
-  uint uStack_5c;
-  int iStack_58;
-  uint auStack_4c [9];
   undefined4 uStack_28;
+  longlong lVar4;
+  uint uVar7;
+  uint uVar12;
+  uint uVar16;
+  uint uStack_64;
+  uint auStack_4c [9];
+  longlong lVar3;
+  uint uVar8;
+  uint uVar11;
+  uint uVar15;
+  uint uVar19;
+  int iStack_58;
+  longlong lVar2;
+  uint uVar6;
+  uint uVar10;
+  uint *puVar14;
+  uint uVar18;
+  uint uStack_5c;
 
   puVar14 = auStack_4c;
   if (param_1 != param_2) {

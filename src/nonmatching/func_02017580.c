@@ -385,7 +385,10 @@ char * func_02017580(uint param_1,undefined4 param_2,int param_3,undefined4 para
   pcVar14[-2] = cVar8;
   pcVar15 = pcVar14 + -3;
   *pcVar15 = '0';
-  if (acStack_6c[0] == '\0') {
+  if (!(acStack_6c[0] == '\0')) {
+    pcVar15 = pcVar14 + -4;
+    *pcVar15 = '-';
+  } else {
     if (cVar1 == '\x01') {
       pcVar15 = pcVar14 + -4;
       *pcVar15 = '+';
@@ -394,10 +397,6 @@ char * func_02017580(uint param_1,undefined4 param_2,int param_3,undefined4 para
       pcVar15 = pcVar14 + -4;
       *pcVar15 = ' ';
     }
-  }
-  else {
-    pcVar15 = pcVar14 + -4;
-    *pcVar15 = '-';
   }
   return pcVar15;
 }

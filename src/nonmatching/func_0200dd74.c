@@ -92,6 +92,7 @@ extern int func_0200e774();
 int func_0200dd74(int param_1,int param_2,int param_3)
 
 {
+  int local_b0;
   int local_ac;
   undefined1 auStack_a8 [4];
   int local_a4;
@@ -102,7 +103,6 @@ int func_0200dd74(int param_1,int param_2,int param_3)
   int iVar2;
   int local_b8;
   int local_b4;
-  int local_b0;
 
   *(undefined1 **)(param_2 + 0x30) = auStack_a8;
   *(undefined4 *)(param_2 + 0x34) = 0;
@@ -112,7 +112,11 @@ int func_0200dd74(int param_1,int param_2,int param_3)
     *(undefined4 *)(param_3 + 0x118) = local_98;
     func_02009b68(auStack_94,param_3 + 0x14);
     *(undefined1 *)(param_3 + *(int *)(param_3 + 0x118) + 0x14) = 0;
-    if (local_9c == 0) {
+    if (!(local_9c == 0)) {
+      *(undefined4 *)(param_3 + 0x11c) = 0x100;
+      *(int *)(param_3 + 0x16c) = local_a4;
+      *(undefined4 *)(param_3 + 0x168) = 0;
+    } else {
       *(undefined4 *)(param_3 + 0x11c) = 0;
       *(int *)(param_3 + 0x16c) = local_a4;
       *(undefined4 *)(param_3 + 0x168) = 0;
@@ -128,11 +132,6 @@ int func_0200dd74(int param_1,int param_2,int param_3)
           }
         }
       }
-    }
-    else {
-      *(undefined4 *)(param_3 + 0x11c) = 0x100;
-      *(int *)(param_3 + 0x16c) = local_a4;
-      *(undefined4 *)(param_3 + 0x168) = 0;
     }
     *(undefined4 *)(param_3 + 0x138) = 0;
     *(undefined4 *)(param_3 + 0x13c) = 0;

@@ -237,11 +237,10 @@ undefined4 func_02029954(undefined4 param_1)
     if (iVar11 != 0) {
       uVar5 = uVar5 | 0x40000000;
     }
-    if (iVar2 < 2) {
-      *(undefined2 *)(iVar8 + 0x9e) = 0;
-    }
-    else {
+    if (!(iVar2 < 2)) {
       *(short *)(iVar8 + 0x9e) = (short)iVar2;
+    } else {
+      *(undefined2 *)(iVar8 + 0x9e) = 0;
     }
     *puVar9 = uVar5 | 0x10000000 | *puVar9;
     goto LAB_02029b94;

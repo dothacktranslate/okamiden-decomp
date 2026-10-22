@@ -151,11 +151,10 @@ LAB_0205fbc0:
       uVar3 = (uVar2 >> 0x11) + 1;
     }
   }
-  if ((uVar4 & 0x20000000) == 0) {
-    *param_1 = *(uint *)(param_4 + uVar3 * 4);
-  }
-  else {
+  if (!((uVar4 & 0x20000000) == 0)) {
     *param_1 = (int)*(short *)(param_4 + uVar3 * 2);
+  } else {
+    *param_1 = *(uint *)(param_4 + uVar3 * 4);
   }
   return;
 }

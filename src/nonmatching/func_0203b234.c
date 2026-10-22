@@ -117,12 +117,11 @@ void func_0203b234(int param_1,int param_2)
     }
     return;
   }
-  if ((*(uint *)(param_1 + 0xc) & 2) == 0) {
+  if (!((*(uint *)(param_1 + 0xc) & 2) == 0)) {
+    *(uint *)(param_1 + 0x14) = uVar4 + iVar2 * 0x1000;
+  } else {
     *(undefined4 *)(param_1 + 0x14) = 0;
     *(uint *)(param_1 + 0xc) = *(uint *)(param_1 + 0xc) | 4;
-  }
-  else {
-    *(uint *)(param_1 + 0x14) = uVar4 + iVar2 * 0x1000;
   }
   return;
 }

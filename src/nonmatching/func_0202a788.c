@@ -152,11 +152,10 @@ undefined4 func_0202a788(undefined4 param_1)
     break;
   case 3:
     sVar1 = func_020465d8(param_1,3);
-    if (sVar1 != 0) {
-      func_0202aeb4(1);
-    }
-    else {
+    if (!(sVar1 != 0)) {
       func_0202aeb4(0);
+    } else {
+      func_0202aeb4(1);
     }
     func_0202af00(sVar1 != 0);
     break;

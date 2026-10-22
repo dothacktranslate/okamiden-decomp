@@ -89,10 +89,10 @@ extern int func_0204bdc4();
 void func_0204be48(uint param_1,int param_2,undefined4 param_3)
 
 {
-  uint uVar1;
-  int iVar2;
-  int iVar3;
   code *pcVar4;
+  int iVar3;
+  int iVar2;
+  uint uVar1;
   int iVar6;
   int iVar5;
   int aiStack_78 [5];

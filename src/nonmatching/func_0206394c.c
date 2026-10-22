@@ -136,11 +136,10 @@ undefined4 func_0206394c(uint *param_1,uint *param_2,uint *param_3,uint param_4,
     if (uVar3 - unaff_r4 == 0) {
       uVar4 = puVar5[2];
       uVar3 = puVar5[3];
-      if (uVar4 == 0) {
-        *param_1 = uVar3;
-      }
-      else {
+      if (!(uVar4 == 0)) {
         *(uint *)(uVar4 + 0xc) = uVar3;
+      } else {
+        *param_1 = uVar3;
       }
       if (uVar3 != 0) {
         *(uint *)(uVar3 + 8) = uVar4;

@@ -188,13 +188,12 @@ uint func_02063198(int param_1,int param_2,int param_3)
     }
     uVar6 = uVar2 + uVar5;
     if (uVar6 <= ((unsigned int *)0x020632b0)[1] - uVar4) {
-      if ((param_2 == 0) || (uVar4 + uVar6 <= 0x10000)) {
+      if (!((param_2 == 0) || (uVar4 + uVar6 <= 0x10000))) {
+        bVar1 = false;
+      } else {
         uVar3 = uVar4 + uVar5;
         (*(unsigned int *)0x020632b0) = (*(unsigned int *)0x020632b0) + uVar6;
         bVar1 = true;
-      }
-      else {
-        bVar1 = false;
       }
       goto LAB_02063290;
     }

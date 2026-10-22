@@ -100,10 +100,10 @@ extern int func_0204f064();
 undefined4 func_0204f0f4(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  undefined4 uVar1;
-  int iVar2;
-  int iVar3;
   int iVar4;
+  int iVar3;
+  int iVar2;
+  undefined4 uVar1;
 
   uVar1 = func_02047988(param_1,1,0,param_4,param_4);
   iVar2 = func_020461e8(param_1);

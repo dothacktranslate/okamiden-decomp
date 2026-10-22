@@ -87,14 +87,14 @@ extern int LZCOUNT();
 void func_0205b6ac(int param_1,ushort *param_2,int param_3,ushort *param_4)
 
 {
-  ushort uVar1;
-  short uVar2;
-  int iVar3;
-  uint uVar4;
-  uint uVar5;
-  int *piVar6;
-  int iVar7;
   uint uVar8;
+  int iVar7;
+  int *piVar6;
+  uint uVar5;
+  uint uVar4;
+  int iVar3;
+  short uVar2;
+  ushort uVar1;
 
   uVar1 = *param_2;
   uVar5 = *(uint *)(param_3 + 0x2c) & 0xffff;

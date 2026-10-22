@@ -111,14 +111,13 @@ undefined4 func_02042c8c(int param_1,undefined4 *param_2,undefined4 param_3)
     local_24 = *(short *)(param_1 + 8) << 1;
     break;
   case 4:
-    if ((int)param_2[1] < 0) {
-      uVar4 = 0;
-      local_24 = 0;
-    }
-    else {
+    if (!((int)param_2[1] < 0)) {
       func_0201ebe0(param_2[1],*(undefined4 *)(param_1 + 8));
       local_24 = extraout_r1 + 1;
       uVar4 = extraout_r1;
+    } else {
+      uVar4 = 0;
+      local_24 = 0;
     }
   }
   do {

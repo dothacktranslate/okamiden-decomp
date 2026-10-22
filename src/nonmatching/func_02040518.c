@@ -95,20 +95,20 @@ extern int func_0201e9b4();
 void func_02040518(int param_1,int param_2,int param_3,int param_4,int param_5)
 
 {
-  int iVar1;
-  uint iVar2;
-  int iVar3;
-  int local_ac;
-  int local_a8;
-  int local_a4;
-  undefined4 local_a0;
-  undefined4 local_9c;
-  undefined4 local_98;
-  int local_90;
-  int local_8c;
-  int local_88;
-  int local_84;
   int local_80;
+  int local_84;
+  int local_88;
+  int local_8c;
+  int local_90;
+  undefined4 local_98;
+  undefined4 local_9c;
+  undefined4 local_a0;
+  int local_a4;
+  int local_a8;
+  int local_ac;
+  int iVar3;
+  uint iVar2;
+  int iVar1;
   int local_7c;
   undefined4 local_74;
   undefined4 local_70;

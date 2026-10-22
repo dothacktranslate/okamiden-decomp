@@ -149,7 +149,9 @@ LAB_020167a4:
     }
     iVar6 = func_0201a9d4(param_2,0xffffffff);
     param_1 = param_1 + 1;
-    if (iVar6 < 0) {
+    if (!(iVar6 < 0)) {
+      uVar7 = 0xffffffff;
+    } else {
       iVar6 = *(int *)(param_2 + 0x28);
       *(int *)(param_2 + 0x28) = iVar6 + -1;
       if (iVar6 == 0) {
@@ -160,9 +162,6 @@ LAB_020167a4:
         *(byte **)(param_2 + 0x24) = pbVar8 + 1;
         *pbVar8 = bVar1;
       }
-    }
-    else {
-      uVar7 = 0xffffffff;
     }
     if (uVar7 == 0xffffffff) {
       uVar10 = 0xffffffff;

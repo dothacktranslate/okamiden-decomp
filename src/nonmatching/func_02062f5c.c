@@ -107,13 +107,12 @@ void func_02062f5c(void)
       puVar3[2] = 1;
     }
     iVar2 = iVar2 + 1;
-    if (puVar3[3] == 0) {
-      *puVar3 = 0;
-      puVar3[1] = 0x20000;
-    }
-    else {
+    if (!(puVar3[3] == 0)) {
       *puVar3 = 0;
       puVar3[1] = 0x10000;
+    } else {
+      *puVar3 = 0;
+      puVar3[1] = 0x20000;
     }
   } while (iVar2 < 5);
   return;

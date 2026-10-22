@@ -104,13 +104,12 @@ undefined4 func_0205b524(int param_1,int param_2,uint param_3,uint param_4)
     puVar1 = (ushort *)0x0;
   }
   iVar2 = (int)puVar1 + (uint)*puVar1;
-  if (((param_2 == 0) || (iVar3 = param_2 + 0x3c, iVar3 == 0)) ||
-     (*(byte *)(param_2 + 0x3d) <= param_4)) {
-    iVar3 = 0;
-  }
-  else {
+  if (!(((param_2 == 0) || (iVar3 = param_2 + 0x3c, iVar3 == 0)) ||
+     (*(byte *)(param_2 + 0x3d) <= param_4))) {
     iVar3 = *(ushort *)(iVar3 + (uint)*(ushort *)(param_2 + 0x42)) * param_4 +
             iVar3 + (uint)*(ushort *)(param_2 + 0x42) + 4;
+  } else {
+    iVar3 = 0;
   }
   if (!((iVar2 == 0) || (*(byte *)(iVar2 + 1) <= param_3))) {
     iVar2 = *(ushort *)(iVar2 + (uint)*(ushort *)(iVar2 + 6)) * param_3 +

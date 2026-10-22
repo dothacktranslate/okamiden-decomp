@@ -205,12 +205,11 @@ switchD_02029556_caseD_3:
       *(undefined4 *)(*(int *)((*(unsigned int *)0x020297b0) + ((unsigned int)0x020297b4)) + ((unsigned int)0x020297b4) + -0x9c) = 4;
       if (((*(int *)(iVar6 + 0x58) != 0) && (iVar4 = func_0x020859b8(), iVar4 == 0)) &&
          (*(short *)((int)piVar9 + 0x26) == 0)) {
-        if (*(int *)(iVar6 + 0x74) == 0) {
+        if (!(*(int *)(iVar6 + 0x74) == 0)) {
+          func_0x020855a0(*(undefined4 *)(iVar6 + 0x58));
+        } else {
           *(uint *)(*(int *)(iVar6 + 0x58) + 0x30c) =
                ((unsigned int)0x020297b8) & *(uint *)(*(int *)(iVar6 + 0x58) + 0x30c);
-        }
-        else {
-          func_0x020855a0(*(undefined4 *)(iVar6 + 0x58));
         }
       }
       iVar4 = 0;
@@ -234,14 +233,13 @@ switchD_02029556_caseD_3:
         *(undefined2 *)((int)piVar9 + 0x26) = uVar1;
       }
       iVar4 = *(int *)(iVar6 + 0x30);
-      if (*(short *)((int)piVar9 + 0x32) == 0) {
+      if (!(*(short *)((int)piVar9 + 0x32) == 0)) {
+        func_0x0209cee8(iVar4,(int)*(short *)((int)piVar9 + 0x32));
+        *(undefined2 *)((int)piVar9 + 0x32) = 0;
+      } else {
         if ((*(uint *)(iVar4 + 0x14) & 0x2000) != 0) {
           *(uint *)(iVar4 + 0x14) = ((unsigned int)0x020297c0) & *(uint *)(iVar4 + 0x14);
         }
-      }
-      else {
-        func_0x0209cee8(iVar4,(int)*(short *)((int)piVar9 + 0x32));
-        *(undefined2 *)((int)piVar9 + 0x32) = 0;
       }
       if ((short)piVar9[0xd] != 0) {
         *(short *)(*(int *)(iVar6 + 0x30) + 0xe6) = (short)piVar9[0xd];

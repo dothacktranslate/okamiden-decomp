@@ -166,16 +166,16 @@ extern int func_0200c89c();
 undefined4 func_0200c174(char *param_1,uint *param_2,int param_3)
 
 {
-  byte bVar1;
   undefined4 *puVar2;
-  uint uVar3;
   char *pcVar4;
-  int iVar5;
   int iVar6;
-  int iVar7;
   bool bVar8;
-  bool bVar9;
   undefined4 local_2c;
+  byte bVar1;
+  uint uVar3;
+  int iVar5;
+  int iVar7;
+  bool bVar9;
   int local_28;
 
   pcVar4 = ((unsigned int)0x0200c454);

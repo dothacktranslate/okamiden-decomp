@@ -92,6 +92,7 @@ extern int func_02008b80();
 undefined4 * func_02007d90(int param_1,int param_2,int param_3)
 
 {
+  int *piVar4;
   int iVar5;
   int iVar6;
   undefined4 *puVar7;
@@ -99,7 +100,6 @@ undefined4 * func_02007d90(int param_1,int param_2,int param_3)
   undefined4 uVar1;
   undefined4 uVar2;
   undefined4 *puVar3;
-  int *piVar4;
 
   uVar1 = func_02008b6c();
   piVar4 = *(int **)(((unsigned int)0x02007e94) + param_1 * 4);
@@ -135,11 +135,10 @@ undefined4 * func_02007d90(int param_1,int param_2,int param_3)
     if (puVar3 != (undefined4 *)0x0) {
       *puVar3 = piVar4;
     }
-    if (*piVar4 == 0) {
-      *(int **)(iVar6 + 4) = piVar4;
-    }
-    else {
+    if (!(*piVar4 == 0)) {
       *(int **)(*piVar4 + 4) = piVar4;
+    } else {
+      *(int **)(iVar6 + 4) = piVar4;
     }
   }
   uVar2 = func_02007ca4(*(undefined4 *)(iVar6 + 8),puVar7);

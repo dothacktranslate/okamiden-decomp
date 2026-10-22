@@ -87,13 +87,13 @@ extern int LZCOUNT();
 void func_0205ebc0(int param_1,int param_2,uint param_3)
 
 {
-  byte bVar1;
-  int iVar2;
-  int unaff_r4;
-  uint uVar3;
-  int *piVar4;
-  int iVar5;
   uint uVar6;
+  int iVar5;
+  int *piVar4;
+  uint uVar3;
+  int unaff_r4;
+  int iVar2;
+  byte bVar1;
 
   if (param_1) {
     unaff_r4 = *(int *)(param_1 + 8);
@@ -116,12 +116,11 @@ LAB_0205ec40:
       iVar5 = 0;
     }
     else {
-      if ((iVar2 == 0) || (*(byte *)(param_1 + 5) <= uVar6)) {
-        piVar4 = (int *)0x0;
-      }
-      else {
+      if (!((iVar2 == 0) || (*(byte *)(param_1 + 5) <= uVar6))) {
         piVar4 = (int *)(*(ushort *)(iVar2 + (uint)*(ushort *)(param_1 + 10)) * uVar6 +
                         iVar2 + (uint)*(ushort *)(param_1 + 10) + 4);
+      } else {
+        piVar4 = (int *)0x0;
       }
       if (piVar4 == (int *)0x0) goto LAB_0205ec40;
       iVar5 = param_1 + *piVar4;

@@ -156,14 +156,13 @@ void func_02041bc0(uint *param_1)
         }
         uVar4 = 0;
         do {
-          if ((1 << (uVar4 & 0xff) & param_1[0x57]) == 0) {
-            func_0205bde0(uVar4,0);
-          }
-          else {
+          if (!((1 << (uVar4 & 0xff) & param_1[0x57]) == 0)) {
             func_0205bde0(uVar4,(short)param_1[uVar4 * 2 + 0x58]);
             func_0205bda4(uVar4,(int)*(short *)((int)param_1 + uVar4 * 8 + 0x162),
                          (int)(short)param_1[uVar4 * 2 + 0x59],
                          (int)*(short *)((int)param_1 + uVar4 * 8 + 0x166));
+          } else {
+            func_0205bde0(uVar4,0);
           }
           uVar4 = uVar4 + 1;
         } while ((int)uVar4 < 4);
@@ -174,12 +173,11 @@ void func_02041bc0(uint *param_1)
       }
       piVar1 = ((unsigned int)0x02041dcc);
       if ((param_1[0x49] & 0x8000) == 0) {
-        if (param_1[0x77] == 0) {
+        if (!(param_1[0x77] == 0)) {
+          func_0x01ffcab0();
+        } else {
           *(uint *)((*(unsigned int *)0x02041dcc) + 0x1c) = *(uint *)((*(unsigned int *)0x02041dcc) + 0x1c) | 8;
           func_0203d1f0(*piVar1);
-        }
-        else {
-          func_0x01ffcab0();
         }
       }
       func_0x01ffd000((*(unsigned int *)0x02041df0));

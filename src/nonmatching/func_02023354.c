@@ -95,12 +95,12 @@ void func_02023354(undefined4 param_1,uint param_2,uint param_3)
 
 {
   ushort uVar1;
-  ushort uVar2;
   ushort uVar3;
-  ushort *puVar4;
   uint uVar5;
-  int iVar6;
   int local_18;
+  ushort uVar2;
+  ushort *puVar4;
+  int iVar6;
 
   puVar4 = (ushort *)func_02044b5c(param_1,3);
   uVar1 = *puVar4;

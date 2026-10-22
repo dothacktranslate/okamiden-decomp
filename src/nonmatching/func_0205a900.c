@@ -96,15 +96,11 @@ undefined4 func_0205a900(int *param_1,int *param_2)
   int iVar3;
 
   bVar1 = false;
-  if (param_1 == (int *)0x0) {
-    bVar2 = false;
-  }
-  else {
-    if ((param_1 == (int *)0x0) || (*param_1 != ((unsigned int)0x4e465452))) {
-      bVar2 = false;
-    }
-    else {
+  if (!(param_1 == (int *)0x0)) {
+    if (!((param_1 == (int *)0x0) || (*param_1 != ((unsigned int)0x4e465452)))) {
       bVar2 = true;
+    } else {
+      bVar2 = false;
     }
     if (!(bVar2)) {
       bVar2 = false;
@@ -116,6 +112,8 @@ undefined4 func_0205a900(int *param_1,int *param_2)
         bVar2 = true;
       }
     }
+  } else {
+    bVar2 = false;
   }
   if (!bVar2) {
     if (param_1 == (int *)0x0) {

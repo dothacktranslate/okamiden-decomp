@@ -100,14 +100,14 @@ extern int func_0x0209113c();
 void func_0202f82c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  undefined4 uVar1;
-  undefined4 uVar2;
-  int iVar3;
-  undefined4 uVar4;
-  int iVar5;
-  int iVar6;
-  undefined1 auStack_28 [16];
   undefined4 uStack_18;
+  undefined1 auStack_28 [16];
+  int iVar6;
+  int iVar5;
+  undefined4 uVar4;
+  int iVar3;
+  undefined4 uVar2;
+  undefined4 uVar1;
 
   uVar1 = (*(unsigned int *)0x0202f9c4);
   uStack_18 = param_4;

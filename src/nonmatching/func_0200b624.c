@@ -176,7 +176,10 @@ void func_0200b624(void)
   iVar3 = ((unsigned int)0x0200b720);
   puVar2 = ((unsigned int)0x04000184);
   while( true ) {
-    if ((*puVar2 & 0x4000) == 0) {
+    if (!((*puVar2 & 0x4000) == 0)) {
+      iVar4 = -3;
+      *puVar2 = *puVar2 | 0xc000;
+    } else {
       func_02008b6c();
       uVar1 = _IPCFIFORECV;
       if (!((*puVar2 & 0x100) == 0)) {
@@ -188,30 +191,24 @@ void func_0200b624(void)
         local_28 = uVar1;
       }
     }
-    else {
-      iVar4 = -3;
-      *puVar2 = *puVar2 | 0xc000;
-    }
     if (iVar4 == -4) break;
     if ((iVar4 != -3) && (uVar1 = local_28 & 0x1f, uVar1 != 0)) {
       pcVar5 = *(code **)(uVar1 + iVar3 * 4);
-      if (pcVar5 == (code *)0x0) {
+      if (!(pcVar5 == (code *)0x0)) {
+        (*pcVar5)(uVar1,local_28 >> 6,(local_28 & 0x3f) >> 5);
+      } else {
         if (-1 < (int)(local_28 << 0x1a)) {
           local_28 = local_28 | 0x20;
-          if ((*puVar2 & 0x4000) == 0) {
+          if (!((*puVar2 & 0x4000) == 0)) {
+            *puVar2 = *puVar2 | 0xc000;
+          } else {
             func_02008b6c();
             if ((*puVar2 & 2) == 0) {
               *(uint *)(puVar2 + 2) = local_28;
             }
             func_02008b80();
           }
-          else {
-            *puVar2 = *puVar2 | 0xc000;
-          }
         }
-      }
-      else {
-        (*pcVar5)(uVar1,local_28 >> 6,(local_28 & 0x3f) >> 5);
       }
     }
   }

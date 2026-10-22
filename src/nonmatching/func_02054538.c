@@ -95,12 +95,12 @@ extern int func_02054370();
 void func_02054538(int param_1,int *param_2,undefined4 param_3,int *param_4)
 
 {
-  int *piVar1;
   int iVar2;
-  int iVar4;
   int iVar3;
-  int *piVar5;
   int local_2c;
+  int *piVar1;
+  int iVar4;
+  int *piVar5;
   int local_28;
 
   iVar3 = 0;

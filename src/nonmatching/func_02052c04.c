@@ -102,8 +102,9 @@ void func_02052c04(undefined4 param_1,int param_2,undefined4 *param_3)
   *(undefined1 *)(param_2 + 6) = 0;
   if (iVar2 == iVar1) {
     uVar3 = ((unsigned int)0x02052c84);
-    if ((param_3[1] == 0) ||
-       ((bVar4 = param_3[1] == 3, bVar4 &&
+    if ((param_3[1] == 0)) {
+      func_0204b9e0(param_1,uVar3);
+    } else if (((bVar4 = param_3[1] == 3, bVar4 &&
         (func_0201e54c(*param_3,*param_3), uVar3 = ((unsigned int)0x02052c88), !bVar4)))) {
       func_0204b9e0(param_1,uVar3);
     }

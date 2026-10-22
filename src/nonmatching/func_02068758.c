@@ -113,13 +113,12 @@ void func_02068758(undefined4 param_1,int param_2,uint param_3,int param_4)
   if ((param_3 != 0) && (iVar6 = 0, *puVar3 != 0)) {
     do {
       uVar2 = ((unsigned int)0x00000fff);
-      if ((puVar3[1] & 1) == 0) {
-        iVar4 = *(short *)(puVar3 + 2);
-        iVar5 = iVar6 << 3;
-      }
-      else {
+      if (!((puVar3[1] & 1) == 0)) {
         iVar4 = *(int *)(puVar3 + 2);
         iVar5 = iVar6 << 4;
+      } else {
+        iVar4 = *(short *)(puVar3 + 2);
+        iVar5 = iVar6 << 3;
       }
       puVar7 = (ushort *)(iVar4 + iVar5);
       iVar4 = 0;

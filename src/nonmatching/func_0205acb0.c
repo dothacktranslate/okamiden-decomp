@@ -88,10 +88,10 @@ void func_0205acb0(undefined4 *param_1,byte *param_2,undefined4 param_3,undefine
 
 {
   uint *puVar1;
-  code *pcVar2;
   uint uVar4;
-  uint uVar3;
   uint *puVar5;
+  code *pcVar2;
+  uint uVar3;
   bool bVar6;
 
   puVar5 = ((unsigned int)0x0205ad3c);

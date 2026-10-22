@@ -105,15 +105,7 @@ void func_020385b8(int param_1,int param_2)
     if (param_2 == 0) {
       func_0200f058();
       iVar1 = ((unsigned int)0x00008ca0);
-      if (*(short *)(iVar4 + 4) == 0) {
-        *(undefined2 *)(iVar4 + 8) = 0;
-        iVar2 = *(ushort *)(iVar4 + 10) + 1;
-        if (iVar1 < iVar2) {
-          iVar2 = iVar1;
-        }
-        *(short *)(iVar4 + 10) = (short)iVar2;
-      }
-      else {
+      if (!(*(short *)(iVar4 + 4) == 0)) {
         iVar1 = *(ushort *)(iVar4 + 8) + 1;
         if (((unsigned int)0x00008ca0) < iVar1) {
           iVar1 = ((unsigned int)0x00008ca0);
@@ -123,6 +115,13 @@ void func_020385b8(int param_1,int param_2)
         if (*(short *)(iVar4 + 6) == 0) {
           uVar5 = func_020386d0(iVar3,iVar4);
         }
+      } else {
+        *(undefined2 *)(iVar4 + 8) = 0;
+        iVar2 = *(ushort *)(iVar4 + 10) + 1;
+        if (iVar1 < iVar2) {
+          iVar2 = iVar1;
+        }
+        *(short *)(iVar4 + 10) = (short)iVar2;
       }
     }
     else {

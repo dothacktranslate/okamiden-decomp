@@ -91,16 +91,16 @@ extern int func_02002c10();
 void func_02001b14(int *param_1,undefined4 param_2,int *param_3,undefined4 *param_4)
 
 {
-  int iVar1;
-  undefined4 local_40;
-  undefined4 local_3c;
   undefined4 local_38;
-  undefined4 local_34;
+  undefined4 local_3c;
+  undefined4 local_40;
+  int iVar1;
   undefined4 local_30;
   undefined4 local_2c;
   int local_28;
   int local_20;
   int local_24;
+  undefined4 local_34;
 
   local_24 = param_1[1] - param_3[1];
   local_28 = *param_1 - *param_3;

@@ -98,7 +98,9 @@ int func_02015ce0(uint param_1,uint param_2)
     if (uVar3 != 0) {
       while (uVar2 < 4) {
         uVar2 = (uint)*(byte *)(param_1 + iVar1);
-        if ((uVar2 != *(byte *)(param_2 + iVar1)) || (uVar2 == 0)) {
+        if ((uVar2 != *(byte *)(param_2 + iVar1))) {
+          return uVar2 - *(byte *)(param_2 + iVar1);
+        } else if ((uVar2 == 0)) {
           return uVar2 - *(byte *)(param_2 + iVar1);
         }
         iVar1 = iVar1 + 1;

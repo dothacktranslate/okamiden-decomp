@@ -100,10 +100,9 @@ undefined4 func_0205b430(int param_1,int param_2)
   if (param_1 != 0) {
     iVar1 = *(int *)(param_1 + 8);
   }
-  if (param_1 != 0 && iVar1 != 0) {
+  if (!(!(param_1 != 0 && iVar1 != 0))) {
     puVar5 = (ushort *)(param_1 + iVar1);
-  }
-  else {
+  } else {
     puVar5 = (ushort *)0x0;
   }
   uVar4 = 1;
@@ -111,23 +110,18 @@ undefined4 func_0205b430(int param_1,int param_2)
   iVar1 = (int)puVar5 + (uint)*puVar5;
   if (*(char *)(iVar1 + 1) != '\0') {
     do {
-      if ((iVar1 == 0) || (*(byte *)(iVar1 + 1) <= uVar3)) {
-        iVar2 = 0;
-      }
-      else {
+      if (!((iVar1 == 0) || (*(byte *)(iVar1 + 1) <= uVar3))) {
         iVar2 = iVar1 + (uint)*(ushort *)(iVar1 + 6);
         iVar2 = iVar2 + (uint)*(ushort *)(iVar2 + 2) + uVar3 * 0x10;
-      }
-      if (param_2 == 0) {
+      } else {
         iVar2 = 0;
       }
-      else {
+      if (!(param_2 == 0)) {
         iVar2 = func_0205ef10(param_2 + 0x3c,iVar2);
+      } else {
+        iVar2 = 0;
       }
-      if (iVar2 == 0) {
-        uVar4 = 0;
-      }
-      else {
+      if (!(iVar2 == 0)) {
         if ((iVar1 == 0) || (*(byte *)(iVar1 + 1) <= uVar3)) {
           iVar2 = 0;
         }
@@ -138,6 +132,8 @@ undefined4 func_0205b430(int param_1,int param_2)
         if ((*(byte *)(iVar2 + 3) & 1) == 0) {
           func_0205b248(puVar5,iVar2,param_2);
         }
+      } else {
+        uVar4 = 0;
       }
       uVar3 = uVar3 + 1;
     } while (uVar3 < *(byte *)(iVar1 + 1));

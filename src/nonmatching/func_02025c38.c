@@ -206,15 +206,14 @@ LAB_02025d28:
           piVar9[0x32] = 0;
         }
         iVar7 = *(int *)(iVar5 + 0x50);
-        if ((*(uint *)(iVar7 + 0x14) & 0x1000000) == 0) {
-          if ((*(uint *)(iVar7 + 0x14) & 0x2000000) != 0) {
-            func_0x02095830(iVar7);
-          }
-        }
-        else {
+        if (!((*(uint *)(iVar7 + 0x14) & 0x1000000) == 0)) {
           iVar5 = func_0x020ae6c8(*(undefined4 *)(iVar5 + 0x44));
           if (iVar5 == 0) {
             func_0x02095770(iVar7,0x1800);
+          }
+        } else {
+          if ((*(uint *)(iVar7 + 0x14) & 0x2000000) != 0) {
+            func_0x02095830(iVar7);
           }
         }
         iVar4 = 1;

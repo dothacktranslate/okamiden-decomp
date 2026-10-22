@@ -93,16 +93,16 @@ extern int func_0201a9d4();
 undefined1 * func_02016344(undefined1 *param_1,int param_2,int param_3)
 
 {
-  uint iVar1;
   int iVar2;
-  int iVar3;
   int iVar4;
-  uint uVar5;
   byte *pbVar6;
-  int iVar7;
   undefined1 *puVar8;
-  undefined1 *puVar9;
   int iVar10;
+  uint iVar1;
+  int iVar3;
+  uint uVar5;
+  int iVar7;
+  undefined1 *puVar9;
 
   iVar1 = ((unsigned int)0x02016510);
   iVar4 = ((unsigned int)0x02016504);
@@ -146,13 +146,12 @@ undefined1 * func_02016344(undefined1 *param_1,int param_2,int param_3)
       if (iVar4 < 0) {
         iVar4 = *(int *)(param_3 + 0x28);
         *(int *)(param_3 + 0x28) = iVar4 + -1;
-        if (iVar4 == 0) {
-          uVar5 = func_0201622c(param_3);
-        }
-        else {
+        if (!(iVar4 == 0)) {
           pbVar6 = *(byte **)(param_3 + 0x24);
           *(byte **)(param_3 + 0x24) = pbVar6 + 1;
           uVar5 = (uint)*pbVar6;
+        } else {
+          uVar5 = func_0201622c(param_3);
         }
       }
       else {

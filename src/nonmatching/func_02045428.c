@@ -76,11 +76,10 @@ void func_02045428(int param_1)
           if (0xbf < uVar4) {
             uVar4 = uVar4 | 0xffffff00;
           }
-          if ((*(uint *)(iVar7 + uVar12 * 8) & 0x300) == 0) {
-            func_02058508(uVar3,uVar4,iVar6,iVar7 + uVar12 * 8,iVar8 + iVar5 + 0xc,uVar9,uVar10);
-          }
-          else {
+          if (!((*(uint *)(iVar7 + uVar12 * 8) & 0x300) == 0)) {
             func_02058750(uVar3,uVar4,iVar6,iVar7 + uVar12 * 8);
+          } else {
+            func_02058508(uVar3,uVar4,iVar6,iVar7 + uVar12 * 8,iVar8 + iVar5 + 0xc,uVar9,uVar10);
           }
           iVar6 = (iVar6 + -1) * 0x10000 >> 0x10;
           uVar3 = uVar12 + 1;

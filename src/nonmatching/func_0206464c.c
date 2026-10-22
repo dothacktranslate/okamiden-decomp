@@ -120,7 +120,9 @@ void func_0206464c(void)
        (iVar8 = func_0200ac20(*(undefined4 *)(iVar6 + 0x30)), iVar8 != 0)) {
       *(undefined1 *)(iVar6 + 0x2d) = 1;
     }
-    if ((*(char *)(iVar6 + 0x2d) == '\0') || ((uVar5 & 1 << (uint)*(byte *)(iVar6 + 0x3c)) != 0)) {
+    if (!((*(char *)(iVar6 + 0x2d) == '\0') || ((uVar5 & 1 << (uint)*(byte *)(iVar6 + 0x3c)) != 0))) {
+      func_02064b08(iVar6);
+    } else {
       func_02068620(iVar6 + 0x1c);
       sVar1 = *(short *)(iVar4 + (uint)*(byte *)(*(int *)(iVar6 + 4) + 0x20) * 2);
       sVar2 = *(short *)(iVar4 + (uint)*(byte *)(iVar6 + 0x41) * 2);
@@ -142,9 +144,6 @@ void func_0206464c(void)
         func_0200a324(*(undefined1 *)(iVar6 + 0x3c));
         *(undefined1 *)(iVar6 + 0x2f) = 0;
       }
-    }
-    else {
-      func_02064b08(iVar6);
     }
     iVar6 = iVar7;
   } while (iVar7 != 0);

@@ -96,8 +96,8 @@ void func_02065dd4(undefined4 *param_1,int param_2)
 
 {
   ushort uVar1;
-  bool bVar2;
   undefined4 uVar3;
+  bool bVar2;
   int iVar4;
 
   bVar2 = false;

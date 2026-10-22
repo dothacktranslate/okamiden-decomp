@@ -93,16 +93,16 @@ extern int func_0203ba20();
 bool func_0203be90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  bool bVar1;
-  undefined4 *puVar2;
-  int iVar3;
-  undefined4 uVar4;
-  int iVar5;
-  int iVar6;
-  uint uVar7;
-  bool bVar8;
-  undefined1 auStack_64 [68];
   undefined4 uStack_20;
+  undefined1 auStack_64 [68];
+  bool bVar8;
+  uint uVar7;
+  int iVar6;
+  int iVar5;
+  undefined4 uVar4;
+  int iVar3;
+  undefined4 *puVar2;
+  bool bVar1;
 
   uVar4 = ((unsigned int)0x0203c020);
   puVar2 = ((unsigned int)0x0203c01c);

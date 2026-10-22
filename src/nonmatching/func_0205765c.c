@@ -92,14 +92,14 @@ void func_0205765c(int *param_1)
 
 {
   int iVar1;
-  bool bVar2;
   uint uVar3;
-  uint uVar4;
   int iVar5;
-  uint uVar6;
   int iVar7;
-  int iVar8;
   code *pcVar9;
+  bool bVar2;
+  uint uVar4;
+  uint uVar6;
+  int iVar8;
   uint uVar10;
 
   if (param_1[5] == 0) {

@@ -102,7 +102,9 @@ void func_020424d0(int param_1,int param_2)
     param_1 = *(int *)(param_1 + 0x10);
   }
   bVar3 = param_1 == 0;
-  if ((!bVar1 || !bVar2) || bVar3) {
+  if ((!bVar1 || !bVar2)) {
+    param_1 = 0;
+  } else if (bVar3) {
     param_1 = 0;
   }
   if ((bVar1 && bVar2) && !bVar3) {

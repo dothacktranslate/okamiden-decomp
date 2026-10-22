@@ -89,9 +89,9 @@ byte * func_02019368(byte *param_1,byte *param_2)
 {
   int iVar3;
   byte *pbVar4;
-  byte local_30 [36];
-  byte bVar1;
   uint uVar2;
+  byte bVar1;
+  byte local_30 [36];
 
   pbVar4 = local_30;
   iVar3 = 8;

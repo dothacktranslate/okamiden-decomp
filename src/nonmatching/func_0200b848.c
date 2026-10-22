@@ -280,13 +280,12 @@ LAB_0200b93c:
 LAB_0200bb78:
   iVar2 = func_0200b724(param_2);
   if (iVar2 == 0) {
-    if ((*(uint *)(param_1 + 0xc) & 4) == 0) {
+    if (!((*(uint *)(param_1 + 0xc) & 4) == 0)) {
+      iVar1 = func_0200b7f0(param_1,iVar1);
+    } else {
       if (iVar1 != 0x100) {
         func_0200b74c(param_1,iVar1);
       }
-    }
-    else {
-      iVar1 = func_0200b7f0(param_1,iVar1);
     }
   }
   return iVar1;

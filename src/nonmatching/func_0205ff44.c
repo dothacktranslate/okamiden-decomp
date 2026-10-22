@@ -88,27 +88,26 @@ void func_0205ff44(int *param_1,uint param_2,uint *param_3,int param_4)
 
 {
   uint uVar1;
-  int *piVar2;
   uint uVar3;
-  int iVar4;
   int iVar5;
-  int iVar6;
   int iVar7;
-  int iVar8;
   int iVar9;
-  uint uVar10;
   int iVar11;
+  int *piVar2;
+  int iVar4;
+  int iVar6;
+  int iVar8;
+  uint uVar10;
 
   uVar10 = (int)param_2 >> 0xc;
   iVar9 = param_4 + param_3[1];
   uVar3 = *param_3;
   if (*(ushort *)(param_4 + 4) - 1 == uVar10) {
     if ((uVar3 & 0xc0000000) != 0) {
-      if ((uVar3 & 0x40000000) == 0) {
-        uVar10 = (uVar10 & 3) + (uVar10 >> 2);
-      }
-      else {
+      if (!((uVar3 & 0x40000000) == 0)) {
         uVar10 = (uVar10 & 1) + (uVar10 >> 1);
+      } else {
+        uVar10 = (uVar10 & 3) + (uVar10 >> 2);
       }
     }
     if ((*(uint *)(param_4 + 8) & 2) == 0) {

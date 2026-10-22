@@ -111,7 +111,7 @@ undefined4 func_0205e318(uint *param_1)
 
   uVar7 = *param_1;
   if (((unsigned int)0x30415642) < uVar7) {
-    if (!(((unsigned int)0x0205e540) < uVar7)) {
+    if (!(!(!(((unsigned int)0x0205e540) < uVar7)))) {
       uVar1 = ((unsigned int)0x0205e544);
       if (((unsigned int)0x0205e540) <= uVar7) {
         return 1;
@@ -130,26 +130,23 @@ undefined4 func_0205e318(uint *param_1)
       iVar3 = func_0205b078();
       iVar4 = func_0205b08c(iVar2);
       iVar5 = func_0205b1bc(iVar2);
-      if (iVar3 == 0) {
-        iVar3 = 0;
-      }
-      else {
+      if (!(iVar3 == 0)) {
         iVar3 = (*(code *)(*(unsigned int *)0x0205e548))(iVar3,0,0);
         bVar8 = iVar3 != 0;
+      } else {
+        iVar3 = 0;
       }
-      if (iVar4 == 0) {
-        iVar4 = 0;
-      }
-      else {
+      if (!(iVar4 == 0)) {
         iVar4 = (*(code *)(*(unsigned int *)0x0205e548))(iVar4,1,0);
         bVar9 = iVar4 != 0;
+      } else {
+        iVar4 = 0;
       }
-      if (iVar5 == 0) {
-        iVar5 = 0;
-      }
-      else {
+      if (!(iVar5 == 0)) {
         iVar5 = (*(code *)(*(unsigned int *)0x0205e54c))(iVar5,*(ushort *)(iVar2 + 0x20) & 0x8000,0);
         bVar10 = iVar5 != 0;
+      } else {
+        iVar5 = 0;
       }
       if ((!bVar8 || !bVar9) || (!bVar10)) {
         if (bVar10) {

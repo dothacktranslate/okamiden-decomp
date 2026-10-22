@@ -110,7 +110,9 @@ int func_02041360(undefined2 *param_1,undefined4 param_2,undefined4 param_3,unde
     iVar1 = *(int *)(iVar1 + 0x10);
   }
   bVar6 = iVar1 == 0;
-  if ((!bVar4 || !bVar5) || bVar6) {
+  if ((!bVar4 || !bVar5)) {
+    iVar1 = 0;
+  } else if (bVar6) {
     iVar1 = 0;
   }
   if ((bVar4 && bVar5) && !bVar6) {

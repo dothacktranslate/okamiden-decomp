@@ -107,15 +107,14 @@ uint func_02063f5c(int param_1,int param_2)
   if (((unsigned int)0x0007fff8) <= uVar4) {
     return 0;
   }
-  if (param_2 == 0) {
-    iVar3 = func_0206394c(((unsigned int)0x02064028),((unsigned int)0x0206402c),&uStack_14,uVar4);
-  }
-  else {
+  if (!(param_2 == 0)) {
     iVar3 = func_0206394c(((unsigned int)0x02064028),((unsigned int)0x0206402c),&uStack_14,uVar4);
     if (0x10000 < uStack_14 + uVar4) {
       func_02063b08(uVar1,uVar2,uStack_14,uVar4);
       return 0;
     }
+  } else {
+    iVar3 = func_0206394c(((unsigned int)0x02064028),((unsigned int)0x0206402c),&uStack_14,uVar4);
   }
   if (iVar3 != 0) {
     return (uStack_14 & 0x7ffff) >> 3 | (uVar4 >> 3) << 0x10;

@@ -233,12 +233,11 @@ void func_0203e814(int param_1)
   local_b0[5] = local_b0[3];
   local_b0[6] = local_b0[4];
   if ((iVar2 != 0) && ((*(uint *)(iVar2 + 0xc) & 0x80000) != 0)) {
-    if ((*(uint *)(iVar2 + 0xc) & 0x200000) == 0) {
+    if (!((*(uint *)(iVar2 + 0xc) & 0x200000) == 0)) {
+      iVar3 = 0;
+    } else {
       sVar1 = func_0201e9d4(iVar3 * *(short *)(iVar2 + 0xe0),0x1f);
       iVar3 = (int)sVar1;
-    }
-    else {
-      iVar3 = 0;
     }
   }
   if (0 < iVar3) {

@@ -90,10 +90,10 @@ extern int func_0205b948();
 void func_0205bac8(int param_1)
 
 {
-  int *piVar1;
-  uint iVar2;
-  uint uVar3;
   int iVar4;
+  uint uVar3;
+  uint iVar2;
+  int *piVar1;
 
   uVar3 = 0;
   if (*(char *)(param_1 + 9) == '\0') {

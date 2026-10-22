@@ -114,7 +114,7 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
                   uVar2 = ((unsigned int)0x0202d0fc);
                   uVar3 = ((unsigned int)0x00000ad8);
                   if (*(char *)(param_1 + ((unsigned int)0x00000ad8)) != '\0') {
-                    if (!(param_4 <= 999)) {
+                    if (!(!(!(param_4 <= 999)))) {
                       uVar4 = 0;
                       uVar2 = ((unsigned int)0x0202d0e8);
                       uVar3 = ((unsigned int)0x0202d0ec);
@@ -139,12 +139,11 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
                 }
               }
               else {
-                if (param_3 == 0) {
-                  func_02018ba4(local_5c,((unsigned int)0x0202d094),((unsigned int)0x0202d098));
-                }
-                else {
+                if (!(param_3 == 0)) {
                   local_5c[0] = (char)param_3 + 'a';
                   local_5c[1] = 0;
+                } else {
+                  func_02018ba4(local_5c,((unsigned int)0x0202d094),((unsigned int)0x0202d098));
                 }
                 uVar4 = 2000;
                 uVar2 = ((unsigned int)0x0202d0a0);
@@ -169,12 +168,11 @@ undefined4 func_0202cd5c(int param_1,uint param_2,int param_3,uint param_4)
             }
           }
           else {
-            if (param_3 == 0) {
-              func_02018ba4(local_58,((unsigned int)0x0202d048),((unsigned int)0x0202d04c));
-            }
-            else {
+            if (!(param_3 == 0)) {
               local_58[0] = (char)param_3 + 'a';
               local_58[1] = 0;
+            } else {
+              func_02018ba4(local_58,((unsigned int)0x0202d048),((unsigned int)0x0202d04c));
             }
             uVar2 = ((unsigned int)0x0202d054);
             uVar3 = ((unsigned int)0x0202d058);

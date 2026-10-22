@@ -103,7 +103,7 @@ undefined2 func_0203c9bc(int param_1)
   } else {
     iVar2 = 0;
   }
-  if (iVar2 == 0) {
+  if (!iVar2) {
     uVar1 = 0xffff;
   }
   else {

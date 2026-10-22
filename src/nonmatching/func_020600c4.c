@@ -91,30 +91,30 @@ void func_020600c4(int *param_1,int param_2,uint *param_3,int param_4)
 
 {
   uint uVar1;
-  int iVar2;
   uint uVar3;
-  int iVar4;
   int iVar5;
-  int iVar6;
   uint uVar7;
-  int local_68;
   int local_64;
-  int local_60;
   int local_5c;
-  int local_58;
   int local_54;
-  int local_50;
   int local_4c;
-  int local_48;
   int local_44;
-  int local_40;
   int local_3c;
-  int local_38;
   int local_34;
-  int local_30;
   int local_2c;
-  int local_28;
   int local_24;
+  int iVar2;
+  int iVar4;
+  int iVar6;
+  int local_68;
+  int local_60;
+  int local_58;
+  int local_50;
+  int local_48;
+  int local_40;
+  int local_38;
+  int local_30;
+  int local_28;
   int iStack_20;
 
   uVar3 = param_2 >> 0xc;

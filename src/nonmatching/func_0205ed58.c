@@ -115,7 +115,7 @@ void func_0205ed58(int param_1,uint param_2,int param_3,int param_4)
   }
   param_1 = 0;
 LAB_0205edbc:
-  if (param_3 == 0) {
+  if (!param_3) {
     uVar1 = *(uint *)(param_1 + 0xc) & 0xffffdfff;
   }
   else {

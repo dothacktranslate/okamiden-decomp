@@ -134,16 +134,15 @@ LAB_0205718c:
       puVar4 = (ushort *)param_1[7];
       *param_1 = uVar3;
       uVar5 = 1;
-      if ((uint)(0 < (int)param_1[5]) == param_1[2]) {
+      if (!((uint)(0 < (int)param_1[5]) == param_1[2])) {
+        bVar6 = *(int *)(puVar4 + 6) + (uint)*puVar4 * 8 <= uVar3;
+      } else {
         if ((*(int *)(puVar4 + 6) + (uint)puVar4[1] * 8) - 8 < uVar3) {
           bVar6 = false;
         }
         else {
           bVar6 = true;
         }
-      }
-      else {
-        bVar6 = *(int *)(puVar4 + 6) + (uint)*puVar4 * 8 <= uVar3;
       }
       if (bVar6) {
         func_02056f14(param_1);

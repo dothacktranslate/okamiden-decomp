@@ -102,8 +102,9 @@ void func_020420d8(int param_1)
 
   uVar1 = ((unsigned int)0x020421ec);
   if ((((*(uint *)(param_1 + 0x124) & 0x1000) != 0) ||
-      (uVar1 = ((unsigned int)0x020421f0), (*(uint *)(0x124 + param_1) & 0x2000) != 0)) ||
-     (uVar1 = ((unsigned int)0x020421f4), *(unsigned short *)(param_1 + 0x1cc) == 0xd)) {
+      (uVar1 = ((unsigned int)0x020421f0), (*(uint *)(0x124 + param_1) & 0x2000) != 0))) {
+    *(undefined4 *)(param_1 + 0x3fc) = uVar1;
+  } else if ((uVar1 = ((unsigned int)0x020421f4), *(unsigned short *)(param_1 + 0x1cc) == 0xd)) {
     *(undefined4 *)(param_1 + 0x3fc) = uVar1;
   }
   if (*(int *)(param_1 + 0x1cc) != 0) {

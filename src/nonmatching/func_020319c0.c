@@ -117,7 +117,7 @@ void func_020319c0(int param_1,int param_2,undefined4 param_3,undefined4 param_4
   func_0x01ff99dc(param_1 + 0xd8);
   iVar3 = *(int *)(param_1 + 0x104);
   iVar5 = 0;
-  if (0 < iVar3) {
+  if (!(0 < iVar3)) {} else {
     do {
       iVar4 = iVar5 * 0xc;
       iVar3 = *(int *)(*(int *)(param_1 + 0x108) + iVar4);
