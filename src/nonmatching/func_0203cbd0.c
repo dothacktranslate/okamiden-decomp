@@ -94,11 +94,11 @@ extern int func_0x01ffbee4();
 undefined4 func_0203cbd0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  int iVar1;
-  undefined4 uVar2;
-  undefined1 auStack_38 [16];
-  undefined1 auStack_28 [16];
   undefined4 uStack_18;
+  undefined1 auStack_28 [16];
+  undefined1 auStack_38 [16];
+  undefined4 uVar2;
+  int iVar1;
 
   uVar2 = *(undefined4 *)(param_1 + 0x14);
   uStack_18 = param_4;

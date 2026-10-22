@@ -122,30 +122,30 @@ undefined4 func_02027ed8(undefined4 param_1)
 
 {
   int local_18;
-  int local_1c;
   int local_20;
-  undefined4 local_24;
   undefined4 uStack_28;
-  undefined4 local_2c;
   undefined4 local_30;
-  undefined4 local_34;
   undefined4 local_38;
-  int local_3c;
   int local_40;
-  int local_44;
   undefined4 local_4c;
-  undefined4 uVar12;
   undefined4 uVar11;
-  int iVar10;
   int iVar9;
-  undefined4 uVar8;
   int iVar7;
-  undefined4 uVar6;
   uint uVar5;
-  undefined4 uVar4;
   int iVar3;
-  short sVar2;
   int *piVar1;
+  int local_1c;
+  undefined4 local_24;
+  undefined4 local_2c;
+  undefined4 local_34;
+  int local_3c;
+  int local_44;
+  undefined4 uVar12;
+  int iVar10;
+  undefined4 uVar8;
+  undefined4 uVar6;
+  undefined4 uVar4;
+  short sVar2;
 
   iVar10 = (*(unsigned int *)0x0202820c);
   iVar9 = 1;

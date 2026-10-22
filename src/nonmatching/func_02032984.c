@@ -94,16 +94,16 @@ func_02032984(int param_1,undefined4 param_2,undefined4 param_3,int *param_4,und
             undefined4 param_6)
 
 {
-  int *piVar1;
-  int iVar2;
-  int iVar3;
-  int iVar4;
-  int local_30;
-  undefined1 auStack_2c [12];
-  undefined2 uStack_20;
-  undefined2 uStack_1e;
-  int local_1c;
   int local_18;
+  int local_1c;
+  undefined2 uStack_1e;
+  undefined2 uStack_20;
+  undefined1 auStack_2c [12];
+  int local_30;
+  int iVar4;
+  int iVar3;
+  int iVar2;
+  int *piVar1;
 
   if (param_4 != (int *)0x0) {
     *param_4 = ((unsigned int)0x02032a2c);

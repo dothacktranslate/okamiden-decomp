@@ -101,25 +101,6 @@ extern int func_0201fbf4();
 longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
 
 {
-  undefined4 uStack_3c;
-  undefined4 uStack_40;
-  undefined4 uStack_48;
-  undefined4 uStack_4c;
-  undefined4 uStack_50;
-  undefined4 uStack_5c;
-  undefined8 uVar27;
-  ulonglong uVar26;
-  undefined8 uVar25;
-  undefined8 uVar24;
-  undefined8 uVar23;
-  longlong lVar22;
-  undefined1 uVar21;
-  undefined1 uVar20;
-  bool bVar19;
-  uint uVar18;
-  int iVar17;
-  int iVar16;
-  int iVar15;
   uint uVar14;
   uint iVar13;
   uint uVar12;
@@ -139,6 +120,25 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
   uint uVar3;
   undefined4 uVar2;
   undefined4 uVar1;
+  undefined4 uStack_3c;
+  undefined4 uStack_40;
+  undefined4 uStack_48;
+  undefined4 uStack_4c;
+  undefined4 uStack_50;
+  undefined4 uStack_5c;
+  undefined8 uVar27;
+  ulonglong uVar26;
+  undefined8 uVar25;
+  undefined8 uVar24;
+  undefined8 uVar23;
+  longlong lVar22;
+  undefined1 uVar21;
+  undefined1 uVar20;
+  bool bVar19;
+  uint uVar18;
+  int iVar17;
+  int iVar16;
+  int iVar15;
 
   uVar18 = param_4 & 0x7fffffff;
   uVar14 = param_2 & 0x7fffffff;
@@ -154,7 +154,7 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
   iVar15 = 0;
   uVar12 = param_3;
   if ((int)param_2 < 0) {
-    if ((int)uVar18 < ((unsigned int)0x43400000)) {
+    if (!(!((int)uVar18 < ((unsigned int)0x43400000)))) {
       if (((unsigned int)0x43400000) + -0x3500000 <= (int)uVar18) {
         uVar3 = ((unsigned int)0xfffffc01) + ((int)uVar18 >> 0x14);
         if (!((int)uVar3 < 0x15)) {
@@ -173,8 +173,7 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
           iVar15 = 2 - (uVar3 & 1);
         }
       }
-    }
-    else {
+    } else {
       iVar15 = 2;
     }
   }
@@ -253,7 +252,9 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
     uVar14 = uVar18 & ((unsigned int)0xfffffc01) >> 0xc;
     iVar16 = iVar16 + ((unsigned int)0xfffffc01) + ((int)uVar18 >> 0x14);
     uVar18 = uVar14 | 0x3ff00000;
-    if (((unsigned int)0x0201c430) < (int)uVar14) {
+    if (!(((unsigned int)0x0201c430) < (int)uVar14)) {
+      iVar17 = 0;
+    } else {
       if ((int)uVar14 < ((unsigned int)0x0201c434)) {
         iVar17 = 1;
       }
@@ -262,9 +263,6 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
         uVar18 = uVar18 - 0x100000;
         iVar17 = 0;
       }
-    }
-    else {
-      iVar17 = 0;
     }
     puVar4 = (undefined4 *)(((unsigned int)0x0201c438) + iVar17 * 8);
     uVar23 = func_0201d848(uStack_48,uVar18,*puVar4,puVar4[1]);

@@ -209,15 +209,14 @@ LAB_0205cc00:
         else {
           *puVar11 = *puVar11 | 1;
         }
-        if ((*(ushort *)(param_3 + 0x1e) & 4) == 0) {
+        if (!((*(ushort *)(param_3 + 0x1e) & 4) == 0)) {
+          *puVar11 = *puVar11 | 2;
+        } else {
           uVar4 = *puVar6;
           uVar3 = *(undefined2 *)((int)puVar6 + 2);
           puVar6 = puVar6 + 1;
           *(short *)(puVar11 + 8) = (short)uVar4;
           *(undefined2 *)((int)puVar11 + 0x22) = uVar3;
-        }
-        else {
-          *puVar11 = *puVar11 | 2;
         }
         if ((*(ushort *)(param_3 + 0x1e) & 8) == 0) {
           uVar4 = puVar6[1];

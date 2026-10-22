@@ -92,18 +92,18 @@ extern int func_0205e0c0();
 void func_02040b98(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  undefined4 uStack_18;
-  uint local_1c;
-  undefined4 local_20;
-  undefined4 local_24;
-  uint local_28;
-  undefined4 uStack_2c;
-  int local_30;
-  int local_34;
-  undefined4 local_38;
-  int local_3c;
-  int local_40;
   undefined4 uStack_44;
+  int local_40;
+  int local_3c;
+  undefined4 local_38;
+  int local_34;
+  int local_30;
+  undefined4 uStack_2c;
+  uint local_28;
+  undefined4 local_24;
+  undefined4 local_20;
+  uint local_1c;
+  undefined4 uStack_18;
   int local_48;
   int local_4c;
   undefined4 local_50;

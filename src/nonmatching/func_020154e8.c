@@ -258,7 +258,16 @@ void func_020154e8(int param_1,int param_2,uint param_3,code *param_4,int *param
           uVar3 = param_3;
           puVar8 = puVar6;
           puVar7 = puVar5;
-          if ((param_3 & 3) == 0) {
+          if (!((param_3 & 3) == 0)) {
+            do {
+              uVar3 = uVar3 - 1;
+              uVar2 = *(undefined1 *)puVar7;
+              *(undefined1 *)puVar7 = *(undefined1 *)puVar8;
+              puVar7 = (undefined4 *)((int)puVar7 + 1);
+              *(undefined1 *)puVar8 = uVar2;
+              puVar8 = (undefined4 *)((int)puVar8 + 1);
+            } while (uVar3 != 0);
+          } else {
             do {
               uVar3 = uVar3 - 4;
               uVar1 = *puVar7;
@@ -268,33 +277,13 @@ void func_020154e8(int param_1,int param_2,uint param_3,code *param_4,int *param
               puVar8 = puVar8 + 1;
             } while (uVar3 != 0);
           }
-          else {
-            do {
-              uVar3 = uVar3 - 1;
-              uVar2 = *(undefined1 *)puVar7;
-              *(undefined1 *)puVar7 = *(undefined1 *)puVar8;
-              puVar7 = (undefined4 *)((int)puVar7 + 1);
-              *(undefined1 *)puVar8 = uVar2;
-              puVar8 = (undefined4 *)((int)puVar8 + 1);
-            } while (uVar3 != 0);
-          }
           puVar6 = (undefined4 *)((int)puVar6 + param_3);
           puVar5 = (undefined4 *)((int)puVar5 - param_3);
         } while ((int)puVar6 <= (int)puVar5);
         uVar3 = param_3;
         puVar6 = puVar11;
         puVar8 = puVar5;
-        if ((param_3 & 3) == 0) {
-          do {
-            uVar3 = uVar3 - 4;
-            uVar1 = *puVar8;
-            *puVar8 = *puVar6;
-            puVar8 = puVar8 + 1;
-            *puVar6 = uVar1;
-            puVar6 = puVar6 + 1;
-          } while (uVar3 != 0);
-        }
-        else {
+        if (!((param_3 & 3) == 0)) {
           do {
             uVar3 = uVar3 - 1;
             uVar2 = *(undefined1 *)puVar8;
@@ -302,6 +291,15 @@ void func_020154e8(int param_1,int param_2,uint param_3,code *param_4,int *param
             puVar8 = (undefined4 *)((int)puVar8 + 1);
             *(undefined1 *)puVar6 = uVar2;
             puVar6 = (undefined4 *)((int)puVar6 + 1);
+          } while (uVar3 != 0);
+        } else {
+          do {
+            uVar3 = uVar3 - 4;
+            uVar1 = *puVar8;
+            *puVar8 = *puVar6;
+            puVar8 = puVar8 + 1;
+            *puVar6 = uVar1;
+            puVar6 = puVar6 + 1;
           } while (uVar3 != 0);
         }
         if ((int)puVar12 - (int)puVar5 < (int)puVar5 - (int)puVar11) {

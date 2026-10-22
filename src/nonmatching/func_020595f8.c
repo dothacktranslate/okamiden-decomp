@@ -117,7 +117,7 @@ void func_020595f8(short *param_1,undefined4 param_2,uint param_3,uint param_4,i
   iVar10 = param_1[1];
   iVar11 = param_1[2];
   iVar5 = *param_1;
-  if ((int)uVar9 <= (int)local_30) {
+  if (!((int)uVar9 <= (int)local_30)) {} else {
     return;
   }
   do {

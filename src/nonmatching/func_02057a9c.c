@@ -127,23 +127,21 @@ void func_02057a9c(int *param_1,ushort *param_2,int param_3,int param_4,int *par
         func_02005048();
       }
       else if (param_4 == 1) {
-        if (param_1[1] == 0) {
-          func_020040d4(iVar4 + iVar3,param_3 + iVar5,iVar7);
-        }
-        else {
+        if (!(param_1[1] == 0)) {
           func_02004b54();
           func_02004b9c(iVar4 + iVar3,param_3 + iVar5,iVar7);
           func_02004c0c();
+        } else {
+          func_020040d4(iVar4 + iVar3,param_3 + iVar5,iVar7);
         }
       }
       else if (param_4 == 2) {
-        if (param_1[1] == 0) {
-          func_02004130(iVar4 + iVar3,param_3 + iVar5,iVar7);
-        }
-        else {
+        if (!(param_1[1] == 0)) {
           func_02004d00();
           func_02004d18(iVar4 + iVar3,param_3 + iVar5,iVar7);
           func_02004d80();
+        } else {
+          func_02004130(iVar4 + iVar3,param_3 + iVar5,iVar7);
         }
       }
       uVar2 = uVar6 + 1;

@@ -90,20 +90,20 @@ extern int func_020036b8();
 void func_02056d88(void)
 
 {
-  int iVar1;
   int *piVar2;
-  undefined4 *puVar3;
   undefined4 *puVar4;
-  undefined4 in_r3;
   undefined4 local_3c;
-  undefined4 uStack_38;
   undefined4 uStack_34;
-  undefined4 local_30;
   undefined4 uStack_2c;
-  undefined4 uStack_28;
   undefined4 local_24;
-  undefined4 local_20;
   undefined4 local_1c;
+  int iVar1;
+  undefined4 *puVar3;
+  undefined4 in_r3;
+  undefined4 uStack_38;
+  undefined4 local_30;
+  undefined4 uStack_28;
+  undefined4 local_20;
   undefined4 uStack_18;
 
   iVar1 = ((unsigned int)0x02056e2c) << 6;

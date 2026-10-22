@@ -88,17 +88,17 @@ undefined8 func_0201ef10(uint param_1,uint param_2)
 
 {
   uint uVar2;
-  uint uVar4;
   uint uVar6;
+  uint uVar4;
   int iVar8;
   int iVar10;
   byte bVar12;
-  int iVar1;
-  uint uVar3;
-  uint uVar5;
-  uint uVar7;
-  uint uVar9;
   bool bVar11;
+  uint uVar9;
+  uint uVar7;
+  uint uVar5;
+  uint uVar3;
+  int iVar1;
 
   if (param_2 < ((unsigned int)0x0201f0a0)) {
     uVar5 = param_2 >> 0x14;

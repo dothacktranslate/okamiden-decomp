@@ -163,10 +163,10 @@ extern int func_0200522c();
 void func_020052c4(int param_1)
 
 {
-  ushort *puVar1;
-  undefined1 *puVar2;
-  undefined1 *puVar3;
   undefined1 *puVar4;
+  undefined1 *puVar3;
+  undefined1 *puVar2;
+  ushort *puVar1;
 
   puVar1 = ((unsigned int)0x020054a8);
   puVar3 = ((unsigned int)0x020054ac);

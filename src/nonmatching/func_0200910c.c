@@ -168,11 +168,10 @@ void func_0200910c(int param_1,undefined4 param_2,undefined4 param_3,uint param_
     func_02009530(param_1,param_2,param_4,0);
     do {
     } while ((*(uint *)(&DMA_CHANNEL_0_to_3 + (param_1 * 3 + 2) * 4) & 0x80000000) != 0);
-    if (param_5 == 0) {
-      param_4 = param_4 >> 1;
-    }
-    else {
+    if (!(param_5 == 0)) {
       param_4 = param_4 >> 1 | 0x80000000;
+    } else {
+      param_4 = param_4 >> 1;
     }
     func_0x01ff92c0(param_1,param_2,param_3,param_4);
     do {

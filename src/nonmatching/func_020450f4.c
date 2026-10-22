@@ -22,11 +22,11 @@ extern int func_0x01ff9f58();
 int func_020450f4(uint param_1,int param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  int iVar1;
-  undefined4 uVar2;
-  int iVar3;
-  int iVar4;
   int iVar5;
+  int iVar4;
+  int iVar3;
+  undefined4 uVar2;
+  int iVar1;
 
   if ((*(unsigned int *)0x020451fc) == 0) {
     if (param_1 < 0x4000) {

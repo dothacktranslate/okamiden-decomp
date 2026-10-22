@@ -89,11 +89,11 @@ extern int func_020064cc();
 void func_0200831c(void)
 
 {
-  int *piVar1;
-  int iVar2;
-  undefined2 *puVar3;
-  uint uVar4;
   undefined4 in_r3;
+  uint uVar4;
+  undefined2 *puVar3;
+  int iVar2;
+  int *piVar1;
 
   iVar2 = ((unsigned int)0x02008378);
   uVar4 = *(uint *)(((unsigned int)0x02008378) + 8);

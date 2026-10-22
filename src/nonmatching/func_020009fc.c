@@ -161,15 +161,15 @@ extern int LZCOUNT();
 void func_020009fc(void)
 
 {
-  undefined4 *puVar1;
-  int *piVar2;
-  undefined4 *puVar3;
-  undefined4 *puVar4;
-  undefined4 *puVar5;
-  uint uVar6;
-  undefined4 *puVar7;
-  undefined4 *puVar8;
   int iVar9;
+  undefined4 *puVar8;
+  undefined4 *puVar7;
+  uint uVar6;
+  undefined4 *puVar5;
+  undefined4 *puVar4;
+  undefined4 *puVar3;
+  int *piVar2;
+  undefined4 *puVar1;
 
   puVar1 = (undefined4 *)(*(unsigned int *)0x02000a70);
   puVar3 = (undefined4 *)((unsigned int *)0x02000a70)[1];

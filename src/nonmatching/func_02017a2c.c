@@ -110,11 +110,10 @@ void func_02017a2c(int param_1,int param_2)
         bVar3 = true;
       }
     }
-    else if ((byte)(*pcVar1 - 0x30U) < 6) {
-      bVar3 = false;
-    }
-    else {
+    else if (!((byte)(*pcVar1 - 0x30U) < 6)) {
       bVar3 = true;
+    } else {
+      bVar3 = false;
     }
     for (; param_2 != 0; param_2 = param_2 + -1) {
       pcVar1 = pcVar1 + -1;

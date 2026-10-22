@@ -134,7 +134,9 @@ func_02024504(int param_1,undefined4 param_2,undefined4 param_3,uint param_4,cha
       bVar1 = false;
     }
     iVar3 = func_0x0208f4d0(*(undefined4 *)(iVar7 + 0x54),0);
-    if ((!bVar1) || (iVar3 != 0)) {
+    if ((!bVar1)) {
+      return 0;
+    } else if ((iVar3 != 0)) {
       return 0;
     }
   }

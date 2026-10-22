@@ -170,18 +170,18 @@ extern int func_0203c854();
 void func_0202d18c(undefined4 param_1,int param_2,int param_3,uint param_4,int param_5,int param_6)
 
 {
-  int iVar1;
-  int iVar2;
-  undefined2 local_38;
-  undefined2 local_36;
-  undefined2 local_34;
-  undefined4 local_30;
-  undefined4 uStack_2c;
-  undefined4 local_28;
-  undefined4 local_24;
-  undefined4 local_20;
-  undefined4 local_1c;
   uint uStack_18;
+  undefined4 local_1c;
+  undefined4 local_20;
+  undefined4 local_24;
+  undefined4 local_28;
+  undefined4 uStack_2c;
+  undefined4 local_30;
+  undefined2 local_34;
+  undefined2 local_36;
+  undefined2 local_38;
+  int iVar2;
+  int iVar1;
 
   uStack_18 = param_4;
   iVar1 = func_0202c774(param_1,param_2 + param_3 * 0x10000);

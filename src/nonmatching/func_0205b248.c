@@ -89,14 +89,14 @@ extern int func_020028c0();
 void func_0205b248(int param_1,ushort *param_2,int param_3,uint *param_4)
 
 {
-  ushort uVar1;
   uint uVar2;
-  undefined4 uVar3;
   int *piVar4;
-  uint uVar5;
   uint uVar6;
-  int iVar7;
   uint uVar8;
+  ushort uVar1;
+  undefined4 uVar3;
+  uint uVar5;
+  int iVar7;
   int iVar9;
 
   uVar1 = *param_2;

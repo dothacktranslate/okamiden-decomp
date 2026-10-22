@@ -87,16 +87,16 @@ extern int LZCOUNT();
 void func_02009930(undefined4 *param_1,undefined4 *param_2,uint param_3)
 
 {
-  undefined4 uVar1;
-  undefined4 uVar2;
-  undefined4 uVar3;
-  undefined4 uVar4;
-  undefined4 uVar5;
-  undefined4 uVar6;
-  undefined4 uVar7;
-  undefined4 uVar8;
-  int iVar9;
   int iVar10;
+  int iVar9;
+  undefined4 uVar8;
+  undefined4 uVar7;
+  undefined4 uVar6;
+  undefined4 uVar5;
+  undefined4 uVar4;
+  undefined4 uVar3;
+  undefined4 uVar2;
+  undefined4 uVar1;
 
   iVar9 = (int)param_2 + param_3;
   iVar10 = (int)param_2 + (param_3 & 0xffffffe0);

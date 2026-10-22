@@ -128,14 +128,14 @@ extern int func_0x01ffce48();
 uint * func_0203545c(uint *param_1)
 
 {
-  undefined2 uVar1;
-  ushort *puVar2;
-  int iVar3;
-  uint uVar4;
-  undefined4 uVar5;
-  uint *puVar6;
-  undefined1 auStack_30 [12];
   undefined1 auStack_24 [16];
+  undefined1 auStack_30 [12];
+  uint *puVar6;
+  undefined4 uVar5;
+  uint uVar4;
+  int iVar3;
+  ushort *puVar2;
+  undefined2 uVar1;
 
   func_02007c90();
   func_02007898();

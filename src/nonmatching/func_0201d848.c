@@ -233,14 +233,7 @@ LAB_0201d9e8:
       return CONCAT44(uVar6 | (uVar2 & 0x7fffffff) >> 0xb | uVar9 << 0x14,
                       uVar5 >> 0xb | uVar2 << 0x15);
     }
-    if ((int)uVar5 < 0x21) {
-      uVar3 = uVar7 >> (uVar5 & 0xff) | uVar4 << (0x20 - uVar5 & 0xff);
-      if (uVar7 << (0x20 - uVar5 & 0xff) != 0) {
-        uVar3 = uVar3 | 1;
-      }
-      uVar5 = (uVar4 >> (uVar5 & 0xff)) + (uint)(uVar6 < uVar3);
-    }
-    else {
+    if (!((int)uVar5 < 0x21)) {
       if (0x37 < (int)uVar5) {
         uVar5 = 0x3f;
       }
@@ -249,6 +242,12 @@ LAB_0201d9e8:
         uVar3 = uVar3 | 1;
       }
       uVar5 = (uint)(uVar6 < uVar3);
+    } else {
+      uVar3 = uVar7 >> (uVar5 & 0xff) | uVar4 << (0x20 - uVar5 & 0xff);
+      if (uVar7 << (0x20 - uVar5 & 0xff) != 0) {
+        uVar3 = uVar3 | 1;
+      }
+      uVar5 = (uVar4 >> (uVar5 & 0xff)) + (uint)(uVar6 < uVar3);
     }
     uVar2 = uVar2 - uVar5;
     uVar6 = uVar6 - uVar3;

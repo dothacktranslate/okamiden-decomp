@@ -91,8 +91,8 @@ void func_020604c8(int *param_1,uint param_2,uint *param_3,int param_4)
 
 {
   uint uVar1;
-  int iVar5;
   int iVar9;
+  int iVar5;
   int local_64;
   int local_54;
   int local_44;

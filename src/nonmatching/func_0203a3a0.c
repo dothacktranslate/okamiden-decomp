@@ -92,8 +92,8 @@ void func_0203a3a0(byte *param_1,uint param_2,int param_3,int param_4,ushort par
 
 {
   uint uVar8;
-  int iVar9;
   uint uVar10;
+  int iVar9;
   uint uVar11;
   byte *local_50;
   uint local_2c;

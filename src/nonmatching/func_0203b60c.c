@@ -161,12 +161,11 @@ int func_0203b60c(undefined4 param_1,uint param_2)
   iVar1 = func_0205f230();
   if (iVar1 != 0) {
     iVar3 = iVar1 + 8;
-    if ((iVar3 == 0) || (*(byte *)(iVar1 + 9) <= param_2)) {
-      piVar2 = (int *)0x0;
-    }
-    else {
+    if (!((iVar3 == 0) || (*(byte *)(iVar1 + 9) <= param_2))) {
       piVar2 = (int *)(iVar3 + (uint)*(ushort *)(iVar1 + 0xe) + 4 +
                       param_2 * *(ushort *)(iVar3 + (uint)*(ushort *)(iVar1 + 0xe)));
+    } else {
+      piVar2 = (int *)0x0;
     }
     if (piVar2 != (int *)0x0) {
       return iVar1 + *piVar2;
