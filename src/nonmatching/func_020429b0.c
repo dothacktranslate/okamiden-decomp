@@ -9,8 +9,9 @@ int func_020429b0(unsigned int *obj, unsigned int alternate) {
     unsigned int base = alternate ? obj[2] : 0;
     unsigned int cur = *cursor;
     unsigned int end = cur + obj[2];
+    if (cur >= end) return -1;
     unsigned char *records = (unsigned char *)obj[1];
-    while (cur < end) {
+    do {
         unsigned int index = cur % obj[2];
         unsigned int *entry = (unsigned int *)(records + (index + base) * 188);
         if (entry[2] == 0 && entry[29] == 0) {
@@ -18,6 +19,6 @@ int func_020429b0(unsigned int *obj, unsigned int alternate) {
             return (int)(cur & 0x7fffu);
         }
         cur++;
-    }
+    } while (cur < end);
     return -1;
 }
