@@ -98,7 +98,7 @@ undefined4 func_0200b210(int param_1,undefined2 *param_2,uint *param_3)
   byte *pbVar9;
 
   uVar8 = *param_3;
-  if (*(uint *)(param_1 + 0x38) <= uVar8) {
+  if (!(*(uint *)(param_1 + 0x38) <= uVar8)) {} else {
     return 0;
   }
 LAB_0200b228:
@@ -178,7 +178,7 @@ LAB_0200b228:
   return 1;
 switchD_0200b250_default:
   uVar7 = *(uint *)(param_1 + 0x38);
-  uVar8 = *param_3 + 1;
+  uVar8 = *(1 + param_3);
   *param_3 = uVar8;
   param_3[1] = 0;
   if (uVar8 >= uVar7) {

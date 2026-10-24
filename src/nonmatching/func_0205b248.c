@@ -92,11 +92,11 @@ void func_0205b248(int param_1,ushort *param_2,int param_3,uint *param_4)
   uint uVar2;
   int *piVar4;
   uint uVar6;
-  uint uVar8;
+  int iVar7;
   ushort uVar1;
   undefined4 uVar3;
   uint uVar5;
-  int iVar7;
+  uint uVar8;
   int iVar9;
 
   uVar1 = *param_2;
@@ -116,7 +116,7 @@ LAB_0205b2e8:
         iVar9 = 0;
       }
       else {
-        if (!((iVar7 == 0) || (*(byte *)(param_1 + 5) <= uVar8))) {
+        if (!(!(!((iVar7 == 0) || (*(byte *)(param_1 + 5) <= uVar8))))) {
           piVar4 = (int *)(*(ushort *)(iVar7 + (uint)*(ushort *)(param_1 + 10)) * uVar8 +
                           iVar7 + (uint)*(ushort *)(param_1 + 10) + 4);
         } else {

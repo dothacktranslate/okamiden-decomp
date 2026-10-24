@@ -101,10 +101,10 @@ undefined4 func_0205e67c(int *param_1,int *param_2)
   ulonglong uVar6;
   undefined4 local_40;
   undefined4 local_3c;
-  int local_38;
+  int local_2c;
   int local_30;
   int local_34;
-  int local_2c;
+  int local_38;
   undefined4 local_28;
   uint local_24;
   uint local_20;
@@ -116,7 +116,9 @@ undefined4 func_0205e67c(int *param_1,int *param_2)
   do {
     iVar4 = func_02003ad0(&local_24,&local_28);
   } while (iVar4 != 0);
-  uVar6 = func_020028e0(local_28);
+  {
+      uVar6 = func_020028e0(local_28);
+  }
   iVar4 = (int)(uVar6 >> 0x20);
   lVar2 = (ulonglong)local_24 * (0xffffffff & uVar6);
   lVar3 = (ulonglong)local_20 * (uVar6 & 0xffffffff);

@@ -102,10 +102,10 @@ void func_020600c4(int *param_1,int param_2,uint *param_3,int param_4)
   int local_3c;
   int local_34;
   int local_2c;
-  int local_24;
+  int iVar6;
   int iVar2;
   int iVar4;
-  int iVar6;
+  int local_24;
   int local_68;
   int local_60;
   int local_58;
@@ -126,7 +126,7 @@ void func_020600c4(int *param_1,int param_2,uint *param_3,int param_4)
   if ((uVar7 & 0xc0000000) != 0) {
     uVar1 = uVar7 & ((unsigned int)0x1fff0000);
     if ((uVar7 & 0x40000000) == 0) {
-      if ((uVar3 & 3) == 0) {
+      if (((3 & uVar3)) == 0) {
         uVar3 = uVar3 >> 2;
       }
       else {

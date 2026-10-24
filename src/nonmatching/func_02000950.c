@@ -87,16 +87,16 @@ extern int LZCOUNT();
 undefined4 func_02000950(int param_1)
 
 {
-  undefined1 *puVar5;
   ushort uVar3;
-  bool bVar1;
   int iVar10;
   byte *pbVar8;
-  undefined1 *puVar6;
-  uint uVar4;
   undefined1 *puVar2;
-  int iVar11;
   byte bVar9;
+  undefined1 *puVar5;
+  bool bVar1;
+  uint uVar4;
+  undefined1 *puVar6;
+  int iVar11;
   ushort *puVar7;
 
   if (param_1 != 0) {

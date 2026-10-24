@@ -105,6 +105,7 @@ extern int func_0x020e15ec();
 undefined4 func_02024cc4(undefined4 param_1)
 
 {
+  int iVar8;
   bool bVar1;
   undefined2 uVar2;
   short sVar3;
@@ -112,7 +113,6 @@ undefined4 func_02024cc4(undefined4 param_1)
   undefined4 uVar5;
   uint uVar6;
   int iVar7;
-  int iVar8;
 
   iVar7 = (*(unsigned int *)0x02024f8c);
   iVar8 = *(int *)(iVar7 + 0xa4);
@@ -295,11 +295,10 @@ LAB_02024fa6:
     sVar3 = func_020465d8(param_1,3);
     if ((*(int *)(*(int *)(*(unsigned int *)0x02025110) + 0x5c) != 0) &&
        (iVar4 = *(int *)(*(int *)(*(int *)(*(unsigned int *)0x02025110) + 0x5c) + 100), iVar4 != 0)) {
-      if (sVar3 == 0) {
-        *(uint *)(iVar4 + 0x1c) = *(uint *)(iVar4 + 0x1c) & 0xfffffffb;
-      }
-      else {
+      if (!(sVar3 == 0)) {
         *(uint *)(iVar4 + 0x1c) = *(uint *)(iVar4 + 0x1c) | 4;
+      } else {
+        *(uint *)(iVar4 + 0x1c) = *(uint *)(iVar4 + 0x1c) & 0xfffffffb;
       }
     }
     break;

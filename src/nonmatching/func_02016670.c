@@ -95,13 +95,13 @@ undefined4 func_02016670(byte *param_1,int param_2)
 {
   byte bVar1;
   uint iVar2;
-  int iVar3;
+  int iVar9;
   int iVar4;
   int iVar5;
   int iVar6;
   uint uVar7;
   byte *pbVar8;
-  int iVar9;
+  int iVar3;
   undefined4 uVar10;
   int iVar11;
 
@@ -133,7 +133,7 @@ undefined4 func_02016670(byte *param_1,int param_2)
     iVar5 = ((unsigned int)0x020167dc);
     *(undefined4 *)(iVar11 + iVar3 * 4) = *(undefined4 *)(*(int *)(iVar6 + 4) + 0x6c);
   }
-  *(undefined4 *)(iVar11 + iVar5 * 4) = 1;
+  *(undefined4 *)((iVar5 + iVar11) * 4) = 1;
 LAB_02016728:
   bVar1 = *param_1;
   do {
@@ -142,7 +142,7 @@ LAB_02016728:
 LAB_020167a4:
       iVar6 = *(int *)(((unsigned int)0x020167dc) + iVar11 * 4) + -1;
       *(int *)(((unsigned int)0x020167dc) + iVar11 * 4) = iVar6;
-      if (iVar6 == 0) {
+      if (!(iVar6 == 0)) {} else {
         func_020075a8(iVar2 + iVar9);
       }
       return uVar10;

@@ -90,16 +90,16 @@ extern int func_020029f4();
 void func_020624d4(uint *param_1,int param_2,undefined4 param_3,undefined4 param_4)
 
 {
+  uint uVar8;
+  int uVar7;
+  uint uVar10;
+  uint uVar9;
   int iVar1;
   ushort uVar2;
   longlong lVar3;
   longlong lVar4;
   int iVar5;
   int iVar6;
-  uint uVar8;
-  int uVar7;
-  uint uVar10;
-  uint uVar9;
 
   iVar6 = (uint)*(ushort *)(0x2c + param_2) << 0xc;
   iVar1 = (uint)*(ushort *)(param_2 + 0x2e) << 0xc;
@@ -126,7 +126,9 @@ void func_020624d4(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   param_1[0xd] = ((uint)lVar3 >> 8 | (int)((ulonglong)lVar3 >> 0x20) << 0x18) +
                  (uint)*(ushort *)(param_2 + 0x2e) * 0x8000;
   lVar3 = (longlong)(int)uVar9 * (longlong)iVar1;
-  uVar7 = (uint)lVar3;
+  {
+      uVar7 = (uint)lVar3;
+  }
   param_1[0xc] = (uVar10 - uVar7 >> 8 |
                  ((int)((ulonglong)lVar4 >> 0x20) -
                  ((int)((ulonglong)lVar3 >> 0x20) + (uint)(uVar10 < uVar7))) * 0x1000000) +

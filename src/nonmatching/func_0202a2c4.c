@@ -103,21 +103,21 @@ extern int func_0x020dca48();
 undefined4 func_0202a2c4(undefined4 param_1)
 
 {
-  short sVar1;
-  undefined2 uVar2;
-  int iVar3;
-  undefined4 uVar4;
-  ushort *puVar5;
-  int iVar6;
-  int iVar7;
-  uint uVar8;
-  uint uVar9;
-  uint *puVar10;
-  int *piVar11;
-  int iVar12;
-  int local_20;
-  int local_1c;
   int local_18;
+  int local_1c;
+  int local_20;
+  int iVar12;
+  int *piVar11;
+  uint *puVar10;
+  uint uVar9;
+  uint uVar8;
+  int iVar7;
+  int iVar6;
+  ushort *puVar5;
+  undefined4 uVar4;
+  int iVar3;
+  undefined2 uVar2;
+  short sVar1;
 
   piVar11 = (int *)(*(unsigned int *)0x0202a5f4);
   iVar12 = *(int *)(*piVar11 + 0x5c);
@@ -167,17 +167,18 @@ LAB_0202a372:
       uVar8 = *(uint *)(iVar7 + 0x124) | 0x10000;
     } else {
       iVar7 = (*(unsigned int *)0x0202a608);
-      uVar8 = ((unsigned int)0x0202a60c) & *(uint *)(iVar7 + 0x124);
+      {
+          uVar8 = ((unsigned int)0x0202a60c) & *(uint *)(iVar7 + 0x124);
+      }
     }
     *(uint *)(iVar7 + 0x124) = uVar8;
     goto LAB_0202a75c;
   case 4:
     iVar7 = func_020465d8(param_1,3);
-    if (iVar7 < 1) {
-      func_02022f0c((*(unsigned int *)0x0202a5f4) + 0xf0,0,0,1);
-    }
-    else {
+    if (!(iVar7 < 1)) {
       func_02022ed0((*(unsigned int *)0x0202a5f4) + 0xf0,0,0,1);
+    } else {
+      func_02022f0c((*(unsigned int *)0x0202a5f4) + 0xf0,0,0,1);
     }
     goto LAB_0202a75c;
   case 5:
@@ -267,8 +268,9 @@ LAB_0202a5a4:
     uVar2 = func_020465d8(param_1,4);
     iVar3 = func_020465d8(param_1,3);
     iVar7 = ((unsigned int)0x0202a61c);
-    if (((iVar3 == 7) || (iVar7 = ((unsigned int)0x0202a620), iVar3 == 8)) || (iVar7 = ((unsigned int)0x0202a624), iVar3 == 9))
-    {
+    if (((iVar3 == 7) || (iVar7 = ((unsigned int)0x0202a620), iVar3 == 8))) {
+      *(undefined2 *)(iVar12 + iVar7) = uVar2;
+    } else if ((iVar7 = ((unsigned int)0x0202a624), iVar3 == 9)) {
       *(undefined2 *)(iVar12 + iVar7) = uVar2;
     }
     goto LAB_0202a75c;

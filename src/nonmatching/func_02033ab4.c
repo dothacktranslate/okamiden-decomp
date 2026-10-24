@@ -100,25 +100,25 @@ extern int func_02033504();
 void func_02033ab4(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,undefined4 *param_4)
 
 {
-  undefined1 auStack_20 [12];
-  int *piVar1;
-  int iVar2;
-  int iVar3;
-  undefined4 uVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  undefined4 *puVar8;
-  undefined1 *puVar9;
-  undefined4 uVar10;
+  undefined1 auStack_2c [12];
+  undefined1 auStack_38 [12];
+  undefined1 auStack_3c [4];
+  undefined8 uVar15;
+  longlong lVar14;
+  longlong lVar13;
   uint uVar11;
   longlong lVar12;
-  longlong lVar13;
-  longlong lVar14;
-  undefined8 uVar15;
-  undefined1 auStack_3c [4];
-  undefined1 auStack_38 [12];
-  undefined1 auStack_2c [12];
+  undefined4 uVar10;
+  undefined1 *puVar9;
+  undefined4 *puVar8;
+  int iVar7;
+  int iVar6;
+  int iVar5;
+  undefined4 uVar4;
+  undefined1 auStack_20 [12];
+  int iVar2;
+  int *piVar1;
+  int iVar3;
 
   func_02002ac4(*param_1,param_1[1],auStack_20);
   func_02002ac4(*param_2,param_2[1],auStack_2c);
@@ -144,7 +144,7 @@ void func_02033ab4(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,u
       lVar13 = func_0201e9b4(iVar5,iVar6,iVar5,iVar6);
       lVar12 = (lVar12 >> 0xc) - (lVar13 >> 0xc);
       lVar13 = lVar12;
-      if (lVar12 < 0) {
+      if (0 > lVar12) {
         lVar13 = CONCAT44(-(uint)((int)lVar12 != 0) - (int)((ulonglong)lVar12 >> 0x20),-(int)lVar12)
         ;
       }
@@ -164,7 +164,7 @@ void func_02033ab4(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,u
         piVar1 = ((unsigned int)0x04000290);
         (*(unsigned int *)0x04000290) = uVar11 * 0x1000;
         piVar1[1] = (int)((ulonglong)lVar13 >> 0x20) * uVar11 | 0x1000 >> 0x14;
-        *(longlong *)(piVar1 + 2) = lVar12;
+        *(longlong *)((2 + piVar1)) = lVar12;
         do {
         } while (((uint)*(ushort *)(piVar1 + -4) & (uint)piVar1 >> 0xb) != 0);
         iVar7 = (*(unsigned int *)0x02033cd8);

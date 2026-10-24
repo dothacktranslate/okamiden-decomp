@@ -95,10 +95,10 @@ void func_020103f4(undefined4 param_1,uint param_2,int param_3)
   uint uVar5;
   ushort uVar7;
   undefined4 uVar9;
-  uint *puVar11;
   int iVar2;
   undefined4 uVar4;
   int iVar6;
+  uint *puVar11;
   code *pcVar8;
   undefined4 *puVar10;
   ushort *puVar1;
@@ -115,7 +115,7 @@ void func_020103f4(undefined4 param_1,uint param_2,int param_3)
       *(undefined4 *)(iVar2 + 4) = 0;
     }
     pcVar8 = *(code **)(iVar2 + 8);
-    if (pcVar8 == (code *)0x0) {
+    if (!(pcVar8 == (code *)0x0)) {} else {
       return;
     }
     *(undefined4 *)(iVar2 + 8) = 0;

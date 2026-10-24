@@ -101,9 +101,13 @@ void func_02008dd4(uint param_1,uint param_2)
   int iVar2;
   int *puVar1;
 
-  uVar3 = func_02008b6c();
+  {
+      uVar3 = func_02008b6c();
+  }
   iVar2 = ((unsigned int)0x02008e54);
-  puVar1 = ((unsigned int)0x02008e4c);
+  {
+      puVar1 = ((unsigned int)0x02008e4c);
+  }
   uVar6 = param_1 & (*(unsigned int *)0x02008e4c) & ((unsigned int)0x000001ff);
   while( true ) {
     iVar4 = func_02008d98(uVar6);
@@ -118,7 +122,7 @@ void func_02008dd4(uint param_1,uint param_2)
     uVar6 = uVar6 & uVar7;
     if (bVar9) {
       *(undefined2 *)(uVar8 + iVar2 * 2) = 0;
-      *puVar1 = uVar7 & uVar5;
+      *puVar1 = (uVar5 & uVar7);
     }
   }
   func_02008b80(uVar3);

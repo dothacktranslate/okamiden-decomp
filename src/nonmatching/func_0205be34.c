@@ -126,7 +126,7 @@ undefined4 func_0205be34(undefined4 param_1,int param_2,undefined4 param_3,undef
     if (uVar3 == 0) {
       return 0xffffffff;
     }
-    if (iVar5 != iVar9) {
+    if (!(iVar5 == iVar9)) {
       iVar8 = param_2 + iVar9 * 0x10;
       iVar2 = 0;
       iVar4 = param_2 + iVar5 * 0x10;
@@ -160,7 +160,7 @@ undefined4 func_0205be34(undefined4 param_1,int param_2,undefined4 param_3,undef
     iVar2 = 0;
     do {
       if (iVar2 != iVar9) {
-        uVar3 = local_68[iVar9 + iVar2 * 4];
+        uVar3 = local_68[(iVar2 + iVar9) * 4];
         iVar4 = 0;
         iVar5 = param_2 + iVar2 * 0x10;
         do {

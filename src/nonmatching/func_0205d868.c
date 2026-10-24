@@ -102,11 +102,11 @@ void func_0205d868(int *param_1,undefined4 param_2,undefined4 param_3,undefined4
   undefined4 local_60;
   char cVar8;
   uint uVar7;
-  int iVar6;
+  uint uVar2;
   int iVar5;
   undefined4 uVar4;
   int *piVar3;
-  uint uVar2;
+  int iVar6;
   ushort uVar1;
 
   if (((param_1[2] & 0x200U) != 0) || ((param_1[2] & 1U) == 0)) goto LAB_0205db90;

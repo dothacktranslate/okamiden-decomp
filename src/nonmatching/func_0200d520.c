@@ -103,20 +103,24 @@ undefined4 func_0200d520(int param_1,undefined4 param_2,undefined4 param_3,undef
   uint uVar8;
   undefined4 uVar9;
   int iVar10;
-  undefined4 *puVar11;
-  char *pcVar12;
-  uint uVar13;
-  undefined4 uStack_bc;
-  undefined4 uStack_b8;
-  undefined4 uStack_b4;
-  uint uStack_b0;
-  uint uStack_ac;
-  char acStack_a8 [128];
   undefined4 uStack_28;
+  char acStack_a8 [128];
+  uint uStack_ac;
+  uint uStack_b0;
+  undefined4 uStack_b4;
+  undefined4 uStack_b8;
+  undefined4 uStack_bc;
+  uint uVar13;
+  char *pcVar12;
+  undefined4 *puVar11;
 
-  iVar10 = *(int *)(param_1 + 0x40);
+  {
+      iVar10 = *(int *)(param_1 + 0x40);
+  }
   pcVar12 = *(char **)(param_1 + 0x3c);
-  uStack_28 = param_4;
+  {
+      uStack_28 = param_4;
+  }
   func_0200dbc4(param_1,2);
   cVar1 = *pcVar12;
   while (cVar1 != '\0') {

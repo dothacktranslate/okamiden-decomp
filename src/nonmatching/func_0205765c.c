@@ -93,12 +93,12 @@ void func_0205765c(int *param_1)
 {
   int iVar1;
   uint uVar3;
-  int iVar5;
+  uint uVar6;
   int iVar7;
   code *pcVar9;
   bool bVar2;
   uint uVar4;
-  uint uVar6;
+  int iVar5;
   int iVar8;
   uint uVar10;
 
@@ -109,7 +109,7 @@ void func_0205765c(int *param_1)
     uVar6 = (uVar6 & 0x1fff) << 3;
     pcVar9 = *(code **)(((unsigned int)0x02057854) + *param_1 * 4);
     uVar10 = 0;
-    if (uVar4 != 0) {
+    if (!(uVar4 != 0)) {} else {
       do {
         (*pcVar9)(iVar8,uVar6,6);
         uVar6 = uVar6 + 8 & 0xffff;

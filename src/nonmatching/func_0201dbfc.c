@@ -90,8 +90,8 @@ ulonglong func_0201dbfc(uint param_1,uint param_2,uint param_3,uint param_4)
   uint uVar7;
   uint uVar6;
   uint uVar5;
-  uint uVar4;
   longlong lVar3;
+  uint uVar4;
   longlong lVar2;
   longlong lVar1;
   bool bVar14;
@@ -107,7 +107,7 @@ ulonglong func_0201dbfc(uint param_1,uint param_2,uint param_3,uint param_4)
   uVar9 = param_2 >> 0x14;
   param_2 = param_2 << 0xb;
   uVar4 = param_1 >> 0x15;
-  uVar5 = param_2 | uVar4;
+  uVar5 = ((param_2 | uVar4));
   param_1 = param_1 << 0xb;
   uVar6 = param_1;
   if (uVar9 * 0x200000 == 0 || uVar9 * 0x200000 == -0x200000) {
@@ -117,7 +117,7 @@ ulonglong func_0201dbfc(uint param_1,uint param_2,uint param_3,uint param_4)
       }
       iVar10 = (param_4 >> 0x14) * 0x200000;
       if (iVar10 == 0) {
-        if ((param_4 << 0xb == 0 && param_3 >> 0x15 == 0) && param_3 << 0xb == 0) {
+        if (!((param_4 << 0xb == 0 && param_3 >> 0x15 == 0) && param_3 << 0xb == 0)) {} else {
           return 0x7fffffffffffffff;
         }
       }
@@ -131,7 +131,9 @@ ulonglong func_0201dbfc(uint param_1,uint param_2,uint param_3,uint param_4)
     if (param_1 == 0 && ((param_2 & 0x7fffffff) == 0 && uVar4 == 0)) {
       iVar10 = (param_4 >> 0x14) * 0x200000;
       if ((iVar10 != 0) && (iVar10 == -0x200000)) {
-        if ((param_3 & 0x1fffff) != 0 || ((param_4 & 0xfffff) != 0 || param_3 >> 0x15 != 0)) {
+        if ((param_3 & 0x1fffff) != 0) {
+          return 0x7fffffffffffffff;
+        } else if (((param_4 & 0xfffff) != 0 || param_3 >> 0x15 != 0)) {
           return 0x7fffffffffffffff;
         }
         return 0x7fffffffffffffff;
@@ -139,7 +141,7 @@ ulonglong func_0201dbfc(uint param_1,uint param_2,uint param_3,uint param_4)
       goto LAB_0201df4c;
     }
     uVar9 = 1;
-    if (uVar5 == 0) {
+    if (0 == uVar5) {
       uVar9 = 0xffffffe1;
       uVar6 = 0;
       uVar5 = param_1;
@@ -250,7 +252,7 @@ LAB_0201dc50:
     }
     uVar9 = uVar9 >> (uVar12 & 0xff) | uVar4 << (0x20 - uVar12 & 0xff);
     uVar13 = uVar13 | uVar4 >> (uVar12 & 0xff);
-    if (uVar6 == 0) {
+    if (!uVar6) {
       return CONCAT44(uVar13,uVar9);
     }
     if ((uVar6 & 0x80000000) == 0) {

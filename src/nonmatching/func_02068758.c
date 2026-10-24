@@ -93,13 +93,13 @@ extern int func_02044f30();
 void func_02068758(undefined4 param_1,int param_2,uint param_3,int param_4)
 
 {
+  ushort *puVar3;
   ushort uVar1;
   undefined4 uVar2;
-  ushort *puVar3;
   int iVar4;
+  ushort *puVar7;
   int iVar5;
   int iVar6;
-  ushort *puVar7;
 
   if (!param_4) {
     puVar3 = (ushort *)func_02044b5c(param_1,4,param_3,0,0);
@@ -107,9 +107,9 @@ void func_02068758(undefined4 param_1,int param_2,uint param_3,int param_4)
   else {
     puVar3 = (ushort *)func_020366f0(param_1,4);
   }
-  if (param_2) {
+  if (!(!(param_2))) {
     func_02044f30(puVar3,param_2);
-  }
+  } else {}
   if ((param_3 != 0) && (iVar6 = 0, *puVar3 != 0)) {
     do {
       uVar2 = ((unsigned int)0x00000fff);

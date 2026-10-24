@@ -92,12 +92,12 @@ void func_0201ac10(undefined1 *param_1,int param_2,int param_3,undefined4 param_
   byte *pbVar1;
   byte *pbVar2;
   short sVar3;
-  uint uVar5;
-  int iVar4;
   int iVar6;
-  int iVar7;
   byte *pbVar8;
+  int iVar4;
+  uint uVar5;
   byte *pbVar9;
+  int iVar7;
   int iVar10;
   int iVar11;
   byte abStack_68 [64];

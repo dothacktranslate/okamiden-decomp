@@ -114,12 +114,12 @@ void func_0203fe6c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   undefined4 local_98;
   undefined4 local_94;
   undefined4 local_90;
-  undefined4 local_8c;
+  undefined4 local_80;
   undefined4 local_88;
   undefined4 local_84;
-  undefined4 local_80;
-  undefined1 auStack_7c [12];
+  undefined4 local_8c;
   int local_70;
+  undefined1 auStack_7c [12];
   int local_6c;
   undefined4 local_68;
   int local_64;
@@ -134,7 +134,9 @@ void func_0203fe6c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   *(undefined2 *)(param_1 + 0x86) = 0;
   if ((((*(uint *)(*(unsigned int *)0x02040170) & 1) == 0) || ((*(uint *)(param_1 + 0xc) & 0x20000000) != 0)) &&
      ((*(uint *)(iVar3 + 0x124) & 0x40000) == 0)) {
-    uStack_18 = param_4;
+    {
+        uStack_18 = param_4;
+    }
     func_0205bc9c();
     iVar3 = func_02036edc((*(unsigned int *)0x02040174),((unsigned int)0x02040178));
     if (((iVar3 != 0) && (*(int *)(iVar3 + 0x10) != 0)) && (*(int *)(param_1 + 0x34) == 0)) {

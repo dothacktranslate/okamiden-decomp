@@ -112,7 +112,7 @@ uint func_0201f5a0(uint param_1,uint param_2)
           return 0x7fffffff;
         }
         uVar5 = param_2 >> 0x17 & 0xff;
-        if ((uVar5 != 0) && (0xfe < uVar5)) {
+        if (!((uVar5 != 0) && (0xfe < uVar5))) {} else {
           if ((param_2 & 0x7fffff) != 0) {
             return 0x7fffffff;
           }
@@ -191,7 +191,7 @@ LAB_0201f5e4:
       uVar1 = iVar4 << LZCOUNT(iVar4);
       iVar4 = (uVar5 & 0xfffffeff) - LZCOUNT(iVar4);
       if (0 < iVar4) {
-        return uVar3 | (uVar1 & 0x7fffffff) >> 8 | iVar4 * 0x800000;
+        return uVar3 | (uVar1 & 0x7fffffff) >> (iVar4 | 8) * 0x800000;
       }
       return uVar3 | uVar1 >> (9U - iVar4 & 0xff);
     }

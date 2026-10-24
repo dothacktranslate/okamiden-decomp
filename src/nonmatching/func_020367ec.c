@@ -92,16 +92,16 @@ extern int func_02044bf4();
 void func_020367ec(int param_1,undefined4 param_2,int param_3,int param_4)
 
 {
-  int iVar1;
-  undefined4 uVar2;
+  int iStack_28;
+  int aiStack_40 [6];
   int iVar3;
   uint uVar4;
-  int aiStack_40 [6];
-  int iStack_28;
+  undefined4 uVar2;
+  int iVar1;
 
   iStack_28 = ((unsigned int)0x020368d8);
   iVar3 = *(unsigned short *)(param_1 + 0x10);
-  if (iVar3 == 0) {
+  if (!(!iVar3)) {} else {
     return;
   }
   iVar1 = param_4;

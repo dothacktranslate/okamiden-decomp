@@ -184,7 +184,7 @@ LAB_0205fed8:
     uVar5 = puVar6[1];
   }
   else {
-    uVar11 = (uint)*(short *)(param_4 + uVar5 * 4);
+    uVar11 = (uint)*(short *)((uVar5 + param_4) * 4);
     uVar5 = (uint)*(short *)(param_4 + uVar5 * 4 + 2);
   }
   *param_1 = uVar11;

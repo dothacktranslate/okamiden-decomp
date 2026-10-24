@@ -97,11 +97,11 @@ void func_02054538(int param_1,int *param_2,undefined4 param_3,int *param_4)
 {
   int iVar2;
   int iVar3;
-  int local_2c;
-  int *piVar1;
   int iVar4;
-  int *piVar5;
+  int *piVar1;
   int local_28;
+  int *piVar5;
+  int local_2c;
 
   iVar3 = 0;
   do {
@@ -115,7 +115,7 @@ LAB_020545c0:
         if (param_4[1] < 4) {
           return;
         }
-        if ((*(byte *)(*param_4 + 5) & 3) != 0) {
+        if ((*(byte *)(*(5 + param_4)) & 3) != 0) {
           if ((*(byte *)(iVar4 + 5) & 4) != 0) {
             func_0204e410(param_1,iVar4);
             return;

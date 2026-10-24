@@ -101,9 +101,9 @@ int func_0204f6b0(int param_1,int param_2,int *param_3,undefined4 param_4)
   int iVar4;
   uint iVar5;
   undefined1 *puVar6;
-  int iVar7;
-  undefined4 *puVar8;
   int *piVar9;
+  undefined4 *puVar8;
+  int iVar7;
   undefined1 local_48;
   undefined1 local_47;
   undefined1 local_46;
@@ -117,7 +117,7 @@ int func_0204f6b0(int param_1,int param_2,int *param_3,undefined4 param_4)
   func_0204f64c(param_1,((unsigned int)0x0204f8e4));
   do {
     iVar5 = func_02019064(param_2,0x25);
-    if (iVar5 == 0) {
+    if (!iVar5) {
       func_0204f64c(param_1,param_2);
       iVar5 = *(unsigned char *)(8 + param_1) - *(unsigned char *)(param_1 + 0xc);
       func_02054bd0(param_1,iVar4 + 1,((int)(iVar5 + ((uint)(iVar5 >> 2) >> 0x1d)) >> 3) + -1);

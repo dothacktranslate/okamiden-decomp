@@ -107,9 +107,9 @@ void func_02011548(int param_1)
   int iVar11;
   bool bVar12;
   bool bVar13;
-  int local_48;
-  int local_44;
   int local_40;
+  int local_44;
+  int local_48;
   short local_30;
   short local_2e;
   short local_2c;
@@ -117,7 +117,9 @@ void func_02011548(int param_1)
   short local_28;
   short local_26;
 
-  uVar8 = (uint)*(ushort *)(param_1 + 2);
+  {
+      uVar8 = (uint)*(ushort *)(param_1 + 2);
+  }
   *(undefined4 *)(param_1 + 0x24) = 0;
   *(undefined2 *)(param_1 + 0x2c) = 0x200;
   *(undefined2 *)(param_1 + 0x2e) = 0x200;

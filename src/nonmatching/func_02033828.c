@@ -100,9 +100,9 @@ int func_02033828(undefined4 *param_1,undefined4 *param_2,undefined4 param_3,int
   undefined1 auStack_3c [12];
   undefined4 local_40;
   undefined1 auStack_58 [24];
-  undefined1 auStack_64 [12];
-  undefined4 local_68;
   undefined1 auStack_80 [24];
+  undefined4 local_68;
+  undefined1 auStack_64 [12];
   undefined1 auStack_8c [12];
   undefined4 local_90;
   undefined1 auStack_a8 [24];
@@ -135,7 +135,9 @@ int func_02033828(undefined4 *param_1,undefined4 *param_2,undefined4 param_3,int
   func_0x01ff99b4(auStack_170);
   func_0x01ff99b4(auStack_154);
   func_0x01ff99b4(auStack_148);
-  uVar1 = ((unsigned int)0x02033948);
+  {
+      uVar1 = ((unsigned int)0x02033948);
+  }
   local_158 = ((unsigned int)0x02033948);
   func_0x01ff99b4(auStack_12c);
   func_0x01ff99b4(auStack_120);

@@ -87,30 +87,34 @@ extern int LZCOUNT();
 void func_02002b30(int *param_1,int *param_2,uint *param_3)
 
 {
+  uint uVar15;
   longlong lVar1;
   longlong lVar2;
   longlong lVar3;
-  longlong lVar4;
+  uint uVar9;
   longlong lVar5;
   longlong lVar6;
   uint uVar7;
-  uint uVar10;
+  uint uVar14;
   uint uVar8;
   uint uVar11;
-  uint uVar9;
+  longlong lVar4;
   uint uVar13;
   uint uVar12;
-  uint uVar14;
-  uint uVar15;
+  uint uVar10;
 
   lVar1 = (longlong)param_1[1] * (longlong)param_2[2];
-  uVar13 = (uint)lVar1;
+  {
+      uVar13 = (uint)lVar1;
+  }
   lVar2 = (longlong)param_1[2] * (longlong)param_2[1];
   uVar9 = (uint)lVar2;
   uVar8 = uVar13 - uVar9;
   lVar3 = (longlong)param_1[2] * (longlong)*param_2;
   uVar14 = (uint)lVar3;
-  lVar4 = (longlong)*param_1 * (longlong)param_2[2];
+  {
+      lVar4 = (longlong)*param_1 * (longlong)param_2[2];
+  }
   uVar11 = (uint)lVar4;
   uVar12 = uVar14 - uVar11;
   lVar5 = (longlong)*param_1 * (longlong)param_2[1];

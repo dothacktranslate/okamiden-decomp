@@ -187,12 +187,12 @@ void func_0200fb50(ushort param_1,ushort param_2,ushort param_3)
   bool bVar3;
   undefined2 *puVar4;
   undefined4 uVar5;
-  uint uVar6;
+  int iVar11;
   uint uVar7;
   short sVar8;
   undefined4 uVar9;
   undefined4 uVar10;
-  int iVar11;
+  uint uVar6;
   uint uVar12;
   int iVar13;
   int iVar14;

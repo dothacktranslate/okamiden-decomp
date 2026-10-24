@@ -163,16 +163,16 @@ extern int func_02021ba0();
 void func_02021bd0(void)
 
 {
+  int local_70 [5];
   int iVar1;
   undefined4 uVar2;
   undefined4 in_lr;
   undefined4 local_a8;
   undefined4 local_a4;
-  int local_a0;
+  int local_94;
   int local_98;
   undefined4 local_9c;
-  int local_94;
-  int local_70 [5];
+  int local_a0;
 
   local_70[0] = 0;
   local_70[1] = 0;

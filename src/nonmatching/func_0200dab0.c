@@ -90,11 +90,11 @@ extern int func_0200dbc4();
 int func_0200dab0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  int iVar1;
-  int iVar2;
-  int iStack_20;
-  int iStack_1c;
   undefined4 uStack_18;
+  int iStack_20;
+  int iVar2;
+  int iStack_1c;
+  int iVar1;
   undefined4 uStack_14;
   undefined4 uStack_10;
 

@@ -25,10 +25,10 @@ void func_02045428(int param_1)
 {
   int iVar8;
   undefined4 uVar9;
-  undefined4 uVar10;
+  uint local_4c;
   undefined1 *puVar11;
   uint uVar12;
-  uint local_4c;
+  undefined4 uVar10;
   undefined1 auStack_44 [16];
   undefined1 auStack_34 [16];
   uint iVar1;
@@ -39,7 +39,9 @@ void func_02045428(int param_1)
   int iVar6;
   int iVar7;
 
-  local_4c = 0;
+  {
+      local_4c = 0;
+  }
   (*(unsigned int *)0x04000444) = 0;
   iVar7 = param_1 + 0x20;
   iVar1 = *(int *)(param_1 + 0x460);

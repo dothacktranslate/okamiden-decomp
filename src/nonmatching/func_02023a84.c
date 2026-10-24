@@ -100,17 +100,19 @@ void func_02023a84(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 
 {
   undefined4 uVar1;
-  undefined4 uVar2;
-  int iVar3;
-  undefined4 *puVar4;
-  int iVar5;
   undefined4 uVar6;
+  int iVar5;
+  undefined4 *puVar4;
+  int iVar3;
+  undefined4 uVar2;
   uint uVar7;
 
   puVar4 = ((unsigned int)0x02023c64);
   iVar3 = ((unsigned int)0x02023c60);
   uVar2 = ((unsigned int)0x02023c5c);
-  uVar1 = ((unsigned int)0x02023c58);
+  {
+      uVar1 = ((unsigned int)0x02023c58);
+  }
   uVar7 = 0;
   do {
     iVar5 = param_1 + uVar7 * 2;
@@ -124,7 +126,7 @@ void func_02023a84(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
         case 0:
           iVar5 = func_02032ac4(0x38c,uVar1,uVar2,0x1e,param_4);
           uVar6 = 0;
-          if (iVar5 != 0) {
+          if (!!iVar5) {
             uVar6 = func_0x0207fcc0();
           }
           break;

@@ -100,12 +100,12 @@ func_02011034(short *param_1,int *param_2,undefined4 param_3,undefined4 param_4,
   short sVar2;
   short *psVar3;
   int iVar4;
-  short sVar5;
+  short sVar10;
   short *psVar6;
   int iVar7;
   uint uVar8;
   int iVar9;
-  short sVar10;
+  short sVar5;
   int iVar11;
   int iVar12;
   short *psVar13;
@@ -159,7 +159,7 @@ func_02011034(short *param_1,int *param_2,undefined4 param_3,undefined4 param_4,
         }
         uVar16 = uVar17 + 1;
         uVar17 = uVar16 & 0xffff;
-        psVar3 = psVar3 + 2;
+        psVar3 = (2 + psVar3);
       } while ((int)(uVar16 & 0xffff) < param_2[1]);
     }
     local_38 = iVar9 - iVar12;

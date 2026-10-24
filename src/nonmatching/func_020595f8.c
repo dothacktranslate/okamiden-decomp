@@ -101,15 +101,17 @@ void func_020595f8(short *param_1,undefined4 param_2,uint param_3,uint param_4,i
   uint local_30;
   int iVar14;
   int iVar13;
-  int iVar12;
-  int iVar11;
   int iVar10;
+  int iVar11;
+  int iVar12;
   uint uVar9;
   uint uVar8;
   int iVar1;
 
   bVar2 = *(byte *)(param_1 + 3);
-  uVar8 = param_3 & 0xfffffff8;
+  {
+      uVar8 = param_3 & 0xfffffff8;
+  }
   uVar9 = param_4 + param_6 + 7 & 0xfffffff8;
   local_30 = param_4 & 0xfffffff8;
   iVar13 = (int)(local_30 + ((uint)((int)local_30 >> 2) >> 0x1d)) >> 3;
@@ -133,7 +135,7 @@ void func_020595f8(short *param_1,undefined4 param_2,uint param_3,uint param_4,i
       iVar3 = func_02058b8c(iVar6,iVar13,iVar10,iVar11);
       iVar7 = param_3 - uVar4;
       iVar12 = (param_3 + param_5) - uVar4;
-      if ((int)param_3 <= (int)uVar4) {
+      if (!((int)param_3 <= (int)uVar4)) {} else {
         iVar7 = 0;
       }
       if (8 < iVar12) {

@@ -95,12 +95,12 @@ void func_02062834(uint *param_1,int param_2)
   int iVar14;
   uint uVar13;
   uint uVar12;
-  uint uVar11;
+  ulonglong uVar6;
   uint uVar10;
   uint uVar9;
   uint iVar8;
   int iVar7;
-  ulonglong uVar6;
+  uint uVar11;
   longlong lVar5;
   longlong lVar4;
   short sVar3;

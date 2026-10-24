@@ -101,18 +101,18 @@ bool func_0200cd9c(int param_1,int param_2,int param_3,undefined4 param_4)
   int iVar2;
   undefined4 uVar3;
   undefined1 *puVar4;
-  int *piVar5;
+  undefined1 auStack_b0 [72];
   undefined4 local_c0;
   undefined4 uStack_bc;
   undefined4 local_b8;
   undefined4 uStack_b4;
-  undefined1 auStack_b0 [72];
+  int *piVar5;
   undefined1 auStack_68 [72];
   undefined4 uStack_20;
   uint uVar1;
 
   piVar5 = ((unsigned int)0x0200cef4);
-  if (param_2 != 0) {
+  if (!(param_2)) {} else {
     piVar5 = ((unsigned int)0x0200cef8);
   }
   uVar1 = param_3 * 0x20;

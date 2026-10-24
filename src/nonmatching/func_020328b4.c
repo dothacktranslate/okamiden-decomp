@@ -109,7 +109,9 @@ func_020328b4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param
   if (param_5 != (int *)0x0) {
     *param_5 = ((unsigned int)0x02032980);
   }
-  iVar4 = 0;
+  {
+      iVar4 = 0;
+  }
   if (0 < *(int *)(param_1 + 0xe0)) {
     do {
       func_0x01ff99b4(auStack_2c);
@@ -129,7 +131,7 @@ func_020328b4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param
           if (local_30 < 0) {
             iVar3 = -local_30;
           }
-          if (iVar2 <= iVar3) goto LAB_02032956;
+          if (iVar3 >= iVar2) goto LAB_02032956;
         }
         *param_5 = local_30;
         func_0x01ff9c94(param_5 + 1,auStack_2c);

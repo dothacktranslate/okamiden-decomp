@@ -179,40 +179,44 @@ extern int func_0205bdf4();
 void func_020397a0(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  undefined4 *puVar1;
-  int iVar2;
-  undefined2 uVar3;
-  int *piVar4;
-  int iVar5;
-  undefined4 uVar6;
-  int local_60 [2];
-  undefined4 local_58;
-  undefined4 local_54;
-  undefined4 local_50;
-  undefined4 local_4c;
-  undefined4 local_48;
-  undefined4 local_44;
-  undefined4 local_40;
-  undefined4 local_3c;
-  undefined4 local_38;
-  undefined4 local_34;
-  undefined4 local_30;
-  undefined4 local_2c;
-  undefined4 local_28;
-  undefined4 local_24;
-  undefined4 local_20;
-  undefined4 local_1c;
   undefined4 uStack_18;
+  undefined4 local_20;
+  undefined4 local_28;
+  undefined4 local_30;
+  undefined4 local_38;
+  undefined4 local_40;
+  undefined4 local_48;
+  undefined4 local_50;
+  undefined4 local_58;
+  undefined4 uVar6;
+  int *piVar4;
+  int iVar2;
+  undefined4 local_1c;
+  undefined4 local_24;
+  undefined4 local_2c;
+  undefined4 local_34;
+  undefined4 local_3c;
+  undefined4 local_44;
+  undefined4 local_4c;
+  undefined4 local_54;
+  int local_60 [2];
+  int iVar5;
+  undefined2 uVar3;
+  undefined4 *puVar1;
 
   uStack_18 = param_4;
   if ((param_1[0x11] & 2) != 0) {
     func_020026ac(param_1[0xb],param_1[0xc],param_1[0xd],param_1[0xe],param_1[0xf],param_1[0x10],
                  0x1000,((unsigned int)0x020399e8));
     iVar5 = ((unsigned int)0x020399ec);
-    puVar1 = ((unsigned int)0x020399f0);
+    {
+        puVar1 = ((unsigned int)0x020399f0);
+    }
     *(uint *)(((unsigned int)0x020399ec) + 0x7c) = *(uint *)(((unsigned int)0x020399ec) + 0x7c) & 0xffffffaf;
     uVar6 = ((unsigned int)0x020399fc);
-    iVar2 = ((unsigned int)0x020399f8);
+    {
+        iVar2 = ((unsigned int)0x020399f8);
+    }
     local_20 = puVar1[1];
     local_24 = *puVar1;
     local_1c = puVar1[2];

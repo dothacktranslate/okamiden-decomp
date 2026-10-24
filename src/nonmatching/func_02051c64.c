@@ -65,18 +65,20 @@ func_02051c64(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined
   char cVar1;
   char *local_1034 [1027];
   undefined1 auStack_1248 [18];
-  uint local_1250;
+  int local_124c;
   int iVar6;
   undefined4 uVar4;
   char *pcVar2;
   undefined4 uStack_28;
   undefined1 auStack_1236 [514];
-  int local_124c;
+  uint local_1250;
   char *pcVar7;
   int iVar5;
   char *pcVar3;
 
-  iVar6 = 1;
+  {
+      iVar6 = 1;
+  }
   uStack_28 = param_4;
   pcVar2 = (char *)func_02047988(param_1,1,&local_124c);
   func_0204815c(param_1,local_1034);

@@ -98,11 +98,11 @@ void func_0203ed7c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   int iVar2;
   int iVar3;
   undefined4 local_74;
-  undefined4 local_78;
+  undefined4 local_64;
   undefined4 local_70;
   undefined4 local_6c;
   undefined4 local_68;
-  undefined4 local_64;
+  undefined4 local_78;
   undefined4 local_60;
   undefined4 local_5c;
   short local_58 [8];
@@ -154,7 +154,7 @@ void func_0203ed7c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
     func_0205e0c0(0x15,0,0);
     do {
       if (!(*(char *)(param_1 + 0x9c) == '\0')) {
-        iVar2 = param_1 + iVar3 * 0xc;
+        iVar2 = (iVar3 + param_1) * 0xc;
         local_64 = *(undefined4 *)(iVar2 + 0x6c);
         local_60 = *(undefined4 *)(iVar2 + 0x70);
         local_5c = *(undefined4 *)(iVar2 + 0x74);

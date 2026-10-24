@@ -95,36 +95,38 @@ extern int func_020679d0();
 void func_02067b0c(int param_1)
 
 {
-  unsigned char cVar1;
   byte bVar2;
-  short sVar3;
   int iVar4;
-  int iVar5;
   int uVar6;
-  uint iVar7;
   uint uVar8;
-  uint uVar9;
   uint uVar10;
-  short *psVar11;
   short *psVar12;
-  byte *pbVar13;
   byte *pbVar14;
-  int iVar15;
   uint uVar16;
-  short *psVar17;
   int iVar18;
-  int iVar19;
   char in_OV;
-  bool bVar20;
   int local_5c;
-  uint local_50;
   uint local_4c;
-  uint local_48;
   uint local_40;
+  unsigned char cVar1;
+  short sVar3;
+  int iVar5;
+  uint iVar7;
+  uint uVar9;
+  short *psVar11;
+  byte *pbVar13;
+  int iVar15;
+  short *psVar17;
+  int iVar19;
+  bool bVar20;
+  uint local_50;
+  uint local_48;
   int local_34;
 
   uVar6 = *(uint *)(param_1 + 8);
-  iVar15 = *(int *)(uVar6 + 0x118) << 0x1a;
+  {
+      iVar15 = *(int *)(uVar6 + 0x118) << 0x1a;
+  }
   iVar7 = iVar15 >> 0x1f;
   if (iVar15 < 0) {
     in_OV = '\0';
@@ -138,7 +140,7 @@ void func_02067b0c(int param_1)
   do {
     if (uVar8 == 0) {
 LAB_02068250:
-      if (*(code **)(uVar6 + 0x13c) != (code *)0x0) {
+      if (!(*(code **)(uVar6 + 0x13c) != (code *)0x0)) {} else {
         (**(code **)(uVar6 + 0x13c))
                   (*(undefined4 *)(param_1 + 0xc),*(undefined4 *)(0x10 + param_1),param_1 + 0x14,
                    *(undefined4 *)(param_1 + 0x2c),*(char *)(uVar6 + 200) != '\0',

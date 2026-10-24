@@ -87,8 +87,8 @@ extern int LZCOUNT();
 longlong func_0201d518(uint param_1,uint param_2,uint param_3,uint param_4)
 
 {
-  bool bVar10;
   int iVar9;
+  bool bVar10;
   uint uVar8;
   uint uVar7;
   uint uVar6;
@@ -121,7 +121,9 @@ longlong func_0201d518(uint param_1,uint param_2,uint param_3,uint param_4)
         uVar2 = 0;
       }
       if ((uVar8 & 0xfffff7ff) != 0) {
-        if (uVar7 != 0 || ((param_2 & 0x7fffffff) != 0 || uVar6 != 0)) {
+        if (uVar7 != 0) {
+          return 0x7fffffffffffffff;
+        } else if (((param_2 & 0x7fffffff) != 0 || uVar6 != 0)) {
           return 0x7fffffffffffffff;
         }
         iVar9 = (param_4 >> 0x14) * 0x200000;

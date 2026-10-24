@@ -87,19 +87,19 @@ extern int LZCOUNT();
 int func_0200a140(undefined4 *param_1,byte *param_2,int param_3)
 
 {
-  bool bVar1;
+  uint uVar13;
+  byte bVar8;
   unsigned char cVar2;
   byte bVar3;
   byte *pbVar4;
   byte *pbVar5;
-  byte *pbVar6;
   int iVar7;
-  byte bVar8;
+  byte *pbVar6;
+  bool bVar1;
   uint uVar10;
   uint uVar9;
   uint uVar12;
   uint uVar11;
-  uint uVar13;
 
   pbVar6 = (byte *)*param_1;
   iVar7 = param_1[1];
@@ -119,7 +119,7 @@ int func_0200a140(undefined4 *param_1,byte *param_2,int param_3)
         pbVar6 = pbVar6 + 1;
       }
       else {
-        while (uVar12 != 0) {
+        while (!(uVar12 == 0)) {
           if (cVar2 != '\x01') {
             uVar10 = *pbVar5 + 0x30;
             uVar12 = 0;

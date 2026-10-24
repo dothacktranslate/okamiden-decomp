@@ -172,12 +172,12 @@ void func_02011bbc(undefined4 *param_1,int *param_2,int param_3,int param_4,unde
   int iVar6;
   int iVar7;
   int iVar8;
-  int iVar9;
+  int *piVar14;
   uint uVar10;
   int iVar11;
   int iVar12;
   int iVar13;
-  int *piVar14;
+  int iVar9;
   int iVar15;
   bool bVar16;
   undefined1 auStack_70 [8];

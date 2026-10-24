@@ -105,9 +105,9 @@ void func_02020744(int param_1,int param_2,byte *param_3)
   int local_3c;
   int local_40;
   int local_44;
-  int local_48;
-  int local_4c;
   int local_50;
+  int local_4c;
+  int local_48;
   int local_54;
   int local_58;
   int local_5c;
@@ -144,9 +144,9 @@ void func_02020744(int param_1,int param_2,byte *param_3)
   int *piVar7;
   uint uVar6;
   undefined4 *puVar5;
-  undefined4 uVar4;
-  unsigned short sVar3;
   byte bVar2;
+  unsigned short sVar3;
+  undefined4 uVar4;
   byte bVar1;
 
 LAB_02020758:

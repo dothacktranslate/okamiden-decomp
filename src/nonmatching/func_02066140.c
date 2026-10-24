@@ -96,12 +96,12 @@ int func_02066140(undefined4 param_1,uint param_2,int param_3,undefined4 param_4
 
 {
   undefined4 *puVar1;
-  int iVar2;
+  int iStack_2c;
   uint *puVar3;
   int iVar4;
-  int iVar5;
+  int iVar2;
   int iVar6;
-  int iStack_2c;
+  int iVar5;
 
   puVar1 = (undefined4 *)func_020657a0();
   if (puVar1 == (undefined4 *)0x0) {

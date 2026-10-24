@@ -91,26 +91,30 @@ void func_0204be48(uint param_1,int param_2,undefined4 param_3)
 {
   code *pcVar4;
   int iVar3;
-  int iVar2;
+  int iVar5;
   uint uVar1;
   int iVar6;
-  int iVar5;
+  int iVar2;
   int aiStack_78 [5];
   undefined4 uStack_64;
   int iStack_18;
 
   pcVar4 = *(code **)(param_1 + 0x44);
-  uVar1 = param_1;
-  if (pcVar4 != (code *)0x0) {
+  {
+      uVar1 = param_1;
+  }
+  if (!(pcVar4 != (code *)0x0)) {} else {
     uVar1 = (uint)*(byte *)(param_1 + 0x39);
   }
-  if (pcVar4 == (code *)0x0 || uVar1 == 0) {
+  if (pcVar4 == (code *)0x0) {
+    return;
+  } else if (uVar1 == 0) {
     return;
   }
   iVar6 = *(int *)(param_1 + 0x20);
   iVar5 = *(int *)(param_1 + 8);
   iVar2 = *(int *)(*(int *)(param_1 + 0x14) + 8);
-  if (param_2 == 4) {
+  if (4 == param_2) {
     iStack_18 = 0;
   }
   else {

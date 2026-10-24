@@ -91,12 +91,12 @@ void func_0204ddf8(int param_1)
 
 {
   int iVar4;
-  undefined4 *puVar5;
-  undefined4 uVar6;
-  undefined4 *puVar7;
-  undefined1 uVar1;
-  int iVar2;
   undefined4 *puVar3;
+  undefined4 *puVar5;
+  undefined1 uVar1;
+  undefined4 *puVar7;
+  undefined4 uVar6;
+  int iVar2;
 
   iVar4 = *(int *)(param_1 + 0x10);
   puVar3 = *(undefined4 **)(iVar4 + 0x30);
@@ -114,11 +114,10 @@ void func_0204ddf8(int param_1)
   if (iVar2 == 0) {
     puVar3 = (undefined4 *)0x0;
   }
-  else if ((*(byte *)(iVar2 + 6) & 4) == 0) {
-    puVar3 = (undefined4 *)func_02053918(iVar2,2,*(undefined4 *)(*(int *)(param_1 + 0x10) + 0xa8));
-  }
-  else {
+  else if (!((*(byte *)(iVar2 + 6) & 4) == 0)) {
     puVar3 = (undefined4 *)0x0;
+  } else {
+    puVar3 = (undefined4 *)func_02053918(iVar2,2,*(undefined4 *)(*(int *)(param_1 + 0x10) + 0xa8));
   }
   if (puVar3 != (undefined4 *)0x0) {
     uVar1 = *(undefined1 *)(param_1 + 0x39);

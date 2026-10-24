@@ -158,7 +158,7 @@ int func_02011974(int param_1,int param_2,int param_3,undefined4 param_4,ushort 
         if (0xfff < iVar8) {
           iVar8 = 0x1000;
         }
-        if (iVar9 != 0) {
+        if (iVar9) {
           lVar1 = (longlong)iVar8 * (longlong)(0x1000 - iVar9) + 0x800;
           iVar8 = iVar9 + ((uint)lVar1 >> 0xc | (int)((ulonglong)lVar1 >> 0x20) * 0x100000);
         }
@@ -172,7 +172,7 @@ int func_02011974(int param_1,int param_2,int param_3,undefined4 param_4,ushort 
             if (iVar9 < iVar10) {
               *(int *)(param_2 + iVar8 * 4) = iVar10;
               *(int *)(iVar5 + 4) = iVar9;
-              puVar4 = (undefined4 *)(param_1 + iVar8 * 4);
+              puVar4 = (undefined4 *)((iVar8 + param_1) * 4);
               uVar6 = *(undefined4 *)(param_1 + iVar8 * 4);
               *puVar4 = puVar4[1];
               puVar4[1] = uVar6;

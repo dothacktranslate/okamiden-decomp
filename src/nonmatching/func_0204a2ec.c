@@ -171,23 +171,27 @@ undefined4 func_0204a2ec(undefined4 param_1)
 
 {
   undefined1 auStack_120 [252];
-  undefined4 uVar6;
+  undefined *puVar1;
   int iVar5;
   undefined *puVar4;
-  undefined *puVar3;
+  undefined4 uVar6;
   undefined *puVar2;
-  undefined *puVar1;
+  undefined *puVar3;
 
   puVar4 = ((unsigned int)0x0204a3e0);
   puVar3 = ((unsigned char *)0x0204a3dc);
-  puVar2 = ((unsigned int)0x0204a3d8);
+  {
+      puVar2 = ((unsigned int)0x0204a3d8);
+  }
   puVar1 = ((unsigned int)0x0204a3d4);
   while( true ) {
     func_02016670(puVar3,puVar2);
     iVar5 = func_02016344(auStack_120,0xfa,puVar4);
     if ((iVar5 == 0) || (iVar5 = func_02018f50(auStack_120,puVar1), iVar5 == 0)) break;
     uVar6 = func_02018d9c(auStack_120);
-    iVar5 = func_0204819c(param_1,auStack_120,uVar6,((unsigned int)0x0204a3e4));
+    {
+        iVar5 = func_0204819c(param_1,auStack_120,uVar6,((unsigned int)0x0204a3e4));
+    }
     if ((iVar5 != 0) || (iVar5 = func_02047078(param_1,0,0,0), iVar5 != 0)) {
       uVar6 = func_02046654(param_1,0xffffffff,0);
       func_02016670(uVar6,puVar2);

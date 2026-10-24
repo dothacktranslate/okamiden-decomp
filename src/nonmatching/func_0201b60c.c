@@ -102,17 +102,21 @@ void func_0201b60c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   bool bVar1;
   undefined1 uVar2;
   int iVar3;
-  uint uVar4;
+  undefined8 uVar8;
   uint uVar5;
   uint uVar6;
   bool bVar7;
-  undefined8 uVar8;
+  uint uVar4;
   int local_70;
   undefined1 auStack_6c [38];
   undefined1 auStack_46 [38];
   undefined4 uStack_20;
 
-  uVar8 = CONCAT44(param_3,param_2);
+  {
+      {
+          uVar8 = CONCAT44(param_3,param_2);
+      }
+  }
   uStack_20 = param_4;
   iVar3 = func_02016958(param_2,param_3);
   bVar7 = iVar3 == 0;
@@ -149,7 +153,7 @@ void func_0201b60c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   *(undefined2 *)(param_1 + 2) = 0;
   *(undefined1 *)(param_1 + 4) = 1;
   iVar3 = func_02016974(param_2,param_3);
-  if (iVar3 == 1) {
+  if (!(iVar3 != 1)) {
     uVar2 = 0x4e;
   }
   else {

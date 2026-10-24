@@ -88,17 +88,19 @@ undefined4 func_0206394c(uint *param_1,uint *param_2,uint *param_3,uint param_4,
 
 {
   uint uVar3;
-  uint *puVar2;
+  uint unaff_r4;
   uint *puVar1;
   uint uVar4;
   uint unaff_r5;
   uint *puVar5;
+  uint *puVar2;
   uint in_lr;
-  uint unaff_r4;
 
   puVar5 = (uint *)0x0;
   if ((uint *)*param_1 != (uint *)0x0) {
-    puVar2 = (uint *)*param_1;
+    {
+        puVar2 = (uint *)*param_1;
+    }
     do {
       puVar5 = puVar2;
       if (!(param_5 <= 1)) {
@@ -123,7 +125,7 @@ undefined4 func_0206394c(uint *param_1,uint *param_2,uint *param_3,uint param_4,
       puVar2[1] = unaff_r5;
       puVar2[2] = 0;
       puVar2[3] = 0;
-      if (*param_1 != 0) {
+      if (!(*param_1 != 0)) {} else {
         *(uint **)(*param_1 + 8) = puVar2;
       }
       puVar2[3] = *param_1;
@@ -141,7 +143,7 @@ undefined4 func_0206394c(uint *param_1,uint *param_2,uint *param_3,uint param_4,
       } else {
         *param_1 = uVar3;
       }
-      if (uVar3 != 0) {
+      if (!(uVar3 != 0)) {} else {
         *(uint *)(uVar3 + 8) = uVar4;
       }
       if (*param_2 != 0) {

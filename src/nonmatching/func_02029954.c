@@ -99,7 +99,6 @@ extern int func_0x020af510();
 undefined4 func_02029954(undefined4 param_1)
 
 {
-  undefined2 uVar1;
   int iVar2;
   undefined4 uVar3;
   undefined4 uVar4;
@@ -107,13 +106,16 @@ undefined4 func_02029954(undefined4 param_1)
   uint uVar6;
   int *piVar7;
   int iVar8;
-  uint *puVar9;
+  uint local_1c;
   undefined4 uVar10;
   int iVar11;
-  uint local_1c;
+  uint *puVar9;
+  undefined2 uVar1;
 
   piVar7 = (int *)(*(unsigned int *)0x02029c70);
-  iVar11 = *(int *)(*piVar7 + 0x5c);
+  {
+      iVar11 = *(int *)(*piVar7 + 0x5c);
+  }
   iVar8 = *(int *)(iVar11 + 0x30);
   local_1c = 0xffffffff;
   puVar9 = (uint *)(iVar8 + 0x88);

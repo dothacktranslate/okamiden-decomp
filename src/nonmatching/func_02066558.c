@@ -96,19 +96,19 @@ extern int func_02065d1c();
 int func_02066558(undefined4 param_1,int param_2,int param_3,undefined4 param_4)
 
 {
+  undefined1 auStack_28 [4];
   int iVar2;
-  int iVar4;
-  undefined4 *puVar6;
   undefined4 uStack_24;
   int iVar1;
+  int iVar4;
   int iVar3;
+  undefined4 *puVar6;
   undefined4 uVar5;
-  undefined1 auStack_28 [4];
 
   puVar6 = (undefined4 *)auStack_28;
   uStack_24 = param_4;
   iVar2 = func_02065b30();
-  if (iVar2 == 0) {
+  if (0 == iVar2) {
     uVar5 = 0;
     iVar2 = func_02065a48(param_1,((unsigned int)0x02066674),0x3c,0);
     if (iVar2 != 0x3c) {
@@ -119,11 +119,13 @@ int func_02066558(undefined4 param_1,int param_2,int param_3,undefined4 param_4)
       puVar6 = &uStack_24;
     }
     iVar1 = iVar3 * 4;
-    if (param_2 == 0) {
+    if (!(param_2 == 0)) {} else {
       return 0;
     }
     if (param_3 != 0) {
-      uVar5 = func_020656c8(iVar3);
+      {
+          uVar5 = func_020656c8(iVar3);
+      }
     }
     *puVar6 = param_1;
     iVar2 = func_02065d1c(param_2,iVar3 * 0x5c + 8,((unsigned int)0x0206667c),uVar5);

@@ -166,31 +166,31 @@ byte * func_02017b40(undefined4 param_1,undefined4 param_2,int param_3,uint para
                    undefined4 param_5,undefined4 param_6,uint param_7)
 
 {
-  byte *pbVar1;
   byte *pbVar2;
-  int iVar3;
   ushort uVar4;
-  byte *pbVar5;
   int iVar6;
-  uint uVar7;
   uint uVar8;
-  byte *pbVar9;
   byte *pbVar10;
-  int iVar11;
   byte bVar12;
-  bool bVar13;
   char acStack_5c [2];
-  undefined2 uStack_5e;
   undefined1 auStack_60 [2];
-  short sStack_5a;
   byte bStack_58;
-  byte abStack_57 [35];
   char local_1;
+  byte *pbVar1;
+  int iVar3;
+  byte *pbVar5;
+  uint uVar7;
+  byte *pbVar9;
+  int iVar11;
+  bool bVar13;
+  undefined2 uStack_5e;
+  short sStack_5a;
+  byte abStack_57 [35];
 
   uVar8 = (uint)(*(unsigned char *)((unsigned char *)&param_5 + 1));
   local_1 = (char)(param_4 >> 0x18);
   uVar7 = param_4 >> 8 & 0xff;
-  if (((unsigned int)0x000001fd) < (int)param_7) {
+  if (!(((unsigned int)0x000001fd) < (int)param_7)) {} else {
     return (byte *)0x0;
   }
   auStack_60[0] = 0;
@@ -201,7 +201,7 @@ byte * func_02017b40(undefined4 param_1,undefined4 param_2,int param_3,uint para
   pbVar10 = ((unsigned int)0x02018240);
   pbVar9 = ((unsigned int)0x0201823c);
   pbVar5 = abStack_57 + bStack_58;
-  while ((1 < bStack_58 && (pbVar5 = pbVar5 + -1, *pbVar5 == 0x30))) {
+  for (; (1 < bStack_58 && (pbVar5 = pbVar5 + -1, *pbVar5 == 0x30)); ) {
     sStack_5a = sStack_5a + 1;
     bStack_58 = bStack_58 - 1;
   }

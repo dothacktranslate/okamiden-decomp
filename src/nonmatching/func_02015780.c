@@ -90,10 +90,10 @@ void func_02015780(uint *param_1)
   uint uVar5;
   uint uVar2;
   int iVar10;
-  uint *puVar1;
+  uint uVar4;
   uint uVar6;
   uint uVar9;
-  uint uVar4;
+  uint *puVar1;
   uint *puVar8;
   uint local_68 [16];
   uint uVar3;
@@ -107,7 +107,7 @@ void func_02015780(uint *param_1)
   uVar7 = param_1[8];
   puVar8 = param_1 + 9;
   iVar10 = 0x10;
-  while( true ) {
+  while(true != 0) {
     *puVar1 = (uVar3 ^ (uVar3 >> 0x10 | uVar3 << 0x10)) >> 0xffff00ff & 8 ^
               (uVar3 >> 8 | uVar3 << 0x18);
     puVar1[1] = (uVar2 ^ (uVar2 >> 0x10 | uVar2 << 0x10)) >> 8 & 0xffff00ff ^

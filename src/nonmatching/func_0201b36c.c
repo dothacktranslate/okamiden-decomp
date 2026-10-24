@@ -103,10 +103,10 @@ void func_0201b36c(undefined2 *param_1,undefined2 *param_2,int param_3)
   char *pcVar8;
   int iVar10;
   undefined2 *puVar12;
-  int iVar14;
+  bool bVar20;
   byte *pbVar16;
   byte *pbVar18;
-  bool bVar20;
+  int iVar14;
 
   iVar10 = 9;
   puVar12 = param_1;
@@ -172,7 +172,7 @@ void func_0201b36c(undefined2 *param_1,undefined2 *param_2,int param_3)
     bVar20 = *pbVar18 < 5;
     if ((bVar20) || (*pbVar18 != 5)) {
 LAB_0201b50c:
-      if (bVar20) {
+      if (bVar20 != 0) {
         if (*pbVar17 == 0) {
           pbVar18 = pbVar17 + -1;
           bVar1 = pbVar17[-1];
@@ -220,7 +220,7 @@ LAB_0201b50c:
     }
     *(char *)(param_1 + 2) = *(char *)(param_1 + 2) - (char)iVar10;
   }
-  pcVar6 = (char *)((int)param_1 + 5);
+  pcVar6 = (char *)((int)(5 + param_1));
   pcVar8 = pcVar6 + *(byte *)(param_1 + 2);
   do {
     if (pcVar8 <= pcVar6) break;

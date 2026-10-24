@@ -93,10 +93,10 @@ void func_0203e414(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 {
   uint iVar2;
   undefined4 local_a8;
-  undefined4 local_a0;
+  int local_88;
   undefined4 local_98;
   int local_90;
-  int local_88;
+  undefined4 local_a0;
   int local_80;
   int local_78;
   undefined4 local_70;

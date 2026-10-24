@@ -162,12 +162,12 @@ void func_020009fc(void)
 
 {
   int iVar9;
-  undefined4 *puVar8;
   undefined4 *puVar7;
   uint uVar6;
   undefined4 *puVar5;
   undefined4 *puVar4;
   undefined4 *puVar3;
+  undefined4 *puVar8;
   int *piVar2;
   undefined4 *puVar1;
 

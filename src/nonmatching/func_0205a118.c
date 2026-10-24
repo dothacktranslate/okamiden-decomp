@@ -91,21 +91,25 @@ int func_0205a118(uint *param_1,uint param_2,uint param_3,int param_4,int param_
 
 {
   int local_3c;
-  int iVar9;
+  uint uVar5;
   int iVar8;
   uint uVar7;
   uint uVar6;
-  uint uVar5;
+  int iVar9;
   uint uVar4;
   uint uVar3;
   int iVar2;
   uint uVar1;
 
   if ((int)param_2 < 8) {
-    iVar8 = 0x1f - LZCOUNT(param_2);
+    {
+        iVar8 = 0x1f - LZCOUNT(param_2);
+    }
   }
   else {
-    iVar8 = 3;
+    {
+        iVar8 = 3;
+    }
   }
   if ((int)param_3 < 8) {
     iVar2 = 0x1f - LZCOUNT(param_3);

@@ -167,10 +167,10 @@ bool func_02012998(int param_1,int *param_2,int param_3,int param_4,int *param_5
   int iVar22;
   int iVar18;
   int iVar14;
-  int iVar10;
+  int local_34;
   short sVar6;
   ushort uVar2;
-  int local_34;
+  int iVar10;
   uint local_60;
   int iVar21;
   int iVar17;
@@ -197,13 +197,17 @@ bool func_02012998(int param_1,int *param_2,int param_3,int param_4,int *param_5
   local_60 = 0;
   iVar22 = *param_5;
   iVar10 = param_5[1];
-  local_38 = 0;
+  {
+      local_38 = 0;
+  }
   local_3c = 0;
   puVar11 = param_7 + param_3;
   do {
     iVar12 = local_3c + 3;
     bVar24 = SBORROW4(iVar12,param_3);
-    iVar1 = iVar12 - param_3;
+    {
+        iVar1 = iVar12 - param_3;
+    }
     bVar23 = iVar12 == param_3;
     if (iVar12 <= param_3) {
       bVar24 = SBORROW4(local_38,param_4);

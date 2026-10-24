@@ -93,10 +93,10 @@ void func_02001250(byte *param_1,uint *param_2,uint *param_3)
   int iVar4;
   int iVar5;
   uint iVar6;
-  int iVar7;
+  uint local_48;
   int iVar8;
   int iVar9;
-  uint local_48;
+  int iVar7;
   uint local_44;
   uint local_40;
   uint local_3c;
@@ -110,7 +110,7 @@ void func_02001250(byte *param_1,uint *param_2,uint *param_3)
   iVar8 = *param_1;
   iVar6 = param_1[2];
   puVar3 = param_3;
-  if (param_3 == param_2) {
+  if (param_2 == param_3) {
     puVar3 = &local_48;
   }
   lVar1 = (longlong)(int)param_2[6] * (longlong)iVar6 +

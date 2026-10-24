@@ -91,22 +91,26 @@ int func_02065a48(uint param_1,int param_2,uint param_3,int param_4)
 
 {
   int iVar2;
-  uint uVar1;
   int iVar3;
-  uint uVar4;
-  int iVar6;
-  uint uVar5;
   int *piVar7;
+  uint uVar1;
+  uint uVar4;
+  uint uVar5;
+  int iVar6;
 
   iVar6 = (*(unsigned int *)0x02065b0c);
   if (*(uint *)(*(int *)(iVar6 + 0x90) + 8) <= param_1) {
     return -1;
   }
-  uVar4 = *(uint *)(iVar6 + 0x9c);
+  {
+      uVar4 = *(uint *)(iVar6 + 0x9c);
+  }
   if (*(uint *)(iVar6 + 0x9c) == 0) {
     uVar4 = param_3;
   }
-  piVar7 = (int *)(*(int *)(iVar6 + 0x90) + 0xc + param_1 * 0x10);
+  {
+      piVar7 = (int *)(*(int *)(iVar6 + 0x90) + 0xc + param_1 * 0x10);
+  }
   iVar3 = 0;
   if (0 < (int)param_3) {
     do {

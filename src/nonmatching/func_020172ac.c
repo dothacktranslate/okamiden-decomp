@@ -171,24 +171,28 @@ char * func_020172ac(int param_1,int param_2,int param_3,uint param_4,undefined4
   char cVar4;
   int unaff_r6;
   char *pcVar6;
-  int iVar8;
+  uint local_3c;
   bool bVar10;
   uint local_44;
-  uint local_3c;
+  int iVar8;
   char cVar1;
   uint uVar3;
-  int unaff_r5;
-  char *pcVar5;
   int iVar7;
+  char *pcVar5;
+  int unaff_r5;
   undefined4 uVar9;
   longlong lVar11;
   int local_40;
   char local_4;
 
-  lVar11 = CONCAT44(param_2,param_1);
+  {
+      lVar11 = CONCAT44(param_2,param_1);
+  }
   pcVar5 = (char *)(param_3 + -1);
   *pcVar5 = '\0';
-  local_40 = param_7;
+  {
+      local_40 = param_7;
+  }
   uVar3 = param_4 >> 0x18;
   bVar10 = param_2 == 0 && param_1 == 0;
   local_3c = 0;
@@ -276,11 +280,11 @@ LAB_020173ec:
     if (uVar3 != 0) {
       cVar1 = *pcVar5;
     }
-    if (uVar3 != 0 && cVar1 != '0') {
+    if (uVar3 != 0) { if (cVar1 != '0') {
       pcVar5 = pcVar6 + -2;
       *pcVar5 = '0';
       iVar7 = iVar8 + 2;
-    }
+    } }
   }
   local_4 = (char)param_4;
   if (local_4 == '\x02') {

@@ -91,11 +91,11 @@ undefined4 func_02060800(int *param_1,int param_2,int param_3,uint param_4)
   ushort *puVar12;
   int unaff_r6;
   int iVar11;
-  int iVar10;
+  short sVar6;
   int iVar9;
   uint uVar8;
   short sVar7;
-  short sVar6;
+  int iVar10;
   short sVar5;
   short uVar4;
   short uVar3;
@@ -108,7 +108,7 @@ undefined4 func_02060800(int *param_1,int param_2,int param_3,uint param_4)
     param_1[8] = 0;
     iVar11 = ((unsigned int)0x02060958);
     bVar13 = (uVar8 & 0x10) != 0;
-    if (bVar13) {
+    if (!!bVar13) {
       unaff_r6 = -0x1000;
     }
     uVar8 = uVar8 & 0xf;

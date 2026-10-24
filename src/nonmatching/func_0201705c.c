@@ -91,9 +91,9 @@ extern int func_0201ebe0();
 char * func_0201705c(int param_1,int param_2,uint param_3,undefined4 param_4,int param_5,int param_6)
 
 {
-  uint uVar1;
-  bool bVar2;
   int unaff_r4;
+  bool bVar2;
+  uint uVar1;
   int extraout_r1;
   char *pcVar3;
   char *pcVar4;

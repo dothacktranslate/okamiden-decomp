@@ -91,17 +91,17 @@ extern int func_02058c90();
 void func_02059460(int *param_1,undefined4 param_2,uint param_3,uint param_4,int param_5,int param_6)
 
 {
-  int iVar1;
-  uint uVar3;
+  int iVar9;
   int iVar2;
   int iVar4;
   uint uVar5;
   int iVar6;
   int iVar7;
   uint uVar8;
-  int iVar9;
+  uint uVar3;
   int local_3c;
   uint local_2c;
+  int iVar1;
 
   local_2c = param_4 & 0xfffffff8;
   iVar7 = param_1[4];

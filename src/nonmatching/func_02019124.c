@@ -101,11 +101,11 @@ undefined4 func_02019124(int param_1,byte *param_2,undefined4 param_3)
   byte *pbVar14;
   byte *pbVar16;
   ushort uVar1;
-  int iVar3;
+  uint uVar11;
   byte *pbVar5;
   undefined4 uVar7;
   uint uVar9;
-  uint uVar11;
+  int iVar3;
   byte *pbVar13;
   byte *pbVar15;
   byte *pbVar17;
@@ -117,7 +117,7 @@ undefined4 func_02019124(int param_1,byte *param_2,undefined4 param_3)
   iVar3 = (*(int **)(((unsigned int)0x02019324) + 4))[1];
   pbVar5 = (byte *)func_02016050(iVar2);
   pbVar6 = (byte *)func_02016050(iVar2);
-  for (pbVar8 = pbVar5; pbVar8 < pbVar5 + iVar2; pbVar8 = pbVar8 + 1) {
+  for (pbVar8 = pbVar5; pbVar8 < pbVar5 + iVar2; pbVar8 = (1 + pbVar8)) {
     *pbVar8 = 0;
   }
   for (pbVar8 = pbVar6; pbVar8 < pbVar6 + iVar2; pbVar8 = pbVar8 + 1) {

@@ -180,9 +180,9 @@ void func_0203e814(int param_1)
   undefined1 auStack_50 [12];
   uint local_54;
   undefined4 local_58;
-  undefined4 local_5c;
-  uint local_60;
   int local_b0 [20];
+  uint local_60;
+  undefined4 local_5c;
   undefined4 local_b4;
   undefined4 local_b8;
   undefined4 local_bc;
@@ -200,7 +200,9 @@ void func_0203e814(int param_1)
 
   func_02000c60(auStack_38);
   if (*(int *)(param_1 + 100) + *(int *)(param_1 + 0x6c) != 0) {
-    local_44 = 0;
+    {
+        local_44 = 0;
+    }
     local_3c = 0;
     local_40 = 0x1000;
     func_02002b30(&local_44,param_1 + 100,auStack_50);
@@ -259,7 +261,7 @@ void func_0203e814(int param_1)
     func_0205e0c0(((unsigned int)0x00293130),&local_5c,3);
     iVar2 = *piVar5;
     *(short *)(iVar2 + 0x34) = *(short *)(iVar2 + 0x34) + 1;
-    if (0x28 < *(ushort *)(iVar2 + 0x34)) {
+    if (!(0x28 < *(ushort *)(iVar2 + 0x34))) {} else {
       *(undefined2 *)(iVar2 + 0x34) = 0x15;
     }
     iVar2 = 0;

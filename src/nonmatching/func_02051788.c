@@ -104,13 +104,13 @@ undefined4 func_02051788(undefined4 param_1)
   char *pcVar3;
   int iVar4;
   int iVar5;
-  int iVar6;
+  undefined4 local_12c;
   undefined1 *puVar7;
   int local_1144;
   undefined1 **local_1140 [1027];
   undefined1 *local_134;
   undefined1 *local_130;
-  undefined4 local_12c;
+  int iVar6;
   undefined4 local_128;
 
   puVar2 = (undefined1 *)func_02047988(param_1,1,&local_1144);
@@ -151,7 +151,7 @@ LAB_020518a4:
         if (puVar2 <= puVar7) goto LAB_020518a4;
       }
       if ((cVar1 == '^') || (puVar7 = puVar2, iVar5 <= iVar6)) break;
-    } while( true );
+    } while( !!true );
   }
   func_02048014(local_1140,puVar2,(int)local_130 - (int)puVar2);
   func_02048094(local_1140);

@@ -145,7 +145,7 @@ void func_0203f970(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       func_02036db8(uVar10,param_1 + 0xe2,0);
     }
     if ((0 < *(short *)(param_1 + 0x10)) && (*(int *)(param_1 + 0x34) != 0)) {
-      if ((*(uint *)((*(unsigned int *)0x0203fcb8) + 0x18) & 2) == 0) {
+      if (!((*(uint *)((*(unsigned int *)0x0203fcb8) + 0x18) & 2) == 0)) {} else {
         func_0201e9d4(*(short *)(param_1 + 0x114) * 0x1000 - *(int *)(param_1 + 0xd8));
         *(int *)(param_1 + 0x6c) = *(int *)(param_1 + 0x6c) + extraout_r1;
         func_02001cb0(param_1 + 0x90,param_1 + 0x90,0,*(short *)(param_1 + 0x112) * -0x1000,0);
@@ -162,7 +162,7 @@ void func_0203f970(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
         puVar9[1] = uVar7;
         puVar9 = puVar9 + 2;
         iVar8 = iVar8 + -1;
-      } while (iVar8 != 0);
+      } while (iVar8);
       local_54 = 3;
       func_0205e0c0(0x10,&local_54,1);
       func_0205e0c0(0x16,param_1 + 0x90,0x10);
@@ -181,7 +181,9 @@ void func_0203f970(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
                  (((uint)(*(short *)(param_1 + 0x10) * 0x8000000 + iVar8) >> 0x1b | iVar8 << 5) -
                  iVar8) * 0x10000 | local_1c;
       func_0205e0c0(local_28,auStack_24,3);
-      iVar8 = *(int *)(param_1 + 0x74) + 1;
+      {
+          iVar8 = *(int *)(param_1 + 0x74) + 1;
+      }
       local_94 = *(int *)(param_1 + 0x68);
       if (iVar8 <= *(int *)(param_1 + 0x68)) {
         local_94 = iVar8;
@@ -285,13 +287,12 @@ void func_0203f970(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
                                       *(undefined4 *)(param_1 + 0x118));
               }
               iVar12 = iVar12 + iVar13;
-              if (*(char *)(param_1 + 0x122) == '\0') {
-                local_50[1] = (iVar12 * 0x100 >> 0x10) << 0x10;
-                local_38 = 0x3f0;
-              }
-              else {
+              if (!(*(char *)(param_1 + 0x122) == '\0')) {
                 local_50[1] = iVar12 * 0x100 >> 0x10 & 0xffff;
                 local_38 = local_68;
+              } else {
+                local_50[1] = (iVar12 * 0x100 >> 0x10) << 0x10;
+                local_38 = 0x3f0;
               }
               local_38 = local_38 | local_50[1];
               if (*(int *)(param_1 + 0xdc) == 0) {

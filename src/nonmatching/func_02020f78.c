@@ -96,19 +96,19 @@ int func_02020f78(undefined4 *param_1,undefined4 *param_2)
   undefined4 uVar3;
   undefined4 uVar4;
   int iVar5;
-  undefined4 *puVar6;
-  undefined4 *puVar7;
-  int local_98;
   undefined4 local_94;
   undefined4 local_90;
+  int local_98;
+  undefined4 *puVar6;
+  undefined4 *puVar7;
   int local_8c;
   undefined4 local_88;
   undefined4 local_84;
-  undefined4 local_80;
+  undefined4 local_70;
   undefined4 local_7c;
   undefined4 local_78;
   undefined4 local_74;
-  undefined4 local_70;
+  undefined4 local_80;
   undefined4 local_6c;
   undefined4 local_68;
   int local_64;
@@ -142,7 +142,7 @@ int func_02020f78(undefined4 *param_1,undefined4 *param_2)
     puVar6[3] = uVar4;
     puVar6 = puVar6 + 4;
     iVar5 = iVar5 + -1;
-  } while (iVar5 != 0);
+  } while (!(iVar5 == 0));
   *puVar6 = *puVar7;
   uVar1 = func_0202046c(&local_94);
   do {

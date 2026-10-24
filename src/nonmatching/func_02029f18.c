@@ -120,11 +120,11 @@ undefined4 func_02029f18(undefined4 param_1)
   undefined4 uVar7;
   undefined4 *puVar8;
   uint uVar9;
-  int *piVar10;
+  undefined2 local_3c [2];
   undefined4 uVar11;
   int *piVar12;
   int iVar13;
-  undefined2 local_3c [2];
+  int *piVar10;
   undefined4 local_38;
   int local_34;
   undefined4 local_30;
@@ -180,7 +180,7 @@ LAB_02029fd4:
     if (piVar10[0x2c] != 0) break;
     goto switchD_0202a20c_default;
   case 2:
-    if (iVar4 != 0) {
+    if (iVar4) {
       if (iVar4 == 1) {
         uVar1 = func_020465d8(param_1,3);
         iVar5 = func_0x020c23b8(uVar11,uVar1);

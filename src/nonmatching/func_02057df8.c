@@ -93,18 +93,18 @@ uint func_02057df8(int param_1,uint param_2,ushort *param_3,int *param_4,int *pa
   uint *puVar5;
   uint uVar7;
   uint local_48;
-  int local_2c;
+  int local_30;
   longlong lVar2;
   uint uVar4;
   int iVar6;
   int iVar8;
-  int local_30;
+  int local_2c;
 
   if (*param_3 <= param_2) {
     param_2 = (uint)*param_3;
   }
   local_48 = 0;
-  if (param_2 != 0) {
+  if (param_2) {
     do {
       puVar5 = (uint *)(local_48 + param_1 * 8);
       iVar8 = *(int *)(param_3 + 2) + local_48 * 6;

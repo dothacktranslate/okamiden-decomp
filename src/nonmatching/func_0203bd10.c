@@ -94,18 +94,18 @@ extern int func_0203c468();
 void func_0203bd10(int param_1,int param_2,undefined4 param_3,undefined4 param_4)
 
 {
+  undefined4 uStack_20;
   uint uVar1;
   char cVar2;
-  char *pcVar3;
   int iVar4;
   uint uVar5;
   int iVar6;
   uint uVar7;
   int iVar8;
+  char *pcVar3;
   int iVar9;
   undefined8 uVar10;
   undefined1 local_60 [64];
-  undefined4 uStack_20;
 
   *(undefined4 *)(param_1 + 0xc) = *(undefined4 *)(param_2 + 0xc);
   uStack_20 = param_4;

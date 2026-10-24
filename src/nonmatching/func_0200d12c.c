@@ -91,11 +91,11 @@ void func_0200d12c(int param_1)
 
 {
   undefined4 *puVar1;
-  undefined4 *puVar2;
   undefined4 *puVar3;
   undefined4 *puVar4;
   undefined4 *puVar5;
   undefined4 *puVar6;
+  undefined4 *puVar2;
   uint uVar7;
   uint uVar8;
   undefined4 *puVar9;

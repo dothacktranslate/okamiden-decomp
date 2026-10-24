@@ -103,15 +103,15 @@ void func_0206464c(void)
   int iVar7;
   int iVar8;
   int iVar9;
-  short sVar1;
   short sVar2;
   short sVar3;
   int iVar4;
+  short sVar1;
 
   uVar5 = func_0200af08();
   iVar6 = func_02056370(((unsigned int)0x020647a4),0);
   iVar4 = ((unsigned int)0x020647a8);
-  if (iVar6 == 0) {
+  if (!iVar6) {
     return;
   }
   do {

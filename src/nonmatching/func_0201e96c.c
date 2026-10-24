@@ -96,19 +96,19 @@ extern int func_0201ebe8();
 ulonglong func_0201e96c(uint param_1,uint param_2,uint param_3,uint param_4)
 
 {
-  uint uVar1;
-  uint uVar2;
-  uint uVar3;
-  uint uVar4;
-  uint uVar5;
+  bool bVar11;
+  bool bVar10;
+  int iVar9;
   uint uVar6;
   int iVar7;
   int iVar8;
-  int iVar9;
-  bool bVar10;
-  bool bVar11;
+  uint uVar5;
+  uint uVar4;
+  uint uVar3;
+  uint uVar2;
+  uint uVar1;
 
-  if (param_4 == 0 && param_3 == 0) {
+  if (!(param_4 == 0 && param_3 == 0)) {} else {
     return CONCAT44(param_2,param_1);
   }
   if (param_2 == 0 && param_4 == 0) {
@@ -122,7 +122,9 @@ ulonglong func_0201e96c(uint param_1,uint param_2,uint param_3,uint param_4)
   iVar8 = 0;
   if (-1 < (int)param_4) {
     do {
-      iVar7 = iVar8;
+      {
+          iVar7 = iVar8;
+      }
       bVar10 = CARRY4(param_3,param_3);
       param_3 = param_3 * 2;
       param_4 = param_4 * 2 + (uint)bVar10;

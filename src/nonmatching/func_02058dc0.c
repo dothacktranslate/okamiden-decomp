@@ -98,35 +98,35 @@ void func_02058dc0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4
   int iVar5;
   int iVar6;
   uint uVar7;
-  int iVar8;
+  int iVar11;
   uint uVar9;
   int iVar10;
-  int iVar11;
+  int iVar8;
   uint uVar12;
-  int iVar13;
+  undefined4 uStack_28;
+  undefined1 uStack_2b;
+  undefined1 uStack_2c;
+  int iStack_30;
+  undefined1 uStack_33;
+  undefined1 uStack_34;
+  int iStack_38;
+  uint *local_44;
+  int local_50;
+  uint *puVar16;
   uint uVar14;
   int iVar15;
-  uint *puVar16;
-  int local_50;
-  uint *local_44;
-  int iStack_38;
-  undefined1 uStack_34;
-  undefined1 uStack_33;
-  int iStack_30;
-  undefined1 uStack_2c;
-  undefined1 uStack_2b;
-  undefined4 uStack_28;
+  int iVar13;
 
   uStack_28 = param_4;
   iVar8 = param_1[2];
   iVar5 = param_1[3];
   local_50 = iVar8;
-  if (iVar8 < 0) {
+  if (0 > iVar8) {
     local_50 = 0;
   }
-  iVar15 = iVar8 + param_1[4];
+  iVar15 = (param_1 + iVar8)[4];
   iVar3 = iVar5;
-  if (iVar5 < 0) {
+  if (!(iVar5 < 0)) {} else {
     iVar3 = 0;
   }
   iVar4 = iVar5 + param_1[5];

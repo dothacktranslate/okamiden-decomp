@@ -95,18 +95,20 @@ void func_02067080(void)
 
 {
   short sVar1;
-  int iVar2;
   int iVar3;
   int iVar4;
   int iVar5;
   int iVar6;
   int iVar7;
+  int iVar2;
 
   iVar3 = ((unsigned int)0x02067184);
   iVar5 = ((unsigned int)0x02067188);
   iVar7 = 0;
   do {
-    iVar6 = iVar7 * 0x17c + iVar5;
+    {
+        iVar6 = iVar7 * 0x17c + iVar5;
+    }
     if (*(int *)(0x118 + iVar6) << 0x1f < 0) {
       if (*(int *)(0x11c + iVar6) == 0) {
 LAB_0206716c:

@@ -129,8 +129,8 @@ byte func_02020488(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   undefined1 auStack_98 [4];
   undefined1 auStack_9c [4];
   undefined1 auStack_a8 [4];
-  undefined1 auStack_a0 [4];
   undefined1 auStack_a4 [4];
+  undefined1 auStack_a0 [4];
   undefined1 auStack_ac [4];
   int iStack_b0;
   byte *pbVar5;
@@ -141,7 +141,9 @@ byte func_02020488(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
 
   uStack_10 = param_4;
 LAB_02020494:
-  pbVar5 = *(byte **)(param_1 + 8);
+  {
+      pbVar5 = *(byte **)(param_1 + 8);
+  }
   if ((pbVar5 == (byte *)0x0) || ((*pbVar5 & 0x80) != 0)) goto LAB_020204ac;
   switch(*pbVar5 & 0x1f) {
   case 0:
@@ -159,7 +161,7 @@ LAB_02020494:
     puVar3 = auStack_20;
     goto LAB_02020554;
   case 5:
-    uVar2 = func_020201f8(pbVar5 + 1,auStack_2c);
+    uVar2 = func_020201f8((1 + pbVar5),auStack_2c);
     uVar2 = func_0202027c(uVar2,auStack_28);
     puVar3 = auStack_24;
     goto LAB_02020598;

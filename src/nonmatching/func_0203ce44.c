@@ -114,9 +114,9 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
   undefined8 uVar9;
   undefined8 uVar10;
   undefined8 uVar11;
-  undefined8 uVar12;
-  int local_48;
   int local_44;
+  int local_48;
+  undefined8 uVar12;
   undefined1 auStack_34 [20];
   uint local_20;
   uint local_1c;
@@ -127,7 +127,9 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
   iVar6 = 0;
   func_0205eed0(param_2,0);
   func_0205ee50(param_2,0);
-  uVar3 = (uint)*(byte *)(param_2 + 0x17);
+  {
+      uVar3 = (uint)*(byte *)(param_2 + 0x17);
+  }
   local_44 = 0;
   local_48 = 0;
   if (param_3 != 0) {

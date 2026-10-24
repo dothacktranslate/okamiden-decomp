@@ -174,14 +174,14 @@ void func_02059188(int *param_1,int *param_2,undefined4 param_3,undefined4 param
   uint uVar5;
   uint uVar6;
   uint uVar7;
-  uint uVar8;
+  int iVar12;
   uint uVar9;
   uint uVar10;
   uint uVar11;
-  int iVar12;
-  uint uVar13;
-  uint *puVar14;
+  uint uVar8;
   undefined1 auStack_70 [8];
+  uint *puVar14;
+  uint uVar13;
   undefined4 local_68;
   undefined4 local_64;
 
@@ -191,7 +191,7 @@ void func_02059188(int *param_1,int *param_2,undefined4 param_3,undefined4 param
   local_68 = param_3;
   local_64 = param_4;
   puVar14 = (uint *)auStack_70;
-  if (uVar10 == 0) {
+  if (!uVar10) {
     puVar14 = (uint *)&stack0xffffffdc;
   }
   uVar5 = param_1[1];
@@ -213,11 +213,10 @@ void func_02059188(int *param_1,int *param_2,undefined4 param_3,undefined4 param
   else {
     puVar14[4] = puVar14[2] >> 3;
   }
-  if ((int)puVar14[3] < 1) {
-    uVar13 = 0;
-  }
-  else {
+  if (!((int)puVar14[3] < 1)) {
     uVar13 = puVar14[3] >> 3;
+  } else {
+    uVar13 = 0;
   }
   uVar9 = uVar8 >> 3;
   if (uVar5 <= uVar8 >> 3) {

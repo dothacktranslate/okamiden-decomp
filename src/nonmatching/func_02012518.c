@@ -118,7 +118,7 @@ bool func_02012518(int param_1,int *param_2,int param_3,int param_4,undefined4 *
         if (iVar6 - 1U != (uint)*(ushort *)(param_1 + iVar10 * 2 + -2)) {
           *(short *)(iVar10 + param_1 * 2) = (short)(iVar6 - 1U);
           iVar10 = iVar10 + 1;
-          if (param_3 <= iVar10) goto LAB_0201263c;
+          if (iVar10 >= param_3) goto LAB_0201263c;
         }
         iVar5 = iVar5 + 1;
         *(undefined2 *)(iVar10 + param_1 * 2) = uVar1;
@@ -129,7 +129,7 @@ bool func_02012518(int param_1,int *param_2,int param_3,int param_4,undefined4 *
 LAB_0201263c:
           *param_2 = iVar10;
           if (!bVar11) {
-            if (0 < iVar10) {
+            if (!(0 < iVar10)) {} else {
               uVar3 = (uint)*(ushort *)(param_1 + (iVar10 + -1) * 2);
               uVar4 = iVar6 - 1;
               bVar11 = SBORROW4(uVar4,uVar3);
@@ -150,7 +150,7 @@ LAB_0201263c:
       }
     }
     else {
-      if (bVar11) {
+      if (bVar11 != 0) {
         unaff_r8 = 0;
         *(undefined2 *)(param_1 + iVar10 * 2) = uVar1;
         iVar10 = iVar10 + 1;
