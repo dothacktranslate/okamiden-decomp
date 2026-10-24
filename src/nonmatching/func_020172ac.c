@@ -172,11 +172,11 @@ char * func_020172ac(int param_1,int param_2,int param_3,uint param_4,undefined4
   int unaff_r6;
   char *pcVar6;
   uint local_3c;
-  bool bVar10;
+  uint uVar3;
   uint local_44;
   int iVar8;
   char cVar1;
-  uint uVar3;
+  bool bVar10;
   int iVar7;
   char *pcVar5;
   int unaff_r5;

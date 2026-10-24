@@ -167,7 +167,6 @@ void func_02059188(int *param_1,int *param_2,undefined4 param_3,undefined4 param
                  ,int *param_6)
 
 {
-  byte bVar1;
   byte bVar2;
   byte bVar3;
   int iVar4;
@@ -184,6 +183,7 @@ void func_02059188(int *param_1,int *param_2,undefined4 param_3,undefined4 param
   uint uVar13;
   undefined4 local_68;
   undefined4 local_64;
+  byte bVar1;
 
   bVar1 = *(byte *)(param_1 + 3);
   uVar10 = (uint)*(byte *)(*param_6 + 1);

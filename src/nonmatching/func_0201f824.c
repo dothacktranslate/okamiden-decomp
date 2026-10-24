@@ -96,7 +96,9 @@ uint func_0201f824(uint param_1,uint param_2)
   int iVar7;
   uint uVar8;
 
-  uVar4 = param_1 >> 0x17 & 0xff;
+  {
+      uVar4 = param_1 >> 0x17 & 0xff;
+  }
   if (uVar4 == 0 || uVar4 == 0xff) {
     uVar8 = (param_1 ^ param_2) & 0x80000000;
     if (uVar4) {
@@ -229,7 +231,7 @@ LAB_0201fa44:
       }
       iVar7 = uVar8 + iVar7 * 2;
       uVar4 = uVar5 & 1;
-      if (iVar7 + iVar6 * -2 < 0) {
+      if ((iVar6 + iVar7) * -2 < 0) {
         uVar5 = uVar5 + 1;
       }
       if (iVar7 == iVar6 * 2) {

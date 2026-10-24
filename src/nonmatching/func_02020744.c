@@ -127,9 +127,9 @@ void func_02020744(int param_1,int param_2,byte *param_3)
   int iStack_94;
   int local_9c [2];
   int local_a0;
-  int local_ac;
-  int local_a4;
   int local_a8;
+  int local_a4;
+  int local_ac;
   int local_b0;
   int local_b4;
   int local_b8;
@@ -251,7 +251,7 @@ switchD_020207ac_default:
     else {
       sVar3 = (short)*(undefined4 *)(param_1 + local_60 * 4 + 0x1c);
     }
-    if (sVar3 != 0) {
+    if (sVar3) {
       if ((bVar1 & 0x20) == 0) {
         iVar12 = *(int *)(*(int *)(param_1 + 0x18) + local_5c);
       }

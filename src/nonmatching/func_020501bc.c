@@ -112,13 +112,12 @@ undefined4 func_020501bc(undefined4 param_1,undefined4 param_2,undefined4 param_
   if (iVar4 > local_18) {
     iVar4 = local_18;
   }
-  if (iVar3 > iVar4) {
+  if (!(iVar3 > iVar4)) {
+    iVar1 = (iVar4 - iVar3) + 1;
+    iVar4 = (iVar3 + iVar5) + -1;
+  } else {
     iVar1 = 0;
     iVar4 = ((unsigned int)0x02050254);
-  }
-  else {
-    iVar1 = (iVar4 - iVar3) + 1;
-    iVar4 = iVar5 + iVar3 + -1;
   }
   func_02046898(param_1,iVar4,iVar1);
   return 1;

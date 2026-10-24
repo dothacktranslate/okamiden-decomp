@@ -397,14 +397,13 @@ LAB_0202ded8:
     iVar3 = 0;
     if (0 < iVar11) {
       do {
-        if (iVar7 < *(short *)(*(int *)(iVar10 + iVar3 * 4) + 2)) {
-          iVar3 = iVar3 + 1;
-        }
-        else {
+        if (!(iVar7 < *(short *)(*(int *)(iVar10 + iVar3 * 4) + 2))) {
           for (iVar13 = iVar3; iVar13 < iVar11 + -1; iVar13 = iVar13 + 1) {
             *(undefined4 *)(iVar10 + iVar13 * 4) = *(undefined4 *)(iVar10 + iVar13 * 4 + 4);
           }
           iVar11 = iVar11 + -1;
+        } else {
+          iVar3 = iVar3 + 1;
         }
       } while (iVar3 < iVar11);
     }

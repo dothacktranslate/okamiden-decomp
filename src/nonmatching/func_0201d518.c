@@ -101,7 +101,7 @@ longlong func_0201d518(uint param_1,uint param_2,uint param_3,uint param_4)
   if ((int)(param_2 ^ param_4) < 0) {
     param_4 = param_4 ^ 0x80000000;
     uVar7 = param_1 - param_3;
-    if (param_2 <= param_4 && (uint)(param_3 <= param_1) <= param_2 - param_4) {
+    if (param_4 >= param_2) { if ((uint)(param_3 <= param_1) <= param_2 - param_4) {
       uVar8 = param_2 - (param_4 + (param_3 > param_1)) ^ 0x80000000;
       bVar10 = CARRY4(param_3,uVar7);
       param_3 = param_3 + uVar7;
@@ -109,7 +109,7 @@ longlong func_0201d518(uint param_1,uint param_2,uint param_3,uint param_4)
       bVar10 = param_1 < uVar7;
       param_1 = param_1 - uVar7;
       param_2 = param_2 - (uVar8 + bVar10);
-    }
+    } }
     uVar8 = param_2 >> 0x14;
     param_2 = param_2 << 0xb;
     uVar6 = param_1 >> 0x15;
@@ -412,7 +412,7 @@ LAB_0201d7a0:
   uVar6 = uVar8 - uVar6;
   if (uVar6 == 0) {
 LAB_0201d5d4:
-    uVar2 = uVar7 + param_3;
+    uVar2 = (param_3 + uVar7);
     uVar6 = uVar3 + param_4 + (uint)CARRY4(uVar7,param_3);
     if (!CARRY4(uVar3,param_4) && !CARRY4(uVar3 + param_4,(uint)CARRY4(uVar7,param_3)))
     goto LAB_0201d5fc;

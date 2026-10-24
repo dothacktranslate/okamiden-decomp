@@ -147,7 +147,7 @@ LAB_0205e9d0:
   iVar3 = piVar4[0xe] + ((uint)lVar1 >> 0xc | (int)((ulonglong)lVar1 >> 0x20) << 0x14);
   if (param_4 != (int *)0x0) {
     local_48 = iVar10 + piVar4[9];
-    local_44 = iVar8 + piVar4[8];
+    local_44 = (piVar4 + iVar8)[8];
     unaff_r9 = iVar3 + piVar4[10];
     local_40 = iVar5 + piVar4[0xb];
   }

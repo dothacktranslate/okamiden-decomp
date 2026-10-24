@@ -545,11 +545,10 @@ LAB_0202e772:
       do {
         puVar9 = auStack_114 + iVar17;
         uVar20 = *(uint *)*puVar9;
-        if (uVar14 == 0) {
-          uVar20 = uVar20 & 0xfffffffd | 1;
-        }
-        else {
+        if (!(uVar14 == 0)) {
           uVar20 = uVar20 | 3;
+        } else {
+          uVar20 = uVar20 & 0xfffffffd | 1;
         }
         iVar17 = iVar17 + 1;
         *(uint *)*puVar9 = uVar20;

@@ -95,9 +95,9 @@ int func_0205a118(uint *param_1,uint param_2,uint param_3,int param_4,int param_
   int iVar8;
   uint uVar7;
   uint uVar6;
-  int iVar9;
-  uint uVar4;
   uint uVar3;
+  uint uVar4;
+  int iVar9;
   int iVar2;
   uint uVar1;
 
@@ -121,7 +121,7 @@ int func_0205a118(uint *param_1,uint param_2,uint param_3,int param_4,int param_
   uVar3 = (uint)*(byte *)(iVar2 + iVar8 * 2);
   iVar9 = 1;
   uVar4 = (uint)*(byte *)(iVar2 + iVar8 * 2 + 1);
-  if (param_6 != 0) {
+  if (!(param_6 != 0)) {} else {
     iVar9 = 2;
   }
   uVar5 = param_2 & -1 << uVar3;

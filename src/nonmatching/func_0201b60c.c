@@ -99,18 +99,18 @@ extern int func_0201ee84();
 void func_0201b60c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  bool bVar1;
-  undefined1 uVar2;
-  int iVar3;
-  undefined8 uVar8;
-  uint uVar5;
-  uint uVar6;
-  bool bVar7;
-  uint uVar4;
-  int local_70;
-  undefined1 auStack_6c [38];
-  undefined1 auStack_46 [38];
   undefined4 uStack_20;
+  undefined1 auStack_46 [38];
+  undefined1 auStack_6c [38];
+  int local_70;
+  uint uVar4;
+  bool bVar7;
+  uint uVar6;
+  uint uVar5;
+  undefined8 uVar8;
+  int iVar3;
+  undefined1 uVar2;
+  bool bVar1;
 
   {
       {
@@ -153,11 +153,10 @@ void func_0201b60c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   *(undefined2 *)(param_1 + 2) = 0;
   *(undefined1 *)(param_1 + 4) = 1;
   iVar3 = func_02016974(param_2,param_3);
-  if (!(iVar3 != 1)) {
-    uVar2 = 0x4e;
-  }
-  else {
+  if (!(!(iVar3 != 1))) {
     uVar2 = 0x49;
+  } else {
+    uVar2 = 0x4e;
   }
   *(undefined1 *)(param_1 + 5) = uVar2;
   return;

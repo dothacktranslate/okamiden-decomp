@@ -100,7 +100,6 @@ extern int func_02033504();
 void func_02033ab4(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,undefined4 *param_4)
 
 {
-  undefined1 auStack_2c [12];
   undefined1 auStack_38 [12];
   undefined1 auStack_3c [4];
   undefined8 uVar15;
@@ -119,6 +118,7 @@ void func_02033ab4(undefined4 *param_1,undefined4 *param_2,undefined4 *param_3,u
   int iVar2;
   int *piVar1;
   int iVar3;
+  undefined1 auStack_2c [12];
 
   func_02002ac4(*param_1,param_1[1],auStack_20);
   func_02002ac4(*param_2,param_2[1],auStack_2c);

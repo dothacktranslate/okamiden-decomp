@@ -102,13 +102,13 @@ void func_0203ed7c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   undefined4 local_70;
   undefined4 local_6c;
   undefined4 local_68;
-  undefined4 local_78;
+  undefined4 local_20;
   undefined4 local_60;
   undefined4 local_5c;
   short local_58 [8];
   int local_48 [9];
   undefined4 local_24;
-  undefined4 local_20;
+  undefined4 local_78;
   uint local_1c;
   undefined4 uStack_18;
 
@@ -161,7 +161,7 @@ void func_0203ed7c(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       } else {
         puVar1 = (undefined4 *)
                  func_02041758((int)local_58[iVar3 * 2],
-                              (int)*(short *)((int)local_48 + iVar3 * 4 + -0xe),
+                              (int)*(short *)((int)(iVar3 + local_48) * 4 + -0xe),
                               *(undefined4 *)(param_1 + 0x68));
         local_64 = *puVar1;
         local_60 = puVar1[1];

@@ -100,13 +100,13 @@ void func_0206464c(void)
 {
   uint uVar5;
   int iVar6;
-  int iVar7;
   int iVar8;
+  int iVar7;
   int iVar9;
-  short sVar2;
+  short sVar1;
   short sVar3;
   int iVar4;
-  short sVar1;
+  short sVar2;
 
   uVar5 = func_0200af08();
   iVar6 = func_02056370(((unsigned int)0x020647a4),0);
@@ -116,10 +116,9 @@ void func_0206464c(void)
   }
   do {
     iVar7 = func_02056370(((unsigned int)0x020647a4),iVar6);
-    if ((*(char *)(iVar6 + 0x2d) == '\0') &&
-       (iVar8 = func_0200ac20(*(undefined4 *)(iVar6 + 0x30)), iVar8 != 0)) {
+    if ((*(char *)(iVar6 + 0x2d) == '\0')) { if ((iVar8 = func_0200ac20(*(undefined4 *)(iVar6 + 0x30)), iVar8 != 0)) {
       *(undefined1 *)(iVar6 + 0x2d) = 1;
-    }
+    } }
     if (!((*(char *)(iVar6 + 0x2d) == '\0') || ((uVar5 & 1 << (uint)*(byte *)(iVar6 + 0x3c)) != 0))) {
       func_02064b08(iVar6);
     } else {

@@ -90,8 +90,8 @@ extern int func_020029f4();
 void func_020624d4(uint *param_1,int param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  uint uVar8;
   int uVar7;
+  uint uVar8;
   uint uVar10;
   uint uVar9;
   int iVar1;

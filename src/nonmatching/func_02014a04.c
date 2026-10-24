@@ -176,13 +176,13 @@ void func_02014a04(void)
 {
   ushort uVar1;
   ushort uVar2;
-  short *psVar3;
+  ushort *puVar10;
   char *pcVar4;
   undefined2 *puVar5;
   undefined1 auStack_34 [8];
   ushort *puVar8;
   int iVar9;
-  ushort *puVar10;
+  short *psVar3;
   undefined4 uVar6;
   int iVar7;
   undefined1 auStack_2c [8];
@@ -193,10 +193,12 @@ void func_02014a04(void)
   }
   uVar1 = (*(unsigned int *)0x02014bc4);
   (*(unsigned int *)0x02014bc0) = 1;
-  if ((uVar1 & 1) != 0) {
+  if (!((uVar1 & 1) != 0)) {} else {
     uVar6 = func_02006510(0x40000);
     {
-        psVar3 = ((unsigned int)0x02014bc8);
+        {
+            psVar3 = ((unsigned int)0x02014bc8);
+        }
     }
     puVar8 = puVar10 + -0x7c;
     uVar1 = *puVar8;

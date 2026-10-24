@@ -90,24 +90,26 @@ extern int func_02008b80();
 void func_0200d12c(int param_1)
 
 {
-  undefined4 *puVar1;
   undefined4 *puVar3;
   undefined4 *puVar4;
   undefined4 *puVar5;
-  undefined4 *puVar6;
+  undefined4 *puVar11;
   undefined4 *puVar2;
   uint uVar7;
   uint uVar8;
   undefined4 *puVar9;
   uint uVar10;
-  undefined4 *puVar11;
+  undefined4 *puVar6;
+  undefined4 *puVar1;
 
   while( true ) {
     uVar7 = *(uint *)(param_1 + 4);
     uVar8 = uVar7 + *(int *)(param_1 + 8) + *(int *)(param_1 + 0xc);
     func_02008b6c(param_1);
     puVar3 = ((unsigned int)0x0200d218);
-    puVar11 = (undefined4 *)(*(unsigned int *)0x0200d218);
+    {
+        puVar11 = (undefined4 *)(*(unsigned int *)0x0200d218);
+    }
     puVar5 = (undefined4 *)0x0;
     puVar6 = (undefined4 *)0x0;
     puVar4 = (undefined4 *)0x0;

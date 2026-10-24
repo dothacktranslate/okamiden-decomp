@@ -279,12 +279,11 @@ void func_0203f970(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
               func_0205e0c0(0x15,0,0);
               func_0205e0c0(0x1c,iVar13,3);
               func_0205e0c0(0x18,((unsigned int)0x0203fcd4),0x10);
-              if (*(int *)(param_1 + 0x11c) == 0) {
-                iVar13 = 0xf000;
-              }
-              else {
+              if (!(*(int *)(param_1 + 0x11c) == 0)) {
                 iVar13 = func_02003170(*(undefined4 *)(*(int *)(param_1 + 0x11c) + iVar8 * 4),
                                       *(undefined4 *)(param_1 + 0x118));
+              } else {
+                iVar13 = 0xf000;
               }
               iVar12 = iVar12 + iVar13;
               if (!(*(char *)(param_1 + 0x122) == '\0')) {

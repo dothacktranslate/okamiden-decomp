@@ -90,6 +90,7 @@ extern int func_020029f4();
 void func_02062238(uint *param_1,int param_2,undefined4 param_3,undefined4 param_4)
 
 {
+  uint uVar6;
   int iVar13;
   int uVar7;
   uint uVar8;
@@ -102,7 +103,6 @@ void func_02062238(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   int iVar4;
   longlong lVar3;
   longlong lVar2;
-  uint uVar6;
 
   iVar11 = (uint)*(ushort *)(param_2 + 0x2c) << 0xc;
   iVar13 = (uint)*(ushort *)(param_2 + 0x2e) << 0xc;
