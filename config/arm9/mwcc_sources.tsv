@@ -578,3 +578,4 @@ src/main/func_02068880.c	-O2 -interworking
 src/main/func_02006884.c	-O2 -interworking
 src/main/func_02042358.c	-O2,p -interworking
 src/main/func_020240e8.c	-O2 -interworking
+src/main/func_0202b0dc.c	-O2,p -interworking

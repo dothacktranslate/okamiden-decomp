@@ -2305,3 +2305,7 @@ src/main/func_02042358.c:
 src/main/func_020240e8.c:
     complete
     .text       start:0x020240e8 end:0x02024128
+
+src/main/func_0202b0dc.c:
+    complete
+    .text       start:0x0202b0dc end:0x0202b10e

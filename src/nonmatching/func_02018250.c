@@ -180,11 +180,11 @@ int func_02018250(code *param_1,undefined4 param_2,char *param_3,uint *param_4,i
 {
   uint unaff_r10;
   code *UNRECOVERED_JUMPTABLE;
-  uint uStack_250;
+  undefined4 uStack_244;
   uint uStack_24c;
   undefined1 uStack_248;
   char local_247 [3];
-  undefined4 uStack_244;
+  uint uStack_250;
   undefined4 uStack_240;
   int iStack_23c;
   undefined1 *puStack_238;

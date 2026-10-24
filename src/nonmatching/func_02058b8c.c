@@ -111,7 +111,7 @@ int func_02058b8c(uint param_1,uint param_2,uint param_3,uint param_4,uint param
         uVar5 = param_4 - uVar5;
       }
     } else {
-      if (param_1 < uVar1) {
+      if (uVar1 > param_1) {
         return uVar1 * (param_2 & -1 << (param_6 & 0xff)) + iVar3 +
                ((param_1 & -1 << (param_5 & 0xff)) << (param_6 & 0xff)) +
                ((param_2 & ~(-1 << (param_6 & 0xff))) << (param_5 & 0xff)) +
