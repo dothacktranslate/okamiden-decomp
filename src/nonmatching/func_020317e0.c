@@ -97,22 +97,24 @@ undefined4
 func_020317e0(undefined4 param_1,undefined4 param_2,undefined4 param_3,uint param_4,int param_5)
 
 {
-  undefined4 uVar1;
-  int iVar2;
-  bool bVar3;
-  undefined8 uVar4;
+  undefined1 auStack_28 [20];
   undefined1 auStack_40 [12];
   undefined1 auStack_34 [12];
-  undefined1 auStack_28 [20];
+  undefined8 uVar4;
+  int iVar2;
+  undefined4 uVar1;
+  bool bVar3;
 
   func_0x01ff9d2c(auStack_34,param_3,param_1);
   func_020300ac(auStack_28,auStack_34);
   func_0x01ff9bf0(auStack_40,auStack_28,param_2);
   uVar4 = func_0x01ff9a30(auStack_40);
   iVar2 = (int)((ulonglong)uVar4 >> 0x20);
-  bVar3 = (uint)uVar4 < param_4;
-  if ((int)((iVar2 - param_5) - (uint)bVar3) < 0 ==
-      (SBORROW4(iVar2,param_5) != SBORROW4(iVar2 - param_5,(uint)bVar3))) {
+  {
+      bVar3 = (uint)uVar4 < param_4;
+  }
+  if (!((int)((iVar2 - param_5) - (uint)bVar3) < 0 ==
+      (SBORROW4(iVar2,param_5) != SBORROW4(iVar2 - param_5,(uint)bVar3)))) {} else {
     return 0;
   }
   uVar4 = func_0x01ff9a30(auStack_28);

@@ -105,7 +105,6 @@ extern int func_0x0209d404();
 void func_0202bd84(int param_1)
 
 {
-  short sVar1;
   int iVar2;
   uint uVar3;
   int *piVar4;
@@ -119,10 +118,11 @@ void func_0202bd84(int param_1)
   undefined4 uVar11;
   short *psVar12;
   int iVar13;
-  int iVar14;
-  int local_38;
   uint local_34;
+  int local_38;
+  int iVar14;
   int local_30;
+  short sVar1;
 
   if ((*(uint *)(*(unsigned int *)0x0202c080) & 1) != 0) {
     return;
@@ -142,7 +142,9 @@ void func_0202bd84(int param_1)
     }
     uVar3 = (uint)puVar10[1];
     iVar9 = uVar3 - *puVar10;
-    uVar7 = *(int *)(param_1 + ((unsigned int)0x0202c094)) >> 0xc;
+    {
+        uVar7 = *(int *)(param_1 + ((unsigned int)0x0202c094)) >> 0xc;
+    }
     if ((uVar7 <= uVar3) && (iVar9 != 0)) {
       iVar9 = func_0201ebe0(*(int *)(param_1 + 0x128) * (uVar3 - uVar7) +
                            *(int *)(puVar10 + 8) * (uVar7 - *puVar10),iVar9);

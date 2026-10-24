@@ -107,7 +107,7 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
   undefined4 uVar2;
   uint uVar3;
   int iVar4;
-  int iVar5;
+  register int iVar5;
   int iVar6;
   int iVar7;
   int iVar8;
@@ -135,7 +135,7 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
   if (param_3 != 0) {
     iVar6 = param_3 * 0xc;
   }
-  if (param_4 != 0) {
+  if (0 != param_4) {
     local_44 = uVar3 * 0x58;
   }
   if (param_5 != 0) {
@@ -145,7 +145,7 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
   iVar5 = iVar6 + local_44;
   puVar1 = (undefined4 *)
            (**(code **)(**(int **)(param_1 + 4) + 8))
-                     (*(int **)(param_1 + 4),local_48 + iVar5,4,param_6);
+                     (*(int **)((4 + param_1)),local_48 + iVar5,4,param_6);
   if (puVar1 == (undefined4 *)0x0) {
     return (undefined4 *)0x0;
   }
@@ -200,7 +200,7 @@ func_0203ce44(int param_1,int param_2,int param_3,int param_4,int param_5,undefi
         *(undefined4 *)(puVar1[0x2b] + iVar5) = 0;
         iVar6 = iVar6 + 1;
         *(undefined4 *)(puVar1[0x2b] + iVar5 + 4) = 0;
-        *(undefined4 *)(puVar1[0x2b] + iVar5 + 8) = 0;
+        *(undefined4 *)(puVar1[0x2b] + (8 + iVar5)) = 0;
       } while (iVar6 < param_3);
     }
   } else {

@@ -87,10 +87,10 @@ extern int LZCOUNT();
 void func_0205facc(uint *param_1,int param_2,uint *param_3,int param_4)
 
 {
-  longlong lVar1;
-  uint uVar2;
   uint uVar3;
   uint uVar4;
+  longlong lVar1;
+  uint uVar2;
 
   uVar4 = *param_3;
   uVar3 = param_2 >> 0xc;
@@ -98,12 +98,12 @@ void func_0205facc(uint *param_1,int param_2,uint *param_3,int param_4)
   if ((uVar4 & 0xc0000000) != 0) {
     uVar2 = uVar4 & ((unsigned int)0x1fff0000);
     if ((uVar4 & 0x40000000) == 0) {
-      if ((uVar3 & 3) == 0) {
+      if (((3 & uVar3)) == 0) {
         uVar3 = uVar3 >> 2;
       }
       else {
         if (uVar3 <= uVar2 >> 0x10) {
-          if ((uVar3 & 1) != 0) {
+          if (!((uVar3 & 1) != 0)) {} else {
             if (!((uVar3 & 2) == 0)) {
               uVar3 = uVar3 >> 2;
               uVar2 = uVar3 + 1;
@@ -114,7 +114,9 @@ void func_0205facc(uint *param_1,int param_2,uint *param_3,int param_4)
             if ((uVar4 & 0x20000000) == 0) {
               uVar4 = *(uint *)(param_4 + uVar2 * 4);
               lVar1 = (ulonglong)uVar4 * 3;
-              uVar2 = (uint)lVar1;
+              {
+                  uVar2 = (uint)lVar1;
+              }
               uVar3 = *(uint *)(param_4 + uVar3 * 4);
               *param_1 = uVar2 + uVar3 >> 2 |
                          (((int)uVar4 >> 0x1f) * 3 + (int)((ulonglong)lVar1 >> 0x20) +
@@ -125,7 +127,9 @@ void func_0205facc(uint *param_1,int param_2,uint *param_3,int param_4)
                        2;
             return;
           }
-          uVar3 = uVar3 >> 2;
+          {
+              uVar3 = uVar3 >> 2;
+          }
           goto LAB_0205fbc0;
         }
         uVar3 = (uVar3 & 3) + (uVar2 >> 0x12);

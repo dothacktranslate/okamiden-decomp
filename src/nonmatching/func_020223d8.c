@@ -100,41 +100,41 @@ extern int func_0x0209f43c();
 int func_020223d8(undefined4 param_1,int param_2)
 
 {
-  undefined2 *puVar1;
-  int iVar2;
-  int iVar3;
-  int iVar4;
-  int iVar5;
-  int iVar6;
-  int iVar7;
-  int iVar8;
-  int iVar9;
-  int iVar10;
-  int iVar11;
-  int iVar12;
-  int iVar13;
-  int iVar14;
-  int iVar15;
-  int iVar16;
-  int iVar17;
-  int iVar18;
-  int iVar19;
-  int iVar20;
-  int iVar21;
-  int iVar22;
-  int iVar23;
-  int iVar24;
-  int iVar25;
-  int iVar26;
-  int iVar27;
-  int iVar28;
-  int iVar29;
-  int iVar30;
-  int iVar31;
-  int iVar32;
   int iVar33;
-  int iVar34;
+  int iVar32;
+  int iVar31;
+  int iVar30;
+  int iVar29;
+  int iVar28;
+  int iVar27;
+  int iVar26;
+  int iVar25;
+  int iVar24;
+  int iVar23;
+  int iVar22;
+  int iVar21;
+  int iVar20;
+  int iVar19;
+  int iVar18;
+  int iVar17;
+  int iVar16;
+  int iVar15;
+  int iVar14;
+  int iVar13;
+  int iVar12;
+  int iVar11;
+  int iVar10;
+  int iVar9;
+  int iVar8;
+  int iVar7;
+  int iVar6;
+  int iVar5;
+  int iVar4;
+  int iVar3;
+  int iVar2;
+  undefined2 *puVar1;
   int iVar35;
+  int iVar34;
   int iVar36;
   int iVar37;
   int iVar38;
@@ -316,7 +316,7 @@ int func_020223d8(undefined4 param_1,int param_2)
   uVar61 = ((unsigned int)0x0202290c);
   do {
     iVar2 = func_02022ffc((*(unsigned int *)0x02022908) + 0xf0,uVar61);
-    if (iVar2) {
+    if (!(iVar2)) {} else {
       func_02022f84(auStack_64,uVar61);
     }
     iVar2 = func_02022ffc((*(unsigned int *)0x02022908) + 0xf0,uVar61 + 0x21 & 0xffff);

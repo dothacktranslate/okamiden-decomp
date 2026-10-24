@@ -91,10 +91,10 @@ extern int func_0205ab9c();
 void func_02058dc0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  uint *puVar1;
+  int iVar3;
   uint *puVar2;
   int iVar4;
-  int iVar3;
+  uint *puVar1;
   int iVar5;
   int iVar6;
   uint uVar7;
@@ -110,10 +110,10 @@ void func_02058dc0(int *param_1,undefined4 param_2,undefined4 param_3,undefined4
   undefined1 uStack_33;
   undefined1 uStack_34;
   int iStack_38;
-  uint *local_44;
+  uint uVar14;
   int local_50;
   uint *puVar16;
-  uint uVar14;
+  uint *local_44;
   int iVar15;
   int iVar13;
 

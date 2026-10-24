@@ -177,7 +177,7 @@ void func_020600c4(int *param_1,int param_2,uint *param_3,int param_4)
         uVar3 = uVar3 >> 1;
 LAB_020602e4:
         iVar4 = func_02060800(param_1,param_4 + iVar5,param_4 + iVar2,
-                             *(undefined2 *)(iVar6 + uVar3 * 2));
+                             *(undefined2 *)((uVar3 + iVar6) * 2));
         iVar2 = func_02060800(&local_68,param_4 + iVar5,param_4 + iVar2,
                              *(undefined2 *)(iVar6 + uVar3 * 2 + 2));
         *param_1 = *param_1 + local_68;
@@ -204,7 +204,7 @@ LAB_020602e4:
     }
   }
   iVar2 = func_02060800(param_1,param_4 + iVar5,param_4 + iVar2,*(undefined2 *)(iVar6 + uVar3 * 2));
-  if (iVar2 == 0) {
+  if (!(iVar2 != 0)) {
     func_02002c10(param_1 + 6,param_1 + 6);
     return;
   }

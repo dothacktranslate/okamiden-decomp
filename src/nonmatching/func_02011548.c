@@ -112,10 +112,10 @@ void func_02011548(int param_1)
   int local_48;
   short local_30;
   short local_2e;
-  short local_2c;
+  short local_26;
   short local_2a;
   short local_28;
-  short local_26;
+  short local_2c;
 
   {
       uVar8 = (uint)*(ushort *)(param_1 + 2);
@@ -141,7 +141,7 @@ void func_02011548(int param_1)
       sVar3 = *psVar9;
       iVar5 = (int)sVar3;
       if (iVar5 == -1) {
-        if (unaff_r6 == 0) {
+        if (!(unaff_r6 == 0)) {} else {
           unaff_r6 = 1;
         }
         *(int *)(*(int *)(param_1 + 0x1c) + iVar11 * 4) = unaff_r6;

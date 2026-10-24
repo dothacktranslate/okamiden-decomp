@@ -158,6 +158,6 @@ void func_02061e74(uint *param_1,uint *param_2,int param_3,uint param_4)
     return;
   }
   func_020098b4(((unsigned int)0x02062070) + uVar7 * 0x18,uVar10 * 0x18 + ((unsigned int)0x02062070),0x18,iVar8,param_4);
-  func_020098b4(uVar7 + iVar5 * 0x18,param_1 + 4,0x18);
+  func_020098b4((iVar5 + uVar7) * 0x18,param_1 + 4,0x18);
   return;
 }

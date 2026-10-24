@@ -65,16 +65,16 @@ extern unsigned int func_0201ad90();
 void func_0201ae2c(undefined2 *param_1,uint param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  undefined4 uVar4;
-  int iVar3;
-  undefined4 uVar2;
-  undefined2 uVar1;
-  undefined4 uStack_14;
-  undefined1 auStack_3a [38];
-  undefined2 auStack_60 [19];
-  undefined2 *puVar7;
-  undefined2 *puVar6;
   undefined2 *puVar5;
+  undefined2 *puVar6;
+  undefined2 *puVar7;
+  undefined1 auStack_3a [38];
+  undefined4 uStack_14;
+  undefined2 uVar1;
+  undefined4 uVar2;
+  int iVar3;
+  undefined2 auStack_60 [19];
+  undefined4 uVar4;
 
   uStack_14 = param_4;
   if ((int)param_2 < -0x34) {
@@ -211,13 +211,12 @@ void func_0201ae2c(undefined2 *param_1,uint param_2,undefined4 param_3,undefined
     puVar5 = puVar6;
   } while (iVar3 != 0);
   *puVar6 = *puVar7;
-  if ((int)param_2 < 1) {
-    uVar4 = 0xffffffff;
-    uVar2 = DAT_0201b184;
-  }
-  else {
+  if (!((int)param_2 < 1)) {
     uVar4 = 0;
     uVar2 = DAT_0201b18c;
+  } else {
+    uVar4 = 0xffffffff;
+    uVar2 = DAT_0201b184;
   }
   func_0201ad90(auStack_3a,uVar2,uVar4);
   func_0201ac10(param_1,auStack_60,auStack_3a);

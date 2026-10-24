@@ -166,7 +166,7 @@ extern int func_0205e0c0();
 void func_0203ea90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  int iVar1;
+  undefined4 uStack_18;
   uint local_1c;
   undefined4 local_20;
   undefined4 local_24;
@@ -180,16 +180,18 @@ void func_0203ea90(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   undefined4 local_90;
   undefined4 local_94;
   int iVar3;
-  int *piVar5;
+  int iVar2;
   int *piVar4;
   undefined4 local_98;
-  int iVar2;
-  undefined4 uStack_18;
+  int *piVar5;
+  int iVar1;
 
   piVar4 = local_78 + 8;
   iVar3 = 6;
   piVar5 = ((unsigned int)0x0203ec00);
-  uStack_18 = param_4;
+  {
+      uStack_18 = param_4;
+  }
   do {
     iVar1 = *piVar5;
     iVar2 = piVar5[1];

@@ -100,12 +100,14 @@ int func_02050028(int param_1,int param_2,uint param_3,undefined4 param_4)
   uVar2 = (param_3 >> 5) + 1;
   uVar4 = param_3;
   for (uVar3 = param_3; uVar2 <= uVar3; uVar3 = uVar3 - uVar2) {
-    uVar4 = uVar4 ^ (uVar4 >> 2) + uVar4 * 0x20 + (uint)*(byte *)(param_2 + uVar3 + -1);
+    {
+        uVar4 = uVar4 ^ (uVar4 >> 2) + uVar4 * 0x20 + (uint)*(byte *)(param_2 + uVar3 + -1);
+    }
   }
   piVar6 = *(int **)(param_1 + 0x10);
   piVar5 = *(int **)(*piVar6 + (uVar4 & piVar6[2] - 1U) * 4);
   while( true ) {
-    if (piVar5 == (int *)0x0) {
+    if (!(piVar5 == (int *)0x0)) {} else {
       iVar1 = func_0204ff50(param_1,param_2,param_3,uVar4,param_4);
       return iVar1;
     }
@@ -114,7 +116,7 @@ int func_02050028(int param_1,int param_2,uint param_3,undefined4 param_4)
     piVar5 = (int *)*piVar5;
   }
   if ((*(byte *)((int)5 + piVar5) & (*(byte *)(piVar6 + 5) ^ 3) & 3) != 0) {
-    *(byte *)((int)piVar5 + 5) = *(byte *)((int)piVar5 + 5) ^ 3;
+    *(byte *)((int)piVar5 + 5) = *(byte *)((int)(5 + piVar5)) ^ 3;
   }
   return (int)piVar5;
 }

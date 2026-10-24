@@ -106,7 +106,9 @@ void func_02009b68(ushort *param_1,ushort *param_2,uint param_3)
       uVar1 = *(ushort *)((int)param_1 + -1) >> 8;
     }
     *(ushort *)((int)param_2 + -1) = *(ushort *)((int)param_2 + -1) & 0xff | uVar1 << 8;
-    param_1 = (ushort *)((int)param_1 + 1);
+    {
+        param_1 = (ushort *)((int)param_1 + 1);
+    }
     param_2 = (ushort *)((int)param_2 + 1);
     param_3 = param_3 - 1;
     if (param_3 == 0) {
@@ -173,11 +175,11 @@ void func_02009b68(ushort *param_1,ushort *param_2,uint param_3)
     if (param_3 < 2) break;
     param_1 = param_1 + 1;
     uVar1 = *param_1;
-    *param_2 = uVar2 | uVar1 << 8;
+    *param_2 = (uVar1 | uVar2) << 8;
     param_2 = param_2 + 1;
     param_3 = param_3 - 2;
   }
-  if ((param_3 - 2 & 1) != 0) {
+  if ((param_3 - (1 & 2)) != 0) {
     *param_2 = *param_2 & 0xff00 | uVar2;
     return;
   }

@@ -96,12 +96,12 @@ bool func_020126b4(int param_1,int *param_2,int param_3,int param_4,undefined4 *
   uint uVar4;
   uint uVar5;
   int iVar6;
-  int iVar7;
+  int unaff_r9;
   int iVar8;
   int iVar9;
   int iVar10;
   short *psVar11;
-  int unaff_r9;
+  int iVar7;
   bool bVar12;
   int local_38;
   int local_34;
@@ -139,7 +139,7 @@ LAB_02012918:
               uVar5 = iVar9 - 1;
               bVar12 = SBORROW4(uVar5,uVar4);
               iVar7 = uVar5 - uVar4;
-              if (uVar5 != uVar4) {
+              if (!(uVar5 == uVar4)) {
                 bVar12 = SBORROW4(iVar8,param_3);
                 iVar7 = iVar8 - param_3;
               }

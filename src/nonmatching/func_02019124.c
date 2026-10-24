@@ -92,9 +92,9 @@ extern int func_02018e80();
 undefined4 func_02019124(int param_1,byte *param_2,undefined4 param_3)
 
 {
-  int iVar2;
-  byte *pbVar4;
   byte *pbVar6;
+  byte *pbVar4;
+  int iVar2;
   byte *pbVar8;
   int iVar10;
   byte *pbVar12;
@@ -128,7 +128,7 @@ undefined4 func_02019124(int param_1,byte *param_2,undefined4 param_3)
   pbVar8 = pbVar4;
   pbVar15 = pbVar5;
   pbVar17 = pbVar6;
-  if (iVar2 != 0) {
+  if (iVar2) {
     pbVar12 = param_2;
     pbVar13 = pbVar4;
     pbVar14 = pbVar5;

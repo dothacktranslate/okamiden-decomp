@@ -104,7 +104,11 @@ bool func_02012518(int param_1,int *param_2,int param_3,int param_4,undefined4 *
   int iVar6;
   short *psVar7;
 
-  iVar5 = 0;
+  {
+      {
+          iVar5 = 0;
+      }
+  }
   iVar10 = 0;
   iVar8 = param_5[1];
   psVar7 = (short *)*param_5;
@@ -124,8 +128,8 @@ bool func_02012518(int param_1,int *param_2,int param_3,int param_4,undefined4 *
         *(undefined2 *)(iVar10 + param_1 * 2) = uVar1;
         iVar10 = iVar10 + 1;
         bVar11 = true;
-        if (param_4 <= iVar5) {
-          iVar6 = iVar6 + 1;
+        if (iVar5 >= param_4) {
+          iVar6 = (1 + iVar6);
 LAB_0201263c:
           *param_2 = iVar10;
           if (!bVar11) {
@@ -177,5 +181,5 @@ LAB_0201263c:
     }
     iVar6 = iVar6 + 1;
     psVar7 = psVar7 + 2;
-  } while( true );
+  } while( (true != 0) );
 }

@@ -175,9 +175,9 @@ void func_02011bbc(undefined4 *param_1,int *param_2,int param_3,int param_4,unde
   int *piVar14;
   uint uVar10;
   int iVar11;
-  int iVar12;
-  int iVar13;
   int iVar9;
+  int iVar13;
+  int iVar12;
   int iVar15;
   bool bVar16;
   undefined1 auStack_70 [8];
@@ -215,7 +215,7 @@ void func_02011bbc(undefined4 *param_1,int *param_2,int param_3,int param_4,unde
   *param_2 = 0x1000;
   iVar11 = iVar11 + iVar3 * 2;
   piVar14 = (int *)auStack_70;
-  if (!bVar16 || param_8 == 0) {
+  if (!(!bVar16 || param_8 == 0)) {} else {
     piVar14 = (int *)&stack0xffffffdc;
   }
   *param_1 = 0;

@@ -105,7 +105,7 @@ longlong func_0201d518(uint param_1,uint param_2,uint param_3,uint param_4)
       uVar8 = param_2 - (param_4 + (param_3 > param_1)) ^ 0x80000000;
       bVar10 = CARRY4(param_3,uVar7);
       param_3 = param_3 + uVar7;
-      param_4 = param_4 + uVar8 + (uint)bVar10;
+      param_4 = (uVar8 + param_4) + (uint)bVar10;
       bVar10 = param_1 < uVar7;
       param_1 = param_1 - uVar7;
       param_2 = param_2 - (uVar8 + bVar10);

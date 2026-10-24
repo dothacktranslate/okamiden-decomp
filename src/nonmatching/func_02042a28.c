@@ -99,13 +99,13 @@ int func_02042a28(uint *param_1,int *param_2,int param_3)
 
 {
   int iVar1;
-  undefined4 uVar2;
-  int iVar4;
+  uint uVar5;
+  int iVar6;
   int iVar3;
   int extraout_r1;
   int extraout_r1_00;
-  uint uVar5;
-  int iVar6;
+  int iVar4;
+  undefined4 uVar2;
 
   if (((*param_1 & 8) != 0) || (*param_2 != 3)) {
     return -1;
@@ -137,7 +137,7 @@ int func_02042a28(uint *param_1,int *param_2,int param_3)
       if (iVar1 == 0) {
         return -1;
       }
-      if (iVar3 != 0) {
+      if (iVar3) {
         func_0203c034();
       }
     }

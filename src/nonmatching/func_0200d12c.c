@@ -124,7 +124,7 @@ void func_0200d12c(int param_1)
           *puVar6 = puVar2;
           puVar4 = puVar5;
         }
-        if (puVar2 == puVar11) {
+        if (puVar11 == puVar2) {
           *puVar3 = puVar9;
           puVar11 = puVar9;
         }

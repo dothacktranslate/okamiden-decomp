@@ -87,12 +87,12 @@ extern int LZCOUNT();
 uint func_02062fdc(int param_1,int param_2,uint param_3)
 
 {
+  int *piVar6;
+  int iVar4;
+  int *piVar5;
   bool bVar1;
   uint uVar2;
   int iVar3;
-  int iVar4;
-  int *piVar5;
-  int *piVar6;
 
   if (param_1 == 0) {
     uVar2 = 0x10;
@@ -122,7 +122,7 @@ uint func_02062fdc(int param_1,int param_2,uint param_3)
       piVar6 = *(int **)(((unsigned int)0x0206313c) + iVar3 * 4);
       if ((piVar6[2] != 0) && (uVar2 <= (uint)(piVar6[1] - *piVar6))) {
         piVar5 = ((unsigned int)0x02063138);
-        if (((short)piVar6[4] != 0) && (piVar5 = ((unsigned int)0x02063134), (short)piVar6[4] != 3)) {
+        if (!(((short)piVar6[4] != 0) && (piVar5 = ((unsigned int)0x02063134), (short)piVar6[4] != 3))) {} else {
           piVar5 = (int *)0x0;
         }
         if ((piVar5[2] != 0) && (uVar2 >> 1 <= (uint)(piVar5[1] - *piVar5))) {

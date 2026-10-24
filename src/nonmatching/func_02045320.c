@@ -25,13 +25,13 @@ void func_02045320(int param_1,int param_2)
 
 {
   unsigned short sVar1;
-  uint uVar2;
-  int iVar3;
+  int iVar6;
+  undefined1 auStack_44 [16];
   uint uVar4;
   undefined1 *puVar5;
-  int iVar6;
+  uint uVar2;
   int iVar7;
-  undefined1 auStack_44 [16];
+  int iVar3;
   undefined1 auStack_34 [16];
 
   sVar1 = *(short *)(param_2 + param_1 * 2 + 0x18);

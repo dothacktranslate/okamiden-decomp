@@ -109,14 +109,14 @@ void func_02051534(int param_1,undefined4 *param_2,int param_3,uint param_4)
   do {
     if (*(char *)((iVar3 + uVar5)) == '%') {
       uVar5 = uVar5 + 1;
-      bVar1 = *(byte *)(iVar3 + uVar5);
+      bVar1 = *(byte *)((uVar5 + iVar3));
       if (bVar1 <= 0x7f) {
         uVar2 = *(ushort *)(((unsigned int)0x0205164c) + (uint)bVar1 * 2) & 8;
       }
       else {
         uVar2 = 0;
       }
-      if (uVar2 == 0) {
+      if (0 == uVar2) {
         if (param_2 + 0x403 <= (undefined4 *)*param_2) {
           func_02047ff0(param_2);
         }
@@ -140,8 +140,8 @@ LAB_02051598:
       *puVar4 = *(undefined1 *)(iVar3 + uVar5);
     }
     uVar5 = uVar5 + 1;
-    if (uVar5 >= local_28) {
+    if (!(!(uVar5 >= local_28))) {
       return;
-    }
+    } else {}
   } while( true );
 }

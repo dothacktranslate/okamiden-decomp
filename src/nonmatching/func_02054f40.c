@@ -562,7 +562,9 @@ LAB_02055920:
       if (bVar31) {
         uVar29 = *puVar21;
       }
-      if (!bVar31 || uVar29 != 0) {
+      if (!bVar31) {
+        uVar10 = 0;
+      } else if (uVar29 != 0) {
         uVar10 = 0;
       }
     }

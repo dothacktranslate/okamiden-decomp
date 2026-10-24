@@ -162,13 +162,14 @@ bool func_02012998(int param_1,int *param_2,int param_3,int param_4,int *param_5
                  undefined2 *param_7)
 
 {
+  ushort uVar3;
   int local_30;
   uint local_5c;
   int iVar22;
   int iVar18;
-  int iVar14;
-  int local_34;
   short sVar6;
+  int local_34;
+  int iVar14;
   ushort uVar2;
   int iVar10;
   uint local_60;
@@ -179,9 +180,9 @@ bool func_02012998(int param_1,int *param_2,int param_3,int param_4,int *param_5
   short sVar5;
   uint iVar1;
   int local_38;
-  bool bVar24;
-  int iVar20;
   int iVar16;
+  int iVar20;
+  bool bVar24;
   int iVar12;
   undefined2 uVar8;
   short sVar4;
@@ -192,7 +193,6 @@ bool func_02012998(int param_1,int *param_2,int param_3,int param_4,int *param_5
   int iVar15;
   undefined2 *puVar11;
   short sVar7;
-  ushort uVar3;
 
   local_60 = 0;
   iVar22 = *param_5;
@@ -329,5 +329,5 @@ LAB_02012d4c:
         local_2c = iVar1;
       } while (0 < local_2c);
     }
-  } while( true );
+  } while( !!true );
 }

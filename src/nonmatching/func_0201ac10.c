@@ -114,7 +114,7 @@ void func_0201ac10(undefined1 *param_1,int param_2,int param_3,undefined4 param_
     do {
       iVar11 = *(byte *)(param_3 + 4) - 1;
       iVar6 = (iVar7 - iVar11) + -1;
-      if (iVar6 < 0) {
+      if (!(iVar6 < 0)) {} else {
         iVar6 = 0;
         iVar11 = iVar7 + -1;
       }
@@ -126,7 +126,7 @@ void func_0201ac10(undefined1 *param_1,int param_2,int param_3,undefined4 param_
       pbVar2 = (byte *)(param_3 + (5 + iVar11));
       pbVar1 = (byte *)(param_2 + 5 + iVar6);
       for (; 0 < iVar4; iVar4 = iVar4 + -1) {
-        uVar5 = (uint)*pbVar1 * (uint)*pbVar2 + uVar5;
+        uVar5 = (uint)*pbVar1 * (uint)*(uVar5 + pbVar2);
         pbVar2 = pbVar2 + -1;
         pbVar1 = pbVar1 + 1;
       }
@@ -145,7 +145,7 @@ void func_0201ac10(undefined1 *param_1,int param_2,int param_3,undefined4 param_
     sVar3 = *(short *)(param_1 + 2);
   }
   iVar6 = 0;
-  if (uVar5 != 0) {
+  if (!(uVar5 != 0)) {} else {
     *(short *)(param_1 + 2) = sVar3 + 1;
   }
   for (; (iVar6 < 0x20 && (pbVar9 < pbVar8)); pbVar9 = pbVar9 + 1) {

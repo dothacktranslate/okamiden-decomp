@@ -99,11 +99,11 @@ int func_02011974(int param_1,int param_2,int param_3,undefined4 param_4,ushort 
   int local_3c;
   int local_40;
   int iVar10;
-  int iVar9;
-  int iVar8;
-  ushort *puVar7;
-  undefined4 uVar6;
   int iVar5;
+  ushort *puVar7;
+  int iVar8;
+  undefined4 uVar6;
+  int iVar9;
   undefined4 *puVar4;
   int iVar3;
   int iVar2;
@@ -114,7 +114,7 @@ int func_02011974(int param_1,int param_2,int param_3,undefined4 param_4,ushort 
     do {
       *(undefined4 *)(param_1 + iVar3 * 4) = 0;
       *(undefined4 *)(iVar3 + param_2 * 4) = 0;
-      iVar3 = iVar3 + 1;
+      iVar3 = (1 + iVar3);
     } while (iVar3 < param_3);
   }
   iVar3 = param_6[0xe];
@@ -135,8 +135,8 @@ int func_02011974(int param_1,int param_2,int param_3,undefined4 param_4,ushort 
     iVar2 = param_3 + -1;
     uStack_28 = param_4;
     do {
-      if (((**(int **)(puVar7 + 0x1a) != 0) && (((*(int **)(puVar7 + 0x1a))[1] & param_7) != 0)) &&
-         (*param_5 == *puVar7)) {
+      if (!(((**(int **)(puVar7 + 0x1a) != 0) && (((*(int **)(puVar7 + 0x1a))[1] & param_7) != 0)) &&
+         (*param_5 == *puVar7))) {} else {
         iVar9 = 0;
         local_34 = local_34 + 1;
         iVar10 = 0;

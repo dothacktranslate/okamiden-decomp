@@ -99,7 +99,7 @@ uint func_0201f0ac(uint param_1)
     if (!(uVar6 == 0)) {
       uVar1 = param_1 & 0x807fffff | 0x800000;
     } else {
-      if (param_1 == 0) {
+      if (0 == param_1) {
         return 0;
       }
       uVar6 = 9 - LZCOUNT(param_1);
@@ -127,7 +127,7 @@ uint func_0201f0ac(uint param_1)
     if (iVar2 == 0) {
       uVar1 = uVar1 & 0xfffffffe;
     }
-    return (uVar1 >> 1) + (uint)((byte)uVar1 & 1) + 0x1f800000 + iVar5 * 0x800000;
+    return (uVar1 >> 1) + (uint)((byte)(1 & uVar1)) + 0x1f800000 + iVar5 * 0x800000;
   }
   if (param_1 == 0x7f800000) {
     return 0x7f800000;

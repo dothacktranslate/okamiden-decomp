@@ -87,6 +87,7 @@ extern int LZCOUNT();
 void func_0205fd70(uint *param_1,int param_2,uint *param_3,int param_4)
 
 {
+  uint uVar14;
   short sVar1;
   short sVar2;
   longlong lVar3;
@@ -94,13 +95,12 @@ void func_0205fd70(uint *param_1,int param_2,uint *param_3,int param_4)
   uint uVar5;
   uint *puVar6;
   int iVar7;
-  uint uVar8;
-  uint uVar9;
   uint uVar10;
+  uint uVar9;
+  uint uVar8;
   uint uVar11;
   int iVar12;
   int *piVar13;
-  uint uVar14;
 
   uVar11 = *param_3;
   uVar5 = param_2 >> 0xc;
@@ -125,7 +125,9 @@ void func_0205fd70(uint *param_1,int param_2,uint *param_3,int param_4)
               puVar6 = (uint *)(param_4 + uVar9 * 8);
               uVar11 = *puVar6;
               uVar14 = puVar6[1];
-              puVar6 = (uint *)(uVar5 + param_4 * 8);
+              {
+                  puVar6 = (uint *)(uVar5 + param_4 * 8);
+              }
               lVar3 = (ulonglong)uVar11 * 3;
               uVar10 = (uint)lVar3;
               uVar8 = *puVar6;

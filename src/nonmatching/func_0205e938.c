@@ -97,13 +97,13 @@ undefined4 func_0205e938(int param_1,int param_2,int *param_3,int *param_4)
   longlong lVar1;
   longlong lVar2;
   int iVar3;
-  int *piVar4;
+  int iVar10;
   int iVar5;
   int iVar7;
   undefined4 uVar6;
   int iVar8;
   uint unaff_r9;
-  int iVar10;
+  int *piVar4;
   ulonglong uVar13;
   uint uVar12;
   uint uVar9;
@@ -147,7 +147,7 @@ LAB_0205e9d0:
   iVar3 = piVar4[0xe] + ((uint)lVar1 >> 0xc | (int)((ulonglong)lVar1 >> 0x20) << 0x14);
   if (param_4 != (int *)0x0) {
     local_48 = iVar10 + piVar4[9];
-    local_44 = (piVar4 + iVar8)[8];
+    local_44 = ((iVar8 + piVar4))[8];
     unaff_r9 = iVar3 + piVar4[10];
     local_40 = iVar5 + piVar4[0xb];
   }

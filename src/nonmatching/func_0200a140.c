@@ -89,11 +89,11 @@ int func_0200a140(undefined4 *param_1,byte *param_2,int param_3)
 {
   uint uVar13;
   byte bVar8;
-  unsigned char cVar2;
+  int iVar7;
   byte bVar3;
   byte *pbVar4;
   byte *pbVar5;
-  int iVar7;
+  unsigned char cVar2;
   byte *pbVar6;
   bool bVar1;
   uint uVar10;
@@ -130,7 +130,7 @@ LAB_0200a22c:
             break;
           }
           uVar12 = uVar12 - 1;
-          if (uVar12 == 0) {
+          if (!uVar12) {
             uVar10 = uVar10 + *pbVar5;
             goto LAB_0200a22c;
           }
@@ -164,7 +164,7 @@ LAB_0200a22c:
         param_3 = param_3 + -1;
         uVar11 = (int)uVar10 >> 4;
         uVar10 = 0;
-        if (uVar11 != 0) {
+        if (!(uVar11 != 0)) {} else {
           do {
             iVar7 = iVar7 + -1;
             *pbVar6 = pbVar6[-(((uint)bVar3 | uVar13 << 8) + 1)];

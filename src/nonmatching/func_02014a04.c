@@ -174,6 +174,7 @@ extern int func_02014874();
 void func_02014a04(void)
 
 {
+  undefined1 auStack_2c [8];
   ushort uVar1;
   ushort uVar2;
   ushort *puVar10;
@@ -185,7 +186,6 @@ void func_02014a04(void)
   short *psVar3;
   undefined4 uVar6;
   int iVar7;
-  undefined1 auStack_2c [8];
 
   puVar10 = ((unsigned int)0x02014bc4);
   if ((*(unsigned int *)0x02014bc0) != 0) {

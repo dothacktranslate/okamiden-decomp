@@ -129,7 +129,7 @@ LAB_0200b228:
     goto switchD_0200b250_default;
   }
   if (0xf < uVar7) {
-    pbVar9 = (byte *)(param_1 + uVar8);
+    pbVar9 = (byte *)((uVar8 + param_1));
     uVar8 = param_3[1];
     if (uVar8 < ((uint)pbVar9[1] - (uint)*pbVar9) + 1) {
       uVar2 = *(undefined2 *)(pbVar9 + uVar8 * 0xc + 6);

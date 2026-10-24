@@ -88,22 +88,24 @@ void func_02002b30(int *param_1,int *param_2,uint *param_3)
 
 {
   uint uVar15;
-  longlong lVar1;
   longlong lVar2;
+  longlong lVar1;
   longlong lVar3;
   uint uVar9;
   longlong lVar5;
   longlong lVar6;
   uint uVar7;
   uint uVar14;
-  uint uVar8;
+  uint uVar12;
   uint uVar11;
   longlong lVar4;
   uint uVar13;
-  uint uVar12;
+  uint uVar8;
   uint uVar10;
 
-  lVar1 = (longlong)param_1[1] * (longlong)param_2[2];
+  {
+      lVar1 = (longlong)param_1[1] * (longlong)param_2[2];
+  }
   {
       uVar13 = (uint)lVar1;
   }

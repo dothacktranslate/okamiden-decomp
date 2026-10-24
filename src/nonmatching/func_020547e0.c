@@ -91,11 +91,11 @@ extern int func_020542c0();
 uint func_020547e0(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  bool bVar1;
-  int iVar2;
-  undefined4 uVar3;
-  int iVar4;
   bool bVar5;
+  int iVar4;
+  undefined4 uVar3;
+  int iVar2;
+  bool bVar1;
 
   iVar2 = func_02053958(param_1,param_2,param_4);
   if (*(int *)(iVar2 + 4) == 0) {

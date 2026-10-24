@@ -93,19 +93,21 @@ void func_02059460(int *param_1,undefined4 param_2,uint param_3,uint param_4,int
 {
   int iVar9;
   int iVar2;
-  int iVar4;
-  uint uVar5;
+  int local_3c;
   int iVar6;
   int iVar7;
+  int iVar4;
   uint uVar8;
   uint uVar3;
-  int local_3c;
+  uint uVar5;
   uint local_2c;
   int iVar1;
 
   local_2c = param_4 & 0xfffffff8;
   iVar7 = param_1[4];
-  uVar8 = param_3 & 0xfffffff8;
+  {
+      uVar8 = param_3 & 0xfffffff8;
+  }
   iVar4 = (int)((uint)*(byte *)(param_1 + 3) * 0x40) >> 3;
   local_3c = iVar4 * (((int)(local_2c + ((uint)((int)local_2c >> 2) >> 0x1d)) >> 3) * iVar7 +
                      ((int)(uVar8 + ((uint)((int)uVar8 >> 2) >> 0x1d)) >> 3)) + *param_1;
