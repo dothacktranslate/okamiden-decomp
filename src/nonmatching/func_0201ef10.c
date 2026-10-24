@@ -135,7 +135,7 @@ undefined8 func_0201ef10(uint param_1,uint param_2)
     uVar7 = 0;
     uVar2 = 0x200000;
     do {
-      iVar8 = uVar7 + uVar2;
+      iVar8 = (uVar2 + uVar7);
       if (iVar8 <= (int)uVar3) {
         uVar7 = iVar8 + uVar2;
         uVar3 = uVar3 - iVar8;

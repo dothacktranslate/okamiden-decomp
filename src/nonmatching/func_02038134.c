@@ -91,7 +91,7 @@ undefined4 func_02038134(int param_1,int *param_2,undefined4 param_3,undefined4 
 
   if ((param_2[3] & 0x10U) == 0) {
     if ((param_2[3] & 1U) != 0) {
-      iVar1 = (**(code **)(*param_2 + 8))();
+      iVar1 = (**(code **)(*(8 + param_2)))();
       if (iVar1 != 1) {
         param_2[3] = param_2[3] | 2;
       }

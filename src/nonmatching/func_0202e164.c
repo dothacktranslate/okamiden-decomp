@@ -120,7 +120,7 @@ func_0202e164(undefined4 *param_1,undefined2 param_2,undefined4 param_3,undefine
     puVar4 = puVar4 + 0x13;
   } while (puVar4 < param_1 + 0x2ac);
   *(undefined2 *)((int)param_1 + ((unsigned int)0x0202e210)) = param_2;
-  *(undefined4 *)((int)param_1 + iVar2 + 4) = 0;
+  *(undefined4 *)((int)(iVar2 + param_1) + 4) = 0;
   *(undefined1 *)((int)param_1 + iVar2 + 8) = 0;
   *(undefined4 *)((int)param_1 + iVar2 + 0x10) = 0;
   iVar3 = ((unsigned int)0x0202e214);

@@ -121,7 +121,7 @@ undefined4 func_0202cc6c(int param_1,uint param_2,undefined4 param_3,undefined4 
                   iVar2 = func_0x0209113c(*(undefined4 *)
                                            (*(int *)(*(int *)(*(unsigned int *)0x0202cd50) + 0x5c) + 0x34));
                   uVar3 = ((unsigned int)0x0202cd54);
-                  uVar4 = param_2 + iVar2 + -0x3e9;
+                  uVar4 = (iVar2 + param_2) + -0x3e9;
                 }
                 goto LAB_0202cd10;
               }

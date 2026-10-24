@@ -123,7 +123,7 @@ void func_02058508(int param_1,int param_2,uint param_3,uint *param_4,undefined4
     }
     uVar3 = *(ushort *)(iVar1 + ((unsigned int)0x02058740) + iVar2 * 8);
     if (bVar9) {
-      param_3 = iVar6 + param_3 * 0x1000;
+      param_3 = ((iVar6 + param_3)) * 0x1000;
     }
     (*(unsigned int *)0x02058744) =
          (param_1 + ((int)(uint)*(ushort *)(iVar1 + ((unsigned int)0x02058738) + iVar2 * 8) >> 1)) * 0x1000;

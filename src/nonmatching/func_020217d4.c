@@ -94,7 +94,7 @@ int func_020217d4(int param_1,int param_2,uint param_3,code *param_4)
   undefined1 auStack_38 [20];
   undefined1 *local_24;
 
-  iVar2 = func_02032ad8(param_2 * param_1 + param_3);
+  iVar2 = func_02032ad8(param_2 * (param_3 + param_1));
   if (iVar2 != 0) {
     if (param_3 != 0) {
       *(int *)(iVar2 + param_3 + -4) = param_1;

@@ -126,7 +126,7 @@ int func_020511f4(undefined4 param_1,int param_2)
   if (!((param_2 == 0) ||
      ((iVar4 = func_0204661c(param_1,4), iVar4 == 0 &&
       (iVar4 = func_02019368(pcVar2,((unsigned int)0x020513b4)), iVar4 != 0))))) {
-    iVar4 = func_02051054(iVar1 + uVar5,local_138 - uVar5,pcVar2,local_13c);
+    iVar4 = func_02051054((uVar5 + iVar1),local_138 - uVar5,pcVar2,local_13c);
     if (iVar4 != 0) {
       func_02046868(param_1,(iVar4 - iVar1) + 1);
       func_02046868(param_1,local_13c + (iVar4 - iVar1));

@@ -112,7 +112,7 @@ undefined4 func_02068ce8(int param_1,undefined4 param_2,undefined4 param_3,undef
     iVar7 = *(int *)(param_1 + 0x6c);
     if (0 < *(short *)(param_1 + 0xbe0)) {
       do {
-        iVar6 = param_1 + iVar5 * 2;
+        iVar6 = (iVar5 + param_1) * 2;
         *(short *)(iVar6 + 0xbf4) = (short)uVar1;
         *(short *)(iVar6 + iVar3) = (short)uVar2;
         iVar5 = iVar5 + 1;

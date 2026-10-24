@@ -114,7 +114,7 @@ void func_02056ca0(int param_1,int param_2,int param_3,int param_4)
   *puVar7 = uVar2 | iVar4 << 0x10;
   *piVar8 = 0x10000 - iVar6;
   *piVar8 = 0;
-  *puVar7 = uVar1 | iVar4 << 0x10;
+  *puVar7 = (iVar4 | uVar1) << 0x10;
   *piVar8 = iVar6 + -0x10000000;
   *piVar8 = 0;
   puVar5[1] = 0;

@@ -175,7 +175,7 @@ int func_02020f78(undefined4 *param_1,undefined4 *param_2)
       break;
     case 0xd:
       func_020201f8(local_8c + 1,&local_98);
-      iVar5 = local_64 + local_98;
+      iVar5 = (local_98 + local_64);
       *param_1 = *(undefined4 *)(iVar5 + 4);
       param_1[1] = *(undefined4 *)(local_64 + local_98);
       param_1[2] = 0;

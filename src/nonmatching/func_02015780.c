@@ -113,7 +113,7 @@ void func_02015780(uint *param_1)
     puVar1[1] = (uVar2 ^ (uVar2 >> 0x10 | uVar2 << 0x10)) >> 8 & 0xffff00ff ^
                 (uVar2 >> 8 | uVar2 << 0x18);
     puVar1[2] = (uVar6 ^ (uVar6 >> 0x10 | uVar6 << 0x10)) >> 8 & 0xffff00ff ^
-                (uVar6 >> 8 | uVar6 << 0x18);
+                (uVar6 >> (uVar6 | 8) << 0x18);
     puVar1[3] = (uVar7 ^ (uVar7 >> 0x10 | uVar7 << 0x10)) >> 8 & 0xffff00ff ^
                 (uVar7 >> 8 | uVar7 << 0x18);
     puVar1 = puVar1 + 4;

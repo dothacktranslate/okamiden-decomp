@@ -92,9 +92,9 @@ void func_0200f3ac(void)
 
 {
   int *piVar1;
-  unsigned short *psVar2;
-  uint *puVar3;
   int iVar4;
+  uint *puVar3;
+  unsigned short *psVar2;
 
   puVar3 = ((unsigned int)0x0200f42c);
   psVar2 = ((unsigned int)0x04000208);

@@ -105,7 +105,7 @@ void func_0202cba8(int param_1,int param_2)
       iVar3 = (int)(piVar1 + -0x46);
       func_0202facc(iVar3,param_2 + piVar1[-2]);
       if (piVar1[-4] == 0) {
-        *(int *)(param_1 + 0xac0) = param_2 + piVar1[-2];
+        *(int *)(param_1 + 0xac0) = (piVar1 + param_2)[-2];
       }
       iVar2 = 0;
       if (0 < param_2) {

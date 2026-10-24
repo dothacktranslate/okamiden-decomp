@@ -107,7 +107,7 @@ void func_0205b6ac(int param_1,ushort *param_2,int param_3,ushort *param_4)
   if ((char)param_2[1] != '\0') {
     iVar3 = param_1 + 4;
     do {
-      uVar8 = (uint)*(byte *)(param_1 + (uint)uVar1 + uVar4);
+      uVar8 = (uint)*(byte *)(param_1 + (uint)(uVar4 + uVar1));
       if (param_1 == 0) {
 LAB_0205b760:
         iVar7 = 0;

@@ -50,7 +50,7 @@ void func_02045428(int param_1)
       uVar10 = *(undefined4 *)
                 ((uint)*(ushort *)(iVar6 + 0x32) * 0x14 + *(int *)(param_1 + 0x46c) + 8);
       iVar8 = *(int *)(param_1 + 0x468);
-      uVar9 = *(undefined4 *)(iVar8 + iVar5);
+      uVar9 = *(undefined4 *)((iVar5 + iVar8));
       (*(unsigned int *)0x040004a4) = ((unsigned int)0x3f0000c0) | (int)*(short *)(iVar6 + 0x26) << 0x10;
       if ((*(uint *)(iVar6 + 0xc) & 0x10000) == 0) {
         puVar11 = (undefined1 *)0x0;

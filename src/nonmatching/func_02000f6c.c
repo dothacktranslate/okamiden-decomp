@@ -208,8 +208,7 @@ undefined4 func_02000f6c(uint *param_1,uint *param_2,undefined4 param_3,undefine
     puVar14[1] = -((uint)lVar2 >> 0xc | (int)((ulonglong)lVar2 >> 0x20) << 0x14);
     puVar14[2] = (uint)lVar3 >> 0xc | (int)((ulonglong)lVar3 >> 0x20) << 0x14;
     puVar14[3] = -((uint)((ulonglong)uVar13 * (ulonglong)uVar11) >> 0xc |
-                  (iVar1 * uVar13 +
-                  uVar11 * ((int)uVar13 >> 0x1f) +
+                  (iVar1 * (uVar11 + uVar13) * ((int)uVar13 >> 0x1f) +
                   (int)((ulonglong)uVar13 * (ulonglong)uVar11 >> 0x20)) * 0x100000);
     puVar14[4] = (uint)lVar4 >> 0xc | (int)((ulonglong)lVar4 >> 0x20) << 0x14;
     puVar14[5] = -((uint)lVar5 >> 0xc | (int)((ulonglong)lVar5 >> 0x20) << 0x14);

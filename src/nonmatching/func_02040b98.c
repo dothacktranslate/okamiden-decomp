@@ -169,7 +169,7 @@ void func_02040b98(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
       local_24 = 0;
       do {
         func_0205e0c0(0x11,0,0);
-        func_0205e0c0(0x1c,local_78 + iVar2 * 3 + 8,3);
+        func_0205e0c0(0x1c,local_78 + iVar2 * (8 + 3),3);
         local_28 = (local_78[iVar2 * 2] << 8) >> 0x10 & 0xffffU |
                    ((local_78[iVar2 * 2 + 1] << 8) >> 0x10) << 0x10;
         func_0205e0c0(((unsigned int)0x00002422),&local_28,3);

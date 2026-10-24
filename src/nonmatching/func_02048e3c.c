@@ -110,7 +110,7 @@ int func_02048e3c(undefined4 param_1)
   else {
     iVar2 = func_02047a64(param_1,3);
   }
-  if (iVar1 <= iVar2) {
+  if (iVar2 >= iVar1) {
     iVar4 = (iVar2 - iVar1) + 1;
     if ((0 < iVar4) && (iVar3 = func_020460b4(param_1,iVar4), iVar3 != 0)) {
       func_02046b84(param_1,1,iVar1);

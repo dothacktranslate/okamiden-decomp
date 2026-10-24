@@ -94,9 +94,9 @@ void func_02030640(undefined4 param_1,undefined4 param_2,undefined4 param_3,unde
 
 {
   undefined1 auStack_58 [64];
-  undefined1 auStack_118 [64];
-  undefined1 auStack_d8 [64];
   undefined1 auStack_98 [64];
+  undefined1 auStack_d8 [64];
+  undefined1 auStack_118 [64];
   undefined1 auStack_158 [64];
   undefined4 uVar2;
   undefined4 uVar1;

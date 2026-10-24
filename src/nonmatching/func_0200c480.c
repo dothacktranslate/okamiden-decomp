@@ -118,7 +118,7 @@ undefined4 func_0200c480(int *param_1,undefined4 param_2,uint param_3,undefined4
       iVar5 = 0;
       do {
         if (iVar5 < 0x10) {
-          if (*(char *)(iVar2 + iVar5 * 0x10) == '\0') goto code_r0x0200c52c;
+          if (*(char *)((iVar5 + iVar2) * 0x10) == '\0') goto code_r0x0200c52c;
         }
         else {
           func_02008e58();

@@ -13,7 +13,7 @@ int func_020429b0(unsigned int *obj, unsigned int alternate) {
     unsigned char *records = (unsigned char *)obj[1];
     do {
         unsigned int index = cur % obj[2];
-        unsigned int *entry = (unsigned int *)(records + (index + base) * 188);
+        unsigned int *entry = (unsigned int *)(records + ((base + index)) * 188);
         if (entry[2] == 0 && entry[29] == 0) {
             *cursor = (cur + 1) & 0x7fffu;
             return (int)(cur & 0x7fffu);

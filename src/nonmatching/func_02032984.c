@@ -127,7 +127,7 @@ func_02032984(int param_1,undefined4 param_2,undefined4 param_3,int *param_4,und
           if (local_30 < 0) {
             iVar3 = -local_30;
           }
-          if (iVar2 <= iVar3) goto LAB_02032a18;
+          if (iVar3 >= iVar2) goto LAB_02032a18;
         }
         *param_4 = local_30;
         func_0x01ff9c94(param_4 + 1,auStack_2c);

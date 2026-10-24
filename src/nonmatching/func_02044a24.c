@@ -46,7 +46,7 @@ void func_02044a24(undefined4 param_1,uint param_2,undefined4 param_3,undefined4
   do {
     if ((param_2 & (uVar3 | uVar3 << 7)) != 0) {
       func_020449c0(auStack_a8,param_1,iVar2);
-      func_02036db8(*puVar1,auStack_a8,(param_2 & uVar3 << 7) != 0);
+      func_02036db8(*puVar1,auStack_a8,((uVar3 & param_2) << 7) != 0);
     }
     uVar3 = uVar3 * 2;
     iVar2 = iVar2 + 1;

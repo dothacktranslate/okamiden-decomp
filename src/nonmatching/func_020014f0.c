@@ -220,8 +220,7 @@ undefined4 func_020014f0(uint *param_1,uint *param_2,undefined4 param_3,undefine
     puVar14[4] = uVar6;
     puVar14[5] = uVar12;
     uVar7 = (uint)((ulonglong)uVar10 * (ulonglong)uVar15) >> 0xc |
-            (iVar1 * uVar10 +
-            uVar15 * ((int)uVar10 >> 0x1f) + (int)((ulonglong)uVar10 * (ulonglong)uVar15 >> 0x20)) *
+            (iVar1 * (uVar15 + uVar10) * ((int)uVar10 >> 0x1f) + (int)((ulonglong)uVar10 * (ulonglong)uVar15 >> 0x20)) *
             0x100000;
     puVar14[6] = uVar7;
     uVar10 = (uint)((longlong)(int)*param_1 * (longlong)(int)param_1[7]);

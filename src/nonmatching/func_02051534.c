@@ -107,7 +107,7 @@ void func_02051534(int param_1,undefined4 *param_2,int param_3,uint param_4)
     return;
   }
   do {
-    if (*(char *)(uVar5 + iVar3) == '%') {
+    if (*(char *)((iVar3 + uVar5)) == '%') {
       uVar5 = uVar5 + 1;
       bVar1 = *(byte *)(iVar3 + uVar5);
       if (bVar1 <= 0x7f) {

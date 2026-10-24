@@ -180,7 +180,7 @@ ulonglong func_02030920(undefined4 param_1,undefined4 param_2,undefined4 param_3
     uVar5 = -(uint)bVar7 - iVar6;
     if (((int)uVar5 < 0 != (SBORROW4(0,iVar6) != SBORROW4(-iVar6,(uint)bVar7)))) {
       return (ulonglong)uVar5 << 0x20;
-    } else if ((iVar6 = (int)((ulonglong)(lVar9 + lVar11) >> 0x20), bVar7 = (uint)(lVar9 + lVar11) < uVar2,
+    } else if ((iVar6 = (int)((ulonglong)((lVar11 + lVar9)) >> 0x20), bVar7 = (uint)(lVar9 + lVar11) < uVar2,
        (int)((iVar6 - uVar4) - (uint)bVar7) < 0 !=
        (SBORROW4(iVar6,uVar4) != SBORROW4(iVar6 - uVar4,(uint)bVar7)))) {
       return (ulonglong)uVar5 << 0x20;

@@ -124,7 +124,7 @@ bool func_02068ba4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
         iVar2 = *(int *)(*(int *)(*(int *)(*(unsigned int *)0x02068cdc) + 0x5c) + 0x4c);
         if ((iVar2 != 0) && (iVar4 = 0, 0 < *(short *)(param_1 + 0xf7c))) {
           do {
-            iVar3 = func_0x020ba964(iVar2,*(undefined4 *)(param_1 + iVar4 * 0x20 + 0xe3c));
+            iVar3 = func_0x020ba964(iVar2,*(undefined4 *)((iVar4 + param_1) * 0x20 + 0xe3c));
             if (iVar3 == 0) {
               func_0x020c8e30(*(undefined4 *)(param_1 + iVar4 * 0x20 + 0xe3c),param_1 + 0xe3c);
             }

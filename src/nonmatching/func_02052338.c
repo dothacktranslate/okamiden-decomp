@@ -120,7 +120,7 @@ int func_02052338(int param_1,int *param_2)
         iVar5 = iVar8;
         iVar4 = iVar7;
       }
-      if (iVar6 == iVar8) break;
+      if (iVar8 == iVar6) break;
       iVar7 = iVar7 * 2;
       iVar3 = 1 + iVar3;
     } while (iVar7 / 2 < iVar6);

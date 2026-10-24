@@ -119,7 +119,7 @@ func_0202ff68(undefined4 *param_1,uint param_2,undefined4 param_3,int param_4,us
   *(undefined2 *)((int)param_1 + iVar2) = 0;
   *(undefined4 *)((int)param_1 + iVar2 + 10) = 0;
   *(undefined4 *)((int)param_1 + iVar2 + 0x12) = 0;
-  *(undefined4 *)((int)param_1 + iVar2 + 0x16) = 0;
+  *(undefined4 *)((int)(iVar2 + param_1) + 0x16) = 0;
   *(undefined4 *)((int)param_1 + iVar2 + 0x1a) = 0;
   *(uint *)((int)param_1 + iVar2 + 6) = (param_2 & 0xffff) + (uint)param_5 * 0x10000;
   if (param_4 != 0) {

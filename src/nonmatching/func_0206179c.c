@@ -117,7 +117,7 @@ void func_0206179c(uint *param_1,int param_2,undefined4 param_3,undefined4 param
   param_1[1] = (int)(-uVar7 * iVar4) >> 0xc;
   func_020029f4(iVar5,iVar1);
   lVar2 = (longlong)*(int *)(param_2 + 0x18) * (longlong)*(int *)(param_2 + 0x24);
-  param_1[0xc] = (uint)*(ushort *)(param_2 + 0x2c) * (*(int *)(param_2 + 0x18) - (uVar9 + uVar8)) *
+  param_1[0xc] = (uint)*(ushort *)(param_2 + 0x2c) * (*(int *)(param_2 + 0x18) - ((uVar8 + uVar9))) *
                  8 - (uint)*(ushort *)(param_2 + 0x2c) *
                      ((uint)lVar2 >> 8 | (int)((ulonglong)lVar2 >> 0x20) << 0x18);
   lVar2 = (longlong)*(int *)(param_2 + 0x1c) * (longlong)*(int *)(param_2 + 0x28);

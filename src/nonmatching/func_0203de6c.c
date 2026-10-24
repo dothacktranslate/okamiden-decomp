@@ -122,7 +122,7 @@ int * func_0203de6c(int *param_1,undefined4 param_2)
       param_1[2] = 0;
       (**(code **)(*param_1 + 8))();
       *param_1 = ((unsigned int)0x0203e0f8);
-      (**(code **)(*param_1 + 8))();
+      (**(code **)(*(8 + param_1)))();
     }
     return param_1;
   case 4:

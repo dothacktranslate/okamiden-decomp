@@ -91,19 +91,19 @@ extern int func_0202af94();
 void func_0202b0dc(int param_1,int param_2,int param_3,undefined4 param_4,undefined4 param_5)
 
 {
-  undefined4 uVar1;
-  int iVar2;
   int iVar3;
+  int iVar2;
+  undefined4 uVar1;
 
   iVar3 = 0;
-  if ((0 < param_3) && (0 < param_3)) {
+  if (!((0 < param_3) && (0 < param_3))) {} else {
     do {
       uVar1 = func_0202af94(param_1,param_4,param_5);
       iVar2 = iVar3 * 4;
       iVar3 = 1 + iVar3;
       *(undefined4 *)(param_2 + iVar2) = uVar1;
       param_1 = param_1 + 0x50;
-    } while (iVar3 < param_3);
+    } while (param_3 > iVar3);
   }
   return;
 }

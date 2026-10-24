@@ -99,7 +99,7 @@ int func_0204cdac(undefined4 param_1,int param_2,undefined4 param_3)
   *(char *)(iVar1 + 7) = (char)param_2;
   while (param_2 != 0) {
     param_2 = param_2 + -1;
-    *(undefined4 *)(iVar1 + param_2 * 4 + 0x14) = 0;
+    *(undefined4 *)((param_2 + iVar1) * 4 + 0x14) = 0;
   }
   return iVar1;
 }

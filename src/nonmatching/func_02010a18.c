@@ -92,7 +92,7 @@ undefined8 func_02010a18(int *param_1)
   uint iVar2;
   int iVar3;
 
-  iVar4 = *param_1 + 2000;
+  iVar4 = *(2000 + param_1);
   iVar2 = param_1[1] + -2;
   if (iVar2 < 1) {
     iVar4 = *param_1 + 1999;

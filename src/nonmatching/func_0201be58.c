@@ -275,7 +275,7 @@ longlong func_0201be58(int param_1,uint param_2,uint param_3,uint param_4)
     uVar7 = (undefined4)((ulonglong)uVar25 >> 0x20);
     uVar1 = (undefined4)uVar25;
     iVar8 = ((int)uVar18 >> 1 | 0x20000000U) + 0x80000 + iVar17 * 0x40000;
-    puVar4 = (undefined4 *)(iVar13 + iVar17 * 8);
+    puVar4 = (undefined4 *)((iVar17 + iVar13) * 8);
     uVar25 = func_0201d848(0,iVar8,*puVar4,puVar4[1]);
     uVar25 = func_0201d848(uStack_48,uVar18,(int)uVar25,(int)((ulonglong)uVar25 >> 0x20));
     uVar27 = func_0201dbfc(0,uVar7,0,iVar8);

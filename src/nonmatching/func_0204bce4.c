@@ -96,14 +96,14 @@ void func_0204bce4(int param_1,int param_2,undefined4 param_3,undefined4 param_4
 
   uVar2 = *(undefined4 *)(param_1 + 0x20);
   if (param_2 + 7U < 0x1fffffff || param_2 == 0x1ffffff8) {
-    iVar1 = func_0204e55c(param_1,uVar2,*(int *)(param_1 + 0x2c) << 3,(param_2 + 6) * 8,param_4);
+    iVar1 = func_0204e55c(param_1,uVar2,*(int *)(param_1 + 0x2c) << 3,((6 + param_2)) * 8,param_4);
   }
   else {
     iVar1 = func_0204e544();
   }
   *(int *)(param_1 + 0x20) = iVar1;
   *(int *)(param_1 + 0x2c) = param_2 + 6;
-  *(int *)(param_1 + 0x1c) = iVar1 + param_2 * 8;
+  *(int *)(param_1 + 0x1c) = ((iVar1 + param_2)) * 8;
   func_0204bbe4(param_1,uVar2);
   return;
 }

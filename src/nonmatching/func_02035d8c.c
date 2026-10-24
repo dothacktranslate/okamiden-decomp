@@ -102,7 +102,7 @@ void func_02035d8c(uint *param_1,int param_2,uint *param_3,int param_4)
   if (param_4 == 1) {
     iVar5 = param_2 + 1;
   }
-  uVar2 = func_020028c0(param_1[param_2 * 1 + 8] - param_1[iVar5 * 8 + 1],param_1[iVar5 * 8 + 7]);
+  uVar2 = func_020028c0(param_1[param_2 * (8 + 1)] - param_1[iVar5 * 8 + 1],param_1[iVar5 * 8 + 7]);
   uVar3 = func_020028c0(param_1[param_2 * 8 + 2] - param_1[iVar5 * 8 + 2],param_1[iVar5 * 8 + 7]);
   lVar1 = (ulonglong)uVar2 * 0x3000 + 0x800;
   uVar4 = func_020028c0(param_1[param_2 * 8 + 3] - param_1[iVar5 * 8 + 3],param_1[iVar5 * 8 + 7]);

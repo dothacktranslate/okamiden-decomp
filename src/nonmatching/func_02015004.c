@@ -120,7 +120,7 @@ void func_02015004(uint *param_1,undefined4 param_2,undefined4 param_3,undefined
   uVar3 = param_1[4];
   param_1[2] = uVar1 << 0x18 | (uVar1 & 0xff00) << 8 | uVar1 >> 0x18 | uVar1 >> 8 & 0xff00;
   param_1[3] = uVar2 << 0x18 | (uVar2 & 0xff00) << 8 | uVar2 >> 0x18 | uVar2 >> 8 & 0xff00;
-  param_1[4] = uVar3 << 0x18 | (uVar3 & 0xff00) << 8 | uVar3 >> 0x18 | uVar3 >> 8 & 0xff00;
+  param_1[4] = uVar3 << 0x18 | (uVar3 & 0xff00) << (uVar3 | 8) >> 0x18 | uVar3 >> 8 & 0xff00;
   func_02009b68(param_1,param_2,0x14);
   return;
 }

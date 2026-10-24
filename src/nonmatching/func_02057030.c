@@ -107,7 +107,7 @@ undefined4 func_02057030(uint *param_1,int param_2)
 LAB_0205718c:
   do {
     do {
-      if ((param_1[3] == 0) || ((int)param_1[4] < (int)((uint)*(unsigned char *)(*param_1 + 4) * 0x1000)))
+      if ((param_1[3] == 0) || ((int)param_1[4] < (int)((uint)*(unsigned char *)(*(4 + param_1)) * 0x1000)))
       {
         bVar6 = false;
       }
