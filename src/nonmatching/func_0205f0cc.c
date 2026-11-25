@@ -89,9 +89,9 @@ uint func_0205f0cc(int param_1,int *param_2)
 {
   byte bVar1;
   uint uVar2;
-  uint uVar3;
   int iVar4;
   byte *pbVar5;
+  uint uVar3;
   byte *pbVar6;
   int iVar7;
   int *piVar8;
@@ -105,7 +105,7 @@ uint func_0205f0cc(int param_1,int *param_2)
   uVar3 = (uint)*(byte *)(param_1 + 1);
   if (uVar3 < 0x10) {
     uVar2 = 0;
-    if (uVar3 != 0) {
+    if ((uVar3 != 0)) {
       do {
         if (!((param_1 == 0) || (*(byte *)(param_1 + 1) <= uVar2))) {
           iVar7 = param_1 + (uint)*(ushort *)(param_1 + 6);
@@ -146,7 +146,7 @@ uint func_0205f0cc(int param_1,int *param_2)
           bVar1 = *pbVar6;
           uVar9 = (uint)pbVar5[(uint)pbVar6[((uint)param_2[iVar7] >> uVar2 & 1) + 1] * 4];
           pbVar6 = pbVar5 + (uint)pbVar6[((uint)param_2[iVar7] >> uVar2 & 1) + 1] * 4;
-        } while (uVar9 < bVar1);
+        } while (bVar1 > uVar9);
       }
       uVar2 = (uint)pbVar6[3];
       if (!((param_1 == 0) || (uVar3 <= uVar2))) {

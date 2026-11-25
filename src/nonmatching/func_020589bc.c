@@ -95,7 +95,7 @@ int func_020589bc(int *param_1,uint param_2)
   puVar2 = *(ushort **)(*param_1 + 0xc);
   while( true ) {
     if (puVar2 == (ushort *)0x0) {
-      return *param_1 + 4;
+      return *(4 + param_1);
     }
     uVar1 = (uint)*puVar2;
     bVar4 = param_2 <= uVar1;

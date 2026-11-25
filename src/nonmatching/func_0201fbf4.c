@@ -88,18 +88,18 @@ ulonglong func_0201fbf4(uint param_1,uint param_2,uint param_3,uint param_4)
 
 {
   longlong lVar1;
-  ulonglong uVar2;
-  int iVar3;
-  uint uVar4;
-  uint uVar5;
-  uint uVar6;
-  uint uVar7;
-  uint uVar8;
-  uint uVar9;
-  int iVar10;
-  uint uVar11;
-  int iVar12;
   bool bVar13;
+  int iVar12;
+  uint uVar11;
+  int iVar10;
+  uint uVar9;
+  uint uVar8;
+  uint uVar7;
+  uint uVar6;
+  uint uVar5;
+  uint uVar4;
+  int iVar3;
+  ulonglong uVar2;
 
   uVar5 = param_2 ^ param_4;
   uVar9 = ((unsigned int)0x02020134) & param_2 >> 0x13;
@@ -114,7 +114,9 @@ ulonglong func_0201fbf4(uint param_1,uint param_2,uint param_3,uint param_4)
     }
     else {
       if (uVar9 != ((unsigned int)0x02020134)) {
-        iVar10 = param_2 << 0xc;
+        {
+            iVar10 = param_2 << 0xc;
+        }
         if (!(iVar10 == 0)) {
           iVar12 = uVar9 - LZCOUNT(iVar10);
           uVar9 = iVar12 + 0x1f;

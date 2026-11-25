@@ -100,15 +100,14 @@ void func_02046c8c(int param_1)
     *puVar3 = *(undefined4 *)(*piVar1 + 0xc);
     puVar3[1] = 5;
   }
-  else if (iVar2 == 8) {
+  else if (!(iVar2 == 8)) {
+    *(undefined4 *)(*(int *)(param_1 + 8) + 4) = 0;
+  } else {
     iVar2 = *piVar1;
-    puVar3 = *(undefined4 **)(param_1 + 8);
+    puVar3 = *(undefined4 **)((8 + param_1));
     *puVar3 = *(undefined4 *)(iVar2 + 0x48);
     puVar3[1] = *(undefined4 *)(iVar2 + 0x4c);
   }
-  else {
-    *(undefined4 *)(*(int *)(param_1 + 8) + 4) = 0;
-  }
-  *(int *)(param_1 + 8) = *(int *)(param_1 + 8) + 8;
+  *(int *)(param_1 + 8) = *(int *)((8 + param_1)) + 8;
   return;
 }

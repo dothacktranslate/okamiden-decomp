@@ -162,29 +162,6 @@ extern undefined4 extraout_r1_01;
 undefined4 func_0202e220(int param_1,ushort *param_2,uint param_3,int param_4)
 
 {
-  undefined4 auStack_114 [64];
-  undefined4 uStack_118;
-  undefined4 uStack_11c;
-  undefined4 uStack_120;
-  undefined1 auStack_160 [64];
-  undefined1 auStack_1a0 [64];
-  undefined4 uStack_1a4;
-  undefined4 uStack_1a8;
-  undefined4 uStack_1ac;
-  undefined4 uStack_1b0;
-  undefined4 uStack_1b4;
-  undefined4 uStack_1b8;
-  undefined4 uStack_1bc;
-  undefined4 uStack_1c0;
-  undefined4 uStack_1c4;
-  byte abStack_204 [64];
-  int iStack_22c;
-  int iStack_268;
-  undefined4 uVar26;
-  int iVar25;
-  undefined4 uVar24;
-  int iVar23;
-  uint *puVar22;
   int iVar21;
   uint uVar20;
   int iVar19;
@@ -209,6 +186,29 @@ undefined4 func_0202e220(int param_1,ushort *param_2,uint param_3,int param_4)
   short sVar3;
   short sVar2;
   byte *pbVar1;
+  undefined4 auStack_114 [64];
+  undefined4 uStack_118;
+  undefined4 uStack_11c;
+  undefined4 uStack_120;
+  undefined1 auStack_160 [64];
+  undefined1 auStack_1a0 [64];
+  undefined4 uStack_1a4;
+  undefined4 uStack_1a8;
+  undefined4 uStack_1ac;
+  undefined4 uStack_1b0;
+  undefined4 uStack_1b4;
+  undefined4 uStack_1b8;
+  undefined4 uStack_1bc;
+  undefined4 uStack_1c0;
+  undefined4 uStack_1c4;
+  byte abStack_204 [64];
+  int iStack_22c;
+  int iStack_268;
+  undefined4 uVar26;
+  int iVar25;
+  undefined4 uVar24;
+  int iVar23;
+  uint *puVar22;
 
   iVar19 = _DAT_0202f0f8;
   piVar4 = _DAT_0202f0f4;
@@ -244,7 +244,7 @@ undefined4 func_0202e220(int param_1,ushort *param_2,uint param_3,int param_4)
       else {
         func_0202d258(param_1,iVar17,*(uint *)(param_2 + 6) & 0xffff);
         iVar11 = _DAT_0202e55c;
-        iVar17 = param_1 + uVar20 * 2;
+        iVar17 = (uVar20 + param_1) * 2;
         *(ushort *)(iVar17 + _DAT_0202e55c) = param_2[2];
         *(undefined2 *)(iVar17 + iVar11 + -0x40) = 1;
       }
@@ -319,7 +319,7 @@ LAB_0202e310:
       } while (iVar17 < (int)(uint)*(ushort *)(param_1 + _DAT_0202ec18));
     }
     iVar17 = func_0202c774(param_1,uVar20 + uVar14 * 0x10000);
-    if (iVar17 != 0) {
+    if (iVar17) {
       *(uint *)(iVar17 + 0xfc) = *(uint *)(iVar17 + 0xfc) | 0x10;
       iVar21 = 1;
       do {
@@ -378,7 +378,7 @@ LAB_0202e310:
     }
     *(undefined4 *)(param_1 + 0xe10) = *(undefined4 *)(param_2 + 10);
     iVar11 = _LAB_0202e888;
-    if (param_4 != 0) {
+    if (!(param_4 != 0)) {} else {
       if ((*(uint *)(param_1 + _LAB_0202e888) & 0x20) == 0) {
         return 0;
       }

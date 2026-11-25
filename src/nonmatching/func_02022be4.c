@@ -92,10 +92,10 @@ extern int func_0202322c();
 void func_02022be4(undefined4 *param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
 
 {
-  int iVar1;
   unsigned short sVar2;
   int iVar3;
   int iVar4;
+  int iVar1;
 
   iVar3 = 0;
   *(undefined2 *)(param_1 + 0x11) = 0;
@@ -107,8 +107,12 @@ void func_02022be4(undefined4 *param_1,undefined4 param_2,undefined4 param_3,und
   do {
     iVar4 = iVar3 * 2;
     *(short *)((int)param_1 + iVar4 + 4) = sVar2;
-    iVar3 = iVar3 + 1;
-    sVar2 = sVar2 + *(short *)(iVar1 + iVar4 + 2);
+    {
+        {
+            iVar3 = iVar3 + 1;
+        }
+    }
+    sVar2 = sVar2 + *(short *)((iVar4 + iVar1) + 2);
   } while (iVar3 < 0x20);
   *(short *)((int)param_1 + 0x4a) = sVar2;
   *(short *)(param_1 + 0x13) = sVar2 + 0x100;

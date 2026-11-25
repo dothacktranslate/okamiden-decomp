@@ -102,8 +102,8 @@ void func_0203e414(int param_1,undefined4 param_2,undefined4 param_3,undefined4 
   uint iVar3;
   undefined4 local_9c;
   int local_8c;
-  int local_7c;
   undefined4 local_6c;
+  int local_7c;
   int local_50;
   int local_34;
   undefined4 uStack_18;

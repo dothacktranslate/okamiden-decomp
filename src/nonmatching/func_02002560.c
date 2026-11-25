@@ -94,14 +94,14 @@ void func_02002560(undefined4 param_1,undefined4 param_2,undefined4 param_3,int 
 
 {
   longlong lVar1;
-  longlong lVar2;
-  undefined4 *puVar3;
-  uint uVar4;
-  uint uVar5;
-  undefined4 uVar6;
   int iVar7;
+  undefined4 uVar6;
+  longlong lVar2;
+  uint uVar5;
+  undefined4 *puVar3;
   bool bVar8;
   ulonglong uVar9;
+  uint uVar4;
 
   uVar4 = func_020028c0(param_2,param_1,param_3,param_4,param_4);
   puVar3 = ((unsigned int)0x020026a8);

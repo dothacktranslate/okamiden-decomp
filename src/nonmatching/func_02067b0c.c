@@ -125,7 +125,9 @@ void func_02067b0c(int param_1)
 
   uVar6 = *(uint *)(param_1 + 8);
   {
-      iVar15 = *(int *)(uVar6 + 0x118) << 0x1a;
+      {
+          iVar15 = *(int *)(uVar6 + 0x118) << 0x1a;
+      }
   }
   iVar7 = iVar15 >> 0x1f;
   if (iVar15 < 0) {
@@ -138,12 +140,12 @@ void func_02067b0c(int param_1)
   uVar8 = *(uint *)(param_1 + 0x2c);
   local_34 = 0;
   do {
-    if (uVar8 == 0) {
+    if (!uVar8) {
 LAB_02068250:
       if (!(*(code **)(uVar6 + 0x13c) != (code *)0x0)) {} else {
         (**(code **)(uVar6 + 0x13c))
                   (*(undefined4 *)(param_1 + 0xc),*(undefined4 *)(0x10 + param_1),param_1 + 0x14,
-                   *(undefined4 *)(param_1 + 0x2c),*(char *)(uVar6 + 200) != '\0',
+                   *(undefined4 *)(param_1 + 0x2c),*(char *)((200 + uVar6)) != '\0',
                    *(undefined4 *)(uVar6 + 0x140));
       }
       iVar15 = 0;
@@ -183,7 +185,9 @@ LAB_02068250:
     if (bVar20) {
       uVar10 = uVar6;
     }
-    uVar16 = iVar15 - uVar9 * uVar16;
+    {
+        uVar16 = iVar15 - uVar9 * uVar16;
+    }
     if (bVar20) {
       uVar10 = *(uint *)(uVar10 + 0xec);
     }
@@ -232,7 +236,7 @@ LAB_02068250:
     if (0 < *(int *)(param_1 + 0x10)) {
       iVar4 = -0x8000;
       do {
-        psVar11 = (short *)(*(int *)(param_1 + local_5c * 4 + 0x14) + local_34);
+        psVar11 = (short *)(*(int *)((local_5c + param_1) * 4 + 0x14) + local_34);
         if (local_5c < (int)(uint)*(byte *)(uVar6 + 0xca)) {
           psVar12 = psVar11;
           if (*(char *)(uVar6 + 200) == '\x02') {

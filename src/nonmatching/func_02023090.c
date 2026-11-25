@@ -100,13 +100,12 @@ undefined4 func_02023090(undefined4 param_1,uint param_2)
     func_02022d84(param_1,param_2,&local_12,&local_14,&local_10);
     func_02022cb8(param_1,local_12,local_14,&local_10,0);
   }
-  else if (param_2 < ((unsigned int)0x02023140)) {
-    local_10 = func_0x020aeb88(*(undefined4 *)(*(int *)(*(int *)(*(unsigned int *)0x02023144) + 0x5c) + 0x44),
-                               param_2 - ((unsigned int)0x0202313c));
-  }
-  else {
+  else if (!(!(!(param_2 < ((unsigned int)0x02023140))))) {
     local_10 = func_0x020aebfc(*(undefined4 *)(*(int *)(*(int *)(*(unsigned int *)0x02023144) + 0x5c) + 0x44),
                                param_2 - ((unsigned int)0x02023140));
+  } else {
+    local_10 = func_0x020aeb88(*(undefined4 *)(*(int *)(*(int *)(*(unsigned int *)0x02023144) + 0x5c) + 0x44),
+                               param_2 - ((unsigned int)0x0202313c));
   }
   return local_10;
 }

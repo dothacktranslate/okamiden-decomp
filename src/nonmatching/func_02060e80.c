@@ -87,9 +87,9 @@ extern int LZCOUNT();
 uint func_02060e80(int param_1,uint param_2,uint param_3,uint param_4)
 
 {
-  bool bVar3;
   int iVar2;
   int uVar1;
+  bool bVar3;
 
   if ((param_2 & 0x20000000) != 0) {
     return param_3;
@@ -103,10 +103,12 @@ uint func_02060e80(int param_1,uint param_2,uint param_3,uint param_4)
       }
       else {
         if (param_4 <= uVar1) {
-          if (!((param_4 & 1) != 0)) {} else {
+          if (!(!((param_4 & 1) != 0))) {
             bVar3 = (param_4 & 2) != 0;
             if (bVar3) {
-              param_4 = param_4 >> 2;
+              {
+                  param_4 = param_4 >> 2;
+              }
               uVar1 = param_4 + 1;
             }
             else {
@@ -119,7 +121,7 @@ uint func_02060e80(int param_1,uint param_2,uint param_3,uint param_4)
                     (int)*(short *)((param_4 + param_1) * 4 + 2) >> 2) << 0x10 |
                    (*(short *)(param_1 + uVar1 * 4) * 3 + (int)*(short *)(param_1 + param_4 * 4) &
                    0x3ffffU) >> 2;
-          }
+          } else {}
           param_4 = param_4 >> 2;
           goto LAB_02060f58;
         }
@@ -141,5 +143,5 @@ LAB_02060f58:
       param_4 = (uVar1 >> 1) + 1;
     }
   }
-  return *(uint *)(param_1 + param_4 * 4);
+  return *(uint *)((param_4 + param_1) * 4);
 }

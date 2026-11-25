@@ -168,22 +168,22 @@ void func_02059188(int *param_1,int *param_2,undefined4 param_3,undefined4 param
 
 {
   byte bVar2;
-  byte bVar3;
   int iVar4;
-  uint uVar5;
   uint uVar6;
-  uint uVar7;
   int iVar12;
-  uint uVar9;
   uint uVar10;
-  uint uVar11;
   uint uVar8;
-  undefined1 auStack_70 [8];
   uint *puVar14;
-  uint uVar13;
   undefined4 local_68;
-  undefined4 local_64;
   byte bVar1;
+  byte bVar3;
+  uint uVar5;
+  uint uVar7;
+  uint uVar9;
+  uint uVar11;
+  undefined1 auStack_70 [8];
+  uint uVar13;
+  undefined4 local_64;
 
   bVar1 = *(byte *)(param_1 + 3);
   uVar10 = (uint)*(byte *)(*param_6 + 1);

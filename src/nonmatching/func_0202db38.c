@@ -196,7 +196,7 @@ void func_0202db38(int param_1,int *param_2,undefined4 param_3)
           iVar7 = *(int *)(param_1 + 0x00000e54U) + local_24 * 0x18;
         }
         uVar14 = uVar15 + 1;
-        local_2c[uVar15] = *(short *)(iVar7 + 2);
+        local_2c[uVar15] = *(short *)((2 + iVar7));
       }
       local_24 = local_24 + 1;
     } while (local_24 < (int)uVar2);
@@ -288,7 +288,7 @@ void func_0202db38(int param_1,int *param_2,undefined4 param_3)
         do {
           uVar14 = *(uint *)(iVar10 + iVar7 * 4);
           uVar15 = *(uint *)(iVar10 + local_4c * 4);
-          if (uVar14 < uVar15) {
+          if (uVar15 > uVar14) {
             *(uint *)(iVar10 + local_4c * 4) = uVar14;
             *(uint *)(iVar10 + iVar7 * 4) = uVar15;
           }

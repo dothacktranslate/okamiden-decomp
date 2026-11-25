@@ -103,8 +103,10 @@ uint func_02057df8(int param_1,uint param_2,ushort *param_3,int *param_4,int *pa
   if (*param_3 <= param_2) {
     param_2 = (uint)*param_3;
   }
-  local_48 = 0;
-  if (param_2) {
+  {
+      local_48 = 0;
+  }
+  if (param_2 != 0) {
     do {
       puVar5 = (uint *)(local_48 + param_1 * 8);
       iVar8 = *(int *)(param_3 + 2) + local_48 * 6;
@@ -168,7 +170,7 @@ uint func_02057df8(int param_1,uint param_2,ushort *param_3,int *param_4,int *pa
         }
         if (param_5 != (int *)0x0) {
           local_30 = local_30 + *param_5;
-          local_2c = local_2c + param_5[1];
+          local_2c = (param_5 + local_2c)[1];
         }
         *puVar5 = *puVar5 & ((unsigned int)0xfe00ff00) | local_2c + 0x800 >> 0xc & 0xffU |
                   (local_30 + 0x800 >> 0xc & 0x1ffU) << 0x10;

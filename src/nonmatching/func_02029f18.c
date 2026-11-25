@@ -111,17 +111,17 @@ extern int func_0x020c320c();
 undefined4 func_02029f18(undefined4 param_1)
 
 {
-  undefined2 uVar1;
-  short sVar2;
-  short sVar3;
-  int iVar4;
-  int iVar5;
-  undefined4 uVar6;
-  undefined4 uVar7;
-  undefined4 *puVar8;
-  uint uVar9;
-  undefined2 local_3c [2];
   undefined4 uVar11;
+  undefined2 local_3c [2];
+  uint uVar9;
+  undefined4 *puVar8;
+  undefined4 uVar7;
+  undefined4 uVar6;
+  int iVar5;
+  int iVar4;
+  short sVar3;
+  short sVar2;
+  short local_1a;
   int *piVar12;
   int iVar13;
   int *piVar10;
@@ -132,11 +132,13 @@ undefined4 func_02029f18(undefined4 param_1)
   int local_28;
   undefined4 local_24;
   undefined4 local_20;
-  short local_1a;
+  undefined2 uVar1;
 
   piVar10 = (int *)(*(unsigned int *)0x0202a22c);
   piVar12 = piVar10 + 5;
-  iVar13 = *(int *)(*piVar10 + 0x5c);
+  {
+      iVar13 = *(int *)(*piVar10 + 0x5c);
+  }
   uVar11 = *(undefined4 *)(iVar13 + 0x48);
   iVar4 = func_020465d8(param_1,2);
   iVar5 = func_020465d8(param_1,1);
@@ -239,10 +241,10 @@ LAB_0202a116:
     }
     iVar5 = func_0x020c22ec(uVar11);
     if (iVar5 != 0) break;
-    if ((iVar13 != 0) && (iVar4 = func_0x0209f318(iVar13,0), iVar4 != 0)) {
+    if ((iVar13 != 0)) { if ((iVar4 = func_0x0209f318(iVar13,0), iVar4 != 0)) {
       iVar4 = 1;
       break;
-    }
+    } }
     goto switchD_0202a20c_default;
   case 9:
     iVar4 = 0;

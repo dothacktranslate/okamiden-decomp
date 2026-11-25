@@ -93,9 +93,9 @@ char * func_0201705c(int param_1,int param_2,uint param_3,undefined4 param_4,int
 {
   int unaff_r4;
   bool bVar2;
-  uint uVar1;
-  int extraout_r1;
   char *pcVar3;
+  int extraout_r1;
+  uint uVar1;
   char *pcVar4;
   int iVar5;
   int iVar6;
@@ -202,7 +202,7 @@ LAB_02017164:
     pcVar3 = pcVar3 + -2;
     *pcVar3 = '0';
   }
-  if (bVar2) {
+  if ((bVar2 != 0)) {
     pcVar3 = pcVar3 + -1;
     *pcVar3 = '-';
   }

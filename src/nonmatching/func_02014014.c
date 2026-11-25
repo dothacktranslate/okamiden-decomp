@@ -93,9 +93,9 @@ extern int func_02014578();
 void func_02014014(void)
 
 {
-  int iVar1;
-  int iVar2;
   int iVar3;
+  int iVar2;
+  int iVar1;
 
   iVar1 = ((unsigned int)0x020140ac);
   iVar3 = *(int *)(((unsigned int)0x020140ac) + 8);
@@ -116,7 +116,7 @@ void func_02014014(void)
   *(undefined4 *)(iVar1 + 8) = 0;
   func_02013d8c();
   func_02014578();
-  if (*(code **)(iVar3 + 4) == (code *)0x0) {
+  if (!(*(code **)(iVar3 + 4) == (code *)0x0)) {} else {
     return;
   }
   (**(code **)(iVar3 + 4))(*(undefined4 *)(iVar3 + 8));

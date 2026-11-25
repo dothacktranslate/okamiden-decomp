@@ -159,19 +159,21 @@ ulonglong func_0201e7ac(uint param_1,uint param_2,uint param_3,uint param_4)
 {
   uint uVar1;
   uint uVar2;
-  uint uVar3;
+  uint uVar6;
   int extraout_r1;
   uint uVar4;
   uint uVar5;
-  uint uVar6;
+  uint uVar3;
   uint uVar7;
   int iVar8;
   int iVar9;
   bool bVar10;
   bool bVar11;
 
-  uVar6 = param_2 | 1;
-  if (param_4 == 0 && param_3 == 0) {
+  {
+      uVar6 = param_2 | 1;
+  }
+  if (!(param_4 == 0 && param_3 == 0)) {} else {
     return CONCAT44(param_2,param_1);
   }
   if (param_2 == (int)param_1 >> 0x1f && param_4 == (int)param_3 >> 0x1f) {
@@ -210,7 +212,7 @@ ulonglong func_0201e7ac(uint param_1,uint param_2,uint param_3,uint param_4)
       param_2 = param_2 * 2 + (uint)bVar10;
     }
     iVar9 = 0;
-    while( true ) {
+    while( !!true ) {
       uVar3 = param_1 - param_3;
       uVar4 = param_2 - (param_4 + (param_3 > param_1));
       for (iVar9 = iVar9 - (uint)(param_2 <= param_4 &&
@@ -234,7 +236,7 @@ ulonglong func_0201e7ac(uint param_1,uint param_2,uint param_3,uint param_4)
         uVar4 = uVar5 + param_4 + (uint)CARRY4(uVar1,param_3);
       }
       iVar8 = iVar8 + -1;
-      if (iVar8 == 0) break;
+      if (!iVar8) break;
       param_1 = uVar3 * 2;
       param_2 = uVar4 * 2 + (uint)CARRY4(uVar3,uVar3);
       iVar9 = iVar9 * 2 + (uint)(CARRY4(uVar4,uVar4) || CARRY4(uVar4 * 2,(uint)CARRY4(uVar3,uVar3)))
