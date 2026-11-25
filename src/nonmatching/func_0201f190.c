@@ -87,17 +87,17 @@ extern int LZCOUNT();
 uint func_0201f190(uint param_1,uint param_2)
 
 {
-  longlong lVar1;
-  bool bVar2;
-  uint uVar3;
-  uint uVar4;
-  int iVar5;
-  uint uVar6;
-  uint uVar7;
-  uint uVar8;
-  int iVar9;
-  int iVar10;
   bool bVar11;
+  int iVar10;
+  int iVar9;
+  uint uVar8;
+  uint uVar7;
+  uint uVar6;
+  bool bVar2;
+  uint uVar4;
+  uint uVar3;
+  int iVar5;
+  longlong lVar1;
 
   uVar6 = (param_1 ^ param_2) & 0x80000000;
   uVar7 = param_1 >> 0x17 & 0xff;
@@ -108,7 +108,7 @@ uint func_0201f190(uint param_1,uint param_2)
         if (uVar7 == 0) {
           return uVar6;
         }
-        if (uVar7 < 0xff) {
+        if (!(uVar7 < 0xff)) {} else {
           return uVar6;
         }
         if ((param_2 & 0x7fffff) != 0) {
@@ -134,7 +134,7 @@ uint func_0201f190(uint param_1,uint param_2)
     uVar7 = param_2 * 0x200;
     uVar3 = param_2 >> 0x17 & 0xff;
     if (uVar3 == 0) {
-      if (uVar7 == 0) {
+      if (!(uVar7 != 0)) {
         return 0x7fffffff;
       }
       goto LAB_0201f328;
@@ -185,7 +185,9 @@ LAB_0201f1c4:
         uVar7 = uVar7 << (iVar9 - 0x67U & 0xff);
         if (uVar7 != 0) {
           if ((uVar7 & 0x80000000) != 0) {
-            if ((uVar7 & 0x7fffffff) != 0 || (uVar3 & 1) != 0) {
+            if ((uVar7 & 0x7fffffff) != 0) {
+              uVar6 = uVar6 + 1;
+            } else if ((uVar3 & 1) != 0) {
               uVar6 = uVar6 + 1;
             }
             return uVar6;

@@ -95,15 +95,15 @@ func_020328b4(int param_1,undefined4 param_2,undefined4 param_3,undefined4 param
 
 {
   int *piVar1;
-  int iVar2;
+  int local_18;
   int iVar3;
   int iVar4;
   int local_30;
   undefined1 auStack_2c [12];
-  undefined2 uStack_20;
+  int iVar2;
   undefined2 uStack_1e;
   int local_1c;
-  int local_18;
+  undefined2 uStack_20;
 
   (*(unsigned int *)0x0203297c) = 2;
   if (param_5 != (int *)0x0) {

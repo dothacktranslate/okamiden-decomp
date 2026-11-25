@@ -92,13 +92,13 @@ void func_0201b36c(undefined2 *param_1,undefined2 *param_2,int param_3)
   byte *pbVar5;
   byte *pbVar7;
   int iVar9;
-  byte *pbVar11;
+  int uVar4;
   undefined2 *puVar13;
   uint uVar15;
   byte *pbVar17;
   byte *pbVar19;
   undefined2 uVar2;
-  int uVar4;
+  byte *pbVar11;
   char *pcVar6;
   char *pcVar8;
   int iVar10;
@@ -148,7 +148,7 @@ void func_0201b36c(undefined2 *param_1,undefined2 *param_2,int param_3)
   pbVar18 = pbVar5 + (int)(pbVar7 + iVar10 + (-uVar4 - (int)pbVar7));
   pbVar17 = pbVar7 + iVar10;
   pbVar19 = pbVar18;
-  while ((pbVar7 < pbVar17 && (pbVar5 < pbVar19))) {
+  for (; (pbVar7 < pbVar17 && (pbVar5 < pbVar19)); ) {
     pbVar16 = pbVar17 + -1;
     pbVar19 = pbVar19 + -1;
     if (*pbVar16 < *pbVar19) {

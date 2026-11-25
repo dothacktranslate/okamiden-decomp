@@ -96,18 +96,18 @@ undefined4
 func_02011034(short *param_1,int *param_2,undefined4 param_3,undefined4 param_4,int *param_5)
 
 {
-  unsigned short sVar1;
-  short sVar2;
-  short *psVar3;
-  int iVar4;
-  short sVar10;
-  short *psVar6;
-  int iVar7;
-  uint uVar8;
-  int iVar9;
-  short sVar5;
-  int iVar11;
   int iVar12;
+  int iVar11;
+  short sVar5;
+  int iVar9;
+  uint uVar8;
+  int iVar7;
+  short *psVar6;
+  short sVar10;
+  int iVar4;
+  short *psVar3;
+  short sVar2;
+  unsigned short sVar1;
   short *psVar13;
   int iVar14;
   int iVar15;

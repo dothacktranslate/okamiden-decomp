@@ -104,10 +104,10 @@ undefined4 func_02000f6c(uint *param_1,uint *param_2,undefined4 param_3,undefine
   longlong lVar4;
   int iStack_60;
   uint uVar13;
-  longlong lVar5;
+  uint uVar17;
   int iVar1;
   uint uVar9;
-  uint uVar17;
+  longlong lVar5;
   undefined4 uStack_28;
   uint uVar7;
   uint uVar16;
@@ -120,8 +120,10 @@ undefined4 func_02000f6c(uint *param_1,uint *param_2,undefined4 param_3,undefine
   uint uStack_5c;
 
   puVar14 = auStack_4c;
-  if (param_1 != param_2) {
-    puVar14 = param_2;
+  if (param_2 != param_1) {
+    {
+        puVar14 = param_2;
+    }
   }
   lVar2 = (longlong)(int)param_1[3] * (longlong)(int)param_1[8];
   uVar15 = (uint)lVar2;
@@ -139,7 +141,9 @@ undefined4 func_02000f6c(uint *param_1,uint *param_2,undefined4 param_3,undefine
            (uint)(0xfffff7ff < uVar10)) * 0x100000;
   lVar2 = (longlong)(int)param_1[3] * (longlong)(int)param_1[7];
   uVar9 = (uint)lVar2;
-  lVar3 = (longlong)(int)param_1[4] * (longlong)(int)param_1[6];
+  {
+      lVar3 = (longlong)(int)param_1[4] * (longlong)(int)param_1[6];
+  }
   uVar15 = (uint)lVar3;
   uVar16 = uVar12 + 0x800 >> 0xc |
            (((int)((ulonglong)lVar4 >> 0x20) -
@@ -157,7 +161,7 @@ undefined4 func_02000f6c(uint *param_1,uint *param_2,undefined4 param_3,undefine
                    ((int)((ulonglong)((longlong)(int)param_1[1] * (longlong)(int)uVar13) >> 0x20) +
                    (uint)(uVar12 < uVar11)),uVar12 - uVar11) + 0x800;
   uVar9 = (uint)lVar2 >> 0xc | (int)((ulonglong)lVar2 >> 0x20) * 0x100000;
-  if (uVar9 != 0) {
+  if (!(uVar9 != 0)) {} else {
     uStack_28 = param_4;
     func_02002998(uVar9);
     uVar12 = param_1[2];

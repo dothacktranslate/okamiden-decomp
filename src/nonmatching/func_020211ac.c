@@ -115,10 +115,10 @@ int func_020211ac(undefined4 *param_1,undefined4 *param_2,undefined4 param_3)
   undefined4 local_b8;
   undefined4 local_bc;
   undefined1 auStack_c0 [4];
-  undefined1 auStack_c4 [4];
+  undefined4 *puVar6;
   undefined1 auStack_c8 [4];
   undefined4 *puVar7;
-  undefined4 *puVar6;
+  undefined1 auStack_c4 [4];
   int iVar5;
   undefined4 uVar4;
   undefined4 uVar3;
@@ -126,7 +126,9 @@ int func_020211ac(undefined4 *param_1,undefined4 *param_2,undefined4 param_3)
   undefined4 uVar1;
 
   local_ac = *param_2;
-  local_a8 = param_2[1];
+  {
+      local_a8 = param_2[1];
+  }
   puVar6 = local_78;
   local_a4 = param_2[2];
   local_a0 = param_2[3];
@@ -146,7 +148,7 @@ int func_020211ac(undefined4 *param_1,undefined4 *param_2,undefined4 param_3)
     uVar2 = puVar7[1];
     uVar3 = puVar7[2];
     uVar4 = puVar7[3];
-    puVar7 = puVar7 + 4;
+    puVar7 = (4 + puVar7);
     *puVar6 = uVar1;
     puVar6[1] = uVar2;
     puVar6[2] = uVar3;
@@ -216,5 +218,5 @@ switchD_0202126c_default:
     case 0x13:
     }
     uVar1 = func_02020488(&local_ac);
-  } while( true );
+  } while( (true != 0) );
 }

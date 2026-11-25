@@ -97,19 +97,21 @@ void func_0204bf2c(int param_1,int param_2,int param_3)
   int iVar1;
   undefined4 *puVar2;
   undefined4 uVar3;
-  int iVar4;
   int iVar5;
   int *piVar6;
   int iVar7;
+  int iVar4;
   int iVar8;
   uint uVar9;
   int iVar10;
 
   uVar9 = (uint)*(byte *)(param_2 + 0x49);
-  iVar10 = 0;
+  {
+      iVar10 = 0;
+  }
   for (; param_3 < (int)uVar9; param_3 = param_3 + 1) {
     iVar4 = *(int *)(param_1 + 8);
-    *(int *)(param_1 + 8) = iVar4 + 8;
+    *(int *)(param_1 + 8) = (8 + iVar4);
     *(undefined4 *)(iVar4 + 4) = 0;
   }
   if ((*(byte *)(param_2 + 0x4a) & 4) != 0) {
@@ -132,7 +134,9 @@ void func_0204bf2c(int param_1,int param_2,int param_3)
     }
     uVar3 = func_02050028(param_1,((unsigned int)0x0204c098),1);
     puVar2 = (undefined4 *)func_02052cec(param_1,iVar10,uVar3);
-    uVar3 = func_0201e6a0(iVar4);
+    {
+        uVar3 = func_0201e6a0(iVar4);
+    }
     *puVar2 = uVar3;
     puVar2[1] = 3;
   }
